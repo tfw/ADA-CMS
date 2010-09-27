@@ -5,3 +5,12 @@ require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
 Ada::Application.load_tasks
+
+
+desc "Creates ADA configuration of Inkling"
+task :init => :environment
+#roles
+  ["Manager", "Approver", "Archivist"].each do {|role_name| Inkling::Role.create!(:name => role_name)
+#permissions
+  
+end
