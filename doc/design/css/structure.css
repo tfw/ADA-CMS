@@ -1,0 +1,278 @@
+@charset "ISO-8859-1";
+/* CSS Document */
+
+header {
+	background: url(../images/structure/bg_masthead.gif) repeat-x;
+	height: 180px;
+}
+.masthead {
+	background: url(../images/content/Logo_temp.png) no-repeat 0px 0px;
+	height: 180px;
+}
+.login {
+	height: 76px;
+	width: 275px;
+	border-right: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	float: right;
+	background: #cbcbcb;
+	background: -moz-linear-gradient(top, #cbcbcb, #e2e2e2);
+	background: -webkit-gradient(linear, left top, left bottom, from(#cbcbcb), to(#e2e2e2));
+	-moz-box-shadow:0px 2px 2px #666;
+	-webkit-box-shadow:0px 2px 2px #666;
+	box-shadow:0px 2px 2px #666;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 10px;
+	margin-right: 40px;
+}
+.login h1 {
+	padding-top: 30px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #666;
+}
+.Pagelogin {
+	height: 60px;
+	-moz-box-shadow:0px 2px 2px #666;
+	-webkit-box-shadow:0px 2px 2px #666;
+	box-shadow:0px 2px 2px #666;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-right-radius: 8px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background: #eae9ea;
+	background: -moz-linear-gradient(top, #eae9ea, #f8f8f8);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eae9ea), to(#f8f8f8));
+	border: 1px solid #FFF;
+	padding: 10px;
+	width: 275px;
+	clear: right;
+}
+.mainnav {
+	background: no-repeat;
+	margin-top: -42px;
+	margin-left: 0px;
+	display: block;
+	position: relative;
+	z-index: 3;
+	text-transform: uppercase;
+	padding: 0px 0px 0px 40px;
+}
+
+.subnav {
+	background: #F1F1F1;
+	border-top: 8px solid #999;
+	width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	position: relative;
+	z-index: 2;
+	height: 27px;
+}
+.breadcrumbs {
+	background: #FFF;
+	float: left;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #E8E8E8;
+	text-indent: 40px;
+}
+.breadcrumbs p {
+	font-size: 9px;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+}
+.breadcrumbs a {
+	text-decoration: none;
+	color: #666;
+}
+.breadcrumbs a:hover {
+	color: #009;
+}
+.breadcrumbs a:active {
+	color: #900;
+}
+.content {
+	background: #FFF;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	width: 100%;
+}
+.content nav {
+	float: left;
+	margin: 0px;
+	clear: none;
+	padding-left: 40px;
+	width: 150px;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+article {
+	display: block;
+	position: relative;
+	padding-left: 210px;
+	margin-right: 40px;
+}
+
+article aside
+{
+	display: block;
+	position: relative;
+	width: 200px;
+	float: right;
+	padding: 10px 20px;
+	-moz-box-shadow:0px 2px 2px #666;
+	-webkit-box-shadow:0px 2px 2px #666;
+	box-shadow:0px 2px 2px #666;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-right-radius: 8px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	background: #eae9ea;
+	background: -moz-linear-gradient(top, #eae9ea, #f8f8f8);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eae9ea), to(#f8f8f8));
+	border: 1px solid #FFF;
+}
+
+footer {
+	background: #E8E8E8;
+	height: 80px;
+	left: 0px;
+	bottom: 0px;
+	float: left;
+	width: 100%;
+	padding-top: 20px;
+}
+footer p {
+	font-size: 10px;
+	line-height: 14px;
+	padding: 0px 0px 0px 40px;
+}
+.partners .captions {
+	background: #FFF;
+	width: 100%;
+	float: left;
+}
+.partners .captions p {
+	padding-left: 10px;
+	border-left: 1px solid #CCC;
+	margin-left: 40px;
+	float: left;
+	padding-right: 110px;
+	font-size: 10px;
+}
+.partners .logos {
+	background: #f8f9f8;
+	height: 55px;
+	border-bottom: 2px solid #000;
+	border-top: 1px solid #CCC;
+	left: 0px;
+	bottom: 100px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	float: left;
+	width: 100%;
+}
+.partners .logos img {
+	padding-right: 10px;
+	border-right: 1px solid #CCC;
+	padding-left: 10px;
+}
+.partnersFirst {
+	margin-left: 40px;
+	padding-left: 0px;
+}
+.searchContainer {
+	background: #FFF;
+	margin-left: 2px;
+	float: left;
+	padding-right: 5px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-right-radius: 8px;
+	-moz-box-shadow:0px -1px 3px #999;
+	-webkit-box-shadow:0px -1px 3px #999;
+	box-shadow:0px -1px 3px #999;
+}
+#social_science .content article aside {
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}
+#qualitative .content article aside {
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}
+#longitudinal .content article aside {
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}
+#international .content article aside {
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}
+#indigenous .content article aside {
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}
+.datasets {
+	width: 230px!important;
+	margin-right: 0px;
+}
+.datasets h3 {
+	font-weight: normal;
+	padding-bottom: 10px;
+	color: #000;
+}
+#historical .content article aside {
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}

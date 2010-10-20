@@ -1,0 +1,38 @@
+.formtastic #menusearch {
+	background: #FFF;
+	border-style: none;
+	height: 42px;
+	width: 150px;
+	clear: left;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	border-top-left-radius: 8px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.formtastic #search_button {
+	margin: 0px 0px -12px;
+	padding: 0px;
+}
+.formtastic #login_name {
+	border-style: none;
+	height: 23px;
+	width: 100px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	margin-right: 5px;
+}
+.formtastic #login_pass {
+	border-style: none;
+	height: 23px;
+	width: 100px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	margin-right: 5px;
+}
+.formtastic #enter_button {
+	margin: 0px;
+	padding: 0px;
+}

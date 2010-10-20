@@ -1,0 +1,62 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><nav class="mainnav clearfix">
+			<ul>
+				<li><a href="#">home</a></li>
+                
+                 <li><a href="#">about</a></li>
+				
+                <li><a href="#">archive</a>
+<ul>
+						<li><a href="#">social science</a></li>
+						<li><a href="#">historical</a></li>
+						<li><a href="#">indigenous</a></li>
+						<li><a href="#">longitudinal</a></li>
+						<li><a href="#">qualitative</a></li>
+                        <li><a href="#">international</a></li>
+
+					</ul>
+				</li>
+				
+                <li>
+					<a href="#">data access</a>
+<ul>
+						<li><a href="#">ASSDA Data Catalogue</a></li>
+						<li><a href="#">Search data </a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="#">Undertaking forms</a></li>
+					</ul>
+				</li>
+				
+                <li><a href="#">data deposit</a>
+<ul>
+						<li><a href="#">Why deposit data?</a></li>
+						<li><a href="#">Sharing data and setting</a></li>
+						<li><a href="#">conditions for access</a></li>
+						<li><a href="#">How to deposit data</a></li>
+						<li><a href="#">Deposit forms</a></li>
+					</ul>
+				</li>
+				
+			  <li><a href="#">user guides</a></li>
+			  <li><a href="#">ada news</a></li>
+<li><a href="#">contact</a></li>
+				
+                <li><a href="#">my account</a>
+<ul>
+						<li><a href="#">Register</a></li>
+						<li><a href="#">Account details</a></li>
+						<li><a href="#">Edit details</a></li>
+						<li><a href="#">change passwords</a></li>
+						<li><a href="#">retrieve login</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+            <div class="searchContainer">
+				<form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+					<label for="menusearch"></label>
+					<input type="text" name="textfield" id="menusearch"/>
+					<input type="image" alt="Go" name="imageField" id="search_button" src="../images/structure/bttn_go.png"/>
+				</form>
+			</div>
+		</nav>
