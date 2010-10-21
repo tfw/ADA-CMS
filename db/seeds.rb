@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+["Manager", "Approver", "Archivist", "Member"].each do |role_name| 
+  Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
+end
