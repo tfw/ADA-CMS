@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset - resets the values of the tags below  */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td { 
+	margin: 0; padding: 0; 
+}
+fieldset,img,abbr {
+	border: 0; 
+}
+address,caption,cite,code,dfn,em,h1,h2,h3,h4,h5,h6,th,var {
+	font-style: normal; font-weight: normal; 
+}
+caption,th {
+	text-align: left;
+}
+a {
+	text-decoration: none;
+}

@@ -1,14 +1,38 @@
-/* -------------------------------------------------------------------------------------------------
-
-Load this stylesheet after formtastic.css in your layouts to override the CSS to suit your needs.
-This will allow you to update formtastic.css with new releases without clobbering your own changes.
-
-For example, to make the inline hint paragraphs a little darker in color than the standard #666:
-
-form.formtastic fieldset > ol > li p.inline-hints { color:#333; }
-
-HINT:
-The following style may be *conditionally* included for improved support on older versions of IE(<8)
-form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
-
---------------------------------------------------------------------------------------------------*/
+.formtastic #menusearch {
+	background: #FFF;
+	border-style: none;
+	height: 42px;
+	width: 150px;
+	clear: left;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	border-top-left-radius: 8px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.formtastic #search_button {
+	margin: 0px 0px -12px;
+	padding: 0px;
+}
+.formtastic #login_name {
+	border-style: none;
+	height: 23px;
+	width: 100px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	margin-right: 5px;
+}
+.formtastic #login_pass {
+	border-style: none;
+	height: 23px;
+	width: 100px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	margin-right: 5px;
+}
+.formtastic #enter_button {
+	margin: 0px;
+	padding: 0px;
+}

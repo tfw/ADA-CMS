@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>- ADA Admin</title>
+		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
+    <%= stylesheet_link_tag :all %>
+    <%= csrf_meta_tag %>
+		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts' %>		
+	</head>
+    
+    <body id="default">
+		<header>
+			<div class="login">
+				<h1>USER Log-in </h1>
+				<form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
+					<input type="text" name="textfield" id="login_name"/>
+					<input type="text" name="login_pass" id="login_pass"/>
+					<input type="image" alt="Log In" name="imageField" id="enter_button" src="images/structure/bttn_enter.png"/>
+				</form>
+			</div>
+			<div class="masthead"><a href="../index.html">Australian Data Archive</a></div>
+	</header>
+		<nav class="mainnav clearfix">
+		  <div class="searchContainer">
+		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+		      <label for="menusearch"></label>
+		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
+		      <input type="image" alt="Go" name="imageField" id="search_button" src="images/structure/bttn_go.png"/>
+	        </form>
+	      </div>
+    </nav>
+        
+    <nav class="subnav"> </nav>
+        
+		<nav class="breadcrumbs">
+			<p><strong>YOU ARE HERE:</strong><a href="#"> home</a></p>
+		</nav>
+		
+        <section class="content">
+			<nav>
+				<ul>
+                <li id="science"><a href="social_science/index.html">social science</a></li>
+				<li id="historical"><a href="historical/index.html">historical </a></li>
+				<li id="indigenous"><a href="indigenous/index.html">indigenous</a></li>
+				<li id="longitudinal"><a href="longitudinal/index.html">longitudinal</a></li>
+				<li id="qualitative"><a href="qualitative/index.html">qualitative</a></li>
+				<li id="international"><a href="international/index.html">international</a>
+				</li>
+			  </ul>
+			</nav>
+			
+			<table width=60%>
+				<% i = 0
+				for file in dashboard_partials %>
+					<%if i == 0 %> <tr> <% end %>
+						<td valign=top>
+							<%= render(:file => file) %>
+						</td>
+					<%if i == 1 %> </tr> <% end %>
+					<% i += 1 %>
+				<% end %>
+			</table>
+</section>
+        
+		<footer>
+		  <p> &#xA9; Australian Data Archive</p>
+    </footer>	
+    </body>
+</html>
+
+
