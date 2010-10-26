@@ -44,6 +44,7 @@
         <section class="content">
 			<nav>
 				<ul>
+	        <li id="ada"><a href="ada/index.html">ADA</a></li>
 	        <li id="science"><a href="social_science/index.html">social science</a></li>
 					<li id="historical"><a href="historical/index.html">historical </a></li>
 					<li id="indigenous"><a href="indigenous/index.html">indigenous</a></li>
@@ -57,20 +58,8 @@
 					<li id="users"><a href="users/index.html">Usage Auditing</a></li>
 			  </ul>
 			</nav>
-
-			<% if current_user.has_role?(:administrator)%>
-				<table width=60%>
-					<% i = 0
-					for file in dashboard_partials %>
-						<%if i == 0 %> <tr> <% end %>
-							<td valign=top>
-								<%= render(:file => file) %>
-							</td>
-						<%if i == 1 %> </tr> <% end %>
-						<% i += 1 %>
-					<% end %>
-				</table>
-			<% end %>
+			
+			<%= yield %>
 </section>
         
 		<footer>

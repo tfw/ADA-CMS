@@ -1,3 +1,3 @@
 class Archive < ActiveRecord::Base
-  acts_as_inkling_type 'Archive'
+  acts_as_inkling 'Archive'
 end
