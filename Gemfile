@@ -10,7 +10,6 @@ gem "pg"
 gem "ruby-debug19", :group => [:test, :development]
 gem "devise", :git => "git://github.com/plataformatec/devise.git" 
 gem 'inkling', :path => '/Users/nicholas/code/src/tfw/inkling-project/inkling'
-gem 'glossy', :path => '/Users/nicholas/code/src/tfw/inkling-project/glossy'
 
 
 gem "rspec-rails", ">= 2.0.0.beta.8", :group => [:test, :development]
