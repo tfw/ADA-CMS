@@ -1,4 +1,4 @@
-class PagesController < Inkling::ContentController
+class PagesController < ContentController
   
   respond_to :html
   
