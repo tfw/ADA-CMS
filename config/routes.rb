@@ -6,7 +6,7 @@ Ada::Application.routes.draw do
     get "login", :to => "devise/sessions#new"
   end
   
-  constraints Inkling::Routing::ContentTypeConstraint.new(nil, "Page") do match '/*path' => "pages#show" end    
+  constraints Inkling::Routing::TypeConstraint.new("Page") do match '/*path' => "pages#show" end    
   
   namespace :staff do
     resources :pages
