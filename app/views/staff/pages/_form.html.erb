@@ -1,0 +1,23 @@
+_form
+
+<%= javascript_include_tag :ckeditor %>
+
+<% if resource.errors.any? %>
+    <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
+    <ul>
+    <% resource.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+<% end %>
+
+Path: <%= resource.path.slug unless resource.new_record? %>
+
+<% semantic_form_for([:staff, resource]) do |form| %>
+  <!-- <%= form.hidden_field :author_id, :value => current_user.id %> -->
+  <%= form.input :name %>
+  <%= form.cktext_area :body, :toolbar=>'Full', :width=>'80%', :height=>'200px' %>
+  <% form.buttons do %>
+    <%= form.commit_button %>
+  <% end %>
+<% end %>

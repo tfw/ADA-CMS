@@ -23,7 +23,5 @@ gem 'gemcutter', '>= 0.6.1'
 gem 'inherited_resources'
 gem 'rcov'
 gem 'cancan'
-gem 'formtastic', :git => "http://github.com/justinfrench/formtastic.git", :branch => "rails3"
+gem 'formtastic', '>= 1.1.0'
 gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
-
-# gem 'differ'
