@@ -6,7 +6,6 @@ gem "pg"
 gem "devise", :git => "git://github.com/plataformatec/devise.git" 
 gem 'inkling', :path => '/Users/nicholas/code/src/tfw/inkling-project/inkling'
 gem 'inherited_resources'
-gem 'rcov'
 gem 'cancan'
 gem 'formtastic', '>= 1.1.0'
 gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
@@ -23,6 +22,7 @@ group :development do
 	gem 'jeweler'
 	gem 'gemcutter', '>= 0.6.1'
 	gem "autotest"
+	gem 'steak', '>= 1.0.0.rc.1'
 end
 
 group :test do
@@ -36,5 +36,5 @@ group :test do
 	gem 'jeweler'
 	gem 'gemcutter', '>= 0.6.1'
 	gem "autotest"
+	gem 'steak', '>= 1.0.0.rc.1'
 end
-
