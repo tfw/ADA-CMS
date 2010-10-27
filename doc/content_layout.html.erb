@@ -11,7 +11,7 @@
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts' %>		
 	</head>
     
-    <body onLoad=" resizeTo(1050,1100);" id="default">
+    <body onLoad=" resizeTo(1050,1100);" id="<%= archive_css %>">
 		<header>
 			<div class="login">
 				<h1>USER Log-in </h1>
@@ -30,13 +30,13 @@
 		    <li><a href="ada/about.html">about</a></li>
 		    <li><a href="ada/archive.html">sub-archive</a>
 		      <ul>
-		        <li><a href="social_science/index.html">social science</a></li>
-		        <li><a href="historical/index.html">historical</a></li>
-		        <li><a href="indigenous/index.html">indigenous</a></li>
-		        <li><a href="longitudinal/index.html">longitudinal</a></li>
-		        <li><a href="qualitative/index.html">qualitative</a></li>
-		        <li><a href="international/index.html">international</a></li>
-	          </ul>
+		        <li> <%= link_to('social science', Archive::SOCIAL_SCIENCE.path.slug )%> </li>
+		        <li> <%= link_to('Historical', Archive::HISTORICAL.path.slug )%> </li>
+		        <li> <%= link_to('Indigenous', Archive::INDIGENOUS.path.slug )%> </li>
+		        <li> <%= link_to('Longitudinal', Archive::LONGITUDINAL.path.slug )%> </li>
+		        <li> <%= link_to('Qualitative', Archive::QUALITATIVE.path.slug )%> </li>
+		        <li> <%= link_to('International', Archive::INTERNATIONAL.path.slug )%> </li>
+          </ul>
 	        </li>
 		    <li> <a href="ada/access.html">data access</a>
 		      <ul>
@@ -86,13 +86,12 @@
         <section class="content">
 			<nav>
 				<ul>
-                <li id="science"><a href="social_science/index.html">social science</a></li>
-				<li id="historical"><a href="historical/index.html">historical </a></li>
-				<li id="indigenous"><a href="indigenous/index.html">indigenous</a></li>
-				<li id="longitudinal"><a href="longitudinal/index.html">longitudinal</a></li>
-				<li id="qualitative"><a href="qualitative/index.html">qualitative</a></li>
-				<li id="international"><a href="international/index.html">international</a>
-				</li>
+					<li id="science"> <%= link_to('social science', Archive::SOCIAL_SCIENCE.path.slug )%> </li>
+	        <li id="historical"> <%= link_to('Historical', Archive::HISTORICAL.path.slug )%> </li>
+	        <li id="indigenous"> <%= link_to('Indigenous', Archive::INDIGENOUS.path.slug )%> </li>
+	        <li id="longitudinal"> <%= link_to('Longitudinal', Archive::LONGITUDINAL.path.slug )%> </li>
+	        <li id="qualitative"> <%= link_to('Qualitative', Archive::QUALITATIVE.path.slug )%> </li>
+	        <li id="international"> <%= link_to('International', Archive::INTERNATIONAL.path.slug )%> </li>
 			  </ul>
 			</nav>
 

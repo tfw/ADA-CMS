@@ -5,11 +5,4 @@ class ApplicationController < ActionController::Base
   respond_to :html
 
   protect_from_forgery
-
-  before_filter :get_archives
-  
-  private  
-  def get_archives
-    @archives = Archive.all
-  end
 end
