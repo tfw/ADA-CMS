@@ -11,6 +11,7 @@ gem 'formtastic', '>= 1.1.0'
 gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
 
 
+
 group :development do
 	gem "ruby-debug19"
 	gem "rspec-rails", ">= 2.0.0.beta.8", :group => [:test, :development]
@@ -21,8 +22,6 @@ group :development do
 	gem 'launchy'    # So you can do Then show me the page
 	gem 'jeweler'
 	gem 'gemcutter', '>= 0.6.1'
-	gem "autotest"
-	gem 'steak', '>= 1.0.0.rc.1'
 end
 
 group :test do
@@ -32,9 +31,7 @@ group :test do
 	gem 'cucumber-rails'
 	gem 'cucumber', '>= 0.7.2'
 	gem 'spork'
-	gem 'launchy'    # So you can do Then show me the page
-	gem 'jeweler'
-	gem 'gemcutter', '>= 0.6.1'
 	gem "autotest"
 	gem 'steak', '>= 1.0.0.rc.1'
+	gem 'factory_girl'
 end
