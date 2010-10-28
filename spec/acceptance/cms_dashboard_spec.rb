@@ -7,11 +7,14 @@ feature "Cms Dashboard", %q{
 } do
 
   background do
-    user = Inkling::User.create!(:email => "admin@localhost.com", :password => "test123", :password_confirmation => "test123")
-    Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name(Inkling::Role::ADMIN))
-    
+    admin_user #creates an admin to login with
   end
-
+  
   scenario "login should go to dashboard" do
+    visit '/login'
+    fill_in('inkling_user_email', :with => admin_user.email)
+    fill_in('inkling_user_password', :with => 'test123')
+    click_button('Sign in')
+    page.should have_content('Administration')
   end
 end

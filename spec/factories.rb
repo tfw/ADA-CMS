@@ -18,36 +18,35 @@ Sham.display_from { (0..60).to_a.rand.days.ago }
 Sham.display_to   { (0..60).to_a.rand.days.since }
 Sham.keywords   { Faker::Lorem.sentence }
 
+Factory.define :user, :class => "Inkling::User" do |f|  
+  f.email Sham.email
+  f.password 'test123'
+  f.password_confirmation  'test123'
+end
 
-# Factory.define :user, :class => "Inkling::User" do |f|  
-#   f.email Sham.email
-#   f.password 'test123'
-#   f.password_confirmation  'test123'
-# end
-# 
-# Factory.define :role, :class => "Inkling::Role" do |f|
-#   f.association :name
-# end
-# 
-# Factory.define :role_membership, :class => "Inkling::RoleMembership" do |f|
-#   f.association :role
-#   f.association :user
-# end
-# 
-# Factory.define :admin_role, :parent => :role do |f|
-#   f.name Inkling::Role::ADMIN
-# end
-# 
-# Factory.define :admin_role_membership, :parent => :role_membership do |f|
-#   f.association :role, :factory => :admin_role
-#   f.association :user
-# end
-# 
-# 
-# def admin_user
-#   @admin_user = Factory(:user) if @admin_user.nil?
-#   role_membership = Factory(:admin_role_membership, :user => @admin_user)
-#   @admin_user
-# end
+Factory.define :role, :class => "Inkling::Role" do |f|
+  f.association :name
+end
+
+Factory.define :role_membership, :class => "Inkling::RoleMembership" do |f|
+  f.association :role
+  f.association :user
+end
+
+Factory.define :admin_role, :parent => :role do |f|
+  f.name Inkling::Role::ADMIN
+end
+
+Factory.define :admin_role_membership, :parent => :role_membership do |f|
+  f.association :role, :factory => :admin_role
+  f.association :user
+end
+
+
+def admin_user
+  @admin_user = Factory(:user) if @admin_user.nil?
+  role_membership = Factory(:admin_role_membership, :user => @admin_user)
+  @admin_user
+end
 
 
