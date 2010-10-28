@@ -9,6 +9,7 @@ feature "Cms Dashboard", %q{
   background do
     user = Inkling::User.create!(:email => "admin@localhost.com", :password => "test123", :password_confirmation => "test123")
     Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name(Inkling::Role::ADMIN))
+    
   end
 
   scenario "login should go to dashboard" do
