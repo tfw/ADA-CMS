@@ -6,6 +6,10 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
+if Inkling::Role.find_by_name("administrator").users.empty?
+  puts "Please run `rake inkling:init' first. \n\n"
+end
+
 #roles
 ["Manager", "Approver", "Archivist", "Member"].each do |role_name| 
   Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
@@ -17,9 +21,9 @@ end
 end
 
 #home pages
-ada_home_page = Page.create!(:name => 'home', :home_page => true, :body => "")
+ada_home_page = Page.create!(:name => 'home', :body => "", :author => Inkling::Role.find_by_name("administrator").users.first)
 
 for archive in Archive.all do
-  home_page = Page.create!(:archive_id => archive.id, :name => home, :home_page => true, :body => "")
+  home_page = Page.create!(:archive_id => archive.id, :name => archive.name, :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first)
 end
 

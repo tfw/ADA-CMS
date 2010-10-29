@@ -48,7 +48,7 @@ end
 
 Factory.define :page do |f|
   f.name Sham.name
-  f.association :author, :factory => :admin_user
+  f.author_id :factory => :admin_user
   f.archive Archive.social_science
 end
 

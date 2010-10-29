@@ -6,7 +6,8 @@ class CreatePages < ActiveRecord::Migration
       t.text :body
       t.text :breakout_box
       t.integer :parent_id
-      t.boolean :home_page
+      t.integer :archive_id
+      t.string :partial
       t.timestamps
     end
   end
