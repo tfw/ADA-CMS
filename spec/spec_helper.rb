@@ -25,4 +25,14 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+
+  config.before(:all) do
+    ["Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
+      Archive.create!(:name => archive_name) if Archive.find_by_name(archive_name).nil?
+    end  
+    
+    ["Manager", "Approver", "Archivist", "Member"].each do |role_name| 
+      Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
+    end
+  end
 end

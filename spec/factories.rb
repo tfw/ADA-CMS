@@ -19,7 +19,7 @@ Sham.display_to   { (0..60).to_a.rand.days.since }
 Sham.keywords   { Faker::Lorem.sentence }
 
 Factory.define :user, :class => "Inkling::User" do |f|  
-  f.email Sham.email
+  f.email {Factory.next :email}
   f.password 'test123'
   f.password_confirmation  'test123'
 end
@@ -42,11 +42,17 @@ Factory.define :admin_role_membership, :parent => :role_membership do |f|
   f.association :user
 end
 
-
-def admin_user
-  @admin_user = Factory(:user) if @admin_user.nil?
-  role_membership = Factory(:admin_role_membership, :user => @admin_user)
-  @admin_user
+Factory.define :admin_user, :parent => :user do |f|
+  f.role_memberships {|memberships| [memberships.association(:admin_role_membership)]}
 end
 
+Factory.define :page do |f|
+  f.name Sham.name
+  f.association :author, :factory => :admin_user
+  f.archive Archive.social_science
+end
+
+Factory.sequence :email do |n|
+  "person#{n}@anu.edu.au"
+end
 
