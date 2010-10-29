@@ -31,7 +31,7 @@ RSpec.configure do |config|
       Archive.create!(:name => archive_name) if Archive.find_by_name(archive_name).nil?
     end  
     
-    ["Manager", "Approver", "Archivist", "Member"].each do |role_name| 
+    ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end
   end

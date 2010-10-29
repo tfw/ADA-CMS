@@ -48,7 +48,7 @@ end
 
 Factory.define :page do |f|
   f.name Sham.name
-  f.author_id :factory => :admin_user
+  # f.author_id Inkling::Role.find_by_name("administrator").users.first.id
   f.archive Archive.social_science
 end
 
