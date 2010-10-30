@@ -1,4 +1,4 @@
-require 'capistrano/ext/multistage'
+# require 'capistrano/ext/multistage'
 
 set :application, "Australian Data Archives Website"
 set :repository,  "git@adar.unfuddle.com:adar/ada.git"
@@ -7,18 +7,18 @@ set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :deploy_via, :remote_cache
 
-role :web, "your web-server here"                          # Your HTTP server, Apache/etc
-role :app, "your app-server here"                          # This may be the same as your `Web` server
-role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
-role :db,  "your slave db-server here"
+role :web, "ada-staging"                          # Your HTTP server, Apache/etc
+role :app, "ada-staging"                          # This may be the same as your `Web` server
+role :db,  "ada-staging", :primary => true # This is where Rails migrations will run
 
 set :user,        "deploy"
 set :use_sudo,    true
-set :deploy_to,   "data"
+set :deploy_to,   "/data"
 
 ssh_options[:paranoid] = false
 ssh_options[:port] = 22
 ssh_options[:forward_agent] = true
+ssh_options[:compression] = false
 
 set :branch, "master"
 
@@ -38,3 +38,18 @@ set :branch, "master"
 # set(:branch) do
 #   Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
 # end
+
+namespace :bundler do
+  task :create_symlink, :roles => :app do
+    shared_dir = File.join(shared_path, 'bundle')
+    release_dir = File.join(current_release, '.bundle')
+    run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
+  end
+ 
+  task :bundle_new_release, :roles => :app do
+    bundler.create_symlink
+    run "cd #{release_path} && bundle install --without test"
+  end
+end
+ 
+after 'deploy:update_code', 'bundler:bundle_new_release'
