@@ -13,26 +13,26 @@ class Archive < ActiveRecord::Base
   INTERNATIONAL   = "International"
   
   def self.social_science    
-    Archive.find_by_name(SOCIAL_SCIENCE)
+    self.find_by_name(SOCIAL_SCIENCE)
   end
 
   def self.historical
-    Archive.find_by_name(HISTORICAL)
+    self.find_by_name(HISTORICAL)
   end  
 
   def self.indigenous
-    Archive.find_by_name(INDIGENOUS)
+    self.find_by_name(INDIGENOUS)
   end
   
   def self.longitudinal
-    Archive.find_by_name(LONGITUDINAL)
+    self.find_by_name(LONGITUDINAL)
   end
   
   def self.qualitative
-    Archive.find_by_name(QUALITATIVE)
+    self.find_by_name(QUALITATIVE)
   end
   
   def self.international
-    Archive.find_by_name(INTERNATIONAL)
+    self-.find_by_name(INTERNATIONAL)
   end
 end
