@@ -33,6 +33,6 @@ class Archive < ActiveRecord::Base
   end
   
   def self.international
-    self-.find_by_name(INTERNATIONAL)
+    self.find_by_name(INTERNATIONAL)
   end
 end

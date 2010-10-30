@@ -25,7 +25,7 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
-
+debugger
   config.before(:all) do
     ["Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
       Archive.create!(:name => archive_name) if Archive.find_by_name(archive_name).nil?

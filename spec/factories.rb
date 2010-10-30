@@ -49,7 +49,11 @@ end
 Factory.define :page do |f|
   f.name Sham.name
   # f.author_id Inkling::Role.find_by_name("administrator").users.first.id
-  f.archive Archive.social_science
+  f.association :archive, :factory => :archive 
+end
+
+Factory.define :archive do |f|
+  f.name Sham.name
 end
 
 Factory.sequence :email do |n|
