@@ -5,10 +5,10 @@ class Page < ActiveRecord::Base
   belongs_to :author, :class_name => "Inkling::User", :foreign_key => "user_id"
   
   validate :unique_archive_and_name_combination, :if => "self.archive"
-  validates_presence_of :author
+  validates_presence_of :author_id
     
   def unique_archive_and_name_combination
-    pre_existing = self.find_by_archive_id_and_name(self.archive.id, self.name)
+    pre_existing = Page.find_by_archive_id_and_name(self.archive.id, self.name)
     errors.add("There's a page already named #{self.name} in the #{self.archive.name} archive") if pre_existing and self.archive
   end
 end

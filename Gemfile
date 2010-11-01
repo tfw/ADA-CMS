@@ -23,6 +23,6 @@ group :development, :test do
 	gem 'gemcutter', '>= 0.6.1'
 	gem "autotest"
 	gem 'steak', '>= 1.0.0.rc.1'
-	gem 'factory_girl_rails'
 	gem 'faker'
+ 	gem 'machinist' , '= 1.0.6'
 end
