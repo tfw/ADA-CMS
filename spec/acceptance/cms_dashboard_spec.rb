@@ -7,12 +7,12 @@ feature "Cms Dashboard", %q{
 } do
 
   background do
-    admin_user #creates an admin to login with
+    @admin = make_admin #creates an admin to login with
   end
   
   scenario "login should go to dashboard" do
     visit '/login'
-    fill_in('inkling_user_email', :with => admin_user.email)
+    fill_in('inkling_user_email', :with => @admin.email)
     fill_in('inkling_user_password', :with => 'test123')
     click_button('Sign in')
     page.should have_content('Administration')
