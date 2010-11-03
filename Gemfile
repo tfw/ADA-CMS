@@ -25,4 +25,5 @@ group :development, :test do
 	gem 'steak', '>= 1.0.0.rc.1'
 	gem 'faker'
  	gem 'machinist' , '= 1.0.6'
+	gem 'database_cleaner'
 end

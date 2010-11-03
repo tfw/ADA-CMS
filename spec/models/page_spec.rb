@@ -3,12 +3,14 @@ require 'spec_helper'
 describe Page do
 
   describe "validations" do
-    # context "given a unique archive and page name" do
-    #   page = Page.make
-    #   page.errors.size.should == 0
-    # end
+    context "archive and page names" do
+      it "saves pages with unique archive and page name combos" do
+        page = Page.make
+        page.errors.size.should == 0
+      end
+    end
 
-    context "given a colliding archive and page name" do
+    it "rejects colliding archive and page name combo duplications" do
       page = Page.make
       page.errors.any?.should == false
     
@@ -18,7 +20,13 @@ describe Page do
     end
   end
   
-  # describe "parent and child pages" do
-  #   
-  # end
+  describe "parent and child pages" do
+    specify "parents know about children, children know about parents" do
+      parent = Page.make
+      child = Page.make(:parent => parent)
+      parent.children.size.should == 1
+      parent.children.first.should == child
+      child.parent.should == parent
+    end
+  end
 end

@@ -36,10 +36,19 @@ RSpec.configure do |config|
     end    
   end
   
-  # config.before(:each) do
-  #   puts "** #{Inkling::User.delete(Inkling::User.all)}"
-  # end
-  # 
   config.before(:all)    { Sham.reset(:before_all)  }
   config.before(:each)   { Sham.reset(:before_each) }
+
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
 end
