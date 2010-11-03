@@ -20,4 +20,8 @@ class ADAArchive
   def name
     "ADA"
   end
+  
+  def id
+    nil
+  end
 end
