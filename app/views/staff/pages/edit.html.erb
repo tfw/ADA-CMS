@@ -1,3 +1,5 @@
-edit
+<% content_for(:breadcrumbs) do %>
+	Pages: <%= @archive.name %> - Edit
+<% end %>
 
 <%= render(:partial => "form") %>

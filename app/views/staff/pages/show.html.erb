@@ -1,3 +1,7 @@
+<% content_for(:breadcrumbs) do %>
+	Pages: <%= @archive.name %> 
+<% end %>
+
 <%= @page.name %> 
 <p>
 <%= @page.body.html_safe %>
