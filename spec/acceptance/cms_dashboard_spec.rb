@@ -7,7 +7,7 @@ feature "Cms Dashboard", %q{
 } do
 
   background do
-    @admin = make_admin #creates an admin to login with
+    @admin = login_admin #creates an admin to login with
   end
   
   scenario "login should go to dashboard" do

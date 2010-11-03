@@ -38,13 +38,13 @@
     <nav class="subnav"> </nav>
         
 		<nav class="breadcrumbs">
-			<p><strong>YOU ARE HERE:</strong><a href="#"> home</a></p>
+			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
 		</nav>
 		
         <section class="content">
 			<nav>
 				<ul>
-	        <li id="ada"><a href="staff/archives/ada">ADA</a></li>
+	        <li id="ada"><a href="/staff/archives/ada">ADA</a></li>
 	        <li id="science"><a href="/staff/archives/social-science">social science</a></li>
 					<li id="historical"><a href="/staff/archives/historical">historical </a></li>
 					<li id="indigenous"><a href="/staff/archives/indigenous">indigenous</a></li>
