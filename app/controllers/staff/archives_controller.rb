@@ -1,9 +1,11 @@
 class Staff::ArchivesController < Inkling::BaseController
-  inherit_resources                                                                                     
-  defaults :resource_class => Archive, :instance_name => 'archive'
 
+  respond_to :html
   before_filter :get_archive
-  # before_filter :get_pages
+  
+  def show
+    respond_with @archive
+  end
 
   private
   def get_archive
