@@ -1,3 +1,4 @@
-<% content_for(:breadcrumbs) {@page.path }%>
-
+<% content_for(:breadcrumbs) do %>
+	<%= @page.path.slug %>
+<% end %>
 <%= @page.body.html_safe %>
