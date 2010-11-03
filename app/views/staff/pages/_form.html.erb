@@ -13,16 +13,21 @@
 
 <% semantic_form_for([:staff, resource]) do |form| %>
 	<%= form.hidden_field :author_id, :value => current_user.id %>
-	<table summary="page creation for archive or ADA" border=2 width = 100%>
+	<table summary="page creation for archive or ADA" border=0 width = 100%>
 		<tr>
-			<td><%= (@archive.nil? ? "ADA" : @archive.name)%> </td>
-			<td>Parent Page: <%= form.select %></td>
+			<td width=50%><%= (@archive.nil? ? "ADA" : @archive.name)%> </td>
+			<td width=50%><%= form.input :parent, :as => :select, :collection => @pages %></td>
 		</tr>
 		<tr>
 			<td colspan=2><%= form.input :name %></td>
 		</tr>
 		<tr>
+			<td> Author: <%= current_user.email %> </td>
+			<td> <%= form.input :partial, :as => :select, :collection => {"Default" => "default", "Home" => "home"}, :include_blank => false %></td></td>
+		</tr>
+		<tr>
 			<td colspan=2>
+				<br/>
 			  <%= form.cktext_area :body, :toolbar=>'Full', :width=>'80%', :height=>'200px' %>
 			  <% form.buttons do %>
 			    <%= form.commit_button %>

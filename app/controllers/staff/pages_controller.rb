@@ -12,12 +12,11 @@ class Staff::PagesController < Inkling::BaseController
   end
   
   def get_pages
-    @pages = []
-    top_pages = Page.find_by_archive_id_and_parent_id( (@archive.nil? ? nil : @archive.id) , nil)
+    @pages = Page.find_all_by_archive_id_and_parent_id( (@archive.nil? ? nil : @archive.id) , nil)
     
-    for parent_page in top_pages
-      child_pages = Page.find_by_parent_id(parent_page.id)
-      @pages << [parent_page, child_pages]
+    parent_pages = @pages.dup
+    for parent_page in @pages
+      @pages += parent_page.children
     end
   end
 end
