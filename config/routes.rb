@@ -7,9 +7,10 @@ Ada::Application.routes.draw do
   end
   
   constraints Inkling::Routing::TypeConstraint.new("Page") do match '/*path' => "pages#show" end    
-  constraints Inkling::Routing::TypeConstraint.new("Archive") do match '/*path' => "archives#show" end    
   
   namespace :staff do
     resources :pages
+    
+    match '/archives/:slug' => "archives#show", :as => "archives"
   end
 end

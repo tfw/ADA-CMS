@@ -2,9 +2,9 @@ class Archive < ActiveRecord::Base
   include Inkling::Slugs
   
   validates_presence_of :name
-  validates_uniqueness_of :name
+  validates :name, :slug, :presence => true
   
-  before_save :set_slug
+  before_validation :set_slug
   
   has_many :pages
 
