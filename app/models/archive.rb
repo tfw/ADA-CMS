@@ -1,7 +1,10 @@
 class Archive < ActiveRecord::Base
+  include Inkling::Slugs
   
   validates_presence_of :name
   validates_uniqueness_of :name
+  
+  before_save :set_slug
   
   has_many :pages
 
@@ -34,5 +37,9 @@ class Archive < ActiveRecord::Base
   
   def self.international
     self.find_by_name(INTERNATIONAL)
+  end
+  
+  def set_slug
+    self.slug = sluggerize(name)
   end
 end

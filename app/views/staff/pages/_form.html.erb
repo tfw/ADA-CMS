@@ -23,16 +23,24 @@
 		</tr>
 		<tr>
 			<td> Author: <%= current_user.email %> </td>
-			<td> <%= form.input :partial, :as => :select, :collection => {"Default" => "default", "Home" => "home"}, :include_blank => false %></td></td>
+			<td> <%= form.input :partial, :as => :select, :collection => {"Default" => "default", "Home" => "home"}, :include_blank => false, :label => "Template " %></td></td>
 		</tr>
 		<tr>
 			<td colspan=2>
 				<br/>
 			  <%= form.cktext_area :body, :toolbar=>'Full', :width=>'80%', :height=>'200px' %>
-			  <% form.buttons do %>
-			    <%= form.commit_button %>
-			  <% end %>				
 			</td>
+
+			<tr>
+				<td colspan=2>
+				  <% form.buttons do %>
+				    <%= form.commit_button %>
+			    <li class="button cancel"> 
+			      <a href="<%= request.path %>">Cancel</a> 
+			    </li>
+				  <% end %>				
+				</td>
+			</tr>
 		</tr>
 	</table>
 <% end %>
