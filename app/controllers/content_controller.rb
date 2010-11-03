@@ -1,8 +1,7 @@
 class ContentController < Inkling::ContentController  
   before_filter :get_archives
 
-  protected
-  
+  protected  
   def current_archive
     nil
   end

@@ -1,3 +1,7 @@
+<% content_for(:breadcrumbs) do %>
+	Home
+<% end %>
+
 <% if current_user.has_role?(:administrator)%>
 	<table width=60%>
 		<% i = 0

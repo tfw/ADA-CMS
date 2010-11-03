@@ -5,13 +5,12 @@
 		<title>- Australian Data Archive - <%= @page.name %></title>
 		<link rel="stylesheet" href="css/import.css" media="all"/>
 		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
-		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
     <%= stylesheet_link_tag :all %>
     <%= csrf_meta_tag %>
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts' %>		
 	</head>
     
-    <body onLoad=" resizeTo(1050,1100);" id="<%= archive_css %>">
+    <body onLoad=" resizeTo(1050,1100);" id="<%= archive_css(@page) %>">
 		<header>
 			<div class="login">
 				<h1>USER Log-in </h1>
@@ -30,12 +29,12 @@
 		    <li><a href="ada/about.html">about</a></li>
 		    <li><a href="ada/archive.html">sub-archive</a>
 		      <ul>
-		        <li> <%= link_to('social science', Archive::SOCIAL_SCIENCE.path.slug )%> </li>
-		        <li> <%= link_to('Historical', Archive::HISTORICAL.path.slug )%> </li>
-		        <li> <%= link_to('Indigenous', Archive::INDIGENOUS.path.slug )%> </li>
-		        <li> <%= link_to('Longitudinal', Archive::LONGITUDINAL.path.slug )%> </li>
-		        <li> <%= link_to('Qualitative', Archive::QUALITATIVE.path.slug )%> </li>
-		        <li> <%= link_to('International', Archive::INTERNATIONAL.path.slug )%> </li>
+		        <li> <%= link_to('social science', Archive.social_science.slug )%> </li>
+		        <li> <%= link_to('Historical', Archive.historical.slug )%> </li>
+		        <li> <%= link_to('Indigenous', Archive.indigenous.slug )%> </li>
+		        <li> <%= link_to('Longitudinal', Archive.longitudinal.slug )%> </li>
+		        <li> <%= link_to('Qualitative', Archive.qualitative.slug )%> </li>
+		        <li> <%= link_to('International', Archive.international.slug )%> </li>
           </ul>
 	        </li>
 		    <li> <a href="ada/access.html">data access</a>
@@ -80,20 +79,21 @@
     <nav class="subnav"> </nav>
         
 		<nav class="breadcrumbs">
-			<p><strong>YOU ARE HERE:</strong><a href="#"> home</a></p>
+			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
 		</nav>
 		
         <section class="content">
 			<nav>
 				<ul>
-					<li id="science"> <%= link_to('social science', Archive::SOCIAL_SCIENCE.path.slug )%> </li>
-	        <li id="historical"> <%= link_to('Historical', Archive::HISTORICAL.path.slug )%> </li>
-	        <li id="indigenous"> <%= link_to('Indigenous', Archive::INDIGENOUS.path.slug )%> </li>
-	        <li id="longitudinal"> <%= link_to('Longitudinal', Archive::LONGITUDINAL.path.slug )%> </li>
-	        <li id="qualitative"> <%= link_to('Qualitative', Archive::QUALITATIVE.path.slug )%> </li>
-	        <li id="international"> <%= link_to('International', Archive::INTERNATIONAL.path.slug )%> </li>
+					<li id="science"> <%= link_to('social science', Archive.social_science.slug )%> </li>
+	        <li id="historical"> <%= link_to('Historical', Archive.historical.slug )%> </li>
+	        <li id="indigenous"> <%= link_to('Indigenous', Archive.indigenous.slug )%> </li>
+	        <li id="longitudinal">  <%= link_to('Longitudinal', Archive.longitudinal.slug )%> </li>
+	        <li id="qualitative"> <%= link_to('Qualitative', Archive.qualitative.slug )%> </li>
+	        <li id="international">  <%= link_to('International', Archive.international.slug )%> </li>
 			  </ul>
 			</nav>
+      
 
 	<div class="notice"><%= notice %></div>
   <div class="alert"><%= alert %></div>

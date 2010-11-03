@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def archive_css
-    current_archive.nil? ? 'default' : current_archive.name
+  def archive_css(page)
+    page.archive.nil? ? 'default' : page.archive.name
   end
 end
