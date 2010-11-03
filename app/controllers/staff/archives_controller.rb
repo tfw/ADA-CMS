@@ -12,16 +12,4 @@ class Staff::ArchivesController < Inkling::BaseController
     @archive = Archive.find_by_slug(params[:slug]) if params[:slug]
     @archive ||= ADAArchive.new
   end
-
-end
-
-class ADAArchive
-  
-  def name
-    "ADA"
-  end
-  
-  def id
-    nil
-  end
 end
