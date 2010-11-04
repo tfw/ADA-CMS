@@ -1,3 +1,5 @@
+require 'ada_archive'
+
 class Staff::ArchivesController < Inkling::BaseController
 
   respond_to :html

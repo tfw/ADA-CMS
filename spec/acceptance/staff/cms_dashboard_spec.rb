@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/acceptance_helper'
+require File.dirname(__FILE__) + '/../acceptance_helper'
 
 feature "Cms Dashboard", %q{
   In order to use the cms dashboard
@@ -7,14 +7,11 @@ feature "Cms Dashboard", %q{
 } do
 
   background do
-    @admin = login_admin #creates an admin to login with
+    @admin = make_user(:administrator)
   end
   
   scenario "login should go to dashboard" do
-    visit '/login'
-    fill_in('inkling_user_email', :with => @admin.email)
-    fill_in('inkling_user_password', :with => 'test123')
-    click_button('Sign in')
+    sign_in(@admin)
     page.should have_content('Administration')
   end
 end

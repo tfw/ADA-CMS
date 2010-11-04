@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Staff::ArchivesController do
 
   before(:each) do
-    @admin = make_admin
+    @admin = make_user(:administrator)
     sign_in @admin
   end 
   

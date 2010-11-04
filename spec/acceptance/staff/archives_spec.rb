@@ -1,10 +1,10 @@
-require File.dirname(__FILE__) + '/acceptance_helper'
+require File.dirname(__FILE__) + '/../acceptance_helper'
 
 feature "The Archives" do
 
   background do
-    @admin = make_admin #creates an admin to login with
-    login(@admin)
+    @admin = make_user(:administrator) #creates an admin to login with
+    sign_in(@admin)
   end
   
   describe "serving archives from controller via slug" do
@@ -43,5 +43,4 @@ feature "The Archives" do
       page.should have_content("Archives: International")
     end
   end
-  
 end
