@@ -8,16 +8,15 @@ Ada::Application.initialize!
 class Inkling::Path < ActiveRecord::Base
   def update_slug!
     if self.parent
-      slug = "#{self.parent.slug}/"
+      self.slug = "#{self.parent.slug}/"
     else
       if self.content.archive
-        slug = "#{self.content.archive.slug}/"
+        self.slug = "#{self.content.archive.slug}/"
       else
         slug = "/"
       end
     end
     
-    slug += "#{self.content.title}"
-    self.slug = sluggerize(slug)
+    self.slug += sluggerize(self.content.title)
   end
 end
