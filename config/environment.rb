@@ -35,7 +35,7 @@ module Inkling
         self.slug = "#{self.parent.slug}/"
       else
         if self.content.archive
-          self.slug = "#{self.content.archive.slug}/"
+          self.slug = "/#{self.content.archive.slug}/"
         else
           self.slug = "/"
         end

@@ -34,7 +34,7 @@ describe Page do
   describe "belonging to an archive" do
     specify "pages which belong to archives take the archive name as a prefix, e.g. social-science/home" do
       parent = Page.make
-      parent.path.slug.should == "#{parent.archive.slug}/#{sluggerize(parent.title)}"
+      parent.path.slug.should == "/#{parent.archive.slug}/#{sluggerize(parent.title)}"
     end
   end
 end
