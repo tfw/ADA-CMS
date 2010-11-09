@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>- Australian Data Archive - <%= @page.name %></title>
+		<title>- Australian Data Archive - <%= @page.title %></title>
 		<link rel="stylesheet" href="css/import.css" media="all"/>
 		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
     <%= stylesheet_link_tag :all %>
     <%= csrf_meta_tag %>
-		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts' %>		
+		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery-1.4.3', 'jquery-ujs', 'jquery.effects.core', 'scripts' %>		
 	</head>
     
     <body onLoad=" resizeTo(1050,1100);" id="<%= archive_css(@page) %>">
@@ -26,11 +26,11 @@
 		<nav class="mainnav clearfix">
 		  <ul>
 				<% for page in @ada_parent_pages %>
-					<li> <%= link_to(page.name, page_path(page.path.slug) )%> 
+					<li> <%= link_to(page.title, page_path(page.path.slug) )%> 
 						<% if page.children.any? %>
 							<ul>
 									<% for child in page.children %>									
-										<li> <%= link_to(child.name, page_path(child.path.slug) )%> </li>
+										<li> <%= link_to(child.title, page_path(child.path.slug) )%> </li>
 									<% end %>
 							</ul
 						<% end %>
@@ -46,7 +46,7 @@
 	      </div>
     </nav>
 
-    <% if @page.archive.name != "ADA" %>
+    <% if @page.archive %>
 			<nav class="subnav">
 				<ul>
 					<li><p><%= @page.archive.name %></p></li>
@@ -56,7 +56,7 @@
 						<% else %>
 						<li>
 						<% end %>
-								 <%= link_to(page.name, page_path(page.path.slug) )%> </li>
+								 <%= link_to(page.title, page_path(page.path.slug) )%> </li>
 					<% end %>
 			  </ul>
 			</nav>

@@ -13,17 +13,24 @@
 
 <% semantic_form_for([:staff, resource]) do |form| %>
 	<%= form.hidden_field :author_id, :value => current_user.id %>
-	<table summary="page creation for archive or ADA" border=0 width = 100%>
+	<table summary="page creation for archive or ADA" border=1 width = 100%>
 		<tr>
-			<td width=50%><%= (@archive.nil? ? "ADA" : @archive.name)%> </td>
-			<td width=50%><%= form.input :parent, :as => :select, :collection => @pages %></td>
+			<td width=50%><%= form.input :title %></td> 
+			<td width=50%>Path: </td>
 		</tr>
 		<tr>
-			<td colspan=2><%= form.input :link %></td>
+			<td colspan=3>
+				<table width = 100%>
+					<tr>
+						<td width=33%><%= (@archive.nil? ? "ADA" : @archive.name)%> </td>
+						<td width=33><%= form.input :parent, :as => :select, :collection => @pages %></td>
+						<td width=33><%= form.input :partial, :as => :select, :collection => {"Default" => "default", "Home" => "home"}, :include_blank => false, :label => "Template " %></td>			
+					</tr>
+				</table>
+			</td>
 		</tr>
 		<tr>
-			<td> Author: <%= current_user.email %> </td>
-			<td> <%= form.input :partial, :as => :select, :collection => {"Default" => "default", "Home" => "home"}, :include_blank => false, :label => "Template " %></td></td>
+			<td colspan = 2> Author: (You) <%= current_user.email %> </td>
 		</tr>
 		<tr>
 			<td colspan=2>
