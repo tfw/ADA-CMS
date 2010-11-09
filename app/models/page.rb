@@ -6,12 +6,22 @@ class Page < ActiveRecord::Base
   belongs_to :parent, :class_name => "Page"
   has_many :children, :class_name => "Page", :foreign_key => "parent_id"
   
+  before_validation :link_title_defaults_to_title
+
   validate :unique_archive_and_link_combination, :if => "self.archive"
   validates_presence_of :author_id
+  validates_presence_of :link_title
+  
     
   def unique_archive_and_link_combination
     pre_existing = Page.find_by_archive_id_and_title(self.archive.id, self.title)
     errors.add(:name, "There's a page already named #{self.title} in the #{self.archive.name} archive.") if (pre_existing and self.archive)
     errors.add(:archive, "There's a page already named #{self.title} in the #{self.archive.name} archive.") if (pre_existing and self.archive)
+  end
+  
+  def link_title_defaults_to_title
+    if self.link_title.nil?
+      self.link_title = title
+    end
   end
 end
