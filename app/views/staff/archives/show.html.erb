@@ -2,4 +2,6 @@
 	Archives: <%= @archive.name %>
 <% end %>
 
+Pages: <%= @archive.pages.size %> <br/>
 <%= link_to "Add a page", new_staff_page_path(:archive_id => @archive.id) %> 
+

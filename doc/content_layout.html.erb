@@ -25,48 +25,18 @@
 	</header>
 		<nav class="mainnav clearfix">
 		  <ul>
-		    <li class="current"><a href="index.html" id="menufirst">ADA home</a></li>
-		    <li><a href="ada/about.html">about</a></li>
-		    <li><a href="ada/archive.html">sub-archive</a>
-		      <ul>
-		        <li> <%= link_to('social science', Archive.social_science.slug )%> </li>
-		        <li> <%= link_to('Historical', Archive.historical.slug )%> </li>
-		        <li> <%= link_to('Indigenous', Archive.indigenous.slug )%> </li>
-		        <li> <%= link_to('Longitudinal', Archive.longitudinal.slug )%> </li>
-		        <li> <%= link_to('Qualitative', Archive.qualitative.slug )%> </li>
-		        <li> <%= link_to('International', Archive.international.slug )%> </li>
-          </ul>
-	        </li>
-		    <li> <a href="ada/access.html">data access</a>
-		      <ul>
-		        <li><a href="#">ASSDA Data Catalogue</a></li>
-		        <li><a href="#">Search data </a></li>
-		        <li><a href="#">Register</a></li>
-		        <li><a href="#">Undertaking forms</a></li>
-	          </ul>
-	        </li>
-		    <li><a href="ada/deposit.html">data deposit</a>
-		      <ul>
-		        <li><a href="#">Why deposit data?</a></li>
-		        <li><a href="#">Sharing data and setting</a></li>
-		        <li><a href="#">conditions for access</a></li>
-		        <li><a href="#">How to deposit data</a></li>
-		        <li><a href="#">Deposit forms</a></li>
-	          </ul>
-	        </li>
-		    <li><a href="ada/guides.html">user guides</a></li>
-		    <li><a href="ada/news.html">ada news</a></li>
-		    <li><a href="ada/contact.html">contact</a></li>
-		    <li><a href="ada/account.html" id="menuLast">my account</a>
-		      <ul>
-		        <li><a href="#">Register</a></li>
-		        <li><a href="#">Account details</a></li>
-		        <li><a href="#">Edit details</a></li>
-		        <li><a href="#">change passwords</a></li>
-		        <li><a href="#">retrieve login</a> </li>
-	          </ul>
-	        </li>
-	      </ul>
+				<% for page in @ada_parent_pages %>
+					<li> <%= link_to(page.name, page_path(page.path.slug) )%> 
+						<% if page.children.any? %>
+							<ul>
+									<% for child in page.children %>									
+										<li> <%= link_to(child.name, page_path(child.path.slug) )%> </li>
+									<% end %>
+							</ul
+						<% end %>
+					</li>
+				<% end %>
+	     </ul>
 		  <div class="searchContainer">
 		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
 		      <label for="menusearch"></label>

@@ -8,4 +8,8 @@ class ADAArchive
   def id
     nil
   end
+  
+  def pages
+    Page.find_all_by_archive_id(nil)
+  end
 end
