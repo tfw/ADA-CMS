@@ -45,13 +45,27 @@
 	        </form>
 	      </div>
     </nav>
-        
-    <nav class="subnav"> </nav>
+
+    <% if @page.archive.name != "ADA" %>
+			<nav class="subnav">
+				<ul>
+					<li><p><%= @page.archive.name %></p></li>
+					<% for page in @page.archive.pages %>
+						<% if page == @page %>
+							<li id="indigenous_current">
+						<% else %>
+						<li>
+						<% end %>
+								 <%= link_to(page.name, page_path(page.path.slug) )%> </li>
+					<% end %>
+			  </ul>
+			</nav>
+		<% end %>
+
         
 		<nav class="breadcrumbs">
 			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
-		</nav>
-		
+		</nav>		
         <section class="content">
 			<nav>
 				<ul>
