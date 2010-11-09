@@ -4,7 +4,6 @@ class CreatePages < ActiveRecord::Migration
       t.string  :title, :null => false
       t.string  :link_title, :null => false
       t.text    :description
-      t.string  :link, :null => false
       t.integer :author_id, :null => false
       t.text    :body
       t.text    :breakout_box
