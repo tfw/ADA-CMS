@@ -9,45 +9,54 @@
     </ul>
 <% end %>
 
+<h1>
+  Archive: <%= (@archive.nil? ? "ADA" : @archive.name)%>
+</h1>
 
-Archive: <%= (@archive.nil? ? "ADA" : @archive.name)%> 
+<%= semantic_form_for([:staff, resource]) do |form| %>
 
-<% semantic_form_for([:staff, resource]) do |form| %>
-	<%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
-	<%= form.hidden_field :author_id, :value => current_user.id %>
-	<table summary="page creation for archive or ADA" border=0 width = 100%>
-		<tr>
-			<td width=50%><%= form.input :title %></td> 
-			<td width=50%>Path: </td>
-		</tr>
-		<tr>
-			<td><%= form.input :parent, :as => :select, :collection => @pages %></td>
-			<td><%= form.input :partial, :as => :select, :collection => {"Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"}, :include_blank => false, :label => "Template " %></td>			
-		</tr>
-		<tr>
-			<td colspan = 2> Author: (You) <%= current_user.email %> </td>
-		</tr>
-		<tr>
-			<td colspan=2>
-				Body:
-			  <%= form.cktext_area :body, :toolbar=>'Full', :width=>'80%', :height=>'200px' %>
-			</td>
-		<tr>
-			<td colspan=2>
-				Breakout Box:
-			  <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'80%', :height=>'200px' %>
-			</td>
-		<tr>
-			<td colspan=2>
-			  <% form.buttons do %>
-			    <%= form.commit_button %>
-		    <li class="button cancel"> 
-		      <a href="<%= request.path %>">Cancel</a> 
-		    </li>
-			  <% end %>				
-			</td>
-		</tr>
-	</table>
+  <%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
+  <%= form.hidden_field :author_id, :value => current_user.id %>
+
+  <%= form.inputs :id => "form_meta" do %>
+    <%= form.input :title %>
+    <%= form.input :parent, :as => :select, :collection => @pages %></td>
+
+    <li class="string optional">
+      <label for="page_author">Author</label>
+      <input id="page_author" maxlength="255" 
+             name="page[author]" size="50" 
+             type="text" value="<%= current_user.email %>" disabled="disabled" />
+    </li> 
+
+  <% end %>
+
+  <%= form.inputs :id => "form_layout" do %>
+
+    <li class="string optional">
+      <label for="page_path">Path</label>
+      <input id="page_path" maxlength="255" 
+             name="page[path]" size="50" 
+             type="text" value="..." disabled="disabled" />
+    </li> 
+
+    <%= form.input :partial, :as => :select, :collection => {
+      "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
+      }, :include_blank => false, :label => "Template " %>
+  <% end %>
+
+  <%= form.inputs :id => "form_content" do %>
+    <h3 style="margin-top:1em">Body:</h3>
+    <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
+    <h3 style="margin-top:1em">Breakout Box:</h3>
+    <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
+  <% end %>
+
+  <%= form.buttons %>
+
+  <!-- <% form.buttons do %>
+    <%= form.commit_button %>
+    <li class="button cancel"><a href="<%= request.path %>">Cancel</a></li>
+  <% end %>         -->
+
 <% end %>
-
-
