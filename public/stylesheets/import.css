@@ -1,13 +1,9 @@
-@charset "UTF-8";
-
-/* CSS Document */
-
 @import url("reset.css");
 @import url("common.css");
 @import url("structure.css");
 @import url("navigation.css");
 @import url("clearfix.css");
-@import url("formtastic.css");
-@import url("formtastic_changes.css");
 @import url("dropdown.css");
 @import url("colour.css");
+@import url("formtastic.css");
+@import url("formtastic_changes.css");
