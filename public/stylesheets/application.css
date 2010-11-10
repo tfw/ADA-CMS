@@ -1,0 +1,30 @@
+//CSS down by TFW, mainly for unobtrusive js
+//for the page tree
+
+button{
+  background: #fff;
+  border: solid 1px #000;
+  color: #000;
+}
+
+.tree-hover{
+  background: #fdd;
+}
+
+.tree-item{
+  padding: 2px;
+  list-style: none;
+}
+
+.tree-item span:hover{
+  background: #ddd;
+  cursor: pointer;
+}
+
+.tree-item span{
+  border-bottom: solid 1px #aaa;
+}
+
+form.tree-form {
+	display: inline;
+}

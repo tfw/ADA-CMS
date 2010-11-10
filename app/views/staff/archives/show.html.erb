@@ -14,20 +14,3 @@ Pages: <%= @archive.pages.size %> <br/>
   <%= render(:partial => "page", :collection => @parent_pages) %>
 </ul>
 
-
-
-<% content_for :js do %>
-  <% javascript_tag do %>
-
-    // shows the content form
-    function toggle_content_form(id){
-    content_form = document.getElementById("content-form-" + id)
-//    content_form = $("#content-form-" + id)
-
-    if (content_form.style.display == "none")
-      content_form.style.display = "block"
-    else
-      content_form.style.display = "none"
-    }
-  <% end %>
-<% end %>
