@@ -1,5 +1,5 @@
 <li id="<%= page.id %>" class="tree-item">
-  <span>**** <%= page.title %> *** </span>   <a href="#" >**** <%= page.title %> ***</a>
+  <span><%= page.title %></span>   <a href="#" >**** <%= page.title %> ***</a>
 
   <%= link_to 'Public View', page.path.slug %>, 
   <%= link_to 'Show', staff_page_path(page) %>, 
