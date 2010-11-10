@@ -30,11 +30,11 @@
 		<nav class="mainnav clearfix">
 		  <ul>
 				<% for page in @ada_parent_pages %>
-					<li> <%= link_to(page.title, page_path(page.path.slug) )%> 
+					<li> <%= link_to(page.title, page.path.slug) %> 
 						<% if page.children.any? %>
 							<ul>
 									<% for child in page.children %>									
-										<li> <%= link_to(child.title, page_path(child.path.slug) )%> </li>
+										<li> <%= link_to(child.title, child.path.slug)%> </li>
 									<% end %>
 							</ul
 						<% end %>
@@ -60,7 +60,8 @@
 						<% else %>
 						<li>
 						<% end %>
-								 <a href="<%= @page.path.slug %>"><%= page.title %> </li>
+						 	<%= link_to(page.title, page.path.slug )%>
+						</li>
 					<% end %>
 			  </ul>
 			<% end %>
