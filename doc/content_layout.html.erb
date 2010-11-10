@@ -60,7 +60,7 @@
 						<% else %>
 						<li>
 						<% end %>
-								 <%= link_to(page.title, page.path.slug )%> </li>
+								 <a href="<%= @page.path.slug %>"><%= page.title %> </li>
 					<% end %>
 			  </ul>
 			<% end %>
@@ -87,7 +87,8 @@
   <div class="alert"><%= alert %></div>
 			
 	<aside></aside>
-	<article> <%= yield %> </article>
+	<article>
+	<%= render(:partial => @page.partial, :object => @page) %> </article>
 </section>
         
 		<section class='partners'>

@@ -7,10 +7,12 @@ class Page < ActiveRecord::Base
   has_many :children, :class_name => "Page", :foreign_key => "parent_id"
   
   before_validation :link_title_defaults_to_title
+  before_validation :default_partial, :if => "self.partial.nil?"
 
   validate :unique_archive_and_link_combination, :if => "self.archive"
   validates_presence_of :author_id
   validates_presence_of :link_title
+  validates_presence_of :partial
   
     
   def unique_archive_and_link_combination
@@ -23,5 +25,9 @@ class Page < ActiveRecord::Base
     if self.link_title.nil?
       self.link_title = title
     end
+  end
+  
+  def default_partial
+    self.partial = "/pages/default_page"
   end
 end
