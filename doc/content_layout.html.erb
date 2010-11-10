@@ -46,8 +46,8 @@
 	      </div>
     </nav>
 
-    <% if @page.archive %>
-			<nav class="subnav">
+		<nav class="subnav">
+	    <% if @page.archive %>
 				<ul>
 					<li><p><%= @page.archive.name %></p></li>
 					<% for page in @page.archive.pages %>
@@ -59,8 +59,8 @@
 								 <%= link_to(page.title, page.path.slug )%> </li>
 					<% end %>
 			  </ul>
-			</nav>
-		<% end %>
+			<% end %>
+		</nav>
 
         
 		<nav class="breadcrumbs">
