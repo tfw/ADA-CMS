@@ -21,9 +21,9 @@ end
 end
 
 #home pages
-ada_home_page = Page.create!(:title => 'ADA Home', :body => "", :author_id => Inkling::Role.find_by_name("administrator").users.first.id)
+ada_home_page = Page.create!(:title => 'ADA Home', :body => "", :author_id => Inkling::Role.find_by_name("administrator").users.first.id, :partial => "/pages/home_page")
 
 for archive in Archive.all do
-  home_page = Page.create!(:archive_id => archive.id, :title => "home", :body => "", :author_id =>  Inkling::Role.find_by_name("administrator").users.first.id)
+  home_page = Page.create!(:archive_id => archive.id, :title => "home", :body => "", :author_id =>  Inkling::Role.find_by_name("administrator").users.first.id, :partial => "/pages/home_page")
 end
 
