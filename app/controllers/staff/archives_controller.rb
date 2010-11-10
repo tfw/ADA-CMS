@@ -17,6 +17,6 @@ class Staff::ArchivesController < Inkling::BaseController
   end
   
   def get_parent_pages
-    @parent_pages = Page.find_all_by_archive_id_and_parent_id(nil)
+    @parent_pages = Page.find_all_by_archive_id_and_parent_id(@archive.id, nil)
   end
 end

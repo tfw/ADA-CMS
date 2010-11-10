@@ -9,8 +9,10 @@ Ada::Application.routes.draw do
   match '/*path' => "pages#show", :as => :page, :constraints => Inkling::Routing::TypeConstraint.new("Page")
   
   namespace :staff do
-    resources :pages
-    
+    resources :pages      
+    namespace :pages do 
+      match 'update_tree' => '#update_tree', :as => :update_tree
+    end
     match '/archives/:slug' => "archives#show", :as => "archives"
   end
 end

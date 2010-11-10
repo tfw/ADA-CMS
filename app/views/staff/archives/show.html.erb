@@ -10,7 +10,7 @@ Pages: <%= @archive.pages.size %> <br/>
 
 <%= @parent_pages.size %>
 
-<ul id="tag-tree">
-  <%= render(:partial => "page", :collection => @parent_pages) %>
-</ul>
 
+<ul id="tag-tree">
+	<%= render(:partial => "page", :collection => @parent_pages) %>
+</ul>

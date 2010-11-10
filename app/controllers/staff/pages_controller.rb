@@ -4,7 +4,19 @@ class Staff::PagesController < Inkling::BaseController
   before_filter :get_archive
   before_filter :get_pages
 
-
+  def update_tree
+    new_parent_id = params[:new_parent]
+    child_id      = params[:child]
+    new_parent    = Page.find(new_parent_id)
+    child         = Page.find(child_id)
+    
+    child.parent_id = new_parent.id
+    
+    child.save! 
+    render :nothing => true
+    return
+  end
+  
   private
   def get_archive
     @archive = Archive.find(params[:archive_id]) if params[:archive_id]

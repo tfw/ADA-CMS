@@ -1,5 +1,5 @@
 <li id="<%= page.id %>" class="tree-item">
-  <span><a href class="drag"> <% if page.parent %> &nbsp; <% end %> <%= page.title %> </a></span> 
+  <span>**** <%= page.title %> *** </span>   <a href="#" >**** <%= page.title %> ***</a>
 
   <%= link_to 'Public View', page.path.slug %>, 
   <%= link_to 'Show', staff_page_path(page) %>, 
@@ -7,8 +7,9 @@
   <%= link_to 'Delete', staff_page_path(page), :method => :delete %> 
 
   <% if page.children %>
-    <ul>
-      <%= render(:partial => "page", :collection => page.children) %> 
-    </ul>
+	    <ul>
+	      <%= render(:partial => "page", :collection => page.children) %> 
+	    </ul>
   <% end %>
 </li>
+
