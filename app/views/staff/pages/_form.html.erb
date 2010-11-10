@@ -51,15 +51,3 @@ Archive: <%= (@archive.nil? ? "ADA" : @archive.name)%>
 <% end %>
 
 
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-Path: <%= resource.path.slug unless resource.new_record? %>
-
-<% if @archive %>
-	Archive: <%= @archive.name %>
-<% else %>
-ADA: 
-<% end %>
-
-Parent:
