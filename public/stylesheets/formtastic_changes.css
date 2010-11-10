@@ -36,3 +36,7 @@
 	margin: 0px;
 	padding: 0px;
 }
+
+form.formtastic ol li, form.formtastic ul li { list-style:none; }
+
+form.formtastic fieldset.buttons { margin-top: 2em; }
