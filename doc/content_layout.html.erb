@@ -7,7 +7,7 @@
 		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
     <%= stylesheet_link_tag :all %>
     <%= csrf_meta_tag %>
-		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery-1.4.3', 'jquery-ujs', 'jquery.effects.core', 'scripts' %>		
+		<%= javascript_include_tag :defaults, 'modernizr-1.5.min', 'jquery-1.4.3', 'jquery-ujs', 'jquery.effects.core', 'scripts' %>		
 	</head>
     
     <body onLoad=" resizeTo(1050,1100);" id="<%= archive_css(@page) %>">
@@ -18,7 +18,7 @@
 					
 					<input type="text" name="textfield" id="login_name"/>
 					<input type="text" name="login_pass" id="login_pass"/>
-					<input type="image" alt="Log In" name="imageField" id="enter_button" src="images/structure/bttn_enter.png"/>
+					<input type="image" alt="Log In" name="imageField" id="enter_button" src="/images/structure/bttn_enter.png"/>
 				</form>
 			</div>
 			<div class="masthead"><a href="../index.html">Australian Data Archive</a></div>
@@ -41,7 +41,7 @@
 		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
 		      <label for="menusearch"></label>
 		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
-		      <input type="image" alt="Go" name="imageField" id="search_button" src="images/structure/bttn_go.png"/>
+		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
 	        </form>
 	      </div>
     </nav>
@@ -52,11 +52,11 @@
 					<li><p><%= @page.archive.name %></p></li>
 					<% for page in @page.archive.pages %>
 						<% if page == @page %>
-							<li id="indigenous_current">
+							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
 						<% else %>
 						<li>
 						<% end %>
-								 <%= link_to(page.title, page_path(page.path.slug) )%> </li>
+								 <%= link_to(page.title, page.path.slug )%> </li>
 					<% end %>
 			  </ul>
 			</nav>
@@ -69,12 +69,12 @@
         <section class="content">
 			<nav>
 				<ul>
-					<li id="science"> <%= link_to('social science', Archive.social_science.slug )%> </li>
-	        <li id="historical"> <%= link_to('Historical', Archive.historical.slug )%> </li>
-	        <li id="indigenous"> <%= link_to('Indigenous', Archive.indigenous.slug )%> </li>
-	        <li id="longitudinal">  <%= link_to('Longitudinal', Archive.longitudinal.slug )%> </li>
-	        <li id="qualitative"> <%= link_to('Qualitative', Archive.qualitative.slug )%> </li>
-	        <li id="international">  <%= link_to('International', Archive.international.slug )%> </li>
+					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
+	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
+	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
+	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
+	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
+	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
 			  </ul>
 			</nav>
       
@@ -93,13 +93,13 @@
 		  </div>
 			
             <div class="logos">
-				<img src="images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
-				<img src="images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
-				<img src="images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>
-				<img src="images/content/logo_uwa.gif" width="114" height="56" alt="logo_uwa"/>
-				<img src="images/content/logo_uts.gif" width="110" height="56" alt="logo_uts"/>
-				<img src="images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
-				<img src="images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
+				<img src="/images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
+				<img src="/images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
+				<img src="/images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>
+				<img src="/images/content/logo_uwa.gif" width="114" height="56" alt="logo_uwa"/>
+				<img src="/images/content/logo_uts.gif" width="110" height="56" alt="logo_uts"/>
+				<img src="/images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
+				<img src="/images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
 			</div>
 		</section>
 		<footer>
