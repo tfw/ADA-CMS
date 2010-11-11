@@ -31,3 +31,5 @@ class Page < ActiveRecord::Base
     self.partial = "/pages/default_page"
   end
 end
+
+
