@@ -27,3 +27,17 @@ for archive in Archive.all do
   home_page = Page.create!(:archive_id => archive.id, :title => "home", :body => "", :author_id =>  Inkling::Role.find_by_name("administrator").users.first.id, :partial => "/pages/home_page")
 end
 
+#steve's account
+unless Inkling::User.find_by_email("steven.mceachern@anu.edu.au")
+  user = Inkling::User.create!(:email => "steven.mceachern@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+
+  user = Inkling::User.create!(:email => "deborah.mitchell@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+
+  user = Inkling::User.create!(:email => "ben.evans@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+
+  user = Inkling::User.create!(:email => "paul.kuske@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+end
