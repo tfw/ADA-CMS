@@ -5,7 +5,7 @@ gem 'rails', '3.0.0'
 
 gem "pg"
 gem "devise", :git => "git://github.com/plataformatec/devise.git" 
-gem 'inkling',  :path => '/Users/nicholas/code/src/tfw/inkling-project/inkling' # ,'>= 0.0.3'
+gem 'inkling', :git => "git://github.com/biv/inkling.git" 
 gem 'inherited_resources'
 gem 'cancan'
 gem 'formtastic', '>= 1.1.0'
