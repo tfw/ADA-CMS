@@ -1,4 +1,5 @@
 # require 'capistrano/ext/multistage'
+require 'bundler/capistrano'
 
 set :application, "Australian Data Archives Website"
 set :repository,  "git@adar.unfuddle.com:adar/ada.git"
@@ -15,12 +16,16 @@ set :user,        "deploy"
 set :use_sudo,    true
 set :deploy_to,   "/data"
 
+default_run_options[:pty] = true
+default_run_options[:tty] = true
+
 ssh_options[:paranoid] = false
 ssh_options[:port] = 22
 ssh_options[:forward_agent] = true
 ssh_options[:compression] = false
 
 set :branch, "master"
+set :rails_env, "staging"
 
 
 # If you are using Passenger mod_rails uncomment this:
