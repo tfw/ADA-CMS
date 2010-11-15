@@ -56,8 +56,16 @@ namespace :bundler do
     run "cd #{release_path} && bundle install --without test"
   end
 end
+
+desc "generate a new database.yml"
+task :generate_database_yml, :roles => :app do
+  
+  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgresql'}}
+  put YAML::dump(buffer), "#{current_path}/config/database.yml", :mode => 0664
+end
  
 after 'deploy:update_code', 'bundler:bundle_new_release'
+after 'deploy:update', :generate_database_yml
 before 'deploy:update_code', :echo_ruby_version
 
 task :echo_ruby_version do
