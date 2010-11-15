@@ -1,5 +1,4 @@
-# require 'capistrano/ext/multistage'
-require 'bundler/capistrano'
+require 'bundler/capistrano' #use bundler's support for capistrano to make it easy
 
 set :application, "Australian Data Archives Website"
 set :repository,  "git@adar.unfuddle.com:adar/ada.git"
@@ -40,10 +39,9 @@ namespace :deploy do
   end
 end
 
-# set(:branch) do
-#   Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
-# end
-
+set(:branch) do
+  Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
+end
 
 desc "generate a new database.yml"
 task :generate_database_yml, :roles => :app do
@@ -51,8 +49,7 @@ task :generate_database_yml, :roles => :app do
   buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgres', :password => 'test123', :encoding => 'unicode'}}
   put YAML::dump(buffer), "#{current_path}/config/database.yml", :mode => 0664
 end
-#  
-# after 'deploy:update_code', 'bundler:bundle_new_release'
+
 after 'deploy:update', :generate_database_yml
 before 'deploy:update_code', :echo_ruby_env
 
