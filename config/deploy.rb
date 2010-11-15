@@ -58,3 +58,9 @@ namespace :bundler do
 end
  
 after 'deploy:update_code', 'bundler:bundle_new_release'
+before 'deploy:update_code', :echo_ruby_version
+
+task :echo_ruby_version do
+  puts "Checking ruby version ..."
+  run "ruby -v"
+end
