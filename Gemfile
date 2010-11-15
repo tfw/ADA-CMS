@@ -4,6 +4,7 @@ source :gemcutter
 gem 'rails', '3.0.0'
 
 gem "pg"
+gem 'inkling', '>= 0.0.3'
 gem "devise", :git => "git://github.com/plataformatec/devise.git" 
 gem 'inherited_resources'
 gem 'cancan'
@@ -26,15 +27,4 @@ group :development, :test do
  	gem 'machinist' , '= 1.0.6'
 	gem 'database_cleaner'
 	gem 'capistrano'
-	
-	if ENV['RAILS_ENV'] != "staging"  #a necessary workaround to a bundler limitation: 
-																		#see http://www.cowboycoded.com/2010/08/10/using-2-sources-for-a-gem-in-different-environments-with-bundler/
-			gem 'inkling' # :git => "git://github.com/biv/inkling.git" 
-	end
-end
-
-if ENV['RAILS_ENV'] == "staging"
-	group :staging do
-		gem 'inkling', :path => '/home/deploy/inkling'
-	end
 end
