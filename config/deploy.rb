@@ -32,30 +32,18 @@ set :rails_env, "staging"
 # if you're still using the script/reapear helper you will need
 # these http://github.com/rails/irs_process_scripts
 
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+end
 
 # set(:branch) do
 #   Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
 # end
 
-namespace :bundler do
-  task :create_symlink, :roles => :app do
-    shared_dir = File.join(shared_path, 'bundle')
-    release_dir = File.join(current_release, '.bundle')
-    run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
-  end
- 
-  task :bundle_new_release, :roles => :app do
-    bundler.create_symlink
-    run "cd #{release_path} && bundle install --without test"
-  end
-end
 
 desc "generate a new database.yml"
 task :generate_database_yml, :roles => :app do
@@ -63,12 +51,13 @@ task :generate_database_yml, :roles => :app do
   buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgresql'}}
   put YAML::dump(buffer), "#{current_path}/config/database.yml", :mode => 0664
 end
- 
-after 'deploy:update_code', 'bundler:bundle_new_release'
+#  
+# after 'deploy:update_code', 'bundler:bundle_new_release'
 after 'deploy:update', :generate_database_yml
-before 'deploy:update_code', :echo_ruby_version
+before 'deploy:update_code', :echo_ruby_env
 
-task :echo_ruby_version do
-  puts "Checking ruby version ..."
+task :echo_ruby_env do
+  puts "Checking ruby env ..."
   run "ruby -v"
+  run "export RAILS_ENV='#{rails_env}'"
 end
