@@ -215,7 +215,7 @@ DEPENDENCIES
   formtastic (>= 1.1.0)
   gemcutter (>= 0.6.1)
   inherited_resources
-  inkling (>= 0.0.3)
+  inkling (>= 0.0.3a)
   jeweler
   launchy
   machinist (= 1.0.6)
