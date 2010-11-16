@@ -11,8 +11,9 @@ gem 'cancan'
 gem 'formtastic', '>= 1.1.0'
 gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
 
+gem "ruby-debug19" #move this into dev group alone later
+
 group :development, :test do
-	gem "ruby-debug19"
 	gem "rspec-rails", ">= 2.0.0.beta.8", :group => [:test, :development]
 	gem 'capybara'
 	gem 'cucumber-rails'
