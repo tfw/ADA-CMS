@@ -24,7 +24,7 @@ ssh_options[:forward_agent] = true
 ssh_options[:compression] = false
 
 set :branch, "master"
-set :rails_env, "staging"
+set :rails_env, "production"
 
 
 # If you are using Passenger mod_rails uncomment this:
