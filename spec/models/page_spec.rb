@@ -10,7 +10,7 @@ describe Page do
         page.errors.size.should == 0
       end
     end
-
+  
     it "rejects colliding archive and page name combo duplications" do
       page = Page.make
       page.errors.any?.should == false

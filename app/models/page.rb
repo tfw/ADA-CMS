@@ -16,12 +16,13 @@ class Page < ActiveRecord::Base
   
     
   def unique_archive_and_link_combination
-    pre_existing_pages = Page.find_all_by_archive_id_and_title(self.archive.id, self.title)
+    pre_existing = Page.find_all_by_archive_id_and_title(self.archive.id, self.title)
     
-    if (pre_existing_pages.size > 0 or pre_existing_pages.first != self) and self.archive
-      errors.add(:name, "There's a page already named #{self.title} in the #{self.archive.name} archive.") 
-      errors.add(:archive, "There's a page already named #{self.title} in the #{self.archive.name} archive.")  
-    end
+    return if pre_existing.size == 0
+    return if pre_existing.size == 1 and pre_existing[0].id == self.id 
+
+    errors.add(:name, "There's a page already named #{self.title} in the #{self.archive.name} archive.") if pre_existing and self.archive
+    errors.add(:archive, "There's a page already named #{self.title} in the #{self.archive.name} archive.")  if pre_existing and self.archive
   end
   
   def link_title_defaults_to_title
