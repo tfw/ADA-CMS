@@ -1,5 +1,11 @@
 <%= javascript_include_tag :ckeditor %>
 
+<% content_for :js do %>
+	$("#page_title_input").change(function(event){
+		alert("!")
+	});
+<% end %>
+
 <% if resource.errors.any? %>
     <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
     <ul>
@@ -53,10 +59,6 @@
   <% end %>
 
   <%= form.buttons %>
-
-  <!-- <% form.buttons do %>
-    <%= form.commit_button %>
-    <li class="button cancel"><a href="<%= request.path %>">Cancel</a></li>
-  <% end %>         -->
-
 <% end %>
+
+

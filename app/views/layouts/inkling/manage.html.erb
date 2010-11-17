@@ -8,6 +8,10 @@
     <%= stylesheet_link_tag "import" %>
     <%= csrf_meta_tag %>
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts', 'application' %>		
+		
+		<script type="text/javascript">
+			<%= yield :js %>
+		</script>
 	</head>
     
     <body id="default">
