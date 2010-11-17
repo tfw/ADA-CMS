@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 source :gemcutter
 
-gem 'rails', '3.0.2'
+gem 'rails', '3.0.3'
 
 gem "pg"
 gem 'inkling', '>= 0.0.4'
@@ -14,7 +14,7 @@ gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch
 gem "ruby-debug19" #move this into dev group alone later
 
 group :development, :test do
-	gem "rspec-rails", ">= 2.0.0.beta.8", :group => [:test, :development]
+	gem "rspec-rails", "= 2.0.1", :group => [:test, :development]
 	gem 'capybara'
 	gem 'cucumber-rails'
 	gem 'cucumber', '>= 0.7.2'
