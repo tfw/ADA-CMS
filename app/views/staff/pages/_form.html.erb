@@ -1,9 +1,18 @@
 <%= javascript_include_tag :ckeditor %>
 
 <% content_for :js do %>
-	$("#page_title_input").change(function(event){
-		alert("!")
+
+	$("#page_title").change(function(event){
+		text = $(this).val()
+			
+		$.post("/staff/pages/sluggerize_path", {title: text}, 
+				function(slug){
+					$("#page_path").html(slug.data)
+				}
+			);
+
 	});
+	
 <% end %>
 
 <% if resource.errors.any? %>
@@ -41,9 +50,7 @@
 
     <li class="string optional">
       <label for="page_path">Path</label>
-      <input id="page_path" maxlength="255" 
-             name="page[path]" size="50" 
-             type="text" value="..." disabled="disabled" />
+      <div id="page_path"></id>
     </li> 
 
     <%= form.input :partial, :as => :select, :collection => {

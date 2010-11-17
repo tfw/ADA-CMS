@@ -1,9 +1,13 @@
 require 'ada_archive'
 class Staff::PagesController < Inkling::BaseController
+  include Inkling::Slugs
+  
   inherit_resources                                                                                     
   defaults :resource_class => Page, :instance_name => 'page'
   before_filter :get_archive
   before_filter :get_pages
+
+  respond_to :json, :only => :sluggerize_path
 
   def update_tree
     new_parent_id = params[:new_parent]
@@ -16,6 +20,10 @@ class Staff::PagesController < Inkling::BaseController
     child.save! 
     render :nothing => true
     return
+  end
+
+  def sluggerize_path
+    render :json => {:success => true, :data => sluggerize(params[:title])}
   end
   
   private
