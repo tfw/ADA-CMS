@@ -9,9 +9,7 @@ gem install bundler
 INSTALL
 
 bundle install
-rake inkling:bootstrap
-rake db:migrate
-rake db:seed
+rake ada:rebuild
 
 
 

@@ -43,7 +43,7 @@ feature "The Archives" do
       
       visit_sub_archive(archive)
       confirm_text_in_breadcrumb(breadcrumb)
-      
+      # debugger
       sign_out
     end
   end
