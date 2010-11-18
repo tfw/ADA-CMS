@@ -36,6 +36,11 @@ class Staff::PagesController < Inkling::BaseController
     render :json => json_hash
   end
   
+  def preview
+    @page = Page.new(:params[:staff_page])
+    render(:template => '/pages/show', :layout => 'content')
+  end
+  
   private
   def get_archive
     @archive = Archive.find(params[:archive_id]) if params[:archive_id]

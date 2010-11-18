@@ -4,7 +4,7 @@ source :gemcutter
 gem 'rails', '3.0.3'
 
 gem "pg"
-gem 'inkling', '>= 0.0.4'
+gem 'inkling', '>= 0.0.5'
 gem "devise", :git => "git://github.com/plataformatec/devise.git" 
 gem 'inherited_resources'
 gem 'cancan'

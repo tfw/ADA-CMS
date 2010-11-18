@@ -46,6 +46,7 @@ end
 
 Page.blueprint do 
   title Sham.name
+  author {(Inkling::User.make)}
   author_id {(Inkling::User.make).id}
   archive {Archive.make}
   link_title Sham.title

@@ -10,7 +10,7 @@ class Page < ActiveRecord::Base
   before_validation :default_partial, :if => "self.partial.nil?"
 
   validate :unique_archive_and_link_combination, :if => "self.archive"
-  validates_presence_of :author_id
+  validates_presence_of :author
   validates_presence_of :link_title
   validates_presence_of :partial
   

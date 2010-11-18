@@ -7,7 +7,11 @@ Ada::Application.routes.draw do
   end
   
   namespace :staff do
-    resources :pages 
+    resources :pages do
+      member do
+        get :preview
+      end
+    end
     post 'pages/sluggerize_path'
     
     
