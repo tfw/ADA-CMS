@@ -8,7 +8,7 @@ Ada::Application.routes.draw do
   
   
   namespace :staff do
-    resources :inkling_activity_log, :only => :index
+    resources :activity_logs, :only => :index
     resources :pages do
       member do
         get :preview

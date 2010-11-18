@@ -2,14 +2,19 @@
 	Home
 <% end %>
 
-<% content_for(:js) do %>
-alert("boo");
-  <!-- setInterval(boo(), 5000);
+<script type="text/javascript">
 
-  function boo() {
-		alert("boo"); -->
-	}
-<% end %>
+	function test(){
+		$.get("/staff/activity_logs", 
+				function(logs){
+					$("#log").html(logs)
+				}
+			);
+	};
+
+setInterval("test();", 5000);
+
+</script>
 
 <% if current_user.has_role?(:administrator)%>
 	<table width=60%>
@@ -27,4 +32,6 @@ alert("boo");
 
 
 <h2>Activity Log</h2>
+<div id="log">
 
+</div>

@@ -1,0 +1,3 @@
+<% for log in @logs%>
+<%= time_ago_in_words(log.created_at) %> :	<%= log.text.html_safe%> <br/>
+<% end %>
