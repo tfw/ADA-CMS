@@ -2,6 +2,16 @@
 	Home
 <% end %>
 
+<% content_for(:js) do %>
+	$(function() {
+
+	  var timer = setInterval( boo, 100);
+
+	  function boo() {
+			alert("boo");
+	  }
+<% end %>
+
 <% if current_user.has_role?(:administrator)%>
 	<table width=60%>
 		<% i = 0
