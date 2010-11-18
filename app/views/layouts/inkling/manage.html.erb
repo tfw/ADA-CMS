@@ -7,15 +7,15 @@
     <%= stylesheet_link_tag "import" %>
     <%= csrf_meta_tag %>
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts', 'application', 'rails' %>		
-		
+	</head>
+    
+    <body id="default">
 		<script type="text/javascript">
 			 $(document).ready(function(){
 				<%= yield :js %>
 			});
 		</script>
-	</head>
-    
-    <body id="default">
+			
 		<header>
 			<div class="login">
 				Name: <%= current_user.email %> <br/>

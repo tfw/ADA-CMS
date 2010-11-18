@@ -3,13 +3,12 @@
 <% end %>
 
 <% content_for(:js) do %>
-	$(function() {
+alert("boo");
+  <!-- setInterval(boo(), 5000);
 
-	  var timer = setInterval( boo, 100);
-
-	  function boo() {
-			alert("boo");
-	  }
+  function boo() {
+		alert("boo"); -->
+	}
 <% end %>
 
 <% if current_user.has_role?(:administrator)%>
