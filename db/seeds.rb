@@ -24,7 +24,7 @@ end
 ada_home_page = Page.create!(:title => 'ADA Home', :body => "", :author => Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page")
 
 for archive in Archive.all do
-  home_page = Page.create!(:archive_id => archive.id, :title => "home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page")
+  home_page = Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page")
 end
 
 #steve's account

@@ -103,11 +103,17 @@ GEM
     inherited_resources (1.1.2)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
-    inkling (0.0.5)
+    inkling (0.0.8)
       cancan
       devise
+      devise
       formtastic
+      formtastic
+      gemcutter (>= 0.6.1)
       inherited_resources
+      inherited_resources
+      jeweler
+      rails (>= 3.0.0)
       rails
     jeweler (1.5.1)
       bundler (~> 1.0.0)
@@ -216,7 +222,7 @@ DEPENDENCIES
   formtastic (>= 1.1.0)
   gemcutter (>= 0.6.1)
   inherited_resources
-  inkling (>= 0.0.5)
+  inkling (>= 0.0.8)
   jeweler
   launchy
   machinist (= 1.0.6)
