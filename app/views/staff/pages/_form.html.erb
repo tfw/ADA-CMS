@@ -13,8 +13,8 @@
 			);
 	});
 	
-	$("#page_partial").change(function(event){
-		current_partial = $("#page_partial").val();
+	$("input:radio[name=page[partial]]").change(function(event){
+		current_partial = $("input:radio[name=page[partial]]:checked").val();
 		if (current_partial === "/pages/breakout_page") {
 			$("#breakout").show();
 		}
@@ -63,7 +63,7 @@
       <div id="page_path"></div>
     </li> 
 		<li>
-		   <%= form.input :partial, :as => :select, :collection => {
+		   <%= form.input :partial, :as => :radio, :collection => {
 		     "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
 		     }, :include_blank => false, :label => "Template " %>
 		 		<% end %>
