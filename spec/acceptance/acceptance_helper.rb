@@ -15,6 +15,5 @@ def sign_in(user)
 end
 
 def sign_out
-  # visit '/inkling/users/sign_out'
-  visit '/logout'
+  visit '/inkling/users/sign_out'
 end

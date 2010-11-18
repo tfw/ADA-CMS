@@ -50,6 +50,7 @@ Page.blueprint do
   archive {Archive.make}
   link_title Sham.title
   description Sham.description
+  body Sham.body
 end
 
 Archive.blueprint do 

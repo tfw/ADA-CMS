@@ -40,7 +40,7 @@ module Inkling
           self.slug = "/"
         end
       end
-    
+
       self.slug += sluggerize(self.content.title)
     end
 

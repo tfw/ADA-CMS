@@ -26,6 +26,8 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
+  # config.before(:all)    { Sham.reset(:before_all)  }
+
   config.before(:all) do
     ["Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
       Archive.create!(:name => archive_name) if Archive.find_by_name(archive_name).nil?
@@ -35,17 +37,23 @@ RSpec.configure do |config|
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    
   end
-  
-  config.before(:all)    { Sham.reset(:before_all)  }
-  config.before(:each)   { Sham.reset(:before_each) }
 
+  config.before(:each) do
+    Sham.reset(:before_each) 
+    DatabaseCleaner.start
+  end
+
+  config.before(:each, :type => :acceptance) do
+    #make ADA Home, so when tests log out they have somewhere to go (the root path)
+    Page.make(:title => "ADA Home", :archive => nil) 
+
+    # #install the content theme, as we have to test front end presentation
+    # theme = 
+  end
+  
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
-  end
-
-  config.before(:each) do
-    DatabaseCleaner.start
   end
 
   config.after(:each) do
