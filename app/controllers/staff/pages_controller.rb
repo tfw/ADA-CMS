@@ -8,6 +8,18 @@ class Staff::PagesController < Inkling::BaseController
   before_filter :get_pages
 
   respond_to :json, :only => :sluggerize_path
+  
+  def create
+    create! do |format|   
+      format.html {redirect_to staff_archives_path(@page.archive)} 
+    end
+  end
+
+  def update
+    update! do |format|   
+      format.html { redirect_to staff_archives_path(@page.archive) }
+    end
+  end
 
   def update_tree
     new_parent_id = params[:new_parent]

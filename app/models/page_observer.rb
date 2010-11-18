@@ -1,5 +1,7 @@
 class PageObserver < ActiveRecord::Observer
-
+   # include ActionController::UrlFor
+   include Rails.application.routes.url_helpers
+   
   def after_create(page)
     log("created", page)
   end
@@ -14,6 +16,7 @@ class PageObserver < ActiveRecord::Observer
   
   private
   def log(verb, page)
-    Inkling::Log.create!(:text => "#{page.author.email} #{verb} page #{page.title}")
+    puts " **** #{url_for page.title} \n\n"
+    Inkling::Log.create!(:text => "#{page.author.email} #{verb} page #{url_for page.title}")
   end
 end
