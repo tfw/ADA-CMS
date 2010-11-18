@@ -10,7 +10,7 @@
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
 	</head
 			
-    <body onLoad=" resizeTo(1050,1100);" id="<%= archive_css(@page) %>">
+    <body id="<%= archive_css(@page) %>">
 		<header>
 			<div class="login">
 				<% if current_user.nil? %>

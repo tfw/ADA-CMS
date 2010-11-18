@@ -11,7 +11,14 @@
 					$("#page_path").html(slug.data)
 				}
 			);
-
+	});
+	
+	$("#partial").change(function(event){
+		current_partial = $("partial").val()
+		
+		if (current_partial.equals("/pages/breakout_page")) {
+			
+		}
 	});
 	
 <% end %>
