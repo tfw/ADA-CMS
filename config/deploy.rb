@@ -7,9 +7,9 @@ set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :deploy_via, :remote_cache
 
-role :web, "ada-staging"                          # Your HTTP server, Apache/etc
-role :app, "ada-staging"                          # This may be the same as your `Web` server
-role :db,  "ada-staging", :primary => true # This is where Rails migrations will run
+role :web, "ada"                          # Your HTTP server, Apache/etc
+role :app, "ada"                          # This may be the same as your `Web` server
+role :db,  "ada", :primary => true # This is where Rails migrations will run
 
 set :user,        "deploy"
 set :use_sudo,    true
@@ -51,6 +51,7 @@ task :generate_database_yml, :roles => :app do
 end
 
 after 'deploy:update', :generate_database_yml
+after 'deploy:update', :symlinks
 before 'deploy:update_code', :echo_ruby_env
 
 task :echo_ruby_env do
@@ -59,8 +60,6 @@ task :echo_ruby_env do
   run "export RAILS_ENV='#{rails_env}'"
 end
 
-# development:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: ada_development
-#   pool: 5
+task :symlinks, :roles => :app do
+  run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
+end
