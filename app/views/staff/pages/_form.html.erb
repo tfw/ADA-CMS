@@ -4,8 +4,9 @@
 
 	$("#page_title").change(function(event){
 		text = $(this).val()
-			
-		$.post("/staff/pages/sluggerize_path", {title: text}, 
+		parent_page = $("#page_parent_id").val()
+		alert(parent_page)
+		$.post("/staff/pages/sluggerize_path", {title: text, parent: parent_page}, 
 				function(slug){
 					$("#page_path").html(slug.data)
 				}
@@ -52,11 +53,12 @@
       <label for="page_path">Path</label>
       <div id="page_path"></id>
     </li> 
-
-    <%= form.input :partial, :as => :select, :collection => {
-      "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
-      }, :include_blank => false, :label => "Template " %>
-  <% end %>
+		<li>
+		   <%= form.input :partial, :as => :select, :collection => {
+		     "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
+		     }, :include_blank => false, :label => "Template " %>
+		 		<% end %>
+		</li>
 
   <%= form.inputs :id => "form_content" do %>
     <h3 style="margin-top:1em">Body:</h3>

@@ -3,7 +3,7 @@
 
   <%= link_to 'Public View', page.path.slug %>, 
   <%= link_to 'Show', staff_page_path(page) %>, 
-  <%= link_to 'Edit', edit_staff_page_path(page) %>,  
+  <%= link_to 'Edit', edit_staff_page_path(page, :archive_id => @archive.id) %>,  
   <%= link_to 'Delete', staff_page_path(page), :method => :delete %> 
 
   <% if page.children %>
