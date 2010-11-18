@@ -6,7 +6,7 @@
 		text = $(this).val()
 		parent_page_id = $("#page_parent_id").val()
 
-		$.post("/staff/pages/sluggerize_path", {title: text, parent: parent_page_id}, 
+		$.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
 				function(slug){
 					$("#page_path").html(slug.data)
 				}
