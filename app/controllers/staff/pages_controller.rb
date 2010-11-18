@@ -23,7 +23,12 @@ class Staff::PagesController < Inkling::BaseController
   end
 
   def sluggerize_path
-    render :json => {:success => true, :data => sluggerize(params[:title])}
+    parent_page = Page.find(params[:parent]) if params[:parent]
+    slug = sluggerize(params[:title])
+    
+    slug = "#{parent_page.path.slug}/#{slug}" if parent_page
+    json_hash = {:success => true, :data => slug}        
+    render :json => json_hash
   end
   
   private
