@@ -6,11 +6,11 @@ class PageObserver < ActiveRecord::Observer
    include Rails.application.routes.url_helpers
    
   def after_create(page)
-    log("created", page)
+    log("created", page) if page.created_at == page.updated_at
   end
 
   def after_save(page)
-    log("edited", page)    
+    log("edited", page) if page.created_at != page.updated_at
   end
   
   def after_destroy(page)
