@@ -13,11 +13,13 @@
 			);
 	});
 	
-	$("#partial").change(function(event){
-		current_partial = $("partial").val()
-		
-		if (current_partial.equals("/pages/breakout_page")) {
-			
+	$("#page_partial").change(function(event){
+		current_partial = $("#page_partial").val();
+		if (current_partial === "/pages/breakout_page") {
+			$("#breakout").show();
+		}
+		else {
+			$("#breakout").hide();			
 		}
 	});
 	
@@ -70,8 +72,11 @@
   <%= form.inputs :id => "form_content" do %>
     <h3 style="margin-top:1em">Body:</h3>
     <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
-    <h3 style="margin-top:1em">Breakout Box:</h3>
-    <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
+		
+		<div id="breakout" style="display:none">
+	    <h3 style="margin-top:1em">Breakout Box:</h3>
+	    <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
+		</div>
   <% end %>
 
   <%= form.buttons %>
