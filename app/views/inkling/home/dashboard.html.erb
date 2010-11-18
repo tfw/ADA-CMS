@@ -4,15 +4,16 @@
 
 <script type="text/javascript">
 
-	function test(){
+	function log(){
 		$.get("/staff/activity_logs", 
 				function(logs){
 					$("#log").html(logs)
 				}
 			);
 	};
-
-setInterval("test();", 5000);
+	
+log();
+setInterval("log();", 5000);
 
 </script>
 
