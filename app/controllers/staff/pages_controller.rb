@@ -5,9 +5,9 @@ class Staff::PagesController < Inkling::BaseController
   inherit_resources                                                                                     
   defaults :resource_class => Page, :instance_name => 'page'
   before_filter :get_archive
-  before_filter :get_pages
+  before_filter :get_pages, :except => [:sluggerize_path, :preview]
 
-  respond_to :json, :only => :sluggerize_path
+  respond_to :json, :only => [:sluggerize_path, :preview]
   
   def create
     create! do |format|   
@@ -49,13 +49,13 @@ class Staff::PagesController < Inkling::BaseController
   end
   
   def preview
-    @page = Page.new(:params[:staff_page])
-    render(:template => '/pages/show', :layout => 'content')
+    @page = Page.new(params[:page])
+  	render(:partial => @page.partial, :object => @page)
   end
   
   private
   def get_archive
-    @archive = Archive.find(params[:archive_id]) if params[:archive_id]
+    @archive = Archive.find(params[:archive_id]) if params[:archive_id] # or not params[:archive_id].empty?
     @archive ||= ADAArchive.new
   end
   

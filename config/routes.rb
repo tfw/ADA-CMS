@@ -9,13 +9,10 @@ Ada::Application.routes.draw do
   
   namespace :staff do
     resources :activity_logs, :only => :index
-    resources :pages do
-      member do
-        get :preview
-      end
-    end
+
+    resources :pages
     post 'pages/sluggerize_path'
-    
+    post 'pages/preview'
     
     # namespace :pages do 
     #   match 'update_tree' => '#update_tree', :as => :update_tree

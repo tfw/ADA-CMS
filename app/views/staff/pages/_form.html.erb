@@ -2,6 +2,19 @@
 
 <% content_for :js do %>
 
+	$("#preview").click(function(event){
+	  <!-- alert("Thanks for visiting!"); -->
+		var title 	= $("#page_title").val();
+		var partial = $("input:radio[name=page[partial]]:checked").val();
+		var body 		= $("#page_body_editor").val();
+		var breakout 		= $("#page_breakout").val();		
+		$.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout: breakout}},
+				function update_preview_pane(html){
+					$("#preview").text(html);
+				}
+			);				
+	});
+
 	$("#page_title").change(function(event){
 		text = $(this).val()
 		parent_page_id = $("#page_parent_id").val()
@@ -38,48 +51,53 @@
   Archive: <%= (@archive.nil? ? "ADA" : @archive.name)%>
 </h1>
 
-<%= semantic_form_for([:staff, resource]) do |form| %>
+<div id="form">
+	<%= semantic_form_for([:staff, resource]) do |form| %>
 
-  <%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
-  <%= form.hidden_field :author_id, :value => current_user.id %>
+	  <%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
+	  <%= form.hidden_field :author_id, :value => current_user.id %>
 
-  <%= form.inputs :id => "form_meta" do %>
-    <%= form.input :title %>
-    <%= form.input :parent, :as => :select, :collection => @pages %></td>
+	  <%= form.inputs :id => "form_meta" do %>
+	    <%= form.input :title %>
+	    <%= form.input :parent, :as => :select, :collection => @pages %></td>
 
-    <li class="string optional">
-      <label for="page_author">Author</label>
-      <input id="page_author" maxlength="255" 
-             name="page[author]" size="50" 
-             type="text" value="<%= current_user.email %>" disabled="disabled" />
-    </li> 
+	    <li class="string optional">
+	      <label for="page_author">Author</label>
+	      <input id="page_author" maxlength="255" 
+	             name="page[author]" size="50" 
+	             type="text" value="<%= current_user.email %>" disabled="disabled" />
+	    </li> 
 
-  <% end %>
+	  <% end %>
 
-  <%= form.inputs :id => "form_layout" do %>
+	  <%= form.inputs :id => "form_layout" do %>
 
-    <li class="string optional">
-      <label for="page_path">Path</label>
-      <div id="page_path"></div>
-    </li> 
-		<li>
-		   <%= form.input :partial, :as => :radio, :collection => {
-		     "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
-		     }, :include_blank => false, :label => "Template " %>
-		 		<% end %>
-		</li>
+	    <li class="string optional">
+	      <label for="page_path">Path</label>
+	      <div id="page_path"></div>
+	    </li> 
+			<li>
+			   <%= form.input :partial, :as => :radio, :collection => {
+			     "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
+			     }, :include_blank => false, :label => "Template " %>
+			 		<% end %>
+			</li>
 
-  <%= form.inputs :id => "form_content" do %>
-    <h3 style="margin-top:1em">Body:</h3>
-    <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
+	  <%= form.inputs :id => "form_content" do %>
+	    <h3 style="margin-top:1em">Body:</h3>
+	    <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
 		
-		<div id="breakout" style="display:none">
-	    <h3 style="margin-top:1em">Breakout Box:</h3>
-	    <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
-		</div>
-  <% end %>
+			<div id="breakout" style="display:none">
+		    <h3 style="margin-top:1em">Breakout Box:</h3>
+		    <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
+			</div>
+	  <% end %>
 
-  <%= form.buttons %>
-<% end %>
+	  <%= form.buttons %>
+		<a id="preview"> Preview </a>
+	<% end %>
+</div>
 
+<div id="preview">
+</div>
 
