@@ -9,6 +9,9 @@ class Staff::PagesController < Inkling::BaseController
 
   respond_to :json, :only => [:sluggerize_path, :preview]
   
+  # layout 'content', :only => [:preview]
+  # layout 'inkling/manage', :except => :preview
+  
   def create
     create! do |format|   
       format.html {redirect_to staff_archives_path(@page.archive)} 
@@ -50,7 +53,9 @@ class Staff::PagesController < Inkling::BaseController
   
   def preview
     @page = Page.new(params[:page])
-  	render(:partial => @page.partial, :object => @page)
+    @page.archive = @archive
+  	html = render(:partial => @page.partial, :object => @page)
+  	html
   end
   
   private

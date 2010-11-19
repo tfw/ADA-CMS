@@ -2,15 +2,14 @@
 
 <% content_for :js do %>
 
-	$("#preview").click(function(event){
-	  <!-- alert("Thanks for visiting!"); -->
-		var title 	= $("#page_title").val();
-		var partial = $("input:radio[name=page[partial]]:checked").val();
-		var body 		= $("#page_body_editor").val();
-		var breakout 		= $("#page_breakout").val();		
-		$.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout: breakout}},
+	$("#preview-link").click(function(event){
+		var title 				= $("#page_title").val();
+		var partial 			= $("input:radio[name=page[partial]]:checked").val();
+		var body 					= CKEDITOR.instances.page_body_editor.getData();		
+		var breakout_box 	= CKEDITOR.instances.page_breakout_box_editor.getData();	
+		$.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
 				function update_preview_pane(html){
-					$("#preview").text(html);
+					$("#preview").html(html);
 				}
 			);				
 	});
@@ -94,7 +93,7 @@
 	  <% end %>
 
 	  <%= form.buttons %>
-		<a id="preview"> Preview </a>
+		<a id="preview-link"> Preview </a>
 	<% end %>
 </div>
 
