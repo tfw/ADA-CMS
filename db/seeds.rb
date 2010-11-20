@@ -21,7 +21,7 @@ end
 end
 
 #home pages
-ada_home_page = Page.create!(:title => 'ADA Home', :body => "", :author => Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/breakout_page")
+ada_home_page = Page.create!(:title => 'ADA Home', :body => "ADA home page text goes here", :breakout_box => "breakout box text goes here", :author => Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/breakout_page")
 
 for archive in Archive.all do
   home_page = Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page")

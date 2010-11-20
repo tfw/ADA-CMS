@@ -1,3 +1,5 @@
-<aside><%= breakout_page.breakout_box.html_safe if breakout_page.breakout_box %></aside>
+<article>
+	<aside><%= breakout_page.breakout_box.html_safe if breakout_page.breakout_box %></aside>
 
-<article><%= breakout_page.body.html_safe if breakout_page.body %></article>
+	<%= breakout_page.body.html_safe if breakout_page.body %>
+</article>
