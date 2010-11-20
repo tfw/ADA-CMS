@@ -10,7 +10,7 @@ Ada::Application.routes.draw do
   namespace :staff do
     resources :activity_logs, :only => :index
 
-    resources :pages
+    resources :pages, :except => :index
     post 'pages/sluggerize_path'
     post 'pages/preview'
     

@@ -1,3 +1,3 @@
-<aside><%= breakout_page.breakout_box.html_safe %></aside>
+<aside><%= breakout_page.breakout_box.html_safe if breakout_page.breakout_box %></aside>
 
-<article><%= breakout_page.body.html_safe %></article>
+<article><%= breakout_page.body.html_safe if breakout_page.body %></article>

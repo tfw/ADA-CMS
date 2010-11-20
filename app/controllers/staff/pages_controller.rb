@@ -23,6 +23,15 @@ class Staff::PagesController < Inkling::BaseController
       format.html { redirect_to staff_archives_path(@page.archive) }
     end
   end
+  
+  def destroy
+    debugger
+    archive = Page.find(:params[id]).archive
+    destroy! do |format|   
+      format.html { redirect_to staff_archives_path(archive) }
+    end
+  end
+  
 
   def update_tree
     new_parent_id = params[:new_parent]

@@ -8,8 +8,6 @@ Pages: <%= @archive.pages.size %> <br/>
 <h2><%= @archive.name %> Page Management</h2>
 </p>
 
-<%= @parent_pages.size %>
-
 
 <ul id="tag-tree">
 	<%= render(:partial => "page", :collection => @parent_pages) %>

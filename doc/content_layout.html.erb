@@ -86,10 +86,11 @@
 
 	<div class="notice"><%= notice %></div>
   <div class="alert"><%= alert %></div>
-			
-	<aside></aside>
-	<article>
-	<%= render(:partial => @page.partial, :object => @page) %> </article>
+
+	<!-- page partial start -->
+	<%= render(:partial => @page.partial, :object => @page) %> 
+	<!-- page partial end -->
+
 </section>
         
 		<section class='partners'>

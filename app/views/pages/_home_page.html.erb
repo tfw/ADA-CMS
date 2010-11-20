@@ -1,7 +1,5 @@
 <article>
-<h1>Home</h1>
-
-<%= home_page.body.html_safe %>
+	<h1>Home</h1>
                         
 	<aside>
 		<h2>Latest News</h2>
@@ -46,5 +44,8 @@
 		  <li><a href="#"> Indonesian Susenas 2004, Child Health Characterstics (Module)</a></li>
 		  <li><a href="#"> Indonesian Susenas 2004, Individual Health Characterstics (Module)</a></li>
 		  </ul>
-  </aside>          
+  </aside>     
+
+	<%= home_page.body.html_safe if home_page.body %>
+     
 </article>
