@@ -30,29 +30,4 @@ form.tree-form {
 	display: inline;
 }
 
-
-/*.tree-hover{
-  background: #fdd;
-}
-
-li.tree-item {
-  margin-left: 35px;
-}
-
-.tree-item{
-  padding: 2px;
-  list-style: none;
-}
-
-.tree-item span:hover{
-  background: #ddd;
-  cursor: pointer;
-}
-
-.tree-item span{
-  border-bottom: solid 1px #aaa;
-}
-
-.left {
-	float:left;
-}*/
+.draggable{}
