@@ -6,14 +6,14 @@ GIT
     ckeditor (3.4.3.pre)
       mime-types (>= 1.16)
 
-GIT
-  remote: git://github.com/plataformatec/devise.git
-  revision: 67645c68f7a65ad26cb687e95914cb37e1587348
+PATH
+  remote: /Users/nick/code/src/tfw/inkling-project/inkling
   specs:
-    devise (1.2.rc)
-      bcrypt-ruby (~> 2.1.2)
-      orm_adapter (~> 0.0.2)
-      warden (~> 1.0.2)
+    inkling (0.0.2)
+      cancan
+      devise
+      formtastic
+      inherited_resources
 
 GEM
   remote: http://rubygems.org/
@@ -82,6 +82,9 @@ GEM
       cucumber (>= 0.8.0)
     culerity (0.2.12)
     database_cleaner (0.6.0)
+    devise (1.1.3)
+      bcrypt-ruby (~> 2.1.2)
+      warden (~> 0.10.7)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -103,18 +106,6 @@ GEM
     inherited_resources (1.1.2)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
-    inkling (0.0.8)
-      cancan
-      devise
-      devise
-      formtastic
-      formtastic
-      gemcutter (>= 0.6.1)
-      inherited_resources
-      inherited_resources
-      jeweler
-      rails (>= 3.0.0)
-      rails
     jeweler (1.5.1)
       bundler (~> 1.0.0)
       git (>= 1.2.5)
@@ -141,7 +132,6 @@ GEM
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
     nokogiri (1.4.4)
-    orm_adapter (0.0.3)
     pg (0.9.0)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -200,7 +190,7 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
-    warden (1.0.2)
+    warden (0.10.7)
       rack (>= 1.0.0)
     xpath (0.1.2)
       nokogiri (~> 1.3)
@@ -217,12 +207,12 @@ DEPENDENCIES
   cucumber (>= 0.7.2)
   cucumber-rails
   database_cleaner
-  devise!
+  devise (>= 1.1.3)
   faker
   formtastic (>= 1.1.0)
   gemcutter (>= 0.6.1)
   inherited_resources
-  inkling (>= 0.0.8)
+  inkling!
   jeweler
   launchy
   machinist (= 1.0.6)
