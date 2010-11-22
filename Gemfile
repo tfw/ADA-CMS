@@ -4,12 +4,12 @@ source :gemcutter
 gem 'rails', '3.0.3'
 
 gem "pg"
-gem 'inkling', '>= 0.0.8'
-gem "devise", :git => "git://github.com/plataformatec/devise.git" 
+gem 'inkling', :path => '/Users/nick/code/src/tfw/inkling-project/inkling'  # '>= 0.0.8'
+gem "devise", ">= 1.1.3"
 gem 'inherited_resources'
 gem 'cancan'
 gem 'formtastic', '>= 1.1.0'
-gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+gem 'ckeditor' , :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
 
 gem "ruby-debug19" #move this into dev group alone later
 
