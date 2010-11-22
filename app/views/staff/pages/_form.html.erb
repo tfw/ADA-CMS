@@ -2,18 +2,6 @@
 
 <% content_for :js do %>
 
-	<!-- function preview_page() {
-		var title 				= $("#page_title").val();
-		var partial 			= $("input:radio[name=page[partial]]:checked").val();
-		var body 					= CKEDITOR.instances.page_body_editor.getData();		
-		var breakout_box 	= CKEDITOR.instances.page_breakout_box_editor.getData();	
-		$.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
-				function update_preview_pane(html){
-					$("#preview").html(html);
-				}
-			);						
-	} -->
-
 	$("#preview-link").click(function(event){
 		var title 				= $("#page_title").val();
 		var partial 			= $("input:radio[name=page[partial]]:checked").val();
@@ -70,7 +58,8 @@
 
 	  <%= form.inputs :id => "form_meta" do %>
 	    <%= form.input :title %>
-	    <%= form.input :parent, :as => :select, :collection => @pages %></td>
+	    <%= form.input :parent, :as => :select, :collection => @pages %>
+	    <%= form.input :rgt, :as => :select, :collection => @pages, :label => "Position: " %>
 
 	    <li class="string optional">
 	      <label for="page_author">Author</label>
