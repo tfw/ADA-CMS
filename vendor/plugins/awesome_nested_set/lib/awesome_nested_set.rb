@@ -86,8 +86,9 @@ module CollectiveIdea #:nodoc:
               end_eval
             end
           
-            named_scope :roots, :conditions => {parent_column_name => nil}, :order => quoted_left_column_name
-            named_scope :leaves, :conditions => "#{quoted_right_column_name} - #{quoted_left_column_name} = 1", :order => quoted_left_column_name
+            #90 and 91 patched - see http://www.mail-archive.com/heroku@googlegroups.com/msg05405.html n.f
+            scope :roots, :conditions => {parent_column_name => nil}, :order => quoted_left_column_name
+            scope :leaves, :conditions => "#{quoted_right_column_name} - #{quoted_left_column_name} = 1", :order => quoted_left_column_name
 
             define_callbacks("before_move", "after_move")
           end
@@ -564,7 +565,8 @@ module CollectiveIdea #:nodoc:
                 "WHEN #{self.class.base_class.primary_key} = :id THEN :new_parent " +
                 "ELSE #{quoted_parent_column_name} END",
               {:a => a, :b => b, :c => c, :d => d, :id => self.id, :new_parent => new_parent}
-            ], nested_set_scope.proxy_options[:conditions])
+              ]) #removing proxy options see - http://www.mail-archive.com/heroku@googlegroups.com/msg05405.html n.f.
+            # ], nested_set_scope.proxy_options[:conditions])
           end
           target.reload_nested_set if target
           self.reload_nested_set
