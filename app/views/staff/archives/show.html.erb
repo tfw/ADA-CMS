@@ -12,3 +12,34 @@ Pages: <%= @archive.pages.size %> <br/>
 <ul id="tag-tree">
 	<%= render(:partial => "page", :collection => @parent_pages) %>
 </ul>
+
+<script>
+$(function() {
+	// $( "#sortable" ).sortable();
+
+	$( "#sortable" ).sortable({
+		update: function(){
+			// alert('ok');
+		  // $.post('/staff/archives/update_page_order', $(this).sortable('serialize'));
+		  $.post('/staff/archives/update_page_order');
+		}
+	});
+	
+	$( "#sortable" ).disableSelection();
+});
+</script>
+
+
+<div class="demo">
+
+<ul id="sortable">
+	<li><span class="sort-item"></span>Item 1</li>
+	<li><span class="sort-item"></span>Item 2</li>
+	<li><span class="sort-item"></span>Item 3</li>
+	<li><span class="sort-item"></span>Item 4</li>
+	<li><span class="sort-item"></span>Item 5</li>
+	<li><span class="sort-item"></span>Item 6</li>
+	<li><span class="sort-item"></span>Item 7</li>
+</ul>
+
+</div><!-- End demo -->

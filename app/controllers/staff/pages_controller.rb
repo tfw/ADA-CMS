@@ -9,9 +9,6 @@ class Staff::PagesController < Inkling::BaseController
 
   respond_to :json, :only => [:sluggerize_path, :preview]
   
-  # layout 'content', :only => [:preview]
-  # layout 'inkling/manage', :except => :preview
-  
   def create
     create! do |format|   
       format.html {redirect_to staff_archives_path(@page.archive)} 
@@ -31,7 +28,8 @@ class Staff::PagesController < Inkling::BaseController
       format.html { redirect_to staff_archives_path(archive) }
     end
   end
-  
+
+  #methods for remote call via ajax
 
   def update_tree
     new_parent_id = params[:new_parent]

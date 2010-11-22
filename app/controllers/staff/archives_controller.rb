@@ -19,4 +19,12 @@ class Staff::ArchivesController < Inkling::BaseController
   def get_parent_pages
     @parent_pages = Page.find_all_by_archive_id_and_parent_id(@archive.id, nil)
   end
+  
+  def update_page_order
+    puts "1 ********"
+    debugger
+    
+    puts "********"
+  end
+  
 end
