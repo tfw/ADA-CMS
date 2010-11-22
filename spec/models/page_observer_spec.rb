@@ -6,7 +6,7 @@ describe PageObserver do
     it "saves a log after save" do
       page = Page.make
       Inkling::Log.all.size > 0
-      Inkling::Log.first.text.should =~ /created page #{page.title}/
+      Inkling::Log.first.text.should =~ /created page .*#{page.title}.*/
     end
     
     it "saves a log after update" do
@@ -14,14 +14,14 @@ describe PageObserver do
       page.body = "changed!"
       page.save
       Inkling::Log.all.size > 0
-      Inkling::Log.last.text.should =~ /edited page #{page.title}/
+      Inkling::Log.last.text.should =~ /edited page .*#{page.title}.*/
     end
     
     it "saves a log after destroy" do
       page = Page.make
       page.destroy
       Inkling::Log.all.size > 0
-      Inkling::Log.last.text.should =~ /deleted page #{page.title}/
+      Inkling::Log.last.text.should =~ /deleted page .*#{page.title}.*/
     end
   end
 end

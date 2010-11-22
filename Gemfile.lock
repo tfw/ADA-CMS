@@ -7,13 +7,14 @@ GIT
       mime-types (>= 1.16)
 
 PATH
-  remote: /Users/nick/code/src/tfw/inkling-project/inkling
+  remote: /Users/nicholas/code/src/tfw/inkling-project/inkling
   specs:
-    inkling (0.0.2)
+    inkling (0.0.5)
       cancan
       devise
       formtastic
       inherited_resources
+      rails
 
 GEM
   remote: http://rubygems.org/
