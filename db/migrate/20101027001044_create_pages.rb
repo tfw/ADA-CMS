@@ -10,6 +10,8 @@ class CreatePages < ActiveRecord::Migration
       t.integer :parent_id
       t.integer :archive_id
       t.string  :partial
+      t.integer :lft
+      t.integer :rgt
       t.timestamps
     end
   end
