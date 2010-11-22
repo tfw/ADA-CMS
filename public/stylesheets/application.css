@@ -56,3 +56,11 @@ li.tree-item {
 .left {
 	float:left;
 }*/
+
+
+/*placeholder icon css */
+
+.placeholder-icon { 
+	background: #333 no-repeat 5px center;
+	z-index: auto;
+}
