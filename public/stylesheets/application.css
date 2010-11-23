@@ -1,7 +1,6 @@
 //CSS down by TFW, mainly for unobtrusive js
 //for the page tree
 
-
 button{
   background: #fff;
   border: solid 1px #000;
@@ -41,3 +40,79 @@ form.tree-form {
 #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
 #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
 #sortable li span { position: absolute; margin-left: -1.3em; }
+
+/* Content Area */
+div.content-area {
+  border: 1px solid #bababa;
+  background: #fff;
+  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; /* invalid CSS2, but... */
+  float: left;
+  width: 100%;
+}
+div.content-area h2 {
+  font-size: 14pt;
+  margin: 0;
+  padding: 1em;
+  color: #3a3a3a;
+}
+div.content-area h3 {
+  color: #2f658f;
+  border-top: 1px solid #bababa;
+  background: #f0f0f0;
+  padding: 0.4em 1em;
+  clear: left;
+}
+div.content-area h3 a {
+  font-size:small;
+  float: right;
+  font-weight: normal;
+}
+dl, p {
+  margin: 1.2em;
+}
+p {
+  margin-bottom: 0;
+}
+dl#log dt {
+  font-weight: bold;
+  float:left;
+}
+dl#log dd {
+  margin: 0 0 0 15%;
+  padding-bottom:0.5em;
+}
+dl.issue-metadata {
+  width: 45%;
+  min-width: 375px;
+  float: left;
+  padding: 1em;
+  border: 1px solid #bababa;
+  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; /* invalid CSS2, but... */
+}
+dl.issue-metadata dt a {
+  font-weight: bold;
+}
+dl.issue-metadata dt span {
+  float: right;
+  font-size: smaller;
+}
+dl.issue-metadata dt span abbr {
+  font-size: larger;
+  font-weight: bold;
+}
+dl.issue-metadata dt {
+  font-weight: bold;
+  background: url(/images/structure/icon_task.gif) no-repeat;
+  height:16px;
+}
+dl.issue-metadata dt, 
+dl.issue-metadata dd {
+  padding-left: 20px;
+  margin-left: 0;
+}
+dl.issue-metadata dd {
+  margin-bottom: 1em;
+}
+dl.issue-metadata dd ol li{
+  list-style-type: decimal;
+}

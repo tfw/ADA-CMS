@@ -1,3 +1,4 @@
 <% for log in @logs%>
-<%= time_ago_in_words(log.created_at) %> :	<%= log.text.html_safe%> <br/>
+  <dt><a href="#" title="#"><%= time_ago_in_words(log.created_at).capitalize %> ago:</a></dt>
+  <dd><%= log.text.html_safe%></dd>
 <% end %>
