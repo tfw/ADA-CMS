@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(:version => 20101027001044) do
 
   create_table "inkling_logs", :force => true do |t|
     t.datetime "created_at"
-    t.datetime "updated_at"
     t.text     "text",       :null => false
+    t.integer  "user_id"
   end
 
   create_table "inkling_paths", :force => true do |t|
