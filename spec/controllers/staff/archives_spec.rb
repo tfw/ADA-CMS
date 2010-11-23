@@ -31,7 +31,7 @@ describe Staff::ArchivesController do
         page.move_to_left_of right
         page.right_sibling.should == right
         page.left_sibling.should == left        
-        page_order = [page.id, left.id, right.id]
+        page_order = "#{page.id}, #{left.id}, #{right.id}"
         post :update_page_order, {:page_order => page_order, :moved => page.id, :archive => nil}
         page.reload
         page.right_sibling.should == left
