@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8"/>
-		<title>- ADA Admin</title>
-		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
+ <head>
+  <meta charset="UTF-8"/>
+  <title>- ADA Admin</title>
+  <!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
     <%= stylesheet_link_tag "import" %>
     <%= csrf_meta_tag %>
-		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts', 'rails', 'jquery-ui-1.8.6.custom.min' %>		
-	</head>
+  <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts', 'rails', 'jquery-ui-1.8.6.custom.min' %>  
+ </head>
     
     <body id="default">
-		<script type="text/javascript">
-			 $(document).ready(function(){
-				<%= yield :js %>
-			});
-		</script>
-			
-		<header>
-			<div class="login">
-				Name: <%= current_user.email %> <br/>
-				Role: <%= current_user.roles.first.name %> <br/>
-				<%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
-			</div>
-			<div class="masthead"><a href="/staff/home">Australian Data Archive</a></div>
-	</header>
-		<nav class="mainnav clearfix">
-		  <div class="searchContainer">
-		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
-		      <label for="menusearch"></label>
-		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
-		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
-	        </form>
-	      </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    <%= yield :js %>
+   });
+  </script>
+   
+  <header>
+   <div class="login">
+    Name: <%= current_user.email %> <br/>
+    Role: <%= current_user.roles.first.name %> <br/>
+    <%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
+   </div>
+   <div class="masthead"><a href="/staff/home">Australian Data Archive</a></div>
+ </header>
+  <nav class="mainnav clearfix">
+    <div class="searchContainer">
+      <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+        <label for="menusearch"></label>
+        <input name="textfield" type="text" id="menusearch" value="Search this site"/>
+        <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
+         </form>
+       </div>
     </nav>
         
     <nav class="subnav"> </nav>
         
-		<nav class="breadcrumbs">
-			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
-		</nav>
-		
+  <nav class="breadcrumbs">
+   <p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
+  </nav>
+  
         <section class="content">
-			<nav>
-				<ul>
-	        <li id="dashboard"><%= placeholder_icon %><a href="/staff/home">Dashboard</a></li>
-	        <li id="ada"><a href="/staff/archives/ada">ADA</a></li>
-	        <li id="science"><a href="/staff/archives/social-science">social science</a></li>
-					<li id="historical"><a href="/staff/archives/historical">historical </a></li>
-					<li id="indigenous"><a href="/staff/archives/indigenous">indigenous</a></li>
-					<li id="longitudinal"><a href="/staff/archives/longitudinal">longitudinal</a></li>
-					<li id="qualitative"><a href="/staff/archives/qualitative">qualitative</a></li>
-					<li id="international"><a href="/staff/archives/international">international</a></li>
-					<li id="users"><%= placeholder_icon %><a href="/staff/users">Users</a></li>
-					<li id="reports"><%= placeholder_icon %><a href="staff/reports">Reports</a></li>
-					<li id="adapt"><%= placeholder_icon %><a href="staff/adapt">ADAPT</a></li>
-					<li id="hccds"><%= placeholder_icon %><a href="staff/ccda">HCCDA</a></li>
-					<li id="usage-auditing"><%= placeholder_icon %><a href="staff/usage-auditing">Usage Auditing</a></li>
-			  </ul>
-			</nav>
-			
-			<div class="notice"><%= notice %></div>
-		  <div class="alert"><%= alert %></div>
-		
-		<article>
-			<%= yield %>
-		</article>
+   <nav>
+    <ul>
+     <li id="dashboard"><a href="/staff/home">Dashboard</a></li>
+     <li id="ada"><a href="/staff/archives/ada">ADA</a></li>
+     <li id="science"><a href="/staff/archives/social-science">social science</a></li>
+     <li id="historical"><a href="/staff/archives/historical">historical </a></li>
+     <li id="indigenous"><a href="/staff/archives/indigenous">indigenous</a></li>
+     <li id="longitudinal"><a href="/staff/archives/longitudinal">longitudinal</a></li>
+     <li id="qualitative"><a href="/staff/archives/qualitative">qualitative</a></li>
+     <li id="international"><a href="/staff/archives/international">international</a></li>
+     <li id="users"><a href="/staff/users">Users</a></li>
+     <li id="reports"><a href="staff/reports">Reports</a></li>
+     <li id="adapt"><a href="staff/adapt">ADAPT</a></li>
+     <li id="hccds"><a href="staff/ccda">HCCDA</a></li>
+     <li id="usage-auditing"><a href="staff/usage-auditing">Usage Auditing</a></li>
+     </ul>
+   </nav>
+   
+   <div class="notice"><%= notice %></div>
+    <div class="alert"><%= alert %></div>
+  
+  <article>
+   <%= yield %>
+  </article>
 </section>
         
-		<footer>
-		  <p> &#xA9; Australian Data Archive</p>
-    </footer>	
+  <footer>
+    <p> &#xA9; Australian Data Archive</p>
+    </footer> 
     </body>
 </html>
 
