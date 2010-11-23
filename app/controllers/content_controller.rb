@@ -10,7 +10,7 @@ class ContentController < Inkling::ContentController
   end
   
   def get_ada_pages
-    @ada_parent_pages = Page.find_all_by_archive_id_and_parent_id(nil, nil)    
+    @ada_parent_pages = Page.archive_roots(nil)
   end
 
   def get_archives

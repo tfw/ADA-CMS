@@ -24,7 +24,7 @@
 						<%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
 				<% end %>
 			</div>
-			<div class="masthead"><a href="../index.html">Australian Data Archive</a></div>
+			<div class="masthead"><a href="/ada-home">Australian Data Archive</a></div>
 	</header>
 
 		<nav class="mainnav clearfix">
@@ -54,7 +54,7 @@
 	    <% if @page.archive %>
 				<ul>
 					<li><p><%= @page.archive.name %></p></li>
-					<% for page in @page.archive.pages %>
+					<% for page in Page.archive_roots(@page.archive)  %>
 						<% if page == @page %>
 							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
 						<% else %>
