@@ -10,30 +10,30 @@ feature "The Archives" do
     scenario "visit ADA dashboard" do
       users_for_roles_visit_archive_tab(@roles, "ada", "ADA")
     end
-    # 
-    # scenario "visit Social Science dashboard" do
-    #   users_for_roles_visit_archive_tab(@roles, "social-science", "Social Science")
-    # end
-    # 
-    # scenario "visit Historical dashboard" do
-    #   users_for_roles_visit_archive_tab(@roles, "historical", "Historical")
-    # end
-    # 
-    # scenario "visit Indigenous dashboard" do
-    #   users_for_roles_visit_archive_tab(@roles, "indigenous", "Indigenous")
-    # end
-    # 
-    # scenario "visit Longitudinal dashboard" do
-    #   users_for_roles_visit_archive_tab(@roles, "longitudinal", "Longitudinal")
-    # end
-    # 
-    # scenario "visit Qualitative dashboard" do
-    #   users_for_roles_visit_archive_tab(@roles, "qualitative", "Qualitative")
-    # end
-    # 
-    # scenario "visit International dashboard" do
-    #   users_for_roles_visit_archive_tab(@roles, "international", "International")
-    # end
+    
+    scenario "visit Social Science dashboard" do
+      users_for_roles_visit_archive_tab(@roles, "social-science", "Social Science")
+    end
+    
+    scenario "visit Historical dashboard" do
+      users_for_roles_visit_archive_tab(@roles, "historical", "Historical")
+    end
+    
+    scenario "visit Indigenous dashboard" do
+      users_for_roles_visit_archive_tab(@roles, "indigenous", "Indigenous")
+    end
+    
+    scenario "visit Longitudinal dashboard" do
+      users_for_roles_visit_archive_tab(@roles, "longitudinal", "Longitudinal")
+    end
+    
+    scenario "visit Qualitative dashboard" do
+      users_for_roles_visit_archive_tab(@roles, "qualitative", "Qualitative")
+    end
+    
+    scenario "visit International dashboard" do
+      users_for_roles_visit_archive_tab(@roles, "international", "International")
+    end
   end
   
   def users_for_roles_visit_archive_tab(roles, archive, breadcrumb)

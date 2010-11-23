@@ -1,5 +1,3 @@
-require 'ada_archive'
-
 class Staff::ArchivesController < Inkling::BaseController
 
   respond_to :html
@@ -36,11 +34,9 @@ class Staff::ArchivesController < Inkling::BaseController
   private
   def get_archive
     @archive = Archive.find_by_slug(params[:slug]) if params[:slug]
-    # @archive ||= ADAArchive.new
   end
   
   def get_parent_pages
-    # @parent_pages = Page.find_all_by_archive_id_and_parent_id(@archive.id, nil)
     @parent_pages = Page.archive_roots(@archive)
   end  
 end

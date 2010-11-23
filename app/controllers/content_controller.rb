@@ -5,7 +5,6 @@ class ContentController < Inkling::ContentController
   protected  
   def current_archive
     @current_archive = Archive.find(params[:archive_id]) if @current_archive.nil?
-    @current_archive ||= ADAArchive.new #see lib/ada_archive.rb  
     @current_archive
   end
   

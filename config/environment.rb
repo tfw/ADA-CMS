@@ -1,8 +1,6 @@
 # Load the rails application
 require File.expand_path('../application', __FILE__)
 
-# require 'better_nested_set'
-
 # Initialize the rails application
 Ada::Application.initialize!
 

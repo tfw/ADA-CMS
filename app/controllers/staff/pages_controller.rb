@@ -1,4 +1,4 @@
-require 'ada_archive'
+
 class Staff::PagesController < Inkling::BaseController
   include Inkling::Slugs
   
