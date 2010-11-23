@@ -12,10 +12,24 @@ class Staff::ArchivesController < Inkling::BaseController
   end
 
   def update_page_order
-    puts params[:pages_order]
-    # debugger
+    #1 find the moved page
+    moved_page = Page.find(params[:moved])
     
-    puts "********"
+    page_ids = params[:page_order]
+    #2 find the pages left and right of the moved page
+    idx = page_ids.index(moved_page.id)
+    
+    left_idx  = idx != page_ids.first ? page_ids[idx - 1] : nil
+    right_idx = idx != page_ids.last ? page_ids[idx + 1] : nil
+    left_page =  Page.find(left_idx)
+    right_page =  Page.find(right_idx)
+    
+    moved_page.move_to_right_of left_page
+    left_page.move_to_left_of moved_page
+
+    moved_page.move_to_left_of right_page
+    right_page.move_to_right_of moved_page
+    render :nothing => true
   end
 
   private

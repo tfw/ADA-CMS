@@ -13,43 +13,21 @@ Pages: <%= @archive.pages.size %> <br/>
 	<%= render(:partial => "page", :collection => @parent_pages) %>
 </ul>
 
-<script>
-$(function() {
-
+<% content_for :js do %>
 	$( ".sortable" ).sortable({
 		update: function(event, ui){
-			var dropElemTxt = $(ui.item).text();
-			var foo = $(ui.item).attr("id");
-			var pages_order = $(this).sortable('toArray').toString();
-		  $.post("/staff/archives/update_page_order?archive_id=<%= @archive.id ? @archive.id : '' %>", {pages_order: pages_order});
+			var moved = $(ui.item).attr("id");
+			var page_order = $(this).sortable('toArray').toString();
+		  $.post("/staff/archives/update_page_order?archive_id=<%= @archive.id ? @archive.id : '' %>", {page_order: page_order, moved: moved});
 		}
 	});
 	
 	$( "#sortable" ).disableSelection();
-});
-</script>
 
-
-<div class="demo">
-
-<ul class="sortable">
-	<li><span class="sort-item"></span>Item 1</li>
-	<li><span class="sort-item"></span>Item 2</li>
-	<li><span class="sort-item"></span>Item 3</li>
-	<li><span class="sort-item"></span>Item 4</li>
-	<li><span class="sort-item"></span>Item 5</li>
-	<li><span class="sort-item"></span>Item 6</li>
-	<li><span class="sort-item"></span>Item 7</li>
-</ul>
-
-</div><!-- End demo -->
-
-
-<div class="mockup">
+<% end %>
 
 <ul class="sortable">
 	<li id="1-1">Foo 1</span></li>
 	<li id="1-1">Foo 2</span></li>
 </ul>
 
-</div><!-- End demo -->
