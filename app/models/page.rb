@@ -16,6 +16,16 @@ class Page < ActiveRecord::Base
   validates_presence_of :link_title
   validates_presence_of :partial
   
+
+  def self.archive_roots(archive)
+    roots = Page.roots
+    archive_roots = []
+
+    for page in roots
+      archive_roots << page if page.archive == archive
+    end
+    archive_roots
+  end
     
   def unique_archive_and_link_combination
     pre_existing = Page.find_all_by_archive_id_and_title(self.archive.id, self.title)

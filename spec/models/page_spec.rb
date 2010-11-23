@@ -37,4 +37,18 @@ describe Page do
       parent.path.slug.should == "/#{parent.archive.slug}/#{sluggerize(parent.title)}"
     end
   end
+  
+  describe "working with awesome nested set" do
+    context "presenting root pages in the archive" do
+      context "calling Page.archive_roots calls Page.roots and sorts by page's archive" do
+        page1 = Page.make
+        page2 = Page.make(:archive => page1.archive)
+        page3 = Page.make(:archive => page1.archive)
+        page4 = Page.make
+        
+        Page.roots.size.should == 4
+        Page.archive_roots(page1.archive).size.should == 3        
+      end
+    end
+  end
 end

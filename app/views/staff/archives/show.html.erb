@@ -3,13 +3,15 @@
 <% end %>
 
 Pages: <%= @archive.pages.size %> <br/>
+<br/>
+
 <%= link_to "Add a page", new_staff_page_path(:archive_id => @archive.id) %> 
 <p>
 <h2><%= @archive.name %> Page Management</h2>
 </p>
 
 
-<ul id="tag-tree">
+<ul class="sortable">
 	<%= render(:partial => "page", :collection => @parent_pages) %>
 </ul>
 
@@ -26,8 +28,8 @@ Pages: <%= @archive.pages.size %> <br/>
 
 <% end %>
 
-<ul class="sortable">
+<!-- <ul class="sortable">
 	<li id="1-1">Foo 1</span></li>
 	<li id="1-1">Foo 2</span></li>
 </ul>
-
+ -->

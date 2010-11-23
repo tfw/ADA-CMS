@@ -15,10 +15,10 @@ class Staff::ArchivesController < Inkling::BaseController
     #1 find the moved page
     moved_page = Page.find(params[:moved])
     
-    page_ids = params[:page_order]
+    page_ids = params[:page_order].split(",")
+    page_ids.collect! {|i| i.to_i}
     #2 find the pages left and right of the moved page
     idx = page_ids.index(moved_page.id)
-    
     left_idx  = idx != page_ids.first ? page_ids[idx - 1] : nil
     right_idx = idx != page_ids.last ? page_ids[idx + 1] : nil
     left_page =  Page.find(left_idx)
@@ -39,6 +39,7 @@ class Staff::ArchivesController < Inkling::BaseController
   end
   
   def get_parent_pages
-    @parent_pages = Page.find_all_by_archive_id_and_parent_id(@archive.id, nil)
+    # @parent_pages = Page.find_all_by_archive_id_and_parent_id(@archive.id, nil)
+    @parent_pages = Page.roots.find_by_archive_id(@archive.id)
   end  
 end
