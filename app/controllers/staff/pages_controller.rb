@@ -22,7 +22,7 @@ class Staff::PagesController < Inkling::BaseController
   end
   
   def destroy
-    debugger
+    # debugger
     archive = Page.find(:params[id]).archive
     destroy! do |format|   
       format.html { redirect_to staff_archives_path(archive) }
