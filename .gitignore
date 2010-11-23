@@ -1,0 +1,9 @@
+Gemfile.lock
+config/database.yml
+log/*.log
+bin/
+.bundle
+.DS_Store
+**/.DS_Store
+log
+tmp
