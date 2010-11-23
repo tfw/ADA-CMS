@@ -15,13 +15,13 @@ Pages: <%= @archive.pages.size %> <br/>
 
 <script>
 $(function() {
-	// $( "#sortable" ).sortable();
 
-	$( "#sortable" ).sortable({
-		update: function(){
-			// alert('ok');
-		  // $.post('/staff/archives/update_page_order', $(this).sortable('serialize'));
-		  $.post('/staff/archives/update_page_order');
+	$( ".sortable" ).sortable({
+		update: function(event, ui){
+			var dropElemTxt = $(ui.item).text();
+			var foo = $(ui.item).attr("id");
+			var pages_order = $(this).sortable('toArray').toString();
+		  $.post("/staff/archives/update_page_order?archive_id=<%= @archive.id ? @archive.id : '' %>", {pages_order: pages_order});
 		}
 	});
 	
@@ -32,7 +32,7 @@ $(function() {
 
 <div class="demo">
 
-<ul id="sortable">
+<ul class="sortable">
 	<li><span class="sort-item"></span>Item 1</li>
 	<li><span class="sort-item"></span>Item 2</li>
 	<li><span class="sort-item"></span>Item 3</li>
@@ -40,6 +40,16 @@ $(function() {
 	<li><span class="sort-item"></span>Item 5</li>
 	<li><span class="sort-item"></span>Item 6</li>
 	<li><span class="sort-item"></span>Item 7</li>
+</ul>
+
+</div><!-- End demo -->
+
+
+<div class="mockup">
+
+<ul class="sortable">
+	<li id="1-1">Foo 1</span></li>
+	<li id="1-1">Foo 2</span></li>
 </ul>
 
 </div><!-- End demo -->

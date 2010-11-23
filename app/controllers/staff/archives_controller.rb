@@ -3,11 +3,19 @@ require 'ada_archive'
 class Staff::ArchivesController < Inkling::BaseController
 
   respond_to :html
-  before_filter :get_archive
-  before_filter :get_parent_pages  
+  respond_to :json, :only => :update_page_order
+  before_filter :get_archive, :only => :show
+  before_filter :get_parent_pages, :only => :show  
   
   def show
     respond_with @archive
+  end
+
+  def update_page_order
+    puts params[:pages_order]
+    # debugger
+    
+    puts "********"
   end
 
   private
@@ -18,13 +26,5 @@ class Staff::ArchivesController < Inkling::BaseController
   
   def get_parent_pages
     @parent_pages = Page.find_all_by_archive_id_and_parent_id(@archive.id, nil)
-  end
-  
-  def update_page_order
-    puts "1 ********"
-    debugger
-    
-    puts "********"
-  end
-  
+  end  
 end
