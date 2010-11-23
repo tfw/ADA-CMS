@@ -8,6 +8,7 @@ class Staff::ArchivesController < Inkling::BaseController
   before_filter :get_parent_pages, :only => :show  
   
   def show
+    @pages = Page.find_all_by_archive_id(@archive)
     respond_with @archive
   end
 
@@ -35,7 +36,7 @@ class Staff::ArchivesController < Inkling::BaseController
   private
   def get_archive
     @archive = Archive.find_by_slug(params[:slug]) if params[:slug]
-    @archive ||= ADAArchive.new
+    # @archive ||= ADAArchive.new
   end
   
   def get_parent_pages
