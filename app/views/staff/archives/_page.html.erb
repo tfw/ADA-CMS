@@ -1,15 +1,16 @@
 <li id="<%= page.id %>">
   <span><%= page.title %></span>  </a>
 
-  <% if page.children %>
-	    <ul class="sortable">
-	      <%= render(:partial => "page", :collection => page.children) %> 
-	    </ul>
-  <% end %>
 		<%= link_to 'Public View', page.path.slug %>, 
 		<%= link_to 'Show', staff_page_path(page) %>, 
 		<%= link_to 'Edit', edit_staff_page_path(page, :archive => @archive) %>,  
 		<%= link_to 'Delete', staff_page_path(page), :method => :delete %> 
+
+	  <% if page.children %>
+		    <ul class="sortable">
+		      <%= render(:partial => "page", :collection => page.children) %> 
+		    </ul>
+	  <% end %>
 </li>
 
 
