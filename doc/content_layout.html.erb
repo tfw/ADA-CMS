@@ -14,7 +14,7 @@
 		<header>
 			<div class="login">
 				<% if current_user.nil? %>
-					<h1>USER Log-in </h1>								
+					<h1>USER Log-in </h1>
 					<%= form_for(:user, :url => new_inkling_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
 						<input type="text" name="inkling_user[email]" id="login_name"/>
 						<input type="password" name="inkling_user[password]" id="login_pass"/>

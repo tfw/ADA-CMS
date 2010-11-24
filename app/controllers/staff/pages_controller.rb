@@ -11,7 +11,6 @@ class Staff::PagesController < Inkling::BaseController
   
   def create
     create! do |format| 
-      debugger
       format.html {redirect_to staff_archives_path(:slug => @page.archive)} 
     end
   end
