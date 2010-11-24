@@ -20,8 +20,14 @@
     <%= form.hidden_field :archive_id, :value => @archive %>
     <%= form.hidden_field :author_id, :value => current_user.id %>
     <%= form.inputs :id => "form_meta" do %>
-      <%= form.input :title %>
+
       <%= form.input :parent, :as => :select, :collection => @pages %>
+      <%= form.input :title, :input_html => {:size => "50"} %>
+      <li class="string optional">
+        <label for="page_path">Path</label>
+        <input type="text" id="page_path" value="" size="50" disabled="disabled" />
+      </li> 
+
       <li class="string optional">
         <label for="page_author">Author</label>
         <input id="page_author" maxlength="255" 
@@ -31,10 +37,6 @@
     <% end %>
 
     <%= form.inputs :id => "form_layout" do %>
-      <li class="string optional">
-        <label for="page_path">Path</label>
-        <div id="page_path"></div>
-      </li> 
       <%= form.input :partial, :as => :radio, :collection => {
          "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
          }, :include_blank => false, :label => "Template " %>
@@ -65,6 +67,28 @@
 
 <% content_for :js do %>
 
+// .:| Page Slug |:. //
+
+  var pageSlug = {
+    update: function(element) {
+      title_text = $("#page_title").val();
+      parent_page_id = $("#page_parent_id").val();
+      $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive %>",
+             {title: title_text, parent: parent_page_id},
+             function(slug){
+               $("#page_path").val(slug.data)
+             });
+    }
+  }
+
+  // .:| Update Page Slug on Events |:. //
+
+  window.onload = pageSlug.update
+  $("#page_title").live("keyup", pageSlug.update);
+  $("#page_parent_id").change(pageSlug.update);
+
+  // .:| Page Preview |:. //
+  
   $("#preview-link").click(function(event){
     var title         = $("#page_title").val();
     var partial       = $("input:radio[name=page[partial]]:checked").val();
@@ -78,16 +102,9 @@
     event.preventDefault();
   });
 
-  $("#page_title").change(function(event){
-    text = $(this).val()
-    parent_page_id = $("#page_parent_id").val()
-    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive %>", {title: text, parent: parent_page_id},
-        function(slug){
-          $("#page_path").html(slug.data)
-        }
-      );
-  });
-  
+
+  // .:| Reveal Breakout Editor |:. //
+
   $("input:radio[name=page[partial]]").change(function(event){
     current_partial = $("input:radio[name=page[partial]]:checked").val();
     if (current_partial === "/pages/breakout_page") {
@@ -96,19 +113,6 @@
     else {
       $("#breakout").hide();      
     }
-  });
-
-  
-  $("#page_parent_id").change(function(event){
-    title_text = $("#page_title").val()
-    parent_page_id = $("#page_parent_id").val()
-
-    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive %>", {title: text, parent: parent_page_id},
-        function(slug){
-          $("#page_path").html(slug.data)
-        }
-      );
-    
   });
 
 <% end %>
