@@ -68,7 +68,6 @@ class Staff::PagesController < Inkling::BaseController
   private
   def get_archive
     @archive = Archive.find(params[:archive_id]) if params[:archive_id] # or not params[:archive_id].empty?
-    @archive ||= ADAArchive.new
   end
   
   def get_pages
