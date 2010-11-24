@@ -1,4 +1,4 @@
-require 'ada_archive'
+
 class Staff::PagesController < Inkling::BaseController
   include Inkling::Slugs
   
@@ -67,8 +67,7 @@ class Staff::PagesController < Inkling::BaseController
   
   private
   def get_archive
-    @archive = Archive.find(params[:archive_id]) if params[:archive_id] # or not params[:archive_id].empty?
-    @archive ||= ADAArchive.new
+    @archive = Archive.find(params[:archive_id]) unless params[:archive_id].blank? 
   end
   
   def get_pages

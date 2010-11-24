@@ -1,15 +1,17 @@
 <% content_for(:breadcrumbs) do %>
-	Archives: <%= @archive.name %>
+	Archives: <%= @archive.nil? ? "ADA" : @archive.name %>
 <% end %>
 
-Pages: <%= @archive.pages.size %> <br/>
-<%= link_to "Add a page", new_staff_page_path(:archive_id => @archive.id) %> 
+Pages: <%= @pages.size %> <br/>
+<br/>
+
+<%= link_to "Add a page", new_staff_page_path(:archive => @archive) %> 
 <p>
-<h2><%= @archive.name %> Page Management</h2>
+<h2>Page Management</h2>
 </p>
 
 
-<ul id="tag-tree">
+<ul class="sortable">
 	<%= render(:partial => "page", :collection => @parent_pages) %>
 </ul>
 
@@ -18,16 +20,8 @@ Pages: <%= @archive.pages.size %> <br/>
 		update: function(event, ui){
 			var moved = $(ui.item).attr("id");
 			var page_order = $(this).sortable('toArray').toString();
-		  $.post("/staff/archives/update_page_order?archive_id=<%= @archive.id ? @archive.id : '' %>", {page_order: page_order, moved: moved});
+		  $.post("/staff/archives/update_page_order?archive_id=<%= @archive %>", {page_order: page_order, moved: moved});
 		}
 	});
-	
-	$( "#sortable" ).disableSelection();
 
 <% end %>
-
-<ul class="sortable">
-	<li id="1-1">Foo 1</span></li>
-	<li id="1-1">Foo 2</span></li>
-</ul>
-

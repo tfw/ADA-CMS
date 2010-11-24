@@ -54,8 +54,9 @@ class CreateInklingTables < ActiveRecord::Migration
     end    
 
     create_table :inkling_logs do |t|
-      t.timestamps
+      t.timestamp :created_at
       t.text :text, :null => false
+      t.integer :user_id
     end
   end
 

@@ -1,6 +1,5 @@
 <%= javascript_include_tag :ckeditor %>
 
-
 <% if resource.errors.any? %>
     <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
     <ul>
@@ -10,8 +9,6 @@
     </ul>
 <% end %>
 
-
-
 <div id="summary" class="content-area">
   <h2>
     Archive: <%= (@archive.nil? ? "ADA" : @archive.name)%>
@@ -20,12 +17,11 @@
   <h3>Metadata</h3>
 
   <%= semantic_form_for([:staff, resource]) do |form| %>
-    <%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
+    <%= form.hidden_field :archive_id, :value => @archive %>
     <%= form.hidden_field :author_id, :value => current_user.id %>
     <%= form.inputs :id => "form_meta" do %>
       <%= form.input :title %>
       <%= form.input :parent, :as => :select, :collection => @pages %>
-      <%= form.input :rgt, :as => :select, :collection => @pages, :label => "Position: " %>
       <li class="string optional">
         <label for="page_author">Author</label>
         <input id="page_author" maxlength="255" 
@@ -67,8 +63,6 @@
 
 <div id="preview"></div>
 
-
-
 <% content_for :js do %>
 
   $("#preview-link").click(function(event){
@@ -76,7 +70,7 @@
     var partial       = $("input:radio[name=page[partial]]:checked").val();
     var body           = CKEDITOR.instances.page_body_editor.getData();    
     var breakout_box   = CKEDITOR.instances.page_breakout_box_editor.getData();  
-    $.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
+    $.post("/staff/pages/preview?archive_id=<%= @archive %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
         function update_preview_pane(html){
           $("#preview").html(html);
         }
@@ -87,8 +81,7 @@
   $("#page_title").change(function(event){
     text = $(this).val()
     parent_page_id = $("#page_parent_id").val()
-
-    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
+    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive %>", {title: text, parent: parent_page_id},
         function(slug){
           $("#page_path").html(slug.data)
         }
@@ -105,16 +98,17 @@
     }
   });
 
+  
   $("#page_parent_id").change(function(event){
     title_text = $("#page_title").val()
     parent_page_id = $("#page_parent_id").val()
 
-    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
+    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive %>", {title: text, parent: parent_page_id},
         function(slug){
           $("#page_path").html(slug.data)
         }
       );
     
   });
-  
+
 <% end %>

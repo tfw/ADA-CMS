@@ -5,8 +5,6 @@ class Page < ActiveRecord::Base
   
   belongs_to :archive
   belongs_to :author, :class_name => "Inkling::User", :foreign_key => "author_id"
-  belongs_to :parent, :class_name => "Page"
-  has_many :children, :class_name => "Page", :foreign_key => "parent_id"
   
   before_validation :link_title_defaults_to_title
   before_validation :default_partial, :if => "self.partial.nil?"
@@ -16,6 +14,16 @@ class Page < ActiveRecord::Base
   validates_presence_of :link_title
   validates_presence_of :partial
   
+
+  def self.archive_roots(archive)
+    roots = Page.roots
+    archive_roots = []
+
+    for page in roots
+      archive_roots << page if page.archive == archive
+    end
+    archive_roots
+  end
     
   def unique_archive_and_link_combination
     pre_existing = Page.find_all_by_archive_id_and_title(self.archive.id, self.title)

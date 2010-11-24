@@ -5,12 +5,11 @@ class ContentController < Inkling::ContentController
   protected  
   def current_archive
     @current_archive = Archive.find(params[:archive_id]) if @current_archive.nil?
-    @current_archive ||= ADAArchive.new #see lib/ada_archive.rb  
     @current_archive
   end
   
   def get_ada_pages
-    @ada_parent_pages = Page.find_all_by_archive_id_and_parent_id(nil, nil)    
+    @ada_parent_pages = Page.archive_roots(nil)
   end
 
   def get_archives
