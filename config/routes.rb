@@ -15,6 +15,7 @@ Ada::Application.routes.draw do
     post 'pages/preview'
     
     post '/archives/update_page_order'
+    # resource :archives, :only => :show
     match '/archives/:slug' => "archives#show", :as => "archives", :defaults => {:slug => "ada"}
     # match '/archives/' => "archives#show", :as => "archive", :defaults => {:slug => "/ada"}
   end

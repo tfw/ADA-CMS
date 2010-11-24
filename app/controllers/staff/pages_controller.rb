@@ -10,15 +10,15 @@ class Staff::PagesController < Inkling::BaseController
   respond_to :json, :only => [:sluggerize_path, :preview]
   
   def create
-    debugger
-    create! do |format|   
-      format.html {redirect_to staff_archives_path(@page.archive)} 
+    create! do |format| 
+      debugger
+      format.html {redirect_to staff_archives_path(:slug => @page.archive)} 
     end
   end
 
   def update
     update! do |format|   
-      format.html { redirect_to staff_archives_path(@page.archive) }
+      format.html { redirect_to staff_archives_path(:slug => @page.archive) }
     end
   end
   
