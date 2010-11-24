@@ -14,12 +14,9 @@ Ada::Application.routes.draw do
     post 'pages/sluggerize_path'
     post 'pages/preview'
     
-    # namespace :pages do 
-    #   match 'update_tree' => '#update_tree', :as => :update_tree
-    #   match 'sluggerize_path' => '#sluggerize_path', :as => :sluggerize_path
-    # end
     post '/archives/update_page_order'
-    match '/archives/:slug' => "archives#show", :as => "archives"
+    match '/archives/:slug' => "archives#show", :as => "archives", :defaults => {:slug => "ada"}
+    # match '/archives/' => "archives#show", :as => "archive", :defaults => {:slug => "/ada"}
   end
   
   match '/*path' => "pages#show", :as => :page, :constraints => Inkling::Routing::TypeConstraint.new("Page")
