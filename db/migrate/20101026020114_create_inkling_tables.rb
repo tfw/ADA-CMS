@@ -8,6 +8,7 @@ class CreateInklingTables < ActiveRecord::Migration
       t.trackable
       t.timestamps
       t.timestamps
+      # t.string :login, :null => false
     end
     
     create_table :inkling_roles do |t|
