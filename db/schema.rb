@@ -118,6 +118,9 @@ ActiveRecord::Schema.define(:version => 20101027001044) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "username"
+    t.string   "firstname"
+    t.string   "surname"
   end
 
   create_table "pages", :force => true do |t|
