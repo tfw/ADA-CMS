@@ -1,53 +1,5 @@
 <%= javascript_include_tag :ckeditor %>
 
-<% content_for :js do %>
-
-	$("#preview-link").click(function(event){
-		var title 				= $("#page_title").val();
-		var partial 			= $("input:radio[name=page[partial]]:checked").val();
-		var body 					= CKEDITOR.instances.page_body_editor.getData();		
-		var breakout_box 	= CKEDITOR.instances.page_breakout_box_editor.getData();	
-		$.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
-				function update_preview_pane(html){
-					$("#preview").html(html);
-				}
-			);				
-	});
-
-	$("#page_title").change(function(event){
-		text = $(this).val()
-		parent_page_id = $("#page_parent_id").val()
-
-		$.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
-				function(slug){
-					$("#page_path").html(slug.data)
-				}
-			);
-	});
-	
-	$("input:radio[name=page[partial]]").change(function(event){
-		current_partial = $("input:radio[name=page[partial]]:checked").val();
-		if (current_partial === "/pages/breakout_page") {
-			$("#breakout").show();
-		}
-		else {
-			$("#breakout").hide();			
-		}
-	});
-
-	$("#page_parent_id").change(function(event){
-		title_text = $("#page_title").val()
-		parent_page_id = $("#page_parent_id").val()
-
-		$.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
-				function(slug){
-					$("#page_path").html(slug.data)
-				}
-			);
-		
-	});
-	
-<% end %>
 
 <% if resource.errors.any? %>
     <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
@@ -58,58 +10,111 @@
     </ul>
 <% end %>
 
-<h1>
-  Archive: <%= (@archive.nil? ? "ADA" : @archive.name)%>
-</h1>
 
-<div id="form">
-	<%= semantic_form_for([:staff, resource]) do |form| %>
 
-	  <%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
-	  <%= form.hidden_field :author_id, :value => current_user.id %>
+<div id="summary" class="content-area">
+  <h2>
+    Archive: <%= (@archive.nil? ? "ADA" : @archive.name)%>
+  </h2>
 
-	  <%= form.inputs :id => "form_meta" do %>
-	    <%= form.input :title %>
-	    <%= form.input :parent, :as => :select, :collection => @pages %>
-	    <%= form.input :rgt, :as => :select, :collection => @pages, :label => "Position: " %>
+  <h3>Metadata</h3>
 
-	    <li class="string optional">
-	      <label for="page_author">Author</label>
-	      <input id="page_author" maxlength="255" 
-	             name="page[author]" size="50" 
-	             type="text" value="<%= current_user.email %>" disabled="disabled" />
-	    </li> 
+  <%= semantic_form_for([:staff, resource]) do |form| %>
+    <%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
+    <%= form.hidden_field :author_id, :value => current_user.id %>
+    <%= form.inputs :id => "form_meta" do %>
+      <%= form.input :title %>
+      <%= form.input :parent, :as => :select, :collection => @pages %>
+      <%= form.input :rgt, :as => :select, :collection => @pages, :label => "Position: " %>
+      <li class="string optional">
+        <label for="page_author">Author</label>
+        <input id="page_author" maxlength="255" 
+               name="page[author]" size="50" 
+               type="text" value="<%= current_user.email %>" disabled="disabled" />
+      </li> 
+    <% end %>
 
-	  <% end %>
+    <%= form.inputs :id => "form_layout" do %>
+      <li class="string optional">
+        <label for="page_path">Path</label>
+        <div id="page_path"></div>
+      </li> 
+      <%= form.input :partial, :as => :radio, :collection => {
+         "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
+         }, :include_blank => false, :label => "Template " %>
+    <% end %>
 
-	  <%= form.inputs :id => "form_layout" do %>
+    <h3>Body</h3>
+    <%= form.inputs do %>
+      <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
+    <% end %>
 
-	    <li class="string optional">
-	      <label for="page_path">Path</label>
-	      <div id="page_path"></div>
-	    </li> 
-			<li>
-			   <%= form.input :partial, :as => :radio, :collection => {
-			     "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
-			     }, :include_blank => false, :label => "Template " %>
-			 		<% end %>
-			</li>
+    <div id="breakout" style="display:none">
+      <h3>Breakout Box:</h3>
+      <%= form.inputs do %>
+          <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
+      <% end %>
+    </div>
 
-	  <%= form.inputs :id => "form_content" do %>
-	    <h3 style="margin-top:1em">Body:</h3>
-	    <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
-		
-			<div id="breakout" style="display:none">
-		    <h3 style="margin-top:1em">Breakout Box:</h3>
-		    <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
-			</div>
-	  <% end %>
+    <h3>Actions</h3>
+    <%- form.buttons do -%>
+      <%= form.commit_button %>
+      <%= content_tag(:li, content_tag(:a, "Preview", :id => "preview-link", :href => "#")) %>
+    <%- end -%>
 
-	  <%= form.buttons %>
-		<a id="preview-link"> Preview </a>
-	<% end %>
+  <% end %>
 </div>
 
-<div id="preview">
-</div>
+<div id="preview"></div>
 
+
+
+<% content_for :js do %>
+
+  $("#preview-link").click(function(event){
+    var title         = $("#page_title").val();
+    var partial       = $("input:radio[name=page[partial]]:checked").val();
+    var body           = CKEDITOR.instances.page_body_editor.getData();    
+    var breakout_box   = CKEDITOR.instances.page_breakout_box_editor.getData();  
+    $.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
+        function update_preview_pane(html){
+          $("#preview").html(html);
+        }
+      );
+    event.preventDefault();
+  });
+
+  $("#page_title").change(function(event){
+    text = $(this).val()
+    parent_page_id = $("#page_parent_id").val()
+
+    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
+        function(slug){
+          $("#page_path").html(slug.data)
+        }
+      );
+  });
+  
+  $("input:radio[name=page[partial]]").change(function(event){
+    current_partial = $("input:radio[name=page[partial]]:checked").val();
+    if (current_partial === "/pages/breakout_page") {
+      $("#breakout").show();
+    }
+    else {
+      $("#breakout").hide();      
+    }
+  });
+
+  $("#page_parent_id").change(function(event){
+    title_text = $("#page_title").val()
+    parent_page_id = $("#page_parent_id").val()
+
+    $.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
+        function(slug){
+          $("#page_path").html(slug.data)
+        }
+      );
+    
+  });
+  
+<% end %>
