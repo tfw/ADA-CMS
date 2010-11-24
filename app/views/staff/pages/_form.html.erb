@@ -7,7 +7,7 @@
 		var partial 			= $("input:radio[name=page[partial]]:checked").val();
 		var body 					= CKEDITOR.instances.page_body_editor.getData();		
 		var breakout_box 	= CKEDITOR.instances.page_breakout_box_editor.getData();	
-		$.post("/staff/pages/preview?archive_id=<%= @archive.id ? @archive.id : '' %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
+		$.post("/staff/pages/preview?archive_id=<%= @archive %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
 				function update_preview_pane(html){
 					$("#preview").html(html);
 				}
@@ -18,7 +18,7 @@
 		text = $(this).val()
 		parent_page_id = $("#page_parent_id").val()
 
-		$.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
+		$.post("/staff/pages/sluggerize_path?archive_id=<%= @archive %>", {title: text, parent: parent_page_id}, 
 				function(slug){
 					$("#page_path").html(slug.data)
 				}
@@ -39,7 +39,7 @@
 		title_text = $("#page_title").val()
 		parent_page_id = $("#page_parent_id").val()
 
-		$.post("/staff/pages/sluggerize_path?archive_id=<%= @archive.id ? @archive.id : '' %>", {title: text, parent: parent_page_id}, 
+		$.post("/staff/pages/sluggerize_path?archive_id=<%= @archive %>", {title: text, parent: parent_page_id}, 
 				function(slug){
 					$("#page_path").html(slug.data)
 				}
@@ -65,7 +65,7 @@
 <div id="form">
 	<%= semantic_form_for([:staff, resource]) do |form| %>
 
-	  <%= form.hidden_field :archive_id, :value => (@archive.nil? ? nil : @archive.id) %>
+	  <%= form.hidden_field :archive_id, :value => @archive %>
 	  <%= form.hidden_field :author_id, :value => current_user.id %>
 
 	  <%= form.inputs :id => "form_meta" do %>

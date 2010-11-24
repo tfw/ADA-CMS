@@ -1,5 +1,5 @@
 <% content_for(:breadcrumbs) do %>
-  Pages: <%= @archive.name %> 
+  Pages:  <%= @archive.nil? ? "ADA" : @archive.name %>
 <% end %>
 
 <%= @page.title %> 
