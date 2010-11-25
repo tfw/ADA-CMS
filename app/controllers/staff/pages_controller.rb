@@ -76,5 +76,9 @@ class Staff::PagesController < Inkling::BaseController
     for parent_page in @pages
       @pages += parent_page.children
     end
+    
+    if params[:id]
+      @pages.delete(Page.find(params[:id]))
+    end
   end
 end
