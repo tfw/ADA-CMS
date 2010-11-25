@@ -17,7 +17,7 @@ class Staff::PagesController < Inkling::BaseController
 
   def update
     update! do |format|   
-      format.html { redirect_to staff_archives_path(:slug => @page.archive) }
+      format.html { debugger ; redirect_to staff_archives_path(:slug => @page.archive) }
     end
   end
   
@@ -70,7 +70,8 @@ class Staff::PagesController < Inkling::BaseController
   end
   
   def get_pages
-    @pages = Page.archive_roots((@archive.nil? ? nil : @archive.id))
+    # debugger
+    @pages = Page.archive_roots((@archive.nil? ? nil : @archive))
     
     parent_pages = @pages.dup
     for parent_page in @pages
