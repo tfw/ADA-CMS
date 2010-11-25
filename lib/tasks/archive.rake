@@ -5,5 +5,5 @@ task :archive do
   mkdir "/home/deploy/backups/#{now}"
 
   #1 dump the db
-  `pg_dump -U postgres -Ft -b ada_production > /home/deploy/backups/#{now}/db/ada.tar`
+  `pg_dump -U postgres -Ft -b ada_production > /home/deploy/backups/#{now}/ada.tar`
 end
