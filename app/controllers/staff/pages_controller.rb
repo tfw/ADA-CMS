@@ -11,20 +11,36 @@ class Staff::PagesController < Inkling::BaseController
   
   def create
     create! do |format| 
-      format.html {redirect_to staff_archives_path(:slug => @page.archive)} 
+      format.html {
+        if @page.archive
+          redirect_to staff_archives_path(:slug => @page.archive.slug) 
+        else
+          redirect_to staff_archives_path(:slug => "/ada")           
+        end        } 
     end
   end
 
   def update
     update! do |format|   
-      format.html { debugger ; redirect_to staff_archives_path(:slug => @page.archive) }
+      format.html {
+        if @page.archive
+          redirect_to staff_archives_path(:slug => @page.archive.slug) 
+        else
+          redirect_to staff_archives_path(:slug => "/ada")           
+        end
+      } 
     end
   end
   
   def destroy
     archive = Page.find(params[:id]).archive
     destroy! do |format|   
-      format.html { redirect_to staff_archives_path(archive) }
+      format.html { 
+        if @page.archive
+          redirect_to staff_archives_path(:slug => archive.slug) 
+        else
+          redirect_to staff_archives_path(:slug => "/ada")           
+        end        }
     end
   end
 
