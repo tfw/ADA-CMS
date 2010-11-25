@@ -3,12 +3,9 @@ task :archive do
 
   rm_rf('data') if File.exists?('data')
 
-  mkdir 'data'
-  mkdir 'data/db'
-  mkdir 'data/files'
+  mkdir "/home/deploy/backups/#{now}"
+  now = Time.now.strftime("%m/%d/%Y-%I:%M%p")
 
-  `touch data/log`
-  `echo #{Time.now.strftime("%m-%d-%y at %I %M")} >> data/log`
   #1 dump the db
-  `pg_dump -U postgres -Ft -b ada_production > data/db/ada.tar`
+  `pg_dump -U postgres -Ft -b ada_production > /home/deploy/backups/#{now}/db/ada.tar`
 end
