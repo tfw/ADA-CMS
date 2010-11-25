@@ -10,7 +10,5 @@ task :archive do
   `touch data/log`
   `echo #{Time.now.strftime("%m-%d-%y at %I %M")} >> data/log`
   #1 dump the db
-  `pg_dump -Ft -b ada_production > data/db/ada.tar`
-  #2 copy the uploaded files
-  cp_r('tmp/uploads', 'data/files')
+  `pg_dump -U postgres -Ft -b ada_production > data/db/ada.tar`
 end
