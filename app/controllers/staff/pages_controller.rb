@@ -70,7 +70,7 @@ class Staff::PagesController < Inkling::BaseController
   end
   
   def get_pages
-    @pages = Page.find_all_by_archive_id_and_parent_id( (@archive.nil? ? nil : @archive.id) , nil)
+    @pages = Page.archive_roots((@archive.nil? ? nil : @archive.id))
     
     parent_pages = @pages.dup
     for parent_page in @pages
