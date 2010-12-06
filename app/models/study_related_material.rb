@@ -1,4 +1,4 @@
-class DatasetRelatedMaterial < ActiveRecord::Base
+class StudyRelatedMaterial < ActiveRecord::Base
   
   belongs_to :dataset
   

@@ -10,37 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101027001044) do
+ActiveRecord::Schema.define(:version => 20101206215124) do
 
   create_table "archives", :force => true do |t|
     t.string   "name",       :null => false
     t.string   "slug",       :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "dataset_entries", :force => true do |t|
-    t.integer  "dataset_id"
-    t.string   "key"
-    t.text     "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "dataset_related_materials", :force => true do |t|
-    t.integer  "dataset_id"
-    t.string   "uri"
-    t.string   "label"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "datasets", :force => true do |t|
-    t.string   "label"
-    t.string   "resource"
-    t.string   "study3"
-    t.string   "about"
-    t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -135,6 +109,40 @@ ActiveRecord::Schema.define(:version => 20101027001044) do
     t.string   "partial"
     t.integer  "lft"
     t.integer  "rgt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "studies", :force => true do |t|
+    t.string   "label"
+    t.string   "resource"
+    t.string   "study3"
+    t.string   "about"
+    t.boolean  "published"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "study_fields", :force => true do |t|
+    t.integer  "dataset_id"
+    t.string   "key"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "study_queries", :force => true do |t|
+    t.integer  "archive_id"
+    t.string   "name"
+    t.text     "query"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "study_related_materials", :force => true do |t|
+    t.integer  "dataset_id"
+    t.string   "uri"
+    t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

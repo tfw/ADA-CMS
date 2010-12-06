@@ -19,3 +19,7 @@ end
 #     puts "Inkling> Created default administrator: login - 'admin@localhost.com', password - 'test123'."
 #   end
 # end
+
+task :datasets => :environment do
+  Nesstar::AtsidaIntegration.run
+end

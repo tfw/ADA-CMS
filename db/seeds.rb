@@ -41,3 +41,14 @@ unless Inkling::User.find_by_email("steven.mceachern@anu.edu.au")
   user = Inkling::User.create!(:email => "paul.kuske@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
   Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
 end
+
+unless DocumentIdentifierList.find_by_name('whitelist')
+  whitelist = DocumentIdentifierList.new(:name => 'whitelist')
+  whitelist.save!
+end
+
+unless DocumentIdentifierList.find_by_name('blacklist')
+  whitelist = DocumentIdentifierList.new(:name => 'blacklist')
+  whitelist.save!
+end
+
