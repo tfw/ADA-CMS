@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101206215124) do
+ActiveRecord::Schema.define(:version => 20101206230555) do
 
   create_table "archives", :force => true do |t|
     t.string   "name",       :null => false
@@ -121,12 +121,39 @@ ActiveRecord::Schema.define(:version => 20101206215124) do
     t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "universe"
+    t.string   "collection_date"
+    t.string   "id_number"
+    t.text     "series_name"
+    t.text     "topics"
+    t.string   "country"
+    t.text     "geo_coverage"
+    t.text     "investigator"
+    t.string   "language"
+    t.text     "abstract"
+    t.text     "keywords"
+    t.integer  "page_id"
   end
 
   create_table "study_fields", :force => true do |t|
     t.integer  "dataset_id"
     t.string   "key"
     t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "study_integration_blocks", :force => true do |t|
+    t.string   "ddi_id"
+    t.integer  "archive_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "study_integrations", :force => true do |t|
+    t.string   "ddi_id"
+    t.integer  "archive_id"
+    t.integer  "study_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
