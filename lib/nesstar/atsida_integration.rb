@@ -137,6 +137,8 @@ module Nesstar
             #create mappings entries for any DDI elements/attributes we have not yet noticed
             DDIMapping.batch_create(ds_hash)
 
+puts "mappings created .... \n"
+
             #we looks for a dataset_entry which records the URL of a related materials document
             related_materials_entry = ds.related_materials_attribute
             unless related_materials_entry.nil?
@@ -156,20 +158,23 @@ module Nesstar
               end
             end
 
+puts "looking for page .... \n"
+
             path = ds.label.split(".").last
             path.gsub!(/[^\w\s]/, "")
             path = path.gsub(" ", "-").downcase
 
-            page = Page.find_by_name(ds.label)
+            page = Page.find_by_title(ds.label)
 
             if page.nil?
-              page = Page.new(:name => ds.label, :title => ds.label,
+              page = Page.create!(:title => ds.label, :title => ds.label,
               :description => "A page automatically created to hold the #{ds.label} dataset.",
-              :partial =>"dataset_page.html.ren", :path => path, :published => true)
-              page.save!
+              :partial =>"study_page.html.erb", :path => path, :published => true)
 
               ds.page_id = page.id
               ds.save!
+
+              puts "creating page .... \n"
 
               new_pages << page
             end
