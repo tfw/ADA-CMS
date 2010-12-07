@@ -1,5 +1,7 @@
 class StudyQuery < ActiveRecord::Base
 
+  belongs_to :archive
+
   validates_uniqueness_of :query
   validates_uniqueness_of :name
 

@@ -33,13 +33,13 @@ module Nesstar
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
           subprocess :ref => 'initialize_directories'
-          participant :ref => 'load_dataset_ids', :datasets_yaml => $datasets_file
-          cancel_process :if => '${f:dataset_ids.size} == 0'
+          participant :ref => 'load_study_ids', :datasets_yaml => $datasets_file
+          cancel_process :if => '${f:study_ids.size} == 0'
           participant :ref => 'download_dataset_xmls'
           participant :ref => 'convert'
 
           participant :ref => 'generate_editors_report', :if => '${f:new_pages.size} != 0'
-          participant :ref => 'email_editors_report', :notify_list => ["editors@atsida.assda.edu.au"], :if => '${f:new_pages.size} != 0'
+          # participant :ref => 'email_editors_report', :notify_list => ["editors@atsida.assda.edu.au"], :if => '${f:new_pages.size} != 0'
         end
 
         process_definition :name => 'initialize_directories' do
@@ -66,30 +66,39 @@ module Nesstar
         mkdir(workitem.fields['params']['dir'])
       end
 
-      ## load_dataset_ids
-      engine.register_participant 'load_dataset_ids' do |workitem|
+      ## load_study_ids
+      engine.register_participant 'load_study_ids' do |workitem|
         dataset_urls = []
-        whitelist = DocumentIdentifierList.find_by_name("whitelist")
-        for doc_identifier in whitelist.document_identifiers
-          dataset_urls << doc_identifier.resource_url
+
+        # whitelist = DocumentIdentifierList.find_by_name("whitelist")
+        # for doc_identifier in whitelist.document_identifiers
+        #   dataset_urls << doc_identifier.resource_url
+        # end
+
+        if Rails.env == "development" and StudyQuery.all.size == 0
+          StudyQuery.create!(:name => "default", 
+                    :query => "http://bonus.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT(o)+FROM+Study+o+WHERE+o.abstractText+like+%27%25aborigin%25%27",
+                    :archive => Archive.international)
         end
-        queries = DocumentQuery.all
+
+        queries = StudyQuery.all
 
         for query in queries
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
-
+ 
+ # puts "`curl -o #{query_response_file} --compressed \"#{query.query}`\""
           `curl -o #{query_response_file} --compressed "#{query.query}"`
           handler = Nesstar::QueryResponseParser.new(query_response_file)
           dataset_urls += handler.datasets
         end
 
-        blacklist = DocumentIdentifierList.find_by_name("blacklist")
-        banned_urls = []
-        for doc_identifier in blacklist.document_identifiers
-          banned_urls << doc_identifier.resource_url
-        end
+        # blacklist = DocumentIdentifierList.find_by_name("blacklist")
+        # banned_urls = []
+        # for doc_identifier in blacklist.document_identifiers
+        #   banned_urls << doc_identifier.resource_url
+        # end
 
-        dataset_urls -= banned_urls
+        # dataset_urls -= banned_urls
         workitem.fields['config'] = {'urls' => dataset_urls}
       end
 
@@ -118,16 +127,15 @@ module Nesstar
       engine.register_participant 'convert' do |workitem|
         database_errors = []
         new_pages = []
-        section = Section.find_by_name("Datasets Collection")
 
         Dir.entries($xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
           begin
             ds_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
-            ds = Dataset.store_with_entries(ds_hash)
+            ds = Study.store_with_entries(ds_hash)
 
             #create mappings entries for any DDI elements/attributes we have not yet noticed
-            Mapping.batch_create(ds_hash)
+            DDIMapping.batch_create(ds_hash)
 
             #we looks for a dataset_entry which records the URL of a related materials document
             related_materials_entry = ds.related_materials_attribute
@@ -138,10 +146,10 @@ module Nesstar
               related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
 
               related_materials_list.each do |related|
-                pre_existing = DatasetRelatedMaterial.find_by_dataset_id_and_uri_and_label(ds.id, related[:uri], related[:label])
+                pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri_and_label(ds.id, related[:uri], related[:label])
                 next if pre_existing
 
-                related_material = DatasetRelatedMaterial.new(:dataset_id => ds.id, :uri => related[:uri], :label => related[:label],
+                related_material = StudyRelatedMaterial.new(:study_id => ds.id, :uri => related[:uri], :label => related[:label],
                             :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
                             :resource => related[:study_resource])
                 related_material.save!
@@ -201,6 +209,8 @@ module Nesstar
         for page in workitem.fields['new_pages']
           editor_report << "\n http://atsida.assda.edu.au#{page['page']['path']} is in draft state."
         end
+
+puts "** \n\n\n #{editor_report}"
 
         workitem.fields['editors_report'] = editor_report
       end

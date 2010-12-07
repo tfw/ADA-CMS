@@ -10,11 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101206230555) do
+ActiveRecord::Schema.define(:version => 20101207041528) do
 
   create_table "archives", :force => true do |t|
     t.string   "name",       :null => false
     t.string   "slug",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ddi_mappings", :force => true do |t|
+    t.string   "ddi"
+    t.string   "human_readable"
+    t.text     "description"
+    t.boolean  "xml_element"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -159,9 +168,9 @@ ActiveRecord::Schema.define(:version => 20101206230555) do
   end
 
   create_table "study_queries", :force => true do |t|
-    t.integer  "archive_id"
-    t.string   "name"
-    t.text     "query"
+    t.integer  "archive_id", :null => false
+    t.string   "name",       :null => false
+    t.text     "query",      :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

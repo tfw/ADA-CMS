@@ -1,10 +1,10 @@
 class CreateStudyQueries < ActiveRecord::Migration
   def self.up
     create_table :study_queries do |t|
-      t.integer :id
-      t.integer :archive_id
-      t.string :name
-      t.text :query
+      t.integer :id, :null => false
+      t.integer :archive_id, :null => false
+      t.string :name, :null => false
+      t.text :query, :null => false
       t.timestamps
     end
   end
