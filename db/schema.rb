@@ -136,7 +136,7 @@ ActiveRecord::Schema.define(:version => 20101206230555) do
   end
 
   create_table "study_fields", :force => true do |t|
-    t.integer  "dataset_id"
+    t.integer  "study_id"
     t.string   "key"
     t.text     "value"
     t.datetime "created_at"
@@ -167,7 +167,7 @@ ActiveRecord::Schema.define(:version => 20101206230555) do
   end
 
   create_table "study_related_materials", :force => true do |t|
-    t.integer  "dataset_id"
+    t.integer  "study_id"
     t.string   "uri"
     t.string   "label"
     t.datetime "created_at"

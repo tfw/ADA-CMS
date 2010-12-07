@@ -2,7 +2,7 @@
 
 class Study < ActiveRecord::Base
   
-  has_many :study_entries
+  has_many :study_fields; alias fields study_fields
   has_many :study_related_materials; alias related_materials study_related_materials
   belongs_to :page
   
@@ -10,44 +10,44 @@ class Study < ActiveRecord::Base
   
   def self.store_with_entries(data)
     #first, see if this is a new dataset or we're updating an old one.
-    ds = Study.find_by_label(data[:label])
-    ds = Study.new if ds.nil?
+    study = Study.find_by_label(data[:label])
+    study = Study.new if study.nil?
 
-    ds.label = data[:label]
-    ds.about = data[:about]
+    study.label = data[:label]
+    study.about = data[:about]
 
     local_data = data.dup
     local_data.delete(:label)
     local_data.delete(:about)
 
-    ds.universe = data[:universe]
+    study.universe = data[:universe]
     data.delete(:universe)
-    ds.published = true
-    ds.abstract = data[:abstract]
+    study.published = true
+    study.abstract = data[:abstract]
     data.delete(:abstract)
-    ds.keywords = data[:keywords]
+    study.keywords = data[:keywords]
     data.delete(:keywords)
 
-    ds.save!
-    local_data.each {|k,v| create_or_update_entry(ds, k.to_s, v)}
+    study.save!
+    local_data.each {|k,v| create_or_update_entry(study, k.to_s, v)}
 
-    ds
+    study
   end
 
-  def self.create_or_update_entry(dataset, key, value)
+  def self.create_or_update_entry(study, key, value)
     begin
-      ds_entry = StudyField.find_by_dataset_id_and_key(dataset.id, key)
+      study_field = StudyField.find_by_study_id_and_key(study.id, key)
     rescue
       raise StandardError, caller
     end
 
-    if ds_entry
-      ds_entry.value = value
+    if study_field
+      study_field.value = value
     else
-      ds_entry = DatasStudy.new(:study_id => dataset.id, :key => key, :value => value)
+      study_field = StudyField.new(:study_id => study.id, :key => key, :value => value)
     end
 
-    ds_entry.save!
+    study_field.save!
   end
 
   def friendly_label
@@ -60,4 +60,7 @@ class Study < ActiveRecord::Base
     end
   end
   
+  def related_materials_attribute
+    fields.find_by_key("relatedMaterials_attribute_resource")
+  end
 end
