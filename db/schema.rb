@@ -120,6 +120,7 @@ ActiveRecord::Schema.define(:version => 20101207041528) do
     t.integer  "rgt"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "state"
   end
 
   create_table "studies", :force => true do |t|

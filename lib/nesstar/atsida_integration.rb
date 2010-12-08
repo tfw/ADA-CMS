@@ -165,11 +165,11 @@ puts "looking for page .... \n"
             path = path.gsub(" ", "-").downcase
 
             page = Page.find_by_title(ds.label)
+            author = Inkling::Role.find_by_name("administrator").users.first
 
             if page.nil?
-              page = Page.create!(:title => ds.label, :title => ds.label,
-              :description => "A page automatically created to hold the #{ds.label} dataset.",
-              :partial =>"study_page.html.erb", :path => path, :published => true)
+              page = Page.create!(:title => ds.label, :description => "A page automatically created to hold the #{ds.label} dataset.",
+              :partial =>"study_page.html.erb", :author => author)
 
               ds.page_id = page.id
               ds.save!

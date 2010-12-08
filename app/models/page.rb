@@ -5,6 +5,7 @@ class Page < ActiveRecord::Base
   
   belongs_to :archive
   belongs_to :author, :class_name => "Inkling::User", :foreign_key => "author_id"
+  has_one :study
   
   before_validation :link_title_defaults_to_title
   before_validation :default_partial, :if => "self.partial.nil?"
