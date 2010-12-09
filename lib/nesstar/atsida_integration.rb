@@ -33,7 +33,7 @@ module Nesstar
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
           subprocess :ref => 'initialize_directories'
-          participant :ref => 'load_study_ids', :datasets_yaml => $datasets_file
+          participant :ref => 'define_study_integrations', :datasets_yaml => $datasets_file
           cancel_process :if => '${f:study_ids.size} == 0'
           participant :ref => 'download_dataset_xmls'
           participant :ref => 'convert'
@@ -67,13 +67,8 @@ module Nesstar
       end
 
       ## load_study_ids
-      engine.register_participant 'load_study_ids' do |workitem|
+      engine.register_participant 'define_study_integrations' do |workitem|
         dataset_urls = []
-
-        # whitelist = DocumentIdentifierList.find_by_name("whitelist")
-        # for doc_identifier in whitelist.document_identifiers
-        #   dataset_urls << doc_identifier.resource_url
-        # end
 
         if Rails.env == "development" and StudyQuery.all.size == 0
           StudyQuery.create!(:name => "default", 
@@ -86,27 +81,36 @@ module Nesstar
         for query in queries
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
  
- # puts "`curl -o #{query_response_file} --compressed \"#{query.query}`\""
           `curl -o #{query_response_file} --compressed "#{query.query}"`
           handler = Nesstar::QueryResponseParser.new(query_response_file)
-          dataset_urls += handler.datasets
+
+          for url in handler.datasets
+            # pre_existing = ArchiveToStudyIntegration.find_by_url_and_archive(url, query.archive)
+            # pre_existing = ArchiveToStudyBlock.find_by_url_and_archive(url, query.archive)
+            # ArchiveToStudyIntegration.create(:url => url, :archive => query.archive, :study_query => query) if pre_existing.nil?
+
+            #the validations on the object ensure we don't duplicate the object (archive + query must be unique, url can repeat)
+            ArchiveToStudyIntegration.create(:url => url, :archive => query.archive, :study_query => query) 
+          end
         end
-
-        # blacklist = DocumentIdentifierList.find_by_name("blacklist")
-        # banned_urls = []
-        # for doc_identifier in blacklist.document_identifiers
-        #   banned_urls << doc_identifier.resource_url
-        # end
-
-        # dataset_urls -= banned_urls
-        workitem.fields['config'] = {'urls' => dataset_urls}
+        
+        puts "***** 2 *****"
+        # workitem.fields['config'] = {'urls' => dataset_urls}
       end
 
       ## download_dataset_xmls
       engine.register_participant 'download_dataset_xmls' do |workitem|
         fetch_errors = []
+        
         downloaded_files = []
-        workitem.fields['config']['urls'].each do |url|
+        
+        archive_integrations = Set.new
+        
+        ArchiveToStudyIntegration.all.each{|url| archive_integrations << url}
+        
+        
+        archive_integrations.each do |archive_integration|
+          url = archive_integration.url
           file_name = "#{url.split(".").last}.xml"
           begin
 #            puts "curl -o #{$xml_dir}#{file_name} --compressed #{url}"

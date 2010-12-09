@@ -24,8 +24,7 @@ module Nesstar
         resource = item.attribute('resource')
         datasets << resource.value if resource
       end
-#debugger
-      puts datasets.size
+
       datasets
     end
   end
