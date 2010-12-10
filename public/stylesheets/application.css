@@ -45,7 +45,7 @@ form.tree-form {
 div.content-area {
   border: 1px solid #bababa;
   background: #fff;
-  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; /* invalid CSS2, but... */
+  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
   float: left;
   width: 100%;
 }
@@ -63,13 +63,18 @@ div.content-area h3 {
   clear: left;
 }
 div.content-area h3 a {
-  font-size:small;
+  font-size:smaller;
   float: right;
   font-weight: normal;
 }
-dl, p {
+dl, p, div.content-area ol {
   margin: 1.2em;
 }
+
+div.content-area fieldset fieldset {
+/*  margin: 0;*/
+}
+
 p {
   margin-bottom: 0;
 }
@@ -87,7 +92,7 @@ dl.issue-metadata {
   float: left;
   padding: 1em;
   border: 1px solid #bababa;
-  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; /* invalid CSS2, but... */
+  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
 }
 dl.issue-metadata dt a {
   font-weight: bold;
@@ -115,4 +120,11 @@ dl.issue-metadata dd {
 }
 dl.issue-metadata dd ol li{
   list-style-type: decimal;
+}
+
+/* Preview Link */
+a#preview-link {
+  background: url(/images/structure/icon_preview.png) no-repeat 5px center;
+  padding: 5px 0 5px 28px;
+  
 }

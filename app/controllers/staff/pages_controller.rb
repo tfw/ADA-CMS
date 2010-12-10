@@ -10,22 +10,37 @@ class Staff::PagesController < Inkling::BaseController
   respond_to :json, :only => [:sluggerize_path, :preview]
   
   def create
-    create! do |format|   
-      format.html {redirect_to staff_archives_path(@page.archive)} 
+    create! do |format| 
+      format.html {
+        if @page.archive
+          redirect_to staff_archives_path(:slug => @page.archive.slug) 
+        else
+          redirect_to staff_archives_path(:slug => "/ada")           
+        end        } 
     end
   end
 
   def update
     update! do |format|   
-      format.html { redirect_to staff_archives_path(@page.archive) }
+      format.html {
+        if @page.archive
+          redirect_to staff_archives_path(:slug => @page.archive.slug) 
+        else
+          redirect_to staff_archives_path(:slug => "/ada")           
+        end
+      } 
     end
   end
   
   def destroy
-    # debugger
-    archive = Page.find(:params[id]).archive
+    archive = Page.find(params[:id]).archive
     destroy! do |format|   
-      format.html { redirect_to staff_archives_path(archive) }
+      format.html { 
+        if @page.archive
+          redirect_to staff_archives_path(:slug => archive.slug) 
+        else
+          redirect_to staff_archives_path(:slug => "/ada")           
+        end        }
     end
   end
 
@@ -67,16 +82,20 @@ class Staff::PagesController < Inkling::BaseController
   
   private
   def get_archive
-    @archive = Archive.find(params[:archive_id]) if params[:archive_id] # or not params[:archive_id].empty?
-    @archive ||= ADAArchive.new
+    @archive = Archive.find(params[:archive_id]) unless params[:archive_id].blank? 
   end
   
   def get_pages
-    @pages = Page.find_all_by_archive_id_and_parent_id( (@archive.nil? ? nil : @archive.id) , nil)
+    # debugger
+    @pages = Page.archive_roots((@archive.nil? ? nil : @archive))
     
     parent_pages = @pages.dup
     for parent_page in @pages
       @pages += parent_page.children
+    end
+    
+    if params[:id]
+      @pages.delete(Page.find(params[:id]))
     end
   end
 end

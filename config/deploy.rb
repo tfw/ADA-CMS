@@ -39,9 +39,9 @@ namespace :deploy do
   end
 end
 
-# set(:branch) do
-#   Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
-# end
+set(:branch) do
+  Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
+end
 
 desc "generate a new database.yml"
 task :generate_database_yml, :roles => :app do

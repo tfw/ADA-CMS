@@ -10,7 +10,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101027001044) do
+ActiveRecord::Schema.define(:version => 20101207041528) do
+
+  create_table "archive_to_study_blocks", :force => true do |t|
+    t.integer  "study_query_id"
+    t.string   "url",            :null => false
+    t.integer  "archive_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "archive_to_study_integrations", :force => true do |t|
+    t.integer  "study_query_id"
+    t.string   "url",            :null => false
+    t.integer  "archive_id"
+    t.integer  "study_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "archives", :force => true do |t|
     t.string   "name",       :null => false
@@ -19,28 +36,11 @@ ActiveRecord::Schema.define(:version => 20101027001044) do
     t.datetime "updated_at"
   end
 
-  create_table "dataset_entries", :force => true do |t|
-    t.integer  "dataset_id"
-    t.string   "key"
-    t.text     "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "dataset_related_materials", :force => true do |t|
-    t.integer  "dataset_id"
-    t.string   "uri"
-    t.string   "label"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "datasets", :force => true do |t|
-    t.string   "label"
-    t.string   "resource"
-    t.string   "study3"
-    t.string   "about"
-    t.boolean  "published"
+  create_table "ddi_mappings", :force => true do |t|
+    t.string   "ddi"
+    t.string   "human_readable"
+    t.text     "description"
+    t.boolean  "xml_element"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(:version => 20101027001044) do
 
   create_table "inkling_logs", :force => true do |t|
     t.datetime "created_at"
-    t.datetime "updated_at"
     t.text     "text",       :null => false
+    t.integer  "user_id"
   end
 
   create_table "inkling_paths", :force => true do |t|
@@ -118,13 +118,16 @@ ActiveRecord::Schema.define(:version => 20101027001044) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "username"
+    t.string   "firstname"
+    t.string   "surname"
   end
 
   create_table "pages", :force => true do |t|
-    t.string   "title",        :null => false
-    t.string   "link_title",   :null => false
+    t.string   "title",                           :null => false
+    t.string   "link_title",                      :null => false
     t.text     "description"
-    t.integer  "author_id",    :null => false
+    t.integer  "author_id",                       :null => false
     t.text     "body"
     t.text     "breakout_box"
     t.integer  "parent_id"
@@ -132,6 +135,54 @@ ActiveRecord::Schema.define(:version => 20101027001044) do
     t.string   "partial"
     t.integer  "lft"
     t.integer  "rgt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "state"
+    t.integer  "archive_to_study_integration_id"
+  end
+
+  create_table "studies", :force => true do |t|
+    t.string   "label"
+    t.string   "resource"
+    t.string   "study3"
+    t.string   "about"
+    t.boolean  "published"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "universe"
+    t.string   "collection_date"
+    t.string   "id_number"
+    t.text     "series_name"
+    t.text     "topics"
+    t.string   "country"
+    t.text     "geo_coverage"
+    t.text     "investigator"
+    t.string   "language"
+    t.text     "abstract"
+    t.text     "keywords"
+    t.integer  "page_id"
+  end
+
+  create_table "study_fields", :force => true do |t|
+    t.integer  "study_id"
+    t.string   "key"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "study_queries", :force => true do |t|
+    t.integer  "archive_id", :null => false
+    t.string   "name",       :null => false
+    t.text     "query",      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "study_related_materials", :force => true do |t|
+    t.integer  "study_id"
+    t.string   "uri"
+    t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

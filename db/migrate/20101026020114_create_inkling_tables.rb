@@ -8,6 +8,9 @@ class CreateInklingTables < ActiveRecord::Migration
       t.trackable
       t.timestamps
       t.timestamps
+      t.string :username
+      t.string :firstname
+      t.string :surname
     end
     
     create_table :inkling_roles do |t|
@@ -54,8 +57,9 @@ class CreateInklingTables < ActiveRecord::Migration
     end    
 
     create_table :inkling_logs do |t|
-      t.timestamps
+      t.timestamp :created_at
       t.text :text, :null => false
+      t.integer :user_id
     end
   end
 

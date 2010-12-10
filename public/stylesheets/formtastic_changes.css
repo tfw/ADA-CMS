@@ -37,6 +37,24 @@
 	padding: 0px;
 }
 
+form.formtastic fieldset {
+  overflow: visible;
+  padding-top: 1em;
+}
+
 form.formtastic ol li, form.formtastic ul li { list-style:none; }
 
 form.formtastic fieldset.buttons { margin-top: 2em; }
+
+form.formtastic fieldset.buttons ol li { 
+  clear: none;
+  width: auto;
+  float: left;
+  padding: 1em;
+}
+
+form.formtastic fieldset > ol > li {
+  overflow: visible;
+  clear: left;
+  margin-top: 1em;
+}

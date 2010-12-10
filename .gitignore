@@ -1,4 +1,4 @@
-Gemfile.lock
+.lock
 config/database.yml
 log/*.log
 bin/

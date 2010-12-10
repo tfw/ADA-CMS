@@ -3,18 +3,19 @@
  <head>
   <meta charset="UTF-8"/>
   <title>- ADA Admin</title>
-  <!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
-    <%= stylesheet_link_tag "import" %>
-    <%= csrf_meta_tag %>
-  <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'jquery.effects.core', 'scripts', 'rails', 'jquery-ui-1.8.6.custom.min' %>  
- </head>
-    
-<body id="default">
+  <%= stylesheet_link_tag "import" %>
+  <%= csrf_meta_tag %>
+  <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min',  'jquery-ui-1.8.6.custom.min', 'jquery.effects.core', 'scripts', 'rails', 'application' %>  
+
   <script type="text/javascript">
     $(document).ready(function(){
     <%= yield :js %>
    });
   </script>
+
+ </head>
+    
+<body id="default">
    
   <header>
     <div class="login">
@@ -54,6 +55,9 @@
         <li id="longitudinal"><a href="/staff/archives/longitudinal">longitudinal</a></li>
         <li id="qualitative"><a href="/staff/archives/qualitative">qualitative</a></li>
         <li id="international"><a href="/staff/archives/international">international</a></li>
+        <li id="blank"><!-- intentional gap -->&nbsp;</li>
+        <li id="site-resources"><a href="/staff/resources">Site Resources</a></li>
+        <li id="blank"><!-- intentional gap -->&nbsp;</li>
         <li id="users"><a href="/staff/users">Users</a></li>
         <li id="reports"><a href="staff/reports">Reports</a></li>
         <li id="adapt"><a href="staff/adapt">ADAPT</a></li>

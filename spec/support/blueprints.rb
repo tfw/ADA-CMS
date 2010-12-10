@@ -57,3 +57,7 @@ end
 Archive.blueprint do 
   name Sham.name
 end
+
+Study.blueprint do
+  label Sham.name
+end

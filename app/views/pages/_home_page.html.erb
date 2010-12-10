@@ -1,6 +1,8 @@
 <article>
 	<h1>Home</h1>
-                        
+                  
+	<%= home_page.body.html_safe if home_page.body %>
+	      
 	<aside>
 		<h2>Latest News</h2>
 		<div class="news">
@@ -46,6 +48,5 @@
 		  </ul>
   </aside>     
 
-	<%= home_page.body.html_safe if home_page.body %>
      
 </article>
