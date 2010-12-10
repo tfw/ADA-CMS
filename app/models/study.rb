@@ -4,7 +4,8 @@ class Study < ActiveRecord::Base
   
   has_many :study_fields; alias fields study_fields
   has_many :study_related_materials; alias related_materials study_related_materials
-  belongs_to :page
+  has_many :archive_to_study_integrations; alias integrations archive_to_study_integrations
+  has_many :pages, :through => integrations
   
   validates :label, :presence => true
   

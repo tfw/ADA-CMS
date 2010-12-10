@@ -93,9 +93,6 @@ module Nesstar
             ArchiveToStudyIntegration.create(:url => url, :archive => query.archive, :study_query => query) 
           end
         end
-        
-        puts "***** 2 *****"
-        # workitem.fields['config'] = {'urls' => dataset_urls}
       end
 
       ## download_dataset_xmls
@@ -104,8 +101,7 @@ module Nesstar
         
         downloaded_files = []
         
-        archive_integrations = Set.new
-        
+        archive_integrations = Set.new        
         ArchiveToStudyIntegration.all.each{|url| archive_integrations << url}
         
         
@@ -141,8 +137,6 @@ module Nesstar
             #create mappings entries for any DDI elements/attributes we have not yet noticed
             DDIMapping.batch_create(ds_hash)
 
-puts "mappings created .... \n"
-
             #we looks for a dataset_entry which records the URL of a related materials document
             related_materials_entry = ds.related_materials_attribute
             unless related_materials_entry.nil?
@@ -164,23 +158,26 @@ puts "mappings created .... \n"
 
 puts "looking for page .... \n"
 
-            path = ds.label.split(".").last
-            path.gsub!(/[^\w\s]/, "")
-            path = path.gsub(" ", "-").downcase
+          #create pages - this should be a separate participant
+            ArchiveToStudyIntegration.all.each do |archive_study_integration|
+              study = archive_study_integration.study
+              path = study.label.split(".").last
+              path.gsub!(/[^\w\s]/, "")
+              path = path.gsub(" ", "-").downcase
 
-            page = Page.find_by_title(ds.label)
-            author = Inkling::Role.find_by_name("administrator").users.first
+              page = Page.find_by_title_and_archive_id(study.label, archive_study_integration.archive_id)
+              author = Inkling::Role.find_by_name("administrator").users.first
 
-            if page.nil?
-              page = Page.create!(:title => ds.label, :description => "A page automatically created to hold the #{ds.label} dataset.",
-              :partial =>"study_page.html.erb", :author => author)
-
-              ds.page_id = page.id
-              ds.save!
+              if page.nil?
+                page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{ds.label} dataset.",
+                :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive)
+              
+              page.save!
 
               puts "creating page .... \n"
 
-              new_pages << page
+                new_pages << page
+              end
             end
           rescue StandardError => boom
             puts "#{boom}.to_s"
