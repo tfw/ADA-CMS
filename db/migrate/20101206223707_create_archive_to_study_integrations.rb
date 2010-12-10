@@ -5,13 +5,14 @@ class CreateArchiveToStudyIntegrations < ActiveRecord::Migration
       # t.string :ddi_id
       t.integer :study_query_id
       t.string :url, :null => false
-      t.integer :archive_id, :null => :false
+      t.string :test, :null => false
       t.integer :study_id
+      t.integer :archive_id, :null => :false
       t.timestamps
     end
   end
 
   def self.down
-    drop_table :study_integrations
+    drop_table :archive_to_study_integrations
   end
 end

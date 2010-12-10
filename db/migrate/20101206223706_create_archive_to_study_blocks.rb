@@ -11,6 +11,6 @@ class CreateArchiveToStudyBlocks < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :study_integration_blocks
+    drop_table :archive_to_study_blocks
   end
 end
