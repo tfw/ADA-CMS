@@ -185,6 +185,10 @@ ActiveRecord::Schema.define(:version => 20101207041528) do
     t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "comment"
+    t.text     "creation_date"
+    t.boolean  "complete"
+    t.text     "resource"
   end
 
 end

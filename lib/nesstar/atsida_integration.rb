@@ -37,8 +37,9 @@ module Nesstar
           cancel_process :if => '${f:study_ids.size} == 0'
           participant :ref => 'download_dataset_xmls'
           participant :ref => 'convert'
+          participant :ref => 'create_pages'
 
-          participant :ref => 'generate_editors_report', :if => '${f:new_pages.size} != 0'
+          # participant :ref => 'generate_editors_report', :if => '${f:new_pages.size} != 0'
           # participant :ref => 'email_editors_report', :notify_list => ["editors@atsida.assda.edu.au"], :if => '${f:new_pages.size} != 0'
         end
 
@@ -94,12 +95,10 @@ module Nesstar
         archive_integrations = Set.new        
         ArchiveToStudyIntegration.all.each{|url| archive_integrations << url}
         
-        
         archive_integrations.each do |archive_integration|
           url = archive_integration.url
           file_name = "#{url.split(".").last}.xml"
           begin
-#            puts "curl -o #{$xml_dir}#{file_name} --compressed #{url}"
             `curl -o #{$xml_dir}#{file_name} --compressed "#{url}"`
             downloaded_files << file_name
           rescue StandardError => boom
@@ -119,65 +118,55 @@ module Nesstar
 
         Dir.entries($xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
-          begin
-            ds_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
-            ds = Study.store_with_entries(ds_hash)
+          ds_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
+          ds = Study.store_with_entries(ds_hash)
 
-            #create mappings entries for any DDI elements/attributes we have not yet noticed
-            DDIMapping.batch_create(ds_hash)
+          DDIMapping.batch_create(ds_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
 
-            #we looks for a dataset_entry which records the URL of a related materials document
-            related_materials_entry = ds.related_materials_attribute
-            unless related_materials_entry.nil?
-              # puts "curl -o #{@@xml_dir}#{related_materials_document_id(related_materials_entry.value)}.xml --compressed '#{related_materials_entry.value}'"
-              document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
-              `curl -o #{$xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-              related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
+          #we looks for a dataset_entry which records the URL of a related materials document
+          related_materials_entry = ds.related_materials_attribute
+          unless related_materials_entry.nil?
+            document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
+            `curl -o #{$xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
+            related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
 
-              related_materials_list.each do |related|
-                pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri_and_label(ds.id, related[:uri], related[:label])
-                next if pre_existing
+            related_materials_list.each do |related|
+              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri_and_label(ds.id, related[:uri], related[:label])
+              next if pre_existing
 
-                related_material = StudyRelatedMaterial.new(:study_id => ds.id, :uri => related[:uri], :label => related[:label],
-                            :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
-                            :resource => related[:study_resource])
-                related_material.save!
-              end
-            end
-
-puts "looking for page .... \n"
-
-          #create pages - this should be a separate participant
-            ArchiveToStudyIntegration.all.each do |archive_study_integration|
-              study = archive_study_integration.study
-              path = study.label.split(".").last
-              path.gsub!(/[^\w\s]/, "")
-              path = path.gsub(" ", "-").downcase
-
-              page = Page.find_by_title_and_archive_id(study.label, archive_study_integration.archive_id)
-              author = Inkling::Role.find_by_name("administrator").users.first
-
-              if page.nil?
-                page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{ds.label} dataset.",
-                :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive,
-                :archive_to_study_integration => archive_to_study_integration)
-              
-              page.save!
-
-              puts "creating page .... \n"
-
-                new_pages << page
-              end
-            end
-          rescue StandardError => boom
-            puts "#{boom}.to_s"
-            database_errors << "Error converting #{file_name} into a dataset with a page: #{boom} \n"
+              related_material = StudyRelatedMaterial.new(:study_id => ds.id, :uri => related[:uri], :label => related[:label],
+                          :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
+                          :resource => related[:study_resource])
+              related_material.save!
           end
         end
-
         workitem.fields['database_errors'] = database_errors
-        workitem.fields['new_pages'] = new_pages
       end
+      
+      # engine.register_participant 'create_pages' do |workitem|
+      #   
+      #   puts "****** create pages ****** "
+      # 
+      #   ArchiveToStudyIntegration.all.each do |archive_study_integration|
+      #     study = archive_study_integration.study
+      #     path = study.label.split(".").last
+      #     path.gsub!(/[^\w\s]/, "")
+      #     path = path.gsub(" ", "-").downcase
+      # 
+      #     page = Page.find_by_title_and_archive_id(study.label, archive_study_integration.archive_id)
+      #     author = Inkling::Role.find_by_name("administrator").users.first
+      # 
+      #     if page.nil?
+      #       page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{ds.label} dataset.",
+      #       :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive,
+      #       :archive_to_study_integration => archive_to_study_integration)
+      # 
+      #       page.save!
+      #       puts "creating page .... \n"
+      #       new_pages << page
+      #     end
+      #   end
+      end  
 
       ## generate_report
       engine.register_participant 'generate_administrators_report' do |workitem|
