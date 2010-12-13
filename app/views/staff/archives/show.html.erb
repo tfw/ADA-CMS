@@ -2,13 +2,20 @@
 	Archives: <%= @archive.nil? ? "ADA" : @archive.name %>
 <% end %>
 
-<p>
-<h2>Study Management</h2>
-</p>
-Study: 
-<br/>
+<% if @archive %>
+	<p>
+	<h2>Nesstar Integration</h2>
+	</p>
+	Queries: <%= @archive.study_queries.size %>
+	<br/>
+	Integrations: <%= @archive.archive_to_study_integrations.size %> (this number is calculated from manual integrations and those generated automatically by Study Queries).
+	<br/>
+	Blocks: <%= @archive.archive_to_study_blocks.size %>
+	<br/>
+<% end %>
 
-<%= link_to "Add a page", new_staff_page_path(:archive_id => @archive) %> 
+
+<%= link_to "Go to Nesstar Management", new_staff_page_path(:archive_id => @archive) %> 
 
 
 

@@ -124,8 +124,7 @@ module Nesstar
           
           #find study integrations which need to be linked to
           integrations = ArchiveToStudyIntegration.find_all_by_url_and_study_id(ds.about, nil)
-          puts "************ #{integrations.size}"
-          # debugger
+
           for integration in integrations
             integration.study_id = ds.id
             integration.save!
@@ -173,72 +172,6 @@ module Nesstar
           end
         end
       end  
-
-      ## generate_report
-      engine.register_participant 'generate_administrators_report' do |workitem|
-        administrator_report = "Report:"
-        administrator_report << "\n#{workitem.fields['downloads'].size} files were fetched from Nesstar with #{workitem.fields['database_errors'].size} errors."
-        administrator_report << "\n#{(workitem.fields['downloads'].size - workitem.fields['database_errors'].size).to_s} of these were successfully stored in the db."
-
-        if workitem.fields['fetch_errors'].any? or workitem.fields['database_errors'].any?
-          administrator_report << "\n\nThere were errors in this run ..."
-          administrator_report << "\nNesstar download errors:"
-          workitem.fields['fetch_errors'].each {|e| administrator_report << "\n #{e}"}
-          administrator_report << "\n\n Database errors:"
-          workitem.fields['database_errors'].each {|e| administrator_report << "\n #{e}"}
-        end
-
-        `echo "#{administrator_report}" > #{$tmp_dir}/integration_report_#{Time.now.strftime("%d-%m-%y_%I:%M")}.txt`
-        workitem.fields['administrators_report'] = administrator_report
-      end
-
-
-      engine.register_participant 'generate_editors_report' do |workitem|
-        editor_report = "Report:"
-        editor_report << "\n#{workitem.fields['new_pages'].size} new pages were created in the CMS, one for each new dataset."
-
-        for page in workitem.fields['new_pages']
-          editor_report << "\n http://atsida.assda.edu.au#{page['page']['path']} is in draft state."
-        end
-
-puts "** \n\n\n #{editor_report}"
-
-        workitem.fields['editors_report'] = editor_report
-      end
-
-      ## email_report
-      engine.register_participant 'email_administrators_report' do |workitem|
-        for email in workitem.fields['params']['notify_list']
-          Net::SMTP.start("anusf.anu.edu.au", 25) do |smtp|
-#            Net::SMTP.start("localhost", 25) do |smtp|
-            email_report = <<-EMAIL_END
-Subject: ASSDA Integration Report
-From: ATSIDA CMS <atsida_cms@atsida.assda.edu.au>
-To: #{email}
-
-#{workitem.fields['administrators_report']}
-      EMAIL_END
-            smtp.send_message(email_report, "administrators@atsida.assda.edu.au", email)
-          end
-        end
-      end
-
-      engine.register_participant 'email_editors_report' do |workitem|
-        for email in workitem.fields['params']['notify_list']
-          Net::SMTP.start("anusf.anu.edu.au", 25) do |smtp|
-#          Net::SMTP.start("localhost", 25) do |smtp|
-            email_report = <<-EMAIL_END
-Subject: ATSIDA CMS - new content
-From: ATSIDA CMS <atsida_cms@atsida.assda.edu.au>
-To: #{email}
-
-#{workitem.fields['editors_report']}
-      EMAIL_END
-
-            smtp.send_message(email_report, "editors@atsida.assda.edu.au", email)
-          end
-        end
-      end
     end
   end
 end

@@ -38,6 +38,6 @@ task :study_query => :environment do
 end
 
 task :study_integration => :environment do
-  ArchiveToStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.indigenous)
+  ArchiveToStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international)
 end
 
