@@ -26,6 +26,7 @@ class RefactorTablesAndAddFks < ActiveRecord::Migration
     add_column :study_related_materials, :creation_date, :text
     add_column :study_related_materials, :complete, :boolean
     add_column :study_related_materials, :resource, :text
+    remove_column :study_related_materials, :label
   end
 
   def self.down
@@ -49,5 +50,6 @@ class RefactorTablesAndAddFks < ActiveRecord::Migration
     remove_column :study_related_materials, :creation_date
     remove_column :study_related_materials, :complete
     remove_column :study_related_materials, :resource
+    add_column :study_related_materials, :label, :string
   end
 end

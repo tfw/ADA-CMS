@@ -22,5 +22,7 @@ Ada::Application.routes.draw do
   
   match '/*path' => "pages#show", :as => :page, :constraints => Inkling::Routing::TypeConstraint.new("Page")
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada-home"}
+  
+  
 end
 

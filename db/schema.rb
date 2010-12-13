@@ -182,7 +182,6 @@ ActiveRecord::Schema.define(:version => 20101207041528) do
   create_table "study_related_materials", :force => true do |t|
     t.integer  "study_id"
     t.string   "uri"
-    t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "comment"

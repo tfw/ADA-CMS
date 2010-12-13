@@ -9,6 +9,7 @@ require 'ruote/participant'
 require 'ruote'
 require 'fileutils'
 require 'yaml'
+require 'ruby-debug'
 
 module Nesstar
   class AtsidaIntegration
@@ -123,6 +124,8 @@ module Nesstar
           
           #find study integrations which need to be linked to
           integrations = ArchiveToStudyIntegration.find_all_by_url_and_study_id(ds.about, nil)
+          puts "************ #{integrations.size}"
+          # debugger
           for integration in integrations
             integration.study_id = ds.id
             integration.save!
@@ -138,10 +141,10 @@ module Nesstar
             related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
 
             related_materials_list.each do |related|
-              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri_and_label(ds.id, related[:uri], related[:label])
+              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(ds.id, related[:uri], related[:label])
               next if pre_existing
 
-              related_material = StudyRelatedMaterial.new(:study_id => ds.id, :uri => related[:uri], :label => related[:label],
+              related_material = StudyRelatedMaterial.new(:study_id => ds.id, :uri => related[:uri],
                           :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
                           :resource => related[:study_resource])
               related_material.save!
@@ -162,13 +165,11 @@ module Nesstar
           author = Inkling::Role.find_by_name("administrator").users.first
       
           if page.nil?
-            page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{ds.label} dataset.",
+            page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{study.label} dataset.",
             :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive,
-            :archive_to_study_integration => archive_to_study_integration)
+            :archive_to_study_integration => archive_study_integration)
       
             page.save!
-            puts "creating page .... \n"
-            new_pages << page
           end
         end
       end  
