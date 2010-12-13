@@ -64,4 +64,9 @@ class Study < ActiveRecord::Base
   def related_materials_attribute
     fields.find_by_key("relatedMaterials_attribute_resource")
   end
+  
+  def field(key)
+    field = study_fields.find_by_key(key)
+    field.value if field
+  end
 end
