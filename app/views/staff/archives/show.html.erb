@@ -2,13 +2,23 @@
 	Archives: <%= @archive.nil? ? "ADA" : @archive.name %>
 <% end %>
 
+<p>
+<h2>Study Management</h2>
+</p>
+Study: 
+<br/>
+
+<%= link_to "Add a page", new_staff_page_path(:archive_id => @archive) %> 
+
+
+
+<p>
+<h2>Page Management</h2>
+</p>
 Pages: <%= @pages.size %> <br/>
 <br/>
 
 <%= link_to "Add a page", new_staff_page_path(:archive_id => @archive) %> 
-<p>
-<h2>Page Management</h2>
-</p>
 
 
 <ul class="sortable">
