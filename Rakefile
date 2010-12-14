@@ -34,7 +34,7 @@ end
 task :study_query => :environment do
     StudyQuery.create!(:name => "default", 
               :query => "http://bonus.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT(o)+FROM+Study+o+WHERE+o.abstractText+like+%27%25aborigin%25%27",
-              :archive => Archive.international)
+              :archive => Archive.indigenous)
 end
 
 task :study_integration => :environment do
