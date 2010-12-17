@@ -4,7 +4,7 @@ source :gemcutter
 gem 'rails', '3.0.3'
 
 gem "pg"
-gem 'inkling', '>= 0.1.0'  # :path => '/Users/nicholas/code/src/tfw/inkling-project/inkling'  # 
+gem 'inkling', :git => "git://github.com/biv/inkling.git"
 gem "devise", ">= 1.1.3"
 gem 'inherited_resources'
 gem 'cancan'

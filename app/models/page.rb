@@ -1,5 +1,6 @@
 class Page < ActiveRecord::Base
-  
+  include Inkling::Slugs
+    
   acts_as_nested_set
   acts_as_inkling 'Page'
   
@@ -16,6 +17,21 @@ class Page < ActiveRecord::Base
   validates_presence_of :link_title
   validates_presence_of :partial
   
+
+  def generate_path_slug
+    slug = ""
+    if self.path.parent
+      slug = "#{self.path.parent.slug}/"
+    else
+      if archive
+        slug = "/#{archive.slug}/"
+      else
+        slug = "/"
+      end
+    end
+
+    slug += sluggerize(title)    
+  end
 
   def self.archive_roots(archive)
     roots = Page.roots

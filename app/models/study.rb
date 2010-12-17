@@ -2,6 +2,8 @@
 
 class Study < ActiveRecord::Base
   
+  acts_as_inkling 'Study'
+  
   has_many :study_fields; alias fields study_fields
   has_many :study_related_materials
   has_many :archive_to_study_integrations

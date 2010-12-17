@@ -38,7 +38,7 @@ module Nesstar
           cancel_process :if => '${f:study_ids.size} == 0'
           participant :ref => 'download_dataset_xmls'
           participant :ref => 'convert'
-          participant :ref => 'create_pages'
+          # participant :ref => 'create_pages'
 
           # participant :ref => 'generate_editors_report', :if => '${f:new_pages.size} != 0'
           # participant :ref => 'email_editors_report', :notify_list => ["editors@atsida.assda.edu.au"], :if => '${f:new_pages.size} != 0'
@@ -153,25 +153,25 @@ module Nesstar
       end
     end
       
-      engine.register_participant 'create_pages' do |workitem|      
-        ArchiveToStudyIntegration.all.each do |archive_study_integration|
-          study = archive_study_integration.study
-          path = study.label.split(".").last
-          path.gsub!(/[^\w\s]/, "")
-          path = path.gsub(" ", "-").downcase
-      
-          page = Page.find_by_title_and_archive_id(study.label, archive_study_integration.archive_id)
-          author = Inkling::Role.find_by_name("administrator").users.first
-      
-          if page.nil?
-            page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{study.label} dataset.",
-            :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive,
-            :archive_to_study_integration => archive_study_integration)
-      
-            page.save!
-          end
-        end
-      end  
+      # engine.register_participant 'create_pages' do |workitem|      
+      #   ArchiveToStudyIntegration.all.each do |archive_study_integration|
+      #     study = archive_study_integration.study
+      #     path = study.label.split(".").last
+      #     path.gsub!(/[^\w\s]/, "")
+      #     path = path.gsub(" ", "-").downcase
+      # 
+      #     page = Page.find_by_title_and_archive_id(study.label, archive_study_integration.archive_id)
+      #     author = Inkling::Role.find_by_name("administrator").users.first
+      # 
+      #     if page.nil?
+      #       page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{study.label} dataset.",
+      #       :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive,
+      #       :archive_to_study_integration => archive_study_integration)
+      # 
+      #       page.save!
+      #     end
+      #   end
+      # end  
     end
   end
 end
