@@ -21,8 +21,7 @@ class Page < ActiveRecord::Base
   
 
   def generate_path_slug
-    slug = ""
-    if self.path.parent
+    if self.path and self.path.parent
       slug = "#{self.path.parent.slug}/"
     else
       if archive
