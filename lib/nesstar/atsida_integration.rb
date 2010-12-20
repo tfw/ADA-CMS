@@ -38,10 +38,6 @@ module Nesstar
           cancel_process :if => '${f:study_ids.size} == 0'
           participant :ref => 'download_dataset_xmls'
           participant :ref => 'convert'
-          # participant :ref => 'create_pages'
-
-          # participant :ref => 'generate_editors_report', :if => '${f:new_pages.size} != 0'
-          # participant :ref => 'email_editors_report', :notify_list => ["editors@atsida.assda.edu.au"], :if => '${f:new_pages.size} != 0'
         end
 
         process_definition :name => 'initialize_directories' do
@@ -72,7 +68,7 @@ module Nesstar
       engine.register_participant 'define_study_integrations' do |workitem|
         dataset_urls = []
 
-        queries = StudyQuery.all
+        queries = ArchiveStudyQuery.all
 
         for query in queries
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
@@ -82,7 +78,7 @@ module Nesstar
 
           for url in handler.datasets
             #the validations on the object ensure we don't duplicate the object (archive + query must be unique, url can repeat)
-            ArchiveToStudyIntegration.create(:url => url, :archive => query.archive, :study_query => query) 
+            ArchiveToStudyIntegration.create(:url => url, :archive => query.archive, :archive_study_query => query) 
           end
         end
       end

@@ -6,7 +6,7 @@ class ArchiveToStudyIntegration < ActiveRecord::Base
   belongs_to :archive_study_query
   belongs_to :study
     
-  validate :unique_url_and_query, :if => "self.query"
+  validate :unique_url_and_query, :if => "self.archive_study_query"
   
   def unique_url_and_query
     pre_existing = ArchiveToStudyIntegration.find_by_url_and_archive_id(url, query.archive.id)
