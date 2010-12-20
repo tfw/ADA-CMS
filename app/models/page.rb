@@ -4,6 +4,8 @@ class Page < ActiveRecord::Base
   acts_as_nested_set
   acts_as_inkling 'Page'
   
+  belongs_to :parent, :class_name => "Page"
+  has_many :children, :class_name => "Page", :foreign_key => "parent_id"
   belongs_to :archive
   belongs_to :author, :class_name => "Inkling::User", :foreign_key => "author_id"
   belongs_to :archive_to_study_integration

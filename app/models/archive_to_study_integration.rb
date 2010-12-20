@@ -9,7 +9,7 @@ class ArchiveToStudyIntegration < ActiveRecord::Base
   validate :unique_url_and_query, :if => "self.archive_study_query"
   
   def unique_url_and_query
-    pre_existing = ArchiveToStudyIntegration.find_by_url_and_archive_id(url, query.archive.id)
+    pre_existing = ArchiveToStudyIntegration.find_by_url_and_archive_study_query_id(url, archive_study_query.id)
     
     if pre_existing
       unless pre_existing == self

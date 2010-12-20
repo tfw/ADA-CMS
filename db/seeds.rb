@@ -26,7 +26,7 @@ end
 # end
 
 for archive in Archive.all do
-  home_page = Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page") if Page.find_by_title_and_
+  home_page = Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page") unless Page.find_by_title_and_archive_id("Home", archive.id)
 end
 
 unless Inkling::User.find_by_email("steven.mceachern@anu.edu.au")
