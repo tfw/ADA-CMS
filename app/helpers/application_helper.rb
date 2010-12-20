@@ -1,6 +1,6 @@
 module ApplicationHelper
-  def archive_css(page)
-    page.archive.nil? ? 'default' : page.archive.name.gsub(" ", "").underscore
+  def archive_css(archive)
+    archive.slug == "ada" ? 'default' : archive.name.gsub(" ", "").underscore
   end
   
   def placeholder_icon

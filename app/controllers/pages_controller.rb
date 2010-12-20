@@ -4,6 +4,7 @@ class PagesController < ContentController
   
   def show
     @page = Page.find_by_id(params[:id])
+    @title = @page.title
     respond_with(@page)
   end
   

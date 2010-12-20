@@ -11,7 +11,8 @@ class Archive < ActiveRecord::Base
   
   validates_presence_of :slug
   before_validation :set_slug
-  
+
+  ADA  = "ADA"  
   SOCIAL_SCIENCE  = "Social Science"
   HISTORICAL      = "Historical" 
   INDIGENOUS      = "Indigenous"
@@ -19,6 +20,11 @@ class Archive < ActiveRecord::Base
   QUALITATIVE     = "Qualitative"
   INTERNATIONAL   = "International"
   
+
+  def self.ada
+    self.find_by_name(ADA)
+  end
+
   def self.social_science    
     self.find_by_name(SOCIAL_SCIENCE)
   end

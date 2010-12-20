@@ -1,4 +1,6 @@
 <% content_for(:breadcrumbs) do %>
 	<%= @page.path.slug %>
 <% end %>
-<%= @page.body.html_safe if @page.body %>
+
+<%= render(:partial => @page.partial, :object => @page) %> 
+

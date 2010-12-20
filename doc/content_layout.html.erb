@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>- Australian Data Archive - <%= @page.title %></title>
+		<title>- Australian Data Archive - <%= @title %></title>
 		<link rel="stylesheet" href="/stylesheets/import.css" media="all"/>
 		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
     <%= stylesheet_link_tag :all %>
@@ -10,7 +10,7 @@
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
 	</head
 			
-    <body id="<%= archive_css(@page) %>">
+    <body id="<%= archive_css(current_archive) %>">
 		<header>
 			<div class="login">
 				<% if current_user.nil? %>
@@ -51,11 +51,11 @@
     </nav>
 
 		<nav class="subnav">
-	    <% if @page.archive %>
+	    <% if current_archive != Archive.ada %>
 				<ul>
-					<li><p><%= @page.archive.name %></p></li>
-					<% for page in Page.archive_roots(@page.archive)  %>
-						<% if page == @page %>
+					<li><p><%= current_archive.name %></p></li>
+					<% for page in Page.archive_roots(current_archive)  %>
+						<% if page.title == title %>
 							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
 						<% else %>
 						<li>
@@ -88,6 +88,7 @@
   <div class="alert"><%= alert %></div>
 
 	<!-- page partial start -->
+	<%= yield %>
 	<%= render(:partial => @page.partial, :object => @page) %> 
 	<!-- page partial end -->
 
