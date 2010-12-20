@@ -1,19 +1,27 @@
 GIT
+  remote: git://github.com/biv/inkling.git
+  revision: 664d93aa0f7fceee80262e57fabffe6cfbc31ba4
+  specs:
+    inkling (0.1.0)
+      cancan
+      devise (>= 1.1.3)
+      devise
+      formtastic (>= 1.1.0)
+      formtastic
+      gemcutter (>= 0.6.1)
+      inherited_resources
+      inherited_resources
+      jeweler
+      rails (>= 3.0.3)
+      rails
+
+GIT
   remote: git://github.com/galetahub/rails-ckeditor.git
   revision: 68ca94d70e15838ebb5efb56cf88193281cac2b2
   branch: rails3
   specs:
     ckeditor (3.4.3.pre)
       mime-types (>= 1.16)
-
-PATH
-  remote: /Users/nick/code/src/tfw/inkling-project/inkling
-  specs:
-    inkling (0.0.2)
-      cancan
-      devise
-      formtastic
-      inherited_resources
 
 GEM
   remote: http://rubygems.org/
