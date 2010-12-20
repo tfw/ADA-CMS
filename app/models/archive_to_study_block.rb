@@ -1,7 +1,7 @@
 class ArchiveToStudyBlock < ActiveRecord::Base
 
   belongs_to :archive
-  belongs_to :study_query; alias query study_query
+  belongs_to :archive_study_query
   
   validate :unique_url_and_query, :if => "self.query"
   

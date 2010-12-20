@@ -1,4 +1,6 @@
 class RefactorTablesAndAddFks < ActiveRecord::Migration
+    extend Inkling::Util::MigrationHelpers
+    
   def self.up
     #refactor studies
     add_column :studies, :universe, :text
@@ -19,14 +21,27 @@ class RefactorTablesAndAddFks < ActiveRecord::Migration
     add_column :studies, :keywords, :text
     add_column :studies, :page_id, :integer
 
+    #refactor pages
     add_column :pages, :state, :string    
     add_column :pages, :archive_to_study_integration_id, :integer
     
+    #refactor study_related_materials
     add_column :study_related_materials, :comment, :text
     add_column :study_related_materials, :creation_date, :text
     add_column :study_related_materials, :complete, :boolean
     add_column :study_related_materials, :resource, :text
     remove_column :study_related_materials, :label
+    
+    #add fks for all tables
+    add_foreign_key(:pages, :archive_id, :archives)
+    add_foreign_key(:pages, :author_id, :inkling_users)    
+    add_foreign_key(:archive_to_study_integrations, :archive_id, :archives)
+    add_foreign_key(:archive_to_study_integrations, :study_id, :studies)
+    add_foreign_key(:archive_to_study_blocks, :archive_id, :archives)
+    add_foreign_key(:archive_study_queries, :archive_id, :archives)
+    add_foreign_key(:study_related_materials, :study_id, :studies)
+    add_foreign_key(:study_fields, :study_id, :studies)
+    
   end
 
   def self.down

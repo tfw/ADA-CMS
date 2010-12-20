@@ -12,6 +12,14 @@
 
 ActiveRecord::Schema.define(:version => 20101220010918) do
 
+  create_table "archive_study_queries", :force => true do |t|
+    t.integer  "archive_id", :null => false
+    t.string   "name",       :null => false
+    t.text     "query",      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "archive_to_study_blocks", :force => true do |t|
     t.integer  "study_query_id"
     t.string   "url",            :null => false
@@ -167,14 +175,6 @@ ActiveRecord::Schema.define(:version => 20101220010918) do
     t.integer  "study_id"
     t.string   "key"
     t.text     "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "study_queries", :force => true do |t|
-    t.integer  "archive_id", :null => false
-    t.string   "name",       :null => false
-    t.text     "query",      :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

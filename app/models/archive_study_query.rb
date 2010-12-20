@@ -1,8 +1,8 @@
-class StudyQuery < ActiveRecord::Base
+class ArchiveStudyQuery < ActiveRecord::Base
 
   belongs_to :archive
-  has_many :study_integrations; alias integrations study_integrations
-  has_many :study_integration_blocks; alias integration_blocks study_integration_blocks 
+  has_many :archive_to_study_integrations; 
+  has_many :archive_to_study_blocks; 
 
   validates_uniqueness_of :query
   validates_uniqueness_of :name
