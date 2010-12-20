@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101207041528) do
+ActiveRecord::Schema.define(:version => 20101220010918) do
 
   create_table "archive_to_study_blocks", :force => true do |t|
     t.integer  "study_query_id"
