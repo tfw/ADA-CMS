@@ -11,6 +11,10 @@ class Study < ActiveRecord::Base
   
   validates :label, :presence => true
   
+  def title
+    label
+  end
+  
   def self.store_with_entries(data)
     #first, see if this is a new dataset or we're updating an old one.
     study = Study.find_by_label(data[:label])
