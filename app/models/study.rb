@@ -1,13 +1,11 @@
 #the basic representation of a unit of data - e.g. something imported from Nesstar
 
-class Study < ActiveRecord::Base
-  
-  acts_as_inkling 'Study'
+class Study < ActiveRecord::Base  
   
   has_many :study_fields; alias fields study_fields
   has_many :study_related_materials
-  has_many :archive_to_study_integrations
-  has_many :pages, :through => :archive_to_study_integrations
+  has_many :archive_studies
+  has_many :pages, :through => :archive_studies
   
   validates :label, :presence => true
   

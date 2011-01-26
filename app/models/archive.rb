@@ -3,7 +3,7 @@ class Archive < ActiveRecord::Base
 
   has_many :pages
   has_many :archive_to_study_blocks
-  has_many :archive_to_study_integrations
+  has_many :archive_studies
   has_many :archive_study_queries
 
   validates_presence_of :name

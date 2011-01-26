@@ -1,4 +1,4 @@
-class StudiesController < ContentController
+class ArchiveStudiesController < ContentController
   
   respond_to :html
   

@@ -6,7 +6,7 @@ class ArchiveToStudyBlock < ActiveRecord::Base
   validate :unique_url_and_query, :if => "self.query"
   
   def unique_url_and_query
-    pre_existing = ArchiveToStudyIntegration.find_by_url_and_archive_id(url, query.archive.id)
+    pre_existing = ArchiveStudy.find_by_url_and_archive_id(url, query.archive.id)
     
     if pre_existing
       unless pre_existing == self

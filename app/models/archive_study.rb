@@ -1,7 +1,11 @@
-#an integration point between Nesstar, an archive, and a study.
+#Archives contain studies.
+#This is also an integration point between Nesstar, an archive, and a study.
 
-class ArchiveToStudyIntegration < ActiveRecord::Base
-
+class ArchiveStudy < ActiveRecord::Base
+  include Inkling::Slugs, ContentPathIncludesArchive
+  
+  acts_as_inkling 'ArchiveStudy'
+  
   belongs_to :archive
   belongs_to :archive_study_query
   belongs_to :study
@@ -9,7 +13,7 @@ class ArchiveToStudyIntegration < ActiveRecord::Base
   validate :unique_url_and_query, :if => "self.archive_study_query"
   
   def unique_url_and_query
-    pre_existing = ArchiveToStudyIntegration.find_by_url_and_archive_study_query_id(url, archive_study_query.id)
+    pre_existing = ArchiveStudy.find_by_url_and_archive_study_query_id(url, archive_study_query.id)
     
     if pre_existing
       unless pre_existing == self

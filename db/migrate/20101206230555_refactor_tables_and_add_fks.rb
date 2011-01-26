@@ -35,9 +35,9 @@ class RefactorTablesAndAddFks < ActiveRecord::Migration
     #add fks for all tables
     add_foreign_key(:pages, :archive_id, :archives)
     add_foreign_key(:pages, :author_id, :inkling_users)    
-    add_foreign_key(:archive_to_study_integrations, :archive_id, :archives)
-    add_foreign_key(:archive_to_study_integrations, :study_id, :studies)
-    add_foreign_key(:archive_to_study_integrations, :archive_study_query_id, :archive_study_queries)
+    add_foreign_key(:archive_studies, :archive_id, :archives)
+    add_foreign_key(:archive_studies, :study_id, :studies)
+    add_foreign_key(:archive_studies, :archive_study_query_id, :archive_study_queries)
     add_foreign_key(:archive_to_study_blocks, :archive_id, :archives)
     add_foreign_key(:archive_study_queries, :archive_id, :archives)
     add_foreign_key(:study_related_materials, :study_id, :studies)

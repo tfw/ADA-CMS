@@ -1,6 +1,6 @@
-class CreateArchiveToStudyIntegrations < ActiveRecord::Migration
+class CreateArchiveStudys < ActiveRecord::Migration
   def self.up
-    create_table :archive_to_study_integrations do |t|
+    create_table :archive_studies do |t|
       t.integer :id
       t.integer :study_id
       t.integer :archive_study_query_id
@@ -11,6 +11,6 @@ class CreateArchiveToStudyIntegrations < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :archive_to_study_integrations
+    drop_table :archive_studies
   end
 end

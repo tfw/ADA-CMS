@@ -1,7 +1,7 @@
 class ArchiveStudyQuery < ActiveRecord::Base
 
   belongs_to :archive
-  has_many :archive_to_study_integrations; 
+  has_many :archive_studies; 
   has_many :archive_to_study_blocks; 
 
   validates_uniqueness_of :query

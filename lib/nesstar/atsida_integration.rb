@@ -78,7 +78,7 @@ module Nesstar
 
           for url in handler.datasets
             #the validations on the object ensure we don't duplicate the object (archive + query must be unique, url can repeat)
-            ArchiveToStudyIntegration.create(:url => url, :archive => query.archive, :archive_study_query => query) 
+            ArchiveStudy.create(:url => url, :archive => query.archive, :archive_study_query => query) 
           end
         end
       end
@@ -90,7 +90,7 @@ module Nesstar
         downloaded_files = []
         
         archive_integrations = Set.new        
-        ArchiveToStudyIntegration.all.each{|url| archive_integrations << url}
+        ArchiveStudy.all.each{|url| archive_integrations << url}
         
         archive_integrations.each do |archive_integration|
           url = archive_integration.url
@@ -119,7 +119,7 @@ module Nesstar
           ds = Study.store_with_entries(ds_hash)
           
           #find study integrations which need to be linked to
-          integrations = ArchiveToStudyIntegration.find_all_by_url_and_study_id(ds.about, nil)
+          integrations = ArchiveStudy.find_all_by_url_and_study_id(ds.about, nil)
 
           for integration in integrations
             integration.study_id = ds.id
@@ -150,7 +150,7 @@ module Nesstar
     end
       
       # engine.register_participant 'create_pages' do |workitem|      
-      #   ArchiveToStudyIntegration.all.each do |archive_study_integration|
+      #   ArchiveStudy.all.each do |archive_study_integration|
       #     study = archive_study_integration.study
       #     path = study.label.split(".").last
       #     path.gsub!(/[^\w\s]/, "")
