@@ -19,7 +19,7 @@ RSpec.configure do |config|
   config.mock_with :rspec
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-#  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
@@ -29,7 +29,7 @@ RSpec.configure do |config|
   # config.before(:all)    { Sham.reset(:before_all)  }
 
   config.before(:all) do
-    ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
+    ["Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
       Archive.create!(:name => archive_name) if Archive.find_by_name(archive_name).nil?
     end  
     
@@ -45,7 +45,7 @@ RSpec.configure do |config|
 
   config.before(:each, :type => :acceptance) do
     #make ADA Home, so when tests log out they have somewhere to go (the root path)
-    Page.make(:title => "Home", :archive => Archive.ada) 
+    Page.make(:title => "ADA Home", :archive => nil) 
 
     # #install the content theme, as we have to test front end presentation
     # theme = 

@@ -25,5 +25,9 @@ class ArchiveStudy < ActiveRecord::Base
   def resource_url
     return "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
   end
+  
+  def title
+    study.title
+  end
 
 end
