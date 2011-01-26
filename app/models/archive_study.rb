@@ -17,7 +17,7 @@ class ArchiveStudy < ActiveRecord::Base
     
     if pre_existing
       unless pre_existing == self
-        errors.add(:study_query, "There's already an integration between #{self.url} and #{query.archive.name}");
+        errors.add(:study_query, "There's already a study #{self.url} kept in #{query.archive.name}");
       end
     end
   end

@@ -1,4 +1,4 @@
-class CreateArchiveStudys < ActiveRecord::Migration
+class CreateArchiveStudies < ActiveRecord::Migration
   def self.up
     create_table :archive_studies do |t|
       t.integer :id
