@@ -78,7 +78,7 @@ module Nesstar
 
           for url in handler.datasets
             #the validations on the object ensure we don't duplicate the object (archive + query must be unique, url can repeat)
-            ArchiveStudy.create(:url => url, :archive => query.archive, :archive_study_query => query) 
+            ArchiveStudyIntegration.create(:url => url, :archive => query.archive, :archive_study_query => query)
           end
         end
       end
@@ -90,7 +90,7 @@ module Nesstar
         downloaded_files = []
         
         archive_integrations = Set.new        
-        ArchiveStudy.all.each{|url| archive_integrations << url}
+        ArchiveStudyIntegration.all.each{|url| archive_integrations << url}
         
         archive_integrations.each do |archive_integration|
           url = archive_integration.url
@@ -111,7 +111,6 @@ module Nesstar
       ## convert
       engine.register_participant 'convert' do |workitem|
         database_errors = []
-        new_pages = []
 
         Dir.entries($xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
@@ -119,7 +118,7 @@ module Nesstar
           ds = Study.store_with_entries(ds_hash)
           
           #find study integrations which need to be linked to
-          integrations = ArchiveStudy.find_all_by_url_and_study_id(ds.about, nil)
+          integrations = ArchiveStudyIntegration.find_all_by_url_and_study_id(ds.about, nil)
 
           for integration in integrations
             integration.study_id = ds.id
@@ -148,26 +147,26 @@ module Nesstar
         workitem.fields['database_errors'] = database_errors
       end
     end
-      
-      # engine.register_participant 'create_pages' do |workitem|      
-      #   ArchiveStudy.all.each do |archive_study_integration|
+
+      # engine.register_participant 'create_pages' do |workitem|
+      #   ArchiveStudyIntegration.all.each do |archive_study_integration|
       #     study = archive_study_integration.study
       #     path = study.label.split(".").last
       #     path.gsub!(/[^\w\s]/, "")
       #     path = path.gsub(" ", "-").downcase
-      # 
+      #
       #     page = Page.find_by_title_and_archive_id(study.label, archive_study_integration.archive_id)
       #     author = Inkling::Role.find_by_name("administrator").users.first
-      # 
+      #
       #     if page.nil?
       #       page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{study.label} dataset.",
       #       :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive,
       #       :archive_to_study_integration => archive_study_integration)
-      # 
+      #
       #       page.save!
       #     end
       #   end
-      # end  
+      # end
     end
   end
 end

@@ -38,7 +38,7 @@ task :study_query => :environment do
 end
 
 task :sample_archive_study => :environment do
-  archive_study = ArchiveStudy.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international)
+  archive_study = ArchiveStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international)
   puts "Study stored in International at #{archive_study.path.slug}"
 end
 

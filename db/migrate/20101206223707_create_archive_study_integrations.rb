@@ -1,6 +1,6 @@
-class CreateArchiveStudies < ActiveRecord::Migration
+class CreateArchiveStudyIntegrations < ActiveRecord::Migration
   def self.up
-    create_table :archive_studies do |t|
+    create_table :archive_study_integrations do |t|
       t.integer :id
       t.integer :study_id
       t.integer :archive_study_query_id

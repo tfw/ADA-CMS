@@ -1,6 +1,6 @@
-class CreateArchiveToStudyBlocks < ActiveRecord::Migration
+class CreateArchiveStudyBlocks < ActiveRecord::Migration
   def self.up
-    create_table :archive_to_study_blocks do |t|
+    create_table :archive_study_blocks do |t|
       t.integer :id
       t.integer :study_query_id
       t.string :url, :null => false
