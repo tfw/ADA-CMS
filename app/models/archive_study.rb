@@ -8,8 +8,15 @@ class ArchiveStudy < ActiveRecord::Base
 
   belongs_to :study
   belongs_to :archive_study_integration
+  belongs_to :archive
 
-  def title
-    study.title
+  validates :archive, :presence => true
+  validates :archive_study_integration, :presence => true
+  validates :study, :presence => true
+
+  #this method creates the slug to store on the Inkling::Path (see Inkling::Path) 
+  def generate_path_slug
+    slug = "/#{archive.slug}/"
+    slug += sluggerize(study.title)
   end
 end

@@ -37,8 +37,8 @@ task :study_query => :environment do
               :archive => Archive.indigenous)
 end
 
-task :sample_archive_study => :environment do
+task :sample_archive_study_integration => :environment do
   archive_study = ArchiveStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international)
-  puts "Study stored in International at #{archive_study.path.slug}"
+  puts "ArchiveStudyIntegration created between #{archive_study.url} and the International archive. Run 'rake nesstar' to create and reference the study to the archive"
 end
 

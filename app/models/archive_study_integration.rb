@@ -9,7 +9,8 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   belongs_to :study
   has_one :archive_study
 
-  validate :archive_study, :unique => true
+  validate :archive_study, :unique => true, :if => "self.study"
+  validate :study, :unique => true, :if => "self.study"
   validate :unique_url_and_query, :if => "self.archive_study_query"
 
   after_update :create_archive_study, :if => "self.study"
@@ -28,7 +29,7 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   #then create the archive_study
   def create_archive_study
     if study
-      archive_study = ArchiveStudy.create!(:study_id => study.id, :archive_id => archive.id)
+      archive_study = ArchiveStudy.create!(:study_id => study.id, :archive_id => archive.id, :archive_study_integration_id => self.id)
     end
   end
   
