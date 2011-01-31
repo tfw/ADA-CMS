@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>- Australian Data Archive - <%= @title %></title>
+		<link rel="stylesheet" href="/stylesheets/import.css" media="all"/>
+		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
+    <%= stylesheet_link_tag :all %>
+    <%= csrf_meta_tag %>
+		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
+	</head
+			
+    <body id="<%= archive_css(current_archive) %>">
+		<header>
+			<div class="login">
+				<% if current_user.nil? %>
+					<h1>USER Log-in </h1>
+					<%= form_for(:user, :url => new_inkling_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
+						<input type="text" name="inkling_user[email]" id="login_name"/>
+						<input type="password" name="inkling_user[password]" id="login_pass"/>
+						<input type="image" alt="Log In" name="imageField" id="enter_button" src="/images/structure/bttn_enter.png"/>
+					<% end %>
+				<% else %>
+						<%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
+				<% end %>
+			</div>
+			<div class="masthead"><a href="/ada-home">Australian Data Archive</a></div>
+	</header>
+
+		<nav class="mainnav clearfix">
+		  <ul>
+				<% for page in @ada_parent_pages %>
+					<li> <%= link_to(page.title, page.path.slug) %> 
+						<% if page.children.any? %>
+							<ul>
+									<% for child in page.children %>									
+										<li> <%= link_to(child.title, child.path.slug)%> </li>
+									<% end %>
+							</ul
+						<% end %>
+					</li>
+				<% end %>
+	     </ul>
+		  <div class="searchContainer">
+		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+		      <label for="menusearch"></label>
+		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
+		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
+	        </form>
+	      </div>
+    </nav>
+
+		<nav class="subnav">
+	    <% if current_archive != Archive.ada %>
+				<ul>
+					<li><p><%= current_archive.name %></p></li>
+					<% for page in Page.archive_roots(current_archive)  %>
+						<% if page.title == title %>
+							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
+						<% else %>
+						<li>
+						<% end %>
+						 	<%= link_to(page.title, page.path.slug )%>
+						</li>
+					<% end %>
+			  </ul>
+			<% end %>
+		</nav>
+
+        
+		<nav class="breadcrumbs">
+			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
+		</nav>		
+        <section class="content">
+			<nav>
+				<ul>
+					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
+	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
+	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
+	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
+	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
+	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
+			  </ul>
+			</nav>
+      
+
+	<div class="notice"><%= notice %></div>
+  <div class="alert"><%= alert %></div>
+
+	<!-- page partial start -->
+	<%= yield %>
+	<%= render(:partial => @page.partial, :object => @page) %> 
+	<!-- page partial end -->
+
+</section>
+        
+		<section class='partners'>
+<div class="captions">
+				<p>Funding Partners </p>
+				<p>Collaboration Partners</p>
+		  </div>
+			
+            <div class="logos">
+				<img src="/images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
+				<img src="/images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
+				<img src="/images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>
+				<img src="/images/content/logo_uwa.gif" width="114" height="56" alt="logo_uwa"/>
+				<img src="/images/content/logo_uts.gif" width="110" height="56" alt="logo_uts"/>
+				<img src="/images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
+				<img src="/images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
+			</div>
+		</section>
+		<footer>
+		  <p>General Enquiries: <a href="#">assda@anu.edu.au</a></p>
+		  <p>Web Enquiries: <a href="#">webmaster@assda.anu.edu.au</a></p>
+		  <p>This page was last updated on Tuesday the 27th of April 2010 at 11:07am.</p>
+		  <p> &#xA9; Australian Data Archive</p>
+    </footer>
+    </body>
+</html>
