@@ -28,9 +28,7 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   #if the integration references an existing study in the database (i.e. it's been downloaded as XML and converted into a Study)
   #then create the archive_study
   def create_archive_study
-    if study
-      archive_study = ArchiveStudy.create!(:study_id => study.id, :archive_id => archive.id, :archive_study_integration_id => self.id)
-    end
+    archive_study = ArchiveStudy.create!(:study_id => study.id, :archive_id => archive.id, :archive_study_integration_id => self.id)
   end
   
   def resource_url

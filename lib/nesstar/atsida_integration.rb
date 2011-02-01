@@ -114,31 +114,31 @@ module Nesstar
 
         Dir.entries($xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
-          ds_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
-          ds = Study.store_with_entries(ds_hash)
+          study_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
+          study = Study.store_with_entries(study_hash)
           
           #find study integrations which need to be linked to
-          integrations = ArchiveStudyIntegration.find_all_by_url_and_study_id(ds.about, nil)
+          integrations = ArchiveStudyIntegration.find_all_by_url_and_study_id(study.about, nil)
 
           for integration in integrations
-            integration.study_id = ds.id
+            integration.study_id = study.id
             integration.save!
           end
           
-          DDIMapping.batch_create(ds_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
+          DDIMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
 
           #we looks for a dataset_entry which records the URL of a related materials document
-          related_materials_entry = ds.related_materials_attribute
+          related_materials_entry = study.related_materials_attribute
           unless related_materials_entry.nil?
             document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
             `curl -o #{$xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
             related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
 
             related_materials_list.each do |related|
-              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(ds.id, related[:uri], related[:label])
+              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
               next if pre_existing
 
-              related_material = StudyRelatedMaterial.new(:study_id => ds.id, :uri => related[:uri],
+              related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
                           :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
                           :resource => related[:study_resource])
               related_material.save!
@@ -147,26 +147,6 @@ module Nesstar
         workitem.fields['database_errors'] = database_errors
       end
     end
-
-      # engine.register_participant 'create_pages' do |workitem|
-      #   ArchiveStudyIntegration.all.each do |archive_study_integration|
-      #     study = archive_study_integration.study
-      #     path = study.label.split(".").last
-      #     path.gsub!(/[^\w\s]/, "")
-      #     path = path.gsub(" ", "-").downcase
-      #
-      #     page = Page.find_by_title_and_archive_id(study.label, archive_study_integration.archive_id)
-      #     author = Inkling::Role.find_by_name("administrator").users.first
-      #
-      #     if page.nil?
-      #       page = Page.create!(:title => study.label, :description => "A page automatically created to hold the #{study.label} dataset.",
-      #       :partial =>"study_page.html.erb", :author => author, :archive => archive_study_integration.archive,
-      #       :archive_to_study_integration => archive_study_integration)
-      #
-      #       page.save!
-      #     end
-      #   end
-      # end
     end
   end
 end

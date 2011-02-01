@@ -35,14 +35,14 @@ end
 
 
 #these tasks set up data in the system for use when developing the integration layer
-task :study_query => :environment do
+task :sample_query => :environment do
     ArchiveStudyQuery.create!(:name => "default", 
               :query => "http://bonus.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT(o)+FROM+Study+o+WHERE+o.abstractText+like+%27%25aborigin%25%27",
               :archive => Archive.indigenous)
 end
 
-task :sample_archive_study_integration => :environment do
-  archive_study = ArchiveStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international)
-  puts "ArchiveStudyIntegration created between #{archive_study.url} and the International archive. Run 'rake nesstar' to create and reference the study to the archive"
+task :sample_study => :environment do
+  archive_study_integration = ArchiveStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international)
+  puts "ArchiveStudyIntegration created between #{archive_study_integration.url} and the International archive. Run 'rake nesstar' to create and reference the study to the archive."
 end
 
