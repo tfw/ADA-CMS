@@ -9,22 +9,12 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   belongs_to :study
   has_one :archive_study
 
-  validate :archive_study, :unique => true, :if => "self.study"
-  validate :study, :unique => true, :if => "self.study"
-  validate :unique_url_and_query, :if => "self.archive_study_query"
+  validates_uniqueness_of :study, :if => "self.study"
+  validates_associated :archive_study, :if => "self.archive_study"
+  validates_uniqueness_of :url
 
   after_update :create_archive_study, :if => "self.study"
-  
-  def unique_url_and_query
-    pre_existing = ArchiveStudyIntegration.find_by_url_and_archive_study_query_id(url, archive_study_query.id)
-    
-    if pre_existing
-      unless pre_existing == self
-        errors.add(:study_query, "There's already a study #{self.url} kept in #{query.archive.name}");
-      end
-    end
-  end
-
+ 
   #if the integration references an existing study in the database (i.e. it's been downloaded as XML and converted into a Study)
   #then create the archive_study
   def create_archive_study

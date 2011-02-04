@@ -3,6 +3,7 @@ class CreateArchiveStudyIntegrations < ActiveRecord::Migration
     create_table :archive_study_integrations do |t|
       t.integer :id
       t.integer :study_id
+      t.integer :archive_study_id
       t.integer :archive_study_query_id
       t.string :url, :null => false
       t.integer :archive_id, :null => :false

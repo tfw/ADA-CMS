@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
 
   create_table "archive_study_integrations", :force => true do |t|
     t.integer  "study_id"
+    t.integer  "archive_study_id"
     t.integer  "archive_study_query_id"
     t.string   "url",                    :null => false
     t.integer  "archive_id"

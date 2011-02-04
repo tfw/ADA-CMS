@@ -46,3 +46,8 @@ task :sample_study => :environment do
   puts "ArchiveStudyIntegration created between #{archive_study_integration.url} and the International archive. Run 'rake nesstar' to create and reference the study to the archive."
 end
 
+task :cruise => ["bundler", :environment]
+
+tash :bundler do
+  system('bundle install')
+end

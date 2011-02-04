@@ -127,7 +127,7 @@ module Nesstar
           
           DDIMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
 
-          #we looks for a dataset_entry which records the URL of a related materials document
+          #we looks for a study which records the URL of a related materials document
           related_materials_entry = study.related_materials_attribute
           unless related_materials_entry.nil?
             document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
