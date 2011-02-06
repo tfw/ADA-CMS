@@ -46,8 +46,11 @@ task :sample_study => :environment do
   puts "ArchiveStudyIntegration created between #{archive_study_integration.url} and the International archive. Run 'rake nesstar' to create and reference the study to the archive."
 end
 
-task :cruise => ["bundler", :environment, "ada:rebuild", :spec]
+task :cruise => [:test_env, :bundler, :environment, "ada:rebuild", :spec]
 
+task :test_env do
+  ENV['RAILS_ENV'] = 'test'
+end
 task :bundler do
   system('bundle install')
 end
