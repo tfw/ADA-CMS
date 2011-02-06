@@ -14,7 +14,7 @@ gem 'ckeditor' , :git => 'git://github.com/galetahub/rails-ckeditor.git', :branc
 gem 'ruote'
 gem 'yajl-ruby'
 
-gem "ruby-debug19" #move this into dev group alone later
+# gem "ruby-debug19" #move this into dev group alone later
 
 group :development, :test do
 	gem "rspec-rails", "= 2.0.1", :group => [:test, :development]
