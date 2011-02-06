@@ -48,9 +48,11 @@ end
 
 task :cruise => [:test_env, :bundler, :environment, "ada:rebuild", :spec]
 
+#
 task :test_env do
   ENV['RAILS_ENV'] = 'test'
 end
+
 task :bundler do
   system('bundle install')
 end
