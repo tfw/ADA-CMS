@@ -1,5 +1,5 @@
 require 'spec_helper'
-include Inkling::Slugs
+include Inkling::Util::Slugs
 
 describe Page do
 

@@ -1,6 +1,6 @@
 
 class Staff::PagesController < Inkling::BaseController
-  include Inkling::Slugs
+  include Inkling::Util::Slugs
   
   inherit_resources                                                                                     
   defaults :resource_class => Page, :instance_name => 'page'

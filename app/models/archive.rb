@@ -1,5 +1,5 @@
 class Archive < ActiveRecord::Base
-  include Inkling::Slugs
+  include Inkling::Util::Slugs
 
   has_many :pages
   has_many :archive_study_blocks

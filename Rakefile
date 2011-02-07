@@ -48,6 +48,6 @@ end
 
 task :cruise => ["bundler", :environment]
 
-tash :bundler do
+task :bundler do
   system('bundle install')
 end

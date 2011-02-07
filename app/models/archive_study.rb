@@ -2,7 +2,7 @@
 #One study may exist in many archives, for each of which their is an archive_study
 
 class ArchiveStudy < ActiveRecord::Base
-  include Inkling::Slugs, ContentPathIncludesArchive
+  include Inkling::Util::Slugs, ContentPathIncludesArchive
 
   acts_as_inkling 'ArchiveStudy'
 
