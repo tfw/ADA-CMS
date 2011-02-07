@@ -8,9 +8,11 @@
 	</p>
 	Queries: <%= @archive.archive_study_queries.size %>
 	<br/>
-	Integrations: <%= @archive.archive_to_study_integrations.size %> (this number is calculated from manual integrations and those generated automatically by Study Queries).
+	Integrations: <%= @archive.archive_study_integrations.size %> (this number is calculated from manual integrations and those generated automatically by Study Queries).
 	<br/>
-	Blocks: <%= @archive.archive_to_study_blocks.size %>
+	Blocks: <%= @archive.archive_study_blocks.size %>
+	<br/>
+	Studies: <%= @archive.archive_studies.size %>
 	<br/>
 <% end %>
 

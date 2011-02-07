@@ -4,6 +4,7 @@ class Archive < ActiveRecord::Base
   has_many :pages
   has_many :archive_study_blocks
   has_many :archive_study_integrations
+  has_many :archive_studies, :through => :archive_study_integrations
   has_many :archive_study_queries
 
   validates_presence_of :name
