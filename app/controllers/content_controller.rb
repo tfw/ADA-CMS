@@ -1,6 +1,6 @@
-class ContentController < ApplicationController
+class ContentController < Inkling::ContentController
   
-  inkling_content_controller
+  # inkling_content_controller
   
   before_filter :get_archives
   before_filter :get_ada_pages
