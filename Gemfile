@@ -4,6 +4,7 @@ source :gemcutter
 gem 'rails', '3.0.3'
 
 gem "pg"
+
 gem 'inkling', :git => "git://github.com/biv/inkling.git"  # :path => '/Users/nicholas/code/src/tfw/inkling-project/inkling'
 
 gem "devise", ">= 1.1.3"
@@ -14,7 +15,7 @@ gem 'ckeditor' , :git => 'git://github.com/galetahub/rails-ckeditor.git', :branc
 gem 'ruote'
 gem 'yajl-ruby'
 
-gem "ruby-debug19" #move this into dev group alone later
+# gem "ruby-debug19" #move this into dev group alone later
 
 group :development, :test do
 	gem "rspec-rails", "= 2.0.1", :group => [:test, :development]

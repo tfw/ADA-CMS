@@ -1,6 +1,10 @@
 GIT
   remote: git://github.com/biv/inkling.git
+<<<<<<< HEAD
   revision: f20e0fcebad7768cb9c5a555503f733e54495681
+=======
+  revision: ed6a07317240b2c48d08f179dc2ffc88adad5ab4
+>>>>>>> 6b8b34018bc217db5b0f48fa021bf5406c40dda7
   specs:
     inkling (0.1.0)
       cancan
@@ -54,8 +58,12 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+<<<<<<< HEAD
     archive-tar-minitar (0.5.2)
     arel (2.0.7)
+=======
+    arel (2.0.6)
+>>>>>>> 6b8b34018bc217db5b0f48fa021bf5406c40dda7
     autotest (4.4.4)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
@@ -78,7 +86,6 @@ GEM
     celerity (0.8.4)
     childprocess (0.1.4)
       ffi (~> 0.6.3)
-    columnize (0.3.2)
     configuration (1.1.0)
     cucumber (0.9.4)
       builder (~> 2.1.2)
@@ -123,8 +130,6 @@ GEM
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
-    linecache19 (0.5.11)
-      ruby_core_source (>= 0.1.4)
     machinist (1.0.6)
     mail (2.2.15)
       activesupport (>= 2.3.6)
@@ -174,16 +179,6 @@ GEM
       rspec-expectations (~> 2.0.1)
     rspec-rails (2.0.1)
       rspec (~> 2.0.0)
-    ruby-debug-base19 (0.11.24)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby_core_source (>= 0.1.4)
-    ruby-debug19 (0.11.6)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby-debug-base19 (>= 0.11.19)
-    ruby_core_source (0.1.4)
-      archive-tar-minitar (>= 0.5.2)
     ruby_parser (2.0.5)
       sexp_processor (~> 3.0)
     rubyzip (0.9.4)
@@ -247,7 +242,6 @@ DEPENDENCIES
   pg
   rails (= 3.0.3)
   rspec-rails (= 2.0.1)
-  ruby-debug19
   ruote
   spork
   steak (>= 1.0.0.rc.1)

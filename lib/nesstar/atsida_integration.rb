@@ -9,7 +9,7 @@ require 'ruote/participant'
 require 'ruote'
 require 'fileutils'
 require 'yaml'
-require 'ruby-debug'
+# require 'ruby-debug'
 
 module Nesstar
   class AtsidaIntegration
