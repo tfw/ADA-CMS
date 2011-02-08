@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/biv/inkling.git
-  revision: 8dc4301413becfcc716df802fd02c76f1e11458c
+  revision: cd2b0a3aec70a566b367e0cde9be90a00283c1af
   specs:
     inkling (0.1.0)
       cancan
