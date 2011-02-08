@@ -1,5 +1,5 @@
-
 class Staff::BaseController < Inkling::BaseController
 
-  layout 'inkling/manage'
+  layout 'manage'
+  
 end
