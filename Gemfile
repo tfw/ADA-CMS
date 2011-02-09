@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 source :gemcutter
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.4'
 
 gem "pg"
 
@@ -14,6 +14,7 @@ gem 'formtastic', '>= 1.1.0'
 gem 'ckeditor' , :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
 gem 'ruote'
 gem 'yajl-ruby'
+gem 'yaml_db'
 
 # gem "ruby-debug19" #move this into dev group alone later
 
