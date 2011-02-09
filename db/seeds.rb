@@ -20,25 +20,20 @@ end
   Archive.create!(:name => archive_name) if Archive.find_by_name(archive_name).nil?
 end
 
-#home pages
-# unless Page.find_by_title("ADA Home")
-#   ada_home_page = Page.create!(:title => 'ADA Home', :body => "ADA home page text goes here", :breakout_box => "breakout box text goes here", :author => Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/breakout_page")
-# end
-
 for archive in Archive.all do
   home_page = Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page") unless Page.find_by_title_and_archive_id("Home", archive.id)
 end
 
-unless Inkling::User.find_by_email("steven.mceachern@anu.edu.au")
-  user = Inkling::User.create!(:email => "steven.mceachern@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
-  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
-
-  user = Inkling::User.create!(:email => "deborah.mitchell@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
-  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
-
-  user = Inkling::User.create!(:email => "ben.evans@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
-  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
-
-  user = Inkling::User.create!(:email => "paul.kuske@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
-  Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
-end
+# unless Inkling::User.find_by_email("steven.mceachern@anu.edu.au")
+#   user = Inkling::User.create!(:email => "steven.mceachern@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+#   Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+# 
+#   user = Inkling::User.create!(:email => "deborah.mitchell@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+#   Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+# 
+#   user = Inkling::User.create!(:email => "ben.evans@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+#   Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+# 
+#   user = Inkling::User.create!(:email => "paul.kuske@anu.edu.au", :password => "adaada", :password_confirmation => "adaada")
+#   Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
+# end
