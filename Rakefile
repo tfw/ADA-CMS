@@ -7,7 +7,7 @@ require 'rake'
 Ada::Application.load_tasks
 
 namespace :ada do
-  task :rebuild => ["db:migrate:reset", "inkling:init", "db:seed", "install_theme"]
+  task :rebuild => ["db:drop", "inkling:init", "db:seed", "install_theme"]
 end
 
 task :install_theme => :environment do

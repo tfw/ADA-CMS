@@ -1,45 +1,5 @@
 
 --- 
-archives: 
-  columns: 
-  - id
-  - name
-  - slug
-  - created_at
-  - updated_at
-  records: 
-  - - "1"
-    - Social Science
-    - social-science
-    - 2010-11-24 09:15:14.568629
-    - 2010-11-24 09:15:14.568629
-  - - "2"
-    - Historical
-    - historical
-    - 2010-11-24 09:15:14.575657
-    - 2010-11-24 09:15:14.575657
-  - - "3"
-    - Indigenous
-    - indigenous
-    - 2010-11-24 09:15:14.580278
-    - 2010-11-24 09:15:14.580278
-  - - "4"
-    - Longitudinal
-    - longitudinal
-    - 2010-11-24 09:15:14.584752
-    - 2010-11-24 09:15:14.584752
-  - - "5"
-    - Qualitative
-    - qualitative
-    - 2010-11-24 09:15:14.589441
-    - 2010-11-24 09:15:14.589441
-  - - "6"
-    - International
-    - international
-    - 2010-11-24 09:15:14.594251
-    - 2010-11-24 09:15:14.594251
-
-
 inkling_paths: 
   columns: 
   - id
@@ -619,6 +579,201 @@ inkling_paths:
     - Page
     - 2010-11-25 11:24:49.672853
     - 2010-11-25 11:24:49.672853
+
+--- 
+inkling_role_memberships: 
+  columns: 
+  - id
+  - user_id
+  - role_id
+  records: 
+  - - "1"
+    - "1"
+    - "1"
+  - - "2"
+    - "2"
+    - "2"
+  - - "3"
+    - "3"
+    - "2"
+  - - "4"
+    - "4"
+    - "2"
+  - - "5"
+    - "5"
+    - "2"
+  - - "6"
+    - "6"
+    - "4"
+  - - "8"
+    - "7"
+    - "4"
+
+--- 
+inkling_themes: 
+  columns: 
+  - id
+  - name
+  - body
+  - extension
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - content
+    - |
+      <!DOCTYPE html>
+      <html>
+      	<head>
+      		<meta charset="UTF-8"/>
+      		<title>- Australian Data Archive - <%= @page.title %></title>
+      		<link rel="stylesheet" href="/stylesheets/import.css" media="all"/>
+      		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
+          <%= stylesheet_link_tag :all %>
+          <%= csrf_meta_tag %>
+      		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
+      	</head
+      			
+          <body id="<%= archive_css(@page) %>">
+      		<header>
+      			<div class="login">
+      				<% if current_user.nil? %>
+      					<h1>USER Log-in </h1>
+      					<%= form_for(:user, :url => new_inkling_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
+      						<input type="text" name="inkling_user[email]" id="login_name"/>
+      						<input type="password" name="inkling_user[password]" id="login_pass"/>
+      						<input type="image" alt="Log In" name="imageField" id="enter_button" src="/images/structure/bttn_enter.png"/>
+      					<% end %>
+      				<% else %>
+      						<%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
+      				<% end %>
+      			</div>
+      			<div class="masthead"><a href="/ada-home">Australian Data Archive</a></div>
+      	</header>
+      
+      		<nav class="mainnav clearfix">
+      		  <ul>
+      				<% for page in @ada_parent_pages %>
+      					<li> <%= link_to(page.title, page.path.slug) %> 
+      						<% if page.children.any? %>
+      							<ul>
+      									<% for child in page.children %>									
+      										<li> <%= link_to(child.title, child.path.slug)%> </li>
+      									<% end %>
+      							</ul
+      						<% end %>
+      					</li>
+      				<% end %>
+      	     </ul>
+      		  <div class="searchContainer">
+      		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+      		      <label for="menusearch"></label>
+      		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
+      		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
+      	        </form>
+      	      </div>
+          </nav>
+      
+      		<nav class="subnav">
+      	    <% if @page.archive %>
+      				<ul>
+      					<li><p><%= @page.archive.name %></p></li>
+      					<% for page in Page.archive_roots(@page.archive)  %>
+      						<% if page == @page %>
+      							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
+      						<% else %>
+      						<li>
+      						<% end %>
+      						 	<%= link_to(page.title, page.path.slug )%>
+      						</li>
+      					<% end %>
+      			  </ul>
+      			<% end %>
+      		</nav>
+      
+              
+      		<nav class="breadcrumbs">
+      			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
+      		</nav>		
+              <section class="content">
+      			<nav>
+      				<ul>
+      					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
+      	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
+      	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
+      	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
+      	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
+      	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
+      			  </ul>
+      			</nav>
+            
+      
+      	<div class="notice"><%= notice %></div>
+        <div class="alert"><%= alert %></div>
+      
+      	<!-- page partial start -->
+      	<%= render(:partial => @page.partial, :object => @page) %> 
+      	<!-- page partial end -->
+      
+      </section>
+              
+      		<section class='partners'>
+      <div class="captions">
+      				<p>Funding Partners </p>
+      				<p>Collaboration Partners</p>
+      		  </div>
+      			
+                  <div class="logos">
+      				<img src="/images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
+      				<img src="/images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
+      				<img src="/images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>
+      				<img src="/images/content/logo_uwa.gif" width="114" height="56" alt="logo_uwa"/>
+      				<img src="/images/content/logo_uts.gif" width="110" height="56" alt="logo_uts"/>
+      				<img src="/images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
+      				<img src="/images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
+      			</div>
+      		</section>
+      		<footer>
+      		  <p>General Enquiries: <a href="#">assda@anu.edu.au</a></p>
+      		  <p>Web Enquiries: <a href="#">webmaster@assda.anu.edu.au</a></p>
+      		  <p>This page was last updated on Tuesday the 27th of April 2010 at 11:07am.</p>
+      		  <p> &#xA9; Australian Data Archive</p>
+          </footer>
+          </body>
+      </html>
+
+    - .html.erb
+    - 2010-11-24 09:15:45.291487
+    - 2010-11-24 09:31:04.767227
+
+--- 
+inkling_roles: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - administrator
+    - 2010-11-24 09:15:14.160774
+    - 2010-11-24 09:15:14.160774
+  - - "2"
+    - Manager
+    - 2010-11-24 09:15:14.516856
+    - 2010-11-24 09:15:14.516856
+  - - "3"
+    - Approver
+    - 2010-11-24 09:15:14.520097
+    - 2010-11-24 09:15:14.520097
+  - - "4"
+    - Archivist
+    - 2010-11-24 09:15:14.522976
+    - 2010-11-24 09:15:14.522976
+  - - "5"
+    - Member
+    - 2010-11-24 09:15:14.525827
+    - 2010-11-24 09:15:14.525827
 
 --- 
 inkling_logs: 
@@ -1290,201 +1445,6 @@ inkling_logs:
     - "1"
 
 --- 
-inkling_role_memberships: 
-  columns: 
-  - id
-  - user_id
-  - role_id
-  records: 
-  - - "1"
-    - "1"
-    - "1"
-  - - "2"
-    - "2"
-    - "2"
-  - - "3"
-    - "3"
-    - "2"
-  - - "4"
-    - "4"
-    - "2"
-  - - "5"
-    - "5"
-    - "2"
-  - - "6"
-    - "6"
-    - "4"
-  - - "8"
-    - "7"
-    - "4"
-
---- 
-inkling_roles: 
-  columns: 
-  - id
-  - name
-  - created_at
-  - updated_at
-  records: 
-  - - "1"
-    - administrator
-    - 2010-11-24 09:15:14.160774
-    - 2010-11-24 09:15:14.160774
-  - - "2"
-    - Manager
-    - 2010-11-24 09:15:14.516856
-    - 2010-11-24 09:15:14.516856
-  - - "3"
-    - Approver
-    - 2010-11-24 09:15:14.520097
-    - 2010-11-24 09:15:14.520097
-  - - "4"
-    - Archivist
-    - 2010-11-24 09:15:14.522976
-    - 2010-11-24 09:15:14.522976
-  - - "5"
-    - Member
-    - 2010-11-24 09:15:14.525827
-    - 2010-11-24 09:15:14.525827
-
---- 
-inkling_themes: 
-  columns: 
-  - id
-  - name
-  - body
-  - extension
-  - created_at
-  - updated_at
-  records: 
-  - - "1"
-    - content
-    - |
-      <!DOCTYPE html>
-      <html>
-      	<head>
-      		<meta charset="UTF-8"/>
-      		<title>- Australian Data Archive - <%= @page.title %></title>
-      		<link rel="stylesheet" href="/stylesheets/import.css" media="all"/>
-      		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
-          <%= stylesheet_link_tag :all %>
-          <%= csrf_meta_tag %>
-      		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
-      	</head
-      			
-          <body id="<%= archive_css(@page) %>">
-      		<header>
-      			<div class="login">
-      				<% if current_user.nil? %>
-      					<h1>USER Log-in </h1>
-      					<%= form_for(:user, :url => new_inkling_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
-      						<input type="text" name="inkling_user[email]" id="login_name"/>
-      						<input type="password" name="inkling_user[password]" id="login_pass"/>
-      						<input type="image" alt="Log In" name="imageField" id="enter_button" src="/images/structure/bttn_enter.png"/>
-      					<% end %>
-      				<% else %>
-      						<%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
-      				<% end %>
-      			</div>
-      			<div class="masthead"><a href="/ada-home">Australian Data Archive</a></div>
-      	</header>
-      
-      		<nav class="mainnav clearfix">
-      		  <ul>
-      				<% for page in @ada_parent_pages %>
-      					<li> <%= link_to(page.title, page.path.slug) %> 
-      						<% if page.children.any? %>
-      							<ul>
-      									<% for child in page.children %>									
-      										<li> <%= link_to(child.title, child.path.slug)%> </li>
-      									<% end %>
-      							</ul
-      						<% end %>
-      					</li>
-      				<% end %>
-      	     </ul>
-      		  <div class="searchContainer">
-      		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
-      		      <label for="menusearch"></label>
-      		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
-      		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
-      	        </form>
-      	      </div>
-          </nav>
-      
-      		<nav class="subnav">
-      	    <% if @page.archive %>
-      				<ul>
-      					<li><p><%= @page.archive.name %></p></li>
-      					<% for page in Page.archive_roots(@page.archive)  %>
-      						<% if page == @page %>
-      							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
-      						<% else %>
-      						<li>
-      						<% end %>
-      						 	<%= link_to(page.title, page.path.slug )%>
-      						</li>
-      					<% end %>
-      			  </ul>
-      			<% end %>
-      		</nav>
-      
-              
-      		<nav class="breadcrumbs">
-      			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
-      		</nav>		
-              <section class="content">
-      			<nav>
-      				<ul>
-      					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
-      	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
-      	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
-      	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
-      	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
-      	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
-      			  </ul>
-      			</nav>
-            
-      
-      	<div class="notice"><%= notice %></div>
-        <div class="alert"><%= alert %></div>
-      
-      	<!-- page partial start -->
-      	<%= render(:partial => @page.partial, :object => @page) %> 
-      	<!-- page partial end -->
-      
-      </section>
-              
-      		<section class='partners'>
-      <div class="captions">
-      				<p>Funding Partners </p>
-      				<p>Collaboration Partners</p>
-      		  </div>
-      			
-                  <div class="logos">
-      				<img src="/images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
-      				<img src="/images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
-      				<img src="/images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>
-      				<img src="/images/content/logo_uwa.gif" width="114" height="56" alt="logo_uwa"/>
-      				<img src="/images/content/logo_uts.gif" width="110" height="56" alt="logo_uts"/>
-      				<img src="/images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
-      				<img src="/images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
-      			</div>
-      		</section>
-      		<footer>
-      		  <p>General Enquiries: <a href="#">assda@anu.edu.au</a></p>
-      		  <p>Web Enquiries: <a href="#">webmaster@assda.anu.edu.au</a></p>
-      		  <p>This page was last updated on Tuesday the 27th of April 2010 at 11:07am.</p>
-      		  <p> &#xA9; Australian Data Archive</p>
-          </footer>
-          </body>
-      </html>
-
-    - .html.erb
-    - 2010-11-24 09:15:45.291487
-    - 2010-11-24 09:31:04.767227
-
---- 
 inkling_users: 
   columns: 
   - id
@@ -1666,6 +1626,8 @@ pages:
   - rgt
   - created_at
   - updated_at
+  - state
+  - archive_to_study_integration_id
   records: 
   - - "1"
     - ADA Home
@@ -1711,6 +1673,8 @@ pages:
     - "2"
     - 2010-11-24 09:15:14.613667
     - 2011-02-01 03:24:06.767269
+    - 
+    - 
   - - "3"
     - Home
     - Home
@@ -1738,6 +1702,8 @@ pages:
     - "6"
     - 2010-11-24 09:15:14.658594
     - 2010-11-26 01:51:42.717809
+    - 
+    - 
   - - "4"
     - Home
     - Home
@@ -1764,6 +1730,8 @@ pages:
     - "8"
     - 2010-11-24 09:15:14.671645
     - 2010-11-26 01:55:24.176659
+    - 
+    - 
   - - "5"
     - Home
     - Home
@@ -1803,6 +1771,8 @@ pages:
     - "10"
     - 2010-11-24 09:15:14.686228
     - 2010-11-26 01:57:08.472824
+    - 
+    - 
   - - "6"
     - Home
     - Home
@@ -1826,6 +1796,8 @@ pages:
     - "12"
     - 2010-11-24 09:15:14.699423
     - 2010-11-26 01:48:27.480007
+    - 
+    - 
   - - "7"
     - Home
     - Home
@@ -1844,6 +1816,8 @@ pages:
     - "14"
     - 2010-11-24 09:15:14.712612
     - 2010-11-26 01:58:58.541066
+    - 
+    - 
   - - "8"
     - About
     - Test1
@@ -1890,6 +1864,8 @@ pages:
     - "4"
     - 2010-11-24 09:39:55.846072
     - 2010-11-24 12:29:17.966434
+    - 
+    - 
   - - "10"
     - Subarchives
     - Subarchives
@@ -1907,6 +1883,8 @@ pages:
     - "16"
     - 2010-11-24 12:30:44.100357
     - 2010-11-24 12:30:44.100357
+    - 
+    - 
   - - "11"
     - Data Access
     - Data Access
@@ -1929,6 +1907,8 @@ pages:
     - "26"
     - 2010-11-24 12:32:03.602175
     - 2010-11-24 12:45:09.84118
+    - 
+    - 
   - - "12"
     - Browse ADA Catalogue
     - Browse ADA Catalogue
@@ -1948,6 +1928,8 @@ pages:
     - "19"
     - 2010-11-24 12:46:30.831547
     - 2010-11-24 12:48:12.643067
+    - 
+    - 
   - - "13"
     - Search ADA
     - Search ADA
@@ -1967,6 +1949,8 @@ pages:
     - "21"
     - 2010-11-24 12:47:30.70379
     - 2010-11-24 12:48:28.688032
+    - 
+    - 
   - - "14"
     - Register for ADA
     - Register for ADA
@@ -1988,6 +1972,8 @@ pages:
     - "23"
     - 2010-11-24 12:49:51.450729
     - 2010-11-24 12:50:08.019532
+    - 
+    - 
   - - "15"
     - ADA undertaking forms
     - ADA undertaking forms
@@ -2009,6 +1995,8 @@ pages:
     - "25"
     - 2010-11-24 12:52:38.943683
     - 2010-11-24 12:53:06.142881
+    - 
+    - 
   - - "16"
     - Data Deposit
     - Data Deposit
@@ -2023,6 +2011,8 @@ pages:
     - "36"
     - 2010-11-24 12:54:18.193391
     - 2010-11-24 12:54:18.193391
+    - 
+    - 
   - - "17"
     - Why Deposit Data?
     - Why Deposit Data?
@@ -2045,6 +2035,8 @@ pages:
     - "29"
     - 2010-11-24 12:58:08.407768
     - 2010-11-24 12:58:47.910896
+    - 
+    - 
   - - "18"
     - Sharing data and access conditions
     - Sharing data and access conditions
@@ -2062,6 +2054,8 @@ pages:
     - "31"
     - 2010-11-24 13:00:01.03464
     - 2010-11-24 13:00:01.03464
+    - 
+    - 
   - - "19"
     - How to deposit data
     - How to deposit data
@@ -2079,6 +2073,8 @@ pages:
     - "33"
     - 2010-11-24 13:00:59.602251
     - 2010-11-24 13:00:59.602251
+    - 
+    - 
   - - "20"
     - Deposit forms
     - Deposit forms
@@ -2098,6 +2094,8 @@ pages:
     - "35"
     - 2010-11-24 13:04:10.621619
     - 2010-11-24 13:04:10.621619
+    - 
+    - 
   - - "21"
     - User Guides
     - User Guides
@@ -2122,6 +2120,8 @@ pages:
     - "38"
     - 2010-11-24 13:06:40.2627
     - 2010-11-24 13:06:40.2627
+    - 
+    - 
   - - "22"
     - ADA News
     - ADA News
@@ -2141,6 +2141,8 @@ pages:
     - "40"
     - 2010-11-24 13:07:31.311482
     - 2010-11-24 13:07:31.311482
+    - 
+    - 
   - - "23"
     - Contact
     - Contact
@@ -2157,6 +2159,8 @@ pages:
     - "42"
     - 2010-11-24 13:08:31.834604
     - 2010-11-24 13:08:31.834604
+    - 
+    - 
   - - "24"
     - My Account
     - My Account
@@ -2178,6 +2182,8 @@ pages:
     - "44"
     - 2010-11-24 13:09:39.969442
     - 2010-11-24 13:09:39.969442
+    - 
+    - 
   - - "26"
     - Home
     - Home3
@@ -2198,6 +2204,8 @@ pages:
     - "46"
     - 2010-11-24 21:40:53.958685
     - 2010-11-26 01:49:16.178569
+    - 
+    - 
   - - "27"
     - About
     - About
@@ -2241,6 +2249,8 @@ pages:
     - "48"
     - 2010-11-24 21:42:35.405111
     - 2010-11-24 21:42:35.405111
+    - 
+    - 
   - - "28"
     - Catalogue
     - Catalogue
@@ -2262,6 +2272,8 @@ pages:
     - "50"
     - 2010-11-24 21:46:25.263317
     - 2010-11-24 21:46:25.263317
+    - 
+    - 
   - - "29"
     - Creating Data
     - Creating Data
@@ -2303,6 +2315,8 @@ pages:
     - "52"
     - 2010-11-24 21:48:37.750452
     - 2010-11-24 21:48:37.750452
+    - 
+    - 
   - - "30"
     - Using Data
     - Using Data
@@ -2339,6 +2353,8 @@ pages:
     - "54"
     - 2010-11-24 21:51:42.777809
     - 2010-11-24 21:51:42.777809
+    - 
+    - 
   - - "32"
     - Themed Data
     - Themed Data
@@ -2371,6 +2387,8 @@ pages:
     - "56"
     - 2010-11-24 21:57:42.190703
     - 2010-11-25 05:10:12.612598
+    - 
+    - 
   - - "33"
     - User Guides
     - User Guides
@@ -2390,6 +2408,8 @@ pages:
     - "58"
     - 2010-11-24 21:58:22.231258
     - 2010-11-24 21:58:22.231258
+    - 
+    - 
   - - "34"
     - News
     - News
@@ -2409,6 +2429,8 @@ pages:
     - "60"
     - 2010-11-24 21:59:15.300457
     - 2010-11-24 21:59:15.300457
+    - 
+    - 
   - - "35"
     - About
     - nick's test
@@ -2430,6 +2452,8 @@ pages:
     - "62"
     - 2010-11-25 03:34:22.756164
     - 2010-11-25 11:22:27.842884
+    - 
+    - 
   - - "36"
     - About
     - About
@@ -2447,6 +2471,8 @@ pages:
     - "64"
     - 2010-11-25 10:01:00.618844
     - 2010-11-25 10:01:00.618844
+    - 
+    - 
   - - "37"
     - Catalogue
     - Catalogue
@@ -2464,6 +2490,8 @@ pages:
     - "66"
     - 2010-11-25 10:01:51.237683
     - 2010-11-25 10:01:51.237683
+    - 
+    - 
   - - "38"
     - Creating Data
     - Creating Data
@@ -2486,6 +2514,8 @@ pages:
     - "68"
     - 2010-11-25 10:04:17.50621
     - 2010-11-25 10:04:17.50621
+    - 
+    - 
   - - "39"
     - Using Data
     - Using Data
@@ -2510,6 +2540,8 @@ pages:
     - "70"
     - 2010-11-25 10:06:15.241045
     - 2010-11-25 10:06:15.241045
+    - 
+    - 
   - - "40"
     - Census data
     - Census data
@@ -2541,6 +2573,8 @@ pages:
     - "72"
     - 2010-11-25 10:11:04.298394
     - 2010-11-25 10:15:59.29597
+    - 
+    - 
   - - "41"
     - User Guides
     - User Guides
@@ -2558,6 +2592,8 @@ pages:
     - "74"
     - 2010-11-25 10:17:32.08885
     - 2010-11-25 10:17:32.08885
+    - 
+    - 
   - - "42"
     - News
     - News
@@ -2575,6 +2611,8 @@ pages:
     - "76"
     - 2010-11-25 10:18:00.303517
     - 2010-11-25 10:18:00.303517
+    - 
+    - 
   - - "43"
     - About
     - About
@@ -2592,6 +2630,8 @@ pages:
     - "78"
     - 2010-11-25 10:27:06.414842
     - 2010-11-25 10:37:16.349891
+    - 
+    - 
   - - "44"
     - Catalogue
     - Catalogue
@@ -2609,6 +2649,8 @@ pages:
     - "80"
     - 2010-11-25 10:27:34.580851
     - 2010-11-25 10:27:34.580851
+    - 
+    - 
   - - "45"
     - Creating Data
     - Creating Data
@@ -2633,6 +2675,8 @@ pages:
     - "82"
     - 2010-11-25 10:28:39.390517
     - 2010-11-25 10:28:39.390517
+    - 
+    - 
   - - "46"
     - Using Data
     - Using Data
@@ -2659,6 +2703,8 @@ pages:
     - "84"
     - 2010-11-25 10:29:35.242171
     - 2010-11-25 10:31:01.758949
+    - 
+    - 
   - - "47"
     - Protocols
     - Protocols
@@ -2676,6 +2722,8 @@ pages:
     - "86"
     - 2010-11-25 10:31:49.017228
     - 2010-11-25 10:32:30.005038
+    - 
+    - 
   - - "48"
     - Community
     - Community
@@ -2693,6 +2741,8 @@ pages:
     - "88"
     - 2010-11-25 10:34:41.01338
     - 2010-11-25 10:34:41.01338
+    - 
+    - 
   - - "49"
     - User Guides
     - User Guides
@@ -2710,6 +2760,8 @@ pages:
     - "90"
     - 2010-11-25 10:35:41.244162
     - 2010-11-25 10:35:41.244162
+    - 
+    - 
   - - "50"
     - News
     - News
@@ -2727,6 +2779,8 @@ pages:
     - "92"
     - 2010-11-25 10:36:10.319176
     - 2010-11-25 10:36:10.319176
+    - 
+    - 
   - - "51"
     - About
     - About
@@ -2748,6 +2802,8 @@ pages:
     - "96"
     - 2010-11-25 10:41:08.739756
     - 2010-11-25 10:41:25.85336
+    - 
+    - 
   - - "52"
     - Catalogue
     - Catalogue
@@ -2765,6 +2821,8 @@ pages:
     - "98"
     - 2010-11-25 10:41:50.472092
     - 2010-11-25 10:41:50.472092
+    - 
+    - 
   - - "53"
     - Creating Data
     - Creating Data
@@ -2789,6 +2847,8 @@ pages:
     - "100"
     - 2010-11-25 10:43:17.606898
     - 2010-11-25 10:45:48.753602
+    - 
+    - 
   - - "54"
     - Using Data
     - Using Data
@@ -2813,6 +2873,8 @@ pages:
     - "102"
     - 2010-11-25 10:45:13.40924
     - 2010-11-25 10:45:13.40924
+    - 
+    - 
   - - "55"
     - Longitudinal Studies
     - Longitudinal datasets
@@ -2858,6 +2920,8 @@ pages:
     - "94"
     - 2010-11-25 10:51:32.308267
     - 2010-11-25 11:06:26.061697
+    - 
+    - 
   - - "56"
     - Visualisation
     - Visualisation
@@ -2875,6 +2939,8 @@ pages:
     - "104"
     - 2010-11-25 11:02:41.654233
     - 2010-11-25 11:02:41.654233
+    - 
+    - 
   - - "57"
     - User Guides
     - User Guides
@@ -2892,6 +2958,8 @@ pages:
     - "106"
     - 2010-11-25 11:03:56.131984
     - 2010-11-25 11:03:56.131984
+    - 
+    - 
   - - "58"
     - News
     - News
@@ -2909,6 +2977,8 @@ pages:
     - "108"
     - 2010-11-25 11:04:20.502845
     - 2010-11-25 11:04:20.502845
+    - 
+    - 
   - - "59"
     - About
     - About
@@ -2934,6 +3004,8 @@ pages:
     - "110"
     - 2010-11-25 11:11:59.045623
     - 2010-11-25 11:11:59.045623
+    - 
+    - 
   - - "60"
     - Catalogue
     - Catalogue
@@ -2953,6 +3025,8 @@ pages:
     - "112"
     - 2010-11-25 11:12:48.810893
     - 2010-11-25 11:12:48.810893
+    - 
+    - 
   - - "61"
     - Creating Data
     - Creating Data
@@ -2994,6 +3068,8 @@ pages:
     - "114"
     - 2010-11-25 11:14:07.685543
     - 2010-11-25 11:14:56.540852
+    - 
+    - 
   - - "62"
     - Using Data
     - Using Data
@@ -3030,6 +3106,8 @@ pages:
     - "116"
     - 2010-11-25 11:16:23.777611
     - 2010-11-25 11:16:23.777611
+    - 
+    - 
   - - "63"
     - Completed Projects
     - End-of-Career Archiving
@@ -3053,6 +3131,8 @@ pages:
     - "118"
     - 2010-11-25 11:18:18.025663
     - 2010-11-25 11:19:14.696386
+    - 
+    - 
   - - "64"
     - User Guides
     - User Guides
@@ -3070,6 +3150,8 @@ pages:
     - "120"
     - 2010-11-25 11:20:05.234581
     - 2010-11-25 11:20:05.234581
+    - 
+    - 
   - - "65"
     - News
     - News
@@ -3087,6 +3169,8 @@ pages:
     - "122"
     - 2010-11-25 11:20:41.698186
     - 2010-11-25 11:20:41.698186
+    - 
+    - 
   - - "66"
     - Catalogue
     - Catalogue
@@ -3104,6 +3188,8 @@ pages:
     - "124"
     - 2010-11-25 11:23:02.445767
     - 2010-11-25 11:23:02.445767
+    - 
+    - 
   - - "67"
     - Other Tabs TBD
     - Other Tabs TBD
@@ -3121,3 +3207,50 @@ pages:
     - "126"
     - 2010-11-25 11:24:49.666445
     - 2010-11-25 11:24:49.666445
+    - 
+    - 
+
+--- 
+archives: 
+  columns: 
+  - id
+  - name
+  - slug
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Social Science
+    - social-science
+    - 2010-11-24 09:15:14.568629
+    - 2010-11-24 09:15:14.568629
+  - - "2"
+    - Historical
+    - historical
+    - 2010-11-24 09:15:14.575657
+    - 2010-11-24 09:15:14.575657
+  - - "3"
+    - Indigenous
+    - indigenous
+    - 2010-11-24 09:15:14.580278
+    - 2010-11-24 09:15:14.580278
+  - - "4"
+    - Longitudinal
+    - longitudinal
+    - 2010-11-24 09:15:14.584752
+    - 2010-11-24 09:15:14.584752
+  - - "5"
+    - Qualitative
+    - qualitative
+    - 2010-11-24 09:15:14.589441
+    - 2010-11-24 09:15:14.589441
+  - - "6"
+    - International
+    - international
+    - 2010-11-24 09:15:14.594251
+    - 2010-11-24 09:15:14.594251
+  - - "7"
+    - ADA
+    - ada
+    - 2011-02-13 10:45:58.269061
+    - 2011-02-13 10:45:58.269061
