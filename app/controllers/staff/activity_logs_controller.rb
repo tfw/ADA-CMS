@@ -1,5 +1,5 @@
 
-class Staff::ActivityLogsController < Inkling::BaseController
+class Staff::ActivityLogsController < Staff::BaseController
 
   respond_to :html
   layout false

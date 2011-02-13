@@ -1,5 +1,5 @@
 
-class Staff::PagesController < Inkling::BaseController
+class Staff::PagesController < Staff::BaseController
   include Inkling::Util::Slugs
   
   inherit_resources                                                                                     

@@ -1,4 +1,4 @@
-class Staff::ArchivesController < Inkling::BaseController
+class Staff::ArchivesController < Staff::BaseController
 
   respond_to :html
   respond_to :json, :only => :update_page_order
