@@ -19,7 +19,7 @@ gem 'yaml_db'
 # gem "ruby-debug19" #move this into dev group alone later
 
 group :development, :test do
-	gem "rspec-rails", "= 2.0.1", :group => [:test, :development]
+	gem "rspec-rails", ">= 2.0.1", :group => [:test, :development]
 	gem 'capybara'
 	gem 'cucumber-rails'
 	gem 'cucumber', '>= 0.7.2'
@@ -30,7 +30,7 @@ group :development, :test do
 	gem "autotest"
 	gem 'steak', '>= 1.0.0.rc.1'
 	gem 'faker'
- 	gem 'machinist' , '= 1.0.6'
+ 	gem 'machinist' , '>= 1.0.6'
 	gem 'database_cleaner'
 	gem 'capistrano'
 end
