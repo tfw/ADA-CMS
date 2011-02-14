@@ -33,10 +33,11 @@ class Staff::ArchivesController < Staff::BaseController
 
   private
   def get_archive
-    @archive = Archive.find_by_slug(params[:slug]) if params[:slug]
+    @archive = Archive.find_by_slug(params[:slug]) if params[:slug] #this should be standardized to the id
+    @archive = Archive.find_by_slug(params[:id]) if params[:id]    
   end
   
   def get_parent_pages
-    @parent_pages = Page.archive_roots(@archive)
+    @parent_pages = Page.archive_root_pages(@archive)
   end  
 end

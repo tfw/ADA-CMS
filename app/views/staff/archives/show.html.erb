@@ -1,24 +1,21 @@
 <% content_for(:breadcrumbs) do %>
-	Archives: <%= @archive.nil? ? "ADA" : @archive.name %>
+	Archives: <%= @archive.name %>
 <% end %>
 
-<% if @archive %>
-	<p>
-	<h2>Nesstar Integration</h2>
-	</p>
-	Queries: <%= @archive.archive_study_queries.size %>
-	<br/>
-	Integrations: <%= @archive.archive_study_integrations.size %> (this number is calculated from manual integrations and those generated automatically by Study Queries).
-	<br/>
-	Blocks: <%= @archive.archive_study_blocks.size %>
-	<br/>
-	Studies: <%= @archive.archive_studies.size %>
-	<br/>
-<% end %>
+<p>
+<h2>Nesstar Integration</h2>
+</p>
+Queries: <%= @archive.archive_study_queries.size %>
+<br/>
+Integrations: <%= @archive.archive_study_integrations.size %> (this number is calculated from manual integrations and those generated automatically by Study Queries).
+<br/>
+Blocks: <%= @archive.archive_study_blocks.size %>
+<br/>
+Studies: <%= @archive.archive_studies.size %>
+<br/>
 
 
 <%= link_to "Go to Nesstar Management", new_staff_archive_page_path(:archive_id => @archive) %> 
-
 
 
 <p>

@@ -41,13 +41,13 @@ feature "The Archives" do
       user = make_user(role)
       sign_in(user)
       
-      visit_sub_archive(archive)
+      visit_archive(archive)
       confirm_text_in_breadcrumb(breadcrumb)
       sign_out
     end
   end
   
-  def visit_sub_archive(name)
+  def visit_archive(name)
     visit "/staff/archives/#{name}"    
   end
 
