@@ -15,10 +15,12 @@ Ada::Application.routes.draw do
     post 'pages/sluggerize_path'
     post 'pages/preview'
     
-    post '/archives/update_page_order'
-    # resource :archives, :only => :show
-    match '/archives/:slug' => "archives#show", :as => "archives", :defaults => {:slug => "ada"}
-    # match '/archives/' => "archives#show", :as => "archive", :defaults => {:slug => "/ada"}
+    resources :archives
+
+    # post '/archives/update_page_order'
+    # # resource :archives, :only => :show
+    # match '/archives/:slug' => "archives#show", :as => "archives", :defaults => {:slug => "ada"}
+    # # match '/archives/' => "archives#show", :as => "archive", :defaults => {:slug => "/ada"}
   end
   
   match '/*path' => "archive_studies#show", :as => :archive_study, :constraints => Inkling::Routing::TypeConstraint.new("ArchiveStudy")
