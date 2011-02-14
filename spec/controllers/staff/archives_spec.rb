@@ -12,7 +12,7 @@ describe Staff::ArchivesController do
       specify "that the name of the archive is sluggerized and the controller recognizes it for :show" do
         archive = Archive.make
     
-        get :show, :slug => archive.slug
+        get :show, :id => archive.slug
         response.code.should == "200"
         assigns[:archive].should == archive
       end
