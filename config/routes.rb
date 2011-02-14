@@ -15,7 +15,7 @@ Ada::Application.routes.draw do
     post 'pages/sluggerize_path'
     post 'pages/preview'
     
-    resources :archives do
+    resources :archives, :only => :show do
       resources :pages, :except => :index      
     end
 

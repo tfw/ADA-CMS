@@ -1,4 +1,4 @@
-class ContentController < ApplicationController # Inkling::ContentController
+class ContentController < ApplicationController 
   
   layout 'content' #this file is created by the Theme functionality in admin, and written out to tmp/inkling/themes/layouts
   alias current_user current_inkling_user
@@ -10,13 +10,13 @@ class ContentController < ApplicationController # Inkling::ContentController
   helper_method :current_archive
   
   def current_archive
-    @current_archive = Archive.find(params[:archive_id]) if @current_archive.nil?
+    @current_archive ||= Archive.find(params[:archive_id]) if @current_archive.nil?
     @current_archive
   end
 
   protected    
   def get_ada_pages
-    @ada_parent_pages = Page.archive_roots(nil)
+    @ada_parent_pages = Page.archive_root_pages(Archive.ada)
   end
 
   def get_archives

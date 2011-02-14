@@ -10,8 +10,8 @@ class PagesController < ContentController
   
   def show_by_slug
     path = Inkling::Path.find_by_slug(params[:slug])
-    # puts "slug = #{params[:slug]} || path = #{path.content.title}"
     @page = path.content
+    @current_archive = @page.archive
     render :action => :show
   end
 end

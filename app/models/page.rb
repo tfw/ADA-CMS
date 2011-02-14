@@ -20,21 +20,7 @@ class Page < ActiveRecord::Base
   validates_presence_of :partial
   
 
-  # def generate_path_slug
-  #   if self.path and self.path.parent
-  #     slug = "#{self.path.parent.slug}/"
-  #   else
-  #     if archive
-  #       slug = "/#{archive.slug}/"
-  #     else
-  #       slug = "/"
-  #     end
-  #   end
-  # 
-  #   slug += sluggerize(title)    
-  # end
-
-  def self.archive_roots(archive)
+  def self.archive_root_pages(archive)
     roots = Page.roots
     archive_roots = []
 
