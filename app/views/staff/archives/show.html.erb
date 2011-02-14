@@ -17,7 +17,7 @@
 <% end %>
 
 
-<%= link_to "Go to Nesstar Management", new_staff_page_path(:archive_id => @archive) %> 
+<%= link_to "Go to Nesstar Management", new_staff_archive_page_path(:archive_id => @archive) %> 
 
 
 
@@ -27,7 +27,7 @@
 Pages: <%= @pages.size %> <br/>
 <br/>
 
-<%= link_to "Add a page", new_staff_page_path(:archive_id => @archive) %> 
+<%= link_to "Add a page", new_staff_archive_page_path(:archive_id => @archive) %> 
 
 
 <ul class="sortable">
