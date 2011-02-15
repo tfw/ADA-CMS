@@ -20,6 +20,7 @@ Ada::Application.routes.draw do
     resources :archives, :only => :show do
       resources :pages, :except => :index    
       match '/integrations' => "archives/integrations#index"  
+      resources :archive_study_integrations, :archive_study_blocks, :archive_study_queries
     end
 
     # post '/archives/update_page_order'
