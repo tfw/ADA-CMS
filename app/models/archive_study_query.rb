@@ -1,6 +1,7 @@
 class ArchiveStudyQuery < ActiveRecord::Base
 
   belongs_to :archive
+  belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
   has_many :archive_study_integrations;
   has_many :archive_study_blocks;
 

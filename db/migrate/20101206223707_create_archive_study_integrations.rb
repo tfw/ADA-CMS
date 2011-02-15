@@ -7,6 +7,7 @@ class CreateArchiveStudyIntegrations < ActiveRecord::Migration
       t.integer :archive_study_query_id
       t.string :url, :null => false
       t.integer :archive_id, :null => :false
+      t.integer :author_id, :null => :false
       t.timestamps
     end
   end

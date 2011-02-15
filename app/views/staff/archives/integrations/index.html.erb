@@ -1,0 +1,19 @@
+<% content_for(:breadcrumbs) do %>
+	<%= @archive.name %>: Integrations
+<% end %>
+
+
+<h2>Integrations<h2>
+
+<h3>Studies<h3>
+  
+<% for integration in @archive.study_integrations %>
+  <%= integration.url %>
+  <% if integration.archive_study %>
+    
+  <% end %>
+<% end %>
+
+<h3>Study Queries<h3>
+
+<h3>Study Blacklist<h3>

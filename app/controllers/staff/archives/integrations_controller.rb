@@ -1,11 +1,7 @@
-class Staff::IntegrationsController < Staff::BaseController
+class Staff::Archives::IntegrationsController < Staff::ArchivesController
   
   before_filter :get_archive
   
-  def index; end
-  
-  private
-  def get_archive
-    @archive = Archive.find_by_slug(params[:slug]) if params[:slug]
+  def index
   end
 end

@@ -7,6 +7,7 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   belongs_to :archive
   belongs_to :archive_study_query
   belongs_to :study
+  belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
   has_one :archive_study
 
   validates_uniqueness_of :study, :if => "self.study"

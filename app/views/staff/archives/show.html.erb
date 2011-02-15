@@ -2,6 +2,8 @@
 	Archives: <%= @archive.name %>
 <% end %>
 
+<%= link_to 'Integrations', archive_integrations_path(@archive.slug) %>
+
 <p>
 <h2>Nesstar Integration</h2>
 </p>
