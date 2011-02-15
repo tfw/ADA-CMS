@@ -6,8 +6,17 @@
 <h2>Integrations<h2>
 
 <h3>Studies<h3>
-  
-<% for integration in @archive.study_integrations %>
+
+Add an integration:
+
+  <%= semantic_form_for(@archive_study_integration) do |form| %>
+    <%= form.hidden_field :archive_id, :value => @archive.id %>
+    <%= form.hidden_field :user_id, :value => current_user.id %>
+    <%= form.input :url, :input_html => {:size => "150"} %>
+		<%= form.commit_button %>
+	<% end %>
+	
+<% for integration in @archive.archive_study_integrations %>
   <%= integration.url %>
   <% if integration.archive_study %>
     

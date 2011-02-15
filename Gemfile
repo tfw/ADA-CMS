@@ -19,7 +19,8 @@ gem 'yaml_db'
 # gem "ruby-debug19" #move this into dev group alone later
 
 group :development, :test do
-	gem "rspec-rails", ">= 2.0.1", :group => [:test, :development]
+	gem "rspec-rails", ">= 2.5.0"
+	gem "rspec-core", ">= 2.5.0"
 	gem 'capybara'
 	gem 'cucumber-rails'
 	gem 'cucumber', '>= 0.7.2'

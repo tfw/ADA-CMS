@@ -47,10 +47,6 @@ feature "The Archives" do
     end
   end
   
-  def visit_archive(name)
-    visit "/staff/archives/#{name}"    
-  end
-
   def confirm_text_in_breadcrumb(crumb)
     page.should have_content("Archives: #{crumb}")    
   end
