@@ -47,19 +47,8 @@ describe Page do
         page4 = Page.make
         
         Page.roots.size.should == 4
-        Page.archive_roots(page1.archive).size.should == 3        
-      end
-      
-      specify "an archive of nil returns pages for ADA" do
-        page1 = Page.make(:archive => nil)
-        page2 = Page.make(:archive => nil)
-        page3 = Page.make(:archive => nil)
-        page4 = Page.make
-        
-        Page.roots.size.should == 4
-        Page.archive_roots(nil).size.should == 3        
-      end
-      
+        Page.archive_root_pages(page1.archive).size.should == 3        
+      end      
     end
   end
 end
