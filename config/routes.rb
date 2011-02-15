@@ -12,8 +12,10 @@ Ada::Application.routes.draw do
     resources :activity_logs, :only => :index
 
     # resources :pages, :except => :index
-    post 'pages/sluggerize_path'
-    post 'pages/preview'
+    post 'archives/pages/sluggerize_path'
+    post 'archives/pages/preview'
+    
+    post 'archives/update_page_order'
     
     resources :archives, :only => :show do
       resources :pages, :except => :index      
