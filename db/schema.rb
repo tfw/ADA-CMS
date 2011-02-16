@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
     t.integer  "study_query_id"
     t.string   "ddi_id",         :null => false
     t.integer  "archive_id"
-    t.integer  "author_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
     t.integer  "archive_study_query_id"
     t.string   "ddi_id",                 :null => false
     t.integer  "archive_id"
-    t.integer  "author_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
     t.integer  "archive_id", :null => false
     t.string   "name",       :null => false
     t.text     "query",      :null => false
-    t.integer  "author_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

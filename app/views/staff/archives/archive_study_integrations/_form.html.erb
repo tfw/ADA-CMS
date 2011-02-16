@@ -1,0 +1,16 @@
+<% if resource.errors.any? %>
+    <h2><%= pluralize(resource.errors.count, "error") %> prohibited this integration from being saved:</h2>
+    <ul>
+    <% resource.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+<% end %>
+
+<%= semantic_form_for([:staff, @archive, @archive_study_integration]) do |form| %>
+  <%= form.hidden_field :archive_id, :value => @archive.id %>
+  <%= form.hidden_field :user_id, :value => current_user.id %>
+  <%= form.input :ddi_id, :input_html => {:size => "10"} %>
+	<%= form.commit_button %>
+<% end %>
+

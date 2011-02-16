@@ -5,7 +5,7 @@ class CreateArchiveStudyQueries < ActiveRecord::Migration
       t.integer :archive_id, :null => false
       t.string :name, :null => false
       t.text :query, :null => false
-      t.integer :author_id, :null => :false
+      t.integer :user_id, :null => :false
       t.timestamps
     end
   end

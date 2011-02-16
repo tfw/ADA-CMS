@@ -4,17 +4,7 @@ class ArchiveStudyBlock < ActiveRecord::Base
   belongs_to :archive_study_query
   belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
   
-  validate :unique_url_and_query, :if => "self.query"
-  
-  def unique_url_and_query
-    pre_existing = ArchiveStudyIntegration.find_by_url_and_archive_id(url, query.archive.id)
-    
-    if pre_existing
-      unless pre_existing == self
-        errors.add(:study_query, "There's already an integration between #{self.url} and #{query.archive.name}");
-      end
-    end
-  end
+  validates_uniqueness_of :ddi_id
   
   def resource_url
     return "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"

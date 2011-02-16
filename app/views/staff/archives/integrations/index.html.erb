@@ -3,27 +3,38 @@
 <% end %>
 
 
-<h2>Integrations<h2>
-
-<h3>Studies<h3>
-
-Add an integration:
-
-  <%= semantic_form_for([:staff, @archive, @archive_study_integration]) do |form| %>
-    <%= form.hidden_field :archive_id, :value => @archive.id %>
-    <%= form.hidden_field :user_id, :value => current_user.id %>
-		http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi: 
-    <%= form.input :label, :input_html => {:size => "100"} %>
-		<%= form.commit_button %>
-	<% end %>
+<table width =80%>
+	<tr>
+		<th>Integrations <%= link_to "+", new_staff_archive_archive_study_integration_path(@archive) %></th>
+		<th>Queries <%= link_to "+", new_staff_archive_archive_study_query_path(@archive) %></th>
+		<th>Blocks <%= link_to "+", new_staff_archive_archive_study_block_path(@archive) %></th>
+	</tr>	
+	<tr>
+		<td>
+			<ul>
+				<% for integration in @archive.archive_study_integrations %>
+					<li><%= integration.ddi_id %></li>
+				<% end %>
+			</ul> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<ul>
+				<% for query in @archive.archive_study_queries %>
+					<li><%= query.name %></li>
+				<% end %>
+			</ul> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<ul>
+				<% for block in @archive.archive_study_blocks %>
+					<li><%= block.ddi_id %></li>
+				<% end %>
+			</ul> 
+		</td>
+	</tr>
 	
-<% for integration in @archive.archive_study_integrations %>
-  <%= integration.url %>
-  <% if integration.archive_study %>
-    
-  <% end %>
-<% end %>
-
-<h3>Study Queries<h3>
-
-<h3>Study Blacklist<h3>
+</table>
