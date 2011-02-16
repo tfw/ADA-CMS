@@ -54,8 +54,8 @@
 	    <% if current_archive != Archive.ada %>
 				<ul>
 					<li><p><%= current_archive.name %></p></li>
-					<% for page in Page.archive_roots(current_archive)  %>
-						<% if page.title == title %>
+					<% for page in Page.archive_root_pages(current_archive)  %>
+						<% if page.title == @title %>
 							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
 						<% else %>
 						<li>
@@ -89,7 +89,6 @@
 
 	<!-- page partial start -->
 	<%= yield %>
-	<%= render(:partial => @page.partial, :object => @page) %> 
 	<!-- page partial end -->
 
 </section>

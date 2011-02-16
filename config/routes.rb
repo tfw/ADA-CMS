@@ -6,15 +6,11 @@ Ada::Application.routes.draw do
     get "login", :to => "devise/sessions#new"
     get "logout", :to => "devise/sessions#destroy"
   end
-  
-  
+    
   namespace :staff do
     resources :activity_logs, :only => :index
-
-    # resources :pages, :except => :index
     post 'archives/pages/sluggerize_path'
-    post 'archives/pages/preview'
-    
+    post 'archives/pages/preview'    
     post 'archives/update_page_order'
     
     resources :archives, :only => :show do
@@ -24,11 +20,6 @@ Ada::Application.routes.draw do
       resources :archive_study_blocks, :except => [:index, :show], :controller => "archives/archive_study_blocks"
       resources :archive_study_queries, :except => [:index, :show], :controller => "archives/archive_study_queries"
     end
-
-    # post '/archives/update_page_order'
-    # # resource :archives, :only => :show
-    # match '/archives/:slug' => "archives#show", :as => "archives", :defaults => {:slug => "ada"}
-    # # match '/archives/' => "archives#show", :as => "archive", :defaults => {:slug => "/ada"}
   end
   
   match '/*path' => "archive_studies#show", :as => :archive_study, :constraints => Inkling::Routing::TypeConstraint.new("ArchiveStudy")

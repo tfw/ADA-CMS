@@ -122,13 +122,11 @@ module Nesstar
 
           for integration in integrations
             integration.study_id = study.id
-            debugger
             integration.save!
           end
-puts 1          
-debugger
+
           DDIMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
-puts 2
+
           #we looks for a study which records the URL of a related materials document
           related_materials_entry = study.related_materials_attribute
           unless related_materials_entry.nil?
