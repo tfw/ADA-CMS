@@ -12,7 +12,6 @@ class ArchiveStudy < ActiveRecord::Base
 
   validates_presence_of :archive
   validates_presence_of :archive_study_integration
-  validates_uniqueness_of :archive_study_integration
   validates_presence_of :study
 
   #this method creates the slug to store on the Inkling::Path (see Inkling::Path) 

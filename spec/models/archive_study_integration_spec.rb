@@ -8,13 +8,14 @@ describe ArchiveStudyIntegration, do
    # 
    # study.label = "test dataset"
    # study.valid?.should == true
-   
-   integration = ArchiveStudyIntegration.create!(:archive_id => Archive.make, :ddi_id => "foo")
+   archive = Archive.make
+   integration = ArchiveStudyIntegration.create!(:archive_id => archive.id, :ddi_id => "foo")
    integration.archive_study.should be_nil
    study = Study.create!(:label => "foo")
    integration.study = study
    integration.save!
-   integration.archive_study.should != nil
+   integration.reload
+   integration.archive_study.should_not be_nil
  end
  
 end
