@@ -19,6 +19,8 @@ class Staff::Archives::PagesController < Staff::ArchivesController
         end        } 
     end
   end
+  
+  def new; end
 
   def update
     update! do |format|   
@@ -87,7 +89,7 @@ class Staff::Archives::PagesController < Staff::ArchivesController
   
   def get_pages
     # debugger
-    @pages = Page.archive_roots((@archive.nil? ? nil : @archive))
+    @pages = Page.archive_root_pages(@archive)
     
     parent_pages = @pages.dup
     for parent_page in @pages
