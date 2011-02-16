@@ -90,13 +90,13 @@ module Nesstar
         downloaded_files = []
         
         archive_integrations = Set.new        
-        ArchiveStudyIntegration.all.each{|url| archive_integrations << url}
+        ArchiveStudyIntegration.all.each{|ddi_id| archive_integrations << ddi_id}
         
         archive_integrations.each do |archive_integration|
-          url = archive_integration.url
-          file_name = "#{url.split(".").last}.xml"
+          ddi_id = archive_integration.ddi_id
+          file_name = "#{ddi_id}.xml"
           begin
-            `curl -o #{$xml_dir}#{file_name} --compressed "#{url}"`
+            `curl -o #{$xml_dir}#{file_name} --compressed "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
             downloaded_files << file_name
           rescue StandardError => boom
             puts "#{boom}.to_s"
@@ -118,7 +118,7 @@ module Nesstar
           study = Study.store_with_entries(study_hash)
           
           #find study integrations which need to be linked to
-          integrations = ArchiveStudyIntegration.find_all_by_url_and_study_id(study.about, nil)
+          integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(study.about, nil)
 
           for integration in integrations
             integration.study_id = study.id

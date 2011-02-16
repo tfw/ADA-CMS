@@ -6,7 +6,15 @@ class Staff::Archives::ArchiveStudyIntegrationsController < Staff::ArchivesContr
   def create
     create! do |format| 
       format.html {
-        redirect_to archive_integrations_path(@archive.slug)   
+        redirect_to archive_integrations_path(@archive)   
+        } 
+    end
+  end
+
+  def destroy
+    destroy! do |format| 
+      format.html {
+        redirect_to archive_integrations_path(@archive)   
         } 
     end
   end

@@ -13,7 +13,7 @@
 		<td>
 			<ul>
 				<% for integration in @archive.archive_study_integrations %>
-					<li><%= integration.ddi_id %></li>
+					<li><%= integration.ddi_id %> <%= link_to 'x', staff_archive_archive_study_integration_path(@archive, integration), :method => :delete %></li>
 				<% end %>
 			</ul> 
 		</td>
