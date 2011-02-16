@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
 
   create_table "archive_study_blocks", :force => true do |t|
     t.integer  "study_query_id"
-    t.string   "url",            :null => false
+    t.string   "ddi_id",         :null => false
     t.integer  "archive_id"
     t.integer  "author_id"
     t.datetime "created_at"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
     t.integer  "study_id"
     t.integer  "archive_study_id"
     t.integer  "archive_study_query_id"
-    t.string   "url",                    :null => false
+    t.string   "ddi_id",                 :null => false
     t.integer  "archive_id"
     t.integer  "author_id"
     t.datetime "created_at"

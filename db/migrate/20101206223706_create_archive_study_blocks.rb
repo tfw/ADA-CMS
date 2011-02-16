@@ -3,7 +3,7 @@ class CreateArchiveStudyBlocks < ActiveRecord::Migration
     create_table :archive_study_blocks do |t|
       t.integer :id
       t.integer :study_query_id
-      t.string :url, :null => false
+      t.string :ddi_id, :null => false
       t.integer :archive_id, :null => :false
       t.integer :author_id, :null => :false
       t.timestamps

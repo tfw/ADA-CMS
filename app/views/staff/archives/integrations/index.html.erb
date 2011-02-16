@@ -9,10 +9,11 @@
 
 Add an integration:
 
-  <%= semantic_form_for(@archive_study_integration) do |form| %>
+  <%= semantic_form_for([:staff, @archive, @archive_study_integration]) do |form| %>
     <%= form.hidden_field :archive_id, :value => @archive.id %>
     <%= form.hidden_field :user_id, :value => current_user.id %>
-    <%= form.input :url, :input_html => {:size => "150"} %>
+		http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi: 
+    <%= form.input :label, :input_html => {:size => "100"} %>
 		<%= form.commit_button %>
 	<% end %>
 	

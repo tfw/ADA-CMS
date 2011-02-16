@@ -12,7 +12,7 @@ class ArchiveStudyIntegration < ActiveRecord::Base
 
   validates_uniqueness_of :study, :if => "self.study"
   validates_associated :archive_study, :if => "self.archive_study"
-  validates_uniqueness_of :url
+  validates_uniqueness_of :url, :with => /^http:\/\//
 
   after_update :create_archive_study, :if => "self.study"
  

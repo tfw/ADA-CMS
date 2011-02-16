@@ -6,8 +6,13 @@ require 'rake'
 
 Ada::Application.load_tasks
 
+#this is a local rebuild only
 namespace :ada do
-  task :rebuild => ["db:drop", "db:create", "db:data:load", "install_theme"]
+  task :rebuild => ["db:drop", "db:create", "restore_postgres", "db:migrate", "install_theme"]
+end
+
+task :restore_postgres do
+  system("psql -d ada_development < ada_data_13_2_2011.out")
 end
 
 task :install_theme => :environment do
@@ -42,7 +47,7 @@ task :sample_query => :environment do
 end
 
 task :sample_study => :environment do
-  archive_study_integration = ArchiveStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international)
+  archive_study_integration = ArchiveStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international, :user_id => Inkling::Users.first.id)
   puts "ArchiveStudyIntegration created between #{archive_study_integration.url} and the International archive. Run 'rake nesstar' to create and reference the study to the archive."
 end
 
