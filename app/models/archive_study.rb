@@ -10,10 +10,10 @@ class ArchiveStudy < ActiveRecord::Base
   belongs_to :archive_study_integration
   belongs_to :archive
 
-  validates :archive, :presence => true
-  validates :archive_study_integration, :presence => true
-  validates :archive_study_integration, :uniqueness => true
-  validates :study, :presence => true
+  validates_presence_of :archive
+  validates_presence_of :archive_study_integration
+  validates_uniqueness_of :archive_study_integration
+  validates_presence_of :study
 
   #this method creates the slug to store on the Inkling::Path (see Inkling::Path) 
   def generate_path_slug

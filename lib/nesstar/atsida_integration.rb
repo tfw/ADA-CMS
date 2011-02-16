@@ -90,7 +90,7 @@ module Nesstar
         downloaded_files = []
         
         archive_integrations = Set.new        
-        ArchiveStudyIntegration.all.each{|ddi_id| archive_integrations << ddi_id}
+        ArchiveStudyIntegration.all.each{|integration| archive_integrations << integration}
         
         archive_integrations.each do |archive_integration|
           ddi_id = archive_integration.ddi_id
@@ -100,7 +100,7 @@ module Nesstar
             downloaded_files << file_name
           rescue StandardError => boom
             puts "#{boom}.to_s"
-            fetch_errors << "Error while downloading #{url}: #{boom} \n"
+            fetch_errors << "Error while downloading #{ddi_id}: #{boom} \n"
           end
         end
 
@@ -116,17 +116,19 @@ module Nesstar
           next if file_name == "." or file_name == ".."
           study_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
           study = Study.store_with_entries(study_hash)
-          
-          #find study integrations which need to be linked to
-          integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(study.about, nil)
+
+          #find study integrations which need to be linked to the archive
+          integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(study.ddi_id, nil)
 
           for integration in integrations
             integration.study_id = study.id
+            debugger
             integration.save!
           end
-          
+puts 1          
+debugger
           DDIMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
-
+puts 2
           #we looks for a study which records the URL of a related materials document
           related_materials_entry = study.related_materials_attribute
           unless related_materials_entry.nil?

@@ -73,4 +73,8 @@ class Study < ActiveRecord::Base
     field = study_fields.find_by_key(key)
     field.value if field
   end
+  
+  def ddi_id
+    about.split(".").last
+  end
 end
