@@ -19,8 +19,6 @@ class Staff::Archives::PagesController < Staff::ArchivesController
         end        } 
     end
   end
-  
-  def new; end
 
   def update
     update! do |format|   
