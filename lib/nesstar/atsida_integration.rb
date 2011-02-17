@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'ruote/engine'
-require 'ruby-debug'
 require 'nesstar/atsida_config'
 require 'ruote/storage/base'
 require 'ruote/storage/fs_storage'
