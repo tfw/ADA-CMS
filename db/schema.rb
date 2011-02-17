@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
     t.integer  "archive_id"
-    t.integer  "archive_study_integration_id", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

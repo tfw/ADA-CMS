@@ -7,11 +7,10 @@ class ArchiveStudy < ActiveRecord::Base
   acts_as_inkling 'ArchiveStudy'
 
   belongs_to :study
-  belongs_to :archive_study_integration
+  has_many :archive_study_integrations
   belongs_to :archive
 
   validates_presence_of :archive
-  validates_presence_of :archive_study_integration
   validates_presence_of :study
 
   #this method creates the slug to store on the Inkling::Path (see Inkling::Path) 

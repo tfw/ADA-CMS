@@ -8,22 +8,24 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   belongs_to :archive_study_query
   belongs_to :study
   belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
-  has_one :archive_study
+  belongs_to :archive_study
 
-  validates_associated :archive_study, :if => "self.archive_study"
   validate :unique_study_and_archive, :message => "There is already an integration for that study."
   
-  after_update :create_archive_study, :if => "self.study"
+  after_update :create_archive_study, :if => "self.study and self.archive_study.nil?"
  
   #if the integration references an existing study in the database (i.e. it's been downloaded as XML and converted into a Study)
-  #then create the archive_study
+  #then create the archive_study if one doesn't exist
   def create_archive_study
     #first check for an existing archive_study to use
     archive_study = ArchiveStudy.find_by_study_id_and_archive_id(study.id, archive.id)
     
     unless archive_study
-      archive_study = ArchiveStudy.create!(:study_id => study.id, :archive_id => archive.id, :archive_study_integration_id => self.id)
+      archive_study = ArchiveStudy.create!(:study_id => study.id, :archive_id => archive.id)
     end
+    
+    self.archive_study_id = archive_study.id
+    self.save!
   end
   
   def unique_study_and_archive
