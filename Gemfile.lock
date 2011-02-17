@@ -246,6 +246,7 @@ DEPENDENCIES
   jeweler
   launchy
   machinist (>= 1.0.6)
+  nokogiri
   pg
   rails (= 3.0.4)
   rspec-core (>= 2.5.0)
