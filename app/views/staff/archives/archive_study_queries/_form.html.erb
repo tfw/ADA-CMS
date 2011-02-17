@@ -7,10 +7,17 @@
     </ul>
 <% end %>
 
+<br/>
+  <%= link_to 'Return to Integrations', archive_integrations_path(@archive) %>
+<br/>
+<br/>
+
+
 <%= semantic_form_for([:staff, @archive, @archive_study_query]) do |form| %>
   <%= form.hidden_field :archive_id, :value => @archive.id %>
   <%= form.hidden_field :user_id, :value => current_user.id %>
-  <%= form.input :query, :input_html => {:size => "10"} %>
+  <%= form.input :name %>
+  <%= form.input :query, :input_html => {  :cols => 50, :rows => 3 } %>
 	<%= form.commit_button %>
 <% end %>
 

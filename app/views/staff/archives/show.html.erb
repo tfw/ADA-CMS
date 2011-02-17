@@ -2,23 +2,7 @@
 	Archives: <%= @archive.name %>
 <% end %>
 
-<%= link_to 'Integrations', archive_integrations_path(@archive) %>
-
-<p>
-<h2>Nesstar Integration</h2>
-</p>
-Queries: <%= @archive.archive_study_queries.size %>
-<br/>
-Integrations: <%= @archive.archive_study_integrations.size %> (this number is calculated from manual integrations and those generated automatically by Study Queries).
-<br/>
-Blocks: <%= @archive.archive_study_blocks.size %>
-<br/>
-Studies: <%= @archive.archive_studies.size %>
-<br/>
-
-
-<%= link_to "Go to Nesstar Management", new_staff_archive_page_path(:archive_id => @archive) %> 
-
+<%= link_to 'Integrations', archive_integrations_path(@archive) %> (Studies: <%= @archive.archive_studies.size %> / Blocks: <%= @archive.archive_study_blocks.size %> / Integrations: <%= @archive.archive_study_integrations.size %> / Queries: <%= @archive.archive_study_queries.size %>)
 
 <p>
 <h2>Page Management</h2>

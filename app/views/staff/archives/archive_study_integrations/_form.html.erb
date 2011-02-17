@@ -7,10 +7,15 @@
     </ul>
 <% end %>
 
+<br/>
+  <%= link_to 'Return to Integrations', archive_integrations_path(@archive) %>
+<br/>
+<br/>
+  
 <%= semantic_form_for([:staff, @archive, @archive_study_integration]) do |form| %>
   <%= form.hidden_field :archive_id, :value => @archive.id %>
   <%= form.hidden_field :user_id, :value => current_user.id %>
-  <%= form.input :ddi_id, :input_html => {:size => "10"} %>
+  <%= form.input :ddi_id, :label => "Study Identifier" %>
 	<%= form.commit_button %>
 <% end %>
 

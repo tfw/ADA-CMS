@@ -14,8 +14,4 @@ feature "Creating pages" do
     page.should have_content("Historical: New Page")  
   end
   
-  # scenario "after page creation, be redirected to the appropriate archive page" do
-  #   visit "/staff/archives/international"   
-  #   
-  # end
 end

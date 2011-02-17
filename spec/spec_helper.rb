@@ -8,6 +8,8 @@ require 'rspec/rails'
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+include Rails.application.routes.url_helpers
+
 RSpec.configure do |config|
   # == Mock Framework
   #

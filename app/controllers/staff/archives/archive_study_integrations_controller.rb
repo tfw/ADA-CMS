@@ -11,6 +11,14 @@ class Staff::Archives::ArchiveStudyIntegrationsController < Staff::ArchivesContr
     end
   end
 
+  def update
+    update! do |format| 
+      format.html {
+        redirect_to archive_integrations_path(@archive)   
+        } 
+    end
+  end
+
   def destroy
     destroy! do |format| 
       format.html {

@@ -3,18 +3,18 @@
 <% end %>
 
 
-<table width =80%>
+<table width =100%>
 	<tr>
 		<th>Integrations <%= link_to "+", new_staff_archive_archive_study_integration_path(@archive) %></th>
 		<th>Queries <%= link_to "+", new_staff_archive_archive_study_query_path(@archive) %></th>
 		<th>Blocks <%= link_to "+", new_staff_archive_archive_study_block_path(@archive) %></th>
 	</tr>	
 	<tr>
-		<td>
+		<td width='33%'>
 			<ul>
 				<% for integration in @archive.archive_study_integrations %>
 					<li>
-					<%= integration.ddi_id %> <%= link_to 'x', staff_archive_archive_study_integration_path(@archive, integration), :method => :delete %>
+					<%= link_to integration.ddi_id, edit_staff_archive_archive_study_integration_path(@archive, integration) %> <%= link_to 'x', staff_archive_archive_study_integration_path(@archive, integration), :method => :delete %>
 				 <br/>
 					<% if integration.archive_study %>
 					  <%= link_to 'Downloaded', integration.archive_study.path.slug %> <%= time_ago_in_words(integration.updated_at) %> ago.
@@ -25,18 +25,16 @@
 				<% end %>
 			</ul> 
 		</td>
-	</tr>
-	<tr>
-		<td>
+
+		<td width='33%'>
 			<ul>
 				<% for query in @archive.archive_study_queries %>
 					<li><%= query.name %> <%= link_to 'x', staff_archive_archive_study_query_path(@archive, query), :method => :delete %> </li>
 				<% end %>
 			</ul> 
 		</td>
-	</tr>
-	<tr>
-		<td>
+
+		<td width='33%'>
 			<ul>
 				<% for block in @archive.archive_study_blocks %>
 					<li><%= block.ddi_id %> <%= link_to 'x', staff_archive_archive_study_block_path(@archive, block), :method => :delete %></li>
