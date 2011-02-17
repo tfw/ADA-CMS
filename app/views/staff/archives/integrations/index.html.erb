@@ -29,8 +29,13 @@
 		<td width='33%'>
 			<ul>
 				<% for query in @archive.archive_study_queries %>
-					<li><%= query.name %> <%= link_to 'x', staff_archive_archive_study_query_path(@archive, query), :method => :delete %> </li>
+					<li><%= link_to query.name, edit_staff_archive_archive_study_query_path(@archive, query), :html_options => {:alt => query.query} %> <%= link_to 'x', staff_archive_archive_study_query_path(@archive, query), :method => :delete %> 
 				<% end %>
+				 <br/>
+				Last ran <%= time_ago_in_words(query.updated_at) %> ago.
+				 <br/>
+				Configured by query <%= query.name %>
+				</li>
 			</ul> 
 		</td>
 

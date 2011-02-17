@@ -71,14 +71,20 @@ module Nesstar
         queries = ArchiveStudyQuery.all
 
         for query in queries
+          query.save!
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
- 
+
           `curl -o #{query_response_file} --compressed "#{query.query}"`
           handler = Nesstar::QueryResponseParser.new(query_response_file)
 
           for url in handler.datasets
+            ddi_id = url.split(".").last
             #the validations on the object ensure we don't duplicate the object (archive + query must be unique, url can repeat)
-            ArchiveStudyIntegration.create(:url => url, :archive => query.archive, :archive_study_query => query)
+            # puts ddi_id
+            pre_existing = ArchiveStudyIntegration.find_by_archive_id_and_ddi_id(query.archive.id, ddi_id)
+            unless pre_existing
+              ArchiveStudyIntegration.create!(:ddi_id => ddi_id, :archive => query.archive, :archive_study_query => query, :user_id => query.id)
+            end
           end
         end
       end

@@ -47,8 +47,8 @@ task :sample_query => :environment do
 end
 
 task :sample_study => :environment do
-  archive_study_integration = ArchiveStudyIntegration.create!(:url => "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00103", :archive => Archive.international, :user_id => Inkling::Users.first.id)
-  puts "ArchiveStudyIntegration created between #{archive_study_integration.url} and the International archive. Run 'rake nesstar' to create and reference the study to the archive."
+  archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "00103", :archive => Archive.international, :user_id => Inkling::User.first.id)
+  puts "ArchiveStudyIntegration created between #{archive_study_integration.ddi_id} and the International archive. Run 'rake nesstar' to create and reference the study to the archive."
 end
 
 task :cruise => [:test_env, :bundler, :environment, "ada:rebuild", :spec]
