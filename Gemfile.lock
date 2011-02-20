@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/biv/inkling.git
-  revision: 9888152fd938c56ee4aab01cf814bc852386ef48
+  revision: f85cd88513dac027dbe3694c8ad0a877033b976f
   specs:
     inkling (0.1.0)
       cancan
@@ -90,7 +90,7 @@ GEM
       cucumber (>= 0.8.0)
     culerity (0.2.12)
     database_cleaner (0.6.0)
-    devise (1.1.6)
+    devise (1.1.7)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 1.0.2)
     diff-lcs (1.1.2)
