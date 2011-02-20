@@ -8,6 +8,7 @@ require 'ruote/participant'
 require 'ruote'
 require 'fileutils'
 require 'yaml'
+
 # require 'ruby-debug'
 
 module Nesstar
@@ -91,7 +92,6 @@ module Nesstar
       ## download_dataset_xmls
       engine.register_participant 'download_dataset_xmls' do |workitem|
         fetch_errors = []
-        
         downloaded_files = []
         
         archive_integrations = Set.new        
@@ -100,8 +100,18 @@ module Nesstar
         archive_integrations.each do |archive_integration|
           ddi_id = archive_integration.ddi_id
           file_name = "#{ddi_id}.xml"
+
+          http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+          http_headers = http_headers.split("\n")
+          
+          if http_headers.first =~ /500/
+            fetch_errors << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
+            # puts "\n\n found an error, not downloading file, for #{ddi_id}"
+            next
+          end
+          
           begin
-            `curl -o #{$xml_dir}#{file_name} --compressed "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+            `curl -o #{$xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
             downloaded_files << file_name
           rescue StandardError => boom
             puts "#{boom}.to_s"

@@ -37,6 +37,6 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   end
   
   def resource_url
-    return "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
+    return "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
   end
 end

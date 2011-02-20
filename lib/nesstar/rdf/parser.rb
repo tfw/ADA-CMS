@@ -7,8 +7,10 @@ module Nesstar
     class Parser
 
       def self.parse(rdf_file)
+# puts "\n #{rdf_file}"
         file = File.read("#{rdf_file}")
         doc = Nokogiri::XML::Document.parse(file)
+# puts "#{doc.to_s} \n\n"
 
         study = doc.xpath('//p4:Study3').first
         about = study.attribute('about').value
