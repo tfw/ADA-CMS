@@ -1,6 +1,8 @@
 module HelperMethods
   def visit_archive(slug)
-    visit "/staff/archives/#{slug}"    
+    archive = Archive.find_by_slug(slug)
+    visit staff_archive_path(archive)
+    # visit "/staff/archives/#{slug}"    
   end
   
   def visit_integrations(archive)
