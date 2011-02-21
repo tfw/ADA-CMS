@@ -3,7 +3,8 @@ require File.dirname(__FILE__) + '/../acceptance_helper'
 feature "Archives management:" do
 
   background do
-    @roles = [:administrator, :manager, :approver, :archivist]
+    # @roles = [:administrator, :manager, :approver, :archivist]
+    @roles = Inkling::Role.all
   end  
   
   describe "staffer accesses" do
@@ -41,7 +42,11 @@ feature "Archives management:" do
       admin = make_user(:administrator)
       sign_in(admin)
       create_page(Archive.historical, "test page", "sample content")
-      click_link("Public View")
+      
+      within(:xpath, "//li[@id='options-/historical/test-page']") do
+        click_link("Public View")
+      end
+            
       page.should have_content("sample content")
       sign_out
     end
@@ -67,7 +72,7 @@ feature "Archives management:" do
   
   def users_for_roles_visit_archive_tab(roles, archive, breadcrumb)
     for role in roles
-      user = make_user(role)
+      user = make_user(role.name)
       sign_in(user)
       
       visit_archive(archive)

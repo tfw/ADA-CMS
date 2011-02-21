@@ -31,13 +31,23 @@ RSpec.configure do |config|
   # config.before(:all)    { Sham.reset(:before_all)  }
 
   config.before(:all) do
-    ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
-      Archive.create!(:name => archive_name) if Archive.find_by_name(archive_name).nil?
-    end  
-    
     ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    
+    
+    make_user(:administrator)
+    
+    ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
+      if Archive.find_by_name(archive_name).nil?
+        archive = Archive.new(:name => archive_name)
+        archive.save!
+      
+        Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page") unless Page.find_by_title_and_archive_id("Home", archive.id)
+      end
+    end  
+
+    # #install the content theme, as we have to test front end presentation
+    theme = Inkling::Theme.install_from_dir("config/theme")
   end
 
   config.before(:each) do
@@ -45,13 +55,8 @@ RSpec.configure do |config|
     DatabaseCleaner.start
   end
 
-  config.before(:each, :type => :acceptance) do
-    #make ADA Home, so when tests log out they have somewhere to go (the root path)
-    Page.make(:title => "Home", :archive => Archive.ada) 
-
-    # #install the content theme, as we have to test front end presentation
-    theme = Inkling::Theme.install_from_dir("config/theme")
-  end
+  # config.before(:each, :type => :acceptance) do
+  # end
   
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction

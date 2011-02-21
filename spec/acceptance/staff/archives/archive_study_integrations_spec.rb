@@ -7,6 +7,10 @@ feature "Creating archive study integrations" do
     sign_in(@admin)
     @archive = Archive.make
   end
+  
+  after(:each) do
+    sign_out
+  end
 
   scenario "I can create a new archive study integration for an archive"  do
     create_integration(@archive, "test123")

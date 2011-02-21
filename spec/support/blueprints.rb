@@ -7,7 +7,8 @@ Sham.created_at { (0..60).to_a.rand.days.ago }
 Sham.body       { Faker::Lorem.sentence }
 Sham.reason     { Faker::Lorem.sentence }
 Sham.name       { Faker::Lorem.sentence }
-Sham.email      { Faker::Internet.email }
+# Sham.email      { Faker::Internet.email }
+Sham.email {|n| "somebody#{n}@anu.edu.au" }
 Sham.title      { Faker::Lorem.words(2).to_s }
 Sham.word       { Faker::Lorem.words(1).to_s }
 Sham.description  { Faker::Lorem.sentence }
@@ -38,10 +39,15 @@ end
 
 def make_user(role_name)
   role_name = role_name.to_s if role_name.is_a? Symbol
-  user = Inkling::User.make
-  role = Inkling::Role.make(:name => role_name)
-  role_membership = Inkling::RoleMembership.create(:role => role, :user => user)
-  user
+  role = Inkling::Role.find_by_name(role_name)  
+  role_entry = Inkling::RoleMembership.find_by_role_id(role.id)
+
+  unless role_entry
+    user = Inkling::User.make
+    role_membership = Inkling::RoleMembership.create(:role => role, :user => user) 
+  end
+
+  role.users.first
 end
 
 Page.blueprint do 

@@ -7,6 +7,10 @@ feature "Managing archive study queries" do
     sign_in(@admin)
     @archive = Archive.make
   end
+  
+  after(:each) do
+    sign_out
+  end
 
   scenario "I can create a new archive study query for an archive"  do
     create_study_query(@archive, "query1", "some long query")

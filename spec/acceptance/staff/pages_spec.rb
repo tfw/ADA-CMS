@@ -7,6 +7,10 @@ feature "Creating pages" do
     sign_in(@admin)
   end
   
+  after(:each) do
+    sign_out
+  end
+  
   scenario "I can access the archive page form"  do
     visit_archive("historical")
     click_link("Add a page")
@@ -18,5 +22,4 @@ feature "Creating pages" do
     page.should have_content("Archives: Historical")
     page.should have_content("test page")
   end
-
 end

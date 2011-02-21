@@ -7,6 +7,10 @@ feature "Managing archive study blocks" do
     sign_in(@admin)
     @archive = Archive.make
   end
+  
+  after(:each) do
+    sign_out
+  end
 
   scenario "I can create a new archive study block for an archive"  do
     create_block(@archive, "test123")
@@ -31,5 +35,4 @@ feature "Managing archive study blocks" do
     click_button("Create Archive study block")
     page.should have_content(study)
   end
-  
 end

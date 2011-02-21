@@ -7,6 +7,10 @@ feature "Accessing integrations" do
     sign_in(@admin)
     @archive = Archive.make
   end
+  
+  after(:each) do
+    sign_out
+  end
 
   scenario "I can access the integrations page for an archive"  do
     visit_integrations(@archive)
