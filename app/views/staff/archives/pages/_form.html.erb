@@ -21,6 +21,7 @@
     <%= form.hidden_field :author_id, :value => current_user.id %>
     <%= form.inputs :id => "form_meta" do %>
 
+    	<%= form.input :archive, :as => :select, :collection => @archives, :include_blank => false %>
       <%= form.input :parent, :as => :select, :collection => @pages %>
       <%= form.input :title, :input_html => {:size => "50"} %>
       <li class="string optional">

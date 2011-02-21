@@ -2,7 +2,7 @@ class Staff::ArchivesController < Staff::BaseController
 
   respond_to :html
   respond_to :json, :only => :update_page_order
-  before_filter :get_archive, :only => :show
+  before_filter :get_archive, :except => :update_page_order
   before_filter :get_parent_pages, :only => :show  
   
   def show

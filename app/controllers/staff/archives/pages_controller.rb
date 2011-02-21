@@ -4,7 +4,8 @@ class Staff::Archives::PagesController < Staff::ArchivesController
   
   inherit_resources                                                                                     
   defaults :resource_class => Page, :instance_name => 'page'
-  before_filter :get_archive
+  # before_filter :get_archive
+  before_filter :get_archives, :except => [:destroy, :update_tree]
   before_filter :get_pages, :except => [:sluggerize_path, :preview]
 
   respond_to :json, :only => [:sluggerize_path, :preview]
@@ -13,10 +14,9 @@ class Staff::Archives::PagesController < Staff::ArchivesController
     create! do |format| 
       format.html {
         if @page.archive
-          redirect_to staff_archives_path(:slug => @page.archive.slug) 
-        else
-          redirect_to staff_archives_path(:slug => "/ada")           
-        end        } 
+          redirect_to staff_archives_path(@page.archive) 
+        end        
+        } 
     end
   end
 
@@ -24,9 +24,7 @@ class Staff::Archives::PagesController < Staff::ArchivesController
     update! do |format|   
       format.html {
         if @page.archive
-          redirect_to staff_archives_path(:slug => @page.archive.slug) 
-        else
-          redirect_to staff_archives_path(:slug => "/ada")           
+          redirect_to staff_archive_path(@page.archive) 
         end
       } 
     end
@@ -37,10 +35,9 @@ class Staff::Archives::PagesController < Staff::ArchivesController
     destroy! do |format|   
       format.html { 
         if @page.archive
-          redirect_to staff_archives_path(:slug => archive.slug) 
-        else
-          redirect_to staff_archives_path(:slug => "/ada")           
-        end        }
+          redirect_to staff_archive_path(archive) 
+        end        
+        }
     end
   end
 
@@ -81,8 +78,12 @@ class Staff::Archives::PagesController < Staff::ArchivesController
   end
   
   private
-  def get_archive
-    @archive = Archive.find(params[:archive_id]) unless params[:archive_id].blank? 
+  # def get_archive
+  #   @archive = Archive.find(params[:archive_id]) unless params[:archive_id].blank? 
+  # end
+
+  def get_archives
+    @archives = Archive.all(:order => "name asc")
   end
   
   def get_pages

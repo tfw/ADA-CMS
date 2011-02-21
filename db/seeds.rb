@@ -44,5 +44,6 @@ archive = Archive.create(:name => "ADA") if Archive.find_by_name("ADA").nil?
 
 for page in Page.find_all_by_archive_id(nil)
   page.archive_id = archive
+  page.save
 end
 
