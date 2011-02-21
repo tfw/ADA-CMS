@@ -2,7 +2,6 @@ module HelperMethods
   def visit_archive(slug)
     archive = Archive.find_by_slug(slug)
     visit staff_archive_path(archive)
-    # visit "/staff/archives/#{slug}"    
   end
   
   def visit_integrations(archive)
@@ -11,6 +10,24 @@ module HelperMethods
     page.should have_content("Integrations")      
   end
   
+  def create_page(archive, page_title, page_body)
+    visit_archive(archive.slug)
+    click_link("Add a page")
+    fill_in("page_title", :with => page_title)
+    fill_in("page_body_editor", :with => page_body)
+    click_button("Create Page")
+  end
+  
+  def sign_in(user)
+    visit '/login'
+    fill_in('inkling_user_email', :with => user.email)
+    fill_in('inkling_user_password', :with => 'test123')
+    click_button('Sign in')
+  end
+
+  def sign_out
+    visit logout_path
+  end
 end
 
 RSpec.configuration.include HelperMethods, :type => :acceptance

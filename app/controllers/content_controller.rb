@@ -7,12 +7,12 @@ class ContentController < ApplicationController
   before_filter :get_archives
   before_filter :get_ada_pages
 
-  helper_method :current_archive
-  
-  def current_archive
-    @current_archive ||= Archive.find(params[:archive_id]) if @current_archive.nil?
-    @current_archive
-  end
+  # helper_method :current_archive
+  # 
+  # def current_archive
+  #   @current_archive ||= Archive.find(params[:archive_id]) if @current_archive.nil?
+  #   @current_archive
+  # end
 
   protected    
   def get_ada_pages

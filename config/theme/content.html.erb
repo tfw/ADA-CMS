@@ -10,7 +10,7 @@
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
 	</head
 			
-    <body id="<%= archive_css(current_archive) %>">
+    <body id="<%= archive_css(@current_archive) %>">
 		<header>
 			<div class="login">
 				<% if current_user.nil? %>
@@ -51,10 +51,10 @@
     </nav>
 
 		<nav class="subnav">
-	    <% if current_archive != Archive.ada %>
+	    <% if @current_archive != Archive.ada %>
 				<ul>
-					<li><p><%= current_archive.name %></p></li>
-					<% for page in Page.archive_root_pages(current_archive)  %>
+					<li><p><%= @current_archive.name %></p></li>
+					<% for page in Page.archive_root_pages(@current_archive)  %>
 						<% if page.title == @title %>
 							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
 						<% else %>

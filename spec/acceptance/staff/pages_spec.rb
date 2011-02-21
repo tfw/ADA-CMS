@@ -5,7 +5,6 @@ feature "Creating pages" do
   background do
     @admin = make_user(:administrator)
     sign_in(@admin)
-    
   end
   
   scenario "I can access the archive page form"  do
@@ -15,13 +14,9 @@ feature "Creating pages" do
   end
   
   scenario "I can create a page" do
-    visit_archive("historical")
-    click_link("Add a page")
-    fill_in("page_title", :with => "test page")
-    fill_in("page_body_editor", :with => "sample content .... ")
-    click_button("Create Page")
+    create_page(Archive.historical, "test page", "sample content")
     page.should have_content("Archives: Historical")
     page.should have_content("test page")
   end
-  
+
 end

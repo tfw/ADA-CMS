@@ -50,7 +50,7 @@ RSpec.configure do |config|
     Page.make(:title => "Home", :archive => Archive.ada) 
 
     # #install the content theme, as we have to test front end presentation
-    # theme = 
+    theme = Inkling::Theme.install_from_dir("config/theme")
   end
   
   config.before(:suite) do

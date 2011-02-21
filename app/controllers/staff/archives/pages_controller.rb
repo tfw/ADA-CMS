@@ -85,7 +85,6 @@ class Staff::Archives::PagesController < Staff::ArchivesController
   end
   
   def get_pages
-    # debugger
     @pages = Page.archive_root_pages(@archive)
     
     parent_pages = @pages.dup

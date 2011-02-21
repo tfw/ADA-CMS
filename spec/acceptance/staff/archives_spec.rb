@@ -1,41 +1,51 @@
 require File.dirname(__FILE__) + '/../acceptance_helper'
 
-feature "The Archives" do
+feature "Archives management:" do
 
   background do
     @roles = [:administrator, :manager, :approver, :archivist]
-  end
+  end  
   
-  describe "serving archives from controller via slug" do
-    scenario "visit ADA dashboard" do
+  describe "staffer accesses" do
+    scenario "ADA" do
       users_for_roles_visit_archive_tab(@roles, "ada", "ADA")
     end
     
-    scenario "visit Social Science dashboard" do
+    scenario "Social Science" do
       users_for_roles_visit_archive_tab(@roles, "social-science", "Social Science")
     end
     
-    scenario "visit Historical dashboard" do
+    scenario "Historical" do
       users_for_roles_visit_archive_tab(@roles, "historical", "Historical")
     end
     
-    scenario "visit Indigenous dashboard" do
+    scenario "Indigenous" do
       users_for_roles_visit_archive_tab(@roles, "indigenous", "Indigenous")
     end
     
-    scenario "visit Longitudinal dashboard" do
+    scenario "Longitudinal" do
       users_for_roles_visit_archive_tab(@roles, "longitudinal", "Longitudinal")
     end
     
-    scenario "visit Qualitative dashboard" do
+    scenario "Qualitative" do
       users_for_roles_visit_archive_tab(@roles, "qualitative", "Qualitative")
     end
     
-    scenario "visit International dashboard" do
+    scenario "International" do
       users_for_roles_visit_archive_tab(@roles, "international", "International")
     end
   end
-  
+    
+  # describe "managing the page index" do  
+  #   scenario "create a page and see a link to its public location" do
+  #     admin = make_user(:administrator)
+  #     sign_in(admin)
+  #     create_page(Archive.historical, "test page", "sample content")
+  #     click_link("Public View")
+  #     page.should have_content("sample content")
+  #   end
+  # end
+  # 
   def users_for_roles_visit_archive_tab(roles, archive, breadcrumb)
     for role in roles
       user = make_user(role)
