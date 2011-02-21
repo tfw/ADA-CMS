@@ -21,7 +21,16 @@
     <%= form.hidden_field :author_id, :value => current_user.id %>
     <%= form.inputs :id => "form_meta" do %>
 
+    <% if resource.new_record? %>
+      <li class="string optional">
+        <label for="page_archive">Archive</label>
+        <select  disabled="disabled">
+          <option id="page_archive" value ="<%= @archive.id %>"><%= @archive.name %></option>
+        <select>
+      </li> 
+    <% else %>
     	<%= form.input :archive, :as => :select, :collection => @archives, :include_blank => false %>
+    <% end %>
       <%= form.input :parent, :as => :select, :collection => @pages %>
       <%= form.input :title, :input_html => {:size => "50"} %>
       <li class="string optional">
