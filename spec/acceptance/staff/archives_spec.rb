@@ -36,16 +36,35 @@ feature "Archives management:" do
     end
   end
     
-  # describe "managing the page index" do  
-  #   scenario "create a page and see a link to its public location" do
-  #     admin = make_user(:administrator)
-  #     sign_in(admin)
-  #     create_page(Archive.historical, "test page", "sample content")
-  #     click_link("Public View")
-  #     page.should have_content("sample content")
-  #   end
-  # end
-  # 
+  describe "managing archive pages" do  
+    scenario "create a page then follow link to its public location" do
+      admin = make_user(:administrator)
+      sign_in(admin)
+      create_page(Archive.historical, "test page", "sample content")
+      click_link("Public View")
+      page.should have_content("sample content")
+      sign_out
+    end
+    
+    scenario "edit a page" do
+      admin = make_user(:administrator)
+      sign_in(admin)
+      create_page(Archive.historical, "test page", "sample content")
+      click_link("Edit")
+      page.should have_content("Edit")
+      sign_out
+    end
+    
+    scenario "delete a page" do
+      admin = make_user(:administrator)
+      sign_in(admin)
+      create_page(Archive.historical, "test page", "sample content")
+      click_link("Delete")
+      page.should have_content("successfully destroyed")
+      sign_out
+    end    
+  end
+  
   def users_for_roles_visit_archive_tab(roles, archive, breadcrumb)
     for role in roles
       user = make_user(role)
