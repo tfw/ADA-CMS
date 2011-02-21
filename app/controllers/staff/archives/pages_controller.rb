@@ -14,7 +14,7 @@ class Staff::Archives::PagesController < Staff::ArchivesController
     create! do |format| 
       format.html {
         if @page.archive
-          redirect_to staff_archive_path(@page.archive.id) 
+          redirect_to staff_archive_path(@page.archive) 
         end        
         } 
     end
@@ -24,7 +24,7 @@ class Staff::Archives::PagesController < Staff::ArchivesController
     update! do |format|   
       format.html {
         if @page.archive
-          redirect_to staff_archive_path(@page.archive.id) 
+          redirect_to staff_archive_path(@page.archive) 
         end
       } 
     end
@@ -34,7 +34,7 @@ class Staff::Archives::PagesController < Staff::ArchivesController
     archive = Page.find(params[:id]).archive
     destroy! do |format|   
       format.html { 
-        redirect_to staff_archive_path(archive.id) 
+        redirect_to staff_archive_path(archive) 
         }
     end
   end
