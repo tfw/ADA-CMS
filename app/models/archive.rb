@@ -54,7 +54,7 @@ class Archive < ActiveRecord::Base
     self.slug = sluggerize(name)
   end
   
-  def to_params
+  def to_param
     slug
   end
 end

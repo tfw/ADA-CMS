@@ -48,13 +48,13 @@
     <nav>
       <ul>
         <li id="dashboard"><a href="/staff/home">Dashboard</a></li>
-        <li id="ada"><a href="/staff/archives/ada">ADA</a></li>
-        <li id="science"><a href="/staff/archives/social-science">social science</a></li>
-        <li id="historical"><a href="/staff/archives/historical">historical </a></li>
-        <li id="indigenous"><a href="/staff/archives/indigenous">indigenous</a></li>
-        <li id="longitudinal"><a href="/staff/archives/longitudinal">longitudinal</a></li>
-        <li id="qualitative"><a href="/staff/archives/qualitative">qualitative</a></li>
-        <li id="international"><a href="/staff/archives/international">international</a></li>
+        <li id="ada"><%= link_to 'ADA', staff_archive_path(Archive.ada) %></li>
+        <li id="science"> <%= link_to 'social science', staff_archive_path(Archive.social_science) %></li>
+        <li id="historical"><%= link_to 'historical', staff_archive_path(Archive.historical) %></li>
+        <li id="indigenous"><%= link_to 'indigenous', staff_archive_path(Archive.indigenous) %></li>
+        <li id="longitudinal"><%= link_to 'longitudinal', staff_archive_path(Archive.longitudinal) %></li>
+        <li id="qualitative"><%= link_to 'qualitative', staff_archive_path(Archive.qualitative) %></li>
+        <li id="international"><%= link_to 'international', staff_archive_path(Archive.international) %></li>
         <li id="blank"><!-- intentional gap -->&nbsp;</li>
         <li id="site-resources"><a href="/staff/resources">Site Resources</a></li>
         <li id="blank"><!-- intentional gap -->&nbsp;</li>
