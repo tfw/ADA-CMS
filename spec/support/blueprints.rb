@@ -40,6 +40,12 @@ end
 def make_user(role_name)
   role_name = role_name.to_s if role_name.is_a? Symbol
   role = Inkling::Role.find_by_name(role_name)  
+  
+  if role.nil?
+    role = Inkling::Role.new(:name => role_name)
+    role.save!
+  end
+  
   role_entry = Inkling::RoleMembership.find_by_role_id(role.id)
 
   unless role_entry

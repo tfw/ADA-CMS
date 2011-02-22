@@ -30,7 +30,7 @@ RSpec.configure do |config|
 
   # config.before(:all)    { Sham.reset(:before_all)  }
 
-  config.before(:all) do
+  config.before(:all, :type => :acceptance) do
     ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    
