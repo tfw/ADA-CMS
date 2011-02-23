@@ -43,7 +43,7 @@ feature "Archives management:" do
       sign_in(admin)
       create_page(Archive.historical, "test page", "sample content")
       
-      within(:xpath, "//li[@id='options-/historical/test-page']") do
+      within(:xpath, "//li[@id='page-options-/historical/test-page']") do
         click_link("Public View")
       end
             
