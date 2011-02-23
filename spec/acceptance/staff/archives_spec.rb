@@ -3,7 +3,6 @@ require File.dirname(__FILE__) + '/../acceptance_helper'
 feature "Archives management:" do
 
   background do
-    # @roles = [:administrator, :manager, :approver, :archivist]
     @roles = Inkling::Role.all
   end  
   

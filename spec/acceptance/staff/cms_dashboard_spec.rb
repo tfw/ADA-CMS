@@ -13,5 +13,6 @@ feature "Cms Dashboard", %q{
   scenario "login should go to dashboard" do
     sign_in(@admin)
     page.should have_content('Administration')
+    sign_out
   end
 end

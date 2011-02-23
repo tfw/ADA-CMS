@@ -2,7 +2,7 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
-# require 'ruby-debug'
+require 'ruby-debug'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -30,7 +30,9 @@ RSpec.configure do |config|
 
   # config.before(:all)    { Sham.reset(:before_all)  }
 
-  config.before(:all, :type => :acceptance) do
+  config.before(:each, :type => :acceptance) do
+    Sham.reset(:before_each) 
+    DatabaseCleaner.start
     ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    
@@ -50,8 +52,11 @@ RSpec.configure do |config|
     theme = Inkling::Theme.install_from_dir("config/theme")
   end
 
+  config.after(:each, :type => :acceptance) do
+    DatabaseCleaner.clean
+  end
+
   config.before(:each) do
-    Sham.reset(:before_each) 
     DatabaseCleaner.start
   end
 
@@ -64,7 +69,8 @@ RSpec.configure do |config|
   end
 
   config.after(:each) do
-    DatabaseCleaner.clean
+   Sham.reset
+   DatabaseCleaner.clean
   end
   
   config.include Devise::TestHelpers, :type => :controller
