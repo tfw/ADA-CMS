@@ -20,8 +20,8 @@ describe Staff::ArchivesController do
   end
   
   describe "updating page order" do
-    context "ajax call with json containing id of moved page and a list of all siblings" do
-      specify "that the moved page updates its siblings" do
+    context "with an ajax call" do
+      specify "the moved page updates its siblings" do
         page = Page.make
         left = Page.make
         right = Page.make
