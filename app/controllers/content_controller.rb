@@ -1,18 +1,11 @@
 class ContentController < ApplicationController 
   
-  layout 'content' #this file is created by the Theme functionality in admin, and written out to tmp/inkling/themes/layouts
+  layout 'content' #this file is created by Inking::Theme (see Inkling admin), and written out to tmp/inkling/themes/layouts
   alias current_user current_inkling_user
   helper_method :current_user
   
   before_filter :get_archives
   before_filter :get_ada_pages
-
-  # helper_method :current_archive
-  # 
-  # def current_archive
-  #   @current_archive ||= Archive.find(params[:archive_id]) if @current_archive.nil?
-  #   @current_archive
-  # end
 
   protected    
   def get_ada_pages
