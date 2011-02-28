@@ -16,7 +16,8 @@ gem 'ruote'
 gem 'yajl-ruby'
 gem 'yaml_db'
 gem 'nokogiri'
-gem 'jquery-rails', '>= 0.2.6'
+gem 'jquery-rails', '>= 0.2.6' 
+gem 'capistrano-ext'
 
 # gem "ruby-debug19" #move this into dev group alone later
 
@@ -37,6 +38,4 @@ group :development, :test do
  	gem 'machinist' , '>= 1.0.6'
 	gem 'database_cleaner'
 	gem 'capistrano'
-	gem 'activerecord-sqlserver-adapter'
-	gem 'tiny_tds'
 end
