@@ -20,6 +20,7 @@ Ada::Application.routes.draw do
       resources :archive_study_blocks, :except => [:index, :show], :controller => "archives/archive_study_blocks"
       resources :archive_study_queries, :except => [:index, :show], :controller => "archives/archive_study_queries"
     end
+    resources :news
   end
   
   match '/*path' => "archive_studies#show", :as => :archive_study, :constraints => Inkling::Routing::TypeConstraint.new("ArchiveStudy")
