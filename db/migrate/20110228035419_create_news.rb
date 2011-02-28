@@ -6,7 +6,7 @@ class CreateNews < ActiveRecord::Migration
       t.integer :user_id, :null => :false
       t.string :title, :null => false
       t.text :body, :null => false
-      t.string :status, :null => false, :default => 'draft'
+      t.string :state, :null => false, :default => 'draft'
       t.string :keywords, :limit => 1024
       t.datetime :publish_at
       t.timestamps
