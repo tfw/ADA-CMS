@@ -1,5 +1,5 @@
 #The connection between an archive and a study.
-#One study may exist in many archives, for each of which their is an archive_study
+#One study is kept in the system, it can be mapped to many archives with this class
 
 class ArchiveStudy < ActiveRecord::Base
   include Inkling::Util::Slugs, ContentPathIncludesArchive
