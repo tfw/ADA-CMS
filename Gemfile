@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 source :gemcutter
 
-gem 'rails', '3.0.4'
+gem 'rails', '3.0.5'
 
 gem "pg"
 
@@ -37,4 +37,6 @@ group :development, :test do
  	gem 'machinist' , '>= 1.0.6'
 	gem 'database_cleaner'
 	gem 'capistrano'
+	gem 'activerecord-sqlserver-adapter'
+	gem 'tiny_tds'
 end

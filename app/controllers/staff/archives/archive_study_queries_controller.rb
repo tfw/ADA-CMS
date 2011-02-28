@@ -6,7 +6,7 @@ class Staff::Archives::ArchiveStudyQueriesController < Staff::ArchivesController
   def create
     create! do |format| 
       format.html {
-        redirect_to archive_integrations_path(@archive)   
+        redirect_to staff_archive_integrations_path(@archive)   
         } 
     end
   end
@@ -14,7 +14,7 @@ class Staff::Archives::ArchiveStudyQueriesController < Staff::ArchivesController
   def update
     update! do |format| 
       format.html {
-        redirect_to archive_integrations_path(@archive)   
+        redirect_to staff_archive_integrations_path(@archive)   
         } 
     end
   end
@@ -22,7 +22,7 @@ class Staff::Archives::ArchiveStudyQueriesController < Staff::ArchivesController
   def destroy
     destroy! do |format| 
       format.html {
-        redirect_to archive_integrations_path(@archive)   
+        redirect_to staff_archive_integrations_path(@archive)   
         } 
     end
   end
