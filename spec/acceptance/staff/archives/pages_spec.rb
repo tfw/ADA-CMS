@@ -22,4 +22,14 @@ feature "Creating pages" do
     page.should have_content("Archives: Historical")
     page.should have_content("test page")
   end
+  
+  scenario "AJAX - the path displays after a title update of a page" do
+    visit_archive("historical")
+    click_link("Add a page")
+    fill_in("page_title", :with => "test 1 2 3")
+    
+    within(:xpath, "//input[@id='page-path']") do
+      page.should have_content('test-1-2-3')
+    end
+  end
 end
