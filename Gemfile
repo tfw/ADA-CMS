@@ -16,7 +16,8 @@ gem 'ruote'
 gem 'yajl-ruby'
 gem 'yaml_db'
 gem 'nokogiri'
-gem 'jquery-rails', '>= 0.2.6'
+gem 'jquery-rails', '>= 0.2.6' 
+gem 'capistrano-ext'
 
 # gem "ruby-debug19" #move this into dev group alone later
 

@@ -1,4 +1,5 @@
 require 'bundler/capistrano' #use bundler's support for capistrano to make it easy
+require 'capistrano/ext/multistage'
 
 set :application, "Australian Data Archives Website"
 set :repository,  "git@adar.unfuddle.com:adar/ada.git"
@@ -7,9 +8,9 @@ set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :deploy_via, :remote_cache
 
-role :web, "ada"                          # Your HTTP server, Apache/etc
-role :app, "ada"                          # This may be the same as your `Web` server
-role :db,  "ada", :primary => true # This is where Rails migrations will run
+# role :web, "ada"                          # Your HTTP server, Apache/etc
+# role :app, "ada"                          # This may be the same as your `Web` server
+# role :db,  "ada", :primary => true # This is where Rails migrations will run
 
 set :user,        "deploy"
 set :use_sudo,    true
@@ -23,8 +24,7 @@ ssh_options[:port] = 22
 ssh_options[:forward_agent] = true
 ssh_options[:compression] = false
 
-set :branch, "master"
-set :rails_env, "production"
+# set :branch, "master"
 
 
 # If you are using Passenger mod_rails uncomment this:
@@ -46,7 +46,8 @@ end
 desc "generate a new database.yml"
 task :generate_database_yml, :roles => :app do
   
-  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgres', :password => 'test123', :encoding => 'unicode'}}
+  # buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgres', :password => "test123", :encoding => 'unicode'}}
+  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', :encoding => 'unicode'}}
   put YAML::dump(buffer), "#{current_path}/config/database.yml", :mode => 0664
 end
 
