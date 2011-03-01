@@ -12,7 +12,8 @@ class Staff::ArchivesController < Staff::BaseController
 
   def update_page_order
     #1 find the moved page
-    moved_page = Page.find(params[:moved])
+    moved_page_path = Inkling::Path.find_by_slug(params[:moved].gsub("page-options-"))
+    moved_page = moved_page_path.content
     
     page_ids = params[:page_order].split(",")
     page_ids.collect! {|i| i.to_i}
