@@ -1,4 +1,4 @@
-class Staff::Archives::ArchiveStudyQueriesController < Staff::ArchivesController
+class Staff::Archives::ArchiveStudyQueriesController < Staff::Archives::BaseController
   inherit_resources                                                                                     
   defaults :resource_class => ArchiveStudyQuery, :instance_name => 'archive_study_query'
   before_filter :get_archive

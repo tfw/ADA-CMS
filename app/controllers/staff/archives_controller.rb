@@ -36,7 +36,7 @@ class Staff::ArchivesController < Staff::BaseController
   private
   def get_archive
     @archive ||= Archive.find_by_slug(params[:id]) if params[:id]
-    @archive ||= Archive.find_by_slug(params[:archive_id]) if params[:archive_id]
+    # @archive ||= Archive.find_by_slug(params[:archive_id]) if params[:archive_id]
   end
   
   def get_parent_pages

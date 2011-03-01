@@ -1,4 +1,4 @@
-class Staff::Archives::ArchiveStudyBlocksController < Staff::ArchivesController
+class Staff::Archives::ArchiveStudyBlocksController < Staff::Archives::BaseController
   inherit_resources                                                                                     
   defaults :resource_class => ArchiveStudyBlock, :instance_name => 'archive_study_block'
   before_filter :get_archive
@@ -26,5 +26,4 @@ class Staff::Archives::ArchiveStudyBlocksController < Staff::ArchivesController
         } 
     end
   end
-
 end
