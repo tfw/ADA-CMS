@@ -8,11 +8,11 @@ Ada::Application.load_tasks
 
 #this is a local rebuild only
 namespace :ada do
-  task :rebuild => ["db:drop", "db:create", "restore_postgres", "db:migrate", "db:seed", "install_theme"]
+  task :rebuild => [:environment, "db:drop", "db:create", "restore_postgres", "db:migrate", "db:seed", "install_theme"]
 end
 
 task :restore_postgres do
-  system("psql -d ada_development < ada_data_13_2_2011.out")
+  system("psql -d ada_#{Rails.env} < ada_data_13_2_2011.out")
 end
 
 task :install_theme => :environment do
