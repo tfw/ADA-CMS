@@ -1,5 +1,5 @@
-<div class="news box">
-  <h2><%= local_variables.inspect %></h2>
-  <h2><%= instance_variables.inspect %></h2>
-
+<div class="news">
+  <h2><%= @news.title %></h2>
+  <%= raw(@news.body) %>
+  <!-- tag cloud -->
 </div>
