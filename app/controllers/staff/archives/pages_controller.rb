@@ -4,9 +4,9 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   
   inherit_resources                                                                                     
   defaults :resource_class => Page, :instance_name => 'page'
+  before_filter :get_archive
   before_filter :get_archives, :except => [:destroy, :update_tree]
   before_filter :get_pages, :except => [:sluggerize_path, :preview]
-  before_filter :get_archive
 
   respond_to :json, :only => [:sluggerize_path, :preview]
   
@@ -59,8 +59,9 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
     slug = sluggerize(params[:title])
     
     if parent_page 
+      debugger
       slug = "#{parent_page.path.slug}/#{slug}" 
-    elsif 
+    elsif @archive 
       slug = "/#{@archive.slug}/#{slug}" 
     end
     
