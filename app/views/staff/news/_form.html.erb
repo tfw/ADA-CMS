@@ -19,19 +19,7 @@
       <%= form.input :keywords, :input_html => {:size => "50"} %>
     </div>
     <div class="half">
-      <%=
-	form.input(
-	  :news_archives,
-	  :as => :check_boxes,
-	  :collection =>
-	    @archives.inject({}) do |hash, archive|
-	      hash[archive.name] = archive.id
-	      hash
-	    end,
-	  :include_blank => false,
-	  :label => "Archives"
-	)
-      %>
+      <%= form.input :archives, :as => :check_boxes %>
     </div>
   </fieldset>
   <fieldset>
