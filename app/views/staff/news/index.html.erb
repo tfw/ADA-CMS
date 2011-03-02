@@ -5,7 +5,7 @@
     <fieldset class="left half">
       <legend> News Item Tasks </legend>
       <ul>
-	<li> Add a new News Item </li>
+	<li> <%= link_to 'Add a new News Item', new_staff_news_path %> </li>
 	<li> Edit a News Item </li>
 	<%- if true || current_user.is_admin %>
 	  <li> Organise News Items </li>
