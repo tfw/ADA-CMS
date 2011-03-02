@@ -2,4 +2,5 @@
   <h2><%= @news.title %></h2>
   <%= raw(@news.body) %>
   <!-- tag cloud -->
+  <%= link_to 'Edit', edit_staff_news_path(@news) %>
 </div>
