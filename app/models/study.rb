@@ -9,6 +9,13 @@ class Study < ActiveRecord::Base
   
   validates :label, :presence => true
   
+  define_index do
+    indexes label, :sortable => true
+    indexes abstract, :sortable => true
+    indexes series_name, :sortable => true
+    indexes universe, :sortable => true
+  end
+  
   def title
     label
   end

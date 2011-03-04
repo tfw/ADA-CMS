@@ -266,6 +266,6 @@ DEPENDENCIES
   ruote
   spork
   steak (>= 1.0.0.rc.1)
-  thinking-sphinx
+  thinking-sphinx (>= 2.0.0)
   yajl-ruby
   yaml_db
