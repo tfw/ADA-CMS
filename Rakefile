@@ -20,7 +20,7 @@ task :install_theme => :environment do
 end
 
 task :nesstar => :environment do
-  Nesstar::AtsidaIntegration.run
+  Nesstar::Integration.run
 end
 
 task :fetch_rdf do
