@@ -41,8 +41,7 @@ describe News do
       a.should_not be_nil
       na = news.news_archives[0]
       na.should_not be_nil
-      pending "NewsArchive doesn't have a slug yet"
-      na.slug.should == "/#{a.archive.slug}/#{sluggerize(news.title)}"
+      na.path.slug.should == "/#{a.slug}/#{sluggerize(news.title)}"
     end
   end
 
