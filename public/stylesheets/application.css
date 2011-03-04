@@ -179,6 +179,7 @@ a#preview-link {
 }
 .news table td, .news table th {
 	padding: .5em 1em;
+	vertical-align: top;
 }
 .news table thead {
 	color: #666;
