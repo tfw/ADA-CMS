@@ -1,12 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
+#our strategy of setting up data for the app. has changed as we've had to support production level data.
+#the previous methods are commented out below, to illustrate data set up from a clean slate (without production
+#level data). 
 
-#old seeds, before we adopted the database dump
+
+#old seeds, before we adopted yaml_db dump!
+
+# archive = Archive.create(:name => "ADA") if Archive.find_by_name("ADA").nil?
+# 
+# for page in Page.find_all_by_archive_id(nil)
+#   page.archive_id = archive
+#   page.save
+# end
+
+
+#older seeds, before we adopted the database dump
 
 # if Inkling::Role.find_by_name("administrator").users.empty?
 #   puts "Please run `rake inkling:init' first. \n\n"
@@ -40,10 +47,4 @@
 #   Inkling::RoleMembership.create!(:user => user, :role => Inkling::Role.find_by_name("Manager"))
 # end
 
-archive = Archive.create(:name => "ADA") if Archive.find_by_name("ADA").nil?
-
-for page in Page.find_all_by_archive_id(nil)
-  page.archive_id = archive
-  page.save
-end
 

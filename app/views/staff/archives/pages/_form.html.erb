@@ -57,7 +57,11 @@
       <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
     <% end %>
 
-    <div id="breakout" style="display:none">
+    <% if resource.breakout_box.blank? %>
+      <div id="breakout" style="display:none">
+    <% else %>
+      <div id="breakout">
+    <% end %>
       <h3>Breakout Box:</h3>
       <%= form.inputs do %>
           <%= form.cktext_area :breakout_box, :toolbar=>'Full', :width=>'90%', :height=>'100px' %>
