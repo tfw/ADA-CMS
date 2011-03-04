@@ -3,13 +3,13 @@ module HelperMethods
     archive = Archive.find_by_slug(slug)
     visit staff_archive_path(archive)
   end
-  
+
   def visit_integrations(archive)
     visit_archive(archive.slug)
     click_link("Integrations")
-    page.should have_content("Integrations")      
+    page.should have_content("Integrations")
   end
-  
+
   def create_page(archive, page_title, page_body)
     visit_archive(archive.slug)
     click_link("Add a page")
@@ -17,7 +17,15 @@ module HelperMethods
     fill_in("page_body_editor", :with => page_body)
     click_button("Create Page")
   end
-  
+
+  def create_news(archive, news_title, news_body)
+    visit(new_staff_news_path)
+    fill_in("news_title", :with => news_title)
+    check(archive.name)
+    fill_in("news_body_editor", :with => news_body)
+    click_button("Create News")
+  end
+
   def sign_in(user)
     visit '/login'
     fill_in('inkling_user_email', :with => user.email)
