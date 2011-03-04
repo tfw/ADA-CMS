@@ -1,5 +1,5 @@
 class News < ActiveRecord::Base
-  has_many :news_archives
+  has_many :news_archives, :dependent => :destroy
   has_many :archives, :through => :news_archives
 
   belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"

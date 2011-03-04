@@ -19,11 +19,23 @@ feature "Creating news" do
   end
 
   scenario "I can make news, save, view and re-edit it" do
-    news = create_news(Archive.social_science, "test page", "sample content")
+    news_id = create_news(Archive.social_science, "test page", "sample content")
     page.should have_content("test page")
     page.should have_content("In archive Social Science")
     click_link("Edit")
     page.should have_button('Update News')
+  end
+
+  scenario "I can delete news" do
+    news_id = create_news(Archive.social_science, "test page", "sample content")
+    visit(staff_news_index_path)
+    within("\#newsrow-#{news_id}") do |row|
+      click_link("Delete")
+    end
+    lambda {
+      visit(staff_news_path(news_id))
+    }.should raise_error
+    NewsArchive.find(:all, :conditions => {:news_id => news_id}).size.should == 0
   end
 
 end

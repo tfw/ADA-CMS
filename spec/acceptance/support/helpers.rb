@@ -24,6 +24,7 @@ module HelperMethods
     check(archive.name)
     fill_in("news_body_editor", :with => news_body)
     click_button("Create News")
+    current_path.sub(%r{.*/},'').to_i
   end
 
   def sign_in(user)

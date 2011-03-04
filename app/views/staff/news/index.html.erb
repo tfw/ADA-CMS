@@ -45,7 +45,7 @@
       </thead>
       <tbody>
 	<%- @recent_news.each do |news| %>
-	  <tr>
+	  <tr id=<%= "newsrow-#{news.id}" %>>
 	    <td> <%= news.title %> </td>
 	    <!-- Need a helper here: -->
 	    <td> <%= raw(news.news_archives.map{|na| h(na.archive.name)}*'</br>') %> </td>
@@ -54,6 +54,7 @@
 	    <td>
 	      <%= link_to 'View', staff_news_path(news) %>
 	      <%= link_to 'Edit', edit_staff_news_path(news) %>
+	      <%= link_to 'Delete', staff_news_path(news), :method => :delete %>
 	    </td>
 	  </tr>
 	<% end %>
