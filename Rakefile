@@ -8,7 +8,8 @@ Ada::Application.load_tasks
 
 #this is a local rebuild only
 namespace :ada do
-  task :rebuild => ["db:drop", "db:create", "restore_postgres", "db:migrate", "db:seed", "install_theme"]
+  # task :rebuild => ["db:drop", "db:create", "restore_postgres", "db:migrate", "db:seed", "install_theme"]
+  task :rebuild => ["db:drop", "db:create", "db:load", "db:migrate", "db:seed"]
 end
 
 task :restore_postgres do
