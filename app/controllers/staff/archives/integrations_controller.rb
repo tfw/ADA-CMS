@@ -1,4 +1,4 @@
-class Staff::Archives::IntegrationsController < Staff::ArchivesController
+class Staff::Archives::IntegrationsController < Staff::Archives::BaseController
   
   before_filter :get_archive
   

@@ -5,7 +5,6 @@ class Staff::Archives::BaseController < Staff::BaseController
   
   private
   def get_archive
-    @archive = Archive.find_by_slug(params[:slug]) if params[:slug]
+    @archive ||= Archive.find_by_slug(params[:archive_id]) if params[:archive_id]
   end
-  
 end

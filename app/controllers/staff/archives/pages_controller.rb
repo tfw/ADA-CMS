@@ -1,9 +1,10 @@
 
-class Staff::Archives::PagesController < Staff::ArchivesController
+class Staff::Archives::PagesController < Staff::Archives::BaseController
   include Inkling::Util::Slugs
   
   inherit_resources                                                                                     
   defaults :resource_class => Page, :instance_name => 'page'
+  before_filter :get_archive
   before_filter :get_archives, :except => [:destroy, :update_tree]
   before_filter :get_pages, :except => [:sluggerize_path, :preview]
 
@@ -58,8 +59,9 @@ class Staff::Archives::PagesController < Staff::ArchivesController
     slug = sluggerize(params[:title])
     
     if parent_page 
+      debugger
       slug = "#{parent_page.path.slug}/#{slug}" 
-    elsif @archive
+    elsif @archive 
       slug = "/#{@archive.slug}/#{slug}" 
     end
     

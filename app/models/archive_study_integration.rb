@@ -1,6 +1,6 @@
 #The integration point between Nesstar, an archive, and a url for a study.
-#This is somewhat close to a factory pattern, producing an archive, except that one instance exists for each
-#archive_study to be created.
+#This is somewhat close to a factory pattern, producing an archive_study_integration, except that at least 
+#one instance exists for each archive_study to be created.
 
 class ArchiveStudyIntegration < ActiveRecord::Base
   

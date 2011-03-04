@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 source :gemcutter
 
-gem 'rails', '3.0.4'
+gem 'rails', '3.0.5'
 
 gem "pg"
 
@@ -16,7 +16,8 @@ gem 'ruote'
 gem 'yajl-ruby'
 gem 'yaml_db'
 gem 'nokogiri'
-gem 'jquery-rails', '>= 0.2.6'
+gem 'jquery-rails', '>= 0.2.6' 
+gem 'capistrano-ext'
 
 # gem "ruby-debug19" #move this into dev group alone later
 
@@ -38,3 +39,9 @@ group :development, :test do
 	gem 'database_cleaner'
 	gem 'capistrano'
 end
+
+# gems required for Microsoft SQL (where Clifford creates the schema diagrams)
+#group :mssql do
+#	gem 'activerecord-sqlserver-adapter'
+#	gem 'tiny_tds'
+#end

@@ -1,4 +1,4 @@
-class Staff::Archives::ArchiveStudyBlocksController < Staff::ArchivesController
+class Staff::Archives::ArchiveStudyBlocksController < Staff::Archives::BaseController
   inherit_resources                                                                                     
   defaults :resource_class => ArchiveStudyBlock, :instance_name => 'archive_study_block'
   before_filter :get_archive
@@ -6,7 +6,7 @@ class Staff::Archives::ArchiveStudyBlocksController < Staff::ArchivesController
   def create
     create! do |format| 
       format.html {
-        redirect_to archive_integrations_path(@archive)   
+        redirect_to staff_archive_integrations_path(@archive)   
         } 
     end
   end
@@ -14,7 +14,7 @@ class Staff::Archives::ArchiveStudyBlocksController < Staff::ArchivesController
   def update
     update! do |format| 
       format.html {
-        redirect_to archive_integrations_path(@archive)   
+        redirect_to staff_archive_integrations_path(@archive)   
         } 
     end
   end
@@ -22,9 +22,8 @@ class Staff::Archives::ArchiveStudyBlocksController < Staff::ArchivesController
   def destroy
     destroy! do |format| 
       format.html {
-        redirect_to archive_integrations_path(@archive)   
+        redirect_to staff_archive_integrations_path(@archive)   
         } 
     end
   end
-
 end

@@ -83,7 +83,7 @@
     update: function(element) {
       title_text = $("#page_title").val();
       parent_page_id = $("#page_parent_id").val();
-      $.post("/staff/pages/sluggerize_path?archive_id=<%= (@archive.nil? ? nil : @archive.id) %>",
+      $.post("/staff/archives/pages/sluggerize_path?archive_id=<%= (@archive.slug) %>",
              {title: title_text, parent: parent_page_id},
              function(slug){
                $("#page_path").val(slug.data)
@@ -104,7 +104,7 @@
     var partial       = $("input:radio[name=page[partial]]:checked").val();
     var body           = CKEDITOR.instances.page_body_editor.getData();    
     var breakout_box   = CKEDITOR.instances.page_breakout_box_editor.getData();  
-    $.post("/staff/pages/preview?archive_id=<%=  (@archive.nil? ? nil : @archive.id) %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
+    $.post("/staff/archives/pages/preview?archive_id=<%=  (@archive.slug) %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
         function update_preview_pane(html){
           $("#preview").html(html);
         }
@@ -129,7 +129,7 @@
     title_text = $("#page_title").val()
     parent_page_id = $("#page_parent_id").val()
 
-    $.post("/staff/pages/sluggerize_path?archive_id=<%=  (@archive.nil? ? nil : @archive.id) %>", {title: text, parent: parent_page_id},
+    $.post("/staff/archives/pages/sluggerize_path?archive_id=<%=  (@archive.slug) %>", {title: text, parent: parent_page_id},
         function(slug){
           $("#page_path").html(slug.data)
         }
