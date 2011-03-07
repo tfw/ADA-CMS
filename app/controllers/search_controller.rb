@@ -1,12 +1,16 @@
-class SearchController < ApplicationController
+class SearchController < ContentController
 
-  def sphinx
-    
-    puts "params from controller:  #{params} *******\n"
+  before_filter :set_current_archive
+  
+  def sphinx   
     @term = params[:term]
     @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :match_mode => :any)
 
     render :results
   end
 
+  private
+  def set_current_archive
+    @current_archive = Archive.ada
+  end
 end
