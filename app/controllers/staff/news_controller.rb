@@ -10,7 +10,7 @@ class Staff::NewsController < Staff::BaseController
 
   private
   def get_recent_news
-    @recent_news = News.find(:all, :limit => 10, :order => "created_at DESC")
+    @recent_news = News.find(:all, :order => "created_at DESC")
   end
 
   def get_archives
