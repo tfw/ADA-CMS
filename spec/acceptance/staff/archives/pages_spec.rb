@@ -33,4 +33,18 @@ feature "Creating pages" do
   #     page.should have_content('test-1-2-3')
   #   end
   # end
+  
+  scenario "I can preview a page before it is created in the db" do
+    visit_archive("historical")
+    click_link("Add a page")
+    fill_in("page_title", :with => "testing 1 2 3")
+    fill_in("page_body_editor", :with => "some text about stuff and stuff")
+    click_link("Preview")
+    
+      within(:xpath, "//div[@id='preview']") do
+        puts page.body
+        page.should have_content('testing 1 2 3')
+        page.should have_content('some text about stuff and stuff')
+      end    
+  end
 end
