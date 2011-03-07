@@ -27,5 +27,9 @@ end
 
 task :sample_study => :environment do
   archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "00103", :archive => Archive.international, :user_id => Inkling::User.first.id)
-  puts "ArchiveStudyIntegration created between #{archive_study_integration.ddi_id} and the International archive. Run 'rake nesstar' to create and reference the study to the archive."
+  puts "ArchiveStudyIntegration created between #{archive_study_integration.ddi_id} and the International archive."
+
+  archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "00103", :archive => Archive.social_science, :user_id => Inkling::User.first.id)
+  puts "ArchiveStudyIntegration created between #{archive_study_integration.ddi_id} and the Social Science archive. "
+  puts "Run 'rake nesstar' to create and reference the study to the archive."
 end

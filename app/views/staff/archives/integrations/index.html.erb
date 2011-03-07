@@ -10,7 +10,7 @@
 		<th>Blocks <%= link_to "+", new_staff_archive_archive_study_block_path(@archive) %></th>
 	</tr>	
 	<tr>
-		<td width='33%'>
+		<td width='33%' valign=top>
 			<ul>
 				<% for integration in @archive.archive_study_integrations %>
 					<li>
@@ -26,7 +26,7 @@
 			</ul> 
 		</td>
 
-		<td width='33%'>
+		<td width='33%' valign=top>
 			<ul>
 				<% for query in @archive.archive_study_queries %>
 					<li><%= link_to query.name, edit_staff_archive_archive_study_query_path(@archive, query), :html_options => {:alt => query.query} %> <%= link_to 'x', staff_archive_archive_study_query_path(@archive, query), :method => :delete %> 
@@ -39,7 +39,7 @@
 			</ul> 
 		</td>
 
-		<td width='33%'>
+		<td width='33%' valign=top>
 			<ul>
 				<% for block in @archive.archive_study_blocks %>
 					<li><%= block.ddi_id %> <%= link_to 'x', staff_archive_archive_study_block_path(@archive, block), :method => :delete %></li>
