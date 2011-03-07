@@ -1,7 +1,7 @@
 require 'archive'
 
 class StudyObserver < ActiveRecord::Observer
-   include ActionController::UrlWriter
+   # include ActionController::UrlWriter
    include Rails.application.routes.url_helpers
    
   def after_create(study)

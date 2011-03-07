@@ -71,25 +71,27 @@
 		<nav class="breadcrumbs">
 			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
 		</nav>		
-        <section class="content">
-			<nav>
-				<ul>
-					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
-	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
-	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
-	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
-	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
-	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
-			  </ul>
-			</nav>
-      
+    <section class="content">
 
-	<div class="notice"><%= notice %></div>
-  <div class="alert"><%= alert %></div>
+      <% unless params[:controller] == 'search' %>
+    		<nav>
+    			<ul>
+    				<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
+            <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
+            <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
+            <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
+            <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
+            <li id="international">  <%= link_to('International', '/international/home' )%> </li>
+    		  </ul>
+    		</nav>      
+    	<% end %>
 
-	<!-- page partial start -->
-	<%= yield %>
-	<!-- page partial end -->
+    	<div class="notice"><%= notice %></div>
+      <div class="alert"><%= alert %></div>
+
+  	<!-- page partial start -->
+  	<%= yield %>
+  	<!-- page partial end -->
 
 </section>
         
