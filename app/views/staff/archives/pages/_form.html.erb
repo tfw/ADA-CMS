@@ -48,7 +48,10 @@
 
     <%= form.inputs :id => "form_layout" do %>
       <%= form.input :partial, :as => :radio, :collection => {
-         "Default" => "/pages/default_page", "Home" => "/pages/home_page", "Breakout Page" => "/pages/breakout_page"
+	   "Default" => "/pages/default_page",
+	   "Home" => "/pages/home_page",
+	   "Breakout Page" => "/pages/breakout_page",
+	   "News Page" => "/pages/news_page"
          }, :include_blank => false, :label => "Template " %>
     <% end %>
 
@@ -108,6 +111,7 @@
     var partial       = $("input:radio[name=page[partial]]:checked").val();
     var body           = CKEDITOR.instances.page_body_editor.getData();    
     var breakout_box   = CKEDITOR.instances.page_breakout_box_editor.getData();  
+    alert(partial);
     $.post("/staff/archives/pages/preview?archive_id=<%=  (@archive.slug) %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
         function update_preview_pane(html){
           $("#preview").html(html);

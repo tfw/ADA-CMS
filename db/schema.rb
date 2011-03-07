@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110126175144) do
+ActiveRecord::Schema.define(:version => 20110228035419) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -141,6 +141,29 @@ ActiveRecord::Schema.define(:version => 20110126175144) do
     t.string   "firstname"
     t.string   "surname"
   end
+
+  create_table "news", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title",                                           :null => false
+    t.text     "body",                                            :null => false
+    t.string   "state",                      :default => "draft", :null => false
+    t.string   "keywords",   :limit => 1024
+    t.datetime "publish_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "news", ["user_id"], :name => "index_news_on_user_id"
+
+  create_table "news_archives", :force => true do |t|
+    t.integer  "news_id"
+    t.integer  "archive_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "news_archives", ["archive_id", "news_id"], :name => "index_news_archives_on_archive_id_and_news_id"
+  add_index "news_archives", ["news_id", "archive_id"], :name => "index_news_archives_on_news_id_and_archive_id"
 
   create_table "pages", :force => true do |t|
     t.string   "title",                           :null => false

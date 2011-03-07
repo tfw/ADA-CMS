@@ -9,6 +9,12 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   before_filter :get_pages, :except => [:sluggerize_path, :preview]
 
   respond_to :json, :only => [:sluggerize_path, :preview]
+
+  def new
+    new! do
+    @page.partial = "/pages/default_page"
+    end
+  end
   
   def create
     create! do |format| 

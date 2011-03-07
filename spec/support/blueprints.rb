@@ -72,11 +72,34 @@ Page.blueprint do
   body Sham.body
 end
 
+NewsArchive.blueprint do
+  # Is this enough? What about :news?
+  archive {Archive.make}
+end
+
+News.blueprint do
+  title Sham.name
+  user {(Inkling::User.make)}
+  user_id {(Inkling::User.make).id}
+  body Sham.body
+end
+
+def make_news attrs = {}
+  archives = attrs.delete(:archives) || 1
+  News.make(attrs) do |news|
+    archives.times do news.news_archives.make; end
+  end
+end
+
 Archive.blueprint do 
   name Sham.name
 end
 
 Study.blueprint do
   label Sham.name
+<<<<<<< HEAD
   abstract Sham.body
 end
+=======
+end
+>>>>>>> master
