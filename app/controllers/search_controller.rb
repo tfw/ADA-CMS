@@ -6,6 +6,7 @@ class SearchController < ContentController
     @term = params[:term]
     @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :match_mode => :any)
 
+puts "***** #{params} ***** \n\n"
     render :results
   end
 

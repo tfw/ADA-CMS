@@ -1,3 +1,8 @@
+<nav>
+  facet search goes here
+  </br>
+</nav>
+
 
 <p>
   <% if @sphinx.any? %>
@@ -18,7 +23,8 @@
         </span>
       <% end %>
     </div>
-    <div id="search_report" r:else>
+    <% else %>
+    <div id="search_report">
       There were no results for <%= @term %>.
     </div>
   <% end %>
