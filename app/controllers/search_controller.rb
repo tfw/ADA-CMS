@@ -4,8 +4,15 @@ class SearchController < ContentController
     
   def sphinx   
     @term = params[:term]
-    @current_archive = Archive.find_by_id(params[:archive_id])
-    @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :match_mode => :any)
+    @current_archive = Archive.find(params[:archive_id])
+    search_params = {:page => params[:page], :match_mode => :any}
+    
+    # unless @current_archive == Archive.ada
+    #   search_params[:archive_id] = @current_archive.id
+    # end
+    # 
+    # @sphinx = ThinkingSphinx.search(@term, search_params)
+    @sphinx = ThinkingSphinx.search(@term)
 
     render :results
   end

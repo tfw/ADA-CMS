@@ -38,6 +38,11 @@ Inkling::RoleMembership.blueprint do
   user
 end
 
+ArchiveStudy.blueprint do
+  archive
+  study
+end
+
 def make_user(role_name)
   role_name = role_name.to_s if role_name.is_a? Symbol
   role = Inkling::Role.find_by_name(role_name)  
@@ -73,4 +78,5 @@ end
 
 Study.blueprint do
   label Sham.name
+  abstract Sham.body
 end
