@@ -1,0 +1,13 @@
+<aside></aside>
+<%= @page.body.html_safe %>
+<% news_items = @page.archive.news.recent %>
+<% if news_items.size > 0 %>
+  <% news_items.each do |news| %>
+      <article>
+	<h3><%= news.title %></h3>
+	<p><%= news.body.html_safe %></p>
+      </article>
+  <% end %>
+<% else %>
+    (No news for <%= @page.archive.name %> Archive)
+<% end %>
