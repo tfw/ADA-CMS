@@ -42,10 +42,10 @@
 				<% end %>
 	     </ul>
 		  <div class="searchContainer">
-		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+		    <form action="/search" method="get" id="search-form" class="formtastic">
 		      <label for="menusearch"></label>
-		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
-		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
+		      <input type="text" name="term" id="term" value="Search this site"/>
+          <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
 	        </form>
 	      </div>
     </nav>

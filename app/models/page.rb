@@ -19,6 +19,10 @@ class Page < ActiveRecord::Base
   validates_presence_of :link_title
   validates_presence_of :partial
   
+  define_index do
+    indexes title
+  end
+  
 
   def self.archive_root_pages(archive)
     roots = Page.roots

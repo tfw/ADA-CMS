@@ -22,8 +22,12 @@ Ada::Application.routes.draw do
     end
   end
   
+  match 'search', :to => 'search#sphinx'
+
+  #inkling objects
   match '/*path' => "archive_studies#show", :as => :archive_study, :constraints => Inkling::Routing::TypeConstraint.new("ArchiveStudy")
   match '/*path' => "pages#show", :as => :page, :constraints => Inkling::Routing::TypeConstraint.new("Page")
+
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
 end
 
