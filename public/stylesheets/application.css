@@ -188,3 +188,10 @@ a#preview-link {
 	padding-top: 0px;
 	padding-bottom: 5px;
 }
+/* A news item in the news summary page */
+.content .news p {
+        border-bottom: 0px;
+	padding-bottom: 0px;
+	margin: 0.2em;
+}
+
