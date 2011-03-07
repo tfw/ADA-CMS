@@ -1,17 +1,12 @@
 class SearchController < ContentController
-
-  before_filter :set_current_archive
   
+  respond_to :html
+    
   def sphinx   
     @term = params[:term]
+    @current_archive = Archive.find_by_id(params[:archive_id])
     @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :match_mode => :any)
 
-puts "***** #{params} ***** \n\n"
     render :results
-  end
-
-  private
-  def set_current_archive
-    @current_archive = Archive.ada
   end
 end

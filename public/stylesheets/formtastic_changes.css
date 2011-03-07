@@ -10,6 +10,21 @@
 	padding-right: 10px;
 	padding-left: 10px;
 }
+
+/*duplication of menusearch - better variable name for our rubies*/
+.formtastic #search_term {
+	background: #FFF;
+	border-style: none;
+	height: 42px;
+	width: 150px;
+	clear: left;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	border-top-left-radius: 8px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
 .formtastic #search_button {
 	margin: 0px 0px -12px;
 	padding: 0px;
