@@ -31,8 +31,12 @@
 <p/>
 
 
-<div r:if="@sphinx.any?" class="float-centre">
-</div>
+<% if @sphinx.any? %>
+  <div class="float-centre">
+      <%= will_paginate @sphinx %>
+  </div>
+<% end %>
+
 <br/>
 <table id="search-results-table" >
   <% for r in @sphinx %>
@@ -58,6 +62,8 @@
 
 <br/>
 
-<div r:if="@sphinx.any?" class="float-centre">
-  will_paginate @sphinx
-</div>
+<% if @sphinx.any? %>
+  <div class="float-centre">
+      <%= will_paginate @sphinx %>
+  </div>
+<% end %>

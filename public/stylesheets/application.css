@@ -203,3 +203,18 @@ a#preview-link {
   padding: 5px;
 }
 
+span.float-right {
+   float: right;
+   margin: 0 0 0 0.2em;
+   padding-left: 0.2em;
+ }
+
+div.float-centre {
+  width: 200px;
+  margin: auto;
+ }
+
+.dataset-page{
+  width: 100%;
+  padding: 1em;
+}
