@@ -34,13 +34,21 @@
 <div r:if="@sphinx.any?" class="float-centre">
 </div>
 <br/>
-<table id="search-results-table">
+<table id="search-results-table" >
   <% for r in @sphinx %>
     <tr>
       <td>
         <% if r.is_a? Page %> Page Title: <i><%= r.title %></i> at <a href="<%= r.path.slug %>"> <%= r.path.slug %></a>.</div>
         <% elsif r.is_a? Study %>
-        
+          <div id="study-<%= r.ddi_id %>">
+          Study Title: <%= r.field("docTitle") %>
+          <% unless r.field("stdyAuthEntity").blank? %> by <% r.field("stdyAuthEntity") %>. <% end %> <br/>
+          Abstract: <%= first_n_words(30, r.abstract) %> <br/>
+          Study Id: <%= r.ddi_id %> <br/>
+
+          <% for archive_study in r.archive_studies %>
+            <%= archive_icon(archive_study.archive) %>
+          <% end %>
         <% end %>
       </td>
     </tr>
