@@ -1,5 +1,142 @@
 
 --- 
+inkling_themes: 
+  columns: 
+  - id
+  - name
+  - body
+  - extension
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - content
+    - |
+      <!DOCTYPE html>
+      <html>
+      	<head>
+      		<meta charset="UTF-8"/>
+      		<title>- Australian Data Archive - <%= @title %></title>
+      		<link rel="stylesheet" href="/stylesheets/import.css" media="all"/>
+      		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
+          <%= stylesheet_link_tag :all %>
+          <%= csrf_meta_tag %>
+      		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
+      	</head
+      			
+          <body id="<%= archive_css(@current_archive) %>">
+      		<header>
+      			<div class="login">
+      				<% if current_user.nil? %>
+      					<h1>USER Log-in </h1>
+      					<%= form_for(:user, :url => new_inkling_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
+      						<input type="text" name="inkling_user[email]" id="login_name"/>
+      						<input type="password" name="inkling_user[password]" id="login_pass"/>
+      						<input type="image" alt="Log In" name="imageField" id="enter_button" src="/images/structure/bttn_enter.png"/>
+      					<% end %>
+      				<% else %>
+      						<%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
+      				<% end %>
+      			</div>
+      			<div class="masthead"><a href="/ada/home">Australian Data Archive</a></div>
+      	</header>
+      
+      		<nav class="mainnav clearfix">
+      		  <ul>
+      				<% for page in @ada_parent_pages %>
+      					<li> <%= link_to(page.title, page.path.slug) %> 
+      						<% if page.children.any? %>
+      							<ul>
+      									<% for child in page.children %>									
+      										<li> <%= link_to(child.title, child.path.slug)%> </li>
+      									<% end %>
+      							</ul
+      						<% end %>
+      					</li>
+      				<% end %>
+      	     </ul>
+      		  <div class="searchContainer">
+      		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+      		      <label for="menusearch"></label>
+      		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
+      		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
+      	        </form>
+      	      </div>
+          </nav>
+      
+      		<nav class="subnav">
+      	    <% if @current_archive != Archive.ada %>
+      				<ul>
+      					<li><p><%= @current_archive.name %></p></li>
+      					<% for page in Page.archive_root_pages(@current_archive)  %>
+      						<% if page.title == @title %>
+      							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
+      						<% else %>
+      						<li>
+      						<% end %>
+      						 	<%= link_to(page.title, page.path.slug )%>
+      						</li>
+      					<% end %>
+      			  </ul>
+      			<% end %>
+      		</nav>
+      
+      
+      		<nav class="breadcrumbs">
+      			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
+      		</nav>		
+              <section class="content">
+      			<nav>
+      				<ul>
+      					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
+      	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
+      	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
+      	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
+      	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
+      	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
+      			  </ul>
+      			</nav>
+      
+      
+      	<div class="notice"><%= notice %></div>
+        <div class="alert"><%= alert %></div>
+      
+      	<!-- page partial start -->
+      	<%= yield %>
+      	<!-- page partial end -->
+      
+      </section>
+      
+      		<section class='partners'>
+      <div class="captions">
+      				<p>Funding Partners </p>
+      				<p>Collaboration Partners</p>
+      		  </div>
+      			
+                  <div class="logos">
+      				<img src="/images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
+      				<img src="/images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
+      				<img src="/images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>
+      				<img src="/images/content/logo_uwa.gif" width="114" height="56" alt="logo_uwa"/>
+      				<img src="/images/content/logo_uts.gif" width="110" height="56" alt="logo_uts"/>
+      				<img src="/images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
+      				<img src="/images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
+      			</div>
+      		</section>
+      		<footer>
+      		  <p>General Enquiries: <a href="#">assda@anu.edu.au</a></p>
+      		  <p>Web Enquiries: <a href="#">webmaster@assda.anu.edu.au</a></p>
+      		  <p>This page was last updated on Tuesday the 27th of April 2010 at 11:07am.</p>
+      		  <p> &#xA9; Australian Data Archive</p>
+          </footer>
+          </body>
+      </html>
+
+    - .html.erb
+    - 2010-11-24 09:15:45.291487
+    - 2011-02-23 02:37:19.947244
+
+--- 
 inkling_paths: 
   columns: 
   - id
@@ -2145,143 +2282,15 @@ inkling_paths:
     - Page
     - 2011-03-02 03:43:21.029487
     - 2011-03-02 03:54:23.194523
-
---- 
-inkling_themes: 
-  columns: 
-  - id
-  - name
-  - body
-  - extension
-  - created_at
-  - updated_at
-  records: 
-  - - "1"
-    - content
-    - |
-      <!DOCTYPE html>
-      <html>
-      	<head>
-      		<meta charset="UTF-8"/>
-      		<title>- Australian Data Archive - <%= @title %></title>
-      		<link rel="stylesheet" href="/stylesheets/import.css" media="all"/>
-      		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
-          <%= stylesheet_link_tag :all %>
-          <%= csrf_meta_tag %>
-      		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
-      	</head
-      			
-          <body id="<%= archive_css(@current_archive) %>">
-      		<header>
-      			<div class="login">
-      				<% if current_user.nil? %>
-      					<h1>USER Log-in </h1>
-      					<%= form_for(:user, :url => new_inkling_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
-      						<input type="text" name="inkling_user[email]" id="login_name"/>
-      						<input type="password" name="inkling_user[password]" id="login_pass"/>
-      						<input type="image" alt="Log In" name="imageField" id="enter_button" src="/images/structure/bttn_enter.png"/>
-      					<% end %>
-      				<% else %>
-      						<%= link_to('Sign Out', destroy_inkling_user_session_path) %>  
-      				<% end %>
-      			</div>
-      			<div class="masthead"><a href="/ada/home">Australian Data Archive</a></div>
-      	</header>
-      
-      		<nav class="mainnav clearfix">
-      		  <ul>
-      				<% for page in @ada_parent_pages %>
-      					<li> <%= link_to(page.title, page.path.slug) %> 
-      						<% if page.children.any? %>
-      							<ul>
-      									<% for child in page.children %>									
-      										<li> <%= link_to(child.title, child.path.slug)%> </li>
-      									<% end %>
-      							</ul
-      						<% end %>
-      					</li>
-      				<% end %>
-      	     </ul>
-      		  <div class="searchContainer">
-      		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
-      		      <label for="menusearch"></label>
-      		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
-      		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
-      	        </form>
-      	      </div>
-          </nav>
-      
-      		<nav class="subnav">
-      	    <% if @current_archive != Archive.ada %>
-      				<ul>
-      					<li><p><%= @current_archive.name %></p></li>
-      					<% for page in Page.archive_root_pages(@current_archive)  %>
-      						<% if page.title == @title %>
-      							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
-      						<% else %>
-      						<li>
-      						<% end %>
-      						 	<%= link_to(page.title, page.path.slug )%>
-      						</li>
-      					<% end %>
-      			  </ul>
-      			<% end %>
-      		</nav>
-      
-              
-      		<nav class="breadcrumbs">
-      			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
-      		</nav>		
-              <section class="content">
-      			<nav>
-      				<ul>
-      					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
-      	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
-      	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
-      	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
-      	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
-      	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
-      			  </ul>
-      			</nav>
-            
-      
-      	<div class="notice"><%= notice %></div>
-        <div class="alert"><%= alert %></div>
-      
-      	<!-- page partial start -->
-      	<%= yield %>
-      	<!-- page partial end -->
-      
-      </section>
-              
-      		<section class='partners'>
-      <div class="captions">
-      				<p>Funding Partners </p>
-      				<p>Collaboration Partners</p>
-      		  </div>
-      			
-                  <div class="logos">
-      				<img src="/images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
-      				<img src="/images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
-      				<img src="/images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>
-      				<img src="/images/content/logo_uwa.gif" width="114" height="56" alt="logo_uwa"/>
-      				<img src="/images/content/logo_uts.gif" width="110" height="56" alt="logo_uts"/>
-      				<img src="/images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
-      				<img src="/images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
-      			</div>
-      		</section>
-      		<footer>
-      		  <p>General Enquiries: <a href="#">assda@anu.edu.au</a></p>
-      		  <p>Web Enquiries: <a href="#">webmaster@assda.anu.edu.au</a></p>
-      		  <p>This page was last updated on Tuesday the 27th of April 2010 at 11:07am.</p>
-      		  <p> &#xA9; Australian Data Archive</p>
-          </footer>
-          </body>
-      </html>
-
-    - .html.erb
-    - 2010-11-24 09:15:45.291487
-    - 2011-02-23 02:37:19.947244
+  - - "242"
+    - 
+    - 
+    - 
+    - /social-science/aboriginal-survey--new-south-wales-panel--1980
+    - "173"
+    - ArchiveStudy
+    - 2011-03-08 04:42:55.528548
+    - 2011-03-08 04:42:55.528548
 
 --- 
 ddi_mappings: 
@@ -6030,6 +6039,24 @@ archive_study_integrations:
     - "1"
     - 2011-02-23 02:51:02.957435
     - 2011-02-23 02:53:52.915327
+  - - "173"
+    - "1"
+    - "1"
+    - 
+    - "00103"
+    - "6"
+    - "1"
+    - 2011-03-08 04:41:51.285644
+    - 2011-03-08 04:42:55.301426
+  - - "174"
+    - "1"
+    - "173"
+    - 
+    - "00103"
+    - "1"
+    - "1"
+    - 2011-03-08 04:41:51.318702
+    - 2011-03-08 04:42:55.338077
 
 --- 
 archive_study_queries: 
@@ -8500,7 +8527,7 @@ study_related_materials:
       1962 election and its context, see Robert Orr, 'Western Australia', Australian Journal of Politics and History, Australian Political Chronicle, 8 (2) November 1962: 242-244.
       
       1965 election and its context, see E D Watt, 'Western Australia', Australian Journal of Politics and History, Australian Political Chronicle, 11 (2) August 1965: 237-240.
-       
+      
       1968 election and its context, see E D Watt, 'Western Australia', Australian Journal of Politics and History, Australian Political Chronicle, 14 (2) August 1968: 267-269.
       
       1971 election and its context, see E D Watt, 'Western Australia', Australian Journal of Politics and History, Australian Political Chronicle, 17 (2) August 1971: 294-296.
@@ -16274,7 +16301,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:53:20.323905
-    - 2011-02-23 02:53:20.323905
+    - 2011-03-08 04:42:54.73308
   - - "217"
     - "5"
     - keywords
@@ -16310,7 +16337,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:53:20.341228
-    - 2011-02-23 02:53:20.341228
+    - 2011-03-08 04:42:54.742781
   - - "221"
     - "5"
     - creationDate
@@ -16440,7 +16467,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:53:20.515732
-    - 2011-02-23 02:53:20.515732
+    - 2011-03-08 04:42:54.787263
   - - "240"
     - "5"
     - collMode
@@ -30306,7 +30333,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:53:55.421559
-    - 2011-02-23 02:53:55.421559
+    - 2011-03-08 04:42:53.588414
   - - "2295"
     - "46"
     - keywords
@@ -30342,7 +30369,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:53:55.442165
-    - 2011-02-23 02:53:55.442165
+    - 2011-03-08 04:42:53.598808
   - - "2299"
     - "46"
     - creationDate
@@ -30472,7 +30499,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:53:55.538852
-    - 2011-02-23 02:53:55.538852
+    - 2011-03-08 04:42:53.634823
   - - "2318"
     - "46"
     - collMode
@@ -39642,7 +39669,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:54:20.438392
-    - 2011-02-23 02:54:20.438392
+    - 2011-03-08 04:42:54.236954
   - - "3747"
     - "75"
     - keywords
@@ -39678,7 +39705,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:54:20.454889
-    - 2011-02-23 02:54:20.454889
+    - 2011-03-08 04:42:54.248473
   - - "3751"
     - "75"
     - creationDate
@@ -39808,7 +39835,7 @@ study_fields:
       
       Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
     - 2011-02-23 02:54:20.531649
-    - 2011-02-23 02:54:20.531649
+    - 2011-03-08 04:42:54.292537
   - - "3770"
     - "75"
     - collMode
@@ -63419,7 +63446,7 @@ study_fields:
       
       Background variables include age, country of birth, age when left school, number of years of tertiary study, religion, frequency of attending religious services, marital status, House contested and party affiliated with. Some of these variables have been grouped to ensure confidentiality for the candidates.
     - 2011-02-23 02:55:26.893576
-    - 2011-02-23 02:55:26.893576
+    - 2011-03-08 04:43:53.820936
   - - "7411"
     - "147"
     - keywords
@@ -63450,7 +63477,7 @@ study_fields:
       
       Background variables include age, country of birth, age when left school, number of years of tertiary study, religion, frequency of attending religious services, marital status, House contested and party affiliated with. Some of these variables have been grouped to ensure confidentiality for the candidates.
     - 2011-02-23 02:55:26.920306
-    - 2011-02-23 02:55:26.920306
+    - 2011-03-08 04:43:53.83543
   - - "7415"
     - "147"
     - creationDate
@@ -63613,7 +63640,7 @@ study_fields:
       
       Background variables include age, country of birth, age when left school, number of years of tertiary study, religion, frequency of attending religious services, marital status, House contested and party affiliated with. Some of these variables have been grouped to ensure confidentiality for the candidates.
     - 2011-02-23 02:55:27.115369
-    - 2011-02-23 02:55:27.115369
+    - 2011-03-08 04:43:53.909886
   - - "7441"
     - "147"
     - collMode
@@ -66640,7 +66667,7 @@ study_fields:
       Total  11340   100.0  4950   3005        61                 2370
       </PRE>
     - 2011-02-23 02:55:35.275896
-    - 2011-02-23 02:55:35.275896
+    - 2011-03-08 04:43:21.444277
   - - "7912"
     - "156"
     - stdyAuthEntity
@@ -66704,7 +66731,7 @@ study_fields:
       Total  11340   100.0  4950   3005        61                 2370
       </PRE>
     - 2011-02-23 02:55:35.308013
-    - 2011-02-23 02:55:35.308013
+    - 2011-03-08 04:43:21.463447
   - - "7917"
     - "156"
     - stdyStatus
@@ -73694,6 +73721,11 @@ archive_studies:
     - "3"
     - 2011-02-23 02:55:49.326137
     - 2011-02-23 02:55:49.326137
+  - - "173"
+    - "1"
+    - "1"
+    - 2011-03-08 04:42:55.442605
+    - 2011-03-08 04:42:55.442605
 
 --- 
 studies: 
@@ -73828,7 +73860,7 @@ studies:
     - http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00102-m
     - true
     - 2011-02-23 02:53:20.314565
-    - 2011-02-23 02:53:20.314565
+    - 2011-03-08 04:42:54.611631
     - "Aboriginal households in five non-metropolitan areas of New South Wales: North Coast, South Coast, South West (Cowra to Deniliquin), West (Wellington to Wilcannia) and North West (Dubbo-Collerenebri), excluding Moree and Walgett; and Aboriginal and non-Aboriginal households in South Australia in Port Lincoln, Whyalla, Port Augusta, Coomunga, Iron Knob and station towns along the railway line from Port Augusta to Marree"
     - 
     - 
@@ -75091,7 +75123,7 @@ studies:
     - http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00102-f
     - true
     - 2011-02-23 02:53:55.410388
-    - 2011-02-23 02:53:55.410388
+    - 2011-03-08 04:42:53.419099
     - "Aboriginal households in five non-metropolitan areas of New South Wales: North Coast, South Coast, South West (Cowra to Deniliquin), West (Wellington to Wilcannia) and North West (Dubbo-Collerenebri), excluding Moree and Walgett; and Aboriginal and non-Aboriginal households in South Australia in Port Lincoln, Whyalla, Port Augusta, Coomunga, Iron Knob and station towns along the railway line from Port Augusta to Marree"
     - 
     - 
@@ -75830,7 +75862,7 @@ studies:
     - http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00102-h
     - true
     - 2011-02-23 02:54:20.428826
-    - 2011-02-23 02:54:20.428826
+    - 2011-03-08 04:42:54.112329
     - "Aboriginal households in five non-metropolitan areas of New South Wales: North Coast, South Coast, South West (Cowra to Deniliquin), West (Wellington to Wilcannia) and North West (Dubbo-Collerenebri), excluding Moree and Walgett; and Aboriginal and non-Aboriginal households in South Australia in Port Lincoln, Whyalla, Port Augusta, Coomunga, Iron Knob and station towns along the railway line from Port Augusta to Marree"
     - 
     - 
@@ -77709,7 +77741,7 @@ studies:
     - http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01081
     - true
     - 2011-02-23 02:55:26.879377
-    - 2011-02-23 02:55:26.879377
+    - 2011-03-08 04:43:53.696122
     - "parliamentary candidates for 9 October, 2004 Federal election from the following political parties: Labor, Liberal, National, Democrat, the Greens, One Nation, Family First and Citizens Electoral Council"
     - 
     - 

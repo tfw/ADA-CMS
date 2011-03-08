@@ -161,7 +161,7 @@ module Nesstar
           
           #we looks for a study's variables
           variables_entry = study.variables_attribute
-          puts "****** #{variables_entry.value} ******* \n\n"
+          # puts "****** #{variables_entry.value} ******* \n\n"
         end
         workitem.fields['database_errors'] = database_errors
       end
