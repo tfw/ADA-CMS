@@ -26,7 +26,6 @@ ssh_options[:compression] = false
 
 # set :branch, "master"
 
-
 # If you are using Passenger mod_rails uncomment this:
 # if you're still using the script/reapear helper you will need
 # these http://github.com/rails/irs_process_scripts
@@ -47,7 +46,7 @@ desc "generate a new database.yml"
 task :generate_database_yml, :roles => :app do
   
   # buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgres', :password => "test123", :encoding => 'unicode'}}
-  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', :encoding => 'unicode'}}
+  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'deploy', 'encoding' => 'unicode'}}
   put YAML::dump(buffer), "#{current_path}/config/database.yml", :mode => 0664
 end
 
@@ -63,4 +62,5 @@ end
 
 task :symlinks, :roles => :app do
   run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
+  run "ln -nfs #{shared_path}/sphinx #{current_path}/db/sphinx"  
 end
