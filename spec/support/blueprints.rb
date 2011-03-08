@@ -97,9 +97,5 @@ end
 
 Study.blueprint do
   label Sham.name
-<<<<<<< HEAD
   abstract Sham.body
 end
-=======
-end
->>>>>>> master

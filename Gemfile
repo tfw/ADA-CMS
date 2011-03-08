@@ -27,15 +27,13 @@ group :development, :test do
 	gem "rspec-rails", ">= 2.5.0"
 	gem "rspec-core", ">= 2.5.0"
 	gem 'capybara'
-	gem 'cucumber-rails'
-	gem 'cucumber', '>= 0.7.2'
 	gem 'spork'
 	gem 'launchy'    # So you can do Then show me the page
 	gem 'jeweler'
 	gem 'gemcutter', '>= 0.6.1'
 	gem "autotest"
 	gem 'steak', '>= 1.0.0.rc.1'
-	gem 'faker'
+	gem 'faker', '>=0.9.5'
  	gem 'machinist' , '>= 1.0.6'
 	gem 'database_cleaner'
 	gem 'capistrano'
