@@ -33,3 +33,19 @@
 //     });
 // 
 // });
+
+// $(document).ready(function(){
+// 	$("#search_term").focus(function() {
+// 		var search = $("#search_term");
+// 		alert(search.text());
+// 		if (search.val() == "Search this site"){
+// 			search.val() = "";
+// 		}
+// 		alert("2");
+// 	});
+// });
+
+$(document).ready(function(){
+	// $("#search_term").clearableTextField();
+	$('input[type=text]').clearableTextField();
+});

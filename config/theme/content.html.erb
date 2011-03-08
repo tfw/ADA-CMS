@@ -7,7 +7,8 @@
 		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
     <%= stylesheet_link_tag :all %>
     <%= csrf_meta_tag %>
-		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
+		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application', 
+		'jquery.clearableTextField.min' %>		
 	</head
 			
     <body id="<%= archive_css(@current_archive) %>">
