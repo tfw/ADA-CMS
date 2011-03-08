@@ -47,7 +47,7 @@
           Study Id: <%= r.ddi_id %> <br/>
 
           <% for archive_study in r.archive_studies %>
-            <%= archive_icon(archive_study.archive) %>
+            <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
           <% end %>
         <% end %>
       </td>
