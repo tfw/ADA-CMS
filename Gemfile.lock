@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/biv/inkling.git
-  revision: a4dcc7f44588edcdb4065fdb8e7c531aedb73fbc
+  revision: 02c7b2a87d0aec9fe4fef29cbf6eba53d0372182
   specs:
     inkling (0.1.0)
       cancan
@@ -105,7 +105,7 @@ GEM
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
       i18n (~> 0.4)
-    gemcutter (0.6.1)
+    gemcutter (0.7.0)
     gherkin (2.2.9)
       json (~> 1.4.6)
       term-ansicolor (~> 1.0.5)
