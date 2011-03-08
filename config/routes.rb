@@ -23,6 +23,8 @@ Ada::Application.routes.draw do
     resources :news
   end
 
+  get '/search', :to => "search#sphinx"
+
   match '/*path' => "archive_studies#show", :as => :archive_study, :constraints => Inkling::Routing::TypeConstraint.new("ArchiveStudy")
   match '/*path' => "pages#show", :as => :page, :constraints => Inkling::Routing::TypeConstraint.new("Page")
   match '/*path' => "news#show", :as => :news_archive, :constraints => Inkling::Routing::TypeConstraint.new("NewsArchive")
