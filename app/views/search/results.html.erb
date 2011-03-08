@@ -1,0 +1,55 @@
+<nav>
+  facet search goes here
+  </br>
+</nav>
+
+
+<p>
+  <% if @sphinx.any? %>
+    <div id="search_report">
+      <% if @sphinx.results[:words].size > 1 %>
+      <ul>
+        <% @sphinx.results[:words].each do |k,v| %>
+          <% if v[:hits].to_i > 0 %>
+            <li>
+                <em> <%= k %> </em> appeared <%= pluralize(v[:hits], 'time') %> in <%= pluralize(v[:docs], 'document') %>.
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
+      <% else %>
+        <span>
+          <em> <%= @term %></em> appeared <%= pluralize(@sphinx.results[:words].first.last[:hits], 'time') %> in <%=pluralize(@sphinx.results[:words].first.last[:hits], 'document') %>.
+        </span>
+      <% end %>
+    </div>
+    <% else %>
+    <div id="search_report">
+      There were no results for <%= @term %>.
+    </div>
+  <% end %>
+<p/>
+
+
+<div r:if="@sphinx.any?" class="float-centre">
+</div>
+<br/>
+<table id="search-results-table">
+  <% for r in @sphinx %>
+    <tr>
+      <td>
+        <% if r.is_a? Page %> Page Title: <i><%= r.title %></i> at <a href="<%= r.path.slug %>"> <%= r.path.slug %></a>.</div>
+        <% elsif r.is_a? Study %>
+        
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+
+<br/>
+
+<div r:if="@sphinx.any?" class="float-centre">
+  will_paginate @sphinx
+</div>

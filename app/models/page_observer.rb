@@ -2,7 +2,7 @@ require 'archive'
 
 class PageObserver < ActiveRecord::Observer
    # include ActionView::Helpers::UrlHelper
-   include ActionController::UrlWriter
+   # include ActionController::UrlWriter
    include Rails.application.routes.url_helpers
    
   def after_create(page)

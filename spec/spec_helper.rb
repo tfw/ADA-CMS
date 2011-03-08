@@ -3,6 +3,10 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'ruby-debug'
+require 'thinking_sphinx/test'
+
+ThinkingSphinx::Test.init
+
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -29,6 +33,10 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
 
   # config.before(:all)    { Sham.reset(:before_all)  }
+  
+  # config.before(:suite) do
+  #   `rake RAILS_ENV=test thinking_sphinx:index`
+  # end
 
   config.before(:each, :type => :acceptance) do
     Sham.reset(:before_each) 

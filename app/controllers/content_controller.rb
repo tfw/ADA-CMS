@@ -1,9 +1,6 @@
 class ContentController < ApplicationController 
   
-  layout 'content' #this file is created by Inking::Theme (see Inkling admin), and written out to tmp/inkling/themes/layouts
-  alias current_user current_inkling_user
-  helper_method :current_user
-  
+  layout 'content' #this file is created by Inking::Theme (see Inkling admin), and written out to tmp/inkling/themes/layouts  
   before_filter :get_archives
   before_filter :get_ada_pages
 

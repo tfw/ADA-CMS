@@ -1,7 +1,6 @@
 class PagesController < ContentController
     
   respond_to :html
-  helper_method :current_archive
   
   def show
     @page = Page.find_by_id(params[:id])
