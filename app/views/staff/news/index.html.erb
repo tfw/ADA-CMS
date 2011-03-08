@@ -1,0 +1,65 @@
+<div class="news box content-area">
+  <h2>ADA News Tasks</h2>
+
+  <ul class="task-panes">
+    <fieldset class="left half">
+      <legend> News Item Tasks </legend>
+      <ul>
+	<li> <%= link_to 'Add a new News Item', new_staff_news_path %> </li>
+	<li> Edit a News Item </li>
+	<%- if true || current_user.is_admin %>
+	  <li> Organise News Items </li>
+	  <li> Approve News Items </li>
+	<%- end %>
+	<li> Delete News Items </li>
+	<li> Undelete News Items </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="left half">
+      <legend>News Content management </legend>
+      <ul>
+	<li> Create a News Item template</li>
+	<li> View/edit News keyword tags</li>
+	<li> Create a NEWS electronic newsletter </li>
+	<li> Create a NEW DATA electronic newsletter </li>
+	<li> Create a NEW PUBLICATIONS electronic newsletter </li>
+	<li> Create a newsletter template </li>
+	<li> Create an RSS feed </li>
+	<li> News statistics </li>
+      </ul>
+    </fieldset>
+  </ul>
+
+  <fieldset>
+    <legend>News Item management</legend>
+    <table>
+      <thead>
+	<tr>
+	  <th>News Item</th>
+	  <th>Archives</th>
+	  <th>Created</th>
+	  <th>Published after</th>
+	  <th>Actions</th>
+	</tr>
+      </thead>
+      <tbody>
+	<%- @recent_news.each do |news| %>
+	  <tr id=<%= "newsrow-#{news.id}" %>>
+	    <td> <%= news.title %> </td>
+	    <!-- Need a helper here: -->
+	    <td> <%= raw(news.news_archives.map{|na| h(na.archive.name)}*'</br>') %> </td>
+	    <td> <%= time_ago_in_words(news.created_at) %> ago </td>
+	    <td> <%= news.publish_at && news.publish_at.strftime("%a, %b %e at %l:%M") %> </td>
+	    <td>
+	      <%= link_to 'View', staff_news_path(news) %>
+	      <%= link_to 'Edit', edit_staff_news_path(news) %>
+	      <%= link_to 'Delete', staff_news_path(news), :method => :delete %>
+	    </td>
+	  </tr>
+	<% end %>
+      </tbody>
+    </table>
+  </fieldset>
+
+</div>

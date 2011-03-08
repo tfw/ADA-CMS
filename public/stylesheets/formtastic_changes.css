@@ -57,6 +57,16 @@ form.formtastic fieldset {
   padding-top: 1em;
 }
 
+/* Add :html=>{:class=>'titled'} to semantic_form_for to use this: */
+form.formtastic.titled fieldset {
+  border: 1px solid #BABABA;
+  padding: 5px 5px 5px 10px;
+}
+form.formtastic.titled legend {
+	font-size: 1.2em;
+	padding: 2px 5px;
+}
+
 form.formtastic ol li, form.formtastic ul li { list-style:none; }
 
 form.formtastic fieldset.buttons { margin-top: 2em; }
@@ -73,3 +83,6 @@ form.formtastic fieldset > ol > li {
   clear: left;
   margin-top: 1em;
 }
+
+/* Don't know why formtastic sets this width to 25%, but it messes up the archives checkboxes on news edit */
+form.formtastic fieldset > ol > li label { width:50%; }

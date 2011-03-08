@@ -6,6 +6,8 @@ class Archive < ActiveRecord::Base
   has_many :archive_study_integrations
   has_many :archive_studies, :through => :archive_study_integrations
   has_many :archive_study_queries
+  has_many :news_archives
+  has_many :news, :through => :news_archives
 
   validates_presence_of :name
   validates_uniqueness_of :name

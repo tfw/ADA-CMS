@@ -128,3 +128,70 @@ a#preview-link {
   padding: 5px 0 5px 28px;
   
 }
+
+/* News */
+
+.news ul {  /* Override the common.css settings */
+	padding-left: 0px;
+}
+.news li {
+	list-style: none;
+}
+.box {	    /* Put a nice box around something */
+	border: 1px solid #BABABA;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding: 10px;
+}
+
+/* Fieldset and legend create a rounded border with a label in the top left border */
+.news fieldset {
+	background: #f2f2f2;
+	padding: 5px 5px 5px 10px;
+	margin: 5px;
+	border: 1px solid #BABABA;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.news legend {
+	font-size: 1.2em;
+	padding: 2px 5px;
+}
+
+/* Layout side-by-side boxes */
+.news .half {
+	width: 45%;
+	height: 100%;
+	min-width: 300px;
+}
+.news .left {
+	float: left;
+}
+.news .clear-left {
+	clear: left;
+}
+
+/* More work needed here for nice tables */
+.news table {
+	width: 95%;
+}
+.news table td, .news table th {
+	padding: .5em 1em;
+	vertical-align: top;
+}
+.news table thead {
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+/* A news item in the news summary page */
+.content .news p {
+        border-bottom: 0px;
+	padding-bottom: 0px;
+	margin: 0.2em;
+}
+
