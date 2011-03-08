@@ -21,7 +21,8 @@ inkling_themes:
       		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
           <%= stylesheet_link_tag :all %>
           <%= csrf_meta_tag %>
-      		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts' %>		
+      		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application', 
+      		'jquery.clearableTextField.min' %>		
       	</head
       			
           <body id="<%= archive_css(@current_archive) %>">
@@ -56,10 +57,11 @@ inkling_themes:
       				<% end %>
       	     </ul>
       		  <div class="searchContainer">
-      		    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+      		    <form action="/search" method="get" id="search-form" class="formtastic">
       		      <label for="menusearch"></label>
-      		      <input name="textfield" type="text" id="menusearch" value="Search this site"/>
-      		      <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
+      		      <input type="text" name="term" id="search_term" value="Search this site"/>
+      		      <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
+                <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
       	        </form>
       	      </div>
           </nav>
@@ -81,32 +83,34 @@ inkling_themes:
       			<% end %>
       		</nav>
       
-      
+              
       		<nav class="breadcrumbs">
       			<p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
       		</nav>		
-              <section class="content">
-      			<nav>
-      				<ul>
-      					<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
-      	        <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
-      	        <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
-      	        <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
-      	        <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
-      	        <li id="international">  <%= link_to('International', '/international/home' )%> </li>
-      			  </ul>
-      			</nav>
+          <section class="content">
       
+            <% unless params[:controller] == 'search' %>
+          		<nav>
+          			<ul>
+          				<li id="science"> <%= link_to('social science', '/social-science/home' )%> </li>
+                  <li id="historical"> <%= link_to('Historical', '/historical/home' )%> </li>
+                  <li id="indigenous"> <%= link_to('Indigenous', '/indigenous/home' )%> </li>
+                  <li id="longitudinal">  <%= link_to('Longitudinal', '/longitudinal/home' )%> </li>
+                  <li id="qualitative"> <%= link_to('Qualitative', '/qualitative/home' )%> </li>
+                  <li id="international">  <%= link_to('International', '/international/home' )%> </li>
+          		  </ul>
+          		</nav>      
+          	<% end %>
       
-      	<div class="notice"><%= notice %></div>
-        <div class="alert"><%= alert %></div>
+          	<div class="notice"><%= notice %></div>
+            <div class="alert"><%= alert %></div>
       
-      	<!-- page partial start -->
-      	<%= yield %>
-      	<!-- page partial end -->
+        	<!-- page partial start -->
+        	<%= yield %>
+        	<!-- page partial end -->
       
       </section>
-      
+              
       		<section class='partners'>
       <div class="captions">
       				<p>Funding Partners </p>
@@ -134,7 +138,7 @@ inkling_themes:
 
     - .html.erb
     - 2010-11-24 09:15:45.291487
-    - 2011-02-23 02:37:19.947244
+    - 2011-03-08 04:47:36.027022
 
 --- 
 inkling_paths: 
