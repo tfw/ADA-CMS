@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110228035419) do
+ActiveRecord::Schema.define(:version => 20110309015713) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -203,6 +203,9 @@ ActiveRecord::Schema.define(:version => 20110228035419) do
     t.text     "abstract"
     t.text     "keywords"
     t.integer  "page_id"
+    t.string   "data_kind"
+    t.string   "sampling_procedure"
+    t.string   "collection_method"
   end
 
   create_table "study_fields", :force => true do |t|

@@ -7,20 +7,24 @@ module Nesstar
     class Parser
 
       def self.parse(rdf_file)
-# puts "\n #{rdf_file}"
         file = File.read("#{rdf_file}")
         doc = Nokogiri::XML::Document.parse(file)
-# puts "#{doc.to_s} \n\n"
 
         study = doc.xpath('//p4:Study3').first
         about = study.attribute('about').value
-        label = study.xpath(".//s:label").text
-        universe = study.xpath(".//n35:universe").text
-        abstract = study.xpath(".//n36:abstractText").text
-        keywords = study.xpath(".//n35:keyWords").text
+        # label = study.xpath(".//s:label").text
+        # universe = study.xpath(".//n35:universe").text
+        # abstract = study.xpath(".//n36:abstractText").text
+        # keywords = study.xpath(".//n35:keyWords").text
+        # data_kind = study.xpath(".//n35:dataKind").text
+        # sampling_procedure = study.xpath(".//n35:sampling").text.split(/\W/).first
+        # collection_method = study.xpath(".//n35:collMode").text
 
-        dataset = {:about => about, :label => label, :universe => universe, :abstract => abstract,
-                    :keywords => keywords}
+        # dataset = {:about => about, :label => label, :universe => universe, :abstract => abstract,
+        #             :keywords => keywords, :data_kind => data_kind, :sampling_procedure => :sampling_procedure,
+        #             :collection_method => collection_method}
+        
+        dataset = {:about => about}
 
         study.children.each do |node|
           node.attributes.each do |a, v|

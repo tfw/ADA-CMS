@@ -39,6 +39,8 @@ class Study < ActiveRecord::Base
     data.delete(:abstract)
     study.keywords = data[:keywords]
     data.delete(:keywords)
+    study.data_kind = data[:dataKind]
+    data.delete(:dataKind)
 
     study.save!
     local_data.each {|k,v| create_or_update_entry(study, k.to_s, v)}
