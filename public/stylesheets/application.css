@@ -129,12 +129,12 @@ a#preview-link {
   
 }
 
-/* News */
+/* Content Area */
 
-.news ul {  /* Override the common.css settings */
+.content-area ul {  /* Override the common.css settings */
 	padding-left: 0px;
 }
-.news li {
+.content-area li {
 	list-style: none;
 }
 .box {	    /* Put a nice box around something */
@@ -146,7 +146,7 @@ a#preview-link {
 }
 
 /* Fieldset and legend create a rounded border with a label in the top left border */
-.news fieldset {
+.content-area fieldset {
 	background: #f2f2f2;
 	padding: 5px 5px 5px 10px;
 	margin: 5px;
@@ -155,33 +155,33 @@ a#preview-link {
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 }
-.news legend {
+.content-area legend {
 	font-size: 1.2em;
 	padding: 2px 5px;
 }
 
 /* Layout side-by-side boxes */
-.news .half {
+.content-area .half {
 	width: 45%;
 	height: 100%;
 	min-width: 300px;
 }
-.news .left {
+.content-area .left {
 	float: left;
 }
-.news .clear-left {
+.content-area .clear-left {
 	clear: left;
 }
 
 /* More work needed here for nice tables */
-.news table {
+.content-area table {
 	width: 95%;
 }
-.news table td, .news table th {
+.content-area table td, .news table th {
 	padding: .5em 1em;
 	vertical-align: top;
 }
-.news table thead {
+.content-area table thead {
 	color: #666;
 	font-size: 13px;
 	font-weight: bold;

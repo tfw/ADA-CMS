@@ -2,20 +2,30 @@
 	Archives: <%= @archive.name %>
 <% end %>
 
+<div class="box content-area">
+  <fieldset>
+    <legend> Integrations </legend>
+  <ul class="task-panes">
+        <li>
 <%= link_to 'Integrations', staff_archive_integrations_path(@archive) %> (Studies: <%= @archive.archive_studies.size %> / Blocks: <%= @archive.archive_study_blocks.size %> / Integrations: <%= @archive.archive_study_integrations.size %> / Queries: <%= @archive.archive_study_queries.size %>)
+        </li>
+  </ul>
+</fieldset>
 
-<p>
-<h2>Page Management</h2>
-</p>
-Pages: <%= @pages.size %> <br/>
-<br/>
+<fieldset>
+  <legend> Page Management </legend>
 
-<%= link_to "Add a page", new_staff_archive_page_path(:archive_id => @archive) %> 
+  </p>
+  Pages: <%= @pages.size %> <br/>
+  <br/>
+
+  <%= link_to "Add a page", new_staff_archive_page_path(:archive_id => @archive) %> 
 
 
-<ul class="sortable">
-	<%= render(:partial => "page", :collection => @parent_pages) %>
-</ul>
+  <ul class="sortable">
+  	<%= render(:partial => "page", :collection => @parent_pages) %>
+  </ul>
+</fieldset>
 
 <% content_for :js do %>
 	$( ".sortable" ).sortable({
@@ -27,3 +37,4 @@ Pages: <%= @pages.size %> <br/>
 	});
 
 <% end %>
+
