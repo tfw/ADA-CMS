@@ -13,7 +13,7 @@ feature "Creating news" do
 
   scenario "I can access the news administration page"  do
     click_link("News")
-    page.should have_content("ADA News Tasks")
+    page.should have_content("ADA News")
     page.should have_content("Add a new News Item")
   end
 

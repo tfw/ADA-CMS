@@ -2,10 +2,9 @@
 	Archives: <%= @archive.name %>
 <% end %>
 
-<div class="box content-area">
   <fieldset>
     <legend> Integrations </legend>
-  <ul class="task-panes">
+  <ul class="menu task-panes">
         <li>
 <%= link_to 'Integrations', staff_archive_integrations_path(@archive) %> (Studies: <%= @archive.archive_studies.size %> / Blocks: <%= @archive.archive_study_blocks.size %> / Integrations: <%= @archive.archive_study_integrations.size %> / Queries: <%= @archive.archive_study_queries.size %>)
         </li>

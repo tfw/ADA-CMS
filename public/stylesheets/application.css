@@ -131,9 +131,17 @@ a#preview-link {
 
 /* Content Area */
 
-.content-area ul {  /* Override the common.css settings */
+.menu ul {  /* Override the common.css settings */
 	padding-left: 0px;
 }
+
+.content-area div {
+	display: block;
+	position: relative;
+	padding-left: 210px;
+	margin-right: 40px;
+}
+
 .content-area li {
 	list-style: none;
 }
@@ -155,6 +163,11 @@ a#preview-link {
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 }
+
+.content-area fieldset a {
+	text-decoration: none;
+}
+
 .content-area legend {
 	font-size: 1.2em;
 	padding: 2px 5px;
@@ -177,7 +190,7 @@ a#preview-link {
 .content-area table {
 	width: 95%;
 }
-.content-area table td, .news table th {
+.content-area table td, .content-area table th {
 	padding: .5em 1em;
 	vertical-align: top;
 }
@@ -188,6 +201,7 @@ a#preview-link {
 	padding-top: 0px;
 	padding-bottom: 5px;
 }
+
 /* A news item in the news summary page */
 .content .news p {
         border-bottom: 0px;
