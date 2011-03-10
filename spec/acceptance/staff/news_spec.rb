@@ -12,7 +12,6 @@ feature "Creating news" do
   end
 
   scenario "I can access the news administration page"  do
-    visit(user_root_path)
     click_link("News")
     page.should have_content("ADA News Tasks")
     page.should have_content("Add a new News Item")
