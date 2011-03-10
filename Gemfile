@@ -5,7 +5,7 @@ gem 'rails', '3.0.5'
 
 gem "pg"
 
-gem 'inkling', :git => "git://github.com/tfw/inkling.git"
+gem 'inkling', :git => "git://github.com/tfw/inkling.git" #, :ref => "02c7b2a87d0aec9fe4fef29cbf6eba53d0372182"
 
 gem "devise", ">= 1.1.3"
 gem 'inherited_resources'

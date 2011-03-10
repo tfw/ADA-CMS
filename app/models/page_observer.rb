@@ -1,8 +1,4 @@
-require 'archive'
-
 class PageObserver < ActiveRecord::Observer
-   # include ActionView::Helpers::UrlHelper
-   # include ActionController::UrlWriter
    include Rails.application.routes.url_helpers
    
   def after_create(page)
@@ -20,9 +16,9 @@ class PageObserver < ActiveRecord::Observer
   private
   def log(verb, page)
     if page.archive
-      Inkling::Log.create!(:text => "#{page.author.email} #{verb} page <a href='#{edit_staff_archive_page_path(page, :archive_id => page.archive.id)}'>#{page.title}</a> in <a href='/staff/archives/#{page.archive.slug}'>#{page.archive.name}</a>.")
+      Inkling::Log.create!(:text => "#{page.author.email} #{verb} page <a href='#{edit_staff_archive_page_path(page, :archive_id => page.archive.id)}'>#{page.title}</a> in <a href='/staff/archives/#{page.archive.slug}'>#{page.archive.name}</a>.", :category => "content")
     else
-      Inkling::Log.create!(:text => "#{page.author.email} #{verb} page <a href='#{edit_staff_archive_page_path(page)}'>#{page.title}</a> in <a href='/staff/archives/ada'>ADA</a>.")
+      Inkling::Log.create!(:text => "#{page.author.email} #{verb} page <a href='#{edit_staff_archive_page_path(page)}'>#{page.title}</a> in <a href='/staff/archives/ada'>ADA</a>.", :category => "content")
     end
   end
 end

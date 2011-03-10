@@ -1,4 +1,4 @@
-class CreateInklingFeeds < ActiveRecord::Migration
+class CreateInklingFeedsAndRefactorLogs < ActiveRecord::Migration
   def self.up
     create_table "inkling_feeds" do |t|
       t.datetime "created_at", :null => false
@@ -15,6 +15,9 @@ class CreateInklingFeeds < ActiveRecord::Migration
       t.integer  "feed_id",    :null => false
       t.integer  "role_id",    :null => false
     end
+    
+    add_column :inkling_logs, :category, :string, :null => false
+    
   end
 
   def self.down

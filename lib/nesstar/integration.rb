@@ -25,7 +25,7 @@ module Nesstar
 
     #call this from the client to run the integration.
     def self.run
-      @storage = Ruote::FsStorage.new("/tmp/atsida-ruote/")
+      @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
       @worker = Ruote::Worker.new(@storage)
       @engine = Ruote::Engine.new(@worker)
 
@@ -38,6 +38,7 @@ module Nesstar
           cancel_process :if => '${f:study_ids.size} == 0'
           participant :ref => 'download_dataset_xmls'
           participant :ref => 'convert_and_find_resources'
+          participant :ref => 'ada_archive_contains_all_studies'          
         end
 
         process_definition :name => 'initialize_directories' do
@@ -83,7 +84,8 @@ module Nesstar
             # puts ddi_id
             pre_existing = ArchiveStudyIntegration.find_by_archive_id_and_ddi_id(query.archive.id, ddi_id)
             unless pre_existing
-              ArchiveStudyIntegration.create!(:ddi_id => ddi_id, :archive => query.archive, :archive_study_query => query, :user_id => query.id)
+              ArchiveStudyIntegration.create!(:ddi_id => ddi_id, :archive => query.archive,
+                                            :archive_study_query => query, :user_id => query.id)
             end
           end
         end
@@ -157,15 +159,23 @@ module Nesstar
                           :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
                           :resource => related[:study_resource])
               related_material.save!
-          end
+            end
           
-          #we looks for a study's variables
-          variables_entry = study.variables_attribute
-          # puts "****** #{variables_entry.value} ******* \n\n"
+            #we looks for a study's variables
+            variables_entry = study.variables_attribute
+            # puts "****** #{variables_entry.value} ******* \n\n"
+          end
+          workitem.fields['database_errors'] = database_errors
         end
-        workitem.fields['database_errors'] = database_errors
       end
-    end
+
+      engine.register_participant 'ada_archive_contains_all_studies' do |workitem|
+        for study in Study.all
+          unless Archive.ada.studies.index(study)
+            ArchiveStudy.create!(:archive => Archive.ada, :study => study)
+          end
+        end
+      end
     end
   end
 end

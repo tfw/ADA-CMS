@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110309015713) do
+ActiveRecord::Schema.define(:version => 20110310000715) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -70,10 +70,27 @@ ActiveRecord::Schema.define(:version => 20110309015713) do
     t.datetime "updated_at"
   end
 
+  create_table "inkling_feed_roles", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.string   "title",      :null => false
+    t.integer  "feed_id",    :null => false
+    t.integer  "role_id",    :null => false
+  end
+
+  create_table "inkling_feeds", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.integer  "user_id",    :null => false
+    t.string   "title",      :null => false
+    t.string   "format",     :null => false
+    t.string   "source",     :null => false
+    t.string   "criteria"
+  end
+
   create_table "inkling_logs", :force => true do |t|
     t.datetime "created_at"
     t.text     "text",       :null => false
     t.integer  "user_id"
+    t.string   "category",   :null => false
   end
 
   create_table "inkling_paths", :force => true do |t|
