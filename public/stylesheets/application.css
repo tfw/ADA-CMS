@@ -218,3 +218,31 @@ div.float-centre {
   width: 100%;
   padding: 1em;
 }
+
+
+/*Placeholder icons for manage layout*/
+
+#users {
+  background: url(/images/placeholders/2_sml.png) no-repeat 5px center;
+}
+#reports {
+  background: url(/images/placeholders/3_sml.png) no-repeat 5px center;
+}
+#adapt {
+  background: url(/images/placeholders/4_sml.png) no-repeat 5px center;
+}
+#hccds {
+  background: url(/images/placeholders/1_sml.png) no-repeat 5px center;
+}
+#usage-auditing {
+  background: url(/images/placeholders/1_sml.png) no-repeat 5px center;
+}
+
+#news {
+	background: url(/images/placeholders/2_sml.png) no-repeat 5px center;
+}
+
+#site-resources {
+	background: url(/images/placeholders/3_sml.png) no-repeat 5px center;
+}
+

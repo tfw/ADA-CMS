@@ -77,7 +77,7 @@
 #international {
   background: url(/images/structure/icon_international.png) no-repeat 5px center;
 }
-#users {
+/*#users {
   background: url(/images/placeholders/2_sml.png) no-repeat 5px center;
 }
 #reports {
@@ -92,7 +92,7 @@
 #usage-auditing {
   background: url(/images/placeholders/1_sml.png) no-repeat 5px center;
 }
+*/
 .archive_current {
 	background: #333 url(../images/structure/icon_current.png) no-repeat 5px center!important;
 }
-
