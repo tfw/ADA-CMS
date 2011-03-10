@@ -2,24 +2,23 @@
 	Archives: <%= @archive.name %>
 <% end %>
 
-  <fieldset>
-    <legend> Integrations </legend>
-  <ul class="menu task-panes">
-        <li>
+<%= render :partial => "#{@archive.slug}" %>
+
+<fieldset>
+  <legend> Integrations </legend>
+    <ul class="menu task-panes">
+      <li>
 <%= link_to 'Integrations', staff_archive_integrations_path(@archive) %> (Studies: <%= @archive.archive_studies.size %> / Blocks: <%= @archive.archive_study_blocks.size %> / Integrations: <%= @archive.archive_study_integrations.size %> / Queries: <%= @archive.archive_study_queries.size %>)
-        </li>
+      </li>
   </ul>
 </fieldset>
 
 <fieldset>
-  <legend> Page Management </legend>
+  <legend> Page Management (<%= link_to "+", new_staff_archive_page_path(:archive_id => @archive) %>)</legend>
 
+  <p>
+    Pages: <%= Page.find_all_by_archive_id(@archive).size%>
   </p>
-  Pages: <%= @pages.size %> <br/>
-  <br/>
-
-  <%= link_to "Add a page", new_staff_archive_page_path(:archive_id => @archive) %> 
-
 
   <ul class="sortable">
   	<%= render(:partial => "page", :collection => @parent_pages) %>
