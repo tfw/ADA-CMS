@@ -7,16 +7,16 @@
 <div id="mappings-form" align='left'>
   
   <% form_for([:staff, @ddi_mapping]) do |f| %>
-    <%=unless @ddi_mapping.new_record? %>
+    <% unless @ddi_mapping.new_record? %>
       <%= f.hidden_field :id %>
     <% end %>
 
   <div class="fields select_fields">
      <p> <%= f.label 'DDI' %>
       <% if @ddi_mapping.new_record? %>
-        <%= select_tag("mapping_id", options_from_collection_for_select(@missing_mappings, 'id', 'friendly_name')) %>
+        <%= select_tag("ddi_mapping_id", options_from_collection_for_select(@ddi_missing_mappings, 'id', 'friendly_name')) %>
       <% else %>
-        <em><%= @ddi_mapping.friendly_name %></em> <%= link_to "(Choose another)",  cms_mappings_url %>
+        <em><%= @ddi_mapping.friendly_name %></em> <%= link_to "(Choose another)",  staff_ddi_mappings_path %>
       <% end %>
     </p>
   </div>
@@ -45,7 +45,7 @@
       <th>Note</th>
       <th>Controls</th>
     </tr>
-    <% for ddi_mapping in @mappings %>
+    <% for ddi_mapping in @ddi_mappings %>
       <tr>
         <td><div class="dividers"><%= ddi_mapping.ddi %></div></td>
         <td><div class="dividers"><%= ddi_mapping.human_readable %></div></td>

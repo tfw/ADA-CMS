@@ -1,20 +1,20 @@
-class Staff::DDIMappingsController < Staff::BaseController
+class Staff::DdiMappingsController < Staff::BaseController
 
   before_filter :get_mappings, :except => [:create, :update]
   before_filter :get_missing_mappings, :except => [:create, :update]
 
   def index
-    @mapping = DDIMapping.new
+    @ddi_mapping = DDIMapping.new
   end
 
   def show
-    @mapping = DDIMapping.find(params[:id])
+    @ddi_mapping = DDIMapping.find(params[:id])
     render :action => :index
   end
 
   def create
-    @mapping = DDIMapping.find(params[:mapping_id])
-    @mapping.update_attributes(params[:mapping])
+    @ddi_mapping = DDIMapping.find(params[:ddi_mapping_id])
+    @ddi_mapping.update_attributes(params[:ddi_mapping])
 
     get_missing_mappings
     get_mappings
@@ -22,8 +22,8 @@ class Staff::DDIMappingsController < Staff::BaseController
   end
 
   def update
-    @mapping = DDIMapping.find(params[:mapping][:id])
-    @mapping.update_attributes(params[:mapping])
+    @ddi_mapping = DDIMapping.find(params[:ddi_mapping][:id])
+    @ddi_mapping.update_attributes(params[:ddi_mapping])
 
     get_missing_mappings
     get_mappings
@@ -31,13 +31,13 @@ class Staff::DDIMappingsController < Staff::BaseController
   end
 
   def edit
-    @mapping = DDIMapping.find(params[:id])
+    @ddi_mapping = DDIMapping.find(params[:id])
     render :action => :index
   end
 
   def destroy
-    @mapping = DDIMapping.find(params[:id])
-    @mapping.delete
+    @ddi_mapping = DDIMapping.find(params[:id])
+    @ddi_mapping.delete
     render :action => :index
   end
 
@@ -48,10 +48,10 @@ class Staff::DDIMappingsController < Staff::BaseController
 
   private
   def get_mappings
-    @mappings = DDIMapping.find(:all, :conditions => "human_readable is not null")
+    @ddi_mappings = DDIMapping.find(:all, :conditions => "human_readable is not null")
   end
 
   def get_missing_mappings
-    @missing_mappings = DDIMapping.find_all_by_human_readable(nil, :order => :ddi)
+    @ddi_missing_mappings = DDIMapping.find_all_by_human_readable(nil, :order => :ddi)
   end
 end
