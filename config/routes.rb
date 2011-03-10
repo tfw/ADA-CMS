@@ -8,6 +8,8 @@ Ada::Application.routes.draw do
 
   namespace :staff do
     resources :activity_logs, :only => :index
+    resources :ddi_mappings
+    
     post 'archives/pages/sluggerize_path'
     post 'archives/pages/preview'
     post 'archives/update_page_order'

@@ -1,0 +1,58 @@
+ 
+<h1>DDI Mappings</h1>
+<br clear="all"/>
+<br/>
+<h2>Map human readable names to DDI elements & attributes. <br/> See table below form for existing mappings.</font></h2>
+
+<div id="mappings-form" align='left'>
+  
+  <% form_for([:staff, @ddi_mapping]) do |f| %>
+    <%=unless @ddi_mapping.new_record? %>
+      <%= f.hidden_field :id %>
+    <% end %>
+
+  <div class="fields select_fields">
+     <p> <%= f.label 'DDI' %>
+      <% if @ddi_mapping.new_record? %>
+        <%= select_tag("mapping_id", options_from_collection_for_select(@missing_mappings, 'id', 'friendly_name')) %>
+      <% else %>
+        <em><%= @ddi_mapping.friendly_name %></em> <%= link_to "(Choose another)",  cms_mappings_url %>
+      <% end %>
+    </p>
+  </div>
+   <div class="fields text_fields">
+    <%= f.label 'Human Readable' %>
+    <%= f.text_field :human_readable  %>
+  </div>
+   <div class="fields textarea_fields">
+    <%= f.label 'Note' %>
+    <%= f.text_area :description, :rows => 3 %>
+   </div>
+
+   <div class="buttons">
+    <%= f.submit("Save") %>
+  </div>
+  <% end %>
+</div>
+
+<br/>
+
+<div class="roundedcorners">
+  <table class ="data" width="80%">
+    <tr>
+      <th>DDI</th>
+      <th>Human Readable</th>
+      <th>Note</th>
+      <th>Controls</th>
+    </tr>
+    <% for ddi_mapping in @mappings %>
+      <tr>
+        <td><div class="dividers"><%= ddi_mapping.ddi %></div></td>
+        <td><div class="dividers"><%= ddi_mapping.human_readable %></div></td>
+        <td><div class="dividers"><%= ddi_mapping.description %></div></td>
+        <td><div class="dividers"><%= link_to 'Edit', edit_staff_ddi_mapping_url(ddi_mapping) %></div></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+

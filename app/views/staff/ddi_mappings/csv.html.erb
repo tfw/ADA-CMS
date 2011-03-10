@@ -1,0 +1,5 @@
+<% for mapping in @mappings
+  if mapping.human_readable.strip.any? %>
+    <%= mapping.ddi %>, <%= mapping.human_readable %> <br/>
+  <% end
+end %>
