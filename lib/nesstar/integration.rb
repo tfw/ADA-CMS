@@ -170,6 +170,7 @@ module Nesstar
       end
 
       engine.register_participant 'ada_archive_contains_all_studies' do |workitem|
+        debugger
         for study in Study.all
           unless Archive.ada.studies.index(study)
             ArchiveStudy.create!(:archive => Archive.ada, :study => study)

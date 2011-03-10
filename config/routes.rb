@@ -1,6 +1,4 @@
 Ada::Application.routes.draw do
-  # match 'staff/home', :to => 'inkling/home#dashboard', :as => "user_root"
-  match 'staff/home', :to => 'staff/home#dashboard', :as => "user_root"
   match 'staff/home', :to => 'staff/home#dashboard', :as => "inkling_user_root"
 
   devise_scope :inkling_user do
