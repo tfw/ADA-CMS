@@ -9,10 +9,15 @@ module HelperMethods
     click_link("Integrations")
     page.should have_content("Integrations")
   end
+    
 
   def create_page(archive, page_title, page_body)
     visit_archive(archive.slug)
-    click_link("Add a page")
+
+    within(:xpath, "//fieldset[@id='page-management']") do
+      click_link("+")
+    end
+
     fill_in("page_title", :with => page_title)
     fill_in("page_body_editor", :with => page_body)
     click_button("Create Page")
