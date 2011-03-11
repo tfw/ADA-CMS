@@ -90,4 +90,9 @@ class Study < ActiveRecord::Base
   def ddi_id
     about.split(".").last
   end
+  
+  #returns the archive_study matching the archive
+  def for_archive(archive)
+    self.archive_studies.find_by_archive_id(archive.id)
+  end
 end

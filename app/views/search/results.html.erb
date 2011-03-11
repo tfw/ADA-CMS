@@ -3,7 +3,6 @@
   </br>
 </nav>
 
-
 <p>
   <% if @sphinx.any? %>
     <div id="search_report">
@@ -42,13 +41,13 @@
   <% for r in @sphinx %>
     <tr>
       <td>
-        <% if r.is_a? Page %> Page Title: <i><%= r.title %></i> at <a href="<%= r.path.slug %>"> <%= r.path.slug %></a>.</div>
-        <% elsif r.is_a? Study %>
+        <% if r.is_a? Study %>
           <div id="study-<%= r.ddi_id %>">
-          Study Title: <%= r.field("docTitle") %>
-          <% unless r.field("stdyAuthEntity").blank? %> by <% r.field("stdyAuthEntity") %>. <% end %> <br/>
-          Abstract: <%= first_n_words(30, r.abstract) %> <br/>
-          Study Id: <%= r.ddi_id %> <br/>
+            <% archive_study = @current_archive.archive_studies.find_by_study_id(r.id) %>
+            Study Title: <%= link_to r.field("docTitle"), "#{archive_study.path.slug}" %>
+            <% unless r.field("stdyAuthEntity").blank? %> by <% r.field("stdyAuthEntity") %>. <% end %> <br/>
+            Abstract: <%= first_n_words(30, r.abstract) %> <br/>
+            Study Id: <%= r.ddi_id %> <br/>
 
           <% for archive_study in r.archive_studies %>
             <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>

@@ -29,4 +29,13 @@ describe Study, "The local respresentation of an ASSDA study" do
    entry1.should_not be_nil
    entry2.should_not be_nil
  end
+ 
+ specify "that for_archive(archive) returns a matching archive_study" do
+   archive_study = ArchiveStudy.make
+   archive = archive_study.archive
+   study = archive_study.study
+   [1..9].each {ArchiveStudy.make(:study => study)} #make loads of them with the same study
+   
+   study.for_archive(archive).should == archive_study
+ end
 end
