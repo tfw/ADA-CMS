@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/tfw/inkling.git
-  revision: 36deeef9a46eb8ca5380651abed17edb78a6b4ed
+  revision: 74c4e051101c99d003ebb851fff14ad10e77d90c
   specs:
     inkling (0.1.0)
       cancan
@@ -61,7 +61,7 @@ GEM
       ZenTest (>= 4.4.1)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
-    cancan (1.5.1)
+    cancan (1.6.0)
     capistrano (2.5.19)
       highline
       net-scp (>= 1.0.0)
@@ -86,7 +86,7 @@ GEM
     configuration (1.2.0)
     culerity (0.2.15)
     database_cleaner (0.6.5)
-    devise (1.1.7)
+    devise (1.1.8)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 1.0.2)
     diff-lcs (1.1.2)

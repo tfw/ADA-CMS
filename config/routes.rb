@@ -9,6 +9,12 @@ Ada::Application.routes.draw do
   namespace :staff do
     resources :activity_logs, :only => :index
     resources :ddi_mappings
+
+    get 'site_resources', :to => "site_resources#index" #temporary 
+    get 'users', :to => "users#index" #temporary 
+    get 'hccda', :to => "hccda#index" #temporary 
+    get 'adapt', :to => "adapt#index" #temporary 
+    get 'usage-auditing', :to => "usage_auditing#index" #temporary 
     
     post 'archives/pages/sluggerize_path'
     post 'archives/pages/preview'
