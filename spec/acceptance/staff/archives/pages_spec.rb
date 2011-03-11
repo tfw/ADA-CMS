@@ -13,7 +13,11 @@ feature "Creating pages" do
   
   scenario "I can access the archive page form"  do
     visit_archive("historical")
-    click_link("Add a page")
+    
+    within(:xpath, "//fieldset[@id='page-management']") do
+      click_link("+")
+    end
+    
     page.should have_content("Pages: Historical New")  
   end
   
