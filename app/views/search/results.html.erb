@@ -43,7 +43,8 @@
       <td>
         <% if r.is_a? Study %>
           <div id="study-<%= r.ddi_id %>">
-            <% archive_study = @current_archive.archive_studies.find_by_study_id(r.id) %>
+            <% archive_study = r.for_archive(@current_archive) %>
+            <% puts "---- #{r.id} ---- \n\n"%>
             Study Title: <%= link_to r.field("docTitle"), "#{archive_study.path.slug}" %>
             <% unless r.field("stdyAuthEntity").blank? %> by <% r.field("stdyAuthEntity") %>. <% end %> <br/>
             Abstract: <%= first_n_words(30, r.abstract) %> <br/>

@@ -12,49 +12,16 @@ Home
   setInterval("log();", 5000);
 </script>
 
-<div id="summary" class="content-area">
+<h2>Home</h2>
 
-  <h2>Summary</h2>
-
-  <h3>Your Tasks</h3>
+<fieldset>
+  <legend> Your Tasks </legend>
   <p>A summary of the work assigned to and requested of you in the system.</p>
 
-  <dl class="issue-metadata">
-    <dt>Assignments:</dt>
-    <dd>
-      <ol>
-        <li>
-          <a href="#">Approve (publish) datasets on Nesstar</a>
-        </li>
-        <li>
-          <a href="#">Approve website content</a>
-        </li>
-        <li>
-          <a href="#">Accept new deposit</a>
-        </li>
-      </ol>
-    </dd>
-  </dl>
+</fieldset>
 
-  <dl class="issue-metadata">
-    <dt>Requests:</dt>
-    <dd>
-      <ol>
-        <li>
-          <a href="#">General Access</a>
-        </li>
-        <li>
-          <a href="#">Specific Access</a>
-        </li>
-        <li>
-          <a href="#">User Queries</a>
-        </li>
-      </ol>
-    </dd>
-  </dl>
-
-  <h3>Recent Activity<a class="right" href="#more" id="more-logs" title="Display More Logs">More Logs</a></h3>
+<fieldset>
+  <legend id="logs" title="Display More Logs">Recent Activity</legend>
   <dl id="log">
     <!-- dynamically replaced with AJAX callback, above -->
-  </dl>
-</div>
+</fieldset>

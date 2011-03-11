@@ -19,10 +19,10 @@
 					<%= form_for(:user, :url => new_inkling_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
 						<input type="text" name="inkling_user[email]" id="login_name"/>
 						<input type="password" name="inkling_user[password]" id="login_pass"/>
-						<input type="image" alt="Log In" name="imageField" id="enter_button" src="/images/structure/bttn_enter.png"/>
+						<input type="image" alt="Log In" id="enter_button" src="/images/structure/bttn_enter.png"/>
 					<% end %>
 				<% else %>
-						<%= link_to('Sign Out', logout_path) %>  
+						<%= link_to('Sign Out', logout_path) %>
 				<% end %>
 			</div>
 			<div class="masthead"><a href="/ada/home">Australian Data Archive</a></div>
@@ -42,14 +42,14 @@
 					</li>
 				<% end %>
 	     </ul>
-		  <div class="searchContainer">
-		    <form action="/search" method="get" id="search-form" class="formtastic">
-		      <label for="menusearch"></label>
-		      <input type="text" name="term" id="search_term" value="Search this site"/>
-		      <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
-          <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
-	        </form>
-	      </div>
+ 		  <div class="searchContainer">
+ 		    <form action="/search" method="get" id="search-form" class="formtastic">
+ 		      <label for="menusearch"></label>
+ 		      <input type="text" name="term" id="search_term" value="Search this site"/>
+ 		      <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
+           <input type="image" alt="Go" id="search_button" src="/images/structure/bttn_go.png"/>
+ 	        </form>
+ 	      </div>
     </nav>
 
 		<nav class="subnav">
