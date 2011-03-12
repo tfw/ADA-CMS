@@ -45,7 +45,7 @@ form.tree-form {
 div.content-area {
   border: 1px solid #bababa;
   background: #fff;
-  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+  border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
   float: left;
   width: 100%;
 }
