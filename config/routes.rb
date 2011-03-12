@@ -1,10 +1,7 @@
 Ada::Application.routes.draw do
-  match 'staff/home', :to => 'staff/home#dashboard', :as => "inkling_user_root"
+  devise_for :users, :controllers => { :sessions => 'user_sessions' }
 
-  devise_scope :inkling_user do
-    get "login", :to => "devise/sessions#new"
-    get "logout", :to => "devise/sessions#destroy"
-  end
+  match 'staff/home', :to => 'staff/home#dashboard', :as => "inkling_user_root"
 
   namespace :staff do
     resources :activity_logs, :only => :index
