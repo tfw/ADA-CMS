@@ -15,9 +15,6 @@ class CreateInklingFeedsAndRefactorLogs < ActiveRecord::Migration
       t.integer  "feed_id",    :null => false
       t.integer  "role_id",    :null => false
     end
-    
-    add_column :inkling_logs, :category, :string, :null => false
-    
   end
 
   def self.down

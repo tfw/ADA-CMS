@@ -20,7 +20,7 @@
    
   <header>
     <div class="login">
-      Name: <%= current_user.email %> <br/>
+      Name: <%= link_to current_user.email, staff_user_path(current_user) %> <br/>
       Role: <%= current_user.roles.first.name %> <br/>
       <%= link_to('Sign Out', logout_path) %>  
     </div>

@@ -2,16 +2,17 @@ Ada::Application.routes.draw do
   match 'staff/home', :to => 'staff/home#dashboard', :as => "inkling_user_root"
 
   devise_scope :inkling_user do
-    get "login", :to => "devise/sessions#new"
+    get "login", :to => "devise/sessions#new"    
     get "logout", :to => "devise/sessions#destroy"
   end
-
+  
   namespace :staff do
     resources :activity_logs, :only => :index
     resources :ddi_mappings
+    resources :users, :only => [:index, :show]
 
     get 'site_resources', :to => "site_resources#index" #temporary 
-    get 'users', :to => "users#index" #temporary 
+    # get 'users', :to => "users#index" #temporary 
     get 'hccda', :to => "hccda#index" #temporary 
     get 'adapt', :to => "adapt#index" #temporary 
     get 'usage-auditing', :to => "usage_auditing#index" #temporary 

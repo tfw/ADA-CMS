@@ -1,0 +1,43 @@
+<% mirror = current_user == @user %>
+
+<% content_for(:breadcrumbs) do %>
+	Users - <% if mirror %> You <% else %> <%= @user.email %> <% end %>
+<% end %>
+
+<fieldset>
+	<% if mirror %>
+		<legend>You</legend>
+	<% else %>
+		<legend> <%= @user.email %> </legend>
+	<% end %>
+	
+	<p>Info from ADAUsers </p>
+
+	Role: <%= @user.roles.first.name %>
+</fieldset>
+
+<fieldset>
+	<% if mirror %>
+		<legend>Your Tasks</legend>
+	<% else %>
+		<legend> <%= @user.email %> Tasks </legend>
+	<% end %>
+
+tasks go here	
+</fieldset>
+
+
+<fieldset>
+	<% if mirror %>
+		<legend>Your Activity</legend>
+	<% else %>
+		<legend> <%= @user.email %> Activity </legend>
+	<% end %>
+
+  <dl id="log">
+		<% for log in @logs%>
+		  <dt><a href="#" title="#"><%= time_ago_in_words(log.created_at).capitalize %> ago:</a></dt>
+		  <dd><%= log.text.html_safe%></dd>
+		<% end %>
+	</dl>
+</fieldset>

@@ -8,6 +8,9 @@ gem "pg"
 gem 'inkling', :git => "git://github.com/tfw/inkling.git" #, :ref => "02c7b2a87d0aec9fe4fef29cbf6eba53d0372182"
 
 gem "devise", ">= 1.1.3"
+# gem 'devise_openid_authenticatable'
+# gem 'openid_client', :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
+
 gem 'inherited_resources'
 gem 'cancan'
 gem 'formtastic', '>= 1.1.0'
