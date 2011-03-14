@@ -16,11 +16,11 @@ class Study < ActiveRecord::Base
     indexes series_name, :sortable => true
     indexes universe, :sortable => true
     indexes archives.id, :as => :archive_id 
+    indexes data_kind, :facet => true
+    indexes sampling_procedure, :facet => true
+    indexes collection_method, :facet => true
   end
 
-  # indexes data_kind, :facet => true
-  # indexes sampling_procedure, :facet => true
-  # indexes collection_method, :facet => true
   
   def title
     label
@@ -47,6 +47,11 @@ class Study < ActiveRecord::Base
     data.delete(:keywords)
     study.data_kind = data[:dataKind]
     data.delete(:dataKind)
+    study.sampling = data[:sampling].split(/\n/).first
+    data.delete(:dataKind)
+    study.collection_method = data[:collMode]
+    data.delete(:collMode)
+
 
     study.save!
     local_data.each {|k,v| create_or_update_entry(study, k.to_s, v)}

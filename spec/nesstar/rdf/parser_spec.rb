@@ -37,12 +37,13 @@ describe Nesstar::RDF::Parser do
     study = Study.store_with_entries(study_hash)
     study.about.should == "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00102-f"
   end
-#   
-#   it "should return dataKind in the study_hash" do
-#     study_hash = Nesstar::RDF::Parser.parse(File.expand_path("00102-f-test.xml", File.dirname(__FILE__)))
-#     study_hash.should_not be_nil
-# 
-# debugger
-#     study_hash[:dataKind].should eql "Aboriginal survey, New South Wales and South Australia, 1965: File f"
-#   end
+  
+  it "should return dataKind in the study_hash" do
+    study_hash = Nesstar::RDF::Parser.parse(File.expand_path("00102-f-test.xml", File.dirname(__FILE__)))
+    study_hash.should_not be_nil
+
+    study_hash[:dataKind].should eql "survey"
+    study_hash[:collMode].should eql "personal interview"
+    study_hash[:sampling].split(/\n/).first.should eql "non-probability sample"
+  end
 end
