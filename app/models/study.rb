@@ -6,6 +6,7 @@ class Study < ActiveRecord::Base
   has_many :study_related_materials
   has_many :archive_study_integrations
   has_many :archive_studies
+  has_many :archives, :through => :archive_studies
   
   validates :label, :presence => true
   
@@ -14,7 +15,12 @@ class Study < ActiveRecord::Base
     indexes abstract, :sortable => true
     indexes series_name, :sortable => true
     indexes universe, :sortable => true
+    indexes archives.id, :as => :archive_id 
   end
+
+  # indexes data_kind, :facet => true
+  # indexes sampling_procedure, :facet => true
+  # indexes collection_method, :facet => true
   
   def title
     label
