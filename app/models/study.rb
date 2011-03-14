@@ -58,7 +58,7 @@ class Study < ActiveRecord::Base
     end
     
     if data[:collMode]
-      study.collection_method = data[:collMode]
+      study.collection_mode = data[:collMode]
       data.delete(:collMode)
     end
 

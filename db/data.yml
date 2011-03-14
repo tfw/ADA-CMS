@@ -2791,14 +2791,14 @@ ddi_mappings:
     - 2011-03-09 02:43:56.864719
     - 2011-03-09 02:43:56.864719
   - - "70"
-    - sampling_procedure
+    - sampling
     - 
     - 
     - false
     - 2011-03-09 02:43:56.873362
     - 2011-03-09 02:43:56.873362
   - - "71"
-    - collection_method
+    - collection_mode
     - 
     - 
     - false
@@ -71789,13 +71789,13 @@ study_fields:
     - 2011-03-09 02:43:56.750394
   - - "8707"
     - "46"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:43:56.761575
     - 2011-03-09 02:49:35.69615
   - - "8708"
     - "46"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:43:56.766339
     - 2011-03-09 02:43:56.766339
@@ -71807,13 +71807,13 @@ study_fields:
     - 2011-03-09 02:43:57.598205
   - - "8710"
     - "75"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:43:57.604124
     - 2011-03-09 02:49:36.546169
   - - "8711"
     - "75"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:43:57.609429
     - 2011-03-09 02:43:57.609429
@@ -71825,13 +71825,13 @@ study_fields:
     - 2011-03-09 02:43:58.109187
   - - "8713"
     - "5"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:43:58.115524
     - 2011-03-09 02:49:37.142654
   - - "8714"
     - "5"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:43:58.120515
     - 2011-03-09 02:43:58.120515
@@ -71843,13 +71843,13 @@ study_fields:
     - 2011-03-09 02:43:58.601768
   - - "8716"
     - "1"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:43:58.607873
     - 2011-03-09 02:49:37.667053
   - - "8717"
     - "1"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:43:58.613545
     - 2011-03-09 02:43:58.613545
@@ -71861,13 +71861,13 @@ study_fields:
     - 2011-03-09 02:43:59.199814
   - - "8719"
     - "136"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:43:59.205807
     - 2011-03-09 02:49:38.228742
   - - "8720"
     - "136"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:43:59.211034
     - 2011-03-09 02:43:59.211034
@@ -71879,13 +71879,13 @@ study_fields:
     - 2011-03-09 02:43:59.686035
   - - "8722"
     - "110"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:43:59.692246
     - 2011-03-09 02:49:38.713717
   - - "8723"
     - "110"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:43:59.697292
     - 2011-03-09 02:43:59.697292
@@ -71897,13 +71897,13 @@ study_fields:
     - 2011-03-09 02:44:00.315681
   - - "8725"
     - "55"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:00.321903
     - 2011-03-09 02:49:39.234485
   - - "8726"
     - "55"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:00.327456
     - 2011-03-09 02:44:00.327456
@@ -71915,13 +71915,13 @@ study_fields:
     - 2011-03-09 02:44:00.816908
   - - "8728"
     - "65"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:00.824842
     - 2011-03-09 02:49:39.822926
   - - "8729"
     - "65"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:00.829965
     - 2011-03-09 02:44:00.829965
@@ -71933,13 +71933,13 @@ study_fields:
     - 2011-03-09 02:44:01.312007
   - - "8731"
     - "121"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:01.318022
     - 2011-03-09 02:49:40.27993
   - - "8732"
     - "121"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:01.323323
     - 2011-03-09 02:44:01.323323
@@ -71951,13 +71951,13 @@ study_fields:
     - 2011-03-09 02:44:01.839713
   - - "8734"
     - "31"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:01.84561
     - 2011-03-09 02:49:40.797665
   - - "8735"
     - "31"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:01.850666
     - 2011-03-09 02:44:01.850666
@@ -71969,13 +71969,13 @@ study_fields:
     - 2011-03-09 02:44:02.41958
   - - "8737"
     - "168"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:02.425355
     - 2011-03-09 02:49:41.272874
   - - "8738"
     - "168"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:02.430388
     - 2011-03-09 02:44:02.430388
@@ -71987,13 +71987,13 @@ study_fields:
     - 2011-03-09 02:44:02.960138
   - - "8740"
     - "152"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:02.966213
     - 2011-03-09 02:49:41.902445
   - - "8741"
     - "152"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:02.971148
     - 2011-03-09 02:44:02.971148
@@ -72005,13 +72005,13 @@ study_fields:
     - 2011-03-09 02:44:03.522326
   - - "8743"
     - "44"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:03.528131
     - 2011-03-09 02:49:42.466739
   - - "8744"
     - "44"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:03.533071
     - 2011-03-09 02:44:03.533071
@@ -72023,13 +72023,13 @@ study_fields:
     - 2011-03-09 02:44:04.117267
   - - "8746"
     - "33"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:04.123184
     - 2011-03-09 02:49:42.940661
   - - "8747"
     - "33"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:04.128185
     - 2011-03-09 02:44:04.128185
@@ -72041,13 +72041,13 @@ study_fields:
     - 2011-03-09 02:44:04.611354
   - - "8749"
     - "67"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:04.617511
     - 2011-03-09 02:49:43.514642
   - - "8750"
     - "67"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:04.622353
     - 2011-03-09 02:44:04.622353
@@ -72059,13 +72059,13 @@ study_fields:
     - 2011-03-09 02:44:05.10355
   - - "8752"
     - "102"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:05.109678
     - 2011-03-09 02:49:43.992852
   - - "8753"
     - "102"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:05.11495
     - 2011-03-09 02:44:05.11495
@@ -72077,13 +72077,13 @@ study_fields:
     - 2011-03-09 02:44:05.713276
   - - "8755"
     - "89"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:05.719432
     - 2011-03-09 02:49:44.559873
   - - "8756"
     - "89"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:05.724396
     - 2011-03-09 02:44:05.724396
@@ -72095,13 +72095,13 @@ study_fields:
     - 2011-03-09 02:44:06.203372
   - - "8758"
     - "62"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:06.209108
     - 2011-03-09 02:49:45.092049
   - - "8759"
     - "62"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:06.214238
     - 2011-03-09 02:44:06.214238
@@ -72113,13 +72113,13 @@ study_fields:
     - 2011-03-09 02:44:06.692401
   - - "8761"
     - "138"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:06.697989
     - 2011-03-09 02:49:45.720668
   - - "8762"
     - "138"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:06.702904
     - 2011-03-09 02:44:06.702904
@@ -72131,13 +72131,13 @@ study_fields:
     - 2011-03-09 02:44:07.225681
   - - "8764"
     - "73"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:07.232195
     - 2011-03-09 02:49:46.276997
   - - "8765"
     - "73"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:07.237637
     - 2011-03-09 02:44:07.237637
@@ -72149,13 +72149,13 @@ study_fields:
     - 2011-03-09 02:44:07.796491
   - - "8767"
     - "91"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:07.802337
     - 2011-03-09 02:49:46.813592
   - - "8768"
     - "91"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:07.807287
     - 2011-03-09 02:44:07.807287
@@ -72167,13 +72167,13 @@ study_fields:
     - 2011-03-09 02:44:08.273364
   - - "8770"
     - "16"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:08.280682
     - 2011-03-09 02:49:47.498186
   - - "8771"
     - "16"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:08.285781
     - 2011-03-09 02:44:08.285781
@@ -72185,13 +72185,13 @@ study_fields:
     - 2011-03-09 02:44:08.722253
   - - "8773"
     - "76"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:08.727916
     - 2011-03-09 02:49:48.087697
   - - "8774"
     - "76"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:08.732735
     - 2011-03-09 02:44:08.732735
@@ -72203,13 +72203,13 @@ study_fields:
     - 2011-03-09 02:44:09.30397
   - - "8776"
     - "30"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:09.309352
     - 2011-03-09 02:49:48.605104
   - - "8777"
     - "30"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:09.31446
     - 2011-03-09 02:44:09.31446
@@ -72221,13 +72221,13 @@ study_fields:
     - 2011-03-09 02:44:09.760881
   - - "8779"
     - "87"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:09.766618
     - 2011-03-09 02:49:49.113324
   - - "8780"
     - "87"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:09.771533
     - 2011-03-09 02:44:09.771533
@@ -72239,13 +72239,13 @@ study_fields:
     - 2011-03-09 02:44:10.26759
   - - "8782"
     - "52"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:10.273175
     - 2011-03-09 02:49:49.788244
   - - "8783"
     - "52"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:10.277847
     - 2011-03-09 02:44:10.277847
@@ -72257,13 +72257,13 @@ study_fields:
     - 2011-03-09 02:44:10.760704
   - - "8785"
     - "104"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:10.76721
     - 2011-03-09 02:49:50.274319
   - - "8786"
     - "104"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:10.773003
     - 2011-03-09 02:44:10.773003
@@ -72275,13 +72275,13 @@ study_fields:
     - 2011-03-09 02:44:11.369493
   - - "8788"
     - "96"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:11.375368
     - 2011-03-09 02:49:50.834114
   - - "8789"
     - "96"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:11.380461
     - 2011-03-09 02:44:11.380461
@@ -72293,13 +72293,13 @@ study_fields:
     - 2011-03-09 02:44:11.925635
   - - "8791"
     - "153"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:11.931475
     - 2011-03-09 02:49:51.54521
   - - "8792"
     - "153"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:11.936388
     - 2011-03-09 02:44:11.936388
@@ -72311,13 +72311,13 @@ study_fields:
     - 2011-03-09 02:44:12.473982
   - - "8794"
     - "38"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:12.479845
     - 2011-03-09 02:49:52.171492
   - - "8795"
     - "38"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:12.484713
     - 2011-03-09 02:44:12.484713
@@ -72329,13 +72329,13 @@ study_fields:
     - 2011-03-09 02:44:13.100449
   - - "8797"
     - "27"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:13.106815
     - 2011-03-09 02:49:52.727038
   - - "8798"
     - "27"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:13.11225
     - 2011-03-09 02:44:13.11225
@@ -72347,13 +72347,13 @@ study_fields:
     - 2011-03-09 02:44:13.616028
   - - "8800"
     - "120"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:13.621713
     - 2011-03-09 02:49:53.374417
   - - "8801"
     - "120"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:13.626614
     - 2011-03-09 02:44:13.626614
@@ -72365,13 +72365,13 @@ study_fields:
     - 2011-03-09 02:44:14.155913
   - - "8803"
     - "19"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:14.161755
     - 2011-03-09 02:49:53.914163
   - - "8804"
     - "19"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:14.16685
     - 2011-03-09 02:44:14.16685
@@ -72383,13 +72383,13 @@ study_fields:
     - 2011-03-09 02:44:14.750783
   - - "8806"
     - "71"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:14.758169
     - 2011-03-09 02:49:54.468162
   - - "8807"
     - "71"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:14.763587
     - 2011-03-09 02:44:14.763587
@@ -72401,13 +72401,13 @@ study_fields:
     - 2011-03-09 02:44:15.267414
   - - "8809"
     - "7"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:15.27315
     - 2011-03-09 02:49:55.212238
   - - "8810"
     - "7"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:15.278256
     - 2011-03-09 02:44:15.278256
@@ -72419,13 +72419,13 @@ study_fields:
     - 2011-03-09 02:44:15.748122
   - - "8812"
     - "166"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:15.754165
     - 2011-03-09 02:49:55.856006
   - - "8813"
     - "166"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:15.759075
     - 2011-03-09 02:44:15.759075
@@ -72437,13 +72437,13 @@ study_fields:
     - 2011-03-09 02:44:16.460407
   - - "8815"
     - "4"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:16.467148
     - 2011-03-09 02:49:56.629339
   - - "8816"
     - "4"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:16.47215
     - 2011-03-09 02:44:16.47215
@@ -72455,13 +72455,13 @@ study_fields:
     - 2011-03-09 02:44:16.977871
   - - "8818"
     - "122"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:16.98383
     - 2011-03-09 02:49:57.28917
   - - "8819"
     - "122"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:16.988704
     - 2011-03-09 02:44:16.988704
@@ -72473,13 +72473,13 @@ study_fields:
     - 2011-03-09 02:44:17.748527
   - - "8821"
     - "3"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:17.755071
     - 2011-03-09 02:49:57.901554
   - - "8822"
     - "3"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:17.75995
     - 2011-03-09 02:44:17.75995
@@ -72491,13 +72491,13 @@ study_fields:
     - 2011-03-09 02:44:18.356295
   - - "8824"
     - "36"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:18.362339
     - 2011-03-09 02:49:58.513959
   - - "8825"
     - "36"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:18.367819
     - 2011-03-09 02:44:18.367819
@@ -72509,13 +72509,13 @@ study_fields:
     - 2011-03-09 02:44:18.853919
   - - "8827"
     - "106"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:18.859943
     - 2011-03-09 02:49:59.196796
   - - "8828"
     - "106"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:18.86497
     - 2011-03-09 02:44:18.86497
@@ -72527,13 +72527,13 @@ study_fields:
     - 2011-03-09 02:44:19.407638
   - - "8830"
     - "13"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:19.413698
     - 2011-03-09 02:49:59.775939
   - - "8831"
     - "13"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:19.41879
     - 2011-03-09 02:44:19.41879
@@ -72545,13 +72545,13 @@ study_fields:
     - 2011-03-09 02:44:20.018353
   - - "8833"
     - "149"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:20.024282
     - 2011-03-09 02:50:00.491326
   - - "8834"
     - "149"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:20.02973
     - 2011-03-09 02:44:20.02973
@@ -72563,13 +72563,13 @@ study_fields:
     - 2011-03-09 02:44:20.590216
   - - "8836"
     - "117"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:20.595952
     - 2011-03-09 02:50:01.259186
   - - "8837"
     - "117"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:20.600779
     - 2011-03-09 02:44:20.600779
@@ -72581,13 +72581,13 @@ study_fields:
     - 2011-03-09 02:44:21.11079
   - - "8839"
     - "137"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:21.116786
     - 2011-03-09 02:50:02.124744
   - - "8840"
     - "137"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:21.121743
     - 2011-03-09 02:44:21.121743
@@ -72599,13 +72599,13 @@ study_fields:
     - 2011-03-09 02:44:21.750478
   - - "8842"
     - "163"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:21.756914
     - 2011-03-09 02:50:02.701882
   - - "8843"
     - "163"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:21.762727
     - 2011-03-09 02:44:21.762727
@@ -72617,13 +72617,13 @@ study_fields:
     - 2011-03-09 02:44:22.307679
   - - "8845"
     - "53"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:22.313753
     - 2011-03-09 02:50:03.408223
   - - "8846"
     - "53"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:22.319061
     - 2011-03-09 02:44:22.319061
@@ -72635,13 +72635,13 @@ study_fields:
     - 2011-03-09 02:44:22.79529
   - - "8848"
     - "156"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:22.800917
     - 2011-03-09 02:50:04.002133
   - - "8849"
     - "156"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:22.805789
     - 2011-03-09 02:44:22.805789
@@ -72653,13 +72653,13 @@ study_fields:
     - 2011-03-09 02:44:23.427823
   - - "8851"
     - "141"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:23.433362
     - 2011-03-09 02:50:04.52209
   - - "8852"
     - "141"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:23.438177
     - 2011-03-09 02:44:23.438177
@@ -72671,13 +72671,13 @@ study_fields:
     - 2011-03-09 02:44:23.953028
   - - "8854"
     - "54"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:23.958793
     - 2011-03-09 02:50:05.043484
   - - "8855"
     - "54"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:23.964251
     - 2011-03-09 02:44:23.964251
@@ -72689,13 +72689,13 @@ study_fields:
     - 2011-03-09 02:44:24.448549
   - - "8857"
     - "21"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:24.454596
     - 2011-03-09 02:50:05.620536
   - - "8858"
     - "21"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:24.459413
     - 2011-03-09 02:44:24.459413
@@ -72707,13 +72707,13 @@ study_fields:
     - 2011-03-09 02:44:24.970547
   - - "8860"
     - "80"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:24.977021
     - 2011-03-09 02:50:06.120032
   - - "8861"
     - "80"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:24.982186
     - 2011-03-09 02:44:24.982186
@@ -72725,13 +72725,13 @@ study_fields:
     - 2011-03-09 02:44:25.598822
   - - "8863"
     - "135"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:25.605042
     - 2011-03-09 02:50:07.761631
   - - "8864"
     - "135"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:25.610655
     - 2011-03-09 02:44:25.610655
@@ -72743,13 +72743,13 @@ study_fields:
     - 2011-03-09 02:44:26.177512
   - - "8866"
     - "109"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:26.183479
     - 2011-03-09 02:50:08.428605
   - - "8867"
     - "109"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:26.188288
     - 2011-03-09 02:44:26.188288
@@ -72761,13 +72761,13 @@ study_fields:
     - 2011-03-09 02:44:26.659588
   - - "8869"
     - "83"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:26.665849
     - 2011-03-09 02:50:08.91452
   - - "8870"
     - "83"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:26.670982
     - 2011-03-09 02:44:26.670982
@@ -72779,13 +72779,13 @@ study_fields:
     - 2011-03-09 02:44:27.293158
   - - "8872"
     - "59"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:27.299041
     - 2011-03-09 02:50:09.423444
   - - "8873"
     - "59"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:27.304032
     - 2011-03-09 02:44:27.304032
@@ -72797,13 +72797,13 @@ study_fields:
     - 2011-03-09 02:44:27.790856
   - - "8875"
     - "81"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:27.796471
     - 2011-03-09 02:50:10.074436
   - - "8876"
     - "81"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:27.80115
     - 2011-03-09 02:44:27.80115
@@ -72815,13 +72815,13 @@ study_fields:
     - 2011-03-09 02:44:28.308758
   - - "8878"
     - "133"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:28.315059
     - 2011-03-09 02:50:10.775436
   - - "8879"
     - "133"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:28.320286
     - 2011-03-09 02:44:28.320286
@@ -72833,13 +72833,13 @@ study_fields:
     - 2011-03-09 02:44:28.949101
   - - "8881"
     - "77"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:28.954778
     - 2011-03-09 02:50:11.348427
   - - "8882"
     - "77"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:28.9599
     - 2011-03-09 02:44:28.9599
@@ -72851,13 +72851,13 @@ study_fields:
     - 2011-03-09 02:44:29.469712
   - - "8884"
     - "69"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:29.475604
     - 2011-03-09 02:50:12.082152
   - - "8885"
     - "69"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:29.480328
     - 2011-03-09 02:44:29.480328
@@ -72869,13 +72869,13 @@ study_fields:
     - 2011-03-09 02:44:30.007384
   - - "8887"
     - "63"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:30.013667
     - 2011-03-09 02:50:12.594401
   - - "8888"
     - "63"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:30.01925
     - 2011-03-09 02:44:30.01925
@@ -72887,13 +72887,13 @@ study_fields:
     - 2011-03-09 02:44:30.615071
   - - "8890"
     - "51"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:30.620999
     - 2011-03-09 02:51:07.363343
   - - "8891"
     - "51"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:30.626049
     - 2011-03-09 02:44:30.626049
@@ -72905,13 +72905,13 @@ study_fields:
     - 2011-03-09 02:44:31.122635
   - - "8893"
     - "92"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:31.128906
     - 2011-03-09 02:51:08.064581
   - - "8894"
     - "92"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:31.133851
     - 2011-03-09 02:44:31.133851
@@ -72923,13 +72923,13 @@ study_fields:
     - 2011-03-09 02:44:31.647817
   - - "8896"
     - "39"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:31.65745
     - 2011-03-09 02:51:08.566882
   - - "8897"
     - "39"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:31.666625
     - 2011-03-09 02:44:31.666625
@@ -72941,13 +72941,13 @@ study_fields:
     - 2011-03-09 02:44:32.288933
   - - "8899"
     - "148"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:32.295072
     - 2011-03-09 02:51:09.054134
   - - "8900"
     - "148"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:32.300329
     - 2011-03-09 02:44:32.300329
@@ -72959,13 +72959,13 @@ study_fields:
     - 2011-03-09 02:44:32.868471
   - - "8902"
     - "100"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:32.874303
     - 2011-03-09 02:51:09.644803
   - - "8903"
     - "100"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:32.879129
     - 2011-03-09 02:44:32.879129
@@ -72977,13 +72977,13 @@ study_fields:
     - 2011-03-09 02:44:33.448528
   - - "8905"
     - "170"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:33.454414
     - 2011-03-09 02:51:11.171087
   - - "8906"
     - "170"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:33.459349
     - 2011-03-09 02:44:33.459349
@@ -72995,13 +72995,13 @@ study_fields:
     - 2011-03-09 02:44:34.107183
   - - "8908"
     - "57"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:34.114531
     - 2011-03-09 02:51:11.764469
   - - "8909"
     - "57"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:34.1194
     - 2011-03-09 02:44:34.1194
@@ -73013,13 +73013,13 @@ study_fields:
     - 2011-03-09 02:44:34.580686
   - - "8911"
     - "98"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:34.586252
     - 2011-03-09 02:51:12.292284
   - - "8912"
     - "98"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:34.591258
     - 2011-03-09 02:44:34.591258
@@ -73031,13 +73031,13 @@ study_fields:
     - 2011-03-09 02:44:35.116909
   - - "8914"
     - "160"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:35.122961
     - 2011-03-09 02:51:12.974183
   - - "8915"
     - "160"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:35.127848
     - 2011-03-09 02:44:35.127848
@@ -73049,13 +73049,13 @@ study_fields:
     - 2011-03-09 02:44:35.838649
   - - "8917"
     - "113"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:35.844417
     - 2011-03-09 02:51:13.630381
   - - "8918"
     - "113"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:35.849437
     - 2011-03-09 02:44:35.849437
@@ -73067,13 +73067,13 @@ study_fields:
     - 2011-03-09 02:44:36.354137
   - - "8920"
     - "150"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:36.359844
     - 2011-03-09 02:51:14.215333
   - - "8921"
     - "150"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:36.365001
     - 2011-03-09 02:44:36.365001
@@ -73085,13 +73085,13 @@ study_fields:
     - 2011-03-09 02:44:36.863166
   - - "8923"
     - "41"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:36.869121
     - 2011-03-09 02:51:14.865385
   - - "8924"
     - "41"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:36.874435
     - 2011-03-09 02:44:36.874435
@@ -73103,13 +73103,13 @@ study_fields:
     - 2011-03-09 02:44:37.352147
   - - "8926"
     - "129"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:37.358387
     - 2011-03-09 02:51:15.353943
   - - "8927"
     - "129"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:37.363558
     - 2011-03-09 02:44:37.363558
@@ -73121,13 +73121,13 @@ study_fields:
     - 2011-03-09 02:44:37.990561
   - - "8929"
     - "157"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:37.996651
     - 2011-03-09 02:51:15.916156
   - - "8930"
     - "157"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:38.002226
     - 2011-03-09 02:44:38.002226
@@ -73139,13 +73139,13 @@ study_fields:
     - 2011-03-09 02:44:38.561939
   - - "8932"
     - "42"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:38.567785
     - 2011-03-09 02:51:16.703498
   - - "8933"
     - "42"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:38.573891
     - 2011-03-09 02:44:38.573891
@@ -73157,13 +73157,13 @@ study_fields:
     - 2011-03-09 02:44:39.046057
   - - "8935"
     - "37"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:39.052043
     - 2011-03-09 02:51:17.21916
   - - "8936"
     - "37"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:39.057018
     - 2011-03-09 02:44:39.057018
@@ -73175,13 +73175,13 @@ study_fields:
     - 2011-03-09 02:44:39.634353
   - - "8938"
     - "139"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:39.640366
     - 2011-03-09 02:51:17.748347
   - - "8939"
     - "139"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:39.64553
     - 2011-03-09 02:44:39.64553
@@ -73193,13 +73193,13 @@ study_fields:
     - 2011-03-09 02:44:40.200268
   - - "8941"
     - "169"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:40.206022
     - 2011-03-09 02:51:18.302107
   - - "8942"
     - "169"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:40.210968
     - 2011-03-09 02:44:40.210968
@@ -73211,13 +73211,13 @@ study_fields:
     - 2011-03-09 02:44:40.751816
   - - "8944"
     - "28"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:40.758835
     - 2011-03-09 02:51:18.976118
   - - "8945"
     - "28"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:40.764155
     - 2011-03-09 02:44:40.764155
@@ -73229,13 +73229,13 @@ study_fields:
     - 2011-03-09 02:44:41.206679
   - - "8947"
     - "64"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:41.213384
     - 2011-03-09 02:44:41.213384
   - - "8948"
     - "64"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:41.219175
     - 2011-03-09 02:44:41.219175
@@ -73247,13 +73247,13 @@ study_fields:
     - 2011-03-09 02:44:41.772287
   - - "8950"
     - "25"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:41.778712
     - 2011-03-09 02:44:41.778712
   - - "8951"
     - "25"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:41.78404
     - 2011-03-09 02:44:41.78404
@@ -73265,13 +73265,13 @@ study_fields:
     - 2011-03-09 02:44:42.231706
   - - "8953"
     - "167"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:42.237449
     - 2011-03-09 02:44:42.237449
   - - "8954"
     - "167"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:42.242348
     - 2011-03-09 02:44:42.242348
@@ -73283,13 +73283,13 @@ study_fields:
     - 2011-03-09 02:44:42.742715
   - - "8956"
     - "6"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:42.748691
     - 2011-03-09 02:44:42.748691
   - - "8957"
     - "6"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:42.754359
     - 2011-03-09 02:44:42.754359
@@ -73301,13 +73301,13 @@ study_fields:
     - 2011-03-09 02:44:43.303897
   - - "8959"
     - "111"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:43.3094
     - 2011-03-09 02:44:43.3094
   - - "8960"
     - "111"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:43.314458
     - 2011-03-09 02:44:43.314458
@@ -73319,13 +73319,13 @@ study_fields:
     - 2011-03-09 02:44:43.813913
   - - "8962"
     - "154"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:43.819746
     - 2011-03-09 02:44:43.819746
   - - "8963"
     - "154"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:43.826433
     - 2011-03-09 02:44:43.826433
@@ -73337,13 +73337,13 @@ study_fields:
     - 2011-03-09 02:44:44.379524
   - - "8965"
     - "82"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:44.385106
     - 2011-03-09 02:44:44.385106
   - - "8966"
     - "82"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:44.391398
     - 2011-03-09 02:44:44.391398
@@ -73355,13 +73355,13 @@ study_fields:
     - 2011-03-09 02:44:44.9977
   - - "8968"
     - "60"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:45.003241
     - 2011-03-09 02:44:45.003241
   - - "8969"
     - "60"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:45.009437
     - 2011-03-09 02:44:45.009437
@@ -73373,13 +73373,13 @@ study_fields:
     - 2011-03-09 02:44:45.466301
   - - "8971"
     - "128"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:45.4724
     - 2011-03-09 02:44:45.4724
   - - "8972"
     - "128"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:45.477525
     - 2011-03-09 02:44:45.477525
@@ -73391,13 +73391,13 @@ study_fields:
     - 2011-03-09 02:44:45.966438
   - - "8974"
     - "12"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:45.972611
     - 2011-03-09 02:44:45.972611
   - - "8975"
     - "12"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:45.97821
     - 2011-03-09 02:44:45.97821
@@ -73409,13 +73409,13 @@ study_fields:
     - 2011-03-09 02:44:46.42389
   - - "8977"
     - "78"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:46.429723
     - 2011-03-09 02:44:46.429723
   - - "8978"
     - "78"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:46.434771
     - 2011-03-09 02:44:46.434771
@@ -73427,13 +73427,13 @@ study_fields:
     - 2011-03-09 02:44:47.007055
   - - "8980"
     - "119"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:47.013103
     - 2011-03-09 02:44:47.013103
   - - "8981"
     - "119"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:47.018264
     - 2011-03-09 02:44:47.018264
@@ -73445,13 +73445,13 @@ study_fields:
     - 2011-03-09 02:44:59.625267
   - - "8983"
     - "94"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:44:59.633701
     - 2011-03-09 02:44:59.633701
   - - "8984"
     - "94"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:44:59.638953
     - 2011-03-09 02:44:59.638953
@@ -73463,13 +73463,13 @@ study_fields:
     - 2011-03-09 02:45:00.19931
   - - "8986"
     - "56"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:00.205196
     - 2011-03-09 02:45:00.205196
   - - "8987"
     - "56"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:00.210053
     - 2011-03-09 02:45:00.210053
@@ -73481,13 +73481,13 @@ study_fields:
     - 2011-03-09 02:45:00.655994
   - - "8989"
     - "151"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:00.662513
     - 2011-03-09 02:45:00.662513
   - - "8990"
     - "151"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:00.668441
     - 2011-03-09 02:45:00.668441
@@ -73499,13 +73499,13 @@ study_fields:
     - 2011-03-09 02:45:01.293254
   - - "8992"
     - "58"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:01.299637
     - 2011-03-09 02:45:01.299637
   - - "8993"
     - "58"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:01.304923
     - 2011-03-09 02:45:01.304923
@@ -73517,13 +73517,13 @@ study_fields:
     - 2011-03-09 02:45:01.792531
   - - "8995"
     - "86"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:01.798243
     - 2011-03-09 02:45:01.798243
   - - "8996"
     - "86"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:01.803124
     - 2011-03-09 02:45:01.803124
@@ -73535,13 +73535,13 @@ study_fields:
     - 2011-03-09 02:45:02.302902
   - - "8998"
     - "74"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:02.30918
     - 2011-03-09 02:45:02.30918
   - - "8999"
     - "74"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:02.314838
     - 2011-03-09 02:45:02.314838
@@ -73553,13 +73553,13 @@ study_fields:
     - 2011-03-09 02:45:02.879832
   - - "9001"
     - "146"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:02.885859
     - 2011-03-09 02:45:02.885859
   - - "9002"
     - "146"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:02.890953
     - 2011-03-09 02:45:02.890953
@@ -73571,13 +73571,13 @@ study_fields:
     - 2011-03-09 02:45:03.385276
   - - "9004"
     - "112"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:03.390882
     - 2011-03-09 02:45:03.390882
   - - "9005"
     - "112"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:03.396152
     - 2011-03-09 02:45:03.396152
@@ -73589,13 +73589,13 @@ study_fields:
     - 2011-03-09 02:45:03.871773
   - - "9007"
     - "93"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:03.878314
     - 2011-03-09 02:45:03.878314
   - - "9008"
     - "93"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:03.883334
     - 2011-03-09 02:45:03.883334
@@ -73607,13 +73607,13 @@ study_fields:
     - 2011-03-09 02:45:04.469348
   - - "9010"
     - "35"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:04.474997
     - 2011-03-09 02:45:04.474997
   - - "9011"
     - "35"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:04.482893
     - 2011-03-09 02:45:04.482893
@@ -73625,13 +73625,13 @@ study_fields:
     - 2011-03-09 02:45:38.579529
   - - "9013"
     - "164"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:38.586038
     - 2011-03-09 02:45:38.586038
   - - "9014"
     - "164"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:38.59253
     - 2011-03-09 02:45:38.59253
@@ -73643,13 +73643,13 @@ study_fields:
     - 2011-03-09 02:45:39.257259
   - - "9016"
     - "142"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:39.264178
     - 2011-03-09 02:45:39.264178
   - - "9017"
     - "142"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:39.269633
     - 2011-03-09 02:45:39.269633
@@ -73661,13 +73661,13 @@ study_fields:
     - 2011-03-09 02:45:40.049006
   - - "9019"
     - "15"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:40.055988
     - 2011-03-09 02:45:40.055988
   - - "9020"
     - "15"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:40.061454
     - 2011-03-09 02:45:40.061454
@@ -73679,13 +73679,13 @@ study_fields:
     - 2011-03-09 02:45:52.667506
   - - "9022"
     - "115"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:45:52.673673
     - 2011-03-09 02:45:52.673673
   - - "9023"
     - "115"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:45:52.679474
     - 2011-03-09 02:45:52.679474
@@ -73697,13 +73697,13 @@ study_fields:
     - 2011-03-09 02:46:03.685832
   - - "9025"
     - "131"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:46:03.691554
     - 2011-03-09 02:46:03.691554
   - - "9026"
     - "131"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:46:03.696541
     - 2011-03-09 02:46:03.696541
@@ -73715,13 +73715,13 @@ study_fields:
     - 2011-03-09 02:46:04.36061
   - - "9028"
     - "158"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:46:04.366683
     - 2011-03-09 02:46:04.366683
   - - "9029"
     - "158"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:46:04.371997
     - 2011-03-09 02:46:04.371997
@@ -73733,13 +73733,13 @@ study_fields:
     - 2011-03-09 02:46:04.935906
   - - "9031"
     - "147"
-    - sampling_procedure
-    - sampling_procedure
+    - sampling
+    - sampling
     - 2011-03-09 02:46:04.941536
     - 2011-03-09 02:46:04.941536
   - - "9032"
     - "147"
-    - collection_method
+    - collection_mode
     - ""
     - 2011-03-09 02:46:04.946816
     - 2011-03-09 02:46:04.946816
@@ -74911,8 +74911,8 @@ studies:
   - keywords
   - page_id
   - data_kind
-  - sampling_procedure
-  - collection_method
+  - sampling
+  - collection_mode
   records: 
   - - "1"
     - Aboriginal survey, New South Wales panel, 1980
