@@ -9,10 +9,8 @@
     </ul>
 <% end %>
 
-<div id="summary" class="content-area">
-  <h2>
-    Archive: <%= @archive.name %>
-  </h2>
+<fieldset>
+  <legend> <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %> </legend>
  
   <h3>Metadata</h3>
 
@@ -78,7 +76,7 @@
     <%- end -%>
 
   <% end %>
-</div>
+</fieldset>
 
 <div id="preview"></div>
 
