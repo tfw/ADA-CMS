@@ -1,12 +1,5 @@
 <% content_for(:sidenav) do %>
-  <ul>
-    <% @facets.each do |facet, facet_options| %>
-      <% facet_options.each do |option, count| %>
-        <li><h5><%= facet %></h5>
-        <%= link_to "#{option} (#{count})", :params => {facet => option, :page => 1} %></li>
-      <% end %>
-    <% end %>
-  </ul>
+  <%= render :partial => '/shared/side_nav' %>
 <% end %>
 
 
