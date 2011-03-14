@@ -17,8 +17,8 @@ class Study < ActiveRecord::Base
     indexes universe, :sortable => true
     indexes archives.id, :as => :archive_id 
     indexes data_kind, :facet => true
-    indexes sampling_procedure, :facet => true
-    indexes collection_method, :facet => true
+    indexes sampling, :facet => true
+    indexes collection_mode, :facet => true
   end
 
   
@@ -52,12 +52,12 @@ class Study < ActiveRecord::Base
       data.delete(:dataKind)
     end
     
-    if data[:sampling]
+    if data[:sampling] and data[:sampling].length < 255
       study.sampling = data[:sampling].split(/\n/).first
       data.delete(:sampling)
     end
     
-    if data[:collMode]
+    if data[:collMode] and data[:collMode].length < 255
       study.collection_mode = data[:collMode]
       data.delete(:collMode)
     end
