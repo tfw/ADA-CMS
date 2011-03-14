@@ -5,9 +5,13 @@
       <% if facets.any? %>
         <% facets.each do |facet, facet_options| 
             limit = facet_options.size > 4 ? 5 : facet_options.size
-            next if limit == 0
+            next if limit == 0 %>
+            <h5><%= facet %></h5>
+            <% facet_options = facet_options.sort_by {|k,v| v}
+            facet_options = facet_options.reverse
+            
             facet_options.each do |option, count| %>
-            <li><h5><%= facet %></h5>
+            <li>
             <%= link_to "#{option} (#{count})", search_path(:facet => option, :page => 1, :archive_id => @current_archive.id) %></li>
           <% end %>
         <% end %>
