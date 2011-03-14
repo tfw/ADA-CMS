@@ -3,7 +3,7 @@
     <% @facets.each do |facet, facet_options| %>
       <% facet_options.each do |option, count| %>
         <li><h5><%= facet %></h5>
-        <%= link_to "#{option} (#{count})", :params => {facet => option, :page => 1} %></li>
+        <%= link_to "#{option} (#{count})", search_path, :params => {facet => option, :page => 1, :archive_id => @current_archive.id} %></li>
       <% end %>
     <% end %>
   </ul>
