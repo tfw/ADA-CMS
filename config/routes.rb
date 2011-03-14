@@ -32,6 +32,8 @@ Ada::Application.routes.draw do
   end
 
   get '/search', :to => "search#sphinx"
+  get '/browse', :to => "search#facets"
+  
 
   inkling_match(:archive_studies)
   inkling_match(:pages)
