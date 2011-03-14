@@ -15,10 +15,14 @@ class CreateInklingFeedsAndRefactorLogs < ActiveRecord::Migration
       t.integer  "feed_id",    :null => false
       t.integer  "role_id",    :null => false
     end
+    
+    add_column :inkling_logs, :category, :string, :null => false
   end
 
   def self.down
     drop_table "inkling_feed_roles"
     drop_table "inkling_feeds"
+    
+    remove_column :inkling_logs, :category
   end
 end
