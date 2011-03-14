@@ -1,8 +1,9 @@
 <% content_for :sidenav do %>
   <ul>
     <% @archive_facets.each do |archive, facets| %>
-      <%= archive.slug %> <br/>
+      <li id="<%= archive.slug %>"> <%= archive.name %> </li>
       <% if facets.any? %>
+        <ul>
         <% facets.each do |facet, facet_options| 
             limit = facet_options.size > 4 ? 5 : facet_options.size
             next if limit == 0 %>
@@ -10,12 +11,15 @@
             <% facet_options = facet_options.sort_by {|k,v| v}
             facet_options = facet_options.reverse
             
-            facet_options.each do |option, count| %>
+            facet_options[0..limit].each do |option, count| %>
             <li>
-            <%= link_to "#{option} (#{count})", search_path(:facet => option, :page => 1, :archive_id => @current_archive.id) %></li>
+            <%= link_to "#{option} (#{count})", browse_path(:facet => option, :page => 1, :archive_id => @current_archive.id) %>
+            </li>
           <% end %>
         <% end %>
+        </ul>
       <% end %>
     <% end %>
   </ul>
 <% end %>
+
