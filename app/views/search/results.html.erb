@@ -2,32 +2,33 @@
   <%= render :partial => '/shared/side_nav' %>
 <% end %>
 
+<% content_for(:breadcrumbs) do %>
+	Search: <%= @term %>
+<% end %>
 
-
-<p>
-  <% if @sphinx.any? %>
-    <div id="search_report">
-      <% if @sphinx.results[:words].size > 1 %>
-      <ul>
-        <% @sphinx.results[:words].each do |k,v| %>
-          <% if v[:hits].to_i > 0 %>
-            <li>
-                <em> <%= k %> </em> appeared <%= pluralize(v[:hits], 'time') %> in <%= pluralize(v[:docs], 'document') %>.
-            </li>
-          <% end %>
+<% if @sphinx.any? %>
+  <div id="search_report">
+    <% if @sphinx.results[:words].size > 1 %>
+    <ul>
+      <% @sphinx.results[:words].each do |k,v| %>
+        <% if v[:hits].to_i > 0 %>
+          <li>
+              <em> <%= k %> </em> appeared <%= pluralize(v[:hits], 'time') %> in <%= pluralize(v[:docs], 'document') %>.
+          </li>
         <% end %>
-      </ul>
-      <% else %>
-        <span>
-          <em> <%= @term %></em> appeared <%= pluralize(@sphinx.results[:words].first.last[:hits], 'time') %> in <%=pluralize(@sphinx.results[:words].first.last[:hits], 'document') %>.
-        </span>
       <% end %>
-    </div>
+    </ul>
     <% else %>
-    <div id="search_report">
-      There were no results for <%= @term %>.
-    </div>
-  <% end %>
+      <span>
+        <em> <%= @term %></em> appeared <%= pluralize(@sphinx.results[:words].first.last[:hits], 'time') %> in <%=pluralize(@sphinx.results[:words].first.last[:hits], 'document') %>.
+      </span>
+    <% end %>
+  </div>
+  <% else %>
+  <div id="search_report">
+    There were no results for <%= @term %>.
+  </div>
+<% end %>
 <p/>
 
 
