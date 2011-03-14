@@ -25,31 +25,31 @@ class Archive < ActiveRecord::Base
   INTERNATIONAL   = "International"
 
   def self.ada
-    @ADA_ARCHIVE ||= self.find_by_name(ADA)
+    @@ada_archive ||= self.find_by_name(ADA)
   end
 
   def self.social_science
-    @SOCIAL_SCIENCE_ARCHIVE ||= self.find_by_name(SOCIAL_SCIENCE)
+    @@social_science_archive ||= self.find_by_name(SOCIAL_SCIENCE)
   end
 
   def self.historical
-    @HISTORICAL_ARCHIVE ||= self.find_by_name(HISTORICAL)
+    @@historical_archive ||= self.find_by_name(HISTORICAL)
   end
 
   def self.indigenous
-    @INDIGENOUS_ARCHIVE ||= self.find_by_name(INDIGENOUS)
+    @@indigenous_archive ||= self.find_by_name(INDIGENOUS)
   end
 
   def self.longitudinal
-    @LONGITUDINAL_ARCHIVE ||= self.find_by_name(LONGITUDINAL)
+    @@longitudinal_archive ||= self.find_by_name(LONGITUDINAL)
   end
 
   def self.qualitative
-    @QUALITATIVE_ARCHIVE ||= self.find_by_name(QUALITATIVE)
+    @@qualitative_archive ||= self.find_by_name(QUALITATIVE)
   end
 
   def self.international
-    @INTERNATIONAL_ARCHIVE ||= self.find_by_name(INTERNATIONAL)
+    @@international_archive ||= self.find_by_name(INTERNATIONAL)
   end
 
   def set_slug

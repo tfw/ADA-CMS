@@ -48,7 +48,7 @@ class Study < ActiveRecord::Base
     study.data_kind = data[:dataKind]
     data.delete(:dataKind)
     study.sampling = data[:sampling].split(/\n/).first
-    data.delete(:dataKind)
+    data.delete(:sampling)
     study.collection_method = data[:collMode]
     data.delete(:collMode)
 
