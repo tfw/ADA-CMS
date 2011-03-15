@@ -1,3 +1,7 @@
+<% content_for(:breadcrumbs) do %>
+  DDI Mappings
+<% end %>
+
 <fieldset>
   <legend>DDI Mappings</legend>
 
@@ -7,10 +11,16 @@ Map human readable names to DDI elements & attributes. <br/> See table below for
 
 <div id="mappings-form" align='left'>
   
-  <% form_for([:staff, @ddi_mapping]) do |f| %>
+  <% semantic_form_for([:staff, @ddi_mapping]) do |f| %>
     <% unless @ddi_mapping.new_record? %>
       <%= f.hidden_field :id %>
     <% end %>
+
+    <li class="string">
+      <label for="ddi_mapping_id">DDI Element</label>
+      <%= f.input :id, :as => :select, :collection => @ddi_missing_mappings  %>
+    </li> 
+
 
   <div class="fields select_fields">
      <p> <%= f.label 'DDI' %>
@@ -30,9 +40,11 @@ Map human readable names to DDI elements & attributes. <br/> See table below for
     <%= f.text_area :description, :rows => 3 %>
    </div>
 
-   <div class="buttons">
-    <%= f.submit("Save") %>
-  </div>
+   <h3>Actions</h3>
+   <%- f.buttons do -%>
+     <%= f.commit_button %>
+   <%- end -%>
+   
   <% end %>
 </div>
 

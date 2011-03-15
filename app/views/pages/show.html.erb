@@ -1,3 +1,7 @@
+<% content_for(:sidenav) do %>
+  <%= render :partial => '/shared/side_nav' %>
+<% end %>
+
 <% content_for(:breadcrumbs) do %>
 	<%= @page.path.slug %>
 <% end %>
