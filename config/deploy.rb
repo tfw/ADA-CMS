@@ -46,7 +46,7 @@ desc "generate a new database.yml"
 task :generate_database_yml, :roles => :app do
   
   # buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgres', :password => "test123", :encoding => 'unicode'}}
-  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'deploy', 'encoding' => 'unicode'}}
+  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'deploy', 'password' => '2d2d3pl0y', 'encoding' => 'unicode'}}
   put YAML::dump(buffer), "#{current_path}/config/database.yml", :mode => 0664
 end
 
