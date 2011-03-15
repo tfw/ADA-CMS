@@ -1,7 +1,17 @@
 <nav>
   facet browse goes here
+  <% @facets.each do |facet, facet_options| %>
+    <h5><%= facet %></h5>
+    <ul>
+    <% facet_options.each do |option, count| %>
+      <li><%= link_to "#{option} (#{count})", :params => {facet => option, :page => 1} %></li>
+    <% end %>
+    </ul>
+  <% end %>
+  
   </br>
 </nav>
+
 
 <p>
   <% if @sphinx.any? %>

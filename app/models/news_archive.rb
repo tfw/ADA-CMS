@@ -12,7 +12,7 @@ class NewsArchive < ActiveRecord::Base
   validates_presence_of :archive
   validates_presence_of :news
 
-  named_scope :recent, proc { { :limit => 10, :order => "created_at DESC" } }
+  scope :recent, proc { { :limit => 10, :order => "created_at DESC" } }
 
   # This method creates the slug to store on the Inkling::Path (see Inkling::Path) 
   def generate_path_slug
