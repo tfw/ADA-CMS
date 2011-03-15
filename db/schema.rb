@@ -175,6 +175,7 @@ ActiveRecord::Schema.define(:version => 20110310000715) do
   create_table "news_archives", :force => true do |t|
     t.integer  "news_id"
     t.integer  "archive_id"
+    t.string   "foo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

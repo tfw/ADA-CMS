@@ -12,6 +12,10 @@ namespace :ada do
   task :rebuild => ["db:drop", "db:create", "db:load", "db:migrate", "db:seed"]
 end
 
+task :foo do
+  system("rm -rf db/schema.rb")
+end
+
 task :restore_postgres do
   system("psql -d ada_#{Rails.env} < ada_data_13_2_2011.out")
 end

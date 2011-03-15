@@ -17,6 +17,7 @@ class CreateNews < ActiveRecord::Migration
     create_table :news_archives do |t|
       t.integer :news_id, :null => :false
       t.integer :archive_id, :null => :false
+      t.string :foo, :null => :false
       t.timestamps
     end
 

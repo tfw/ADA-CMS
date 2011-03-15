@@ -1,3 +1,47 @@
+--- 
+archives: 
+  columns: 
+  - id
+  - name
+  - slug
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Social Science
+    - social-science
+    - 2010-11-24 09:15:14.568629
+    - 2010-11-24 09:15:14.568629
+  - - "2"
+    - Historical
+    - historical
+    - 2010-11-24 09:15:14.575657
+    - 2010-11-24 09:15:14.575657
+  - - "3"
+    - Indigenous
+    - indigenous
+    - 2010-11-24 09:15:14.580278
+    - 2010-11-24 09:15:14.580278
+  - - "4"
+    - Longitudinal
+    - longitudinal
+    - 2010-11-24 09:15:14.584752
+    - 2010-11-24 09:15:14.584752
+  - - "5"
+    - Qualitative
+    - qualitative
+    - 2010-11-24 09:15:14.589441
+    - 2010-11-24 09:15:14.589441
+  - - "6"
+    - International
+    - international
+    - 2010-11-24 09:15:14.594251
+    - 2010-11-24 09:15:14.594251
+  - - "7"
+    - ADA
+    - ada
+    - 2011-02-23 02:36:55.95668
+    - 2011-02-23 02:36:55.95668
 
 --- 
 inkling_themes: 
@@ -73966,51 +74010,6 @@ inkling_users:
     - 
     - 
     - 
-
---- 
-archives: 
-  columns: 
-  - id
-  - name
-  - slug
-  - created_at
-  - updated_at
-  records: 
-  - - "1"
-    - Social Science
-    - social-science
-    - 2010-11-24 09:15:14.568629
-    - 2010-11-24 09:15:14.568629
-  - - "2"
-    - Historical
-    - historical
-    - 2010-11-24 09:15:14.575657
-    - 2010-11-24 09:15:14.575657
-  - - "3"
-    - Indigenous
-    - indigenous
-    - 2010-11-24 09:15:14.580278
-    - 2010-11-24 09:15:14.580278
-  - - "4"
-    - Longitudinal
-    - longitudinal
-    - 2010-11-24 09:15:14.584752
-    - 2010-11-24 09:15:14.584752
-  - - "5"
-    - Qualitative
-    - qualitative
-    - 2010-11-24 09:15:14.589441
-    - 2010-11-24 09:15:14.589441
-  - - "6"
-    - International
-    - international
-    - 2010-11-24 09:15:14.594251
-    - 2010-11-24 09:15:14.594251
-  - - "7"
-    - ADA
-    - ada
-    - 2011-02-23 02:36:55.95668
-    - 2011-02-23 02:36:55.95668
 
 --- 
 archive_studies: 

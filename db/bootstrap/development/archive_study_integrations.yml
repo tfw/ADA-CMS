@@ -1,0 +1,1761 @@
+--- 
+archive_study_integrations_001: 
+  id: "1"
+  study_id: "1"
+  archive_study_id: "1"
+  archive_study_query_id: 
+  ddi_id: "00103"
+  archive_id: "6"
+  user_id: "4"
+  created_at: 2011-02-23 02:37:52.042875
+  updated_at: 2011-02-23 02:50:29.992759
+archive_study_integrations_002: 
+  id: "2"
+  study_id: "33"
+  archive_study_id: "33"
+  archive_study_query_id: "1"
+  ddi_id: 00292
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.257012
+  updated_at: 2011-02-23 02:53:43.908064
+archive_study_integrations_003: 
+  id: "3"
+  study_id: "134"
+  archive_study_id: "135"
+  archive_study_query_id: "1"
+  ddi_id: 08003-sa_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.264975
+  updated_at: 2011-02-23 02:55:15.274168
+archive_study_integrations_004: 
+  id: "4"
+  study_id: "98"
+  archive_study_id: "99"
+  archive_study_query_id: "1"
+  ddi_id: "01016"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.268793
+  updated_at: 2011-02-23 02:54:41.104032
+archive_study_integrations_005: 
+  id: "5"
+  study_id: "69"
+  archive_study_id: "70"
+  archive_study_query_id: "1"
+  ddi_id: 00862
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.272537
+  updated_at: 2011-02-23 02:54:15.715441
+archive_study_integrations_006: 
+  id: "6"
+  study_id: "94"
+  archive_study_id: "95"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic01
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.276347
+  updated_at: 2011-02-23 02:54:36.861283
+archive_study_integrations_007: 
+  id: "7"
+  study_id: "169"
+  archive_study_id: "170"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc97
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.280167
+  updated_at: 2011-02-23 02:55:47.454079
+archive_study_integrations_008: 
+  id: "8"
+  study_id: "93"
+  archive_study_id: "94"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic99
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.283941
+  updated_at: 2011-02-23 02:54:36.100376
+archive_study_integrations_009: 
+  id: "9"
+  study_id: "154"
+  archive_study_id: "155"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi04
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.287702
+  updated_at: 2011-02-23 02:55:33.730899
+archive_study_integrations_010: 
+  id: "10"
+  study_id: "11"
+  archive_study_id: "11"
+  archive_study_query_id: "1"
+  ddi_id: 08003-wa_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.291524
+  updated_at: 2011-02-23 02:53:25.891978
+archive_study_integrations_011: 
+  id: "11"
+  study_id: "132"
+  archive_study_id: "133"
+  archive_study_query_id: "1"
+  ddi_id: 08003-aus
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.295291
+  updated_at: 2011-02-23 02:55:13.420005
+archive_study_integrations_012: 
+  id: "12"
+  study_id: "104"
+  archive_study_id: "105"
+  archive_study_query_id: "1"
+  ddi_id: "00423"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.299076
+  updated_at: 2011-02-23 02:54:46.985552
+archive_study_integrations_013: 
+  id: "13"
+  study_id: "150"
+  archive_study_id: "151"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc00
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.302817
+  updated_at: 2011-02-23 02:55:30.136022
+archive_study_integrations_014: 
+  id: "14"
+  study_id: "153"
+  archive_study_id: "154"
+  archive_study_query_id: "1"
+  ddi_id: "00455"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.306562
+  updated_at: 2011-02-23 02:55:32.780075
+archive_study_integrations_015: 
+  id: "15"
+  study_id: "151"
+  archive_study_id: "152"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic03
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.310327
+  updated_at: 2011-02-23 02:55:30.943029
+archive_study_integrations_016: 
+  id: "16"
+  study_id: "133"
+  archive_study_id: "134"
+  archive_study_query_id: "1"
+  ddi_id: 00822-p02
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.314073
+  updated_at: 2011-02-23 02:55:14.265397
+archive_study_integrations_017: 
+  id: "17"
+  study_id: "54"
+  archive_study_id: "55"
+  archive_study_query_id: "1"
+  ddi_id: "00767"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.317881
+  updated_at: 2011-02-23 02:54:02.584062
+archive_study_integrations_018: 
+  id: "18"
+  study_id: "44"
+  archive_study_id: "45"
+  archive_study_query_id: "1"
+  ddi_id: 00268
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.321664
+  updated_at: 2011-02-23 02:53:53.93489
+archive_study_integrations_019: 
+  id: "19"
+  study_id: "166"
+  archive_study_id: "167"
+  archive_study_query_id: "1"
+  ddi_id: 00594
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.325455
+  updated_at: 2011-02-23 02:55:44.832968
+archive_study_integrations_020: 
+  id: "20"
+  study_id: "46"
+  archive_study_id: "47"
+  archive_study_query_id: "1"
+  ddi_id: 00102-f
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.329229
+  updated_at: 2011-02-23 02:53:55.651755
+archive_study_integrations_021: 
+  id: "21"
+  study_id: "147"
+  archive_study_id: "148"
+  archive_study_query_id: "1"
+  ddi_id: 01081
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.332991
+  updated_at: 2011-02-23 02:55:27.242903
+archive_study_integrations_022: 
+  id: "22"
+  study_id: "170"
+  archive_study_id: "171"
+  archive_study_query_id: "1"
+  ddi_id: "01001"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.336748
+  updated_at: 2011-02-23 02:55:48.346184
+archive_study_integrations_023: 
+  id: "23"
+  study_id: "1"
+  archive_study_id: "37"
+  archive_study_query_id: "1"
+  ddi_id: "00103"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.340515
+  updated_at: 2011-02-23 02:53:47.07354
+archive_study_integrations_024: 
+  id: "24"
+  study_id: "31"
+  archive_study_id: "31"
+  archive_study_query_id: "1"
+  ddi_id: 00186
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.344291
+  updated_at: 2011-02-23 02:53:42.257813
+archive_study_integrations_025: 
+  id: "25"
+  study_id: "18"
+  archive_study_id: "18"
+  archive_study_query_id: "1"
+  ddi_id: 08003-vic_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.348236
+  updated_at: 2011-02-23 02:53:31.611661
+archive_study_integrations_026: 
+  id: "26"
+  study_id: "164"
+  archive_study_id: "165"
+  archive_study_query_id: "1"
+  ddi_id: 01049
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.35209
+  updated_at: 2011-02-23 02:55:43.014373
+archive_study_integrations_027: 
+  id: "27"
+  study_id: "92"
+  archive_study_id: "93"
+  archive_study_query_id: "1"
+  ddi_id: 00943
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.355886
+  updated_at: 2011-02-23 02:54:35.205821
+archive_study_integrations_028: 
+  id: "28"
+  study_id: "85"
+  archive_study_id: "86"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nt_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.359679
+  updated_at: 2011-02-23 02:54:29.299817
+archive_study_integrations_029: 
+  id: "29"
+  study_id: "135"
+  archive_study_id: "136"
+  archive_study_query_id: "1"
+  ddi_id: 00798-unu
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.363449
+  updated_at: 2011-02-23 02:55:16.211336
+archive_study_integrations_030: 
+  id: "30"
+  study_id: "144"
+  archive_study_id: "145"
+  archive_study_query_id: "1"
+  ddi_id: 08003-vic_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.367636
+  updated_at: 2011-02-23 02:55:24.424288
+archive_study_integrations_031: 
+  id: "31"
+  study_id: "53"
+  archive_study_id: "54"
+  archive_study_query_id: "1"
+  ddi_id: "00652"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.371404
+  updated_at: 2011-02-23 02:54:01.707849
+archive_study_integrations_032: 
+  id: "32"
+  study_id: "121"
+  archive_study_id: "122"
+  archive_study_query_id: "1"
+  ddi_id: 00182
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.375182
+  updated_at: 2011-02-23 02:55:01.657534
+archive_study_integrations_033: 
+  id: "33"
+  study_id: "80"
+  archive_study_id: "81"
+  archive_study_query_id: "1"
+  ddi_id: 00798-deu
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.378988
+  updated_at: 2011-02-23 02:54:24.832519
+archive_study_integrations_034: 
+  id: "34"
+  study_id: "60"
+  archive_study_id: "61"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi96
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.382733
+  updated_at: 2011-02-23 02:54:07.423155
+archive_study_integrations_035: 
+  id: "35"
+  study_id: "118"
+  archive_study_id: "119"
+  archive_study_query_id: "1"
+  ddi_id: 01091
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.38651
+  updated_at: 2011-02-23 02:54:59.203856
+archive_study_integrations_036: 
+  id: "36"
+  study_id: "97"
+  archive_study_id: "98"
+  archive_study_query_id: "1"
+  ddi_id: 08003-tas_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.390339
+  updated_at: 2011-02-23 02:54:40.213066
+archive_study_integrations_037: 
+  id: "37"
+  study_id: "167"
+  archive_study_id: "168"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi01
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.394126
+  updated_at: 2011-02-23 02:55:45.710915
+archive_study_integrations_038: 
+  id: "38"
+  study_id: "122"
+  archive_study_id: "123"
+  archive_study_query_id: "1"
+  ddi_id: "00602"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.397918
+  updated_at: 2011-02-23 02:55:02.695355
+archive_study_integrations_039: 
+  id: "39"
+  study_id: "148"
+  archive_study_id: "149"
+  archive_study_query_id: "1"
+  ddi_id: 00967
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.401718
+  updated_at: 2011-02-23 02:55:28.289869
+archive_study_integrations_040: 
+  id: "40"
+  study_id: "4"
+  archive_study_id: "4"
+  archive_study_query_id: "1"
+  ddi_id: "00601"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.405519
+  updated_at: 2011-02-23 02:53:19.70799
+archive_study_integrations_041: 
+  id: "41"
+  study_id: "2"
+  archive_study_id: "2"
+  archive_study_query_id: "1"
+  ddi_id: 08003-sa_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.409411
+  updated_at: 2011-02-23 02:53:17.54361
+archive_study_integrations_042: 
+  id: "42"
+  study_id: "29"
+  archive_study_id: "29"
+  archive_study_query_id: "1"
+  ddi_id: 01128
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.413218
+  updated_at: 2011-02-23 02:53:40.591779
+archive_study_integrations_043: 
+  id: "43"
+  study_id: "126"
+  archive_study_id: "127"
+  archive_study_query_id: "1"
+  ddi_id: 01139
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.416978
+  updated_at: 2011-02-23 02:55:06.596421
+archive_study_integrations_044: 
+  id: "44"
+  study_id: "45"
+  archive_study_id: "46"
+  archive_study_query_id: "1"
+  ddi_id: 08003-qld_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.420798
+  updated_at: 2011-02-23 02:53:54.824375
+archive_study_integrations_045: 
+  id: "45"
+  study_id: "114"
+  archive_study_id: "115"
+  archive_study_query_id: "1"
+  ddi_id: 08003-tas_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.424564
+  updated_at: 2011-02-23 02:54:55.717093
+archive_study_integrations_046: 
+  id: "46"
+  study_id: "20"
+  archive_study_id: "20"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nsw_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.428348
+  updated_at: 2011-02-23 02:53:33.209591
+archive_study_integrations_047: 
+  id: "47"
+  study_id: "15"
+  archive_study_id: "15"
+  archive_study_query_id: "1"
+  ddi_id: 01069-r
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.432155
+  updated_at: 2011-02-23 02:53:29.164752
+archive_study_integrations_048: 
+  id: "48"
+  study_id: "160"
+  archive_study_id: "161"
+  archive_study_query_id: "1"
+  ddi_id: 01018-pub
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.436015
+  updated_at: 2011-02-23 02:55:39.126996
+archive_study_integrations_049: 
+  id: "49"
+  study_id: "95"
+  archive_study_id: "96"
+  archive_study_query_id: "1"
+  ddi_id: 08003-act_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.439815
+  updated_at: 2011-02-23 02:54:37.692165
+archive_study_integrations_050: 
+  id: "50"
+  study_id: "9"
+  archive_study_id: "9"
+  archive_study_query_id: "1"
+  ddi_id: 08003-sa_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.443599
+  updated_at: 2011-02-23 02:53:24.141972
+archive_study_integrations_051: 
+  id: "51"
+  study_id: "40"
+  archive_study_id: "41"
+  archive_study_query_id: "1"
+  ddi_id: 01128-r
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.447379
+  updated_at: 2011-02-23 02:53:50.499103
+archive_study_integrations_052: 
+  id: "52"
+  study_id: "50"
+  archive_study_id: "51"
+  archive_study_query_id: "1"
+  ddi_id: 08003-qld_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.451176
+  updated_at: 2011-02-23 02:53:59.182088
+archive_study_integrations_053: 
+  id: "53"
+  study_id: "55"
+  archive_study_id: "56"
+  archive_study_query_id: "1"
+  ddi_id: "00171"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.454948
+  updated_at: 2011-02-23 02:54:03.349829
+archive_study_integrations_054: 
+  id: "54"
+  study_id: "13"
+  archive_study_id: "13"
+  archive_study_query_id: "1"
+  ddi_id: 00619
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.458693
+  updated_at: 2011-02-23 02:53:27.556076
+archive_study_integrations_055: 
+  id: "55"
+  study_id: "124"
+  archive_study_id: "125"
+  archive_study_query_id: "1"
+  ddi_id: 08003-vic_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.462506
+  updated_at: 2011-02-23 02:55:04.5595
+archive_study_integrations_056: 
+  id: "56"
+  study_id: "76"
+  archive_study_id: "77"
+  archive_study_query_id: "1"
+  ddi_id: 00369
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.466294
+  updated_at: 2011-02-23 02:54:21.359899
+archive_study_integrations_057: 
+  id: "57"
+  study_id: "149"
+  archive_study_id: "150"
+  archive_study_query_id: "1"
+  ddi_id: "00625"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.47009
+  updated_at: 2011-02-23 02:55:29.23693
+archive_study_integrations_058: 
+  id: "58"
+  study_id: "70"
+  archive_study_id: "71"
+  archive_study_query_id: "1"
+  ddi_id: 08003-qld_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.473913
+  updated_at: 2011-02-23 02:54:16.507304
+archive_study_integrations_059: 
+  id: "59"
+  study_id: "51"
+  archive_study_id: "52"
+  archive_study_query_id: "1"
+  ddi_id: 00941
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.477678
+  updated_at: 2011-02-23 02:54:00.008156
+archive_study_integrations_060: 
+  id: "60"
+  study_id: "168"
+  archive_study_id: "169"
+  archive_study_query_id: "1"
+  ddi_id: 00189
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.48147
+  updated_at: 2011-02-23 02:55:46.585318
+archive_study_integrations_061: 
+  id: "61"
+  study_id: "67"
+  archive_study_id: "68"
+  archive_study_query_id: "1"
+  ddi_id: "00314"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.485285
+  updated_at: 2011-02-23 02:54:14.015712
+archive_study_integrations_062: 
+  id: "62"
+  study_id: "75"
+  archive_study_id: "76"
+  archive_study_query_id: "1"
+  ddi_id: 00102-h
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.489081
+  updated_at: 2011-02-23 02:54:20.62143
+archive_study_integrations_063: 
+  id: "63"
+  study_id: "157"
+  archive_study_id: "158"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc03
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.492875
+  updated_at: 2011-02-23 02:55:36.340065
+archive_study_integrations_064: 
+  id: "64"
+  study_id: "110"
+  archive_study_id: "111"
+  archive_study_query_id: "1"
+  ddi_id: "00141"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.496639
+  updated_at: 2011-02-23 02:54:52.153265
+archive_study_integrations_065: 
+  id: "65"
+  study_id: "41"
+  archive_study_id: "42"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc01
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.502123
+  updated_at: 2011-02-23 02:53:51.228818
+archive_study_integrations_066: 
+  id: "66"
+  study_id: "34"
+  archive_study_id: "34"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nt_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.507508
+  updated_at: 2011-02-23 02:53:44.740691
+archive_study_integrations_067: 
+  id: "67"
+  study_id: "89"
+  archive_study_id: "90"
+  archive_study_query_id: "1"
+  ddi_id: "00321"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.51271
+  updated_at: 2011-02-23 02:54:32.777236
+archive_study_integrations_068: 
+  id: "68"
+  study_id: "152"
+  archive_study_id: "153"
+  archive_study_query_id: "1"
+  ddi_id: "00223"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.517891
+  updated_at: 2011-02-23 02:55:31.914125
+archive_study_integrations_069: 
+  id: "69"
+  study_id: "107"
+  archive_study_id: "108"
+  archive_study_query_id: "1"
+  ddi_id: 08003-tas_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.560113
+  updated_at: 2011-02-23 02:54:49.710541
+archive_study_integrations_070: 
+  id: "70"
+  study_id: "28"
+  archive_study_id: "28"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc98
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.564365
+  updated_at: 2011-02-23 02:53:39.808282
+archive_study_integrations_071: 
+  id: "71"
+  study_id: "130"
+  archive_study_id: "131"
+  archive_study_query_id: "1"
+  ddi_id: 08003-sa_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.5681
+  updated_at: 2011-02-23 02:55:11.591151
+archive_study_integrations_072: 
+  id: "72"
+  study_id: "72"
+  archive_study_id: "73"
+  archive_study_query_id: "1"
+  ddi_id: 08003-wa_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.571781
+  updated_at: 2011-02-23 02:54:18.245145
+archive_study_integrations_073: 
+  id: "73"
+  study_id: "5"
+  archive_study_id: "5"
+  archive_study_query_id: "1"
+  ddi_id: 00102-m
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.575518
+  updated_at: 2011-02-23 02:53:20.835762
+archive_study_integrations_074: 
+  id: "74"
+  study_id: "36"
+  archive_study_id: "36"
+  archive_study_query_id: "1"
+  ddi_id: "00604"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.579252
+  updated_at: 2011-02-23 02:53:46.362724
+archive_study_integrations_075: 
+  id: "75"
+  study_id: "49"
+  archive_study_id: "50"
+  archive_study_query_id: "1"
+  ddi_id: 08003-sa_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.583045
+  updated_at: 2011-02-23 02:53:58.274594
+archive_study_integrations_076: 
+  id: "76"
+  study_id: "127"
+  archive_study_id: "128"
+  archive_study_query_id: "1"
+  ddi_id: 08003-wa_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.586836
+  updated_at: 2011-02-23 02:55:07.674321
+archive_study_integrations_077: 
+  id: "77"
+  study_id: "131"
+  archive_study_id: "132"
+  archive_study_query_id: "1"
+  ddi_id: 01079-s
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.590558
+  updated_at: 2011-02-23 02:55:12.479974
+archive_study_integrations_078: 
+  id: "78"
+  study_id: "87"
+  archive_study_id: "88"
+  archive_study_query_id: "1"
+  ddi_id: "00401"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.594296
+  updated_at: 2011-02-23 02:54:31.115656
+archive_study_integrations_079: 
+  id: "79"
+  study_id: "19"
+  archive_study_id: "19"
+  archive_study_query_id: "1"
+  ddi_id: 00519
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.59803
+  updated_at: 2011-02-23 02:53:32.457681
+archive_study_integrations_080: 
+  id: "80"
+  study_id: "145"
+  archive_study_id: "146"
+  archive_study_query_id: "1"
+  ddi_id: 08003-wa_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.601849
+  updated_at: 2011-02-23 02:55:25.412146
+archive_study_integrations_081: 
+  id: "81"
+  study_id: "143"
+  archive_study_id: "144"
+  archive_study_query_id: "1"
+  ddi_id: 08003-qld_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.605593
+  updated_at: 2011-02-23 02:55:23.50726
+archive_study_integrations_082: 
+  id: "82"
+  study_id: "141"
+  archive_study_id: "142"
+  archive_study_query_id: "1"
+  ddi_id: 00764-pub
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.609353
+  updated_at: 2011-02-23 02:55:21.579556
+archive_study_integrations_083: 
+  id: "83"
+  study_id: "100"
+  archive_study_id: "101"
+  archive_study_query_id: "1"
+  ddi_id: 00986
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.613115
+  updated_at: 2011-02-23 02:54:43.078755
+archive_study_integrations_084: 
+  id: "84"
+  study_id: "74"
+  archive_study_id: "75"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic96
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.616889
+  updated_at: 2011-02-23 02:54:19.830553
+archive_study_integrations_085: 
+  id: "85"
+  study_id: "115"
+  archive_study_id: "116"
+  archive_study_query_id: "1"
+  ddi_id: 01079-r
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.620691
+  updated_at: 2011-02-23 02:54:56.589235
+archive_study_integrations_086: 
+  id: "86"
+  study_id: "136"
+  archive_study_id: "137"
+  archive_study_query_id: "1"
+  ddi_id: "00115"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.624536
+  updated_at: 2011-02-23 02:55:17.110305
+archive_study_integrations_087: 
+  id: "87"
+  study_id: "142"
+  archive_study_id: "143"
+  archive_study_query_id: "1"
+  ddi_id: "01050"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.628349
+  updated_at: 2011-02-23 02:55:22.516998
+archive_study_integrations_088: 
+  id: "88"
+  study_id: "66"
+  archive_study_id: "67"
+  archive_study_query_id: "1"
+  ddi_id: 08003-tas_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.632163
+  updated_at: 2011-02-23 02:54:13.159916
+archive_study_integrations_089: 
+  id: "89"
+  study_id: "39"
+  archive_study_id: "40"
+  archive_study_query_id: "1"
+  ddi_id: 00944-pub
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.635969
+  updated_at: 2011-02-23 02:53:49.494919
+archive_study_integrations_090: 
+  id: "90"
+  study_id: "125"
+  archive_study_id: "126"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nsw_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.639761
+  updated_at: 2011-02-23 02:55:05.620655
+archive_study_integrations_091: 
+  id: "91"
+  study_id: "88"
+  archive_study_id: "89"
+  archive_study_query_id: "1"
+  ddi_id: 08003-vic_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.643638
+  updated_at: 2011-02-23 02:54:31.895669
+archive_study_integrations_092: 
+  id: "92"
+  study_id: "8"
+  archive_study_id: "8"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nt_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.647575
+  updated_at: 2011-02-23 02:53:23.215236
+archive_study_integrations_093: 
+  id: "93"
+  study_id: "24"
+  archive_study_id: "24"
+  archive_study_query_id: "1"
+  ddi_id: 08003-tas_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.651413
+  updated_at: 2011-02-23 02:53:36.524518
+archive_study_integrations_094: 
+  id: "94"
+  study_id: "48"
+  archive_study_id: "49"
+  archive_study_query_id: "1"
+  ddi_id: 08003-vic_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.656964
+  updated_at: 2011-02-23 02:53:57.440076
+archive_study_integrations_095: 
+  id: "95"
+  study_id: "52"
+  archive_study_id: "53"
+  archive_study_query_id: "1"
+  ddi_id: "00422"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.661211
+  updated_at: 2011-02-23 02:54:00.900453
+archive_study_integrations_096: 
+  id: "96"
+  study_id: "111"
+  archive_study_id: "112"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi03
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.665015
+  updated_at: 2011-02-23 02:54:53.095529
+archive_study_integrations_097: 
+  id: "97"
+  study_id: "140"
+  archive_study_id: "141"
+  archive_study_query_id: "1"
+  ddi_id: 08003-sa_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.668793
+  updated_at: 2011-02-23 02:55:20.605006
+archive_study_integrations_098: 
+  id: "98"
+  study_id: "112"
+  archive_study_id: "113"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic98
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.672648
+  updated_at: 2011-02-23 02:54:53.886509
+archive_study_integrations_099: 
+  id: "99"
+  study_id: "14"
+  archive_study_id: "14"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nt_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.676497
+  updated_at: 2011-02-23 02:53:28.393758
+archive_study_integrations_100: 
+  id: "100"
+  study_id: "47"
+  archive_study_id: "48"
+  archive_study_query_id: "1"
+  ddi_id: 01082
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.680346
+  updated_at: 2011-02-23 02:53:56.604462
+archive_study_integrations_101: 
+  id: "101"
+  study_id: "7"
+  archive_study_id: "7"
+  archive_study_query_id: "1"
+  ddi_id: 00571-pub
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.684114
+  updated_at: 2011-02-23 02:53:22.425882
+archive_study_integrations_102: 
+  id: "102"
+  study_id: "156"
+  archive_study_id: "157"
+  archive_study_query_id: "1"
+  ddi_id: "00763"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.687964
+  updated_at: 2011-02-23 02:55:35.429697
+archive_study_integrations_103: 
+  id: "103"
+  study_id: "26"
+  archive_study_id: "26"
+  archive_study_query_id: "1"
+  ddi_id: 08003-act_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.691823
+  updated_at: 2011-02-23 02:53:38.109983
+archive_study_integrations_104: 
+  id: "104"
+  study_id: "146"
+  archive_study_id: "147"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic97
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.695563
+  updated_at: 2011-02-23 02:55:26.250122
+archive_study_integrations_105: 
+  id: "105"
+  study_id: "158"
+  archive_study_id: "159"
+  archive_study_query_id: "1"
+  ddi_id: 01079
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.699373
+  updated_at: 2011-02-23 02:55:37.241311
+archive_study_integrations_106: 
+  id: "106"
+  study_id: "171"
+  archive_study_id: "172"
+  archive_study_query_id: "1"
+  ddi_id: 08003-qld_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.703166
+  updated_at: 2011-02-23 02:55:49.322064
+archive_study_integrations_107: 
+  id: "107"
+  study_id: "10"
+  archive_study_id: "10"
+  archive_study_query_id: "1"
+  ddi_id: 08003-atsic_regions
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.707015
+  updated_at: 2011-02-23 02:53:25.079744
+archive_study_integrations_108: 
+  id: "108"
+  study_id: "83"
+  archive_study_id: "84"
+  archive_study_query_id: "1"
+  ddi_id: 00822-c01
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.711045
+  updated_at: 2011-02-23 02:54:27.475336
+archive_study_integrations_109: 
+  id: "109"
+  study_id: "79"
+  archive_study_id: "80"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nsw_sd
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.714875
+  updated_at: 2011-02-23 02:54:23.905789
+archive_study_integrations_110: 
+  id: "110"
+  study_id: "137"
+  archive_study_id: "138"
+  archive_study_query_id: "1"
+  ddi_id: 00631-nt
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.718701
+  updated_at: 2011-02-23 02:55:17.905511
+archive_study_integrations_111: 
+  id: "111"
+  study_id: "84"
+  archive_study_id: "85"
+  archive_study_query_id: "1"
+  ddi_id: "01120"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.72245
+  updated_at: 2011-02-23 02:54:28.360601
+archive_study_integrations_112: 
+  id: "112"
+  study_id: "117"
+  archive_study_id: "118"
+  archive_study_query_id: "1"
+  ddi_id: 00631-nat
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.726227
+  updated_at: 2011-02-23 02:54:58.287941
+archive_study_integrations_113: 
+  id: "113"
+  study_id: "113"
+  archive_study_id: "114"
+  archive_study_query_id: "1"
+  ddi_id: "01022"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.730019
+  updated_at: 2011-02-23 02:54:54.785416
+archive_study_integrations_114: 
+  id: "114"
+  study_id: "17"
+  archive_study_id: "17"
+  archive_study_query_id: "1"
+  ddi_id: 08003-act_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.733842
+  updated_at: 2011-02-23 02:53:30.747843
+archive_study_integrations_115: 
+  id: "115"
+  study_id: "120"
+  archive_study_id: "121"
+  archive_study_query_id: "1"
+  ddi_id: "00501"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.737602
+  updated_at: 2011-02-23 02:55:00.843559
+archive_study_integrations_116: 
+  id: "116"
+  study_id: "32"
+  archive_study_id: "32"
+  archive_study_query_id: "1"
+  ddi_id: 08003-qld_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.741385
+  updated_at: 2011-02-23 02:53:43.078438
+archive_study_integrations_117: 
+  id: "117"
+  study_id: "155"
+  archive_study_id: "156"
+  archive_study_query_id: "1"
+  ddi_id: 08003-act_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.745165
+  updated_at: 2011-02-23 02:55:34.605983
+archive_study_integrations_118: 
+  id: "118"
+  study_id: "37"
+  archive_study_id: "38"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc05
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.748969
+  updated_at: 2011-02-23 02:53:47.891449
+archive_study_integrations_119: 
+  id: "119"
+  study_id: "82"
+  archive_study_id: "83"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi05
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.752733
+  updated_at: 2011-02-23 02:54:26.692338
+archive_study_integrations_120: 
+  id: "120"
+  study_id: "161"
+  archive_study_id: "162"
+  archive_study_query_id: "1"
+  ddi_id: "01127"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.756565
+  updated_at: 2011-02-23 02:55:40.184368
+archive_study_integrations_121: 
+  id: "121"
+  study_id: "16"
+  archive_study_id: "16"
+  archive_study_query_id: "1"
+  ddi_id: 00335-d
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.760335
+  updated_at: 2011-02-23 02:53:30.010427
+archive_study_integrations_122: 
+  id: "122"
+  study_id: "105"
+  archive_study_id: "106"
+  archive_study_query_id: "1"
+  ddi_id: 01109
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.764102
+  updated_at: 2011-02-23 02:54:47.841716
+archive_study_integrations_123: 
+  id: "123"
+  study_id: "91"
+  archive_study_id: "92"
+  archive_study_query_id: "1"
+  ddi_id: 00335-b
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.767897
+  updated_at: 2011-02-23 02:54:34.47979
+archive_study_integrations_124: 
+  id: "124"
+  study_id: "23"
+  archive_study_id: "23"
+  archive_study_query_id: "1"
+  ddi_id: 08003-act_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.771702
+  updated_at: 2011-02-23 02:53:35.766903
+archive_study_integrations_125: 
+  id: "125"
+  study_id: "78"
+  archive_study_id: "79"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi99
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.775581
+  updated_at: 2011-02-23 02:54:23.162969
+archive_study_integrations_126: 
+  id: "126"
+  study_id: "6"
+  archive_study_id: "6"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi02
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.779421
+  updated_at: 2011-02-23 02:53:21.624304
+archive_study_integrations_127: 
+  id: "127"
+  study_id: "99"
+  archive_study_id: "100"
+  archive_study_query_id: "1"
+  ddi_id: 08003-act_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.783238
+  updated_at: 2011-02-23 02:54:42.079267
+archive_study_integrations_128: 
+  id: "128"
+  study_id: "165"
+  archive_study_id: "166"
+  archive_study_query_id: "1"
+  ddi_id: 08003-tas_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.787015
+  updated_at: 2011-02-23 02:55:43.86696
+archive_study_integrations_129: 
+  id: "129"
+  study_id: "159"
+  archive_study_id: "160"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nt_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.79078
+  updated_at: 2011-02-23 02:55:38.200007
+archive_study_integrations_130: 
+  id: "130"
+  study_id: "3"
+  archive_study_id: "3"
+  archive_study_query_id: "1"
+  ddi_id: "00603"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.794582
+  updated_at: 2011-02-23 02:53:18.671441
+archive_study_integrations_131: 
+  id: "131"
+  study_id: "116"
+  archive_study_id: "117"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nsw_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.798401
+  updated_at: 2011-02-23 02:54:57.48388
+archive_study_integrations_132: 
+  id: "132"
+  study_id: "35"
+  archive_study_id: "35"
+  archive_study_query_id: "1"
+  ddi_id: 01048
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.802186
+  updated_at: 2011-02-23 02:53:45.579619
+archive_study_integrations_133: 
+  id: "133"
+  study_id: "57"
+  archive_study_id: "58"
+  archive_study_query_id: "1"
+  ddi_id: "01003"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.805979
+  updated_at: 2011-02-23 02:54:04.958774
+archive_study_integrations_134: 
+  id: "134"
+  study_id: "139"
+  archive_study_id: "140"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc96
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.809771
+  updated_at: 2011-02-23 02:55:19.658908
+archive_study_integrations_135: 
+  id: "135"
+  study_id: "90"
+  archive_study_id: "91"
+  archive_study_query_id: "1"
+  ddi_id: 08003-vic_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.813684
+  updated_at: 2011-02-23 02:54:33.573214
+archive_study_integrations_136: 
+  id: "136"
+  study_id: "22"
+  archive_study_id: "22"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nsw_aboriginal_sla
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.817558
+  updated_at: 2011-02-23 02:53:34.914852
+archive_study_integrations_137: 
+  id: "137"
+  study_id: "64"
+  archive_study_id: "65"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc99
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.821369
+  updated_at: 2011-02-23 02:54:11.583545
+archive_study_integrations_138: 
+  id: "138"
+  study_id: "73"
+  archive_study_id: "74"
+  archive_study_query_id: "1"
+  ddi_id: 00335-a
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.825207
+  updated_at: 2011-02-23 02:54:19.122518
+archive_study_integrations_139: 
+  id: "139"
+  study_id: "109"
+  archive_study_id: "110"
+  archive_study_query_id: "1"
+  ddi_id: 00799-pub
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.829018
+  updated_at: 2011-02-23 02:54:51.372669
+archive_study_integrations_140: 
+  id: "140"
+  study_id: "58"
+  archive_study_id: "59"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic04
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.832884
+  updated_at: 2011-02-23 02:54:05.847253
+archive_study_integrations_141: 
+  id: "141"
+  study_id: "86"
+  archive_study_id: "87"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic05
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.836677
+  updated_at: 2011-02-23 02:54:30.240643
+archive_study_integrations_142: 
+  id: "142"
+  study_id: "25"
+  archive_study_id: "25"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi00
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.840506
+  updated_at: 2011-02-23 02:53:37.372202
+archive_study_integrations_143: 
+  id: "143"
+  study_id: "119"
+  archive_study_id: "120"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic00
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.844338
+  updated_at: 2011-02-23 02:54:59.947996
+archive_study_integrations_144: 
+  id: "144"
+  study_id: "68"
+  archive_study_id: "69"
+  archive_study_query_id: "1"
+  ddi_id: 08003-atsic_zones
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.848105
+  updated_at: 2011-02-23 02:54:14.765705
+archive_study_integrations_145: 
+  id: "145"
+  study_id: "102"
+  archive_study_id: "103"
+  archive_study_query_id: "1"
+  ddi_id: "00317"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.851874
+  updated_at: 2011-02-23 02:54:44.948987
+archive_study_integrations_146: 
+  id: "146"
+  study_id: "21"
+  archive_study_id: "21"
+  archive_study_query_id: "1"
+  ddi_id: 00798-auu
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.855704
+  updated_at: 2011-02-23 02:53:34.095695
+archive_study_integrations_147: 
+  id: "147"
+  study_id: "108"
+  archive_study_id: "109"
+  archive_study_query_id: "1"
+  ddi_id: 08003-wa_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.859511
+  updated_at: 2011-02-23 02:54:50.530043
+archive_study_integrations_148: 
+  id: "148"
+  study_id: "129"
+  archive_study_id: "130"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc02
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.863392
+  updated_at: 2011-02-23 02:55:10.658475
+archive_study_integrations_149: 
+  id: "149"
+  study_id: "162"
+  archive_study_id: "163"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nt_aboriginal_comm
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.867291
+  updated_at: 2011-02-23 02:55:41.143429
+archive_study_integrations_150: 
+  id: "150"
+  study_id: "128"
+  archive_study_id: "129"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi97
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.871117
+  updated_at: 2011-02-23 02:55:08.582494
+archive_study_integrations_151: 
+  id: "151"
+  study_id: "27"
+  archive_study_id: "27"
+  archive_study_query_id: "1"
+  ddi_id: 00479-p
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.874972
+  updated_at: 2011-02-23 02:53:38.973684
+archive_study_integrations_152: 
+  id: "152"
+  study_id: "63"
+  archive_study_id: "64"
+  archive_study_query_id: "1"
+  ddi_id: 00935
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.878799
+  updated_at: 2011-02-23 02:54:10.849716
+archive_study_integrations_153: 
+  id: "153"
+  study_id: "77"
+  archive_study_id: "78"
+  archive_study_query_id: "1"
+  ddi_id: 00824
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.882671
+  updated_at: 2011-02-23 02:54:22.270881
+archive_study_integrations_154: 
+  id: "154"
+  study_id: "62"
+  archive_study_id: "63"
+  archive_study_query_id: "1"
+  ddi_id: "00322"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.886697
+  updated_at: 2011-02-23 02:54:10.023108
+archive_study_integrations_155: 
+  id: "155"
+  study_id: "138"
+  archive_study_id: "139"
+  archive_study_query_id: "1"
+  ddi_id: "00323"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.890658
+  updated_at: 2011-02-23 02:55:18.835284
+archive_study_integrations_156: 
+  id: "156"
+  study_id: "163"
+  archive_study_id: "164"
+  archive_study_query_id: "1"
+  ddi_id: "00637"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.894655
+  updated_at: 2011-02-23 02:55:41.98364
+archive_study_integrations_157: 
+  id: "157"
+  study_id: "106"
+  archive_study_id: "107"
+  archive_study_query_id: "1"
+  ddi_id: 00618
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.89857
+  updated_at: 2011-02-23 02:54:48.759182
+archive_study_integrations_158: 
+  id: "158"
+  study_id: "96"
+  archive_study_id: "97"
+  archive_study_query_id: "1"
+  ddi_id: "00445"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.90252
+  updated_at: 2011-02-23 02:54:39.242449
+archive_study_integrations_159: 
+  id: "159"
+  study_id: "38"
+  archive_study_id: "39"
+  archive_study_query_id: "1"
+  ddi_id: 00479-emb
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.90644
+  updated_at: 2011-02-23 02:53:48.686822
+archive_study_integrations_160: 
+  id: "160"
+  study_id: "12"
+  archive_study_id: "12"
+  archive_study_query_id: "1"
+  ddi_id: 01025-poi98
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.910359
+  updated_at: 2011-02-23 02:53:26.783146
+archive_study_integrations_161: 
+  id: "161"
+  study_id: "123"
+  archive_study_id: "124"
+  archive_study_query_id: "1"
+  ddi_id: 08003-nsw_sos
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.914255
+  updated_at: 2011-02-23 02:55:03.63041
+archive_study_integrations_162: 
+  id: "162"
+  study_id: "42"
+  archive_study_id: "43"
+  archive_study_query_id: "1"
+  ddi_id: 01025-inc04
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.918145
+  updated_at: 2011-02-23 02:53:52.128861
+archive_study_integrations_163: 
+  id: "163"
+  study_id: "65"
+  archive_study_id: "66"
+  archive_study_query_id: "1"
+  ddi_id: 00178
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.922087
+  updated_at: 2011-02-23 02:54:12.334295
+archive_study_integrations_164: 
+  id: "164"
+  study_id: "71"
+  archive_study_id: "72"
+  archive_study_query_id: "1"
+  ddi_id: "00570"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.926072
+  updated_at: 2011-02-23 02:54:17.412349
+archive_study_integrations_165: 
+  id: "165"
+  study_id: "101"
+  archive_study_id: "102"
+  archive_study_query_id: "1"
+  ddi_id: 08003-wa_ste
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.930066
+  updated_at: 2011-02-23 02:54:43.952309
+archive_study_integrations_166: 
+  id: "166"
+  study_id: "59"
+  archive_study_id: "60"
+  archive_study_query_id: "1"
+  ddi_id: 00822-c02
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.934005
+  updated_at: 2011-02-23 02:54:06.610438
+archive_study_integrations_167: 
+  id: "167"
+  study_id: "56"
+  archive_study_id: "57"
+  archive_study_query_id: "1"
+  ddi_id: 01025-vic02
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.937979
+  updated_at: 2011-02-23 02:54:04.184126
+archive_study_integrations_168: 
+  id: "168"
+  study_id: "81"
+  archive_study_id: "82"
+  archive_study_query_id: "1"
+  ddi_id: 00822-p01
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.941884
+  updated_at: 2011-02-23 02:54:25.680713
+archive_study_integrations_169: 
+  id: "169"
+  study_id: "30"
+  archive_study_id: "30"
+  archive_study_query_id: "1"
+  ddi_id: 00375-nw
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.945796
+  updated_at: 2011-02-23 02:53:41.449143
+archive_study_integrations_170: 
+  id: "170"
+  study_id: "61"
+  archive_study_id: "62"
+  archive_study_query_id: "1"
+  ddi_id: 01159
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.94971
+  updated_at: 2011-02-23 02:54:09.192369
+archive_study_integrations_171: 
+  id: "171"
+  study_id: "103"
+  archive_study_id: "104"
+  archive_study_query_id: "1"
+  ddi_id: "40092"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.953591
+  updated_at: 2011-02-23 02:54:45.834671
+archive_study_integrations_172: 
+  id: "172"
+  study_id: "43"
+  archive_study_id: "44"
+  archive_study_query_id: "1"
+  ddi_id: "40089"
+  archive_id: "3"
+  user_id: "1"
+  created_at: 2011-02-23 02:51:02.957435
+  updated_at: 2011-02-23 02:53:52.915327
+archive_study_integrations_173: 
+  id: "173"
+  study_id: "1"
+  archive_study_id: "1"
+  archive_study_query_id: 
+  ddi_id: "00103"
+  archive_id: "6"
+  user_id: "1"
+  created_at: 2011-03-08 04:41:51.285644
+  updated_at: 2011-03-08 04:42:55.301426
+archive_study_integrations_174: 
+  id: "174"
+  study_id: "1"
+  archive_study_id: "173"
+  archive_study_query_id: 
+  ddi_id: "00103"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-03-08 04:41:51.318702
+  updated_at: 2011-03-08 04:42:55.338077
+archive_study_integrations_175: 
+  id: "175"
+  study_id: "1"
+  archive_study_id: "1"
+  archive_study_query_id: 
+  ddi_id: "00103"
+  archive_id: "6"
+  user_id: "1"
+  created_at: 2011-03-09 02:42:57.066184
+  updated_at: 2011-03-09 02:43:58.774705
+archive_study_integrations_176: 
+  id: "176"
+  study_id: "1"
+  archive_study_id: "173"
+  archive_study_query_id: 
+  ddi_id: "00103"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-03-09 02:42:57.132889
+  updated_at: 2011-03-09 02:43:58.811648

@@ -1,0 +1,9 @@
+--- 
+archive_study_queries_001: 
+  id: "1"
+  archive_id: "3"
+  name: default
+  query: http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT(o)+FROM+Study+o+WHERE+o.abstractText+like+%27%25aborigin%25%27
+  user_id: 
+  created_at: 2011-02-23 02:50:49.828924
+  updated_at: 2011-02-23 02:50:49.828924
