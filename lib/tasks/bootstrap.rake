@@ -1,4 +1,4 @@
-
+#to rebuild the bootstrap files run "rake db:extract_fixtures" and look in tmp/fixtures
 namespace :db do
   
   task :bootstrap => :environment do
