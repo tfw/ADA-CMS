@@ -9,10 +9,8 @@
     </ul>
 <% end %>
 
-<div id="summary" class="content-area">
-  <h2>
-    Archive: <%= @archive.name %>
-  </h2>
+<fieldset>
+  <legend> <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %> </legend>
  
   <h3>Metadata</h3>
 
@@ -78,7 +76,7 @@
     <%- end -%>
 
   <% end %>
-</div>
+</fieldset>
 
 <div id="preview"></div>
 
@@ -111,7 +109,6 @@
     var partial       = $("input:radio[name=page[partial]]:checked").val();
     var body           = CKEDITOR.instances.page_body_editor.getData();    
     var breakout_box   = CKEDITOR.instances.page_breakout_box_editor.getData();  
-    alert(partial);
     $.post("/staff/archives/pages/preview?archive_id=<%=  (@archive.slug) %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},
         function update_preview_pane(html){
           $("#preview").html(html);

@@ -7,7 +7,7 @@
 <% end %>
 
 <aside></aside>
-
+<h1>facets</h1>
 <article>
   <% if @sphinx.any? %>
     <div >
@@ -23,13 +23,13 @@
       </ul>
       <% else %>
         <span>
-          <em> <%= @term %></em> appeared <%= pluralize(@sphinx.results[:words].first.last[:hits], 'time') %> in <%=pluralize(@sphinx.results[:words].first.last[:hits], 'document') %>.
+          <em> <%= @facet %></em> appeared <%= pluralize(@sphinx.results[:words].first.last[:hits], 'time') %> in <%=pluralize(@sphinx.results[:words].first.last[:hits], 'document') %>.
         </span>
       <% end %>
     </div>
     <% else %>
     <div id="search_report">
-      There were no results for <%= @term %>.
+      There were no results for <%= @facet %>.
     </div>
   <% end %>
   <p/>
