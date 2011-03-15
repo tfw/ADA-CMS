@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110310000715) do
+ActiveRecord::Schema.define(:version => 20110315011631) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -158,6 +158,20 @@ ActiveRecord::Schema.define(:version => 20110310000715) do
     t.string   "firstname"
     t.string   "surname"
   end
+
+  create_table "media", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title",              :null => false
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.datetime "asset_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "media", ["title"], :name => "index_media_on_title", :unique => true
+  add_index "media", ["user_id"], :name => "index_media_on_user_id"
 
   create_table "news", :force => true do |t|
     t.integer  "user_id"

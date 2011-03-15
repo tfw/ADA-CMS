@@ -22,8 +22,9 @@ gem 'nokogiri'
 gem 'jquery-rails', '>= 0.2.6' 
 gem 'capistrano-ext'
 gem 'thinking-sphinx', '>= 2.0.0', :require => 'thinking_sphinx'
-gem 'will_paginate'
+gem 'will_paginate', ">=3.0pre"
 gem 'paperclip', "~>2.3"
+gem 'ratom'
 
 # gem "ruby-debug19" #move this into dev group alone later
 
