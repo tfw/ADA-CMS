@@ -9,7 +9,7 @@ Ada::Application.load_tasks
 
 namespace :ada do
   # task :rebuild => ["db:drop", "db:create", "restore_postgres", "db:migrate", "db:seed", "install_theme"]
-  task :rebuild => ["db:drop", "db:create", "db:load", "db:migrate", "db:seed"]
+  task :rebuild => ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme"]
 end
 
 task :foo do

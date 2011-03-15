@@ -1,4 +1,4 @@
-class DDIMapping < ActiveRecord::Base
+class DdiMapping < ActiveRecord::Base
 
   validates_uniqueness_of :ddi 
 
