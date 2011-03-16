@@ -235,9 +235,10 @@ ActiveRecord::Schema.define(:version => 20110315011631) do
     t.text     "abstract"
     t.text     "keywords"
     t.integer  "page_id"
-    t.string   "data_kind_facet"
-    t.string   "sampling_facet"
-    t.string   "collection_mode_facet"
+    t.string   "data_kind"
+    t.string   "sampling_abbr"
+    t.string   "collection_mode_abbr"
+    t.string   "contact_affiliation"
     t.text     "comment"
   end
 

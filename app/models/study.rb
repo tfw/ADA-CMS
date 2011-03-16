@@ -19,9 +19,10 @@ class Study < ActiveRecord::Base
     indexes archives.id, :as => :archive_id 
     
     #facets
-    indexes data_kind_facet, :facet => true
-    indexes sampling_facet, :facet => true
-    indexes collection_mode_facet, :facet => true
+    indexes data_kind, :facet => true
+    indexes sampling_abbr, :facet => true
+    indexes collection_mode_abbr, :facet => true
+    indexes contact_affiliation, :facet => true
   end
 
   
@@ -50,21 +51,22 @@ class Study < ActiveRecord::Base
     data.delete(:keywords)
     study.comment = data[:comment]
     data.delete(:comment)
+    study.contact_affiliation = data[:stdyContactAffiliation]
+    data.delete(:stdyContactAffiliation)
 
     #facet data
     if data[:dataKind]      
       study.data_kind = data[:dataKind]
       data.delete(:dataKind)
     end
-    
+
+    #we dont delete abbreviated data, so all original data is in the study_fields table
     if data[:sampling] and data[:sampling].length < 255
-      study.sampling = data[:sampling].split(/\n/).first
-      data.delete(:sampling)
+      study.sampling_abbr = data[:sampling].split(/\n/).first
     end
     
     if data[:collMode] and data[:collMode].length < 255
-      study.collection_mode = data[:collMode]
-      data.delete(:collMode)
+      study.collection_mode_abbr = data[:collMode]
     end
 
     study.save!
