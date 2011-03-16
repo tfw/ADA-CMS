@@ -1000,6 +1000,16 @@ study_related_materials_100:
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01069-r
 study_related_materials_101: 
+  id: "135"
+  study_id: "20"
+  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
+  created_at: 2011-02-23 02:53:33.80402
+  updated_at: 2011-02-23 02:53:33.80402
+  comment: 
+  creation_date: 2009-04-02 11:23:09.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
+study_related_materials_102: 
   id: "101"
   study_id: "15"
   uri: 
@@ -1009,7 +1019,7 @@ study_related_materials_101:
   creation_date: 2009-04-02 11:23:36.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01069-r
-study_related_materials_102: 
+study_related_materials_103: 
   id: "102"
   study_id: "16"
   uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00335-d.pdf.zip
@@ -1019,7 +1029,7 @@ study_related_materials_102:
   creation_date: 2009-04-02 14:25:46.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00335-d
-study_related_materials_103: 
+study_related_materials_104: 
   id: "103"
   study_id: "16"
   uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00335-d.rtf.zip
@@ -1029,7 +1039,7 @@ study_related_materials_103:
   creation_date: 2009-04-02 14:25:46.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00335-d
-study_related_materials_104: 
+study_related_materials_105: 
   id: "104"
   study_id: "16"
   uri: 
@@ -1039,7 +1049,7 @@ study_related_materials_104:
   creation_date: 2009-04-02 14:25:46.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00335-d
-study_related_materials_105: 
+study_related_materials_106: 
   id: "105"
   study_id: "17"
   uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
@@ -1049,7 +1059,7 @@ study_related_materials_105:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_106: 
+study_related_materials_107: 
   id: "106"
   study_id: "17"
   uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
@@ -1059,7 +1069,7 @@ study_related_materials_106:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_107: 
+study_related_materials_108: 
   id: "107"
   study_id: "17"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -1069,7 +1079,7 @@ study_related_materials_107:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_108: 
+study_related_materials_109: 
   id: "108"
   study_id: "17"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
@@ -1079,7 +1089,7 @@ study_related_materials_108:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_109: 
+study_related_materials_110: 
   id: "109"
   study_id: "17"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
@@ -1089,7 +1099,7 @@ study_related_materials_109:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_110: 
+study_related_materials_111: 
   id: "110"
   study_id: "17"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
@@ -1099,7 +1109,7 @@ study_related_materials_110:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_111: 
+study_related_materials_112: 
   id: "111"
   study_id: "17"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
@@ -1109,7 +1119,7 @@ study_related_materials_111:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_112: 
+study_related_materials_113: 
   id: "112"
   study_id: "17"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
@@ -1119,7 +1129,7 @@ study_related_materials_112:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_113: 
+study_related_materials_114: 
   id: "113"
   study_id: "17"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
@@ -1129,7 +1139,7 @@ study_related_materials_113:
   creation_date: 2009-04-02 14:05:01.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-act_sla
-study_related_materials_114: 
+study_related_materials_115: 
   id: "114"
   study_id: "18"
   uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
@@ -1139,7 +1149,7 @@ study_related_materials_114:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_115: 
+study_related_materials_116: 
   id: "115"
   study_id: "18"
   uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
@@ -1149,7 +1159,7 @@ study_related_materials_115:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_116: 
+study_related_materials_117: 
   id: "116"
   study_id: "18"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -1159,7 +1169,7 @@ study_related_materials_116:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_117: 
+study_related_materials_118: 
   id: "117"
   study_id: "18"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
@@ -1169,7 +1179,7 @@ study_related_materials_117:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_118: 
+study_related_materials_119: 
   id: "118"
   study_id: "18"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
@@ -1179,7 +1189,7 @@ study_related_materials_118:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_119: 
+study_related_materials_120: 
   id: "119"
   study_id: "18"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
@@ -1189,7 +1199,7 @@ study_related_materials_119:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_120: 
+study_related_materials_121: 
   id: "120"
   study_id: "18"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
@@ -1199,7 +1209,7 @@ study_related_materials_120:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_121: 
+study_related_materials_122: 
   id: "121"
   study_id: "18"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
@@ -1209,7 +1219,7 @@ study_related_materials_121:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_122: 
+study_related_materials_123: 
   id: "122"
   study_id: "18"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
@@ -1219,7 +1229,7 @@ study_related_materials_122:
   creation_date: 2009-04-02 10:43:06.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_ste
-study_related_materials_123: 
+study_related_materials_124: 
   id: "123"
   study_id: "19"
   uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00519.html
@@ -1229,7 +1239,7 @@ study_related_materials_123:
   creation_date: 2009-04-02 12:53:41.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00519
-study_related_materials_124: 
+study_related_materials_125: 
   id: "124"
   study_id: "19"
   uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00519.txt.zip
@@ -1239,7 +1249,7 @@ study_related_materials_124:
   creation_date: 2009-04-02 12:53:41.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00519
-study_related_materials_125: 
+study_related_materials_126: 
   id: "125"
   study_id: "19"
   uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00519.pdf.zip
@@ -1249,7 +1259,7 @@ study_related_materials_125:
   creation_date: 2009-04-02 12:53:41.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00519
-study_related_materials_126: 
+study_related_materials_127: 
   id: "126"
   study_id: "19"
   uri: 
@@ -1259,7 +1269,7 @@ study_related_materials_126:
   creation_date: 2009-04-02 12:53:41.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00519
-study_related_materials_127: 
+study_related_materials_128: 
   id: "127"
   study_id: "20"
   uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
@@ -1269,7 +1279,7 @@ study_related_materials_127:
   creation_date: 2009-04-02 11:23:09.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_128: 
+study_related_materials_129: 
   id: "128"
   study_id: "20"
   uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
@@ -1279,7 +1289,7 @@ study_related_materials_128:
   creation_date: 2009-04-02 11:23:09.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_129: 
+study_related_materials_130: 
   id: "129"
   study_id: "20"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -1289,7 +1299,7 @@ study_related_materials_129:
   creation_date: 2009-04-02 11:23:09.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_130: 
+study_related_materials_131: 
   id: "130"
   study_id: "20"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
@@ -1299,7 +1309,7 @@ study_related_materials_130:
   creation_date: 2009-04-02 11:23:09.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_131: 
+study_related_materials_132: 
   id: "131"
   study_id: "20"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
@@ -1309,7 +1319,7 @@ study_related_materials_131:
   creation_date: 2009-04-02 11:23:09.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_132: 
+study_related_materials_133: 
   id: "132"
   study_id: "20"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
@@ -1319,7 +1329,7 @@ study_related_materials_132:
   creation_date: 2009-04-02 11:23:09.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_133: 
+study_related_materials_134: 
   id: "133"
   study_id: "20"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
@@ -1329,22 +1339,12 @@ study_related_materials_133:
   creation_date: 2009-04-02 11:23:09.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_134: 
+study_related_materials_135: 
   id: "134"
   study_id: "20"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
   created_at: 2011-02-23 02:53:33.798758
   updated_at: 2011-02-23 02:53:33.798758
-  comment: 
-  creation_date: 2009-04-02 11:23:09.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sla
-study_related_materials_135: 
-  id: "135"
-  study_id: "20"
-  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
-  created_at: 2011-02-23 02:53:33.80402
-  updated_at: 2011-02-23 02:53:33.80402
   comment: 
   creation_date: 2009-04-02 11:23:09.0
   complete: t
@@ -4525,326 +4525,6 @@ study_related_materials_448:
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00798-deu
 study_related_materials_449: 
-  id: "449"
-  study_id: "80"
-  uri: http://assda.anu.edu.au/studies/D0800.html
-  created_at: 2011-02-23 02:54:25.416277
-  updated_at: 2011-02-23 02:54:25.416277
-  comment: "The Office of the Director of Equal Opportunity in Public Employment (ODEOPE) holds one copy of the following four regional Management Plans: North Coast Region, New England Region, Orana Far West Region, South West Region. They do not hold copies of the Management Plans for South Eastern Region and Central Western Region and it is not known if these plans exist. These plans cover the Regional Health Area Survey, 1991 (SSDA Study No. 800)."
-  creation_date: 2009-04-02 10:55:26.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00798-deu
-study_related_materials_450: 
-  id: "450"
-  study_id: "81"
-  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00822.pdf.zip
-  created_at: 2011-02-23 02:54:26.219846
-  updated_at: 2011-02-23 02:54:26.219846
-  comment: Questionnaire - 1.43 MB
-  creation_date: 2009-04-02 18:16:23.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
-study_related_materials_451: 
-  id: "451"
-  study_id: "81"
-  uri: ../ASSDAData/reports/ASSDA.REPORT.00822.pdf.zip
-  created_at: 2011-02-23 02:54:26.224597
-  updated_at: 2011-02-23 02:54:26.224597
-  comment: Technical Report - 3.98 MB
-  creation_date: 2009-04-02 18:16:23.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
-study_related_materials_452: 
-  id: "452"
-  study_id: "81"
-  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00822-p01.rtf.zip
-  created_at: 2011-02-23 02:54:26.228479
-  updated_at: 2011-02-23 02:54:26.228479
-  comment: Codebook
-  creation_date: 2009-04-02 18:16:23.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
-study_related_materials_453: 
-  id: "453"
-  study_id: "81"
-  uri: 
-  created_at: 2011-02-23 02:54:26.232422
-  updated_at: 2011-02-23 02:54:26.232422
-  comment: Blignault, I (1995).  Getting on Top of the Grog.  Aboriginal and Islander Health Worker Journal, 19, 30-32.
-  creation_date: 2009-04-02 18:16:23.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
-study_related_materials_454: 
-  id: "454"
-  study_id: "82"
-  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.01025.rtf.zip
-  created_at: 2011-02-23 02:54:27.217734
-  updated_at: 2011-02-23 02:54:27.217734
-  comment: Codebook
-  creation_date: 2010-01-05 16:55:57.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01025-poi05
-study_related_materials_455: 
-  id: "455"
-  study_id: "83"
-  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00822.pdf.zip
-  created_at: 2011-02-23 02:54:28.018305
-  updated_at: 2011-02-23 02:54:28.018305
-  comment: Questionnaire - 1.43 MB
-  creation_date: 2009-04-02 13:49:35.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
-study_related_materials_456: 
-  id: "456"
-  study_id: "83"
-  uri: ../ASSDAData/reports/ASSDA.REPORT.00822.pdf.zip
-  created_at: 2011-02-23 02:54:28.023305
-  updated_at: 2011-02-23 02:54:28.023305
-  comment: Technical Report - 3.98 MB
-  creation_date: 2009-04-02 13:49:35.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
-study_related_materials_457: 
-  id: "457"
-  study_id: "83"
-  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00822-c01.rtf.zip
-  created_at: 2011-02-23 02:54:28.109086
-  updated_at: 2011-02-23 02:54:28.109086
-  comment: Codebook
-  creation_date: 2009-04-02 13:49:35.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
-study_related_materials_458: 
-  id: "458"
-  study_id: "83"
-  uri: 
-  created_at: 2011-02-23 02:54:28.112503
-  updated_at: 2011-02-23 02:54:28.112503
-  comment: Blignault, I (1995).  Getting on Top of the Grog.  Aboriginal and Islander Health Worker Journal, 19, 30-32.
-  creation_date: 2009-04-02 13:49:35.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
-study_related_materials_459: 
-  id: "459"
-  study_id: "84"
-  uri: /assda/related.jsp?id=au.edu.anu.assda.ddi.01018&type=search
-  created_at: 2011-02-23 02:54:28.899
-  updated_at: 2011-02-23 02:54:28.899
-  comment: "Gow, David John et al. Australian Constitutional Referendum Study, 1999 [computer file]. Canberra: Social Science Data Archives, The Australian National University, 2000. (SSDA No. 1018)."
-  creation_date: 2010-09-28 16:39:33.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
-study_related_materials_460: 
-  id: "460"
-  study_id: "84"
-  uri: /assda/related.jsp?id=Catalog110&amp;type=catalog
-  created_at: 2011-02-23 02:54:28.903464
-  updated_at: 2011-02-23 02:54:28.903464
-  comment: 
-  creation_date: 2010-09-28 16:39:33.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
-study_related_materials_461: 
-  id: "461"
-  study_id: "84"
-  uri: /assda/related.jsp?id=Catalog31&amp;type=catalog
-  created_at: 2011-02-23 02:54:28.907227
-  updated_at: 2011-02-23 02:54:28.907227
-  comment: 
-  creation_date: 2010-09-28 16:39:33.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
-study_related_materials_462: 
-  id: "462"
-  study_id: "84"
-  uri: /assda/related.jsp?id=Catalog17&amp;type=catalog
-  created_at: 2011-02-23 02:54:28.910916
-  updated_at: 2011-02-23 02:54:28.910916
-  comment: 
-  creation_date: 2010-09-28 16:39:33.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
-study_related_materials_463: 
-  id: "463"
-  study_id: "84"
-  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.01120.pdf.zip
-  created_at: 2011-02-23 02:54:28.914701
-  updated_at: 2011-02-23 02:54:28.914701
-  comment: Questionnaire
-  creation_date: 2010-09-28 16:39:33.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
-study_related_materials_464: 
-  id: "464"
-  study_id: "84"
-  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.01120.rtf.zip
-  created_at: 2011-02-23 02:54:28.918515
-  updated_at: 2011-02-23 02:54:28.918515
-  comment: Codebook
-  creation_date: 2010-09-28 16:39:33.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
-study_related_materials_465: 
-  id: "465"
-  study_id: "85"
-  uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
-  created_at: 2011-02-23 02:54:29.853923
-  updated_at: 2011-02-23 02:54:29.853923
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_466: 
-  id: "466"
-  study_id: "85"
-  uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
-  created_at: 2011-02-23 02:54:29.860565
-  updated_at: 2011-02-23 02:54:29.860565
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_467: 
-  id: "467"
-  study_id: "85"
-  uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
-  created_at: 2011-02-23 02:54:29.866254
-  updated_at: 2011-02-23 02:54:29.866254
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_468: 
-  id: "468"
-  study_id: "85"
-  uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
-  created_at: 2011-02-23 02:54:29.871677
-  updated_at: 2011-02-23 02:54:29.871677
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_469: 
-  id: "469"
-  study_id: "85"
-  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
-  created_at: 2011-02-23 02:54:29.877056
-  updated_at: 2011-02-23 02:54:29.877056
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_470: 
-  id: "470"
-  study_id: "85"
-  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
-  created_at: 2011-02-23 02:54:29.88238
-  updated_at: 2011-02-23 02:54:29.88238
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_471: 
-  id: "471"
-  study_id: "85"
-  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
-  created_at: 2011-02-23 02:54:29.887817
-  updated_at: 2011-02-23 02:54:29.887817
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_472: 
-  id: "472"
-  study_id: "85"
-  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
-  created_at: 2011-02-23 02:54:29.893537
-  updated_at: 2011-02-23 02:54:29.893537
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_473: 
-  id: "473"
-  study_id: "85"
-  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
-  created_at: 2011-02-23 02:54:29.89888
-  updated_at: 2011-02-23 02:54:29.89888
-  comment: 
-  creation_date: 2009-04-02 10:44:54.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
-study_related_materials_474: 
-  id: "474"
-  study_id: "87"
-  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00401.html
-  created_at: 2011-02-23 02:54:31.655196
-  updated_at: 2011-02-23 02:54:31.655196
-  comment: 
-  creation_date: 2009-04-02 12:48:41.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
-study_related_materials_475: 
-  id: "475"
-  study_id: "87"
-  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00401.txt.zip
-  created_at: 2011-02-23 02:54:31.661193
-  updated_at: 2011-02-23 02:54:31.661193
-  comment: Codebook
-  creation_date: 2009-04-02 12:48:41.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
-study_related_materials_476: 
-  id: "476"
-  study_id: "87"
-  uri: ../ASSDAData/notes/ASSDA.NOTE.00401.pdf.zip
-  created_at: 2011-02-23 02:54:31.666493
-  updated_at: 2011-02-23 02:54:31.666493
-  comment: Note
-  creation_date: 2009-04-02 12:48:41.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
-study_related_materials_477: 
-  id: "477"
-  study_id: "87"
-  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00401.pdf.zip
-  created_at: 2011-02-23 02:54:31.671885
-  updated_at: 2011-02-23 02:54:31.671885
-  comment: Questionnaire
-  creation_date: 2009-04-02 12:48:41.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
-study_related_materials_478: 
-  id: "478"
-  study_id: "87"
-  uri: 
-  created_at: 2011-02-23 02:54:31.675883
-  updated_at: 2011-02-23 02:54:31.675883
-  comment: "Gallup Poll Newspaper Releases and Computer Sheets.  Available from: Australian Public Opinion Polls (The Gallup Method), Field Survey Office, McNair Anderson Associates Pty Ltd, 40 Miller Street, North Sydney, New South Wales 2060."
-  creation_date: 2009-04-02 12:48:41.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
-study_related_materials_479: 
-  id: "479"
-  study_id: "88"
-  uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
-  created_at: 2011-02-23 02:54:32.427383
-  updated_at: 2011-02-23 02:54:32.427383
-  comment: 
-  creation_date: 2009-04-02 13:13:46.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sd
-study_related_materials_480: 
-  id: "480"
-  study_id: "88"
-  uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
-  created_at: 2011-02-23 02:54:32.432082
-  updated_at: 2011-02-23 02:54:32.432082
-  comment: 
-  creation_date: 2009-04-02 13:13:46.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sd
-study_related_materials_481: 
   id: "481"
   study_id: "88"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -4854,12 +4534,332 @@ study_related_materials_481:
   creation_date: 2009-04-02 13:13:46.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sd
-study_related_materials_482: 
+study_related_materials_450: 
   id: "482"
   study_id: "88"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
   created_at: 2011-02-23 02:54:32.43988
   updated_at: 2011-02-23 02:54:32.43988
+  comment: 
+  creation_date: 2009-04-02 13:13:46.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sd
+study_related_materials_451: 
+  id: "449"
+  study_id: "80"
+  uri: http://assda.anu.edu.au/studies/D0800.html
+  created_at: 2011-02-23 02:54:25.416277
+  updated_at: 2011-02-23 02:54:25.416277
+  comment: "The Office of the Director of Equal Opportunity in Public Employment (ODEOPE) holds one copy of the following four regional Management Plans: North Coast Region, New England Region, Orana Far West Region, South West Region. They do not hold copies of the Management Plans for South Eastern Region and Central Western Region and it is not known if these plans exist. These plans cover the Regional Health Area Survey, 1991 (SSDA Study No. 800)."
+  creation_date: 2009-04-02 10:55:26.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00798-deu
+study_related_materials_452: 
+  id: "450"
+  study_id: "81"
+  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00822.pdf.zip
+  created_at: 2011-02-23 02:54:26.219846
+  updated_at: 2011-02-23 02:54:26.219846
+  comment: Questionnaire - 1.43 MB
+  creation_date: 2009-04-02 18:16:23.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
+study_related_materials_453: 
+  id: "451"
+  study_id: "81"
+  uri: ../ASSDAData/reports/ASSDA.REPORT.00822.pdf.zip
+  created_at: 2011-02-23 02:54:26.224597
+  updated_at: 2011-02-23 02:54:26.224597
+  comment: Technical Report - 3.98 MB
+  creation_date: 2009-04-02 18:16:23.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
+study_related_materials_454: 
+  id: "452"
+  study_id: "81"
+  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00822-p01.rtf.zip
+  created_at: 2011-02-23 02:54:26.228479
+  updated_at: 2011-02-23 02:54:26.228479
+  comment: Codebook
+  creation_date: 2009-04-02 18:16:23.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
+study_related_materials_455: 
+  id: "453"
+  study_id: "81"
+  uri: 
+  created_at: 2011-02-23 02:54:26.232422
+  updated_at: 2011-02-23 02:54:26.232422
+  comment: Blignault, I (1995).  Getting on Top of the Grog.  Aboriginal and Islander Health Worker Journal, 19, 30-32.
+  creation_date: 2009-04-02 18:16:23.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-p01
+study_related_materials_456: 
+  id: "454"
+  study_id: "82"
+  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.01025.rtf.zip
+  created_at: 2011-02-23 02:54:27.217734
+  updated_at: 2011-02-23 02:54:27.217734
+  comment: Codebook
+  creation_date: 2010-01-05 16:55:57.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01025-poi05
+study_related_materials_457: 
+  id: "455"
+  study_id: "83"
+  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00822.pdf.zip
+  created_at: 2011-02-23 02:54:28.018305
+  updated_at: 2011-02-23 02:54:28.018305
+  comment: Questionnaire - 1.43 MB
+  creation_date: 2009-04-02 13:49:35.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
+study_related_materials_458: 
+  id: "456"
+  study_id: "83"
+  uri: ../ASSDAData/reports/ASSDA.REPORT.00822.pdf.zip
+  created_at: 2011-02-23 02:54:28.023305
+  updated_at: 2011-02-23 02:54:28.023305
+  comment: Technical Report - 3.98 MB
+  creation_date: 2009-04-02 13:49:35.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
+study_related_materials_459: 
+  id: "457"
+  study_id: "83"
+  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00822-c01.rtf.zip
+  created_at: 2011-02-23 02:54:28.109086
+  updated_at: 2011-02-23 02:54:28.109086
+  comment: Codebook
+  creation_date: 2009-04-02 13:49:35.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
+study_related_materials_460: 
+  id: "458"
+  study_id: "83"
+  uri: 
+  created_at: 2011-02-23 02:54:28.112503
+  updated_at: 2011-02-23 02:54:28.112503
+  comment: Blignault, I (1995).  Getting on Top of the Grog.  Aboriginal and Islander Health Worker Journal, 19, 30-32.
+  creation_date: 2009-04-02 13:49:35.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00822-c01
+study_related_materials_461: 
+  id: "459"
+  study_id: "84"
+  uri: /assda/related.jsp?id=au.edu.anu.assda.ddi.01018&type=search
+  created_at: 2011-02-23 02:54:28.899
+  updated_at: 2011-02-23 02:54:28.899
+  comment: "Gow, David John et al. Australian Constitutional Referendum Study, 1999 [computer file]. Canberra: Social Science Data Archives, The Australian National University, 2000. (SSDA No. 1018)."
+  creation_date: 2010-09-28 16:39:33.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
+study_related_materials_462: 
+  id: "460"
+  study_id: "84"
+  uri: /assda/related.jsp?id=Catalog110&amp;type=catalog
+  created_at: 2011-02-23 02:54:28.903464
+  updated_at: 2011-02-23 02:54:28.903464
+  comment: 
+  creation_date: 2010-09-28 16:39:33.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
+study_related_materials_463: 
+  id: "461"
+  study_id: "84"
+  uri: /assda/related.jsp?id=Catalog31&amp;type=catalog
+  created_at: 2011-02-23 02:54:28.907227
+  updated_at: 2011-02-23 02:54:28.907227
+  comment: 
+  creation_date: 2010-09-28 16:39:33.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
+study_related_materials_464: 
+  id: "462"
+  study_id: "84"
+  uri: /assda/related.jsp?id=Catalog17&amp;type=catalog
+  created_at: 2011-02-23 02:54:28.910916
+  updated_at: 2011-02-23 02:54:28.910916
+  comment: 
+  creation_date: 2010-09-28 16:39:33.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
+study_related_materials_465: 
+  id: "463"
+  study_id: "84"
+  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.01120.pdf.zip
+  created_at: 2011-02-23 02:54:28.914701
+  updated_at: 2011-02-23 02:54:28.914701
+  comment: Questionnaire
+  creation_date: 2010-09-28 16:39:33.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
+study_related_materials_466: 
+  id: "464"
+  study_id: "84"
+  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.01120.rtf.zip
+  created_at: 2011-02-23 02:54:28.918515
+  updated_at: 2011-02-23 02:54:28.918515
+  comment: Codebook
+  creation_date: 2010-09-28 16:39:33.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120
+study_related_materials_467: 
+  id: "465"
+  study_id: "85"
+  uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
+  created_at: 2011-02-23 02:54:29.853923
+  updated_at: 2011-02-23 02:54:29.853923
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_468: 
+  id: "466"
+  study_id: "85"
+  uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
+  created_at: 2011-02-23 02:54:29.860565
+  updated_at: 2011-02-23 02:54:29.860565
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_469: 
+  id: "467"
+  study_id: "85"
+  uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
+  created_at: 2011-02-23 02:54:29.866254
+  updated_at: 2011-02-23 02:54:29.866254
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_470: 
+  id: "468"
+  study_id: "85"
+  uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
+  created_at: 2011-02-23 02:54:29.871677
+  updated_at: 2011-02-23 02:54:29.871677
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_471: 
+  id: "469"
+  study_id: "85"
+  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
+  created_at: 2011-02-23 02:54:29.877056
+  updated_at: 2011-02-23 02:54:29.877056
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_472: 
+  id: "470"
+  study_id: "85"
+  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
+  created_at: 2011-02-23 02:54:29.88238
+  updated_at: 2011-02-23 02:54:29.88238
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_473: 
+  id: "471"
+  study_id: "85"
+  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
+  created_at: 2011-02-23 02:54:29.887817
+  updated_at: 2011-02-23 02:54:29.887817
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_474: 
+  id: "472"
+  study_id: "85"
+  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
+  created_at: 2011-02-23 02:54:29.893537
+  updated_at: 2011-02-23 02:54:29.893537
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_475: 
+  id: "473"
+  study_id: "85"
+  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
+  created_at: 2011-02-23 02:54:29.89888
+  updated_at: 2011-02-23 02:54:29.89888
+  comment: 
+  creation_date: 2009-04-02 10:44:54.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nt_ste
+study_related_materials_476: 
+  id: "474"
+  study_id: "87"
+  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00401.html
+  created_at: 2011-02-23 02:54:31.655196
+  updated_at: 2011-02-23 02:54:31.655196
+  comment: 
+  creation_date: 2009-04-02 12:48:41.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
+study_related_materials_477: 
+  id: "475"
+  study_id: "87"
+  uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00401.txt.zip
+  created_at: 2011-02-23 02:54:31.661193
+  updated_at: 2011-02-23 02:54:31.661193
+  comment: Codebook
+  creation_date: 2009-04-02 12:48:41.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
+study_related_materials_478: 
+  id: "476"
+  study_id: "87"
+  uri: ../ASSDAData/notes/ASSDA.NOTE.00401.pdf.zip
+  created_at: 2011-02-23 02:54:31.666493
+  updated_at: 2011-02-23 02:54:31.666493
+  comment: Note
+  creation_date: 2009-04-02 12:48:41.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
+study_related_materials_479: 
+  id: "477"
+  study_id: "87"
+  uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00401.pdf.zip
+  created_at: 2011-02-23 02:54:31.671885
+  updated_at: 2011-02-23 02:54:31.671885
+  comment: Questionnaire
+  creation_date: 2009-04-02 12:48:41.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
+study_related_materials_480: 
+  id: "478"
+  study_id: "87"
+  uri: 
+  created_at: 2011-02-23 02:54:31.675883
+  updated_at: 2011-02-23 02:54:31.675883
+  comment: "Gallup Poll Newspaper Releases and Computer Sheets.  Available from: Australian Public Opinion Polls (The Gallup Method), Field Survey Office, McNair Anderson Associates Pty Ltd, 40 Miller Street, North Sydney, New South Wales 2060."
+  creation_date: 2009-04-02 12:48:41.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401
+study_related_materials_481: 
+  id: "479"
+  study_id: "88"
+  uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
+  created_at: 2011-02-23 02:54:32.427383
+  updated_at: 2011-02-23 02:54:32.427383
+  comment: 
+  creation_date: 2009-04-02 13:13:46.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sd
+study_related_materials_482: 
+  id: "480"
+  study_id: "88"
+  uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
+  created_at: 2011-02-23 02:54:32.432082
+  updated_at: 2011-02-23 02:54:32.432082
   comment: 
   creation_date: 2009-04-02 13:13:46.0
   complete: t
@@ -5832,6 +5832,26 @@ study_related_materials_578:
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40092
 study_related_materials_579: 
+  id: "606"
+  study_id: "107"
+  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
+  created_at: 2011-02-23 02:54:50.280677
+  updated_at: 2011-02-23 02:54:50.280677
+  comment: 
+  creation_date: 2009-04-02 12:32:17.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
+study_related_materials_580: 
+  id: "607"
+  study_id: "108"
+  uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
+  created_at: 2011-02-23 02:54:51.068027
+  updated_at: 2011-02-23 02:54:51.068027
+  comment: 
+  creation_date: 2009-04-02 17:29:52.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-wa_sos
+study_related_materials_581: 
   id: "579"
   study_id: "103"
   uri: http://www.parliament.nsw.gov.au/resources/nswelectionsanalysis/HomePage.htm
@@ -5841,7 +5861,7 @@ study_related_materials_579:
   creation_date: 2010-05-26 17:28:37.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40092
-study_related_materials_580: 
+study_related_materials_582: 
   id: "580"
   study_id: "103"
   uri: 
@@ -5851,7 +5871,7 @@ study_related_materials_580:
   creation_date: 2010-05-26 17:28:37.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40092
-study_related_materials_581: 
+study_related_materials_583: 
   id: "581"
   study_id: "103"
   uri: http://www.aph.gov.au/Senate/pubs/occa_lect/transcripts/170502.pdf
@@ -5861,7 +5881,7 @@ study_related_materials_581:
   creation_date: 2010-05-26 17:28:38.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40092
-study_related_materials_582: 
+study_related_materials_584: 
   id: "582"
   study_id: "103"
   uri: http://www.eca.gov.au/research/conf_papers.pdf
@@ -5871,7 +5891,7 @@ study_related_materials_582:
   creation_date: 2010-05-26 17:28:38.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40092
-study_related_materials_583: 
+study_related_materials_585: 
   id: "615"
   study_id: "108"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
@@ -5881,7 +5901,7 @@ study_related_materials_583:
   creation_date: 2009-04-02 17:29:52.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-wa_sos
-study_related_materials_584: 
+study_related_materials_586: 
   id: "583"
   study_id: "103"
   uri: http://www.aph.gov.au/Senate/pubs/pops/pop34/c13.pdf
@@ -5891,7 +5911,7 @@ study_related_materials_584:
   creation_date: 2010-05-26 17:28:38.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40092
-study_related_materials_585: 
+study_related_materials_587: 
   id: "584"
   study_id: "103"
   uri: http://www.ecq.qld.gov.au/elections/state/state2006/results/summary.html
@@ -5903,7 +5923,7 @@ study_related_materials_585:
   creation_date: 2010-05-26 17:28:38.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40092
-study_related_materials_586: 
+study_related_materials_588: 
   id: "585"
   study_id: "104"
   uri: 
@@ -5913,7 +5933,7 @@ study_related_materials_586:
   creation_date: 2010-05-06 15:47:59.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00423
-study_related_materials_587: 
+study_related_materials_589: 
   id: "586"
   study_id: "104"
   uri: /ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00423.pdf.zip
@@ -5923,7 +5943,7 @@ study_related_materials_587:
   creation_date: 2010-05-06 15:47:59.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00423
-study_related_materials_588: 
+study_related_materials_590: 
   id: "587"
   study_id: "104"
   uri: /ASSDAData/other/ASSDA.OTHER.00423.pdf
@@ -5933,7 +5953,7 @@ study_related_materials_588:
   creation_date: 2010-05-06 15:47:59.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00423
-study_related_materials_589: 
+study_related_materials_591: 
   id: "588"
   study_id: "105"
   uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.01109.rtf.zip
@@ -5943,7 +5963,7 @@ study_related_materials_589:
   creation_date: 2009-04-02 14:27:40.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01109
-study_related_materials_590: 
+study_related_materials_592: 
   id: "589"
   study_id: "105"
   uri: ../ASSDAData/reports/ASSDA.REPORT.01109.rtf.zip
@@ -5953,7 +5973,7 @@ study_related_materials_590:
   creation_date: 2009-04-02 14:27:40.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01109
-study_related_materials_591: 
+study_related_materials_593: 
   id: "590"
   study_id: "105"
   uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.01109.rtf.zip
@@ -5963,7 +5983,7 @@ study_related_materials_591:
   creation_date: 2009-04-02 14:27:40.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01109
-study_related_materials_592: 
+study_related_materials_594: 
   id: "591"
   study_id: "106"
   uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00618-mail.pdf.zip
@@ -5973,7 +5993,7 @@ study_related_materials_592:
   creation_date: 2009-04-02 17:48:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00618
-study_related_materials_593: 
+study_related_materials_595: 
   id: "592"
   study_id: "106"
   uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00618-phone.pdf.zip
@@ -5983,7 +6003,7 @@ study_related_materials_593:
   creation_date: 2009-04-02 17:48:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00618
-study_related_materials_594: 
+study_related_materials_596: 
   id: "593"
   study_id: "106"
   uri: ../ASSDAData/reports/ASSDA.REPORT.00618.pdf.zip
@@ -5993,7 +6013,7 @@ study_related_materials_594:
   creation_date: 2009-04-02 17:48:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00618
-study_related_materials_595: 
+study_related_materials_597: 
   id: "594"
   study_id: "106"
   uri: ../ASSDAData/notes/ASSDA.NOTE.00618.pdf.zip
@@ -6003,7 +6023,7 @@ study_related_materials_595:
   creation_date: 2009-04-02 17:48:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00618
-study_related_materials_596: 
+study_related_materials_598: 
   id: "595"
   study_id: "106"
   uri: ../ASSDAData/other/ASSDA.OTHER.00618.pdf.zip
@@ -6013,7 +6033,7 @@ study_related_materials_596:
   creation_date: 2009-04-02 17:48:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00618
-study_related_materials_597: 
+study_related_materials_599: 
   id: "596"
   study_id: "106"
   uri: ../ASSDAData/codebooks/ASSDA.CODEBOOK.00618.rtf.zip
@@ -6023,7 +6043,7 @@ study_related_materials_597:
   creation_date: 2009-04-02 17:48:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00618
-study_related_materials_598: 
+study_related_materials_600: 
   id: "597"
   study_id: "106"
   uri: 
@@ -6033,7 +6053,7 @@ study_related_materials_598:
   creation_date: 2009-04-02 17:48:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00618
-study_related_materials_599: 
+study_related_materials_601: 
   id: "598"
   study_id: "107"
   uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
@@ -6043,7 +6063,7 @@ study_related_materials_599:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_600: 
+study_related_materials_602: 
   id: "599"
   study_id: "107"
   uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
@@ -6053,7 +6073,7 @@ study_related_materials_600:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_601: 
+study_related_materials_603: 
   id: "600"
   study_id: "107"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -6063,7 +6083,7 @@ study_related_materials_601:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_602: 
+study_related_materials_604: 
   id: "601"
   study_id: "107"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
@@ -6073,7 +6093,7 @@ study_related_materials_602:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_603: 
+study_related_materials_605: 
   id: "602"
   study_id: "107"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
@@ -6083,7 +6103,7 @@ study_related_materials_603:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_604: 
+study_related_materials_606: 
   id: "603"
   study_id: "107"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
@@ -6093,7 +6113,7 @@ study_related_materials_604:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_605: 
+study_related_materials_607: 
   id: "604"
   study_id: "107"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
@@ -6103,7 +6123,7 @@ study_related_materials_605:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_606: 
+study_related_materials_608: 
   id: "605"
   study_id: "107"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
@@ -6113,26 +6133,6 @@ study_related_materials_606:
   creation_date: 2009-04-02 12:32:17.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_607: 
-  id: "606"
-  study_id: "107"
-  uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
-  created_at: 2011-02-23 02:54:50.280677
-  updated_at: 2011-02-23 02:54:50.280677
-  comment: 
-  creation_date: 2009-04-02 12:32:17.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-tas_aboriginal_comm
-study_related_materials_608: 
-  id: "607"
-  study_id: "108"
-  uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
-  created_at: 2011-02-23 02:54:51.068027
-  updated_at: 2011-02-23 02:54:51.068027
-  comment: 
-  creation_date: 2009-04-02 17:29:52.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-wa_sos
 study_related_materials_609: 
   id: "608"
   study_id: "108"
@@ -6794,6 +6794,16 @@ study_related_materials_674:
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00602
 study_related_materials_675: 
+  id: "710"
+  study_id: "126"
+  uri: ../ASSDAData/codingframes/ASSDA.CODINGFRAME.01139.pdf
+  created_at: 2011-02-23 02:55:07.30088
+  updated_at: 2011-02-23 02:55:07.30088
+  comment: 
+  creation_date: 2009-10-29 10:43:44.0
+  complete: t
+  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01139
+study_related_materials_676: 
   id: "675"
   study_id: "122"
   uri: ../assda/related.jsp?id=au.edu.anu.assda.ddi.00603&type=study
@@ -6803,7 +6813,7 @@ study_related_materials_675:
   creation_date: 2010-03-29 10:46:51.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00602
-study_related_materials_676: 
+study_related_materials_677: 
   id: "676"
   study_id: "122"
   uri: ../assda/related.jsp?id=au.edu.anu.assda.ddi.00604&type=study
@@ -6813,7 +6823,7 @@ study_related_materials_676:
   creation_date: 2010-03-29 10:46:51.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00602
-study_related_materials_677: 
+study_related_materials_678: 
   id: "677"
   study_id: "122"
   uri: 
@@ -6823,7 +6833,7 @@ study_related_materials_677:
   creation_date: 2010-03-29 10:46:51.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00602
-study_related_materials_678: 
+study_related_materials_679: 
   id: "678"
   study_id: "122"
   uri: ../ASSDAData/questionnaires/ASSDA.QUESTIONNAIRE.00602.pdf.zip
@@ -6833,7 +6843,7 @@ study_related_materials_678:
   creation_date: 2010-03-29 10:46:51.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00602
-study_related_materials_679: 
+study_related_materials_680: 
   id: "679"
   study_id: "122"
   uri: ../ASSDAData/codingframes/ASSDA.CODINGFRAME.ANCO1985.pdf
@@ -6843,7 +6853,7 @@ study_related_materials_679:
   creation_date: 2010-03-29 10:46:51.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00602
-study_related_materials_680: 
+study_related_materials_681: 
   id: "680"
   study_id: "122"
   uri: ../ASSDAData/notes/ASSDA.NOTE.00602.pdf.zip
@@ -6853,7 +6863,7 @@ study_related_materials_680:
   creation_date: 2010-03-29 10:46:51.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00602
-study_related_materials_681: 
+study_related_materials_682: 
   id: "681"
   study_id: "123"
   uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
@@ -6863,7 +6873,7 @@ study_related_materials_681:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_682: 
+study_related_materials_683: 
   id: "682"
   study_id: "123"
   uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
@@ -6873,7 +6883,7 @@ study_related_materials_682:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_683: 
+study_related_materials_684: 
   id: "683"
   study_id: "123"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -6883,7 +6893,7 @@ study_related_materials_683:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_684: 
+study_related_materials_685: 
   id: "684"
   study_id: "123"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
@@ -6893,7 +6903,7 @@ study_related_materials_684:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_685: 
+study_related_materials_686: 
   id: "685"
   study_id: "123"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
@@ -6903,7 +6913,7 @@ study_related_materials_685:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_686: 
+study_related_materials_687: 
   id: "686"
   study_id: "123"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
@@ -6913,7 +6923,7 @@ study_related_materials_686:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_687: 
+study_related_materials_688: 
   id: "687"
   study_id: "123"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
@@ -6923,7 +6933,7 @@ study_related_materials_687:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_688: 
+study_related_materials_689: 
   id: "688"
   study_id: "123"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
@@ -6933,7 +6943,7 @@ study_related_materials_688:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_689: 
+study_related_materials_690: 
   id: "689"
   study_id: "123"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
@@ -6943,7 +6953,7 @@ study_related_materials_689:
   creation_date: 2009-04-02 18:04:43.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_sos
-study_related_materials_690: 
+study_related_materials_691: 
   id: "690"
   study_id: "124"
   uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
@@ -6953,7 +6963,7 @@ study_related_materials_690:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_691: 
+study_related_materials_692: 
   id: "691"
   study_id: "124"
   uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
@@ -6963,7 +6973,7 @@ study_related_materials_691:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_692: 
+study_related_materials_693: 
   id: "692"
   study_id: "124"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -6973,7 +6983,7 @@ study_related_materials_692:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_693: 
+study_related_materials_694: 
   id: "693"
   study_id: "124"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
@@ -6983,7 +6993,7 @@ study_related_materials_693:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_694: 
+study_related_materials_695: 
   id: "694"
   study_id: "124"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
@@ -6993,7 +7003,7 @@ study_related_materials_694:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_695: 
+study_related_materials_696: 
   id: "695"
   study_id: "124"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
@@ -7003,7 +7013,7 @@ study_related_materials_695:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_696: 
+study_related_materials_697: 
   id: "696"
   study_id: "124"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
@@ -7013,7 +7023,7 @@ study_related_materials_696:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_697: 
+study_related_materials_698: 
   id: "697"
   study_id: "124"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
@@ -7023,7 +7033,7 @@ study_related_materials_697:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_698: 
+study_related_materials_699: 
   id: "698"
   study_id: "124"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
@@ -7033,7 +7043,7 @@ study_related_materials_698:
   creation_date: 2009-04-02 11:41:02.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-vic_sla
-study_related_materials_699: 
+study_related_materials_700: 
   id: "699"
   study_id: "125"
   uri: ../ASSDAData/census/HowAustraliaTakesACensus1991.pdf
@@ -7043,7 +7053,7 @@ study_related_materials_699:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_700: 
+study_related_materials_701: 
   id: "700"
   study_id: "125"
   uri: ../ASSDAData/census/Census6August1991-TheCensusAndYou.pdf
@@ -7053,7 +7063,7 @@ study_related_materials_700:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_701: 
+study_related_materials_702: 
   id: "701"
   study_id: "125"
   uri: ../ASSDAData/census/Census91-DataQualityUndercount.pdf
@@ -7063,7 +7073,7 @@ study_related_materials_701:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_702: 
+study_related_materials_703: 
   id: "702"
   study_id: "125"
   uri: ../ASSDAData/census/1991CensusDirectoryOfClassifications-CensusOfPopulationAndHousing.pdf
@@ -7073,7 +7083,7 @@ study_related_materials_702:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_703: 
+study_related_materials_704: 
   id: "703"
   study_id: "125"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-A-D.pdf
@@ -7083,7 +7093,7 @@ study_related_materials_703:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_704: 
+study_related_materials_705: 
   id: "704"
   study_id: "125"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-E-I.pdf
@@ -7093,7 +7103,7 @@ study_related_materials_704:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_705: 
+study_related_materials_706: 
   id: "705"
   study_id: "125"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-J-Q.pdf
@@ -7103,7 +7113,7 @@ study_related_materials_705:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_706: 
+study_related_materials_707: 
   id: "706"
   study_id: "125"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-R-Z.pdf
@@ -7113,7 +7123,7 @@ study_related_materials_706:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_707: 
+study_related_materials_708: 
   id: "707"
   study_id: "125"
   uri: ../ASSDAData/census/1991CensusDictionary-CensusOfPopulationAndHousing-QNR.pdf
@@ -7123,7 +7133,7 @@ study_related_materials_707:
   creation_date: 2009-04-02 13:12:58.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.08003-nsw_ste
-study_related_materials_708: 
+study_related_materials_709: 
   id: "708"
   study_id: "126"
   uri: 
@@ -7133,22 +7143,12 @@ study_related_materials_708:
   creation_date: 2009-10-29 10:43:44.0
   complete: t
   resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01139
-study_related_materials_709: 
+study_related_materials_710: 
   id: "709"
   study_id: "126"
   uri: ../ASSDAData/notes/ASSDA.NOTE.01139-1.pdf
   created_at: 2011-02-23 02:55:07.295968
   updated_at: 2011-02-23 02:55:07.295968
-  comment: 
-  creation_date: 2009-10-29 10:43:44.0
-  complete: t
-  resource: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01139
-study_related_materials_710: 
-  id: "710"
-  study_id: "126"
-  uri: ../ASSDAData/codingframes/ASSDA.CODINGFRAME.01139.pdf
-  created_at: 2011-02-23 02:55:07.30088
-  updated_at: 2011-02-23 02:55:07.30088
   comment: 
   creation_date: 2009-10-29 10:43:44.0
   complete: t

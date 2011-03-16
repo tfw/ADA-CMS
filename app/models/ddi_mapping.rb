@@ -4,7 +4,7 @@ class DdiMapping < ActiveRecord::Base
 
   def self.batch_create(local_data)
     local_data.each do |k,v|
-      if DDIMapping.find_by_ddi(k.to_s).nil?
+      if DdiMapping.find_by_ddi(k.to_s).nil?
         mapping = DDIMapping.new(:ddi => k.to_s)
         mapping.save
       end
@@ -13,7 +13,7 @@ class DdiMapping < ActiveRecord::Base
   end
 
   def self.human_readable(key)
-    mapping = DDIMapping.find_by_ddi(key)
+    mapping = DdiMapping.find_by_ddi(key)
     mapping.human_readable if mapping
   end
 

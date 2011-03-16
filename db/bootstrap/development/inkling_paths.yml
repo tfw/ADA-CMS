@@ -2379,3 +2379,1713 @@ inkling_paths_238:
   content_type: ArchiveStudy
   created_at: 2011-03-08 04:42:55.528548
   updated_at: 2011-03-08 04:42:55.528548
+inkling_paths_239: 
+  id: "243"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aboriginal-survey--new-south-wales-panel--1980
+  content_id: "174"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.371983
+  updated_at: 2011-03-16 00:05:29.371983
+inkling_paths_240: 
+  id: "244"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/evaluation-of-the-employment-initiatives-program-in-victoria--1983-1984--file-a
+  content_id: "175"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.391343
+  updated_at: 2011-03-16 00:05:29.391343
+inkling_paths_241: 
+  id: "245"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--1987--file-emb
+  content_id: "176"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.403845
+  updated_at: 2011-03-16 00:05:29.403845
+inkling_paths_242: 
+  id: "246"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-police-custody-survey--australia--august-1988
+  content_id: "177"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.415238
+  updated_at: 2011-03-16 00:05:29.415238
+inkling_paths_243: 
+  id: "247"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/deaths-in-non-custodial-corrections--australia-and-new-zealand-1987-1988
+  content_id: "178"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.42822
+  updated_at: 2011-03-16 00:05:29.42822
+inkling_paths_244: 
+  id: "248"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aboriginal-and-non-aboriginal-deaths-in-custody--australia--1980-1989
+  content_id: "179"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.438261
+  updated_at: 2011-03-16 00:05:29.438261
+inkling_paths_245: 
+  id: "249"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-poi98
+  content_id: "180"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.447463
+  updated_at: 2011-03-16 00:05:29.447463
+inkling_paths_246: 
+  id: "250"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--sa
+  content_id: "181"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.460189
+  updated_at: 2011-03-16 00:05:29.460189
+inkling_paths_247: 
+  id: "251"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--1990--file-pub
+  content_id: "182"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.47071
+  updated_at: 2011-03-16 00:05:29.47071
+inkling_paths_248: 
+  id: "252"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-poi02
+  content_id: "183"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.48414
+  updated_at: 2011-03-16 00:05:29.48414
+inkling_paths_249: 
+  id: "253"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--atsic-regions
+  content_id: "184"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.496369
+  updated_at: 2011-03-16 00:05:29.496369
+inkling_paths_250: 
+  id: "254"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--nt
+  content_id: "185"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.506389
+  updated_at: 2011-03-16 00:05:29.506389
+inkling_paths_251: 
+  id: "255"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--sa
+  content_id: "186"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.59491
+  updated_at: 2011-03-16 00:05:29.59491
+inkling_paths_252: 
+  id: "256"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--wa
+  content_id: "187"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.604469
+  updated_at: 2011-03-16 00:05:29.604469
+inkling_paths_253: 
+  id: "257"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/evaluation-of-the-employment-initiatives-program-in-victoria--1983-1984--file-d
+  content_id: "188"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.615955
+  updated_at: 2011-03-16 00:05:29.615955
+inkling_paths_254: 
+  id: "258"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--september-1987
+  content_id: "189"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.629367
+  updated_at: 2011-03-16 00:05:29.629367
+inkling_paths_255: 
+  id: "259"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/the-mental-health-of-young-people-in-australia--child-and-adolescent-component-of-the-national-survey-of-mental-health-and-well-being--restricted-version-
+  content_id: "190"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.638937
+  updated_at: 2011-03-16 00:05:29.638937
+inkling_paths_256: 
+  id: "260"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--act
+  content_id: "191"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.648042
+  updated_at: 2011-03-16 00:05:29.648042
+inkling_paths_257: 
+  id: "261"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--nsw
+  content_id: "192"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.659459
+  updated_at: 2011-03-16 00:05:29.659459
+inkling_paths_258: 
+  id: "262"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--nt
+  content_id: "193"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.668562
+  updated_at: 2011-03-16 00:05:29.668562
+inkling_paths_259: 
+  id: "263"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--vic
+  content_id: "194"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.677339
+  updated_at: 2011-03-16 00:05:29.677339
+inkling_paths_260: 
+  id: "264"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/public-sector-equal-employment-opportunity-survey--1990--file-auu
+  content_id: "195"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.687947
+  updated_at: 2011-03-16 00:05:29.687947
+inkling_paths_261: 
+  id: "265"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-poi00
+  content_id: "196"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.696856
+  updated_at: 2011-03-16 00:05:29.696856
+inkling_paths_262: 
+  id: "266"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--act
+  content_id: "197"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.719186
+  updated_at: 2011-03-16 00:05:29.719186
+inkling_paths_263: 
+  id: "267"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--act
+  content_id: "198"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.744518
+  updated_at: 2011-03-16 00:05:29.744518
+inkling_paths_264: 
+  id: "268"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--nsw
+  content_id: "199"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.759688
+  updated_at: 2011-03-16 00:05:29.759688
+inkling_paths_265: 
+  id: "269"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--qld
+  content_id: "200"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.774643
+  updated_at: 2011-03-16 00:05:29.774643
+inkling_paths_266: 
+  id: "270"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--tas
+  content_id: "201"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.78394
+  updated_at: 2011-03-16 00:05:29.78394
+inkling_paths_267: 
+  id: "271"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-147--december-9--1960
+  content_id: "202"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.793231
+  updated_at: 2011-03-16 00:05:29.793231
+inkling_paths_268: 
+  id: "272"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-values-study-survey--1983--file-nw
+  content_id: "203"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.804939
+  updated_at: 2011-03-16 00:05:29.804939
+inkling_paths_269: 
+  id: "273"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--1987--file-p
+  content_id: "204"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.813783
+  updated_at: 2011-03-16 00:05:29.813783
+inkling_paths_270: 
+  id: "274"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-inc98
+  content_id: "205"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.82268
+  updated_at: 2011-03-16 00:05:29.82268
+inkling_paths_271: 
+  id: "275"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--2007
+  content_id: "206"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.833089
+  updated_at: 2011-03-16 00:05:29.833089
+inkling_paths_272: 
+  id: "276"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-database---western-australia-house-of-assembly-party-data
+  content_id: "207"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.907715
+  updated_at: 2011-03-16 00:05:29.907715
+inkling_paths_273: 
+  id: "277"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--september-1981
+  content_id: "208"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.917387
+  updated_at: 2011-03-16 00:05:29.917387
+inkling_paths_274: 
+  id: "278"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/self-inflicted-harm-in-custody--australia--1989
+  content_id: "209"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.926674
+  updated_at: 2011-03-16 00:05:29.926674
+inkling_paths_275: 
+  id: "279"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2005--incidents
+  content_id: "210"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.936215
+  updated_at: 2011-03-16 00:05:29.936215
+inkling_paths_276: 
+  id: "280"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--2001
+  content_id: "211"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.947113
+  updated_at: 2011-03-16 00:05:29.947113
+inkling_paths_277: 
+  id: "281"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--nt
+  content_id: "212"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.956078
+  updated_at: 2011-03-16 00:05:29.956078
+inkling_paths_278: 
+  id: "282"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--1996--file-pub
+  content_id: "213"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.96535
+  updated_at: 2011-03-16 00:05:29.96535
+inkling_paths_279: 
+  id: "283"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-inc01
+  content_id: "214"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.974498
+  updated_at: 2011-03-16 00:05:29.974498
+inkling_paths_280: 
+  id: "284"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data--2004--incidents
+  content_id: "215"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.984764
+  updated_at: 2011-03-16 00:05:29.984764
+inkling_paths_281: 
+  id: "285"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--2007--restricted-version
+  content_id: "216"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:29.993672
+  updated_at: 2011-03-16 00:05:29.993672
+inkling_paths_282: 
+  id: "286"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-drug-strategy-household-survey--2004
+  content_id: "217"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.002648
+  updated_at: 2011-03-16 00:05:30.002648
+inkling_paths_283: 
+  id: "287"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--atsic-zones
+  content_id: "218"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.011908
+  updated_at: 2011-03-16 00:05:30.011908
+inkling_paths_284: 
+  id: "288"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--qld
+  content_id: "219"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.021004
+  updated_at: 2011-03-16 00:05:30.021004
+inkling_paths_285: 
+  id: "289"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--qld
+  content_id: "220"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.031504
+  updated_at: 2011-03-16 00:05:30.031504
+inkling_paths_286: 
+  id: "290"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--sa
+  content_id: "221"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.040921
+  updated_at: 2011-03-16 00:05:30.040921
+inkling_paths_287: 
+  id: "291"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--vic
+  content_id: "222"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.050073
+  updated_at: 2011-03-16 00:05:30.050073
+inkling_paths_288: 
+  id: "292"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-values-study-survey--1983--self-completion-questionnaire
+  content_id: "223"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.059479
+  updated_at: 2011-03-16 00:05:30.059479
+inkling_paths_289: 
+  id: "293"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/cancer-of-the-cervix--evaluation-of-a-screening-campaign--1993
+  content_id: "224"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.069992
+  updated_at: 2011-03-16 00:05:30.069992
+inkling_paths_290: 
+  id: "294"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/alcohol--tobacco-and-other-drug-use-among-victorian-secondary-school-students--1992
+  content_id: "225"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.079626
+  updated_at: 2011-03-16 00:05:30.079626
+inkling_paths_291: 
+  id: "295"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-everyday-consumption-project--1994-1995
+  content_id: "226"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.088788
+  updated_at: 2011-03-16 00:05:30.088788
+inkling_paths_292: 
+  id: "296"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--nt
+  content_id: "227"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.097954
+  updated_at: 2011-03-16 00:05:30.097954
+inkling_paths_293: 
+  id: "297"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aborigines-who-abstain-from-alcohol--1990-1993--file-c02
+  content_id: "228"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.172543
+  updated_at: 2011-03-16 00:05:30.172543
+inkling_paths_294: 
+  id: "298"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/deterrence-of-marijuana-use-among-year-10-and-year-11-students-in-nsw--1992
+  content_id: "229"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.182662
+  updated_at: 2011-03-16 00:05:30.182662
+inkling_paths_295: 
+  id: "299"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-poi96
+  content_id: "230"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.192279
+  updated_at: 2011-03-16 00:05:30.192279
+inkling_paths_296: 
+  id: "300"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-vic02
+  content_id: "231"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.201531
+  updated_at: 2011-03-16 00:05:30.201531
+inkling_paths_297: 
+  id: "301"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2004--victims
+  content_id: "232"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.210776
+  updated_at: 2011-03-16 00:05:30.210776
+inkling_paths_298: 
+  id: "302"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-167--noveber-22--1963
+  content_id: "233"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.221984
+  updated_at: 2011-03-16 00:05:30.221984
+inkling_paths_299: 
+  id: "303"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-177--may-7--1965
+  content_id: "234"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.231134
+  updated_at: 2011-03-16 00:05:30.231134
+inkling_paths_300: 
+  id: "304"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/a-c-t--drug-indicators-project--1987-1989
+  content_id: "235"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.240407
+  updated_at: 2011-03-16 00:05:30.240407
+inkling_paths_301: 
+  id: "305"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-inc99
+  content_id: "236"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.249341
+  updated_at: 2011-03-16 00:05:30.249341
+inkling_paths_302: 
+  id: "306"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/mapping-the-impact-of-the-1995-aboriginal-and-torres-strait-islander-protocols-for-libraries--archives-and-information-services
+  content_id: "237"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.260513
+  updated_at: 2011-03-16 00:05:30.260513
+inkling_paths_303: 
+  id: "307"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--tas
+  content_id: "238"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.269595
+  updated_at: 2011-03-16 00:05:30.269595
+inkling_paths_304: 
+  id: "308"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-database---all-states-lower-house-data
+  content_id: "239"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.278417
+  updated_at: 2011-03-16 00:05:30.278417
+inkling_paths_305: 
+  id: "309"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--1990
+  content_id: "240"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.287269
+  updated_at: 2011-03-16 00:05:30.287269
+inkling_paths_306: 
+  id: "310"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-drug-strategy-household-survey--1995
+  content_id: "241"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.296685
+  updated_at: 2011-03-16 00:05:30.296685
+inkling_paths_307: 
+  id: "311"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2005--victims
+  content_id: "242"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.307548
+  updated_at: 2011-03-16 00:05:30.307548
+inkling_paths_308: 
+  id: "312"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-vic96
+  content_id: "243"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.316381
+  updated_at: 2011-03-16 00:05:30.316381
+inkling_paths_309: 
+  id: "313"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--qld
+  content_id: "244"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.325285
+  updated_at: 2011-03-16 00:05:30.325285
+inkling_paths_310: 
+  id: "314"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--wa
+  content_id: "245"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.334041
+  updated_at: 2011-03-16 00:05:30.334041
+inkling_paths_311: 
+  id: "315"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/northern-territory-post-election-survey--1983
+  content_id: "246"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.343073
+  updated_at: 2011-03-16 00:05:30.343073
+inkling_paths_312: 
+  id: "316"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--december-1983
+  content_id: "247"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.352199
+  updated_at: 2011-03-16 00:05:30.352199
+inkling_paths_313: 
+  id: "317"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-social-science-survey--1984
+  content_id: "248"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.363425
+  updated_at: 2011-03-16 00:05:30.363425
+inkling_paths_314: 
+  id: "318"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-drug-strategy-household-survey--urban-aboriginal-and-torres-strait-islander-supplement--1994
+  content_id: "249"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.437954
+  updated_at: 2011-03-16 00:05:30.437954
+inkling_paths_315: 
+  id: "319"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-poi99
+  content_id: "250"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.447483
+  updated_at: 2011-03-16 00:05:30.447483
+inkling_paths_316: 
+  id: "320"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--nsw
+  content_id: "251"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.456897
+  updated_at: 2011-03-16 00:05:30.456897
+inkling_paths_317: 
+  id: "321"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/public-sector-equal-employment-opportunity-survey--1990--file-deu
+  content_id: "252"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.466541
+  updated_at: 2011-03-16 00:05:30.466541
+inkling_paths_318: 
+  id: "322"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aborigines-who-abstain-from-alcohol--1990-1993--file-c01
+  content_id: "253"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.475779
+  updated_at: 2011-03-16 00:05:30.475779
+inkling_paths_319: 
+  id: "323"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aborigines-who-abstain-from-alcohol--1990-1993--file-p01
+  content_id: "254"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.48705
+  updated_at: 2011-03-16 00:05:30.48705
+inkling_paths_320: 
+  id: "324"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2005--persons-of-interest
+  content_id: "255"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.496066
+  updated_at: 2011-03-16 00:05:30.496066
+inkling_paths_321: 
+  id: "325"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--2007
+  content_id: "256"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.505305
+  updated_at: 2011-03-16 00:05:30.505305
+inkling_paths_322: 
+  id: "326"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/evaluation-of-the-employment-initiatives-program-in-victoria--1983-1984--file-b
+  content_id: "257"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.514665
+  updated_at: 2011-03-16 00:05:30.514665
+inkling_paths_323: 
+  id: "327"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--1996
+  content_id: "258"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.524014
+  updated_at: 2011-03-16 00:05:30.524014
+inkling_paths_324: 
+  id: "328"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-vic01
+  content_id: "259"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.534444
+  updated_at: 2011-03-16 00:05:30.534444
+inkling_paths_325: 
+  id: "329"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-vic99
+  content_id: "260"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.543837
+  updated_at: 2011-03-16 00:05:30.543837
+inkling_paths_326: 
+  id: "330"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--act
+  content_id: "261"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.552812
+  updated_at: 2011-03-16 00:05:30.552812
+inkling_paths_327: 
+  id: "331"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--vic
+  content_id: "262"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.563817
+  updated_at: 2011-03-16 00:05:30.563817
+inkling_paths_328: 
+  id: "332"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--vic
+  content_id: "263"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.573703
+  updated_at: 2011-03-16 00:05:30.573703
+inkling_paths_329: 
+  id: "333"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--1987
+  content_id: "264"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.587885
+  updated_at: 2011-03-16 00:05:30.587885
+inkling_paths_330: 
+  id: "334"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-police-custody-survey--august-1995
+  content_id: "265"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.598769
+  updated_at: 2011-03-16 00:05:30.598769
+inkling_paths_331: 
+  id: "335"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-drug-strategy-household-survey--1998
+  content_id: "266"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.607611
+  updated_at: 2011-03-16 00:05:30.607611
+inkling_paths_332: 
+  id: "336"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--act
+  content_id: "267"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.619001
+  updated_at: 2011-03-16 00:05:30.619001
+inkling_paths_333: 
+  id: "337"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--tas
+  content_id: "268"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.631312
+  updated_at: 2011-03-16 00:05:30.631312
+inkling_paths_334: 
+  id: "338"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--wa
+  content_id: "269"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.643978
+  updated_at: 2011-03-16 00:05:30.643978
+inkling_paths_335: 
+  id: "339"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--april-1986
+  content_id: "270"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.74864
+  updated_at: 2011-03-16 00:05:30.74864
+inkling_paths_336: 
+  id: "340"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/rights-in-australia-1991-1992--national-household-sample
+  content_id: "271"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.769397
+  updated_at: 2011-03-16 00:05:30.769397
+inkling_paths_337: 
+  id: "341"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/area-health-survey--1991--file-pub
+  content_id: "272"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.786536
+  updated_at: 2011-03-16 00:05:30.786536
+inkling_paths_338: 
+  id: "342"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/saulwick-age-poll--july-2004--federal-election
+  content_id: "273"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.800705
+  updated_at: 2011-03-16 00:05:30.800705
+inkling_paths_339: 
+  id: "343"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--tas
+  content_id: "274"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.812213
+  updated_at: 2011-03-16 00:05:30.812213
+inkling_paths_340: 
+  id: "344"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--wa
+  content_id: "275"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.823576
+  updated_at: 2011-03-16 00:05:30.823576
+inkling_paths_341: 
+  id: "345"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/age-poll--november-1978
+  content_id: "276"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.839469
+  updated_at: 2011-03-16 00:05:30.839469
+inkling_paths_342: 
+  id: "346"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-142--febuary-5--1960
+  content_id: "277"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.85198
+  updated_at: 2011-03-16 00:05:30.85198
+inkling_paths_343: 
+  id: "347"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/problem-gambling-client-survey--1999
+  content_id: "278"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.862198
+  updated_at: 2011-03-16 00:05:30.862198
+inkling_paths_344: 
+  id: "348"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2003--persons-of-interest
+  content_id: "279"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.872919
+  updated_at: 2011-03-16 00:05:30.872919
+inkling_paths_345: 
+  id: "349"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-vic98
+  content_id: "280"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.883203
+  updated_at: 2011-03-16 00:05:30.883203
+inkling_paths_346: 
+  id: "350"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--tas
+  content_id: "281"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.892359
+  updated_at: 2011-03-16 00:05:30.892359
+inkling_paths_347: 
+  id: "351"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/kakadu-conservation-zone-contingent-valuation-survey--australia--1990--file-nat
+  content_id: "282"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.904011
+  updated_at: 2011-03-16 00:05:30.904011
+inkling_paths_348: 
+  id: "352"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-vic00
+  content_id: "283"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.913191
+  updated_at: 2011-03-16 00:05:30.913191
+inkling_paths_349: 
+  id: "353"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--2004--restricted-version
+  content_id: "284"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.922653
+  updated_at: 2011-03-16 00:05:30.922653
+inkling_paths_350: 
+  id: "354"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/saulwick-age-poll--august-2001--pre-election-survey
+  content_id: "285"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.931931
+  updated_at: 2011-03-16 00:05:30.931931
+inkling_paths_351: 
+  id: "355"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--nsw
+  content_id: "286"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.941699
+  updated_at: 2011-03-16 00:05:30.941699
+inkling_paths_352: 
+  id: "356"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-drug-strategy-household-survey--2007
+  content_id: "287"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.951658
+  updated_at: 2011-03-16 00:05:30.951658
+inkling_paths_353: 
+  id: "357"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--nsw
+  content_id: "288"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.962713
+  updated_at: 2011-03-16 00:05:30.962713
+inkling_paths_354: 
+  id: "358"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--nsw
+  content_id: "289"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.972263
+  updated_at: 2011-03-16 00:05:30.972263
+inkling_paths_355: 
+  id: "359"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--sa
+  content_id: "290"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:30.981018
+  updated_at: 2011-03-16 00:05:30.981018
+inkling_paths_356: 
+  id: "360"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--vic
+  content_id: "291"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.055922
+  updated_at: 2011-03-16 00:05:31.055922
+inkling_paths_357: 
+  id: "361"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--wa
+  content_id: "292"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.065305
+  updated_at: 2011-03-16 00:05:31.065305
+inkling_paths_358: 
+  id: "362"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-inc02
+  content_id: "293"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.074464
+  updated_at: 2011-03-16 00:05:31.074464
+inkling_paths_359: 
+  id: "363"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-poi97
+  content_id: "294"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.084497
+  updated_at: 2011-03-16 00:05:31.084497
+inkling_paths_360: 
+  id: "364"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--2004--supplementary-sample
+  content_id: "295"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.093815
+  updated_at: 2011-03-16 00:05:31.093815
+inkling_paths_361: 
+  id: "365"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--australia
+  content_id: "296"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.102952
+  updated_at: 2011-03-16 00:05:31.102952
+inkling_paths_362: 
+  id: "366"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--sa
+  content_id: "297"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.113668
+  updated_at: 2011-03-16 00:05:31.113668
+inkling_paths_363: 
+  id: "367"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/image-of-the-australian-aboriginal-in-illustrated-newspapers--1853-1897
+  content_id: "298"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.122632
+  updated_at: 2011-03-16 00:05:31.122632
+inkling_paths_364: 
+  id: "368"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-180--december-10--1965
+  content_id: "299"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.131772
+  updated_at: 2011-03-16 00:05:31.131772
+inkling_paths_365: 
+  id: "369"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/kakadu-conservation-zone-contingent-valuation-survey--australia--1990--file-nt
+  content_id: "300"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.142268
+  updated_at: 2011-03-16 00:05:31.142268
+inkling_paths_366: 
+  id: "370"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/public-sector-equal-employment-opportunity-survey--1990--file-unu
+  content_id: "301"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.151912
+  updated_at: 2011-03-16 00:05:31.151912
+inkling_paths_367: 
+  id: "371"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-inc96
+  content_id: "302"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.160836
+  updated_at: 2011-03-16 00:05:31.160836
+inkling_paths_368: 
+  id: "372"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--sa
+  content_id: "303"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.171717
+  updated_at: 2011-03-16 00:05:31.171717
+inkling_paths_369: 
+  id: "373"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-vic97
+  content_id: "304"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.181358
+  updated_at: 2011-03-16 00:05:31.181358
+inkling_paths_370: 
+  id: "374"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-drug-strategy-household-survey--2001
+  content_id: "305"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.190864
+  updated_at: 2011-03-16 00:05:31.190864
+inkling_paths_371: 
+  id: "375"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--qld
+  content_id: "306"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.200099
+  updated_at: 2011-03-16 00:05:31.200099
+inkling_paths_372: 
+  id: "376"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-statistical-local-area--vic
+  content_id: "307"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.209541
+  updated_at: 2011-03-16 00:05:31.209541
+inkling_paths_373: 
+  id: "377"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--wa
+  content_id: "308"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.218772
+  updated_at: 2011-03-16 00:05:31.218772
+inkling_paths_374: 
+  id: "378"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/tertiary-education-for-rural-and-remote-area-health-workers--1992
+  content_id: "309"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.230208
+  updated_at: 2011-03-16 00:05:31.230208
+inkling_paths_375: 
+  id: "379"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-police-custody-survey--august-1992
+  content_id: "310"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.239937
+  updated_at: 2011-03-16 00:05:31.239937
+inkling_paths_376: 
+  id: "380"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-inc00
+  content_id: "311"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.317359
+  updated_at: 2011-03-16 00:05:31.317359
+inkling_paths_377: 
+  id: "381"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2003--victims
+  content_id: "312"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.32767
+  updated_at: 2011-03-16 00:05:31.32767
+inkling_paths_378: 
+  id: "382"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--2004
+  content_id: "313"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.337271
+  updated_at: 2011-03-16 00:05:31.337271
+inkling_paths_379: 
+  id: "383"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aboriginal-radio-broadcasting-in-alice-springs--1981
+  content_id: "314"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.346667
+  updated_at: 2011-03-16 00:05:31.346667
+inkling_paths_380: 
+  id: "384"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--october-1984
+  content_id: "315"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.355917
+  updated_at: 2011-03-16 00:05:31.355917
+inkling_paths_381: 
+  id: "385"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--1993
+  content_id: "316"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.36574
+  updated_at: 2011-03-16 00:05:31.36574
+inkling_paths_382: 
+  id: "386"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2003--incidents
+  content_id: "317"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.374931
+  updated_at: 2011-03-16 00:05:31.374931
+inkling_paths_383: 
+  id: "387"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-2004--persons-of-interest
+  content_id: "318"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.386405
+  updated_at: 2011-03-16 00:05:31.386405
+inkling_paths_384: 
+  id: "388"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--state/territory--act
+  content_id: "319"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.395562
+  updated_at: 2011-03-16 00:05:31.395562
+inkling_paths_385: 
+  id: "389"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-constitutional-referendum-survey--1999--public-release-version
+  content_id: "320"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.404589
+  updated_at: 2011-03-16 00:05:31.404589
+inkling_paths_386: 
+  id: "390"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--2004
+  content_id: "321"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.413451
+  updated_at: 2011-03-16 00:05:31.413451
+inkling_paths_387: 
+  id: "391"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/the-australian-survey-of-social-attitudes--2007
+  content_id: "322"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.422561
+  updated_at: 2011-03-16 00:05:31.422561
+inkling_paths_388: 
+  id: "392"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--aboriginal-community--nt
+  content_id: "323"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.431372
+  updated_at: 2011-03-16 00:05:31.431372
+inkling_paths_389: 
+  id: "393"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-local-area--nt
+  content_id: "324"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.440705
+  updated_at: 2011-03-16 00:05:31.440705
+inkling_paths_390: 
+  id: "394"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-153--november-10--1961
+  content_id: "325"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.451477
+  updated_at: 2011-03-16 00:05:31.451477
+inkling_paths_391: 
+  id: "395"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/national-social-science-survey-integrated-data--1984-1988
+  content_id: "326"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.461222
+  updated_at: 2011-03-16 00:05:31.461222
+inkling_paths_392: 
+  id: "396"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/employment-and-further-study-of-graduates--sydney--1990
+  content_id: "327"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.470436
+  updated_at: 2011-03-16 00:05:31.470436
+inkling_paths_393: 
+  id: "397"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-poi01
+  content_id: "328"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.479216
+  updated_at: 2011-03-16 00:05:31.479216
+inkling_paths_394: 
+  id: "398"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--2001
+  content_id: "329"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.487937
+  updated_at: 2011-03-16 00:05:31.487937
+inkling_paths_395: 
+  id: "399"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--section-of-state--tas
+  content_id: "330"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.496871
+  updated_at: 2011-03-16 00:05:31.496871
+inkling_paths_396: 
+  id: "400"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aboriginal-survey--new-south-wales-and-south-australia--1965--file-f
+  content_id: "331"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.506159
+  updated_at: 2011-03-16 00:05:31.506159
+inkling_paths_397: 
+  id: "401"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aboriginal-survey--new-south-wales-and-south-australia--1965--file-h
+  content_id: "332"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.58192
+  updated_at: 2011-03-16 00:05:31.58192
+inkling_paths_398: 
+  id: "402"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aboriginal-survey--new-south-wales-and-south-australia--1965--file-m
+  content_id: "333"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.591924
+  updated_at: 2011-03-16 00:05:31.591924
+inkling_paths_399: 
+  id: "403"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-123--febuary-9--1957
+  content_id: "334"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.601409
+  updated_at: 2011-03-16 00:05:31.601409
+inkling_paths_400: 
+  id: "404"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-134--october-28--1958
+  content_id: "335"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.61059
+  updated_at: 2011-03-16 00:05:31.61059
+inkling_paths_401: 
+  id: "405"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--may-1978
+  content_id: "336"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.620397
+  updated_at: 2011-03-16 00:05:31.620397
+inkling_paths_402: 
+  id: "406"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-171--august-21--1964
+  content_id: "337"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.630234
+  updated_at: 2011-03-16 00:05:31.630234
+inkling_paths_403: 
+  id: "407"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-gallup-polls--survey-176--april-9--1965
+  content_id: "338"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.640321
+  updated_at: 2011-03-16 00:05:31.640321
+inkling_paths_404: 
+  id: "408"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-south-wales-recorded-crime-data-1996-2002--file-inc97
+  content_id: "339"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.652145
+  updated_at: 2011-03-16 00:05:31.652145
+inkling_paths_405: 
+  id: "409"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/1991-census-of-population-and-housing--aboriginal-and-torres-strait-islander-community-profile--statistical-division--qld
+  content_id: "340"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.661687
+  updated_at: 2011-03-16 00:05:31.661687
+inkling_paths_406: 
+  id: "410"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/rights-in-australia-1991-1992--decision-makers-sample
+  content_id: "341"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.671796
+  updated_at: 2011-03-16 00:05:31.671796
+inkling_paths_407: 
+  id: "411"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-candidate-study--1993
+  content_id: "342"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.681593
+  updated_at: 2011-03-16 00:05:31.681593
+inkling_paths_408: 
+  id: "412"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/aborigines-who-abstain-from-alcohol--1990-1993--file-p02
+  content_id: "343"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.691534
+  updated_at: 2011-03-16 00:05:31.691534
+inkling_paths_409: 
+  id: "413"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study--1998
+  content_id: "344"
+  content_type: ArchiveStudy
+  created_at: 2011-03-16 00:05:31.701676
+  updated_at: 2011-03-16 00:05:31.701676
