@@ -5,7 +5,7 @@ class SearchController < ContentController
   def sphinx   
     @term = params[:term]
     @current_archive = Archive.find(params[:archive_id])  
-    @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :conditions => {:archive_id => @current_archive.id})
+    @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :conditions => {:archive_id => @current_archive.id}, :match_mode => :extended)
 
     @archive_facets = {Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.ada.id}),
       Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.social_science.id}),
@@ -15,6 +15,8 @@ class SearchController < ContentController
       Archive.qualitative => (Study.facets @term, :conditions => {:archive_id => Archive.qualitative.id}),
       Archive.international => (Study.facets @term, :conditions => {:archive_id => Archive.international.id})            
       }
+      
+    @title = "Search: #{@term}"
       
     render :results
   end
