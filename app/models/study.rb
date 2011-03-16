@@ -12,13 +12,16 @@ class Study < ActiveRecord::Base
   
   define_index do
     indexes label, :sortable => true
-    indexes abstract, :sortable => true
-    indexes series_name, :sortable => true
-    indexes universe, :sortable => true
+    indexes abstract
+    indexes series_name
+    indexes universe
+    indexes comment
     indexes archives.id, :as => :archive_id 
-    indexes data_kind, :facet => true
-    indexes sampling, :facet => true
-    indexes collection_mode, :facet => true
+    
+    #facets
+    indexes data_kind_facet, :facet => true
+    indexes sampling_facet, :facet => true
+    indexes collection_mode_facet, :facet => true
   end
 
   
@@ -45,6 +48,8 @@ class Study < ActiveRecord::Base
     data.delete(:abstract)
     study.keywords = data[:keywords]
     data.delete(:keywords)
+    study.comment = data[:comment]
+    data.delete(:comment)
 
     #facet data
     if data[:dataKind]      

@@ -235,9 +235,10 @@ ActiveRecord::Schema.define(:version => 20110315011631) do
     t.text     "abstract"
     t.text     "keywords"
     t.integer  "page_id"
-    t.string   "data_kind"
-    t.string   "sampling"
-    t.string   "collection_mode"
+    t.string   "data_kind_facet"
+    t.string   "sampling_facet"
+    t.string   "collection_mode_facet"
+    t.text     "comment"
   end
 
   create_table "study_fields", :force => true do |t|
