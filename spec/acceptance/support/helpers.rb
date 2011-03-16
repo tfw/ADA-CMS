@@ -32,6 +32,14 @@ module HelperMethods
     current_path.sub(%r{.*/},'').to_i
   end
 
+  def upload_image(file_title, file_path)
+    visit(new_staff_media_path)
+    fill_in("media_title", :with => file_title)
+    attach_file("media_asset", file_path)
+    click_button("Create Media")
+    current_path.sub(%r{.*/},'').to_i
+  end
+
   def sign_in(user)
     visit '/login'
     fill_in('inkling_user_email', :with => user.email)
