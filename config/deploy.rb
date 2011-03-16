@@ -67,6 +67,5 @@ task :symlinks, :roles => :app do
 end
 
 task :deploy_log, :roles => :app do
-  system('rm -rf tmp/deploy-log.txt')
-  system("echo >> Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}")
+  system("echo \"Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}\" > tmp/deploy-log.txt")
 end
