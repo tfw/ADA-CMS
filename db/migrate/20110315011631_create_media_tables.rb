@@ -11,6 +11,7 @@ class CreateMediaTables < ActiveRecord::Migration
       t.datetime :asset_updated_at
       t.timestamps
     end
+    
     add_foreign_key(:media, :user_id, :inkling_users)
     add_index(:media, :user_id)
     add_index(:media, :title, :unique => true)

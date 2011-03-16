@@ -52,6 +52,7 @@ end
 
 after 'deploy:update', :generate_database_yml
 after 'deploy:update', :symlinks
+after 'deploy:update', :deploy_log
 before 'deploy:update_code', :echo_ruby_env
 
 task :echo_ruby_env do
@@ -63,4 +64,9 @@ end
 task :symlinks, :roles => :app do
   run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
   run "ln -nfs #{shared_path}/sphinx #{current_path}/db/sphinx"  
+end
+
+task :symlinks, :roles => :app do
+  system('rm -rf tmp/deploy-log.txt')
+  system("echo >> Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}")
 end

@@ -38,7 +38,8 @@ module Nesstar
           cancel_process :if => '${f:study_ids.size} == 0'
           participant :ref => 'download_dataset_xmls'
           participant :ref => 'convert_and_find_resources'
-          participant :ref => 'ada_archive_contains_all_studies'          
+          participant :ref => 'ada_archive_contains_all_studies' 
+          participant :ref => 'log_run'           
         end
 
         process_definition :name => 'initialize_directories' do
@@ -109,6 +110,7 @@ module Nesstar
           if http_headers.first =~ /500/
             fetch_errors << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
             # puts "\n\n found an error, not downloading file, for #{ddi_id}"
+            Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
             next
           end
           
@@ -175,6 +177,10 @@ module Nesstar
             ArchiveStudy.create!(:archive => Archive.ada, :study => study)
           end
         end
+      end
+
+      engine.register_participant 'log_run' do |workitem|
+        Inkling::Log.create!(:category => "study", :text =>  "Downloaded #{workitem.fields['downloads'].size} studies. Encountered #{workitem.fields['fetch_errors'].size} errors. There are now #{Study.all.size} studies in ADA.")        
       end
     end
   end

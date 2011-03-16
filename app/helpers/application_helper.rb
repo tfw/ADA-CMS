@@ -35,4 +35,8 @@ module ApplicationHelper
     file_name = archive.slug.gsub("-", "")
     image_tag("structure/icon_#{file_name}.png")  
   end
+  
+  # def deploy_log
+  #   log = File.read
+  # end
 end
