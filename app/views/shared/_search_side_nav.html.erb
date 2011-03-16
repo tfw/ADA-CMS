@@ -1,7 +1,7 @@
 <% content_for :sidenav do %>
   <ul>
     <% @archive_facets.each do |archive, facets| %>
-      <li id="<%= archive.slug %>"> <%= archive.name %> </li>
+      <li> <%= archive.name %> </li>
       <% if facets.any? %>
         <ul>
         <% facets.each do |facet, facet_options| 
@@ -13,7 +13,7 @@
             
             facet_options[0..limit].each do |option, count| %>
             <li>
-            <%= link_to "#{option} (#{count})", browse_path(:facet => option, :page => 1, :archive_id => @current_archive.id) %>
+            <%= link_to "#{option} (#{count})", search_path(:term => option, :page => 1, :archive_id => @current_archive.id) %>
             </li>
           <% end %>
         <% end %>

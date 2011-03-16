@@ -10,7 +10,7 @@ module ApplicationHelper
   
   #this should really be in another helper, but where - browsercms can use this helper
   def human_readable_check(ddi, dataset, current_user)
-    mapping = DDIMapping.find_by_ddi(ddi)
+    mapping = DdiMapping.find_by_ddi(ddi)
 
     if mapping.nil?
       ddi
