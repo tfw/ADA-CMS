@@ -82,6 +82,10 @@
         
   <footer>
     <p>&#xA9; Australian Data Archive</p>
+    <% if Rails.env == "development" %>
+      <em><%= deploy_log %></em>
+    <% end %>
+    <p>
   </footer> 
 
 </body>

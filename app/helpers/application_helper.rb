@@ -36,7 +36,9 @@ module ApplicationHelper
     image_tag("structure/icon_#{file_name}.png")  
   end
   
-  # def deploy_log
-  #   log = File.read
-  # end
+  def deploy_log
+    if File.exists?("tmp/deploy-log.txt")
+      log = File.read("tmp/deploy-log.txt")
+    end
+  end
 end
