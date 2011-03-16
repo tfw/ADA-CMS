@@ -3,9 +3,8 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>- Australian Data Archive - <%= @title %></title>
-		<link rel="stylesheet" href="/stylesheets/import.css" media="all"/>
 		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
-    <%= stylesheet_link_tag :all %>
+    <%= stylesheet_link_tag "import" %>
     <%= csrf_meta_tag %>
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application', 
 		'jquery.clearableTextField.min' %>		

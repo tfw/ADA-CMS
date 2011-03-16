@@ -1,13 +1,17 @@
 <% content_for :sidenav do %>
   <ul>
     <% @archive_facets.each do |archive, facets| %>
-      <li> <%= archive.name %> </li>
+      <% unless archive == Archive.ada %>
+        <li> <%= archive.name %> </li>
+      <% else %>
+        <li>Global</li>
+      <% end %>
       <% if facets.any? %>
         <ul>
         <% facets.each do |facet, facet_options| 
             limit = facet_options.size > 4 ? 5 : facet_options.size
             next if limit == 0 %>
-            <h5><%= facet %></h5>
+            <h5> * <%= facet %></h5>
             <% facet_options = facet_options.sort_by {|k,v| v}
             facet_options = facet_options.reverse
             

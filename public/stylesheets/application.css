@@ -42,7 +42,7 @@ form.tree-form {
 #sortable li span { position: absolute; margin-left: -1.3em; }
 
 /* Content Area */
-div.content-area {
+/*div.content-area {
   border: 1px solid #bababa;
   background: #fff;
   border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
@@ -74,7 +74,7 @@ dl, p, div.content-area ol {
 div.content-area fieldset fieldset {
 /*  margin: 0;*/
 }
-
+*/
 p {
   margin-bottom: 0;
 }
@@ -126,7 +126,6 @@ dl.issue-metadata dd ol li{
 a#preview-link {
   background: url(/images/structure/icon_preview.png) no-repeat 5px center;
   padding: 5px 0 5px 28px;
-  
 }
 
 /* Content Area */
@@ -187,6 +186,17 @@ a#preview-link {
 	clear: left;
 }
 
+
+/*White boxes*/
+/*div#white-box{
+	background: white;
+	border: 1px solid #BABABA;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding: 10px;	
+}
+*/
 /* More work needed here for nice tables */
 .content-area table {
 	width: 95%;
