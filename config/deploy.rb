@@ -66,7 +66,7 @@ task :symlinks, :roles => :app do
   run "ln -nfs #{shared_path}/sphinx #{current_path}/db/sphinx"  
 end
 
-task :symlinks, :roles => :app do
+task :deploy_log, :roles => :app do
   system('rm -rf tmp/deploy-log.txt')
   system("echo >> Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}")
 end
