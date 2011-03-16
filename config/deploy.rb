@@ -67,6 +67,6 @@ task :symlinks, :roles => :app do
 end
 
 task :deploy_log, :roles => :app do
-  run "touch tmp/deploy-log.txt"
-  run "echo \"Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}\" > tmp/deploy-log.txt"
+  run "touch #{current_path}/tmp/deploy-log.txt"
+  run "echo \"Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}\" > #{current_path}/tmp/deploy-log.txt"
 end
