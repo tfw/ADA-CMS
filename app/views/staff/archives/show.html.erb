@@ -4,15 +4,6 @@
 
 <%= render_archive_partial(@archive) %>
 
-<fieldset>
-  <legend> Integrations </legend>
-    <ul class="menu task-panes">
-      <li>
-<%= link_to 'Integrations', staff_archive_integrations_path(@archive) %> (Studies: <%= @archive.archive_studies.size %> / Blocks: <%= @archive.archive_study_blocks.size %> / Integrations: <%= @archive.archive_study_integrations.size %> / Queries: <%= @archive.archive_study_queries.size %>)
-      </li>
-  </ul>
-</fieldset>
-
 <fieldset id="page-management">
   <legend> Page Management (<%= link_to "+", new_staff_archive_page_path(:archive_id => @archive) %>)</legend>
   <p>

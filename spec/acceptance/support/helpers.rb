@@ -6,7 +6,7 @@ module HelperMethods
 
   def visit_integrations(archive)
     visit_archive(archive.slug)
-    click_link("Integrations")
+    visit staff_archive_integrations_path(archive)
     page.should have_content("Integrations")
   end
     

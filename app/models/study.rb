@@ -12,13 +12,17 @@ class Study < ActiveRecord::Base
   
   define_index do
     indexes label, :sortable => true
-    indexes abstract, :sortable => true
-    indexes series_name, :sortable => true
-    indexes universe, :sortable => true
+    indexes abstract
+    indexes series_name
+    indexes universe
+    indexes comment
     indexes archives.id, :as => :archive_id 
+    
+    #facets
     indexes data_kind, :facet => true
-    indexes sampling, :facet => true
-    indexes collection_mode, :facet => true
+    indexes sampling_abbr, :facet => true
+    indexes collection_mode_abbr, :facet => true
+    indexes contact_affiliation, :facet => true
   end
 
   
@@ -45,21 +49,24 @@ class Study < ActiveRecord::Base
     data.delete(:abstract)
     study.keywords = data[:keywords]
     data.delete(:keywords)
+    study.comment = data[:comment]
+    data.delete(:comment)
+    study.contact_affiliation = data[:stdyContactAffiliation]
+    data.delete(:stdyContactAffiliation)
 
     #facet data
     if data[:dataKind]      
       study.data_kind = data[:dataKind]
       data.delete(:dataKind)
     end
-    
+
+    #we dont delete abbreviated data, so all original data is in the study_fields table
     if data[:sampling] and data[:sampling].length < 255
-      study.sampling = data[:sampling].split(/\n/).first
-      data.delete(:sampling)
+      study.sampling_abbr = data[:sampling].split(/\n/).first
     end
     
     if data[:collMode] and data[:collMode].length < 255
-      study.collection_mode = data[:collMode]
-      data.delete(:collMode)
+      study.collection_mode_abbr = data[:collMode]
     end
 
     study.save!

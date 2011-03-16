@@ -5,7 +5,7 @@ class DdiMapping < ActiveRecord::Base
   def self.batch_create(local_data)
     local_data.each do |k,v|
       if DdiMapping.find_by_ddi(k.to_s).nil?
-        mapping = DDIMapping.new(:ddi => k.to_s)
+        mapping = DdiMapping.new(:ddi => k.to_s)
         mapping.save
       end
     end
