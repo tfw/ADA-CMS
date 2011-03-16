@@ -81,10 +81,10 @@
   </section>
         
   <footer>
-    <p>&#xA9; Australian Data Archive</p>
-    <% if Rails.env == "development" %>
+    <p>&#xA9; Australian Data Archive<% if Rails.env == "development" %>,
       <em><%= deploy_log %></em>
     <% end %>
+    </p>
     <p>
   </footer> 
 
