@@ -34,9 +34,10 @@
 }
 .content nav ul li {
 	border-bottom: 1px solid #CCC;
-/*	list-style: url(none) none;
-*/
-	list-style: none;
+
+/* n.f. editing original swell */	
+/*	list-style: url(none) none;*/
+	list-style: none;	
 	display: block;
 	padding: 0px;
 }

@@ -11,7 +11,9 @@
 }
 
 .mainnav ul li {
-	list-style: url(none) none;
+/*editing swell original n.f.*/
+/*	list-style: url(none) none;*/
+	list-style: none;
 	position: relative;
 	background: #292929;
 	background: -moz-linear-gradient(top, black, #3c3c3c 1px, #292929 25px);
