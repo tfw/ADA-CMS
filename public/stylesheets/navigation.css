@@ -34,7 +34,9 @@
 }
 .content nav ul li {
 	border-bottom: 1px solid #CCC;
-	list-style: url(none) none;
+/*	list-style: url(none) none;
+*/
+	list-style: none;
 	display: block;
 	padding: 0px;
 }
@@ -53,12 +55,14 @@
 	color: #000;
 	background: #E8E8E8 url(../images/structure/icon_hover.png) no-repeat 5px center;
 }
-#dashboard {
+
+/*#dashboard {
   background: url(/images/placeholders/1_sml.png) no-repeat 5px center;
 }
 #ada {
   background: url(/images/placeholders/4_sml.png) no-repeat 5px center;
 }
+*/
 #science {
   background: url(/images/structure/icon_socialscience.png) no-repeat 5px center;
 }
@@ -77,22 +81,6 @@
 #international {
   background: url(/images/structure/icon_international.png) no-repeat 5px center;
 }
-/*#users {
-  background: url(/images/placeholders/2_sml.png) no-repeat 5px center;
-}
-#reports {
-  background: url(/images/placeholders/3_sml.png) no-repeat 5px center;
-}
-#adapt {
-  background: url(/images/placeholders/4_sml.png) no-repeat 5px center;
-}
-#hccds {
-  background: url(/images/placeholders/1_sml.png) no-repeat 5px center;
-}
-#usage-auditing {
-  background: url(/images/placeholders/1_sml.png) no-repeat 5px center;
-}
-*/
 .archive_current {
-	background: #333 url(../images/structure/icon_current.png) no-repeat 5px center!important;
+	background: #333 url(/images/structure/icon_current.png) no-repeat 5px center!important;
 }
