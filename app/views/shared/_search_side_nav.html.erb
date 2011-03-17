@@ -17,7 +17,7 @@
             
             facet_options[0..limit].each do |option, count| %>
             <li>
-            <%= link_to "#{option} (#{count})", search_path(:term => option, :page => 1, :archive_id => @current_archive.id) %>
+            <%= link_to "#{option} (#{count})", search_path(:term => "@#{facet} #{option}", :page => 1, :archive_id => @current_archive.id) %>
             </li>
           <% end %>
         <% end %>

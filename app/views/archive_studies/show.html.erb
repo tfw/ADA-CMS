@@ -7,59 +7,41 @@
 <% end %>
 
 
- <script type="text/javascript">
-   <!--
-   function show(id){
-     var metadata = document.getElementById("study");
-     var relatedMaterials = document.getElementById("related-materials");
-     var relatedstudys = document.getElementById("related-studys");
-     var annotations = document.getElementById("annotations");
+<% content_for :js do %>
 
-     if (id == "study"){
-        metadata.style.display = "block";
-        relatedMaterials.style.display = "none";
-        relatedstudys.style.display = "none";
-        annotations.style.display = "none";
-       }
-     else if (id == "related-materials"){
-       metadata.style.display = "none";
-       relatedMaterials.style.display = "block";
-       relatedstudys.style.display = "none";
-       annotations.style.display = "none";
-       }
-     else if (id == "related-studys"){
-        metadata.style.display = "none";
-       relatedMaterials.style.display = "none";
-       relatedstudys.style.display = "block";
-       annotations.style.display = "none";
-       }
-     else if (id == "annotations"){
-       metadata.style.display = "none";
-       relatedMaterials.style.display = "none";
-       relatedstudys.style.display = "none";
-       annotations.style.display = "block";
-       }
-     }
+  $("#study-link").click(function() {
+    $('#related-materials').toggle('slow', function() {});
+    $('#related-studies').toggle('slow', function() {});
+  });
+  
+  $("#related-materials-link").click(function() {
+    alert('1');
+    $('#study').toggle('slow', function() {});
+    $('#related-studies').toggle('slow', function() {});
+  });
 
-   //-->
- </script>
+  $("#related-studies-link").click(function() {
+    alert('1');
+    $('#study').toggle('slow', function() {});
+    $('#related-materials').toggle('slow', function() {});
+  });
+
+<% end %>
 
 <div id="content">
 	<div id="page">
     <% study = @study %>
 
 		<div id="study-page">
-      <div class="content-box">
-        <a id="study-link" href='#' onclick="show('study');">Study Description</a> |
-        <a id="related-materials-link" href='#' onclick="show('related-materials');">Related Materials</a> |
-        <a id="related-studys-link" href='#' onclick="show('related-studys');">Related studies</a> |
-        <a id="annotations-link" href='#' onclick="show('annotations');">Annotations</a>
-
+      <div>
+        <a id="study-link">Study Description</a> |
+        <a id="related-materials-link">Related Materials</a> |
+        <a id="related-studys-link">Related studies</a> 
 
         <span class="float-right">Analyse or download this <a href="/nesstar/study/<%=study.id%>">study</a>.</span>
 
-        <div id="study" >
-          <div class="content-box">
+        <div id="study">
+          <div>
             <em><%=study.label %></em>
             <table id="study-table">
              <tr>
@@ -176,7 +158,7 @@
           </div>
         </div>
         <div id="related-materials" style="display:none">
-          <div class="content-box">
+          <div>
           <h3>Related Materials</h3>
           <ul>
 						<% for rm in study.study_related_materials %>
@@ -186,15 +168,15 @@
 						<% end %>
           </ul>
         </div>
+
+        <div id="categories" style="display:none">
+          <div>
+          <h3>Categories</h3>
+          
+          This section is left over from ATSIDA - unsure of its relevance now.
         </div>
-
-
-Categories missing <br/>
-Annotations missing 
+        
+      </div>
 		</div>
 	</div>
-	<div style="clear: both;">&nbsp;</div>
 </div>
-<div id="footer">
-Contact Us | <a href="/sitemap">Sitemap</a> | etc. | etc.</span>
-</div><strong></strong>

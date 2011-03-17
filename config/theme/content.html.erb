@@ -7,7 +7,15 @@
     <%= stylesheet_link_tag "import" %>
     <%= csrf_meta_tag %>
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application', 
-		'jquery.clearableTextField.min' %>		
+		'jquery.clearableTextField.min' %>	
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+      <%= yield :js %>
+     });
+    </script>
+
+			
 	</head
 			
     <body id="<%= archive_css(@current_archive) %>">
@@ -75,7 +83,7 @@
     <section class="content">
 
     		<nav>
-    		  <%= yield :sidenav %> <!-- hello !-->
+    		  <%= yield :sidenav %> 
     		</nav>      
 
     	<div class="notice"><%= notice %></div>
