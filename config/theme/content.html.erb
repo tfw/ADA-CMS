@@ -35,29 +35,29 @@
 			<div class="masthead"><a href="/ada/home">Australian Data Archive</a></div>
 	</header>
 
-		<nav class="mainnav clearfix">
-		  <ul>
-				<% for page in @ada_parent_pages %>
-					<li> <%= link_to(page.title, page.path.slug) %> 
-						<% if page.children.any? %>
-							<ul>
-									<% for child in page.children %>									
-										<li> <%= link_to(child.title, child.path.slug)%> </li>
-									<% end %>
-							</ul
-						<% end %>
-					</li>
-				<% end %>
-	     </ul>
- 		  <div class="searchContainer">
- 		    <form action="/search" method="get" id="search-form" class="formtastic">
- 		      <label for="menusearch"></label>
- 		      <input type="text" name="term" id="search_term" value="Search this site"/>
- 		      <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
-           <input type="image" alt="Go" id="search_button" src="/images/structure/bttn_go.png"/>
- 	        </form>
- 	      </div>
-    </nav>
+	<nav class="mainnav clearfix">
+	  <ul>
+			<% for page in @ada_parent_pages %>
+				<li> <%= link_to(page.title, page.path.slug) %> 
+					<% if page.children.any? %>
+						<ul>
+								<% for child in page.children %>									
+									<li> <%= link_to(child.title, child.path.slug)%> </li>
+								<% end %>
+						</ul
+					<% end %>
+				</li>
+			<% end %>
+     </ul>
+		  <div class="searchContainer">
+		    <form action="/search" method="get" id="search-form" class="formtastic">
+		      <label for="menusearch"></label>
+		      <input type="text" name="term" id="search_term" value="Search this site"/>
+		      <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
+         <input type="image" alt="Go" id="search_button" src="/images/structure/bttn_go.png"/>
+	        </form>
+	      </div>
+  </nav>
 
 		<nav class="subnav">
 	    <% if @current_archive != Archive.ada %>
@@ -82,12 +82,12 @@
 		</nav>		
     <section class="content">
 
-    		<nav>
-    		  <%= yield :sidenav %> 
-    		</nav>      
+		<nav>
+		  <%= yield :sidenav %> 
+		</nav>      
 
-    	<div class="notice"><%= notice %></div>
-      <div class="alert"><%= alert %></div>
+  	<div class="notice"><%= notice %></div>
+    <div class="alert"><%= alert %></div>
 
   	<!-- page partial start -->
   	<%= yield %>

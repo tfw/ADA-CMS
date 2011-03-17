@@ -30,16 +30,26 @@
 	<div id="page">
     <% study = @study %>
 
-		<div id="study-page">
-        <a id="study-link">Study Description</a> |
-        <a id="related-materials-link">Related Materials</a> |
-        <a id="related-studys-link">Related Studies</a> 
-<p>
-        <span class="float-right">Analyse or download this <a href="/nesstar/study/<%=study.id%>">study</a>.</span>
+		<nav id="study-page" class="mainnav clearfix">
+		  <ul>
+		    <li> <a id="study-link">Study Description</a> </li>
+        <li> <a id="study-link">Variable Description</a> </li>
+        <li> <a id="related-materials-link">Related Materials</a> </li>
+        <li> <a id="related-publications-link">Related Publications</a> </li>
+        <li> <a id="related-studies-link">Related Studies</a> </li>
+        <li> <a id="audiovisual-link">Audiovisual</a> </li>
+        <li> <a id="geospatial-link">Geospatial</a> </li>
+      </ul>
+    </nav>
+    
+    <span class="float-right">Analyse or download this <a href="/nesstar/study/<%=study.id%>">study</a>.</span>
+        
+<p><p>
 
         <div id="study">
           <%= render :partial => "table", :locals => {:study => study} %>
         </div>
+        
         <div id="related-materials" style="display:none">
           <div>
           <h3>Related Materials</h3>
@@ -60,5 +70,4 @@
         </div>
         
       </div>
-		</div>
 </div>
