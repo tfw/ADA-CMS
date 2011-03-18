@@ -3,11 +3,11 @@ class StudyField < ActiveRecord::Base
   belongs_to :study
   
   def self.to_hash(study)
-    fields = StudyField.find_all_by_study_id(study.id)
+    study_fields = StudyField.find_all_by_study_id(study.id)
     
     fields = {}
     
-    for field in fields
+    for field in study_fields
       fields[field.key] = field.value
     end
     

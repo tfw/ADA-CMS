@@ -11,6 +11,8 @@
 	<%= study_field_table_row('docTitle', fields )%>
 	<%= study_field_table_row('seriesName', fields )%>
 	<%= study_field_table_row('stdyId', fields )%>
+	
+	<% debugger %>
 
  <tr>
    <td valign="top"><%=human_readable_check('abstractText', study, current_user)%></td><td valign="top"> <%=study.field('abstractText')%> </td>
