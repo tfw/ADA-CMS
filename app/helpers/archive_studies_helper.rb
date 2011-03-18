@@ -10,16 +10,17 @@ module ArchiveStudiesHelper
     end
   end
     
-  def study_field_table_row(key, fields)
-    if fields.has_key?(key)
-      row = <<TABLE_ROW
-      <tr>
-   	   <td valign='top'><%= human_readable_check(key, study, current_user)%> </td><td valign='top'> <%= study.field(key) %>/td>
-   	 </tr>
-TABLE_ROW
-     
+  def study_field_table_row(key, study, fields, css_class)
+    if fields.has_key?(key) and not fields[key].blank?
+      puts "** #{key} - [#{fields[key]}]" 
+      row = "<tr class='#{css_class}'>\n<td valign='top'>"
+      row +=  (human_readable_check(key, study, current_user) || key)
+      row +=  "</td><td valign='top'>"
+      row += fields[key]
+      row += "</td>\n</tr>"
+      
      fields.delete(key)
-     row
+     row.html_safe
    end
   end
 end

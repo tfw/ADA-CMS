@@ -8,111 +8,76 @@
       <th>Content</th>
     </tr>
   </thead>
-	<%= study_field_table_row('docTitle', fields )%>
-	<%= study_field_table_row('seriesName', fields )%>
-	<%= study_field_table_row('stdyId', fields )%>
-	
-	<% debugger %>
+	<%= study_field_table_row('docTitle', study, fields, 'standard') %>
+	<%= study_field_table_row('seriesName', study, fields, 'standard')%>
+	<%= study_field_table_row('stdyId', study, fields, 'standard') %>
+	<%= study_field_table_row('abstractText', study, fields, 'standard') %>
+	<%= study_field_table_row('stdyProdDate', study, fields, 'standard') %>
+	<%= study_field_table_row('stdyProdDate', study, fields, 'standard') %>
 
- <tr>
-   <td valign="top"><%=human_readable_check('abstractText', study, current_user)%></td><td valign="top"> <%=study.field('abstractText')%> </td>
- </tr>
-  <tr>
-    <td valign="top"><%=human_readable_check('stdyProdDate', study, current_user)%></td><td valign="top"> <%=study.field('stdyProdDate') %></td>
-  </tr>
- <tr>
-   <td colspan="2">
-     <table>
-       <caption>Date of Collection</caption>
-       <tr>
-         <td valign="top"><%=human_readable_check('collectionStart', study, current_user)%></td><td valign="top"> <%=study.field('collectionStart')%> </td>
-       </tr>
-       <tr>
-         <td valign="top"><%=human_readable_check('collectionEnd', study, current_user)%></td><td valign="top"> <%=study.field('collectionEnd') %></td>
-       </tr>
-     </table>
-   </td>
- </tr>
- <tr>
-   <td colspan="2">
-     <table>
-       <caption>Contact Person</caption>
-       <tr>
-         <td valign="top"><%=human_readable_check('stdyContact', study, current_user)%></td>
-       </tr>
-       <tr>
-         <td valign="top"><%=human_readable_check('stdyContactAffiliation', study, current_user)%></td>
-       </tr>
-       <tr>
-         <td valign="top"><%=human_readable_check('stdyContactEmail', study, current_user)%></td>
-       </tr>
-     </table>
-   </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('stdyDepDate', study, current_user)%></td><td valign="top"> <%=study.field('stdyDepDate') %></td>
- </tr>
- <tr>
-   <td colspan="2">
-     <table>
-       <caption>Version</caption>
-       <tr>
-         <td valign="top"> <%=study.field('stdyVersion') %></td>
-       </tr>
-       <tr>
-         <td valign="top"> <%=study.field('stdyVersionDate')%> </td>
-       </tr>
-     </table>
-   </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('sucat', study, current_user)%></td><td valign="top"> <%=study.field('subcat') %></td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('keywords', study, current_user)%></td><td valign="top"> <%=study.field('keywords')%>
- <tr>
-   <td valign="top"><%=human_readable_check('nation', study, current_user)%></td><td valign="top"> <%=study.field('nation')%></td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('geographicalCover', study, current_user)%>
- <tr>
-   <td valign="top"><%=human_readable_check('geographicalUnit', study, current_user)%></td><td valign="top"> <%=study.field('geographicalUnit') %></td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('analyticalUnit', study, current_user)%></td><td valign="top"> <%=study.field('analyticalUnit') %></td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('universe', study, current_user)%></td><td valign="top"> <%=study.field('universe') %></td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('dataKind', study, current_user)%></td><td valign="top"> <%=study.field('dataKind') %></td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('sampling', study, current_user)%></td><td valign="top"> <%=study.field('sampling')%> </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('collMode', study, current_user)%></td><td valign="top"> <%=study.field('collMode')%> </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('timeMeth', study, current_user)%></td><td valign="top"> <%=study.field('timeMeth')%> </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('weight', study, current_user)%></td><td valign="top"> <%=study.field('weight')%> </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('docBiblCit', study, current_user)%></td><td valign="top"> <%=study.field('docBiblCit') %></td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('stdyCopyright', study, current_user)%></td><td valign="top"> <%=study.field('stdyCopyright')%> </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('docCopyright', study, current_user)%></td><td valign="top"> <%=study.field('docCopyright')%> </td>
- </tr>
- <tr>
-   <td valign="top"><%=human_readable_check('universe', study, current_user)%></td><td valign="top"> <%=study.field('universe')%> </td>
+	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
+	 <tr>
+     <td>
+       <table>
+         <caption>Date of Collection</caption>
+       	 <%= study_field_table_row('collectionStart', study, fields, 'standard') %>
+       	 <%= study_field_table_row('collectionEnd', study, fields, 'standard') %>
+       </table>
+     </td>
+   </tr>
+  <% end %>
+
+	<% if fields.has_key?("stdyContact") or fields.has_key?("stdyContactAffiliation") or fields.has_key?("stdyContactEmail") %>
+    <tr>
+     <td>
+       <table>
+         <caption>Contact Person</caption>
+        	<%= study_field_table_row('stdyContact', study, fields, 'standard') %>
+        	<%= study_field_table_row('stdyContactAffiliation', study, fields, 'standard') %>
+        	<%= study_field_table_row('stdyContactEmail', study, fields, 'standard') %>
+       </table>
+     </td>
+   </tr>
+  <% end %>
+ 
+ 	<%= study_field_table_row('stdyDepDate', study, fields, 'standard') %>
+
+	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
+	 <tr>
+     <td>
+       <table>
+         <caption>Version</caption>
+       	 <%= study_field_table_row('stdyVersion', study, fields, 'standard') %>
+       	 <%= study_field_table_row('stdyVersionDate', study, fields, 'standard') %>
+       </table>
+     </td>
+   </tr>
+  <% end %>
+ 
+ 	<%= study_field_table_row('subcat', study, fields, 'standard') %>
+ 	<%= study_field_table_row('keywords', study, fields, 'standard') %>
+ 	<%= study_field_table_row('nation', study, fields, 'standard') %>
+ 	<%= study_field_table_row('geographicalCover', study, fields, 'standard') %>
+ 	<%= study_field_table_row('geographicalUnit', study, fields, 'standard') %>
+ 	<%= study_field_table_row('analyticalUnit', study, fields, 'standard') %>
+ 	<%= study_field_table_row('universe', study, fields, 'standard') %>
+ 	<%= study_field_table_row('dataKind', study, fields, 'standard') %>
+ 	<%= study_field_table_row('sampling', study, fields, 'standard') %>
+ 	<%= study_field_table_row('collMode', study, fields, 'standard') %>
+ 	<%= study_field_table_row('timeMeth', study, fields, 'standard') %>
+ 	<%= study_field_table_row('weight', study, fields, 'standard') %>
+ 	<%= study_field_table_row('docBiblCit', study, fields, 'standard') %>
+ 	<%= study_field_table_row('stdyCopyright', study, fields, 'standard') %>
+ 	<%= study_field_table_row('docCopyright', study, fields, 'standard') %>
+ 	<%= study_field_table_row('universe', study, fields, 'standard') %>
+ 	 	
  </tr>
  <tr>
    <td valign="top">Related Materials</td><td valign="top"> <a r:if="study.related_materials_attribute" href="<%=study.related_materials_attribute.value%>"><%=study.related_materials_attribute.value %></a> </td>
  </tr>
+
+ <% for key in fields.keys %>
+	<%= study_field_table_row(key, study, fields, 'optional') %> 
+ <% end %>
 
 </table>
