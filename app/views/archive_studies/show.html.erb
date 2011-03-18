@@ -26,48 +26,43 @@
 
 <% end %>
 
-<div id="content">
-	<div id="page">
-    <% study = @study %>
+<aside></aside>
 
-		<nav id="study-page" class="mainnav clearfix">
-		  <ul>
-		    <li> <a id="study-link">Study Description</a> </li>
-        <li> <a id="study-link">Variable Description</a> </li>
-        <li> <a id="related-materials-link">Related Materials</a> </li>
-        <li> <a id="related-publications-link">Related Publications</a> </li>
-        <li> <a id="related-studies-link">Related Studies</a> </li>
-        <li> <a id="audiovisual-link">Audiovisual</a> </li>
-        <li> <a id="geospatial-link">Geospatial</a> </li>
-      </ul>
-    </nav>
+<article>
+  <% study = @study %>
+
+  <nav class="studynav">
+    <ul>
+      <li> <a id="study-link">Study Description</a> </li>
+      <li> <a id="variable-link">Variable Description</a> </li>
+      <li> <a id="related-materials-link">Related Materials</a> </li>
+      <li> <a id="related-publications-link">Related Publications</a> </li>
+      <li> <a id="related-studies-link">Related Studies</a> </li>
+      <li> <a id="audiovisual-link">Audiovisual</a> </li>
+      <li> <a id="geospatial-link">Geospatial</a> </li>
+    </ul>
+  </nav>
+
+  <span class="float-right">Analyse or download this <a href="/nesstar/study/<%=study.id%>">study</a>.</span>
     
-    <span class="float-right">Analyse or download this <a href="/nesstar/study/<%=study.id%>">study</a>.</span>
-        
-<p><p>
+  <p><p>
 
-        <div id="study">
-          <%= render :partial => "table", :locals => {:study => study} %>
-        </div>
-        
-        <div id="related-materials" style="display:none">
-          <div>
-          <h3>Related Materials</h3>
-          <ul>
-						<% for rm in study.study_related_materials %>
-            <li>
-               <a href="nesstar/related_material/<%= rm.id %>"><%=rm.comment %></a>
-            </li>
-						<% end %>
-          </ul>
-        </div>
+  <div id="study">
+    <%= render :partial => "table", :locals => {:study => study} %>
+  </div>
 
-        <div id="categories" style="display:none">
-          <div>
-          <h3>Categories</h3>
-          
-          This section is left over from ATSIDA - unsure of its relevance now.
-        </div>
-        
-      </div>
-</div>
+  <div id="related-materials" style="display:none">
+    <h3>Related Materials</h3>
+    <ul>
+  		<% for rm in study.study_related_materials %>
+      <li>
+         <a href="nesstar/related_material/<%= rm.id %>"><%=rm.comment %></a>
+      </li>
+  		<% end %>
+    </ul>
+  </div>
+
+  <div id="categories" style="display:none">
+    <h3>Categories</h3>      
+  </div>
+</article>

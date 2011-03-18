@@ -113,6 +113,7 @@ header {
 .breadcrumbs a:active {
 	color: #900;
 }
+
 .content {
 	background: #FFF;
 	float: left;
@@ -120,6 +121,7 @@ header {
 	padding-bottom: 40px;
 	width: 100%;
 }
+
 .content nav {
 	float: left;
 	margin: 0px;
@@ -130,6 +132,7 @@ header {
 	position: relative;
 	z-index: 1;
 }
+
 article {
 	display: block;
 	position: relative;
