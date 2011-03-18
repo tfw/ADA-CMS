@@ -1,23 +1,13 @@
 module ApplicationHelper
+  
   def archive_css(archive)
     archive.name == "ADA" ? 'default' : archive.name.gsub(" ", "").underscore
   end
   
-  def placeholder_icon
-    icon = rand(3) + 1
-    image_tag("placeholders/#{icon}.png", :size => "20x20", :class => "placeholder-icon")
-  end
-  
-  #this should really be in another helper, but where - browsercms can use this helper
-  def human_readable_check(ddi, dataset, current_user)
-    mapping = DdiMapping.find_by_ddi(ddi)
-
-    if mapping.nil?
-      ddi
-    else
-     mapping.human_readable
-    end
-  end
+  # def placeholder_icon
+  #   icon = rand(3) + 1
+  #   image_tag("placeholders/#{icon}.png", :size => "20x20", :class => "placeholder-icon")
+  # end
 
   def nesstar_link(dataset)
     study_id = dataset.about.split(".").last

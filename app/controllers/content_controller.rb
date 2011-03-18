@@ -1,4 +1,6 @@
 class ContentController < ApplicationController 
+  # 
+  # respond_to :json, :only => 
   
   layout 'content' #this file is created by Inking::Theme (see Inkling admin), and written out to tmp/inkling/themes/layouts  
   before_filter :get_archives
