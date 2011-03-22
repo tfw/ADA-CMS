@@ -10,55 +10,82 @@ class Study < ActiveRecord::Base
   
   validates :label, :presence => true
   
-  define_index do
-    indexes label, :sortable => true
-    indexes abstract
-    indexes series_name
-    indexes universe
-    indexes comment
-    indexes archives.id, :as => :archive_id 
+  
+  searchable do
+    text :label, :default_boost => 2
+    text :abstract
+    text :series_name
+    text :universe
+    text :comment
+    # text :archives.id, :as => :archive_id 
+    string :archive_ids, :multiple => true do
+      archives.map {|archive| archive.id}
+    end
     
     #facets
-    # indexes data_kind, :facet => true
-    # indexes sampling_abbr, :facet => true
-    # indexes collection_mode_abbr, :facet => true
-    # indexes contact_affiliation, :facet => true
-    # indexes collection_mode_abbr, :facet => true
-    # indexes geographical_cover, :facet => true
-    # indexes geographical_unit, :facet => true
-    # indexes analytic_unit, :facet => true
-    # indexes creation_date, :facet => true
-    # indexes series_name, :facet => true
-    # indexes study_auth_entity , :facet => true
-
-    #attributes
-    has "CRC32(data_kind)", :as => :data_kind, :type => :integer, :facet => true
-    has "CRC32(collection_mode_abbr)", :as => :collection_mode_abbr, :type => :integer, :facet => true
-    has "CRC32(geographical_cover)", :as => :geographical_cover, :type => :integer, :facet => true
-    has "CRC32(geographical_unit)", :as => :geographical_unit, :type => :integer, :facet => true
-    has "CRC32(analytic_unit)", :as => :analytic_unit, :type => :integer, :facet => true
-    has "CRC32(creation_date)", :as => :creation_date, :type => :integer, :facet => true
-    has "CRC32(series_name)", :as => :series_name, :type => :integer, :facet => true
-    has "CRC32(study_auth_entity)", :as => :study_auth_entity, :type => :integer, :facet => true
-
-    # has collection_mode_abbr
-    # has geographical_cover
-    # has geographical_unit
-    # has analytic_unit
-    # has creation_date
-    # # has "CAST(series_name AS INT)", :type => :integer, :as => :column
-    # # has series_name
-    # has study_auth_entity 
-    
-    group_by 'studies.data_kind' 
-    group_by 'studies.collection_mode_abbr' 
-    group_by 'studies.geographical_cover' 
-    group_by 'studies.geographical_unit' 
-    group_by 'studies.analytic_unit' 
-    group_by 'studies.creation_date' 
-    group_by 'studies.series_name' 
-    group_by 'studies.study_auth_entity' 
-  end
+    text :data_kind
+    text :sampling_abbr
+    text :collection_mode_abbr
+    text :contact_affiliation
+    text :collection_mode_abbr
+    text :geographical_cover
+    text :geographical_unit
+    text :analytic_unit
+    text :creation_date
+    text :series_name
+    text :study_auth_entity 
+  end  
+  
+  
+  # define_index do
+  #   indexes label, :sortable => true
+  #   indexes abstract
+  #   indexes series_name
+  #   indexes universe
+  #   indexes comment
+  #   indexes archives.id, :as => :archive_id 
+  #   
+  #   #facets
+  #   # indexes data_kind, :facet => true
+  #   # indexes sampling_abbr, :facet => true
+  #   # indexes collection_mode_abbr, :facet => true
+  #   # indexes contact_affiliation, :facet => true
+  #   # indexes collection_mode_abbr, :facet => true
+  #   # indexes geographical_cover, :facet => true
+  #   # indexes geographical_unit, :facet => true
+  #   # indexes analytic_unit, :facet => true
+  #   # indexes creation_date, :facet => true
+  #   # indexes series_name, :facet => true
+  #   # indexes study_auth_entity , :facet => true
+  # 
+  #   #attributes
+  #   has "CRC32(data_kind)", :as => :data_kind, :type => :integer, :facet => true
+  #   has "CRC32(collection_mode_abbr)", :as => :collection_mode_abbr, :type => :integer, :facet => true
+  #   has "CRC32(geographical_cover)", :as => :geographical_cover, :type => :integer, :facet => true
+  #   has "CRC32(geographical_unit)", :as => :geographical_unit, :type => :integer, :facet => true
+  #   has "CRC32(analytic_unit)", :as => :analytic_unit, :type => :integer, :facet => true
+  #   has "CRC32(creation_date)", :as => :creation_date, :type => :integer, :facet => true
+  #   has "CRC32(series_name)", :as => :series_name, :type => :integer, :facet => true
+  #   has "CRC32(study_auth_entity)", :as => :study_auth_entity, :type => :integer, :facet => true
+  # 
+  #   # has collection_mode_abbr
+  #   # has geographical_cover
+  #   # has geographical_unit
+  #   # has analytic_unit
+  #   # has creation_date
+  #   # # has "CAST(series_name AS INT)", :type => :integer, :as => :column
+  #   # # has series_name
+  #   # has study_auth_entity 
+  #   
+  #   group_by 'studies.data_kind' 
+  #   group_by 'studies.collection_mode_abbr' 
+  #   group_by 'studies.geographical_cover' 
+  #   group_by 'studies.geographical_unit' 
+  #   group_by 'studies.analytic_unit' 
+  #   group_by 'studies.creation_date' 
+  #   group_by 'studies.series_name' 
+  #   group_by 'studies.study_auth_entity' 
+  # end
 
   
   def title
