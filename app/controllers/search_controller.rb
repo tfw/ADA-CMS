@@ -3,8 +3,13 @@ class SearchController < ContentController
   respond_to :html
     
   def sphinx   
-    @term = params[:term]
-    # @current_archive = Archive.find(params[:archive_id])  
+    @term = params[:term]    
+    @current_archive = Archive.find(params[:archive_id])  
+
+    @search = Study.search() do
+      keywords(@term)
+    end
+
     # @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :conditions => {:archive_id => @current_archive.id}, :match_mode => :extended)
     # 
     # @archive_facets = {Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.ada.id}),
