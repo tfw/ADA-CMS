@@ -239,6 +239,11 @@ ActiveRecord::Schema.define(:version => 20110315011631) do
     t.string   "sampling_abbr"
     t.string   "collection_mode_abbr"
     t.string   "contact_affiliation"
+    t.string   "geographical_cover"
+    t.string   "geographical_unit"
+    t.string   "analytic_unit"
+    t.string   "creation_date"
+    t.string   "study_auth_entity"
     t.text     "comment"
   end
 
