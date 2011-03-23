@@ -7,11 +7,21 @@ class SearchController < ContentController
     @current_archive = Archive.find(params[:archive_id])  
 
     @search = Study.search() do
-      keywords(@term)
+      keywords(params[:term])
+      facet :data_kind
+      facet :sampling_abbr
+      facet :collection_mode_abbr
+      facet :contact_affiliation
+      facet :collection_mode_abbr
+      facet :geographical_cover
+      facet :geographical_unit
+      facet :analytic_unit
+      facet :creation_date
+      facet :series_name
+      facet :study_auth_entity
+      with (:archive_ids).any_of([params[:archive_id]])
     end
-
-    # @sphinx = ThinkingSphinx.search(@term, :page => params[:page], :conditions => {:archive_id => @current_archive.id}, :match_mode => :extended)
-    # 
+    
     # @archive_facets = {Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.ada.id}),
     #   Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.social_science.id}),
     #   Archive.historical => (Study.facets @term, :conditions => {:archive_id => Archive.historical.id}),
@@ -20,9 +30,9 @@ class SearchController < ContentController
     #   Archive.qualitative => (Study.facets @term, :conditions => {:archive_id => Archive.qualitative.id}),
     #   Archive.international => (Study.facets @term, :conditions => {:archive_id => Archive.international.id})            
     #   }
-    #   
-    # @title = "Search: #{@term}"
-    #   
+      
+    @title = "Search: #{@term}"
+      
     render :results
   end
   

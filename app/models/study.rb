@@ -10,30 +10,29 @@ class Study < ActiveRecord::Base
   
   validates :label, :presence => true
   
-  
   searchable do
     text :label, :default_boost => 2
     text :abstract
     text :series_name
     text :universe
     text :comment
+    string :data_kind
+    string :sampling_abbr
+    string :collection_mode_abbr
+    string :contact_affiliation
+    string :collection_mode_abbr
+    string :geographical_cover
+    string :geographical_unit
+    string :analytic_unit
+    string :creation_date
+    string :series_name
+    string :study_auth_entity 
+    
     # text :archives.id, :as => :archive_id 
     string :archive_ids, :multiple => true do
       archives.map {|archive| archive.id}
     end
-    
     #facets
-    text :data_kind
-    text :sampling_abbr
-    text :collection_mode_abbr
-    text :contact_affiliation
-    text :collection_mode_abbr
-    text :geographical_cover
-    text :geographical_unit
-    text :analytic_unit
-    text :creation_date
-    text :series_name
-    text :study_auth_entity 
   end  
   
   

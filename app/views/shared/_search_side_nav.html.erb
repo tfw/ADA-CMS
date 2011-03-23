@@ -1,6 +1,6 @@
 <% content_for :sidenav do %>
   <ul>
-    <% @archive_facets.each do |archive, facets| %>
+    <% @search.facets.each do |facet| %>
       <% unless archive == Archive.ada %>
         <li> <%= archive.name %> </li>
       <% else %>
