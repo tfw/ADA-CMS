@@ -29,9 +29,10 @@ class Study < ActiveRecord::Base
     string :study_auth_entity 
     
     # text :archives.id, :as => :archive_id 
-    string :archive_ids, :multiple => true do
-      archives.map {|archive| archive.id}
-    end
+    integer :archive_ids, :multiple => true
+    # integer :archive_ids, :multiple => true do
+    #   archives.map {|archive| archive.id}
+    # end
     #facets
   end  
   

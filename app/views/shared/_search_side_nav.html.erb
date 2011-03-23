@@ -1,26 +1,17 @@
 <% content_for :sidenav do %>
   <ul>
-    <% @search.facets.each do |facet| %>
+    <% @archive_searches.each do |archive, search| %>
       <% unless archive == Archive.ada %>
         <li> <%= archive.name %> </li>
       <% else %>
-        <li>Global</li>
+        <li>Global </li>
       <% end %>
-      <% if facets.any? %>
+      <% for facet in search.facets %>
+				<h3><%= facet.name %></h3>
         <ul>
-        <% facets.each do |facet, facet_options| 
-            limit = facet_options.size > 4 ? 5 : facet_options.size
-            next if limit == 0 %>
-            <h5> * <%= facet %></h5>
-            <% facet_options = facet_options.sort_by {|k,v| v}
-            facet_options = facet_options.reverse
-            
-            facet_options[0..limit].each do |option, count| %>
-            <li>
-            <%= link_to "#{option.to_s} (#{count})", browse_path(:facet => facet, :facet_value => option, :page => 1, :archive_id => @current_archive.id) %>
-            </li>
-          <% end %>
-        <% end %>
+		    <% facet.rows.each do |row| %>
+		      <li> <%= row.value %>  <%= row.count %></li>
+		    <% end -%>					
         </ul>
       <% end %>
     <% end %>

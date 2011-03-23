@@ -5,11 +5,31 @@ class SearchController < ContentController
   def sphinx   
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
+    
+    @archive_searches = {Archive.ada => archive_search(Archive.ada.id, @term),
+       Archive.social_science => archive_search(Archive.social_science.id, @term),
+       Archive.historical => archive_search(Archive.historical.id, @term),
+       Archive.indigenous => archive_search(Archive.indigenous.id, @term),
+       Archive.longitudinal => archive_search(Archive.longitudinal.id, @term),
+       Archive.qualitative => archive_search(Archive.qualitative.id, @term),
+       Archive.international => archive_search(Archive.international.id, @term)}
 
-    @search = Study.search() do
-      keywords(params[:term]) do 
-        highlight :label, :abstract, :comment
-      end
+    @search = @archive_searches[@current_archive]  
+    
+    @title = "Search: #{@term}"
+      
+    render :results
+  end
+  
+  private
+  
+  def archive_search(archive_id, term)
+    Study.search do ;
+      keywords term ; # do 
+      #         highlight :label, :abstract, :comment
+      #       end
+      
+      with(:archive_ids).any_of [archive_id];
       
       facet :data_kind
       facet :sampling_abbr
@@ -22,22 +42,9 @@ class SearchController < ContentController
       facet :creation_date
       facet :series_name
       facet :study_auth_entity
-      with (:archive_ids).all_of [params[:archive_id]]
-    end
-    
-    # @archive_facets = {Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.ada.id}),
-    #   Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.social_science.id}),
-    #   Archive.historical => (Study.facets @term, :conditions => {:archive_id => Archive.historical.id}),
-    #   Archive.indigenous => (Study.facets @term, :conditions => {:archive_id => Archive.indigenous.id}),
-    #   Archive.longitudinal => (Study.facets @term, :conditions => {:archive_id => Archive.longitudinal.id}),
-    #   Archive.qualitative => (Study.facets @term, :conditions => {:archive_id => Archive.qualitative.id}),
-    #   Archive.international => (Study.facets @term, :conditions => {:archive_id => Archive.international.id})            
-    #   }
-      
-    @title = "Search: #{@term}"
-      
-    render :results
+    end    
   end
+  
   
   # def facets
   #   @current_archive = Archive.find(params[:archive_id])
