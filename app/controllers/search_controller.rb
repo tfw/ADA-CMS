@@ -7,7 +7,10 @@ class SearchController < ContentController
     @current_archive = Archive.find(params[:archive_id])  
 
     @search = Study.search() do
-      keywords(params[:term])
+      keywords(params[:term]) do 
+        highlight :label, :abstract, :comment
+      end
+      
       facet :data_kind
       facet :sampling_abbr
       facet :collection_mode_abbr
@@ -19,7 +22,7 @@ class SearchController < ContentController
       facet :creation_date
       facet :series_name
       facet :study_auth_entity
-      with (:archive_ids).any_of([params[:archive_id]])
+      with (:archive_ids).all_of [params[:archive_id]]
     end
     
     # @archive_facets = {Archive.social_science => (Study.facets @term, :conditions => {:archive_id => Archive.ada.id}),
