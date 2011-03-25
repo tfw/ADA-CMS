@@ -25,6 +25,14 @@ task :sample_query => :environment do
               :archive => Archive.indigenous)
 end
 
+task :global_query => :environment do
+  ArchiveStudyQuery.create!(:name => "nesstar global", 
+            :query => "http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http://www.nesstar.org/rdf/method=http://www.nesstar.org/rdf/DatasetHome/findAll&complete=yes",
+            :archive => Archive.ada)
+  
+  # http:// nesstar.assda.edu.au/obj/fStudyHome/StudyHome?http://www.nesstar.org/rdf/method=http://www.nesstar.org/rdf/DatasetHome/findAll&complete=yes
+end
+
 task :sample_study => :environment do
   archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "00103", :archive => Archive.international, :user_id => Inkling::User.first.id)
   puts "ArchiveStudyIntegration created between #{archive_study_integration.ddi_id} and the International archive."

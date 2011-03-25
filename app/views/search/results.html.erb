@@ -20,10 +20,17 @@
         <td>
            <div id="study-<%= study.ddi_id %>">
              <% archive_study = study.for_archive(@current_archive) %>
-             Study Title: <%= link_to study.field("docTitle"), "#{archive_study.path.slug}" %> (Score: <%= hit.score %>)
+             Study Title: <%= link_to study.field("docTitle"), "#{archive_study.path.slug}" %> 
              <% unless study.field("stdyAuthEntity").blank? %> by <% study.field("stdyAuthEntity") %>. <% end %> <br/>
              Abstract: <%= first_n_words(30, study.abstract) %> <br/>
              Study Id: <%= study.ddi_id %> <br/>
+
+						Relevance: <%= hit.score %> <br/>
+						
+						<%= hit.highlight(:label).format { |word| "<span class=\"highlight\">#{word}</span>"} if hit.highlight(:label) %>
+						<%= hit.highlight(:abstract).format { |word| "<span class=\"highlight\">#{word}</span>"} if hit.highlight(:abstract) %>
+						<%= hit.highlight(:comment).format { |word| "<span class=\"highlight\">#{word}</span>"} if hit.highlight(:comment) %>
+						
 
            <% for archive_study in study.archive_studies %>
              <% next if archive_study.archive == Archive.ada %>

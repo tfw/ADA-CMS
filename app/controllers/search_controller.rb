@@ -2,7 +2,7 @@ class SearchController < ContentController
   
   respond_to :html
     
-  def sphinx   
+  def search   
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
     
@@ -25,9 +25,9 @@ class SearchController < ContentController
   
   def archive_search(archive_id, term)
     Study.search do ;
-      keywords term ; # do 
-      #         highlight :label, :abstract, :comment
-      #       end
+      keywords term do 
+        highlight :label, :abstract, :comment
+      end
       
       with(:archive_ids).any_of [archive_id];
       
