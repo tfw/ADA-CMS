@@ -47,4 +47,9 @@ describe Nesstar::RDF::Parser do
     study_hash[:sampling].split(/\n/).first.should eql "non-probability sample"
     study_hash[:abstractText].should_not be_nil
   end
+  
+  specify "that it scans and hasherizes variables documents" do
+    vars_hash = Nesstar::RDF::Parser.parse_variables(File.expand_path("00102-f-test.xml", File.dirname(__FILE__)))
+    vars_hash.should_not be_nil
+  end
 end

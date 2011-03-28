@@ -1,0 +1,2295 @@
+
+<r:RDF 
+xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:s="http://www.w3.org/TR/1999/PR-rdf-schema-19990303#" 
+xmlns:n="http://www.nesstar.org/rdf/" 
+xmlns:p3="http://www.nesstar.org/rdf/"
+xmlns:p1="http://www.nesstar.org/rdf/acu/"
+xmlns:p5="http://www.nesstar.org/rdf/hc/"
+xmlns:p4="http://www.nesstar.org/rdf/faster/"
+xmlns:p2="http://www.nesstar.org/rdf/common/"
+xmlns:n38="http://www.nesstar.org/rdf/faster/Variable#"
+xmlns:n37="http://www.nesstar.org/rdf/faster/Variable2#"
+> 
+ 
+ 
+<r:Bag r:about="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401@variables"> 
+<r:_1 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1" /> 
+<r:_2 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2" /> 
+<r:_3 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3" /> 
+<r:_4 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4" /> 
+<r:_5 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5" /> 
+<r:_6 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6" /> 
+<r:_7 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7" /> 
+<r:_8 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8" /> 
+<r:_9 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9" /> 
+<r:_10 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10" /> 
+<r:_11 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11" /> 
+<r:_12 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12" /> 
+<r:_13 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13" /> 
+<r:_14 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14" /> 
+<r:_15 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15" /> 
+<r:_16 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16" /> 
+<r:_17 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17" /> 
+<r:_18 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18" /> 
+<r:_19 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19" /> 
+<r:_20 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20" /> 
+<r:_21 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21" /> 
+<r:_22 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22" /> 
+<r:_23 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23" /> 
+<r:_24 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24" /> 
+<r:_25 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25" /> 
+<r:_26 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26" /> 
+<r:_27 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27" /> 
+<r:_28 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28" /> 
+<r:_29 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29" /> 
+<r:_30 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30" /> 
+<r:_31 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31" /> 
+<r:_32 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32" /> 
+<r:_33 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33" /> 
+<r:_34 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34" /> 
+<r:_35 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35" /> 
+<r:_36 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36" /> 
+<r:_37 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37" /> 
+<r:_38 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38" /> 
+<r:_39 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39" /> 
+<r:_40 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40" /> 
+<r:_41 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41" /> 
+<r:_42 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42" /> 
+<r:_43 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43" /> 
+<r:_44 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44" /> 
+<r:_45 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45" /> 
+<r:_46 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46" /> 
+<r:_47 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47" /> 
+<r:_48 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48" /> 
+<r:_49 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49" /> 
+<r:_50 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50" /> 
+<r:_51 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51" /> 
+<r:_52 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52" /> 
+<r:_53 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53" /> 
+<r:_54 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54" /> 
+<r:_55 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55" /> 
+<r:_56 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56" /> 
+<r:_57 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57" /> 
+<r:_58 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58" /> 
+<r:_59 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59" /> 
+<r:_60 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60" /> 
+<r:_61 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61" /> 
+<r:_62 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62" /> 
+<r:_63 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63" /> 
+<r:_64 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64" /> 
+<r:_65 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65" /> 
+<r:_66 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66" /> 
+<r:_67 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67" /> 
+<r:_68 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68" /> 
+<r:_69 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69" /> 
+<r:_70 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70" /> 
+<r:_71 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71" /> 
+<r:_72 r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72" /> 
+</r:Bag> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1"> 
+<n:complete>true</n:complete> 
+<s:label>CARD NUMBER 1</s:label> 
+<n:creationDate>2009-04-02 12:48:41.0</n:creationDate> 
+<n38:name>cardno1</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>1</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v1</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>1</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v1@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2"> 
+<n:complete>true</n:complete> 
+<s:label>SURVEY</s:label> 
+<n:creationDate>2009-04-02 12:48:41.0</n:creationDate> 
+<n38:name>survey</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>2</n37:width> 
+<n37:numCats>1</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>12.0</n38:valRangeMax> 
+<n38:valRangeMin>12.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v2</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>2</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v2@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3"> 
+<n:complete>true</n:complete> 
+<s:label>IDENTIFICATION NUMBER</s:label> 
+<n:creationDate>2009-04-02 12:48:41.0</n:creationDate> 
+<n38:name>ident</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>4</n37:width> 
+<n37:numCats>0</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>6009.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:intervl>contin</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v3</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:meanValue>1140.35</n38:meanValue> 
+<n38:maxValue>6009.0</n38:maxValue> 
+<n38:minValue>1.0</n38:minValue> 
+<n38:stdValue>722.439</n38:stdValue> 
+<n38:position>3</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v3@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4"> 
+<n:complete>true</n:complete> 
+<s:label>STATE</s:label> 
+<n:creationDate>2009-04-02 12:48:41.0</n:creationDate> 
+<n38:name>state</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>7</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>7.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v4</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>4</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v4@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5"> 
+<n:complete>true</n:complete> 
+<s:label>CITY/COUNTRY</s:label> 
+<n:creationDate>2009-04-02 12:48:41.0</n:creationDate> 
+<n38:name>ctyctry</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v5</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>5</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v5@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6"> 
+<n:complete>true</n:complete> 
+<s:label>ELECTORAL DIVISION</s:label> 
+<n:creationDate>2009-04-02 12:48:41.0</n:creationDate> 
+<n38:name>elect</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>3</n37:width> 
+<n37:numCats>125</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>702.0</n38:valRangeMax> 
+<n38:valRangeMin>101.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v6</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>6</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v6@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7"> 
+<n:complete>true</n:complete> 
+<s:label>LOCAL GOVERNMENT AREA</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>lga</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>4</n37:width> 
+<n37:numCats>227</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>5056.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v7</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:meanValue>1437.58</n38:meanValue> 
+<n38:maxValue>5056.0</n38:maxValue> 
+<n38:minValue>0.0</n38:minValue> 
+<n38:stdValue>1529.728</n38:stdValue> 
+<n38:position>7</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v7@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8"> 
+<n:complete>true</n:complete> 
+<s:label>CHURCH</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1a</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v8</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>8</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v8@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9"> 
+<n:complete>true</n:complete> 
+<s:label>GARDENING</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1b</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v9</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>9</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v9@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10"> 
+<n:complete>true</n:complete> 
+<s:label>MOTORING FOR PLEASURE</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1c</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v10</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>10</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v10@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11"> 
+<n:complete>true</n:complete> 
+<s:label>MUSIC</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1d</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v11</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>11</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v11@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12"> 
+<n:complete>true</n:complete> 
+<s:label>POP CONCERTS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1e</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v12</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>12</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v12@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13"> 
+<n:complete>true</n:complete> 
+<s:label>READING BOOKS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1f</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v13</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>13</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v13@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14"> 
+<n:complete>true</n:complete> 
+<s:label>HOME MAINTENANCE OR DECORATING</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1g</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v14</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>14</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v14@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15"> 
+<n:complete>true</n:complete> 
+<s:label>SPORT</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1h</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v15</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>15</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v15@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16"> 
+<n:complete>true</n:complete> 
+<s:label>LIVE THEATRE</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1i</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v16</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>16</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v16@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17"> 
+<n:complete>true</n:complete> 
+<s:label>EATING OUT AT RESTAURANTS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1j</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v17</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>17</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v17@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18"> 
+<n:complete>true</n:complete> 
+<s:label>BEACH OR WATER ACTIVITIES</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1k</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v18</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>18</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v18@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19"> 
+<n:complete>true</n:complete> 
+<s:label>CAMPING &amp; CARAVANNING</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q1l</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v19</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>19</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v19@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20"> 
+<n:complete>true</n:complete> 
+<s:label>NUMBER OF PERSONS IN HOUSEHOLD</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q2a</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>9</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>8.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v20</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>20</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v20@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21"> 
+<n:complete>true</n:complete> 
+<s:label>NUMBER OF CHILDREN UNDER 5</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q2b</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>9</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>3.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v21</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>21</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v21@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22"> 
+<n:complete>true</n:complete> 
+<s:label>NUMBER OF CHILDREN BETWEEN 5 AND 12</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q2c</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>9</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>4.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v22</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>22</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v22@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23"> 
+<n:complete>true</n:complete> 
+<s:label>NUMBER OF CHILDREN BETWEEN 13 AND 17</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q2d</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>9</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>4.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v23</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>23</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v23@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24"> 
+<n:complete>true</n:complete> 
+<s:label>AGE OF YOUNGEST PERSON IN HOUSEHOLD</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q2e</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>7</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>6.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v24</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>24</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v24@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25"> 
+<n:complete>true</n:complete> 
+<s:label>EMPLOYED PERSONS IN HOUSEHOLD</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q2f</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>9</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>8.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v25</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>25</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v25@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26"> 
+<n:complete>true</n:complete> 
+<s:label>RESPONDENT MOVED HOUSE</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q3</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>9</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v26</n38:varID> 
+<n38:noValidResponses>2124</n38:noValidResponses> 
+<n38:position>26</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v26@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27"> 
+<n:complete>true</n:complete> 
+<s:label>TENURE OF HOUSEHOLD</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q4</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>50</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v27</n38:varID> 
+<n38:noValidResponses>2083</n38:noValidResponses> 
+<n38:position>27</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v27@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28"> 
+<n:complete>true</n:complete> 
+<s:label>COUNTRY OF BIRTH</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q5</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>2</n37:width> 
+<n37:numCats>11</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>11.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>13</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v28</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>28</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v28@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29"> 
+<n:complete>true</n:complete> 
+<s:label>MARITAL STATUS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q6</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>2</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>3.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v29</n38:varID> 
+<n38:noValidResponses>2131</n38:noValidResponses> 
+<n38:position>29</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v29@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30"> 
+<n:complete>true</n:complete> 
+<s:label>LEVEL OF EDUCATION</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q7</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>6</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>1</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>5.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v30</n38:varID> 
+<n38:noValidResponses>2132</n38:noValidResponses> 
+<n38:position>30</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v30@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31"> 
+<n:complete>true</n:complete> 
+<s:label>ENROLLED TO VOTE AT FEDERAL ELECTIONS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q8</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>1</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v31</n38:varID> 
+<n38:noValidResponses>2132</n38:noValidResponses> 
+<n38:position>31</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v31@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32"> 
+<n:complete>true</n:complete> 
+<s:label>AGE GROUP 1</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>agegrp1</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>2</n37:width> 
+<n37:numCats>12</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>12.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v32</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>32</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v32@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33"> 
+<n:complete>true</n:complete> 
+<s:label>AGE GROUP 2</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>agegrp2</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v33</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>33</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v33@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34"> 
+<n:complete>true</n:complete> 
+<s:label>SEX</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>sex</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v34</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>34</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v34@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35"> 
+<n:complete>true</n:complete> 
+<s:label>HEAD OF HOUSEHOLD</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q11</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>1</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v35</n38:varID> 
+<n38:noValidResponses>2132</n38:noValidResponses> 
+<n38:position>35</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v35@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36"> 
+<n:complete>true</n:complete> 
+<s:label>OCCUPATION OF SELF</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q12a1</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>2</n37:width> 
+<n37:numCats>13</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>12.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>13</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v36</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>36</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v36@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37"> 
+<n:complete>true</n:complete> 
+<s:label>FULL, PART TIME OR NOT EMPLOYED</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q12a2</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>5</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>759</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>4.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v37</n38:varID> 
+<n38:noValidResponses>1374</n38:noValidResponses> 
+<n38:position>37</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v37@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38"> 
+<n:complete>true</n:complete> 
+<s:label>OCCUPATION OF HEAD OF HOUSEHOLD</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q12b1</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>2</n37:width> 
+<n37:numCats>13</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>12.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>13</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v38</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>38</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v38@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39"> 
+<n:complete>true</n:complete> 
+<s:label>HEAD OF HOUSEHOLD - NOT EMPLOYED</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q12b2</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>1718</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v39</n38:varID> 
+<n38:noValidResponses>415</n38:noValidResponses> 
+<n38:position>39</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v39@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40"> 
+<n:complete>true</n:complete> 
+<s:label>GROSS INCOME</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p1q13</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>7</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>3</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>6.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v40</n38:varID> 
+<n38:noValidResponses>2130</n38:noValidResponses> 
+<n38:position>40</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v40@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41"> 
+<n:complete>true</n:complete> 
+<s:label>HAVE A TELEPHONE</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>phone</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v41</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>41</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v41@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42"> 
+<n:complete>true</n:complete> 
+<s:label>AGREEMENT TO REINTERVIEW</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>reintvw</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>6</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v42</n38:varID> 
+<n38:noValidResponses>2127</n38:noValidResponses> 
+<n38:position>42</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v42@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43"> 
+<n:complete>true</n:complete> 
+<s:label>TYPE OF HOME</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>hometyp</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>5</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>6</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>4.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v43</n38:varID> 
+<n38:noValidResponses>2127</n38:noValidResponses> 
+<n38:position>43</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v43@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44"> 
+<n:complete>true</n:complete> 
+<s:label>LENGTH</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>length</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>2</n37:width> 
+<n37:numCats>0</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>132</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>99.0</n38:valRangeMax> 
+<n38:valRangeMin>10.0</n38:valRangeMin> 
+<n38:intervl>contin</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v44</n38:varID> 
+<n38:noValidResponses>2001</n38:noValidResponses> 
+<n38:meanValue>34.3</n38:meanValue> 
+<n38:maxValue>99.0</n38:maxValue> 
+<n38:minValue>10.0</n38:minValue> 
+<n38:stdValue>10.009</n38:stdValue> 
+<n38:position>44</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v44@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45"> 
+<n:complete>true</n:complete> 
+<s:label>WEEK OF INTERVIEW</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>weekno</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v45</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>45</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v45@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46"> 
+<n:complete>true</n:complete> 
+<s:label>NUMBER OF CALLS BEFORE INTERVIEW</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>callno</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>4</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>3.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v46</n38:varID> 
+<n38:noValidResponses>2129</n38:noValidResponses> 
+<n38:position>46</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v46@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47"> 
+<n:complete>true</n:complete> 
+<s:label>YOUTH UNEMPLOYMENT</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1i</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v47</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>47</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v47@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48"> 
+<n:complete>true</n:complete> 
+<s:label>INFLATION</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1ii</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v48</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>48</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v48@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49"> 
+<n:complete>true</n:complete> 
+<s:label>ROAD TOLL</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1iii</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v49</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>49</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v49@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50"> 
+<n:complete>true</n:complete> 
+<s:label>SEXUAL ATTACKS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1iv</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v50</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>50</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v50@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51"> 
+<n:complete>true</n:complete> 
+<s:label>EXCESSIVE ALCOHOL</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1v</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v51</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>51</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v51@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52"> 
+<n:complete>true</n:complete> 
+<s:label>DRUG TAKING OR DRUG TRAFFICKING</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1vi</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v52</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>52</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v52@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53"> 
+<n:complete>true</n:complete> 
+<s:label>SMOKING</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1vii</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v53</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>53</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v53@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54"> 
+<n:complete>true</n:complete> 
+<s:label>VIOLENCE</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1viii</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v54</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>54</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v54@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55"> 
+<n:complete>true</n:complete> 
+<s:label>LONELINESS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1ix</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v55</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>55</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v55@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56"> 
+<n:complete>true</n:complete> 
+<s:label>EQUAL OPPORTUNITY</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1x</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v56</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>56</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v56@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57"> 
+<n:complete>true</n:complete> 
+<s:label>DEFENCE</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1xi</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v57</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>57</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v57@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58"> 
+<n:complete>true</n:complete> 
+<s:label>URANIUM MINING</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1xii</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v58</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>58</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v58@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59"> 
+<n:complete>true</n:complete> 
+<s:label>UNION POWER</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1xiii</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v59</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>59</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v59@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60"> 
+<n:complete>true</n:complete> 
+<s:label>OTHER</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1xiv</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>2</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>0</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>1.0</n38:valRangeMax> 
+<n38:valRangeMin>0.0</n38:valRangeMin> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v60</n38:varID> 
+<n38:noValidResponses>2133</n38:noValidResponses> 
+<n38:position>60</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v60@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61"> 
+<n:complete>true</n:complete> 
+<s:label>AUSTRALIAN PROBLEMS PART 2</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q1b</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>5</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>1884</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>4.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v61</n38:varID> 
+<n38:noValidResponses>249</n38:noValidResponses> 
+<n38:position>61</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v61@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62"> 
+<n:complete>true</n:complete> 
+<s:label>ABORIGINAL SACRED SIGHTS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q2a</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>248</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>3.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v62</n38:varID> 
+<n38:noValidResponses>1885</n38:noValidResponses> 
+<n38:position>62</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v62@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63"> 
+<n:complete>true</n:complete> 
+<s:label>GOVERNMENT ASSISTANCE TO ABORIGINES</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q2b</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>247</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>3.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v63</n38:varID> 
+<n38:noValidResponses>1886</n38:noValidResponses> 
+<n38:position>63</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v63@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64"> 
+<n:complete>true</n:complete> 
+<s:label>AYERS ROCK OWNERSHIP</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q2c</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>274</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v64</n38:varID> 
+<n38:noValidResponses>1859</n38:noValidResponses> 
+<n38:position>64</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v64@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65"> 
+<n:complete>true</n:complete> 
+<s:label>MINING AT ROXBY DOWNS</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q3a</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>290</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v65</n38:varID> 
+<n38:noValidResponses>1843</n38:noValidResponses> 
+<n38:position>65</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v65@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66"> 
+<n:complete>true</n:complete> 
+<s:label>OTHER NEW URANIUM MINES</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q3b</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>264</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v66</n38:varID> 
+<n38:noValidResponses>1869</n38:noValidResponses> 
+<n38:position>66</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v66@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67"> 
+<n:complete>true</n:complete> 
+<s:label>MR HAWKE AS PRIME MINISTER</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q4a</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>208</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>3.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v67</n38:varID> 
+<n38:noValidResponses>1925</n38:noValidResponses> 
+<n38:position>67</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v67@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68"> 
+<n:complete>true</n:complete> 
+<s:label>MR PEACOCK AS OPPOSITION LEADER</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q4b</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>4</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>367</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>3.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v68</n38:varID> 
+<n38:noValidResponses>1766</n38:noValidResponses> 
+<n38:position>68</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v68@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69"> 
+<n:complete>true</n:complete> 
+<s:label>FEDERAL VOTE INTENTION</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>vote</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>5</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>279</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>4.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v69</n38:varID> 
+<n38:noValidResponses>1854</n38:noValidResponses> 
+<n38:position>69</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v69@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70"> 
+<n:complete>true</n:complete> 
+<s:label>HOUSEHOLD SHOPPING</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q6</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>114</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v70</n38:varID> 
+<n38:noValidResponses>2019</n38:noValidResponses> 
+<n38:position>70</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v70@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71"> 
+<n:complete>true</n:complete> 
+<s:label>EMPLOYMENT</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q6a</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>3</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>1017</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>2.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v71</n38:varID> 
+<n38:noValidResponses>1116</n38:noValidResponses> 
+<n38:position>71</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v71@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+<p4:Variable2 r:about="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72"> 
+<n:complete>true</n:complete> 
+<s:label>AMOUNT SPENT ON FOOD</s:label> 
+<n:creationDate>2009-04-02 12:48:42.0</n:creationDate> 
+<n38:name>p2q6b</n38:name> 
+<n38:study r:resource="http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00401" /> 
+<n37:width>1</n37:width> 
+<n37:numCats>7</n37:numCats> 
+<n38:isKey>false</n38:isKey> 
+<n38:isWeight>false</n38:isWeight> 
+<n38:noInvalidResponses>1028</n38:noInvalidResponses> 
+<n38:decimalPlaces>0</n38:decimalPlaces> 
+<n38:valRangeMax>6.0</n38:valRangeMax> 
+<n38:valRangeMin>1.0</n38:valRangeMin> 
+<n38:missingValues>0</n38:missingValues> 
+<n38:intervl>discrete</n38:intervl> 
+<n38:format>numeric</n38:format> 
+<n38:formatSchema>ISO</n38:formatSchema> 
+<n38:varID>v72</n38:varID> 
+<n38:noValidResponses>1105</n38:noValidResponses> 
+<n38:position>72</n38:position> 
+<n38:sections r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72@sections" /> 
+<n38:measures r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72@measures" /> 
+<n38:statistics r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72@statistics" /> 
+<n38:datafile r:resource="http://palo.anu.edu.au:80/obj/fDatafile/au.edu.anu.assda.ddi.00401_F1" /> 
+<n38:groups r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72@groups" /> 
+<n38:factsheets r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72@factsheets" /> 
+<n38:tables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72@tables" /> 
+<n38:weightVariables r:resource="http://palo.anu.edu.au:80/obj/fVariable/au.edu.anu.assda.ddi.00401_v72@weightVariables" /> 
+<n38:section r:resource="http://palo.anu.edu.au:80/obj/fSection/au.edu.anu.assda.ddi.00401_defaultSection" /> 
+</p4:Variable2> 
+ 
+</r:RDF>

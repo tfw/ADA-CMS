@@ -11,16 +11,16 @@ class Study < ActiveRecord::Base
   validates :label, :presence => true
   
   #facet constants
-  FACETS = {:data_kind => (DdiMapping.find_by_ddi('dataKind').human_readable || "Data Kind"),
-          :sampling_abbr => (DdiMapping.find_by_ddi('sampling').human_readable || "Sampling"),
-          :collection_mode_abbr => (DdiMapping.find_by_ddi('collMode').human_readable || "Collection Mode"),
-          :contact_affiliation =>  (DdiMapping.find_by_ddi('stdyContactAffiliation').human_readable ||"Contact Affiliation"),          
-          :geographical_cover =>  (DdiMapping.find_by_ddi('geographicalCover').human_readable || "Geographical Cover"),
-          :geographical_unit =>  (DdiMapping.find_by_ddi('geographicalUnit').human_readable || "Geographical Unit"),
-          :analytic_unit =>  (DdiMapping.find_by_ddi('analyticUnit').human_readable || "Analytic Unit"),
-          :creation_date =>  (DdiMapping.find_by_ddi('creationDate').human_readable || "Creation Date"),
-          :series_name =>  (DdiMapping.find_by_ddi('seriesName').human_readable || "Series Name"),
-          :study_auth_entity =>  (DdiMapping.find_by_ddi('stdyAuthEntity').human_readable || "Study Author")
+  FACETS = {:data_kind => (DdiMapping.find_by_ddi('dataKind')                         || "Data Kind"),
+          :sampling_abbr => (DdiMapping.find_by_ddi('sampling')                       || "Sampling"),
+          :collection_mode_abbr => (DdiMapping.find_by_ddi('collMode')                || "Collection Mode"),
+          :contact_affiliation =>  (DdiMapping.find_by_ddi('stdyContactAffiliation')  ||"Contact Affiliation"),          
+          :geographical_cover =>  (DdiMapping.find_by_ddi('geographicalCover')        || "Geographical Cover"),
+          :geographical_unit =>  (DdiMapping.find_by_ddi('geographicalUnit')          || "Geographical Unit"),
+          :analytic_unit =>  (DdiMapping.find_by_ddi('analyticUnit')                  || "Analytic Unit"),
+          :creation_date =>  (DdiMapping.find_by_ddi('creationDate')                  || "Creation Date"),
+          :series_name =>  (DdiMapping.find_by_ddi('seriesName')                      || "Series Name"),
+          :study_auth_entity =>  (DdiMapping.find_by_ddi('stdyAuthEntity')            || "Study Author")
         }
         
   #solr config

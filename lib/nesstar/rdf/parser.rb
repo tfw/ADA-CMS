@@ -5,25 +5,12 @@ require 'nokogiri'
 module Nesstar
   module RDF
     class Parser
-
       def self.parse(rdf_file)
         file = File.read("#{rdf_file}")
         doc = Nokogiri::XML::Document.parse(file)
 
         study = doc.xpath('//p4:Study3').first
         about = study.attribute('about').value
-        # label = study.xpath(".//s:label").text
-        # universe = study.xpath(".//n35:universe").text
-        # abstract = study.xpath(".//n36:abstractText").text
-        # keywords = study.xpath(".//n35:keyWords").text
-        # data_kind = study.xpath(".//n35:dataKind").text
-        # sampling_procedure = study.xpath(".//n35:sampling").text.split(/\W/).first
-        # collection_method = study.xpath(".//n35:collMode").text
-
-        # dataset = {:about => about, :label => label, :universe => universe, :abstract => abstract,
-        #             :keywords => keywords, :data_kind => data_kind, :sampling_procedure => :sampling_procedure,
-        #             :collection_method => collection_method}
-        
         dataset = {:about => about}
 
         study.children.each do |node|
@@ -33,9 +20,8 @@ module Nesstar
           dataset[node.name.to_sym] = node.text
         end
 
-        return dataset
+        dataset
       end
-
 
       def self.parse_related_materials_document(xml)
         file = File.read(xml)
@@ -56,7 +42,25 @@ module Nesstar
 
           related_materials << material unless material.empty?
         end
-        return related_materials
+        related_materials
+      end
+
+      def self.parse_variables(xml) 
+        file = File.read(xml)
+        doc = Nokogiri::XML::Document.parse(file)
+        variables_entries = doc.xpath("//p4:Variable2")
+        
+        variables = []
+        
+        variables_entries.each do |xml_var|
+          variable = {}
+          xml_var.each do |node|
+            variable[node.name.to_sym] = node.text
+          end
+          variables << variable unless variable.empty?
+        end
+        
+        variables        
       end
     end
   end

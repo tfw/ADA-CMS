@@ -24,4 +24,8 @@ class DdiMapping < ActiveRecord::Base
     end
     self.ddi.to_s
   end
+  
+  def to_s
+    human_readable
+  end
 end
