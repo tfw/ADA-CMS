@@ -5,7 +5,7 @@ class SearchController < ContentController
   def search   
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
-    @filters = params[:filters]
+    @filters = (params[:filters] || [])
 
     @archive_searches = 
       if @filters.empty?
@@ -16,7 +16,6 @@ class SearchController < ContentController
         {@current_archive => archive_search(@current_archive, @term, @filters)}
       end
           
-
     @search = @archive_searches[@current_archive]  
     
     @title = "Search: #{@term}"
