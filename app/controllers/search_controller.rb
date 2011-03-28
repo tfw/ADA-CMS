@@ -5,15 +5,9 @@ class SearchController < ContentController
   def search   
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
+    @archive_searches = params[:filters] ? 
+    {@current_archive => archive_search(@current_archive, @term, params[:filters])} : search_globally
     
-    @archive_searches = {Archive.ada => archive_search(Archive.ada.id, @term),
-       Archive.social_science => archive_search(Archive.social_science.id, @term),
-       Archive.historical => archive_search(Archive.historical.id, @term),
-       Archive.indigenous => archive_search(Archive.indigenous.id, @term),
-       Archive.longitudinal => archive_search(Archive.longitudinal.id, @term),
-       Archive.qualitative => archive_search(Archive.qualitative.id, @term),
-       Archive.international => archive_search(Archive.international.id, @term)}
-
     @search = @archive_searches[@current_archive]  
     
     @title = "Search: #{@term}"
@@ -21,15 +15,30 @@ class SearchController < ContentController
     render :results
   end
   
-  private
-  
-  def archive_search(archive_id, term)
+  private  
+  def search_globally
+    {Archive.ada => archive_search(Archive.ada, @term),
+     Archive.social_science => archive_search(Archive.social_science, @term),
+     Archive.historical => archive_search(Archive.historical, @term),
+     Archive.indigenous => archive_search(Archive.indigenous, @term),
+     Archive.longitudinal => archive_search(Archive.longitudinal, @term),
+     Archive.qualitative => archive_search(Archive.qualitative, @term),
+     Archive.international => archive_search(Archive.international, @term)}
+  end
+
+  def archive_search(archive, term, filters = {})
     Sunspot.search(Study) do ;
       keywords term do 
         highlight :label, :abstract, :comment
       end
       
-      with(:archive_ids).any_of [archive_id];
+      with(:archive_ids).any_of [archive.id];
+      
+      filters.each do |facet|
+        facet.each do |name, value|
+          with(name.to_sym, value)
+        end
+      end
       
       facet :data_kind
       facet :sampling_abbr
