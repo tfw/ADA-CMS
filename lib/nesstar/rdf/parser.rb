@@ -14,9 +14,7 @@ module Nesstar
         dataset = {:about => about}
 
         study.children.each do |node|
-          node.attributes.each do |a, v|
-            dataset["#{node.name}_attribute_#{a}".to_sym] = v.to_s
-          end
+          hasherize_attributes(node, dataset)
           dataset[node.name.to_sym] = node.text
         end
 
@@ -48,19 +46,26 @@ module Nesstar
       def self.parse_variables(xml) 
         file = File.read(xml)
         doc = Nokogiri::XML::Document.parse(file)
-        variables_entries = doc.xpath("//p4:Variable2")
-        
+        vars_entries = doc.xpath("//p4:Variable2")
         variables = []
         
-        variables_entries.each do |xml_var|
+        vars_entries.each do |var_xml|
           variable = {}
-          xml_var.each do |node|
+          var_xml.children.each do |node|            
+            hasherize_attributes(node, variable)
             variable[node.name.to_sym] = node.text
           end
           variables << variable unless variable.empty?
         end
         
         variables        
+      end
+      
+      
+      def self.hasherize_attributes(node, hash)
+        node.attributes.each do |a, v|
+          hash["#{node.name}_attribute_#{a}".to_sym] = v.to_s
+        end  
       end
     end
   end
