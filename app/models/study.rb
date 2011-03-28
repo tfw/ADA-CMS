@@ -11,11 +11,11 @@ class Study < ActiveRecord::Base
   validates :label, :presence => true
   
   searchable do
-    text :label, :default_boost => 2
-    text :abstract
+    text :label, :default_boost => 2, :stored => true
+    text :abstract, :stored => true
     text :series_name
     text :universe
-    text :comment
+    text :comment, :stored => true
     string :data_kind
     string :sampling_abbr
     string :collection_mode_abbr

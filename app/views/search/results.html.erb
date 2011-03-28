@@ -26,10 +26,10 @@
              Study Id: <%= study.ddi_id %> <br/>
 
 						Relevance: <%= hit.score %> <br/>
-						
-						<%= hit.highlight(:label).format { |word| "<span class=\"highlight\">#{word}</span>"} if hit.highlight(:label) %>
-						<%= hit.highlight(:abstract).format { |word| "<span class=\"highlight\">#{word}</span>"} if hit.highlight(:abstract) %>
-						<%= hit.highlight(:comment).format { |word| "<span class=\"highlight\">#{word}</span>"} if hit.highlight(:comment) %>
+
+						<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
+						<%= highlight_excerpt(hit.highlight(:abstract)) %> <br/>
+						<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>
 						
 
            <% for archive_study in study.archive_studies %>

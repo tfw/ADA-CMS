@@ -1,11 +1,7 @@
 <% content_for :sidenav do %>
   <ul>
     <% @archive_searches.each do |archive, search| %>
-      <% unless archive == Archive.ada %>
         <li> <%= archive.name %> </li>
-      <% else %>
-        <li>Global </li>
-      <% end %>
       <% for facet in search.facets %>
 				<h3><%= facet.name %></h3>
         <ul>

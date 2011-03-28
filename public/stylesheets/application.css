@@ -42,39 +42,6 @@ form.tree-form {
 #sortable li span { position: absolute; margin-left: -1.3em; }
 
 /* Content Area */
-/*div.content-area {
-  border: 1px solid #bababa;
-  background: #fff;
-  border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
-  float: left;
-  width: 100%;
-}
-div.content-area h2 {
-  font-size: 14pt;
-  margin: 0;
-  padding: 1em;
-  color: #3a3a3a;
-}
-div.content-area h3 {
-  color: #2f658f;
-  border-top: 1px solid #bababa;
-  background: #f0f0f0;
-  padding: 0.4em 1em;
-  clear: left;
-}
-div.content-area h3 a {
-  font-size:smaller;
-  float: right;
-  font-weight: normal;
-}
-dl, p, div.content-area ol {
-  margin: 1.2em;
-}
-
-div.content-area fieldset fieldset {
-/*  margin: 0;*/
-}
-*/
 p {
   margin-bottom: 0;
 }
@@ -244,6 +211,12 @@ div.float-centre {
   padding: 1em;
 }
 
+
+/* Search */
+span.highlight {
+  background-color: white;
+  font-weight: bold;
+}
 
 /*Placeholder icons for manage layout*/
 

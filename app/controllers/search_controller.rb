@@ -24,7 +24,7 @@ class SearchController < ContentController
   private
   
   def archive_search(archive_id, term)
-    Study.search do ;
+    Sunspot.search(Study) do ;
       keywords term do 
         highlight :label, :abstract, :comment
       end
