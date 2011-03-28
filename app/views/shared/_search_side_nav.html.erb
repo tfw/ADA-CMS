@@ -3,13 +3,13 @@
     <% @archive_searches.each do |archive, search| %>
         <li> <%= archive.name %> </li>
       <% for facet in search.facets %>
-				<h3><%= Study::FACETS[facet.name] %></h3>
-        <ul>
-		    <% facet.rows.each do |row| 
-					
-					%>
-		      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
-		    <% end -%>					
+				<% if facet.rows.any? %>
+					<h3><%= Study::FACETS[facet.name] %></h3>
+	        <ul>
+			    <% facet.rows.each do |row| %>
+			      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
+			    <% end %>
+				<% end %>
         </ul>
       <% end %>
     <% end %>
