@@ -5,3 +5,27 @@ inkling_logs_001:
   text: Downloaded 176 studies. Encountered 0 errors. There are now 171 studies in ADA.
   user_id: 
   category: study
+inkling_logs_002: 
+  id: "2"
+  created_at: 2011-03-28 02:45:34.881405
+  text: Downloaded 0 studies. Encountered 0 errors. There are now 171 studies in ADA.
+  user_id: 
+  category: study
+inkling_logs_003: 
+  id: "3"
+  created_at: 2011-03-28 02:50:13.234175
+  text: Downloaded 0 studies. Encountered 0 errors. There are now 171 studies in ADA.
+  user_id: 
+  category: study
+inkling_logs_004: 
+  id: "4"
+  created_at: 2011-03-28 03:03:15.04195
+  text: Downloaded 0 studies. Encountered 0 errors. There are now 171 studies in ADA.
+  user_id: 
+  category: study
+inkling_logs_005: 
+  id: "5"
+  created_at: 2011-03-28 03:07:45.220246
+  text: Downloaded 176 studies. Encountered 0 errors. There are now 171 studies in ADA.
+  user_id: 
+  category: study

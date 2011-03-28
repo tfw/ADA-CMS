@@ -37,9 +37,9 @@ module Nesstar
           participant :ref => 'define_study_integrations', :datasets_yaml => $datasets_file
           cancel_process :if => '${f:study_ids.size} == 0'
 
-          unless Rails.env == "development"
+          # unless Rails.env == "development"
             participant :ref => 'download_dataset_xmls'
-          end
+          # end
 
           participant :ref => 'convert_and_find_resources'
           participant :ref => 'ada_archive_contains_all_studies' 
@@ -138,7 +138,10 @@ module Nesstar
         Dir.entries($xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
           study_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
+
+# puts "\n\n new abstract #{study_hash[:abstractText]}"
           study = Study.store_with_entries(study_hash)
+# puts "**** new study with abstract: #{study.abstract}"
 
           #find study integrations which need to be linked to the archive
           integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(study.ddi_id, nil)
