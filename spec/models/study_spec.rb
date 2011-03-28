@@ -12,7 +12,6 @@ describe Study, "The local respresentation of an ASSDA study" do
  
  it "should offer an abbreviated form of the label" do
    study = Study.make(:label => " 1 2 3 4 5 6 7 8")
-   puts study.label
    shortened_label = study.friendly_label
    shortened_label.split(/\W/).size.should eql 9
  end
@@ -37,5 +36,11 @@ describe Study, "The local respresentation of an ASSDA study" do
    [1..9].each {ArchiveStudy.make(:study => study)} #make loads of them with the same study
    
    study.for_archive(archive).should == archive_study
+ end
+ 
+ specify "Study.store_with_entries should use the RDF parser to capture essential values" do
+   study_hash = Nesstar::RDF::Parser.parse(File.expand_path("../nesstar/rdf/00102-f-test.xml", File.dirname(__FILE__)))
+   study = Study.store_with_entries(study_hash)
+   study.abstract.should_not be_nil
  end
 end

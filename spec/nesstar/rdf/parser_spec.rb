@@ -45,6 +45,6 @@ describe Nesstar::RDF::Parser do
     study_hash[:dataKind].should eql "survey"
     study_hash[:collMode].should eql "personal interview"
     study_hash[:sampling].split(/\n/).first.should eql "non-probability sample"
-    study_hash[:abstract].should_not be_nil
+    study_hash[:abstractText].should_not be_nil
   end
 end

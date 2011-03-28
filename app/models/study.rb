@@ -59,14 +59,6 @@ class Study < ActiveRecord::Base
     study.contact_affiliation = data[:stdyContactAffiliation]
     data.delete(:stdyContactAffiliation)
 
-    # geographicalCover
-    # geographicalUnit
-    # analyticUnit
-    # creationDate
-    # seriesName
-    # stdyAuthEntity
-
-
     #facet data
     if data[:dataKind]      
       study.data_kind = data[:dataKind]
