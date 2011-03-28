@@ -26,9 +26,21 @@ module ApplicationHelper
     image_tag("structure/icon_#{file_name}.png")  
   end
   
+  #outputs a deployment message for Product Owner to watch (so they now how fresh the code is)
   def deploy_log
     if File.exists?("tmp/deploy-log.txt")
       log = File.read("tmp/deploy-log.txt")
+    end
+  end
+  
+  #this checks to see if a human readable mapping (DdiMapping) exists for the DDI element
+  def human_readable_check(ddi, dataset, current_user)
+    mapping = DdiMapping.find_by_ddi(ddi)
+
+    if mapping.nil?
+      ddi
+    else
+     mapping.human_readable
     end
   end
 end
