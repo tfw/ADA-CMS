@@ -5,9 +5,18 @@ class SearchController < ContentController
   def search   
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
-    @archive_searches = params[:filters] ? 
-    {@current_archive => archive_search(@current_archive, @term, params[:filters])} : search_globally
-    
+    @filters = params[:filters]
+
+    @archive_searches = 
+      if @filters.empty?
+         search_globally
+      elsif @current_archive == Archive.ada
+        search_globally(@filters)
+      else
+        {@current_archive => archive_search(@current_archive, @term, @filters)}
+      end
+          
+
     @search = @archive_searches[@current_archive]  
     
     @title = "Search: #{@term}"
@@ -15,15 +24,16 @@ class SearchController < ContentController
     render :results
   end
   
-  private  
-  def search_globally
-    {Archive.ada => archive_search(Archive.ada, @term),
-     Archive.social_science => archive_search(Archive.social_science, @term),
-     Archive.historical => archive_search(Archive.historical, @term),
-     Archive.indigenous => archive_search(Archive.indigenous, @term),
-     Archive.longitudinal => archive_search(Archive.longitudinal, @term),
-     Archive.qualitative => archive_search(Archive.qualitative, @term),
-     Archive.international => archive_search(Archive.international, @term)}
+  private  #the logic below was moved into Study (fat model), but a performance hit occurred - strangely -
+          #so, for now, the fatter controller is acceptable
+  def search_globally(filters = {})
+    {Archive.ada => archive_search(Archive.ada, @term, filters),
+     Archive.social_science => archive_search(Archive.social_science, @term, filters),
+     Archive.historical => archive_search(Archive.historical, @term, filters),
+     Archive.indigenous => archive_search(Archive.indigenous, @term, filters),
+     Archive.longitudinal => archive_search(Archive.longitudinal, @term, filters),
+     Archive.qualitative => archive_search(Archive.qualitative, @term, filters),
+     Archive.international => archive_search(Archive.international, @term, filters)}
   end
 
   def archive_search(archive, term, filters = {})
@@ -53,23 +63,4 @@ class SearchController < ContentController
       facet :study_auth_entity
     end    
   end
-  
-  
-  # def facets
-  #   @current_archive = Archive.find(params[:archive_id])
-  #   @term = params[:facet]
-  #   @sphinx = ThinkingSphinx.search(params[:term], :page => params[:page], :conditions => {:archive_id => @current_archive.id})
-  # 
-  #   @archive_facets = {Archive.social_science => (Study.facets @facet, :conditions => {:archive_id => Archive.social_science.id}),
-  #     Archive.historical => (Study.facets @facet, :conditions => {:archive_id => Archive.historical.id}),
-  #     Archive.indigenous => (Study.facets @facet, :conditions => {:archive_id => Archive.indigenous.id}),
-  #     Archive.longitudinal => (Study.facets @facet, :conditions => {:archive_id => Archive.longitudinal.id}),
-  #     Archive.qualitative => (Study.facets @facet, :conditions => {:archive_id => Archive.qualitative.id}),
-  #     Archive.international => (Study.facets @facet, :conditions => {:archive_id => Archive.international.id})            
-  #     }
-  #   
-  #   debugger
-  #   
-  #   render :facets
-  # end
 end
