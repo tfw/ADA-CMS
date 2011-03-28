@@ -10,6 +10,20 @@ class Study < ActiveRecord::Base
   
   validates :label, :presence => true
   
+  #facet constants
+  FACETS = {:data_kind => (DdiMapping.find_by_ddi('dataKind').human_readable || "Data Kind"),
+          :sampling_abbr => (DdiMapping.find_by_ddi('sampling').human_readable || "Sampling"),
+          :collection_mode_abbr => (DdiMapping.find_by_ddi('collMode').human_readable || "Collection Mode"),
+          :contact_affiliation =>  (DdiMapping.find_by_ddi('stdyContactAffiliation').human_readable ||"Contact Affiliation"),          
+          :geographical_cover =>  (DdiMapping.find_by_ddi('geographicalCover').human_readable || "Geographical Cover"),
+          :geographical_unit =>  (DdiMapping.find_by_ddi('geographicalUnit').human_readable || "Geographical Unit"),
+          :analytic_unit =>  (DdiMapping.find_by_ddi('analyticUnit').human_readable || "Analytic Unit"),
+          :creation_date =>  (DdiMapping.find_by_ddi('creationDate').human_readable || "Creation Date"),
+          :series_name =>  (DdiMapping.find_by_ddi('seriesName').human_readable || "Series Name"),
+          :study_auth_entity =>  (DdiMapping.find_by_ddi('stdyAuthEntity').human_readable || "Study Author")
+        }
+        
+  #solr config
   searchable do
     text :label, :default_boost => 2, :stored => true
     text :abstract, :stored => true
@@ -31,10 +45,8 @@ class Study < ActiveRecord::Base
     integer :archive_ids, :multiple => true
   end  
   
-  def title
-    label
-  end
-  
+  #class behaviour to create Study objects based on a hash built from scanning an XML document
+  #this code might be moved out to a builder object later on.
   def self.store_with_entries(data)
     #first, see if this is a new dataset or we're updating an old one.
     study = Study.find_by_label(data[:label])
@@ -115,6 +127,11 @@ class Study < ActiveRecord::Base
     end
 
     study_field.save!
+  end
+  
+  
+  def title
+    label
   end
 
   def friendly_label
