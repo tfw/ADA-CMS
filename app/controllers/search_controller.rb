@@ -17,7 +17,7 @@ class SearchController < ContentController
     @search = @archive_searches[@current_archive]  
     
     @title = "Search: #{@term}"
-      
+    params[:filters] ||= []
     render :results
   end
   

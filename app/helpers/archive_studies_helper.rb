@@ -17,7 +17,7 @@ module ArchiveStudiesHelper
       row +=  "</td><td valign='top'>"
       row += fields[key]
       row += "</td>\n</tr>"
-      
+      FFS
      fields.delete(key)
      row.html_safe
    end

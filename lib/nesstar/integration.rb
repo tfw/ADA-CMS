@@ -36,7 +36,11 @@ module Nesstar
           subprocess :ref => 'initialize_directories'
           participant :ref => 'define_study_integrations', :datasets_yaml => $datasets_file
           cancel_process :if => '${f:study_ids.size} == 0'
-          participant :ref => 'download_dataset_xmls'
+
+          unless Rails.env == "development"
+            participant :ref => 'download_dataset_xmls'
+          end
+
           participant :ref => 'convert_and_find_resources'
           participant :ref => 'ada_archive_contains_all_studies' 
           participant :ref => 'log_run'           
@@ -180,6 +184,8 @@ module Nesstar
       end
 
       engine.register_participant 'log_run' do |workitem|
+        workitem.fields['downloads'] ||= {}
+        workitem.fields['fetch_errors'] ||= {}        
         Inkling::Log.create!(:category => "study", :text =>  "Downloaded #{workitem.fields['downloads'].size} studies. Encountered #{workitem.fields['fetch_errors'].size} errors. There are now #{Study.all.size} studies in ADA.")        
       end
     end

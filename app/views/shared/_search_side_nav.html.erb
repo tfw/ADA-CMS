@@ -10,7 +10,7 @@
 				<h3><%= facet.name %></h3>
         <ul>
 		    <% facet.rows.each do |row| %>
-		      <li> <%= row.value %>  <%= row.count %></li>
+		      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters] << {facet.name => row.value})) %>  <%= row.count %></li>
 		    <% end -%>					
         </ul>
       <% end %>
