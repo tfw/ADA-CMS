@@ -63,7 +63,7 @@ end
 
 task :symlinks, :roles => :app do
   run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
-  run "ln -nfs #{shared_path}/sphinx #{current_path}/db/sphinx"  
+  run "ln -nfs #{shared_path}/solr #{current_path}/solr"  
 end
 
 task :deploy_log, :roles => :app do
