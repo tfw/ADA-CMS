@@ -1,5 +1,5 @@
 <fieldset>
-  <legend id="document-management">Documents (<%= link_to '+', new_staff_document_path %>)</legend>
+  <legend id="document-management"><%= link_to 'Documents', staff_documents_path %> (<%= link_to '+', new_staff_document_path %>)</legend>
   <%= will_paginate @documents %>
   <table>
     <thead>

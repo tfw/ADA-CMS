@@ -1,5 +1,5 @@
 <fieldset>
-  <legend id="image-management">Images (<%= link_to '+', new_staff_image_path %>)</legend>
+  <legend id="image-management"><%= link_to 'Images', staff_images_path %> (<%= link_to '+', new_staff_image_path %>)</legend>
   <%= will_paginate @images %>
   <table>
     <thead>

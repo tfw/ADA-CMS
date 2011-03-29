@@ -98,7 +98,7 @@
 
   // .:| Update Page Slug on Events |:. //
 
-  window.onload = pageSlug.update
+  $(pageSlug.update);
   $("#page_title").live("keyup", pageSlug.update);
   $("#page_parent_id").change(pageSlug.update);
 

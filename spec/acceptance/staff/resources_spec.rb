@@ -21,18 +21,18 @@ feature "Managing site resources" do
     page.should have_content("was successfully created")
     page.should have_content("image/png")
     page.should have_content("384 Bytes")
-    click_link("Back to Images index")
+    click_link("Back to Resources index")
     page.should have_content("clear cross")
     click_link("Edit")
   end
 
   scenario "I can upload documents, save, view and re-edit it" do
-    document_id = upload_document('ten commandsments', "#{RAILS_ROOT}/spec/acceptance/staff/Commandments.doc")
+    document_id = upload_document('ten commandments', "#{RAILS_ROOT}/spec/acceptance/staff/Commandments.doc")
     page.should have_content("was successfully created")
     page.should have_content("application/msword")
     page.should have_content("25 KB")
-    click_link("Back to Documents index")
-    page.should have_content("ten commandsments")
+    click_link("Back to Resources index")
+    page.should have_content("ten commandments")
     click_link("Edit")
   end
 

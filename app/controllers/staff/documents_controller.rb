@@ -2,6 +2,15 @@ class Staff::DocumentsController < Staff::BaseController
   inherit_resources                                                                                     
   defaults :resource_class => Document, :instance_name => 'document'
 
+  def destroy
+    destroy!(:notice => 'Document deleted') { staff_resources_path }
+  end
+
+  def browse      # browse_staff_documents_path
+    # Render a document browser for CKEditor
+    render :layout => "browser"
+  end
+
   private
 
   def collection
