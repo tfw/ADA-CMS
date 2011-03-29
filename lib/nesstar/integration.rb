@@ -33,13 +33,13 @@ module Nesstar
 
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
-          subprocess :ref => 'initialize_directories'
+          # subprocess :ref => 'initialize_directories'
           participant :ref => 'define_study_integrations', :datasets_yaml => $datasets_file
           cancel_process :if => '${f:study_ids.size} == 0'
 
-          # unless Rails.env == "development"
+          unless Rails.env == "development"
             participant :ref => 'download_dataset_xmls'
-          # end
+          end
 
           participant :ref => 'convert_and_find_resources'
           participant :ref => 'ada_archive_contains_all_studies' 
@@ -80,6 +80,7 @@ module Nesstar
           query.save!
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
 
+          puts "curl -o #{query_response_file} --compressed \"#{query.query}\""
           `curl -o #{query_response_file} --compressed "#{query.query}"`
           handler = Nesstar::QueryResponseParser.new(query_response_file)
 
@@ -139,9 +140,7 @@ module Nesstar
           next if file_name == "." or file_name == ".."
           study_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
 
-# puts "\n\n new abstract #{study_hash[:abstractText]}"
-          study = Study.store_with_entries(study_hash)
-# puts "**** new study with abstract: #{study.abstract}"
+          study = Study.store_with_fields(study_hash)
 
           #find study integrations which need to be linked to the archive
           integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(study.ddi_id, nil)
@@ -172,8 +171,17 @@ module Nesstar
           
             #we looks for a study's variables
             variables_entry = study.variables_attribute
-            # puts "****** #{variables_entry.value} ******* \n\n"
+            var_file_name = variables_entry.value.split(".").last
+            # `curl -o #{$xml_dir}#{var_file_name} --compressed "#{variables_entry.value}"`
+            puts "downloaded #{$xml_dir}#{var_file_name}"
+            variables_list = RDF::Parser.parse_variables("#{$xml_dir}/#{var_file_name}")
+            
+            variables_list.each do |var_hash|
+              variable = Variable.store_with_fields(var_hash)
+              # puts "created #{variable.label}"
+            end
           end
+          
           workitem.fields['database_errors'] = database_errors
         end
       end

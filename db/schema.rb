@@ -266,4 +266,23 @@ ActiveRecord::Schema.define(:version => 20110315011631) do
     t.text     "resource"
   end
 
+  create_table "variable_fields", :force => true do |t|
+    t.integer  "variable_id"
+    t.string   "key"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "variables", :force => true do |t|
+    t.string   "label"
+    t.integer  "study_id"
+    t.string   "name"
+    t.integer  "num_cats"
+    t.decimal  "val_range_max"
+    t.decimal  "val_range_min"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end
