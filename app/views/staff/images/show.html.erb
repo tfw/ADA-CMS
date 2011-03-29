@@ -1,0 +1,18 @@
+<% if resource.errors.any? %>
+    <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
+    <ul>
+    <% resource.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+<% end %>
+
+<dl>
+ <dt>Image Type<dd><%= resource.resource_content_type %></dd>
+ <dt>File Size<dd><%= number_to_human_size(resource.resource_file_size) %></dd>
+ <dt>Created<dd><%= time_ago_in_words(resource.created_at) %> ago </dd>
+ <dt>Thumbnail<dd><%= image_tag resource.resource.url(:thumb) %></dd>
+</dl>
+
+<%= link_to 'Delete', staff_image_path(resource), :method => :delete %>
+<%= link_to 'Back to Images index', staff_images_path %>

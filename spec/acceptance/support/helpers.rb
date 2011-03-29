@@ -33,10 +33,18 @@ module HelperMethods
   end
 
   def upload_image(file_title, file_path)
-    visit(new_staff_media_path)
-    fill_in("media_title", :with => file_title)
-    attach_file("media_asset", file_path)
-    click_button("Create Media")
+    visit(new_staff_image_path)
+    fill_in("image_title", :with => file_title)
+    attach_file("image_resource", file_path)
+    click_button("Create Image")
+    current_path.sub(%r{.*/},'').to_i
+  end
+
+  def upload_document(file_title, file_path)
+    visit(new_staff_document_path)
+    fill_in("document_title", :with => file_title)
+    attach_file("document_resource", file_path)
+    click_button("Create Document")
     current_path.sub(%r{.*/},'').to_i
   end
 

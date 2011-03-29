@@ -1,0 +1,31 @@
+<fieldset>
+  <legend id="image-management">Images (<%= link_to '+', new_staff_image_path %>)</legend>
+  <%= will_paginate @images %>
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Type</th>
+        <th>File Size</th>
+        <th>Created</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%- @images.each do |image| %>
+      <tr id=<%= "image-row-#{image.id}" %>>
+        <td> <%= link_to image.title, image.path.slug %> </td>
+        <td> <%= image.resource_content_type %> </td>
+        <td> <%= number_to_human_size(image.resource_file_size) %> </td>
+        <td> <%= time_ago_in_words(image.created_at) %> ago </td>
+        <td>
+          <%= link_to 'View', staff_image_path(image) %>
+          <%= link_to 'Edit', edit_staff_image_path(image) %>
+          <%= link_to 'Delete', staff_image_path(image), :method => :delete %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= page_entries_info @images %>
+</fieldset>

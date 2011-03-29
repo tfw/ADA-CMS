@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110315011631) do
+ActiveRecord::Schema.define(:version => 20110328234346) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -63,6 +63,34 @@ ActiveRecord::Schema.define(:version => 20110315011631) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "documents", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title",                 :null => false
+    t.string   "resource_file_name"
+    t.string   "resource_content_type"
+    t.integer  "resource_file_size"
+    t.datetime "resource_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "documents", ["title"], :name => "index_documents_on_title", :unique => true
+  add_index "documents", ["user_id"], :name => "index_documents_on_user_id"
+
+  create_table "images", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title",                 :null => false
+    t.string   "resource_file_name"
+    t.string   "resource_content_type"
+    t.integer  "resource_file_size"
+    t.datetime "resource_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "images", ["title"], :name => "index_images_on_title", :unique => true
+  add_index "images", ["user_id"], :name => "index_images_on_user_id"
 
   create_table "inkling_can_can_actions", :force => true do |t|
     t.string   "name"
@@ -158,20 +186,6 @@ ActiveRecord::Schema.define(:version => 20110315011631) do
     t.string   "firstname"
     t.string   "surname"
   end
-
-  create_table "media", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "title",              :null => false
-    t.string   "asset_file_name"
-    t.string   "asset_content_type"
-    t.integer  "asset_file_size"
-    t.datetime "asset_updated_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "media", ["title"], :name => "index_media_on_title", :unique => true
-  add_index "media", ["user_id"], :name => "index_media_on_user_id"
 
   create_table "news", :force => true do |t|
     t.integer  "user_id"

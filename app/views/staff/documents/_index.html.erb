@@ -1,0 +1,31 @@
+<fieldset>
+  <legend id="document-management">Documents (<%= link_to '+', new_staff_document_path %>)</legend>
+  <%= will_paginate @documents %>
+  <table>
+    <thead>
+      <tr>
+        <th>Document</th>
+        <th>Type</th>
+        <th>File Size</th>
+        <th>Created</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%- @documents.each do |document| %>
+      <tr id=<%= "document-row-#{document.id}" %>>
+        <td> <%= link_to document.title, document.path.slug %> </td>
+        <td> <%= document.resource_content_type %> </td>
+        <td> <%= number_to_human_size(document.resource_file_size) %> </td>
+        <td> <%= time_ago_in_words(document.created_at) %> ago </td>
+        <td>
+          <%= link_to 'View', staff_document_path(document) %>
+          <%= link_to 'Edit', edit_staff_document_path(document) %>
+          <%= link_to 'Delete', staff_document_path(document), :method => :delete %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= page_entries_info @documents %>
+</fieldset>

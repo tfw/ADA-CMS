@@ -1,0 +1,15 @@
+<h2>Shared Resources</h2>
+
+<fieldset class="left half">
+  <legend> Resources Tasks </legend>
+  No tasks yet
+</fieldset>
+
+<fieldset class="left half">
+  <legend>Resources Management </legend>
+  <%= link_to 'Upload Documents', new_staff_document_path %><br>
+  <%= link_to 'Upload Images', new_staff_image_path %>
+</fieldset>
+
+<%= render(:partial => "staff/documents/index") %>
+<%= render(:partial => "staff/images/index") %>

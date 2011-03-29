@@ -29,7 +29,9 @@ Ada::Application.routes.draw do
       resources :archive_study_queries, :except => [:index, :show], :controller => "archives/archive_study_queries"
     end
     resources :news
-    resources :media
+    resources :documents
+    resources :images
+    get 'resources', :to => 'resources#index'
   end
 
   get '/search', :to => "search#search"
@@ -39,7 +41,7 @@ Ada::Application.routes.draw do
   inkling_match(:archive_studies)
   inkling_match(:pages)
   inkling_match(:news)
-  inkling_match(:media)
+  inkling_match(:documents)
 
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
 end
