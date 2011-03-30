@@ -24,6 +24,9 @@ feature "Managing site resources" do
     click_link("Back to Resources index")
     page.should have_content("clear cross")
     click_link("Edit")
+    visit("/images/clear_cross.png")
+    page.status_code.should == 200
+    page.response_headers["Content-Type"].should == "image/png"
   end
 
   scenario "I can upload documents, save, view and re-edit it" do
