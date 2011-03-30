@@ -33,15 +33,20 @@ module Nesstar
 
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
-          # subprocess :ref => 'initialize_directories'
+          subprocess :ref => 'initialize_directories'
           participant :ref => 'define_study_integrations', :datasets_yaml => $datasets_file
           cancel_process :if => '${f:study_ids.size} == 0'
 
-          unless Rails.env == "development"
+          # unless Rails.env == "development"
             participant :ref => 'download_dataset_xmls'
-          end
+          # end
 
           participant :ref => 'convert_and_find_resources'
+          
+          concurrent_iterator :on_field => 'variable_urls', :to_f => "variable_url" do
+            participant :ref => 'convert_variable' 
+          end
+          
           participant :ref => 'ada_archive_contains_all_studies' 
           participant :ref => 'log_run'           
         end
@@ -168,23 +173,37 @@ module Nesstar
                           :resource => related[:study_resource])
               related_material.save!
             end
-          
-            #we looks for a study's variables
-            variables_entry = study.variables_attribute
-            var_file_name = variables_entry.value.split(".").last
-            # `curl -o #{$xml_dir}#{var_file_name} --compressed "#{variables_entry.value}"`
-            puts "downloaded #{$xml_dir}#{var_file_name}"
-            variables_list = RDF::Parser.parse_variables("#{$xml_dir}/#{var_file_name}")
             
-            variables_list.each do |var_hash|
-              variable = Variable.store_with_fields(var_hash)
-              # puts "created #{variable.label}"
-            end
+            workitem.fields['variable_urls'] ||= []
+            workitem.fields['variable_urls'] << study.variables_attribute.value
+            # puts "added #{study.variables_attribute} to workfields variable_urls"
           end
           
-          workitem.fields['database_errors'] = database_errors
-        end
+          # puts "\n\n**** #{workitem.fields['variable_urls']}**\n\n"
+        workitem.fields['database_errors'] = database_errors        
       end
+
+
+      engine.register_participant 'convert_variable' do |workitem|
+        #we looks for a study's variables
+        variable_url = workitem.fields['variable_url']
+        var_file_name = variable_url.split(".").last
+
+        puts "\n\n***** #{variable_url}"
+
+        `curl -o #{$xml_dir}#{var_file_name} --compressed "#{variable_url}"`
+        variables_list = RDF::Parser.parse_variables("#{$xml_dir}/#{var_file_name}")
+      
+        variables_list.each do |var_hash|
+          variable = Variable.store_with_fields(var_hash)
+        end
+    
+        workitem.fields['downloaded_variables'] ||= []
+        workitem.fields['downloaded_variables'] << variable_url
+      # workitem.fields['variable_urls'] = variable_urls
+      end
+      
+    end
 
       engine.register_participant 'ada_archive_contains_all_studies' do |workitem|
         for study in Study.all
