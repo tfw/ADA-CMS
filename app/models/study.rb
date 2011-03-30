@@ -43,6 +43,8 @@ class Study < ActiveRecord::Base
     string :study_auth_entity 
     
     integer :archive_ids, :multiple => true
+    
+    # autocomplete :search_term, :using => :label
   end  
   
   #class behaviour to create Study objects based on a hash built from scanning an XML document

@@ -9,6 +9,16 @@
 		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application', 
 		'jquery.clearableTextField.min' %>	
 
+
+	  <script type="text/javascript" src="/javascripts/solr-autocomplete/ajax-solr/core/Core.js"></script>
+	  <script type="text/javascript" src="/javascripts/solr-autocomplete/ajax-solr/core/AbstractManager.js"></script>
+	  <script type="text/javascript" src="/javascripts/solr-autocomplete/ajax-solr/managers/Manager.jquery.js"></script>
+	  <script type="text/javascript" src="/javascripts/solr-autocomplete/ajax-solr/core/Parameter.js"></script>
+	  <script type="text/javascript" src="/javascripts/solr-autocomplete/ajax-solr/core/ParameterStore.js"></script>
+	  <script type="text/javascript" src="/javascripts/solr-autocomplete/jquery-autocomplete/jquery.autocomplete.js"></script>
+
+	 <link type="text/css" rel="stylesheet" href="/javascripts/solr-autocomplete/jquery-autocomplete/jquery.autocomplete.css" />
+
     <script type="text/javascript">
       $(document).ready(function(){
       <%= yield :js %>
@@ -52,7 +62,9 @@
 		  <div class="searchContainer">
 		    <form action="/search" method="get" id="search-form" class="formtastic">
 		      <label for="menusearch"></label>
-		      <input type="text" name="term" id="search_term" value="Search this site"/>
+		      <!-- <input type="text" name="term" id="search_term" value="Search this site"/> -->
+				  <%=autocomplete_text_field "search", "term", "http://127.0.0.1:8983/solr/", "search_term"%>
+		
 		      <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
          <input type="image" alt="Go" id="search_button" src="/images/structure/bttn_go.png"/>
 	        </form>
