@@ -160,7 +160,7 @@ module Nesstar
         
         # mutex.unlock
         @@curl_count -= 1
-        puts "closed curl count - #{@@curl_count}. Finished with #{variable_url}"
+        puts "closed curl count - #{@@curl_count}. Finished with #{study_id}"
       end
 
 
