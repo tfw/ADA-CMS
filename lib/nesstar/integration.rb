@@ -67,10 +67,10 @@ module Nesstar
 
           participant :ref => 'convert_and_find_resources'
           
-          # concurrent_iterator :on_field => 'variable_urls', :to_f => "variable_url" do
-          #   participant :ref => 'convert_variable' 
-          # end
-          # 
+          concurrent_iterator :on_field => 'variable_urls', :to_f => "variable_url" do
+            participant :ref => 'convert_variable' 
+          end
+          
           participant :ref => 'ada_archive_contains_all_studies' 
           participant :ref => 'log_run'           
         end
@@ -109,7 +109,7 @@ module Nesstar
           query.save!
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
 
-          puts "curl -o #{query_response_file} --compressed \"#{query.query}\""
+          puts "\n\n query statement: curl -o #{query_response_file} --compressed \"#{query.query}\""
           `curl -o #{query_response_file} --compressed "#{query.query}"`
           handler = Nesstar::QueryResponseParser.new(query_response_file)
 
@@ -138,10 +138,9 @@ module Nesstar
           ddi_id = archive_integration.ddi_id
           file_name = "#{ddi_id}.xml"
 
+          puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
           http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
           http_headers = http_headers.split("\n")
-          
-          puts "downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
           
           if http_headers.first =~ /500/
             fetch_errors << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
@@ -187,6 +186,7 @@ module Nesstar
           related_materials_entry = study.related_materials_attribute
           unless related_materials_entry.nil?
             document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
+            puts "\n\n related material download: #{related_materials_entry.value}"
             `curl -o #{$xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
             related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
 
@@ -235,7 +235,7 @@ module Nesstar
 
         mutex.unlock
         @@curl_count -= 1
-        puts "closed curl count - #{@@curl_count}"
+        puts "closed curl count - #{@@curl_count}. Finished with #{variable_url}"
     
         workitem.fields['downloaded_variables'] ||= []
         workitem.fields['downloaded_variables'] << variable_url
