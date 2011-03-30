@@ -25,4 +25,5 @@ Ada::Application.configure do
 
 end
 
-Paperclip.options[:command_path] = "/opt/local/bin/"
+Paperclip.options[:command_path] = "/opt/local/bin/" if system('uname') == "Darwin"
+Paperclip.options[:command_path] = "/usr/bin/" if system('uname') == "Linux"
