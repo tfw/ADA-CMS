@@ -10,6 +10,7 @@ class Staff::ImagesController < Staff::BaseController
     # Render an image browser for CKEditor
     
     @images = Image.all
+    @pictures = Image.all
     render :layout => "browser"
   end
 

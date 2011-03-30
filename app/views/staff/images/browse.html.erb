@@ -41,6 +41,18 @@
 </script>
 
 
+<%= @images.size %>
+
+<% for image in @images %>
+<dl>
+ <dt>Image Type<dd><%= image.resource_content_type %></dd>
+ <dt>File Size<dd><%= number_to_human_size(image.resource_file_size) %></dd>
+ <dt>Created<dd><%= time_ago_in_words(image.created_at) %> ago </dd>
+ <dt>Thumbnail<dd><%= image_tag image.resource.url(:thumb) %></dd>
+</dl>
+
+<% end %>
+
 <table width="100%" cellspacing="0" cellpadding="0">
 	<tbody>
 	<tr>
