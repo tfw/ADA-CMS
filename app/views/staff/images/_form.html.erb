@@ -10,7 +10,7 @@
 <% semantic_form_for([:staff, resource], :html => { :multipart => true }) do |form| %>
 
   <fieldset>
-    <legend>Upload a document</legend>
+    <legend>Upload a <%= resource.class.name %></legend>
     <%= form.hidden_field :user_id, :value => current_user.id %>
     <%= form.input :title, :input_html => {:size => "50"} %>
     <%= form.file_field :resource %>
