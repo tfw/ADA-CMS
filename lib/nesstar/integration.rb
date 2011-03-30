@@ -139,9 +139,7 @@ module Nesstar
           next if file_name == "." or file_name == ".."
           study_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
 
-# puts "\n\n new abstract #{study_hash[:abstractText]}"
           study = Study.store_with_entries(study_hash)
-# puts "**** new study with abstract: #{study.abstract}"
 
           #find study integrations which need to be linked to the archive
           integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(study.ddi_id, nil)
@@ -157,8 +155,8 @@ module Nesstar
           related_materials_entry = study.related_materials_attribute
           unless related_materials_entry.nil?
             document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
-            `curl -o #{$xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-            related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
+            `curl -o #{$xml_dir}related/#{document_name} --compressed "#{related_materials_entry.value}"`
+            related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}related/#{document_name}")
 
             related_materials_list.each do |related|
               pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
