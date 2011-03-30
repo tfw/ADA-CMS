@@ -6,6 +6,8 @@ class PagesController < ContentController
     @page = Page.find_by_id(params[:id])
     @current_archive = @page.archive
     @title = @page.title
+    @news_archives = @current_archive.news_archives.find(:all, :order => "created_at DESC", :limit => 10)
+    @archive_studies = @current_archive.archive_studies.find(:all, :order => "created_at DESC", :limit => 10)
     respond_with(@page)
   end
   

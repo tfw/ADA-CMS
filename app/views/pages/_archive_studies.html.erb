@@ -1,0 +1,9 @@
+  <aside class="datasets">
+    <h2>New datasets</h2>
+    <h3>Recent data deposits <br>
+      (since <%= @archive_studies.last.created_at.strftime('%B %Y') %>)
+    </h3>
+    <ul>
+      <%= render :partial => "archive_study", :collection => @archive_studies %>
+    </ul>
+  </aside>
