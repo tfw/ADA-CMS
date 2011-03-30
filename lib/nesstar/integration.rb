@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'mutexer'
 require 'ruote/engine'
 require 'nesstar/config'
 require 'ruote/storage/base'
@@ -12,26 +13,6 @@ require 'yaml'
 # require 'ruby-debug'
 
 module Nesstar
-  class Mutexer
-
-    LIMIT = 10
-    CURL_MUTEXES = []
-    
-    [0..LIMIT].each {CURL_MUTEXES << Mutex.new}
-    
-    def self.available
-      for mutex in CURL_MUTEXES
-        available = mutex if not mutex.locked?
-        break if available
-      end
-      
-      available.lock if available          
-      puts "**** \n\n offering a mutex" if available          
-      
-      available
-    end
-  end
-
   class Integration
     include Config
 
@@ -47,7 +28,7 @@ module Nesstar
 
     #call this from the client to run the integration.
     def self.run
-      Nesstar::Mutexer.available
+      Mutexer.available
       
       @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
       @worker = Ruote::Worker.new(@storage)
@@ -58,27 +39,35 @@ module Nesstar
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
           subprocess :ref => 'initialize_directories'
-          participant :ref => 'define_study_integrations', :datasets_yaml => $datasets_file
+          participant :ref => 'load_study_integrations'
           cancel_process :if => '${f:study_ids.size} == 0'
 
           # unless Rails.env == "development"
-            participant :ref => 'download_dataset_xmls'
+            # participant :ref => 'download_dataset_xmls'
           # end
 
-          participant :ref => 'convert_and_find_resources'
-          
-          concurrent_iterator :on_field => 'variable_urls', :to_f => "variable_url" do
-            participant :ref => 'convert_variable' 
+          concurrent_iterator :on_field => 'studies_to_download', :to_f => "study_id" do
+            participant :ref => 'download_study' 
+            # participant :ref => 'convert_and_find_resources'
           end
-          
-          participant :ref => 'ada_archive_contains_all_studies' 
-          participant :ref => 'log_run'           
+
+        #   participant :ref => 'convert_and_find_resources'
+        #   
+        #   concurrent_iterator :on_field => 'variable_urls', :to_f => "variable_url" do
+        #     participant :ref => 'convert_variable' 
+        #   end
+        #   
+        #   participant :ref => 'ada_archive_contains_all_studies' 
+        #   participant :ref => 'log_run'           
         end
 
         process_definition :name => 'initialize_directories' do
           sequence do
             participant :ref => 'initialize_directory', :dir => $nesstar_dir
-            participant :ref => 'recreate_xml_directory', :dir => $xml_dir
+            participant :ref => 'mkdir', :dir => $xml_dir
+            participant :ref => 'mkdir', :dir => $studies_xml_dir            
+            participant :ref => 'mkdir', :dir => $related_xml_dir
+            participant :ref => 'mkdir', :dir => $variables_xml_dir
           end
         end
       end
@@ -91,6 +80,7 @@ module Nesstar
     # registers the workflow logic participants with ruote
     def self.register_workflow_participants(engine)
       engine.register_participant 'initialize_directory' do |workitem|
+        rm_rf(workitem.fields['params']['dir'])
         mkdir(workitem.fields["params"]['dir']) unless File.exists?(workitem.fields["params"]['dir'])
       end
 
@@ -99,9 +89,14 @@ module Nesstar
         mkdir(workitem.fields['params']['dir'])
       end
 
+      engine.register_participant 'mkdir' do |workitem|
+        mkdir(workitem.fields['params']['dir'])
+      end
+
       ## load_study_ids
-      engine.register_participant 'define_study_integrations' do |workitem|
+      engine.register_participant 'load_study_integrations' do |workitem|
         dataset_urls = []
+        workitem.fields['studies_to_download'] ||= []
 
         queries = ArchiveStudyQuery.all
 
@@ -109,58 +104,101 @@ module Nesstar
           query.save!
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
 
-          puts "\n\n query statement: curl -o #{query_response_file} --compressed \"#{query.query}\""
+          # puts "\n\n query statement: curl -o #{query_response_file} --compressed \"#{query.query}\""
           `curl -o #{query_response_file} --compressed "#{query.query}"`
           handler = Nesstar::QueryResponseParser.new(query_response_file)
 
           for url in handler.datasets
             ddi_id = url.split(".").last
             #the validations on the object ensure we don't duplicate the object (archive + query must be unique, url can repeat)
-            # puts ddi_id
             pre_existing = ArchiveStudyIntegration.find_by_archive_id_and_ddi_id(query.archive.id, ddi_id)
             unless pre_existing
               ArchiveStudyIntegration.create!(:ddi_id => ddi_id, :archive => query.archive,
                                             :archive_study_query => query, :user_id => query.id)
             end
+            workitem.fields['studies_to_download'] << ddi_id
           end
         end
       end
 
-      ## download_dataset_xmls
-      engine.register_participant 'download_dataset_xmls' do |workitem|
-        fetch_errors = []
-        downloaded_files = []
+      engine.register_participant 'download_study' do |workitem|
+        workitem.fields['fetch_errors']       ||= []
+        workitem.fields['downloaded_files']   ||= []
         
-        archive_integrations = Set.new        
-        ArchiveStudyIntegration.all.each{|integration| archive_integrations << integration}
+        study_id = workitem.fields['study_id']
+        file_name = "#{study_id}.xml"
         
-        archive_integrations.each do |archive_integration|
-          ddi_id = archive_integration.ddi_id
-          file_name = "#{ddi_id}.xml"
+        mutex = Mutexer.available
+        
+        begin
+          mutex = Mutexer.available
+          sleep 2 if mutex.nil?
+        end while mutex.nil? 
 
-          puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
-          http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+        mutex.synchronize do
+          @@curl_count += 1
+          puts "found a free curl conn #{@@curl_count}"
+        
+          puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}"
+          http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}"`
           http_headers = http_headers.split("\n")
-          
+        
           if http_headers.first =~ /500/
-            fetch_errors << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
-            # puts "\n\n found an error, not downloading file, for #{ddi_id}"
-            Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
+            workitem.fields['fetch_errors'] << "Error while downloading #{study_id}: #{http_headers.first} \n"
+            Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}")
             next
           end
-          
+        
           begin
-            `curl -o #{$xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
-            downloaded_files << file_name
+            `curl -o #{$studies_xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}"`
+            workitem.fields['downloaded_files'] << file_name
           rescue StandardError => boom
             puts "#{boom}.to_s"
-            fetch_errors << "Error while downloading #{ddi_id}: #{boom} \n"
+            workitem.fields['fetch_errors'] << "Error while downloading #{study_id}: #{boom} \n"
           end
         end
-
-        workitem.fields['fetch_errors'] = fetch_errors
-        workitem.fields['downloads'] = downloaded_files
+        
+        # mutex.unlock
+        @@curl_count -= 1
+        puts "closed curl count - #{@@curl_count}. Finished with #{variable_url}"
       end
+
+
+      ## download_dataset_xmls
+      # engine.register_participant 'download_dataset_xmls' do |workitem|
+      #   fetch_errors = []
+      #   downloaded_files = []
+      #   
+      #   archive_integrations = Set.new        
+      #   ArchiveStudyIntegration.all.each{|integration| archive_integrations << integration}
+      #   
+      #   archive_integrations.each do |archive_integration|
+      #     ddi_id = archive_integration.ddi_id
+      #     file_name = "#{ddi_id}.xml"
+      # 
+      #     puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
+      #     http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+      #     http_headers = http_headers.split("\n")
+      #     
+      #     if http_headers.first =~ /500/
+      #       fetch_errors << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
+      #       # puts "\n\n found an error, not downloading file, for #{ddi_id}"
+      #       Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
+      #       next
+      #     end
+      #     
+      #     begin
+      #       `curl -o #{$xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+      #       downloaded_files << file_name
+      #     rescue StandardError => boom
+      #       puts "#{boom}.to_s"
+      #       fetch_errors << "Error while downloading #{ddi_id}: #{boom} \n"
+      #     end
+      #   end
+      # 
+      #   workitem.fields['fetch_errors'] = fetch_errors
+      #   workitem.fields['downloads'] = downloaded_files
+      # end
 
       ## convert
       engine.register_participant 'convert_and_find_resources' do |workitem|
@@ -168,7 +206,9 @@ module Nesstar
 
         Dir.entries($xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
-          study_hash = RDF::Parser.parse("#{$xml_dir}/#{file_name}")
+          puts ("#{$xml_dir}#{file_name}")
+          
+          study_hash = RDF::Parser.parse("#{$xml_dir}#{file_name}")
 
           study = Study.store_with_fields(study_hash)
 
@@ -187,8 +227,8 @@ module Nesstar
           unless related_materials_entry.nil?
             document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
             puts "\n\n related material download: #{related_materials_entry.value}"
-            `curl -o #{$xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-            related_materials_list = RDF::Parser.parse_related_materials_document("#{$xml_dir}/#{document_name}")
+            `curl -o #{$related_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
+            related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_dir}#{document_name}")
 
             related_materials_list.each do |related|
               pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
@@ -202,19 +242,17 @@ module Nesstar
             
             workitem.fields['variable_urls'] ||= []
             workitem.fields['variable_urls'] << study.variables_attribute.value
-            # puts "added #{study.variables_attribute} to workfields variable_urls"
           end
           
-          # puts "\n\n**** #{workitem.fields['variable_urls']}**\n\n"
         workitem.fields['database_errors'] = database_errors        
       end
 
 
       engine.register_participant 'convert_variable' do |workitem|
-        mutex = Nesstar::Mutexer.available
+        mutex = Mutexer.available
         
         begin
-          mutex = Nesstar::Mutexer.available
+          mutex = Mutexer.available
           sleep 2 if mutex.nil?
         end while mutex.nil? 
                         
