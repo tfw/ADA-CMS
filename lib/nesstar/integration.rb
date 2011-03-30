@@ -12,8 +12,30 @@ require 'yaml'
 # require 'ruby-debug'
 
 module Nesstar
+  class Mutexer
+
+    LIMIT = 10
+    CURL_MUTEXES = []
+    
+    [0..LIMIT].each {CURL_MUTEXES << Mutex.new}
+    
+    def self.available
+      for mutex in CURL_MUTEXES
+        available = mutex if not mutex.locked?
+        break if available
+      end
+      
+      available.lock if available          
+      puts "**** \n\n offering a mutex" if available          
+      
+      available
+    end
+  end
+
   class Integration
     include Config
+
+    @@curl_count = 0
 
     #helper method - takes a url like http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00570@relatedMaterials
     #and returns 00570_relatedMaterials.xml
@@ -25,6 +47,8 @@ module Nesstar
 
     #call this from the client to run the integration.
     def self.run
+      Nesstar::Mutexer.available
+      
       @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
       @worker = Ruote::Worker.new(@storage)
       @engine = Ruote::Engine.new(@worker)
@@ -185,22 +209,34 @@ module Nesstar
 
 
       engine.register_participant 'convert_variable' do |workitem|
+        mutex = Nesstar::Mutexer.available
+        
+        begin
+          mutex = Nesstar::Mutexer.available
+          sleep 2 if mutex.nil?
+        end while mutex.nil? 
+                        
+        @@curl_count += 1
+        puts "found a free curl conn #{@@curl_count}"
+        
         #we looks for a study's variables
         variable_url = workitem.fields['variable_url']
         var_file_name = variable_url.split(".").last
 
-        puts "\n\n***** #{variable_url}"
-
         `curl -o #{$xml_dir}#{var_file_name} --compressed "#{variable_url}"`
+
         variables_list = RDF::Parser.parse_variables("#{$xml_dir}/#{var_file_name}")
-      
+              
         variables_list.each do |var_hash|
           variable = Variable.store_with_fields(var_hash)
         end
+
+        mutex.unlock
+        @@curl_count -= 1
+        puts "closed curl count - #{@@curl_count}"
     
         workitem.fields['downloaded_variables'] ||= []
         workitem.fields['downloaded_variables'] << variable_url
-      # workitem.fields['variable_urls'] = variable_urls
       end
       
     end
