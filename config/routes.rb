@@ -46,6 +46,7 @@ Ada::Application.routes.draw do
   inkling_match(:pages)
   inkling_match(:news)
   inkling_match(:documents)
+  inkling_match(:images)
 
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
 end

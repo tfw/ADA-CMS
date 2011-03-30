@@ -20,24 +20,25 @@ class Image < ActiveRecord::Base
   def generate_path_slug
     "/images/#{sluggerize(self.title)}"
   end
-  
+
+  # accessor methods expected by the ckeditor browse views (can refactor, we have our own copies)
   def url_thumb
     self.resource.url(:thumb)
   end
-  
+
   def url_content
     self.path.slug
   end
-  
+
   def filename
     self.resource_file_name
   end
-  
+
   def format_created_at
     self.created_at
   end
-  
+
   def size
-    0
+    self.resource_file_size
   end
 end
