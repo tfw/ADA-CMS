@@ -22,10 +22,16 @@ feature "Creating news" do
     page.should have_content("In archive Social Science")
     click_link("Edit")
     page.should have_button('Update News')
+
+    # Currently, news is published immediately. Check it's visible:
+    visit('/'+Archive.social_science.slug+'/home/')
+    page.should have_content("test page")
   end
 
   scenario "I can delete news" do
-    news_id = create_news(Archive.social_science, "test page", "sample content")
+    news_id = create_news(Archive.social_science, "test news", "sample content")
+
+    # Find it, delete it:
     visit(staff_news_index_path)
     within("\#newsrow-#{news_id}") do |row|
       click_link("Delete")

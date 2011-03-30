@@ -1,7 +1,13 @@
   <aside class="datasets">
     <h2>New datasets</h2>
     <h3>Recent data deposits <br>
-      (since <%= @archive_studies.last.created_at.strftime('%B %Y') %>)
+      <%=
+	if last = @archive_studies.last
+	  '(since ' + last.created_at.strftime('%B %Y') + ')'
+	else
+	  'No recent data'
+	end
+      %>
     </h3>
     <ul>
       <%= render :partial => "archive_study", :collection => @archive_studies %>

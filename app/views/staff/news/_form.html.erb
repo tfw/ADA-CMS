@@ -1,13 +1,13 @@
 <%= javascript_include_tag :ckeditor %>
 
-<% if resource.errors.any? %>
+<%- if resource.errors.any? %>
     <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
     <ul>
-    <% resource.errors.full_messages.each do |msg| %>
+    <%- resource.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
-    <% end %>
+    <%- end %>
     </ul>
-<% end %>
+<%- end %>
 
 <%= semantic_form_for([:staff, @archive, resource], :html=>{:class=>'titled'}) do |form| %>
 
@@ -33,4 +33,4 @@
     <%= content_tag(:li, content_tag(:a, "Preview", :id => "preview-link", :href => "#")) %>
   <%- end -%>
 
-<% end %>
+<%- end %>
