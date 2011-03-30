@@ -2,7 +2,7 @@ class Mutexer
   LIMIT = 10
   MUXES = []
   
-  [0..LIMIT].each {MUXES << Mutex.new}
+  LIMIT.times {MUXES << Mutex.new}
   
   def self.reset
     for mutex in MUXES
@@ -17,9 +17,19 @@ class Mutexer
     end
     
     # available.lock if available          
-    puts "**** \n\n offering a mutex" if available          
-    puts "**** \n\n all mutexes taken" unless available          
-    
+    # puts "**** \n\n offering a mutex" if available          
+    # puts "**** \n\n all mutexes taken" unless available          
+    puts report
     available
+  end
+  
+  def self.report
+    txt = "["
+    for mutex in MUXES 
+      txt << "#{mutex.locked? ? 'locked' : 'unlocked' }"
+      txt << "," unless mutex == MUXES.last
+    end
+    txt << "]"
+    txt
   end
 end
