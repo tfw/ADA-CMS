@@ -78,20 +78,6 @@ ActiveRecord::Schema.define(:version => 20110328234346) do
   add_index "documents", ["title"], :name => "index_documents_on_title", :unique => true
   add_index "documents", ["user_id"], :name => "index_documents_on_user_id"
 
-  create_table "images", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "title",                 :null => false
-    t.string   "resource_file_name"
-    t.string   "resource_content_type"
-    t.integer  "resource_file_size"
-    t.datetime "resource_updated_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "images", ["title"], :name => "index_images_on_title", :unique => true
-  add_index "images", ["user_id"], :name => "index_images_on_user_id"
-
   create_table "inkling_can_can_actions", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -228,6 +214,20 @@ ActiveRecord::Schema.define(:version => 20110328234346) do
     t.string   "state"
     t.integer  "archive_to_study_integration_id"
   end
+
+  create_table "pictures", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "title",                 :null => false
+    t.string   "resource_file_name"
+    t.string   "resource_content_type"
+    t.integer  "resource_file_size"
+    t.datetime "resource_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pictures", ["title"], :name => "index_pictures_on_title", :unique => true
+  add_index "pictures", ["user_id"], :name => "index_pictures_on_user_id"
 
   create_table "studies", :force => true do |t|
     t.string   "label"

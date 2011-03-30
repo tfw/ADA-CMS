@@ -8,6 +8,8 @@ class Staff::ImagesController < Staff::BaseController
 
   def browse      # browse_staff_images_path
     # Render an image browser for CKEditor
+    
+    @images = Image.all
     render :layout => "browser"
   end
 
