@@ -7,6 +7,7 @@ class Study < ActiveRecord::Base
   has_many :archive_study_integrations
   has_many :archive_studies
   has_many :archives, :through => :archive_studies
+  has_many :variables
   
   validates :label, :presence => true
   
@@ -43,17 +44,21 @@ class Study < ActiveRecord::Base
     string :study_auth_entity 
     
     integer :archive_ids, :multiple => true
+    
+    # autocomplete :search_term, :using => :label
   end  
   
   #class behaviour to create Study objects based on a hash built from scanning an XML document
   #this code might be moved out to a builder object later on.
-  def self.store_with_entries(data)
+  def self.store_with_fields(data)
     #first, see if this is a new dataset or we're updating an old one.
     study = Study.find_by_label(data[:label])
     study = Study.new if study.nil?
 
     study.label = data[:label]
     study.about = data[:about]
+    study.ddi_id = data[:about].split(".").last
+    study.resource = data[:attribute_resource]
 
     local_data = data.dup
     local_data.delete(:label)
@@ -106,14 +111,12 @@ class Study < ActiveRecord::Base
       study.study_auth_entity = data[:stdyAuthEntity]
     end
     
-
     study.save!
-    local_data.each {|k,v| create_or_update_entry(study, k.to_s, v)}
-
+    local_data.each {|k,v| create_or_update_field(study, k.to_s, v)}
     study
   end
   
-  def self.create_or_update_entry(study, key, value)
+  def self.create_or_update_field(study, key, value)
     begin
       study_field = StudyField.find_by_study_id_and_key(study.id, key)
     rescue

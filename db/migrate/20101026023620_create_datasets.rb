@@ -7,7 +7,6 @@ class CreateDatasets < ActiveRecord::Migration
       t.string :study3
       t.string :about
       t.boolean :published
-
       t.timestamps
     end
   end

@@ -4089,3 +4089,183 @@ inkling_paths_409:
   content_type: ArchiveStudy
   created_at: 2011-03-16 00:05:31.701676
   updated_at: 2011-03-16 00:05:31.701676
+inkling_paths_410: 
+  id: "414"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/new-zealand-election-study--1993
+  content_id: "345"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:13:41.043937
+  updated_at: 2011-03-31 04:13:41.043937
+inkling_paths_411: 
+  id: "415"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/australian-election-study-online--2001--file-c
+  content_id: "346"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:13:41.092169
+  updated_at: 2011-03-31 04:13:41.092169
+inkling_paths_412: 
+  id: "416"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/australian-election-study-online--2001
+  content_id: "347"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:13:41.174864
+  updated_at: 2011-03-31 04:13:41.174864
+inkling_paths_413: 
+  id: "417"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/northern-territory-urban-voters-survey--1982
+  content_id: "348"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:27:14.760624
+  updated_at: 2011-03-31 04:27:14.760624
+inkling_paths_414: 
+  id: "418"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/australian-election-database--house-of-representatives---northern-territory-data
+  content_id: "349"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:27:14.783979
+  updated_at: 2011-03-31 04:27:14.783979
+inkling_paths_415: 
+  id: "419"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/study-of-under-age-drinking-september/november--1979
+  content_id: "350"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:27:15.642574
+  updated_at: 2011-03-31 04:27:15.642574
+inkling_paths_416: 
+  id: "420"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/australian-election-database---northern-territory-legislative-assembly-party-election-data
+  content_id: "351"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:27:17.625719
+  updated_at: 2011-03-31 04:27:17.625719
+inkling_paths_417: 
+  id: "421"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/australian-election-database---all-states-lower-house-data-party-data
+  content_id: "352"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:27:17.641434
+  updated_at: 2011-03-31 04:27:17.641434
+inkling_paths_418: 
+  id: "422"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/australian-election-database---northern-territory-legislative-assembly
+  content_id: "353"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:27:17.642684
+  updated_at: 2011-03-31 04:27:17.642684
+inkling_paths_419: 
+  id: "423"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study-online--2001--file-c
+  content_id: "354"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.419781
+  updated_at: 2011-03-31 04:37:48.419781
+inkling_paths_420: 
+  id: "424"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-database--house-of-representatives---northern-territory-data
+  content_id: "355"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.429681
+  updated_at: 2011-03-31 04:37:48.429681
+inkling_paths_421: 
+  id: "425"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-database---all-states-lower-house-data-party-data
+  content_id: "356"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.43939
+  updated_at: 2011-03-31 04:37:48.43939
+inkling_paths_422: 
+  id: "426"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-database---northern-territory-legislative-assembly
+  content_id: "357"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.449152
+  updated_at: 2011-03-31 04:37:48.449152
+inkling_paths_423: 
+  id: "427"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/new-zealand-election-study--1993
+  content_id: "358"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.46856
+  updated_at: 2011-03-31 04:37:48.46856
+inkling_paths_424: 
+  id: "428"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-study-online--2001
+  content_id: "359"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.478099
+  updated_at: 2011-03-31 04:37:48.478099
+inkling_paths_425: 
+  id: "429"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/northern-territory-urban-voters-survey--1982
+  content_id: "360"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.486323
+  updated_at: 2011-03-31 04:37:48.486323
+inkling_paths_426: 
+  id: "430"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/study-of-under-age-drinking-september/november--1979
+  content_id: "361"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.496236
+  updated_at: 2011-03-31 04:37:48.496236
+inkling_paths_427: 
+  id: "431"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/australian-election-database---northern-territory-legislative-assembly-party-election-data
+  content_id: "362"
+  content_type: ArchiveStudy
+  created_at: 2011-03-31 04:37:48.503662
+  updated_at: 2011-03-31 04:37:48.503662

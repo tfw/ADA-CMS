@@ -261,6 +261,7 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "creation_date"
     t.string   "study_auth_entity"
     t.text     "comment"
+    t.string   "ddi_id"
   end
 
   create_table "study_fields", :force => true do |t|
@@ -280,6 +281,25 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.text     "creation_date"
     t.boolean  "complete"
     t.text     "resource"
+  end
+
+  create_table "variable_fields", :force => true do |t|
+    t.integer  "variable_id"
+    t.string   "key"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "variables", :force => true do |t|
+    t.string   "label"
+    t.integer  "study_id"
+    t.string   "name"
+    t.integer  "num_cats"
+    t.decimal  "val_range_max"
+    t.decimal  "val_range_min"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

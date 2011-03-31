@@ -49,7 +49,7 @@ describe Nesstar::RDF::Parser do
   end
   
   specify "that it scans and hasherizes variables documents" do
-    vars_hash = Nesstar::RDF::Parser.parse_variables(File.expand_path("00102-f-test.xml", File.dirname(__FILE__)))
+    vars_hash = Nesstar::RDF::Parser.parse_variables(File.expand_path("00401@variables.xml", File.dirname(__FILE__)))
     vars_hash.should_not be_nil
   end
 end
