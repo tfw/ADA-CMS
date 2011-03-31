@@ -1,4 +1,6 @@
 class News < ActiveRecord::Base
+  include ApplicationHelper
+
   has_many :news_archives, :dependent => :destroy
   has_many :archives, :through => :news_archives
   SNIPPET_WORDS = 20
@@ -15,8 +17,6 @@ class News < ActiveRecord::Base
   scope :published, proc { { :conditions => "state = 'published'" } }
 
   def snippet
-    words = body.gsub(/<\/?[^>]*>/, "").split(/\W/m).reject{|w| w.empty? }
-    words = words.size > SNIPPET_WORDS ? words[0...SNIPPET_WORDS]+['...'] : words
-    words * ' '
+    first_n_words(SNIPPET_WORDS, body)
   end
 end
