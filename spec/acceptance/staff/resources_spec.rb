@@ -17,7 +17,7 @@ feature "Managing site resources" do
   end
 
   scenario "I can upload images, save, view and re-edit it" do
-    image_id = upload_image('clear cross', "#{RAILS_ROOT}/public/images/clear_cross.png")
+    image_id = upload_image('clear cross', "#{::Rails.root.to_s}/public/images/clear_cross.png")
     page.should have_content("was successfully created")
     page.should have_content("image/png")
     page.should have_content("384 Bytes")
@@ -30,7 +30,7 @@ feature "Managing site resources" do
   end
 
   scenario "I can upload documents, save, view and re-edit it" do
-    document_id = upload_document('ten commandments', "#{RAILS_ROOT}/spec/acceptance/staff/Commandments.doc")
+    document_id = upload_document('ten commandments', "#{::Rails.root.to_s}/spec/acceptance/staff/Commandments.doc")
     page.should have_content("was successfully created")
     page.should have_content("application/msword")
     page.should have_content("25 KB")

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110328234346) do
+ActiveRecord::Schema.define(:version => 20110331012142) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(:version => 20110328234346) do
     t.datetime "resource_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "archive_id"
   end
 
   add_index "documents", ["title"], :name => "index_documents_on_title", :unique => true
@@ -87,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20110328234346) do
     t.datetime "resource_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "archive_id"
   end
 
   add_index "images", ["title"], :name => "index_images_on_title", :unique => true

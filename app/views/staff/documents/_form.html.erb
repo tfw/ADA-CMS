@@ -12,6 +12,7 @@
   <fieldset>
     <legend>Upload a document</legend>
     <%= form.hidden_field :user_id, :value => current_user.id %>
+    <%= form.input :archive, :label => 'Main Archive', :include_blank => '(None)' %>
     <%= form.input :title, :input_html => {:size => "50"} %>
     <%= form.file_field :resource %>
     <%= form.commit_button %>

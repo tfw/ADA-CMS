@@ -14,6 +14,7 @@ class Document < ActiveRecord::Base
   @@per_page = 10
 
   belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
+  belongs_to :archive
 
   validates_presence_of :user
   validates_presence_of :title
