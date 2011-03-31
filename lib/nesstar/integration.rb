@@ -45,11 +45,11 @@ module Nesstar
             participant :ref => 'download_study' 
           end
 
-          concurrent_iterator :on_field => 'study_ids', :to_f => "study_id" do
+          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
             participant :ref => 'download_related_materials' 
           end
 
-          concurrent_iterator :on_field => 'study_ids', :to_f => "study_id" do
+          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
             participant :ref => 'download_variables' 
           end
 
@@ -57,8 +57,8 @@ module Nesstar
           #   participant :ref => 'convert_variable' 
           # end
         #   
-        #   participant :ref => 'ada_archive_contains_all_studies' 
-        #   participant :ref => 'log_run'           
+          participant :ref => 'ada_archive_contains_all_studies' 
+          participant :ref => 'log_run'           
         end
 
         process_definition :name => 'initialize_directories' do
@@ -165,17 +165,16 @@ module Nesstar
             integration.study_id = study.id
             integration.save!
           end
-
-          workitem.fields['study_ids'] << study.id
+          # 
+          # workitem.fields['study_ids'] << study.id
         end
       end
 
       engine.register_participant 'download_related_materials' do |workitem|
         mutex = Mutexer.wait_for_mutex(2)
-        study_id = workitem.fields['study_id']
-        
         mutex.synchronize do 
-          study = Study.find(study_id)
+          ddi_id = workitem.fields['ddi_id']
+          study = Study.find_by_ddi_id(ddi_id)
           puts "related materials for #{study.label}"
           #we looks for a study which records the URL of a related materials document
           related_materials_entry = study.related_materials_attribute
@@ -201,8 +200,9 @@ module Nesstar
       engine.register_participant 'download_variables' do |workitem|
         mutex = Mutexer.wait_for_mutex(2)
         mutex.synchronize do                  
-          study_id = workitem.fields['study_id']
-          study = Study.find(study_id)
+          mutex = Mutexer.wait_for_mutex(2)
+          ddi_id = workitem.fields['ddi_id']
+          study = Study.find_by_ddi_id(ddi_id)
         
           #we looks for a study's variables
           variable_url = study.variables_attribute.value

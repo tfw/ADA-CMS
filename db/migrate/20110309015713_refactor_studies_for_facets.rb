@@ -29,9 +29,10 @@ class RefactorStudiesForFacets < ActiveRecord::Migration
     
     #not a facet - want this on the study tho
     add_column :studies, :comment, :text
+    add_column :studies, :ddi_id, :string
     
-    drop_column :studies, :study3
-    drop_column :studies, :id_number
+    # drop_column :studies, :study3
+    # drop_column :studies, :id_number
   end
 
   def self.down

@@ -245,6 +245,7 @@ ActiveRecord::Schema.define(:version => 20110315011631) do
     t.string   "creation_date"
     t.string   "study_auth_entity"
     t.text     "comment"
+    t.string   "ddi_id"
   end
 
   create_table "study_fields", :force => true do |t|
