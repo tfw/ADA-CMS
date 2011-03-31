@@ -35,6 +35,7 @@
              <% unless study.field("stdyAuthEntity").blank? %> by <% study.field("stdyAuthEntity") %>. <% end %> <br/>
              Abstract: <%= first_n_words(30, study.abstract) %> <br/>
              Study Id: <%= study.ddi_id %> <br/>
+             Variables: <%= study.variables.size %> <br/>
 
 						Relevance: <%= hit.score %> <br/>
 
