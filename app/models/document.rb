@@ -21,4 +21,25 @@ class Document < ActiveRecord::Base
   def generate_path_slug
     "/documents/#{sluggerize(self.title)}"
   end
+
+  # accessor methods expected by the ckeditor browse views (can refactor, we have our own copies)
+  def url_thumb
+    "/images/mime_types/#{resource.content_type}.png"
+  end
+
+  def url_content
+    self.path.slug
+  end
+
+  def filename
+    self.resource_file_name
+  end
+
+  def format_created_at
+    self.created_at
+  end
+
+  def size
+    self.resource_file_size
+  end
 end

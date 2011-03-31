@@ -8,6 +8,7 @@ class Staff::DocumentsController < Staff::BaseController
 
   def browse      # browse_staff_documents_path
     # Render a document browser for CKEditor
+    @documents = Document.all
     render :layout => "browser"
   end
 

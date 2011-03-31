@@ -9,6 +9,8 @@
      </tbody>
    </table>
    
+   <div class="FCKTitle">"<%= resource.title %>"</div>
+   <div class="FCKArchive">Main Archive: <%= (a = resource.archive) ? a.name : '(None)' %></div>
    <div class="FCKFileName"><%= resource.filename %></div>
    <div class="FCKFileDate"><%= resource.format_created_at %></div>
    <div class="FCKFileSize"><%= number_to_human_size(resource.size, :precision => 2) %></div>
