@@ -5,6 +5,7 @@
     <thead>
       <tr>
         <th>Image</th>
+        <th>Main Archive</th>
         <th>Type</th>
         <th>File Size</th>
         <th>Created</th>
@@ -15,6 +16,7 @@
       <%- @images.each do |image| %>
       <tr id=<%= "image-row-#{image.id}" %>>
         <td> <%= link_to image.title, image.path.slug %> </td>
+        <td> <%= (a = image.archive) ? a.name : '(None)' %> </td>
         <td> <%= image.resource_content_type %> </td>
         <td> <%= number_to_human_size(image.resource_file_size) %> </td>
         <td> <%= time_ago_in_words(image.created_at) %> ago </td>

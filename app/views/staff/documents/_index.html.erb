@@ -4,7 +4,8 @@
   <table>
     <thead>
       <tr>
-        <th>Document</th>
+        <th>Title</th>
+        <th>Main Archive</th>
         <th>Type</th>
         <th>File Size</th>
         <th>Created</th>
@@ -15,6 +16,7 @@
       <%- @documents.each do |document| %>
       <tr id=<%= "document-row-#{document.id}" %>>
         <td> <%= link_to document.title, document.path.slug %> </td>
+        <td> <%= (a = document.archive) ? a.name : '(None)' %> </td>
         <td> <%= document.resource_content_type %> </td>
         <td> <%= number_to_human_size(document.resource_file_size) %> </td>
         <td> <%= time_ago_in_words(document.created_at) %> ago </td>
