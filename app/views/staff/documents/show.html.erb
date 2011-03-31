@@ -8,9 +8,16 @@
 <% end %>
 
 <dl>
- <dt>Document Type<dd><%= resource.resource_content_type %></dd>
- <dt>File Size<dd><%= number_to_human_size(resource.resource_file_size) %></dd>
- <dt>Created<dd><%= time_ago_in_words(resource.created_at) %> ago </dd>
+ <dt>Title</dt>
+   <dd><%= resource.title %></dd>
+ <dt>Main Archive</dt>
+   <dd><%= (a = resource.archive) ? a.name : '(None)' %></dd>
+ <dt>Document Type</dt>
+   <dd><%= resource.resource_content_type %></dd>
+ <dt>File Size</dt>
+   <dd><%= number_to_human_size(resource.resource_file_size) %></dd>
+ <dt>Created</dt>
+   <dd><%= time_ago_in_words(resource.created_at) %> ago </dd>
 </dl>
 
 <%= link_to 'Delete', staff_document_path(resource), :method => :delete %>
