@@ -43,6 +43,8 @@ module Nesstar
             participant :ref => 'download_variables' 
           end
 
+          participant :ref => 'convert_variables' 
+
           # concurrent_iterator :on_field => 'study_ids', :to_f => "variable_url" do
           #   participant :ref => 'convert_variable' 
           # end
@@ -170,21 +172,22 @@ module Nesstar
             document_name = related_materials_entry.value.split(".").last + ".xml"
             # puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
             `curl -o #{$related_xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-            begin
-              related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{document_name}")
-            rescue StandardError => boom
-              puts "#{$related_xml_dir}#{document_name}: #{boom}"
-            end
-            
-            related_materials_list.each do |related|
-              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
-              next if pre_existing
 
-              related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
-                          :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
-                          :resource => related[:study_resource])
-              related_material.save!
-            end
+            # begin
+            #   related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{document_name}")
+            # rescue StandardError => boom
+            #   puts "#{$related_xml_dir}#{document_name}: #{boom}"
+            # end
+            # 
+            # related_materials_list.each do |related|
+            #   pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
+            #   next if pre_existing
+            # 
+            #   related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
+            #               :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
+            #               :resource => related[:study_resource])
+            #   related_material.save!
+            # end
           end
         end
       end
@@ -202,21 +205,43 @@ module Nesstar
 
           puts "\n\n #{$variables_xml_dir}#{var_file_name} variables download: #{variable_url}"
           `curl -o #{$variables_xml_dir}#{var_file_name} --compressed "#{variable_url}"`
-          variables_list = RDF::Parser.parse_variables("#{$variables_xml_dir}/#{var_file_name}")
-              
-          variables_list.each {|var_hash| variable = Variable.store_with_fields(var_hash)}
+          # variables_list = RDF::Parser.parse_variables("#{$variables_xml_dir}/#{var_file_name}")        
+          # variables_list.each {|var_hash| variable = Variable.store_with_fields(var_hash)}
     
-          workitem.fields['downloaded_variables'] ||= []
-          workitem.fields['downloaded_variables'] << variable_url
+          # workitem.fields['downloaded_variables'] ||= []
+          # workitem.fields['downloaded_variables'] << variable_url
+        end
+      end
+      
+
+      engine.register_participant 'convert_related_materials' do |workitem|
+        Dir.entries($variables_xml_dir).each do |file_name|
+          next if file_name == "." or file_name == ".."
+          
+          begin
+            related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{file_name}")
+          rescue StandardError => boom
+            puts "#{$related_xml_dir}#{document_name}: #{boom}"
+          end
+          
+          related_materials_list.each do |related|
+            pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
+            next if pre_existing
+
+            related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
+                        :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
+                        :resource => related[:study_resource])
+            related_material.save!
+          end
         end
       end
 
       engine.register_participant 'convert_variables' do |workitem|
-        Dir.entries($xml_dir).each do |file_name|
+        Dir.entries($variables_xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
-         
-  
-        
+          variables_list = RDF::Parser.parse_variables("#{$variables_xml_dir }/#{file_name}")
+          variables_list.each {|var_hash| variable = Variable.store_with_fields(var_hash)}
+        end
       end
 
 
