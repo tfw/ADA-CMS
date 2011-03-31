@@ -7,6 +7,7 @@ class Study < ActiveRecord::Base
   has_many :archive_study_integrations
   has_many :archive_studies
   has_many :archives, :through => :archive_studies
+  has_many :variables
   
   validates :label, :presence => true
   

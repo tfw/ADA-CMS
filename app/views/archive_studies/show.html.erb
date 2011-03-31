@@ -10,13 +10,18 @@
 <% content_for :js do %>
 
   $("#study-link").click(function() {
+    $('#study').toggle('slow', function() {});
     $('#related-materials').toggle('slow', function() {});
-    $('#related-studies').toggle('slow', function() {});
+  });
+
+  $("#variables-link").click(function() {
+    $('#study').toggle('slow', function() {});
+    $('#variables').toggle('slow', function() {});
   });
   
   $("#related-materials-link").click(function() {
     $('#study').toggle('slow', function() {});
-    $('#related-studies').toggle('slow', function() {});
+    $('#related-materials').toggle('slow', function() {});
   });
 
   $("#related-studies-link").click(function() {
@@ -34,7 +39,7 @@
   <nav class="studynav">
     <ul>
       <li> <a id="study-link">Study Description</a> </li>
-      <li> <a id="variable-link">Variable Description</a> </li>
+      <li> <a id="variables-link">Variable Description</a> </li>
       <li> <a id="related-materials-link">Related Materials</a> </li>
       <li> <a id="related-publications-link">Related Publications</a> </li>
       <li> <a id="related-studies-link">Related Studies</a> </li>
@@ -64,6 +69,13 @@
          <a href="nesstar/related_material/<%= rm.id %>"><%=rm.comment %></a>
       </li>
   		<% end %>
+    </ul>
+  </div>
+
+  <div id="variables" style="display:none">
+    <h3>Variable Description</h3>
+    <ul>
+		<%= render(:partial => "variable", :collection => study.variables)%>
     </ul>
   </div>
 

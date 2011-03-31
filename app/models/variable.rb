@@ -1,5 +1,4 @@
 class Variable < ActiveRecord::Base
-  belongs_to :variable
   belongs_to :study
   has_many :variable_fields
   has_many :statistics
