@@ -10,23 +10,15 @@
 <% content_for :js do %>
 
   $("#study-link").click(function() {
-    $('#study').toggle('slow', function() {});
-    $('#related-materials').toggle('slow', function() {});
+    $('#study').toggle();
   });
 
   $("#variables-link").click(function() {
-    $('#study').toggle('slow', function() {});
-    $('#variables').toggle('slow', function() {});
+    $('#variables').toggle();
   });
   
   $("#related-materials-link").click(function() {
-    $('#study').toggle('slow', function() {});
-    $('#related-materials').toggle('slow', function() {});
-  });
-
-  $("#related-studies-link").click(function() {
-    $('#study').toggle('slow', function() {});
-    $('#related-materials').toggle('slow', function() {});
+    $('#related-materials').toggle();
   });
 
 <% end %>
