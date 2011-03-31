@@ -11,7 +11,7 @@ module ApplicationHelper
 
   def first_n_words(n, words)
     return if words.nil?
-    words = words.gsub(/<\/?[^>]*>/, "").split(/\W/m).reject{|w| w.empty? }
+    words = words.gsub(/(<\/?[^>]*>|&[a-z]*;)/, " ").split(/\W/m).reject{|w| w.empty? }
     words = words.size > n ? words[0...n]+['...'] : words
     words * ' '
   end
