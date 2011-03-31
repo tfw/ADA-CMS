@@ -17,7 +17,7 @@
       <tr id=<%= "document-row-#{document.id}" %>>
         <td> <%= link_to document.title, document.path.slug %> </td>
         <td> <%= (a = document.archive) ? a.name : '(None)' %> </td>
-        <td> <%= document.resource_content_type %> </td>
+        <td> <%= image_tag document.url_thumb, :alt => document.resource_content_type %> </td>
         <td> <%= number_to_human_size(document.resource_file_size) %> </td>
         <td> <%= time_ago_in_words(document.created_at) %> ago </td>
         <td>
