@@ -17,18 +17,8 @@ module Nesstar
   class Integration
     include Config
 
-    #helper method - takes a url like http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00570@relatedMaterials
-    #and returns 00570_relatedMaterials.xml
-    # def self.related_materials_document_id(url)
-    #   trailer = url.split(".").last
-    #   id = trailer.split("@").first
-    #   return id
-    # end
-
     #call this from the client to run the integration.
     def self.run
-      Mutexer.available
-      
       @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
       @worker = Ruote::Worker.new(@storage)
       @engine = Ruote::Engine.new(@worker)
@@ -135,7 +125,7 @@ module Nesstar
         mutex = Mutexer.wait_for_mutex(2)
 
         mutex.synchronize do
-          puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
+          # puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
           http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
           http_headers = http_headers.split("\n")
         
@@ -165,8 +155,6 @@ module Nesstar
             integration.study_id = study.id
             integration.save!
           end
-          # 
-          # workitem.fields['study_ids'] << study.id
         end
       end
 
@@ -175,15 +163,19 @@ module Nesstar
         mutex.synchronize do 
           ddi_id = workitem.fields['ddi_id']
           study = Study.find_by_ddi_id(ddi_id)
-          puts "related materials for #{study.label}"
+          # puts "related materials for #{study.label}"
           #we looks for a study which records the URL of a related materials document
           related_materials_entry = study.related_materials_attribute
           unless related_materials_entry.nil?
             document_name = related_materials_entry.value.split(".").last + ".xml"
-            puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
+            # puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
             `curl -o #{$related_xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-            related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{document_name}")
-
+            begin
+              related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{document_name}")
+            rescue StandardError => boom
+              puts "#{$related_xml_dir}#{document_name}: #{boom}"
+            end
+            
             related_materials_list.each do |related|
               pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
               next if pre_existing
@@ -218,7 +210,15 @@ module Nesstar
           workitem.fields['downloaded_variables'] << variable_url
         end
       end
-    # end
+
+      engine.register_participant 'convert_variables' do |workitem|
+        Dir.entries($xml_dir).each do |file_name|
+          next if file_name == "." or file_name == ".."
+         
+  
+        
+      end
+
 
       engine.register_participant 'ada_archive_contains_all_studies' do |workitem|
         for study in Study.all
