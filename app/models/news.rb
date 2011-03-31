@@ -15,8 +15,4 @@ class News < ActiveRecord::Base
 
   scope :recent, proc { { :limit => 10, :order => "created_at DESC" } }
   scope :published, proc { { :conditions => "state = 'published'" } }
-
-  def snippet
-    first_n_words(SNIPPET_WORDS, body)
-  end
 end

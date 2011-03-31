@@ -2,7 +2,7 @@
       </h2>
       <h3><%= news_archive.news.created_at.strftime('%d %b %Y') %></h3>
       <p>
-	<%= news_archive.news.snippet.html_safe %><br>
-	<%= link_to "Read More", news_archive.path.slug %>
+        <%= news_snippet(news_archive.news) %><br>
+        <%= link_to "Read More", news_archive.path.slug %>
       </p>
       <hr>

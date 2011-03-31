@@ -4,9 +4,9 @@
 <% if news_items.size > 0 %>
   <% news_items.each do |news_archive| news = news_archive.news %>
       <article>
-	<h3><%= news.title %></h3>
-	<p><%= news.snippet %></p>
-	<p><%= link_to "Read more...", news_archive.path.slug %></p>
+        <h3><%= news.title %></h3>
+        <p><%= news_snippet(news) %></p>
+        <p><%= link_to "Read more...", news_archive.path.slug %></p>
       </article>
   <% end %>
 <% else %>

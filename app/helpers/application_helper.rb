@@ -9,6 +9,10 @@ module ApplicationHelper
     return "http://assda-nesstar.anu.edu.au/webview/index.jsp?study=http%3A%2F%2Fassda-nesstar.anu.edu.au%3A80%2Fobj%2FfStudy%2Fau.edu.anu.assda.ddi.#{study_id}&amp;v=2&amp;mode=documentation&amp;submode=abstract&amp;top=yes"
   end
 
+  def news_snippet(news)
+    first_n_words(20, news.body)
+  end
+
   def first_n_words(n, words)
     return if words.nil?
     words = words.gsub(/(<\/?[^>]*>|&[a-z]*;)/, " ").split(/\W/m).reject{|w| w.empty? }
