@@ -49,11 +49,13 @@ module Nesstar
             participant :ref => 'download_related_materials' 
           end
 
-          # participant :ref => 'convert_and_find_resources'
-        #   
-        #   concurrent_iterator :on_field => 'variable_urls', :to_f => "variable_url" do
-        #     participant :ref => 'convert_variable' 
-        #   end
+          concurrent_iterator :on_field => 'study_ids', :to_f => "study_id" do
+            participant :ref => 'download_variables' 
+          end
+
+          # concurrent_iterator :on_field => 'study_ids', :to_f => "variable_url" do
+          #   participant :ref => 'convert_variable' 
+          # end
         #   
         #   participant :ref => 'ada_archive_contains_all_studies' 
         #   participant :ref => 'log_run'           
@@ -196,86 +198,27 @@ module Nesstar
         end
       end
 
-      ## convert
-      engine.register_participant 'convert_and_find_resources' do |workitem|
-        database_errors = []
-
-        Dir.entries($xml_dir).each do |file_name|
-          next if file_name == "." or file_name == ".."
-          puts ("#{$xml_dir}#{file_name}")
-          
-          study_hash = RDF::Parser.parse("#{$xml_dir}#{file_name}")
-
-          study = Study.store_with_fields(study_hash)
-
-          #find study integrations which need to be linked to the archive
-          integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(study.ddi_id, nil)
-
-          for integration in integrations
-            integration.study_id = study.id
-            integration.save!
-          end
-
-          DdiMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
-
-          #we looks for a study which records the URL of a related materials document
-          related_materials_entry = study.related_materials_attribute
-          unless related_materials_entry.nil?
-            document_name = related_materials_document_id(related_materials_entry.value) + ".xml"
-            puts "\n\n related material download: #{related_materials_entry.value}"
-            `curl -o #{$related_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-            related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_dir}#{document_name}")
-
-            related_materials_list.each do |related|
-              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
-              next if pre_existing
-
-              related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
-                          :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
-                          :resource => related[:study_resource])
-              related_material.save!
-            end
-            
-            workitem.fields['variable_urls'] ||= []
-            workitem.fields['variable_urls'] << study.variables_attribute.value
-          end
-          
-        workitem.fields['database_errors'] = database_errors        
-      end
-
-
-      engine.register_participant 'convert_variable' do |workitem|
-        mutex = Mutexer.available
+      engine.register_participant 'download_variables' do |workitem|
+        mutex = Mutexer.wait_for_mutex(2)
+        mutex.synchronize do                  
+          study_id = workitem.fields['study_id']
+          study = Study.find(study_id)
         
-        begin
-          mutex = Mutexer.available
-          sleep 2 if mutex.nil?
-        end while mutex.nil? 
-                        
-        @@curl_count += 1
-        puts "found a free curl conn #{@@curl_count}"
-        
-        #we looks for a study's variables
-        variable_url = workitem.fields['variable_url']
-        var_file_name = variable_url.split(".").last
+          #we looks for a study's variables
+          variable_url = study.variables_attribute.value
+          var_file_name = variable_url.split(".").last
 
-        `curl -o #{$xml_dir}#{var_file_name} --compressed "#{variable_url}"`
-
-        variables_list = RDF::Parser.parse_variables("#{$xml_dir}/#{var_file_name}")
+          puts "\n\n #{$variables_xml_dir}#{var_file_name} variables download: #{variable_url}"
+          `curl -o #{$variables_xml_dir}#{var_file_name} --compressed "#{variable_url}"`
+          variables_list = RDF::Parser.parse_variables("#{$variables_xml_dir}/#{var_file_name}")
               
-        variables_list.each do |var_hash|
-          variable = Variable.store_with_fields(var_hash)
-        end
-
-        mutex.unlock
-        @@curl_count -= 1
-        puts "closed curl count - #{@@curl_count}. Finished with #{variable_url}"
+          variables_list.each {|var_hash| variable = Variable.store_with_fields(var_hash)}
     
-        workitem.fields['downloaded_variables'] ||= []
-        workitem.fields['downloaded_variables'] << variable_url
+          workitem.fields['downloaded_variables'] ||= []
+          workitem.fields['downloaded_variables'] << variable_url
+        end
       end
-      
-    end
+    # end
 
       engine.register_participant 'ada_archive_contains_all_studies' do |workitem|
         for study in Study.all
