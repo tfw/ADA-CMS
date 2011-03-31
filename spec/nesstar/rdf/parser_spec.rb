@@ -12,7 +12,7 @@ describe Nesstar::RDF::Parser do
 
   it "should be a rdf hash into a Study with entries" do
     study_hash = Nesstar::RDF::Parser.parse(File.expand_path("00102-f-test.xml", File.dirname(__FILE__)))
-    study = Study.store_with_entries(study_hash)
+    study = Study.store_with_fields(study_hash)
     study.should_not be_nil
     study.fields.should_not be_nil
     study.fields.find_by_key_and_study_id("dataKind", study.id).value.should eql "survey"
@@ -28,13 +28,13 @@ describe Nesstar::RDF::Parser do
   it "should have a Study AR model which returns the correct value for related_materials_attribute_resource" do
     study_hash = Nesstar::RDF::Parser.parse(File.expand_path("00102-f-test.xml", File.dirname(__FILE__)))
     study_hash[:relatedMaterials_attribute_resource].should eql 'http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00102-f@relatedMaterials'
-    study = Study.store_with_entries(study_hash)
+    study = Study.store_with_fields(study_hash)
     study.related_materials_attribute.value.should == study_hash[:relatedMaterials_attribute_resource]
   end
   
   it "should parse attribute values properly" do
     study_hash = Nesstar::RDF::Parser.parse(File.expand_path("00102-f-test.xml", File.dirname(__FILE__)))
-    study = Study.store_with_entries(study_hash)
+    study = Study.store_with_fields(study_hash)
     study.about.should == "http://bonus.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00102-f"
   end
   

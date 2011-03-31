@@ -18,7 +18,7 @@ describe Study, "The local respresentation of an ASSDA study" do
  
  it "should store dataset and dataset entries from a hash" do
    data = {:label => "foo", :about => "about stuff", :one => 1, :two => 2}
-   Study.store_with_entries(data)
+   Study.store_with_fields(data)
    
    study = Study.find_by_label(data[:label])
    entry1 = StudyField.find_by_key('one')
@@ -40,7 +40,7 @@ describe Study, "The local respresentation of an ASSDA study" do
  
  specify "Study.store_with_entries should use the RDF parser to capture essential values" do
    study_hash = Nesstar::RDF::Parser.parse(File.expand_path("../nesstar/rdf/00102-f-test.xml", File.dirname(__FILE__)))
-   study = Study.store_with_entries(study_hash)
+   study = Study.store_with_fields(study_hash)
    study.abstract.should_not be_nil
  end
 end
