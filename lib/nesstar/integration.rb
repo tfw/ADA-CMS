@@ -11,6 +11,7 @@ require 'fileutils'
 require 'yaml'
 require 'nesstar/rdf/parser'
 require 'study'
+require 'archive_study'
 require 'ruby-debug'
 
 module Nesstar
@@ -217,7 +218,7 @@ module Nesstar
       engine.register_participant 'convert_related_materials' do |workitem|
         Dir.entries($variables_xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
-          
+          puts "converting rm #{file_name}"
           begin
             related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{file_name}")
           rescue StandardError => boom
@@ -239,6 +240,7 @@ module Nesstar
       engine.register_participant 'convert_variables' do |workitem|
         Dir.entries($variables_xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
+          puts "converting var #{file_name}"
           variables_list = RDF::Parser.parse_variables("#{$variables_xml_dir }/#{file_name}")
           variables_list.each {|var_hash| variable = Variable.store_with_fields(var_hash)}
         end

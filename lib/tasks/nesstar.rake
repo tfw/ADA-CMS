@@ -19,19 +19,31 @@ end
 
 
 #these tasks set up data in the system for use when developing the integration layer
+#indigenous studies
 task :sample_query => :environment do
-    ArchiveStudyQuery.create!(:name => "default", 
+    ArchiveStudyQuery.create!(:name => "indigenous", 
               :query => "http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT(o)+FROM+Study+o+WHERE+o.abstractText+like+%27%25aborigin%25%27",
               :archive => Archive.indigenous)
 end
 
 
+#election studies
 task :sample_query2 => :environment do
-    ArchiveStudyQuery.create!(:name => "default", 
+    ArchiveStudyQuery.create!(:name => "social-science1: elections", 
               :query => "http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT(o)+FROM+Study+o+WHERE+o.title+like+%27%25election%20study%25%27",
+              :archive => Archive.social_science)
+end
+
+
+task :sample_query3 => :environment do
+    ArchiveStudyQuery.create!(:name => "generic", 
+              :query => "http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT%28o%29+FROM+Study+o+WHERE+o.abstractText+like+%27%25Northern%20Territory%25%27",
               :archive => Archive.indigenous)
 end
 
+# http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT%28o%29+FROM+Study+o+WHERE+o.abstractText+like+%27%25Northern%20Territory%25%27
+
+#generic
 task :global_query => :environment do
   ArchiveStudyQuery.create!(:name => "nesstar global", 
             :query => "http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http://www.nesstar.org/rdf/method=http://www.nesstar.org/rdf/DatasetHome/findAll&complete=yes",
