@@ -9,17 +9,25 @@ class Mutexer
       mutex.unlock if mutex.locked?
     end
   end
+
+  def self.wait_for_mutex(n)
+    mutex = Mutexer.available
+    
+    begin
+      mutex = Mutexer.available
+      sleep n if mutex.nil?
+    end while mutex.nil?
+    
+    mutex
+  end
   
   def self.available
     for mutex in MUXES
       available = mutex if not mutex.locked?
       break if available
     end
-    
-    # available.lock if available          
-    # puts "**** \n\n offering a mutex" if available          
-    # puts "**** \n\n all mutexes taken" unless available          
-    puts report
+       
+    # puts report
     available
   end
   

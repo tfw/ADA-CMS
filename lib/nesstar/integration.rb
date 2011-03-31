@@ -9,22 +9,21 @@ require 'ruote/participant'
 require 'ruote'
 require 'fileutils'
 require 'yaml'
-
-# require 'ruby-debug'
+require 'nesstar/rdf/parser'
+require 'study'
+require 'ruby-debug'
 
 module Nesstar
   class Integration
     include Config
 
-    @@curl_count = 0
-
     #helper method - takes a url like http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00570@relatedMaterials
     #and returns 00570_relatedMaterials.xml
-    def self.related_materials_document_id(url)
-      trailer = url.split(".").last
-      id = trailer.split("@").first
-      return id
-    end
+    # def self.related_materials_document_id(url)
+    #   trailer = url.split(".").last
+    #   id = trailer.split("@").first
+    #   return id
+    # end
 
     #call this from the client to run the integration.
     def self.run
@@ -42,16 +41,15 @@ module Nesstar
           participant :ref => 'load_study_integrations'
           cancel_process :if => '${f:study_ids.size} == 0'
 
-          # unless Rails.env == "development"
-            # participant :ref => 'download_dataset_xmls'
-          # end
-
-          concurrent_iterator :on_field => 'studies_to_download', :to_f => "study_id" do
+          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
             participant :ref => 'download_study' 
-            # participant :ref => 'convert_and_find_resources'
           end
 
-        #   participant :ref => 'convert_and_find_resources'
+          concurrent_iterator :on_field => 'study_ids', :to_f => "study_id" do
+            participant :ref => 'download_related_materials' 
+          end
+
+          # participant :ref => 'convert_and_find_resources'
         #   
         #   concurrent_iterator :on_field => 'variable_urls', :to_f => "variable_url" do
         #     participant :ref => 'convert_variable' 
@@ -104,7 +102,6 @@ module Nesstar
           query.save!
           query_response_file = "#{$xml_dir}query_response_#{Time.now.to_i}.xml"
 
-          # puts "\n\n query statement: curl -o #{query_response_file} --compressed \"#{query.query}\""
           `curl -o #{query_response_file} --compressed "#{query.query}"`
           handler = Nesstar::QueryResponseParser.new(query_response_file)
 
@@ -116,89 +113,88 @@ module Nesstar
               ArchiveStudyIntegration.create!(:ddi_id => ddi_id, :archive => query.archive,
                                             :archive_study_query => query, :user_id => query.id)
             end
-            workitem.fields['studies_to_download'] << ddi_id
           end
+        end
+        
+        workitem.fields['studies_to_download'] = Set.new
+        ArchiveStudyIntegration.all.each do |integration|
+          workitem.fields['studies_to_download'] <<  integration.ddi_id
         end
       end
 
       engine.register_participant 'download_study' do |workitem|
         workitem.fields['fetch_errors']       ||= []
         workitem.fields['downloaded_files']   ||= []
+        workitem.fields['study_ids']          ||= Set.new
         
-        study_id = workitem.fields['study_id']
-        file_name = "#{study_id}.xml"
+        ddi_id = workitem.fields['ddi_id']
+        file_name = "#{ddi_id}.xml"
         
-        mutex = Mutexer.available
-        
-        begin
-          mutex = Mutexer.available
-          sleep 2 if mutex.nil?
-        end while mutex.nil? 
+        mutex = Mutexer.wait_for_mutex(2)
 
         mutex.synchronize do
-          @@curl_count += 1
-          puts "found a free curl conn #{@@curl_count}"
-        
-          puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}"
-          http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}"`
+          puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
+          http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
           http_headers = http_headers.split("\n")
         
           if http_headers.first =~ /500/
-            workitem.fields['fetch_errors'] << "Error while downloading #{study_id}: #{http_headers.first} \n"
-            Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}")
+            workitem.fields['fetch_errors'] << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
+            Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
             next
           end
         
           begin
-            `curl -o #{$studies_xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{study_id}"`
+            `curl -o #{$studies_xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
             workitem.fields['downloaded_files'] << file_name
           rescue StandardError => boom
             puts "#{boom}.to_s"
-            workitem.fields['fetch_errors'] << "Error while downloading #{study_id}: #{boom} \n"
+            workitem.fields['fetch_errors'] << "Error while downloading #{ddi_id}: #{boom} \n"
           end
+
+          study_hash = Nesstar::RDF::Parser.parse("#{$studies_xml_dir}#{ddi_id}.xml")
+          study = Study.store_with_fields(study_hash)
+
+          DdiMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
+
+          #find archive study integrations which need to be linked to the new study
+          integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(ddi_id, nil)
+
+          for integration in integrations
+            integration.study_id = study.id
+            integration.save!
+          end
+
+          workitem.fields['study_ids'] << study.id
         end
-        
-        # mutex.unlock
-        @@curl_count -= 1
-        puts "closed curl count - #{@@curl_count}. Finished with #{study_id}"
       end
 
+      engine.register_participant 'download_related_materials' do |workitem|
+        mutex = Mutexer.wait_for_mutex(2)
+        study_id = workitem.fields['study_id']
+        
+        mutex.synchronize do 
+          study = Study.find(study_id)
+          puts "related materials for #{study.label}"
+          #we looks for a study which records the URL of a related materials document
+          related_materials_entry = study.related_materials_attribute
+          unless related_materials_entry.nil?
+            document_name = related_materials_entry.value.split(".").last + ".xml"
+            puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
+            `curl -o #{$related_xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
+            related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{document_name}")
 
-      ## download_dataset_xmls
-      # engine.register_participant 'download_dataset_xmls' do |workitem|
-      #   fetch_errors = []
-      #   downloaded_files = []
-      #   
-      #   archive_integrations = Set.new        
-      #   ArchiveStudyIntegration.all.each{|integration| archive_integrations << integration}
-      #   
-      #   archive_integrations.each do |archive_integration|
-      #     ddi_id = archive_integration.ddi_id
-      #     file_name = "#{ddi_id}.xml"
-      # 
-      #     puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
-      #     http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
-      #     http_headers = http_headers.split("\n")
-      #     
-      #     if http_headers.first =~ /500/
-      #       fetch_errors << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
-      #       # puts "\n\n found an error, not downloading file, for #{ddi_id}"
-      #       Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
-      #       next
-      #     end
-      #     
-      #     begin
-      #       `curl -o #{$xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
-      #       downloaded_files << file_name
-      #     rescue StandardError => boom
-      #       puts "#{boom}.to_s"
-      #       fetch_errors << "Error while downloading #{ddi_id}: #{boom} \n"
-      #     end
-      #   end
-      # 
-      #   workitem.fields['fetch_errors'] = fetch_errors
-      #   workitem.fields['downloads'] = downloaded_files
-      # end
+            related_materials_list.each do |related|
+              pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
+              next if pre_existing
+
+              related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
+                          :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
+                          :resource => related[:study_resource])
+              related_material.save!
+            end
+          end
+        end
+      end
 
       ## convert
       engine.register_participant 'convert_and_find_resources' do |workitem|
