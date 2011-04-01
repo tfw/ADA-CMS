@@ -7,7 +7,7 @@ class Variable < ActiveRecord::Base
   
   #solr config
   searchable do
-    text :label, :default_boost => 2, :stored => true    
+    text :label, :default_boost => 2, :stored => true
     integer :study_id
   end  
   

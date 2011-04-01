@@ -8,20 +8,12 @@
 
 <% content_for :js do %>
 
-  $("#title-link").click(function() {
-    $('#title-view').toggle();
-  });
-
-  $("#extended-link").click(function() {
-    $('#extended-view').toggle();
+  $("#studies-link").click(function() {
+    $('#studies-view').toggle();
   });
 
   $("#variables-link").click(function() {
     $('#variables-view').toggle();
-  });
-  
-  $("#multimedia-link").click(function() {
-    $('#multimedia-view').toggle();
   });
 
 <% end %>
@@ -45,10 +37,8 @@
 
   <nav class="studynav">
     <ul>
-      <li> <a id="title-link">Studies - Title View</a> </li>
-      <li> <a id="extended-link">Studies - Extended View</a> </li>
-      <li> <a id="variable-link">Variables</a> </li>
-      <li> <a id="multimedia-link">Images/Text/Audiovisual</a> </li>
+      <li> <a id="studies-link">Studies</a> </li>
+      <li> <a id="variables-link">Variables</a> </li>
     </ul>
   </nav>
 
@@ -83,22 +73,14 @@
   </table>
 </div>
 
-<div id="extended-view" class="concealed">
-  extended
-</div>
-
 <div id="variables-view" class="concealed">
 vars  
 </div>
   
-<div id="multimedia-view class="concealed"">
-  multimedia
-</div>
-
   <br/>
 
-  <div class="float-centre">
-      <%= will_paginate @search.results %>
-  </div>
+ <div class="float-centre">
+     <%= will_paginate @search.results %>
+ </div>
 
 </article>
