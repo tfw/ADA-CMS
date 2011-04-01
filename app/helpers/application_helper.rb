@@ -33,9 +33,8 @@ module ApplicationHelper
   end
 
   #this checks to see if a human readable mapping (DdiMapping) exists for the DDI element
-  def human_readable_check(ddi, dataset, current_user)
+  def human_readable_check(ddi)
     mapping = DdiMapping.find_by_ddi(ddi)
-
     if mapping.nil?
       ddi
     else

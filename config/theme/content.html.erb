@@ -18,13 +18,6 @@
 	  <script type="text/javascript" src="/javascripts/solr-autocomplete/jquery-autocomplete/jquery.autocomplete.js"></script>
 
 	 <link type="text/css" rel="stylesheet" href="/javascripts/solr-autocomplete/jquery-autocomplete/jquery.autocomplete.css" />
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-      <%= yield :js %>
-     });
-    </script>
-
 			
 	</head
 			
@@ -129,4 +122,11 @@
 		  <p> &#xA9; Australian Data Archive</p>
     </footer>
     </body>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+      <%= yield :js %>
+     });
+    </script>
+    
 </html>

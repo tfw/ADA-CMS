@@ -2,8 +2,8 @@ class VariableField < ActiveRecord::Base
   
   belongs_to :variable
   
-  def self.to_hash(study)
-    variable_fields = VariableField.find_all_by_study_id(study.id)
+  def self.to_hash(variable)
+    variable_fields = VariableField.find_all_by_variable_id(variable.id)
     
     fields = {}
     
@@ -14,9 +14,9 @@ class VariableField < ActiveRecord::Base
     fields
   end
   
-  def self.create_or_update(key, value, study)
+  def self.create_or_update(key, value, variable)
     begin
-      entry = VariableField.find_by_study_id_and_key(study.id,key)
+      entry = VariableField.find_by_variable_id_and_key(variable.id,key)
     rescue 
       raise StandardError, caller
     end

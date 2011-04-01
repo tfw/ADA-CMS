@@ -1,6 +1,6 @@
 class Variable < ActiveRecord::Base
   belongs_to :study
-  has_many :variable_fields
+  has_many :variable_fields; alias fields variable_fields
   has_many :statistics
   
   # validates_presence_of :study_id

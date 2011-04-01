@@ -23,8 +23,9 @@
   <div class="float-centre">
       <%= will_paginate @search.results %>
   </div>
-
   <br/>
+
+<div id="title-view">
   <table id="search-results-table" >
     <% @search.each_hit_with_result do |hit, study| %>
       <tr>
@@ -52,6 +53,20 @@
       </tr>
     <% end %>
   </table>
+</div>
+
+<div id="extended-view">
+  extended
+</div>
+
+<div id="variables-view">
+vars  
+</div>
+  
+<div id="multimedia">
+  multimedia
+</div>
+
   <br/>
 
   <div class="float-centre">
