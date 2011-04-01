@@ -8,12 +8,6 @@
   <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min',  'jquery-ui-1.8.6.custom.min', 'jquery.effects.core', 'scripts',
  'rails', 'application', 'jquery.clearableTextField.min' %>  
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-    <%= yield :js %>
-   });
-  </script>
-
  </head>
     
 <body id="default">
@@ -87,8 +81,14 @@
     </p>
     <p>
   </footer> 
-
 </body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  <%= yield :js %>
+ });
+</script>
+
 </html>
 
 
