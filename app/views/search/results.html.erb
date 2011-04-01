@@ -6,10 +6,27 @@
 	Search: <%= @term %>
 <% end %>
 
+<% content_for :js do %>
+
+  $("#title-link").click(function() {
+    $('#title-view').toggle();
+  });
+
+  $("#extended-link").click(function() {
+    $('#extended-view').toggle();
+  });
+
+  $("#variables-link").click(function() {
+    $('#variables-view').toggle();
+  });
+  
+  $("#multimedia-link").click(function() {
+    $('#multimedia-view').toggle();
+  });
+
+<% end %>
 <aside>	</aside>
-
 <article>
-
 	Term: <%= params[:term] %> <p/>
 	Filters:
 	
@@ -25,7 +42,18 @@
   </div>
   <br/>
 
-<div id="title-view">
+
+  <nav class="studynav">
+    <ul>
+      <li> <a id="title-link">Studies - Title View</a> </li>
+      <li> <a id="extended-link">Studies - Extended View</a> </li>
+      <li> <a id="variable-link">Variables</a> </li>
+      <li> <a id="multimedia-link">Images/Text/Audiovisual</a> </li>
+    </ul>
+  </nav>
+
+
+<div id="title-view" class="concealed">
   <table id="search-results-table" >
     <% @search.each_hit_with_result do |hit, study| %>
       <tr>
@@ -55,15 +83,15 @@
   </table>
 </div>
 
-<div id="extended-view">
+<div id="extended-view" class="concealed">
   extended
 </div>
 
-<div id="variables-view">
+<div id="variables-view" class="concealed">
 vars  
 </div>
   
-<div id="multimedia">
+<div id="multimedia-view class="concealed"">
   multimedia
 </div>
 

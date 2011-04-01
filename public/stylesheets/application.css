@@ -1,12 +1,14 @@
 //CSS done by TFW, mainly for unobtrusive js
-//for the page tree
 
-button{
+.concealed {display: none;}
+
+//for the page tree
+/*button{
   background: #fff;
   border: solid 1px #000;
   color: #000;
 }
-
+*/
 .tree-hover{
   background: #fdd;
 }
