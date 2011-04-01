@@ -23,9 +23,19 @@ class Variable < ActiveRecord::Base
     local_data.delete(:label)
 
     variable.name = data[:name]
+    data.delete[:name]
+
+    if data[:questionText] #this value doesnt appear in all variables
+      variable.question_text = data[:questionText] 
+      data.delete[:questionText]
+    end
+    
     variable.num_cats = data[:numCats]
+    data.delete[:numCats]
     variable.val_range_max = data[:valRangeMax]
+    data.delete[:valRangeMax]
     variable.val_range_min = data[:valRangeMin]
+    data.delete[:valRangeMin]
   
     variable.save!
     local_data.each {|k,v| create_or_update_field(variable, k.to_s, v)}
@@ -47,4 +57,4 @@ class Variable < ActiveRecord::Base
 
     variable_field.save!
   end
-end
+end  variable.num_cats = data[:numCats]
