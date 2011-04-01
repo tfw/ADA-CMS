@@ -16,9 +16,9 @@ require 'nesstar/rdf/parser'
 require 'study'
 require 'archive_study'
 require 'study_field'
-require 'study_related_material'
-require 'variable'
-require 'variable_field'
+# require 'study_related_material'
+# require 'variable'
+# require 'variable_field'
 
 require 'ruby-debug'
 
@@ -211,8 +211,11 @@ module Nesstar
              Inkling::Log.create!(:category => "study", :text => "Empty document: #{$related_xml_dir}#{file_name}")
              next
           end
-          
+                    
           related_materials_list.each do |related|
+            # puts "\n\n ****** #{related} ***** \n\n"
+            study = Study.find_by_about(related[:study_resource])
+            
             pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
             next if pre_existing
 
