@@ -295,6 +295,7 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "label"
     t.integer  "study_id"
     t.string   "name"
+    t.text     "question_text"
     t.integer  "num_cats"
     t.decimal  "val_range_max"
     t.decimal  "val_range_min"

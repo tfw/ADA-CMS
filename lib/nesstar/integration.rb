@@ -10,8 +10,16 @@ require 'ruote'
 require 'fileutils'
 require 'yaml'
 require 'nesstar/rdf/parser'
+
+#these classes should be loaded by the rails environment via rake
+#but multithreading seems to require we explicitly require them
 require 'study'
 require 'archive_study'
+require 'study_field'
+require 'study_related_material'
+require 'variable'
+require 'variable_field'
+
 require 'ruby-debug'
 
 module Nesstar
@@ -185,22 +193,25 @@ module Nesstar
           variable_url = study.variables_attribute.value
           var_file_name = variable_url.split(".").last
 
-          puts "\n\n #{$variables_xml_dir}#{var_file_name} variables download: #{variable_url}"
           `curl -o #{$variables_xml_dir}#{var_file_name} --compressed "#{variable_url}"`
         end
       end
       
 
       engine.register_participant 'convert_related_materials' do |workitem|
-        Dir.entries($variables_xml_dir).each do |file_name|
+        Dir.entries($related_xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
-          puts "converting rm #{file_name}"
           begin
             related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{file_name}")
           rescue StandardError => boom
-            puts "#{$related_xml_dir}#{document_name}: #{boom}"
+            puts "#{$related_xml_dir}#{file_name}: #{boom}"
           end
-                    
+          
+          if related_materials_list.nil?
+             Inkling::Log.create!(:category => "study", :text => "Empty document: #{$related_xml_dir}#{file_name}")
+             next
+          end
+          
           related_materials_list.each do |related|
             pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
             next if pre_existing
@@ -216,7 +227,6 @@ module Nesstar
       engine.register_participant 'convert_variables' do |workitem|
         Dir.entries($variables_xml_dir).each do |file_name|
           next if file_name == "." or file_name == ".."
-          puts "converting var #{file_name}"
           variables_list = RDF::Parser.parse_variables("#{$variables_xml_dir }/#{file_name}")
           variables_list.each {|var_hash| variable = Variable.store_with_fields(var_hash)}
         end
