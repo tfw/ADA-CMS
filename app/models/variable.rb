@@ -5,6 +5,13 @@ class Variable < ActiveRecord::Base
   
   # validates_presence_of :study_id
   
+  #solr config
+  searchable do
+    text :label, :default_boost => 2, :stored => true    
+    integer :study_id
+  end  
+  
+  
   def self.store_with_fields(data)
     variable = Variable.find_by_label(data[:label])
     variable = Variable.new if variable.nil?
