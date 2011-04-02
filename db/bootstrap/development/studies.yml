@@ -237,6 +237,75 @@ studies_005:
     Victim variables include type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether they are Aboriginal or a Torres Strait Islander.
   ddi_id: 
 studies_006: 
+  id: "91"
+  label: "Evaluation of the employment initiatives program in Victoria, 1983-1984: File b"
+  resource: 
+  study3: 
+  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00335-b
+  published: t
+  created_at: 2011-02-23 02:54:34.25903
+  updated_at: 2011-03-28 03:06:42.254947
+  universe: |-
+    File A: all Employment Initiatives Program projects in Victoria
+    
+    File B-D: 85% of participants employed on EIP projects
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    The purpose of this survey is to evaluate the Employment Initiatives Program (EIP) in terms of its labour market, economic and social aspects. The Program was a short-term job creation scheme set up by the Victorian Government in 1982.
+    
+    File A contains details about all of the EIP projects. Topics include: region; funding information; number of jobs funded; whether the project proposes to recruit employees from any particular disadvantaged groups and if yes what group(s); costs of the project; functional area (general community development, health, education, etc.); nature of work and training; and, classification of target labour.
+    
+    File B contains basic details of the participants employed on EIP projects. Topics include: extent of EIP support for position; age; sex; marital status; whether participant has dependent children; type of EIP position; duration of employment; source of EIP recruitment; country of birth; length of residence in Australia; whether the participant has a disability; whether the participant is Aboriginal; number of hours worked, gross wages and amount of tax paid for last week; and, information on Commonwealth subsidies.
+    
+    File C contains responses from the interviewees. Topics covered include: employment history; details of EIP recruitment; details about the time employed on an EIP project and attitudes to the experience; details of current workforce status for the employed, the unemployed and those not in the workforce; financial and personal history; and, overall impressions of the EIP project. 
+    
+    Background variables include sex, date of birth, place of birth, whether first language in English, disabilities or illnesses that prevent the respondent from doing certain kinds of work, education information, and employment history.
+    
+    File D contains responses from respondents (File C) who were reinterviewed. Topics covered include: the date that employment on the EIP program ended and the reasons; details on current workforce status for the employed, the unemployed and for those not in the workforce; details of labour market experience after EIP project and before the respondents current activity; information about financial circumstances; and, the respondent's general impressions about the EIP job creation program.
+    
+    Under the program, just under 3300 people, of whom about 3100 had been unemployed for 6 months or more, were employed on 514 job creation projects.  The projects ran for an average period of 6 months between late 1982 and late 1983.
+    
+    The IAESR was contacted to evaluate the program in terms of its labour market, economic and social aspects.
+    
+    The two data files included here include details of all projects, 85% of participants, and the results of two surveys: one survey of a sample of 90 participants and a follow-up survey, 12 months later, of the same sample.
+  keywords: Disadvantaged groups;Employment;Employment policy;Social welfare policy;Subsidies
+  page_id: 
+  data_kind: 
+  sampling_abbr: multi-stage sample
+  collection_mode_abbr: "File A: use of existing records File B: observations by sponsors of EIP projects File C: personal interview File D: telephone interview"
+  contact_affiliation: 
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: ", Parkville, Victoria, 3. King, A. Parkville, Victoria, 3. Thomas, C. Parkville, Victoria, 3."
+  comment: |-
+    The purpose of this survey is to evaluate the Employment Initiatives Program (EIP) in terms of its labour market, economic and social aspects. The Program was a short-term job creation scheme set up by the Victorian Government in 1982.
+    
+    File A contains details about all of the EIP projects. Topics include: region; funding information; number of jobs funded; whether the project proposes to recruit employees from any particular disadvantaged groups and if yes what group(s); costs of the project; functional area (general community development, health, education, etc.); nature of work and training; and, classification of target labour.
+    
+    File B contains basic details of the participants employed on EIP projects. Topics include: extent of EIP support for position; age; sex; marital status; whether participant has dependent children; type of EIP position; duration of employment; source of EIP recruitment; country of birth; length of residence in Australia; whether the participant has a disability; whether the participant is Aboriginal; number of hours worked, gross wages and amount of tax paid for last week; and, information on Commonwealth subsidies.
+    
+    File C contains responses from the interviewees. Topics covered include: employment history; details of EIP recruitment; details about the time employed on an EIP project and attitudes to the experience; details of current workforce status for the employed, the unemployed and those not in the workforce; financial and personal history; and, overall impressions of the EIP project. 
+    
+    Background variables include sex, date of birth, place of birth, whether first language in English, disabilities or illnesses that prevent the respondent from doing certain kinds of work, education information, and employment history.
+    
+    File D contains responses from respondents (File C) who were reinterviewed. Topics covered include: the date that employment on the EIP program ended and the reasons; details on current workforce status for the employed, the unemployed and for those not in the workforce; details of labour market experience after EIP project and before the respondents current activity; information about financial circumstances; and, the respondent's general impressions about the EIP job creation program.
+    
+    Under the program, just under 3300 people, of whom about 3100 had been unemployed for 6 months or more, were employed on 514 job creation projects.  The projects ran for an average period of 6 months between late 1982 and late 1983.
+    
+    The IAESR was contacted to evaluate the program in terms of its labour market, economic and social aspects.
+    
+    The two data files included here include details of all projects, 85% of participants, and the results of two surveys: one survey of a sample of 90 participants and a follow-up survey, 12 months later, of the same sample.
+  ddi_id: 
+studies_007: 
   id: "23"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Section of State, ACT"
   resource: 
@@ -274,7 +343,7 @@ studies_006:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_007: 
+studies_008: 
   id: "24"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: State/Territory, TAS"
   resource: 
@@ -312,7 +381,7 @@ studies_007:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_008: 
+studies_009: 
   id: "40"
   label: "Australian Candidate Study, 2007: Restricted version"
   resource: 
@@ -358,7 +427,7 @@ studies_008:
     
     Background variables include age, country of birth, age when left school, number of years of tertiary study, religion, frequency of attending religious services, marital status, House contested and party affiliated with. Some of these variables have been grouped to ensure confidentiality for the candidates.
   ddi_id: 
-studies_009: 
+studies_010: 
   id: "68"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: ATSIC Zones"
   resource: 
@@ -396,7 +465,7 @@ studies_009:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_010: 
+studies_011: 
   id: "67"
   label: Australian Gallup Polls, Survey 167, Noveber 22, 1963
   resource: 
@@ -434,7 +503,7 @@ studies_010:
     
     Background Variables age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
   ddi_id: 
-studies_011: 
+studies_012: 
   id: "49"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Local Area, SA"
   resource: 
@@ -472,7 +541,7 @@ studies_011:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_012: 
+studies_013: 
   id: "43"
   label: Australian Election Database - Western Australia House of Assembly Party data
   resource: 
@@ -950,7 +1019,7 @@ studies_012:
     1904 Election
     There had been three changes of Premier since the previous Legislative Assembly election in April 1901. Leake had been commissioned as Premier after the 1901 election but his government was defeated on a vote of confidence in the Legislative Assembly on 9 October 1901. After some negotiation, Morgan
   ddi_id: 
-studies_013: 
+studies_014: 
   id: "51"
   label: Australian Everyday Consumption Project, 1994-1995
   resource: 
@@ -988,7 +1057,7 @@ studies_013:
     
     Background variables include respondent's age, sex, marital status, level of education, country of birth, work status, income and occupation.
   ddi_id: 
-studies_014: 
+studies_015: 
   id: "57"
   label: Deterrence of Marijuana use among year 10 and year 11 students in NSW, 1992
   resource: 
@@ -1030,7 +1099,7 @@ studies_014:
     
     Background variables include age, sex, parents country of birth, language spoken at home, household composition, and whether the respodent is an Aboriginal or Torres Strait Islander.
   ddi_id: 
-studies_015: 
+studies_016: 
   id: "85"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: State/Territory, NT"
   resource: 
@@ -1068,7 +1137,7 @@ studies_015:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_016: 
+studies_017: 
   id: "66"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Local Area, TAS"
   resource: 
@@ -1106,7 +1175,7 @@ studies_016:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_017: 
+studies_018: 
   id: "82"
   label: "New South Wales Recorded Crime Data 2005: Persons of interest"
   resource: 
@@ -1148,7 +1217,7 @@ studies_017:
     
     Incident datasets contain type of crime incident, premises on which the incident occurred,  type of drug associated with the incident, geographical location of incident, when the incident first occurred, when the incident was reported and whether the incident was domestic violence related, and the victim datasets contain type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether the victim is an Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_018: 
+studies_019: 
   id: "79"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Division, NSW"
   resource: 
@@ -1186,7 +1255,7 @@ studies_018:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_019: 
+studies_020: 
   id: "70"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Section of State, QLD"
   resource: 
@@ -1224,7 +1293,7 @@ studies_019:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_020: 
+studies_021: 
   id: "111"
   label: "New South Wales Recorded Crime Data 2003: Persons of interest"
   resource: 
@@ -1270,7 +1339,7 @@ studies_020:
     
     Victim datasets contain type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether the victom is an Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_021: 
+studies_022: 
   id: "106"
   label: "Rights in Australia 1991-1992: National Household Sample"
   resource: 
@@ -1312,7 +1381,7 @@ studies_021:
     
     Demographic information collected about the respondent included age, sex, country of birth and year of arrival in Australia, citizenship status, age starting and leaving school, type of school attended, highest qualification, religion and frequency of church attendance, marital status, numbers of children and numbers in the household, occupation and labour force status, trade union membership and household income.
   ddi_id: 
-studies_022: 
+studies_023: 
   id: "125"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: State/Territory, NSW"
   resource: 
@@ -1350,7 +1419,7 @@ studies_022:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_023: 
+studies_024: 
   id: "101"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: State/Territory, WA"
   resource: 
@@ -1388,7 +1457,7 @@ studies_023:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_024: 
+studies_025: 
   id: "105"
   label: "Saulwick Age Poll, July 2004: Federal election"
   resource: 
@@ -1426,7 +1495,7 @@ studies_024:
     
     Background variables are age, gender, occupation, education and location (capital city/other).
   ddi_id: 
-studies_025: 
+studies_026: 
   id: "107"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Community, TAS"
   resource: 
@@ -1464,7 +1533,7 @@ studies_025:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_026: 
+studies_027: 
   id: "13"
   label: "Rights in Australia 1991-1992: Decision Makers' Sample"
   resource: 
@@ -1516,7 +1585,7 @@ studies_026:
     
     Demographic information collected about the respondent included age, sex, country of birth and year of arrival in Australia, citizenship status, age starting and leaving school, type of school attended, highest qualification, religion and frequency of church attendance, marital status, numbers of children and numbers in the household, occupation and labour force status, trade union membership and household income.
   ddi_id: 
-studies_027: 
+studies_028: 
   id: "108"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Section of State, WA"
   resource: 
@@ -1554,7 +1623,7 @@ studies_027:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_028: 
+studies_029: 
   id: "151"
   label: "New South Wales Recorded Crime Data 2003: Victims"
   resource: 
@@ -1600,7 +1669,7 @@ studies_028:
     
     Victim datasets contain type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether the victom is an Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_029: 
+studies_030: 
   id: "161"
   label: The Australian Survey of Social Attitudes, 2007
   resource: 
@@ -1642,7 +1711,7 @@ studies_029:
     
     AuSSA 2007 also includes demographic and behavioural categories (Personal Background and Your Partner) that survey: sex, year born, income, education, employment, union membership, languages spoken, birthplace, household composition and religion. Also included are questions about the partner of the respondent: employment, highest-level of education and income.
   ddi_id: 
-studies_030: 
+studies_031: 
   id: "130"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Statistical Local Area, SA"
   resource: 
@@ -1680,7 +1749,7 @@ studies_030:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_031: 
+studies_032: 
   id: "127"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Community, WA"
   resource: 
@@ -1718,7 +1787,7 @@ studies_031:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_032: 
+studies_033: 
   id: "55"
   label: Australian Gallup Polls, Survey 123, Febuary 9, 1957
   resource: 
@@ -1756,7 +1825,7 @@ studies_032:
     
     Background variables: age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
   ddi_id: 
-studies_033: 
+studies_034: 
   id: "44"
   label: Australian Gallup Polls, May 1978
   resource: 
@@ -1794,7 +1863,7 @@ studies_033:
     
     Background Variables: age / sex / highest level of education / occupation / income / occupation of head of household / marital status / vote enrolment at last election / present voting intention / home ownership.
   ddi_id: 
-studies_034: 
+studies_035: 
   id: "162"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Community, NT"
   resource: 
@@ -1832,7 +1901,7 @@ studies_034:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_035: 
+studies_036: 
   id: "75"
   label: "Aboriginal survey, New South Wales and South Australia, 1965: File h"
   resource: 
@@ -1888,7 +1957,7 @@ studies_035:
     
     Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
   ddi_id: 
-studies_036: 
+studies_037: 
   id: "168"
   label: Australian Gallup Polls, Survey 153, November 10, 1961
   resource: 
@@ -1926,7 +1995,7 @@ studies_036:
     
     Background variables: age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
   ddi_id: 
-studies_037: 
+studies_038: 
   id: "171"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Division, QLD"
   resource: 
@@ -1964,7 +2033,7 @@ studies_037:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_038: 
+studies_039: 
   id: "136"
   label: Image of the Australian aboriginal in illustrated newspapers, 1853-1897
   resource: 
@@ -2006,7 +2075,7 @@ studies_038:
     
     Aboriginal and Torres Strait Islander people, researchers and other users should be aware that material in this dataset may contain material that is considered offensive. The data has been retained in its original format because it represents an evidential record of language, beliefs or other cultural situations at a point in time.
   ddi_id: 
-studies_039: 
+studies_040: 
   id: "65"
   label: Australian Gallup Polls, Survey 134, October 28, 1958
   resource: 
@@ -2044,7 +2113,7 @@ studies_039:
     
     Background variables: age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
   ddi_id: 
-studies_040: 
+studies_041: 
   id: "152"
   label: Aboriginal radio broadcasting in Alice Springs, 1981
   resource: 
@@ -2082,7 +2151,7 @@ studies_040:
     
     Topics include: radio and television ownership; whether there are any FM radio sets in the household; whether the respondent has listened to radio station 8 (8HA, 8AL, or 8CCC) in the last week; if he has not listened to 8AL in the last week, whether he has ever listened to 8AL and if so, whether he has listened to it in the last 6 months; whether the respondent has heard the programmes 'Aboriginal Ways - Cheerios' and 'Aboriginal Ways', and if no, the reasons for not listening, and if yes, how often the respondent listens to these programmes; opinion of the aboriginal programmes heard on ABC radio; whether the respondent would prefer a different format; whether the respondent has heard any programmes for aboriginal people on stations other than the ABC station 8AL and if yes, which ones; and, attitudes about aboriginal broadcasting. Background information includes age, sex, occupation, level of education, and household composition.
   ddi_id: 
-studies_041: 
+studies_042: 
   id: "62"
   label: Australian Gallup Polls, Survey 177, May 7, 1965
   resource: 
@@ -2119,75 +2188,6 @@ studies_041:
     Themes-Names: Aborigines : elections / alcohol : meals, in restaurants with / elections : size of electorates / hotels : hours / housing : numbers owning, renting etc. / Liberal Party Leaders / Menzies, R.G. : approval of as Prime Minister / Papua New Guinea : Independence / Vietnam : American bombing of North Vietnam; possibility of threat to Australia; troops in; withdrawal from / elections : compulsory.
     
     Background Variables age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership / country of birth.
-  ddi_id: 
-studies_042: 
-  id: "91"
-  label: "Evaluation of the employment initiatives program in Victoria, 1983-1984: File b"
-  resource: 
-  study3: 
-  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00335-b
-  published: t
-  created_at: 2011-02-23 02:54:34.25903
-  updated_at: 2011-03-28 03:06:42.254947
-  universe: |-
-    File A: all Employment Initiatives Program projects in Victoria
-    
-    File B-D: 85% of participants employed on EIP projects
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    The purpose of this survey is to evaluate the Employment Initiatives Program (EIP) in terms of its labour market, economic and social aspects. The Program was a short-term job creation scheme set up by the Victorian Government in 1982.
-    
-    File A contains details about all of the EIP projects. Topics include: region; funding information; number of jobs funded; whether the project proposes to recruit employees from any particular disadvantaged groups and if yes what group(s); costs of the project; functional area (general community development, health, education, etc.); nature of work and training; and, classification of target labour.
-    
-    File B contains basic details of the participants employed on EIP projects. Topics include: extent of EIP support for position; age; sex; marital status; whether participant has dependent children; type of EIP position; duration of employment; source of EIP recruitment; country of birth; length of residence in Australia; whether the participant has a disability; whether the participant is Aboriginal; number of hours worked, gross wages and amount of tax paid for last week; and, information on Commonwealth subsidies.
-    
-    File C contains responses from the interviewees. Topics covered include: employment history; details of EIP recruitment; details about the time employed on an EIP project and attitudes to the experience; details of current workforce status for the employed, the unemployed and those not in the workforce; financial and personal history; and, overall impressions of the EIP project. 
-    
-    Background variables include sex, date of birth, place of birth, whether first language in English, disabilities or illnesses that prevent the respondent from doing certain kinds of work, education information, and employment history.
-    
-    File D contains responses from respondents (File C) who were reinterviewed. Topics covered include: the date that employment on the EIP program ended and the reasons; details on current workforce status for the employed, the unemployed and for those not in the workforce; details of labour market experience after EIP project and before the respondents current activity; information about financial circumstances; and, the respondent's general impressions about the EIP job creation program.
-    
-    Under the program, just under 3300 people, of whom about 3100 had been unemployed for 6 months or more, were employed on 514 job creation projects.  The projects ran for an average period of 6 months between late 1982 and late 1983.
-    
-    The IAESR was contacted to evaluate the program in terms of its labour market, economic and social aspects.
-    
-    The two data files included here include details of all projects, 85% of participants, and the results of two surveys: one survey of a sample of 90 participants and a follow-up survey, 12 months later, of the same sample.
-  keywords: Disadvantaged groups;Employment;Employment policy;Social welfare policy;Subsidies
-  page_id: 
-  data_kind: 
-  sampling_abbr: multi-stage sample
-  collection_mode_abbr: "File A: use of existing records File B: observations by sponsors of EIP projects File C: personal interview File D: telephone interview"
-  contact_affiliation: 
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: ", Parkville, Victoria, 3. King, A. Parkville, Victoria, 3. Thomas, C. Parkville, Victoria, 3."
-  comment: |-
-    The purpose of this survey is to evaluate the Employment Initiatives Program (EIP) in terms of its labour market, economic and social aspects. The Program was a short-term job creation scheme set up by the Victorian Government in 1982.
-    
-    File A contains details about all of the EIP projects. Topics include: region; funding information; number of jobs funded; whether the project proposes to recruit employees from any particular disadvantaged groups and if yes what group(s); costs of the project; functional area (general community development, health, education, etc.); nature of work and training; and, classification of target labour.
-    
-    File B contains basic details of the participants employed on EIP projects. Topics include: extent of EIP support for position; age; sex; marital status; whether participant has dependent children; type of EIP position; duration of employment; source of EIP recruitment; country of birth; length of residence in Australia; whether the participant has a disability; whether the participant is Aboriginal; number of hours worked, gross wages and amount of tax paid for last week; and, information on Commonwealth subsidies.
-    
-    File C contains responses from the interviewees. Topics covered include: employment history; details of EIP recruitment; details about the time employed on an EIP project and attitudes to the experience; details of current workforce status for the employed, the unemployed and those not in the workforce; financial and personal history; and, overall impressions of the EIP project. 
-    
-    Background variables include sex, date of birth, place of birth, whether first language in English, disabilities or illnesses that prevent the respondent from doing certain kinds of work, education information, and employment history.
-    
-    File D contains responses from respondents (File C) who were reinterviewed. Topics covered include: the date that employment on the EIP program ended and the reasons; details on current workforce status for the employed, the unemployed and for those not in the workforce; details of labour market experience after EIP project and before the respondents current activity; information about financial circumstances; and, the respondent's general impressions about the EIP job creation program.
-    
-    Under the program, just under 3300 people, of whom about 3100 had been unemployed for 6 months or more, were employed on 514 job creation projects.  The projects ran for an average period of 6 months between late 1982 and late 1983.
-    
-    The IAESR was contacted to evaluate the program in terms of its labour market, economic and social aspects.
-    
-    The two data files included here include details of all projects, 85% of participants, and the results of two surveys: one survey of a sample of 90 participants and a follow-up survey, 12 months later, of the same sample.
   ddi_id: 
 studies_043: 
   id: "30"
@@ -2800,6 +2800,44 @@ studies_056:
     Background variables included respondent's age, sex, geographical  location, birthplace and educational status.
   ddi_id: 
 studies_057: 
+  id: "102"
+  label: Australian Gallup Polls, Survey 171, August 21, 1964
+  resource: 
+  study3: 
+  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00317
+  published: t
+  created_at: 2011-02-23 02:54:44.581754
+  updated_at: 2011-03-28 03:06:40.501886
+  universe: adults aged 21 and over throughout Australia
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    Themes-Names: Aborigines : aid to / alcohol : theatres / ALP leaders : Australian Labor Party leaders / gambling : off-course incl. TAB / International relations : independent international policy / immigration, European : rate of / Liberal Party Leaders / Papua New Guinea : Russian visitors to / police : pistols / Senate : abolition / shopping hours : opening and closing hours / taxation : increases in / traffic offences : on - the - spot fines.
+    
+    Background Variables age / sex / economic classification / occupation of head of household / religion/ vote at last Federal election / present voting intention / car ownership/ country of birth.
+  keywords: 
+  page_id: 
+  data_kind: survey
+  sampling_abbr: area-cluster sample with sex quota
+  collection_mode_abbr: personal interview
+  contact_affiliation: 
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: ","
+  comment: |-
+    Themes-Names: Aborigines : aid to / alcohol : theatres / ALP leaders : Australian Labor Party leaders / gambling : off-course incl. TAB / International relations : independent international policy / immigration, European : rate of / Liberal Party Leaders / Papua New Guinea : Russian visitors to / police : pistols / Senate : abolition / shopping hours : opening and closing hours / taxation : increases in / traffic offences : on - the - spot fines.
+    
+    Background Variables age / sex / economic classification / occupation of head of household / religion/ vote at last Federal election / present voting intention / car ownership/ country of birth.
+  ddi_id: 
+studies_058: 
   id: "83"
   label: "Aborigines who abstain from alcohol, 1990-1993: File c01"
   resource: 
@@ -2841,7 +2879,7 @@ studies_057:
     
     Background variables collected in the first interview included: sex, age, birthplace, usual residence, marital status, children, education, income and employment.
   ddi_id: 
-studies_058: 
+studies_059: 
   id: "81"
   label: "Aborigines who abstain from alcohol, 1990-1993: File p01"
   resource: 
@@ -2883,7 +2921,7 @@ studies_058:
     
     Background variables collected in the first interview included: sex, age, birthplace, usual residence, marital status, children, education, income and employment.
   ddi_id: 
-studies_059: 
+studies_060: 
   id: "39"
   label: "Australian Candidate Study, 1996: File pub"
   resource: 
@@ -2915,7 +2953,7 @@ studies_059:
   study_auth_entity: Jones, Roger McAllister, Ian Gow, David
   comment: The 1996 Australian Candidate Study is the fourth in a series of election studies on federal election candidates.  In 1996, candidates from the following parties were surveyed - Labor, Liberal, National, Democrat, and the Greens.  The study examined the prominent election issues, including attitudes to particular economic issues, and opinions on which are the most critical problems facing Australia.  Opinions on other political issues such as security relations with other countries, assistance for Aborigines and women, and social issues such as abortion and pornography were also sought.  A section on national identity includes questions on national pride, the role of the Monarchy, immigration and citizenship.  In addition, the survey asked questions relating to the political background, such as electoral history, party political involvement and membership of community organisations.  A section on campaigning asked for the amount of time candidates spent on campaign activities and the amount of support received from various sources.  ALP candidates were also asked a series of questions on ALP factions.  Background variables include age, country of birth, age when left school, number of years of tertiary study, religion, frequency of attending religious services, marital status, House contested and party affiliated with.  Some of these variables have been grouped to ensure confidentiality for the candidates.
   ddi_id: 
-studies_060: 
+studies_061: 
   id: "98"
   label: National Drug Strategy Household Survey, 1998
   resource: 
@@ -2961,7 +2999,45 @@ studies_060:
     
     Background variables include state, geographic location, sex, date of birth, marital status, birthplace, language spoken at home, employment status, occupation, educational attainment, income and household descriptions.
   ddi_id: 
-studies_061: 
+studies_062: 
+  id: "89"
+  label: Australian Gallup Polls, Survey 176, April 9, 1965
+  resource: 
+  study3: 
+  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00321
+  published: t
+  created_at: 2011-02-23 02:54:32.469389
+  updated_at: 2011-03-28 03:06:40.90245
+  universe: young people aged 15-20 throughout Australia
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    Themes-Names: Aborigines - aid to / compulsory military training : age for; attitude to / Dental health: fluoride / governors : citizenship / Malaysia : troops in / marriage : age / national anthem / schools : leaving age / Sunday : sport / elections : age.
+    
+    Background Variables age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership / country of birth / numbers of voters in household.
+  keywords: 
+  page_id: 
+  data_kind: survey
+  sampling_abbr: area-cluster sample with sex quota
+  collection_mode_abbr: personal interview
+  contact_affiliation: 
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: ","
+  comment: |-
+    Themes-Names: Aborigines - aid to / compulsory military training : age for; attitude to / Dental health: fluoride / governors : citizenship / Malaysia : troops in / marriage : age / national anthem / schools : leaving age / Sunday : sport / elections : age.
+    
+    Background Variables age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership / country of birth / numbers of voters in household.
+  ddi_id: 
+studies_063: 
   id: "160"
   label: "Australian Constitutional Referendum Survey, 1999: Public release version"
   resource: 
@@ -2993,7 +3069,7 @@ studies_061:
   study_auth_entity: David John Gow Clive Bean Ian McAllister
   comment: The 1999 Australian Constitutional Referendum Study was conducted to investigate the Australian electorate's attitudes towards the significant political issues surrounding the 1999 constitutional referendum.  As part of the Australian Election Study series, the 1999 ACRS provides a perspective on the political attitudes and behaviour of the Australian public which, in turn, can be compared to those attitudes recorded at past and future electoral events.  The 1999 ACRS also functions more specifically as a means of investigating the patterns of public opinion concerning the republic and its specific features.  Variables include voting preference; degree of exposure to media reporting of the Referendum; level of interest in the Referendum debate; past and present political affiliation; party voted for in the last (1998) election; evaluation of parties, politicians and key participants   in the Referendum debate; views on national identity, preferred head of state and the importance of the Queen and the Royal Family to Australia; knowledge of the current role of the Queen and the Governor General and future role the President if Australia became a republic; perceived changes to powers held by the Prime Minister and the President, political stability in Australia, Australia's standing in the world, and ease of future constitutional reform; attitudes to a range of issues including unions, big business, income distribution, law enforcement, equal opportunities for migrants/women,  Aboriginal land rights; and views on the preferred function of society, government and the law.  Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 
-studies_062: 
+studies_064: 
   id: "157"
   label: "New South Wales Recorded Crime Data 2003: Incidents"
   resource: 
@@ -3039,7 +3115,7 @@ studies_062:
     
     Victim datasets contain type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether the victom is an Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_063: 
+studies_065: 
   id: "42"
   label: "New South Wales Recorded Crime Data, 2004: Incidents"
   resource: 
@@ -3085,7 +3161,7 @@ studies_063:
     
     Victim datasets contain type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether the victom is an Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_064: 
+studies_066: 
   id: "37"
   label: "New South Wales Recorded Crime Data 2005: Incidents"
   resource: 
@@ -3127,7 +3203,7 @@ studies_064:
     
     Person of interest datasets contain the person of interest's criminal status, postcode, date of birth, sex and whether the person is an Aboriginal or a Torres Strait Islander, and the victim datasets contain type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether the victim is an Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_065: 
+studies_067: 
   id: "167"
   label: "New South Wales Recorded Crime Data 1996-2002: File poi01"
   resource: 
@@ -3173,7 +3249,7 @@ studies_065:
     
     Victim variables include type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether they are Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_066: 
+studies_068: 
   id: "154"
   label: "New South Wales Recorded Crime Data 2004: Persons of interest"
   resource: 
@@ -3215,7 +3291,7 @@ studies_066:
     
     Incident datasets contain type of crime incident, premises on which the incident occurred,  type of drug associated with the incident, geographical location of incident, when the incident first occurred, when the incident was reported and whether the incident was domestic violence related, and the victim datasets contain type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether the victim is an Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_067: 
+studies_069: 
   id: "12"
   label: "New South Wales Recorded Crime Data 1996-2002: File poi98"
   resource: 
@@ -3261,7 +3337,7 @@ studies_067:
     
     Victim variables include type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether they are Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_068: 
+studies_070: 
   id: "94"
   label: "New South Wales Recorded Crime Data 1996-2002: File vic01"
   resource: 
@@ -3307,7 +3383,7 @@ studies_068:
     
     Victim variables include type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether they are Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_069: 
+studies_071: 
   id: "56"
   label: "New South Wales Recorded Crime Data 1996-2002: File vic02"
   resource: 
@@ -3353,7 +3429,7 @@ studies_069:
     
     Victim variables include type of involvement in the crime, presence of injury, date of birth, country of origin, sex and whether they are Aboriginal or a Torres Strait Islander.
   ddi_id: 
-studies_070: 
+studies_072: 
   id: "86"
   label: "New South Wales Recorded Crime Data 2005: Victims"
   resource: 
@@ -3395,7 +3471,7 @@ studies_070:
     
     Person of interest datasets contain the person of interest's criminal status, postcode, date of birth, sex and whether the person is an Aboriginal or a Torres Strait Islander, and the incident datasets contain type of crime incident, premises on which the incident occurred,  type of drug associated with the incident, geographical location of incident, when the incident first occurred, when the incident was reported and whether the incident was domestic violence related.
   ddi_id: 
-studies_071: 
+studies_073: 
   id: "99"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Community, ACT"
   resource: 
@@ -3433,7 +3509,7 @@ studies_071:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_072: 
+studies_074: 
   id: "15"
   label: "The Mental Health of Young People in Australia: Child and Adolescent Component of the National Survey of Mental Health and Well-Being (Restricted Version)"
   resource: 
@@ -3483,7 +3559,7 @@ studies_072:
     
     The raw data collected in the survey has not been published but also available under the same access conditions.
   ddi_id: 
-studies_073: 
+studies_075: 
   id: "147"
   label: Australian Candidate Study, 2004
   resource: 
@@ -3534,7 +3610,7 @@ studies_073:
     
     Background variables include age, country of birth, age when left school, number of years of tertiary study, religion, frequency of attending religious services, marital status, House contested and party affiliated with. Some of these variables have been grouped to ensure confidentiality for the candidates.
   ddi_id: 
-studies_074: 
+studies_076: 
   id: "47"
   label: National Drug Strategy Household Survey, 2004
   resource: 
@@ -3580,7 +3656,7 @@ studies_074:
     
     Background variables include state, remoteness category, sex, age, marital status, indigenous status, country of birth, language spoken at home, employment status, occupation, educational attainment, income and index of socio-economic disadvantage, and household descriptions.
   ddi_id: 
-studies_075: 
+studies_077: 
   id: "115"
   label: "Australian Election Study, 2004: Restricted version"
   resource: 
@@ -3626,7 +3702,7 @@ studies_075:
     
     This is the restricted version of the dataset, which includes the postcode variable.
   ddi_id: 01079-r
-studies_076: 
+studies_078: 
   id: "118"
   label: "Saulwick Age Poll, August 2001: Pre-election Survey"
   resource: 
@@ -3664,7 +3740,7 @@ studies_076:
     
     Background variables are age, gender, education and location (urban/rural).
   ddi_id: 
-studies_077: 
+studies_079: 
   id: "29"
   label: Australian Candidate Study, 2007
   resource: 
@@ -3710,7 +3786,7 @@ studies_077:
     
     Background variables include age, country of birth, age when left school, number of years of tertiary study, religion, frequency of attending religious services, marital status, House contested and party affiliated with. Some of these variables have been grouped to ensure confidentiality for the candidates.
   ddi_id: 
-studies_078: 
+studies_080: 
   id: "126"
   label: National Drug Strategy Household Survey, 2007
   resource: 
@@ -3754,7 +3830,7 @@ studies_078:
     
     Background variables included: state of residence, age, sex, marital status, indigenous status, country of birth, language spoken at home, employment status, occupation, level of education, income, index of socio-economic disadvantage and household descriptions.
   ddi_id: 
-studies_079: 
+studies_081: 
   id: "61"
   label: Mapping the Impact of the 1995 Aboriginal and Torres Strait Islander Protocols for Libraries, Archives and Information Services
   resource: 
@@ -3804,7 +3880,7 @@ studies_079:
     \xE2\x80\xA2 Issues and concerns of institutions relating to Indigenous issues.\n\n\
     Papers are also planned for national and international conferences with the aim of enlisting support for a consistent approach to Indigenous materials held in libraries, archives and information services."
   ddi_id: 
-studies_080: 
+studies_082: 
   id: "17"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Local Area, ACT"
   resource: 
@@ -3842,7 +3918,7 @@ studies_080:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_081: 
+studies_083: 
   id: "155"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: State/Territory, ACT"
   resource: 
@@ -3880,7 +3956,7 @@ studies_081:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_082: 
+studies_084: 
   id: "22"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Statistical Local Area, NSW"
   resource: 
@@ -3918,7 +3994,7 @@ studies_082:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_083: 
+studies_085: 
   id: "123"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Section of State, NSW"
   resource: 
@@ -3956,7 +4032,7 @@ studies_083:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_084: 
+studies_086: 
   id: "159"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Local Area, NT"
   resource: 
@@ -3994,7 +4070,7 @@ studies_084:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_085: 
+studies_087: 
   id: "32"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Community, QLD"
   resource: 
@@ -4032,7 +4108,7 @@ studies_085:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_086: 
+studies_088: 
   id: "50"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Local Area, QLD"
   resource: 
@@ -4070,7 +4146,7 @@ studies_086:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_087: 
+studies_089: 
   id: "45"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: State/Territory, QLD"
   resource: 
@@ -4108,7 +4184,7 @@ studies_087:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_088: 
+studies_090: 
   id: "172"
   label: "Australian Election Study Online, 2001: File c"
   resource: 
@@ -4150,7 +4226,7 @@ studies_088:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 01052-c
-studies_089: 
+studies_091: 
   id: "134"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Division, SA"
   resource: 
@@ -4188,7 +4264,7 @@ studies_089:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_090: 
+studies_092: 
   id: "140"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Section of State, SA"
   resource: 
@@ -4226,7 +4302,7 @@ studies_090:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_091: 
+studies_093: 
   id: "114"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Division, TAS"
   resource: 
@@ -4264,7 +4340,7 @@ studies_091:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_092: 
+studies_094: 
   id: "165"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Section of State, TAS"
   resource: 
@@ -4302,7 +4378,7 @@ studies_092:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_093: 
+studies_095: 
   id: "176"
   label: "Australian Election Database: House of Representatives - Northern Territory data"
   resource: 
@@ -4334,7 +4410,7 @@ studies_093:
   study_auth_entity: Campbell Sharman
   comment: Summary details for each election year for the House of Representatives elections since 1901.  This data includes electoral system characteristics, seats in chamber, number of enrolled voters, ballots cast, rate of voter turnout and rate of informal voting for the Northern Territory.
   ddi_id: "40098"
-studies_094: 
+studies_096: 
   id: "124"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Local Area, VIC"
   resource: 
@@ -4372,7 +4448,7 @@ studies_094:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_095: 
+studies_097: 
   id: "48"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Section of State, VIC"
   resource: 
@@ -4410,7 +4486,7 @@ studies_095:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_096: 
+studies_098: 
   id: "11"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Aboriginal Statistical Local Area, WA"
   resource: 
@@ -4448,7 +4524,7 @@ studies_096:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_097: 
+studies_099: 
   id: "72"
   label: "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: Statistical Local Area, WA"
   resource: 
@@ -4486,7 +4562,7 @@ studies_097:
     
     The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.
   ddi_id: 
-studies_098: 
+studies_100: 
   id: "179"
   label: Australian Election Database - All States Lower House Data Party Data
   resource: 
@@ -4586,7 +4662,7 @@ studies_098:
     Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
     Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
   ddi_id: "40093"
-studies_099: 
+studies_101: 
   id: "33"
   label: Australian Gallup Polls, September 1981
   resource: 
@@ -4624,7 +4700,7 @@ studies_099:
     
     Background variables include: age; sex; marital status; level of education; country of birth; household composition (number of persons in household, number children under age 5, number children between 5-12 years old, number children between 13 and 17 years old, age of the youngest person, and number of employed persons); whether respondent has moved in last two years; tenure of dwelling; occupation of self and head of household; voting enrolment; vote intention; income; and telephone ownership.
   ddi_id: 
-studies_100: 
+studies_102: 
   id: "46"
   label: "Aboriginal survey, New South Wales and South Australia, 1965: File f"
   resource: 
@@ -4680,7 +4756,7 @@ studies_100:
     
     Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
   ddi_id: 
-studies_101: 
+studies_103: 
   id: "5"
   label: "Aboriginal survey, New South Wales and South Australia, 1965: File m"
   resource: 
@@ -4736,7 +4812,77 @@ studies_101:
     
     Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
   ddi_id: 
-studies_102: 
+studies_104: 
+  id: "110"
+  label: Age Poll, November 1978
+  resource: 
+  study3: 
+  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00141
+  published: t
+  created_at: 2011-02-23 02:54:51.90738
+  updated_at: 2011-03-28 03:06:37.015727
+  universe: men and women 18 years and older, and enrolled to vote,  in all electorates except the Northern Territory
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: Topics in this survey are opinions on the state of the economy, whether technological modernisation leads to unemployment, ways of dealing with unemployment, place of Aborigines, performance of Prime Minister Fraser and Leader of Opposition Hayden, whether certain occupations (including pensioners and unemployed) are well or poorly paid, and who would make the best political leader.  Standard variables are country of birth, marital status, education level, religious denomination, church attendance, occupation and industry of respondent and head of household,  whether head of household works part-time or full-time, father's education level, father's occupation and industry, age group,  vote at last Federal election, subjective assessment of social class, number of persons in household, number and ages of children under 16 in household, life cycle, home ownership, gross income of respondent and household and whether on telephone.
+  keywords: Aboriginal men;Aboriginal women;Attitudes;Economic conditions;Employment;Elections;Fraser, Malcolm;Hayden, Bill;Policy;Political leadership;Public administration;Social welfare;Technological change;Wages
+  page_id: 
+  data_kind: survey
+  sampling_abbr: 
+  collection_mode_abbr: personal interview
+  contact_affiliation: Department of Political Science, University of Melbourne
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: Irving Saulwick and Associates
+  comment: Topics in this survey are opinions on the state of the economy, whether technological modernisation leads to unemployment, ways of dealing with unemployment, place of Aborigines, performance of Prime Minister Fraser and Leader of Opposition Hayden, whether certain occupations (including pensioners and unemployed) are well or poorly paid, and who would make the best political leader.  Standard variables are country of birth, marital status, education level, religious denomination, church attendance, occupation and industry of respondent and head of household,  whether head of household works part-time or full-time, father's education level, father's occupation and industry, age group,  vote at last Federal election, subjective assessment of social class, number of persons in household, number and ages of children under 16 in household, life cycle, home ownership, gross income of respondent and household and whether on telephone.
+  ddi_id: 
+studies_105: 
+  id: "31"
+  label: Australian Gallup Polls, Survey 147, December 9, 1960
+  resource: 
+  study3: 
+  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00186
+  published: t
+  created_at: 2011-02-23 02:53:42.000134
+  updated_at: 2011-03-28 03:06:38.438956
+  universe: adults aged 21 and over throughout Australia
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    Themes-Names: Aborigines : alcohol / Crimes Act / divorce : grounds for / Intergovernmental relations: leasing purchase / dental health : flouride / Papua New Guinea : Independence / Russia : visits to politicians etc. / shopping hours : late night shopping, attitudes to; late night shopping, preferred night / South Africa : Commonwealth, British / elections / working hours : number per week.
+    
+    Background variables: age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
+  keywords: 
+  page_id: 
+  data_kind: survey
+  sampling_abbr: area-cluster sample with sex quota
+  collection_mode_abbr: personal interview
+  contact_affiliation: 
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: ","
+  comment: |-
+    Themes-Names: Aborigines : alcohol / Crimes Act / divorce : grounds for / Intergovernmental relations: leasing purchase / dental health : flouride / Papua New Guinea : Independence / Russia : visits to politicians etc. / shopping hours : late night shopping, attitudes to; late night shopping, preferred night / South Africa : Commonwealth, British / elections / working hours : number per week.
+    
+    Background variables: age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
+  ddi_id: 
+studies_106: 
   id: "180"
   label: Australian Election Database  - Northern Territory Legislative Assembly
   resource: 
@@ -4744,7 +4890,7 @@ studies_102:
   about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.40082
   published: t
   created_at: 2011-03-31 04:27:16.120885
-  updated_at: 2011-03-31 04:27:16.120885
+  updated_at: 2011-04-01 14:23:03.320757
   universe: Seats  in the  NT Legislative Assembly and voters in the Northern Territory.
   collection_date: 
   id_number: 
@@ -4880,152 +5026,6 @@ studies_102:
     
     Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1997, 18 August 2001, 18 June 2005, 9 August 2008.
   ddi_id: "40082"
-studies_103: 
-  id: "110"
-  label: Age Poll, November 1978
-  resource: 
-  study3: 
-  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00141
-  published: t
-  created_at: 2011-02-23 02:54:51.90738
-  updated_at: 2011-03-28 03:06:37.015727
-  universe: men and women 18 years and older, and enrolled to vote,  in all electorates except the Northern Territory
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: Topics in this survey are opinions on the state of the economy, whether technological modernisation leads to unemployment, ways of dealing with unemployment, place of Aborigines, performance of Prime Minister Fraser and Leader of Opposition Hayden, whether certain occupations (including pensioners and unemployed) are well or poorly paid, and who would make the best political leader.  Standard variables are country of birth, marital status, education level, religious denomination, church attendance, occupation and industry of respondent and head of household,  whether head of household works part-time or full-time, father's education level, father's occupation and industry, age group,  vote at last Federal election, subjective assessment of social class, number of persons in household, number and ages of children under 16 in household, life cycle, home ownership, gross income of respondent and household and whether on telephone.
-  keywords: Aboriginal men;Aboriginal women;Attitudes;Economic conditions;Employment;Elections;Fraser, Malcolm;Hayden, Bill;Policy;Political leadership;Public administration;Social welfare;Technological change;Wages
-  page_id: 
-  data_kind: survey
-  sampling_abbr: 
-  collection_mode_abbr: personal interview
-  contact_affiliation: Department of Political Science, University of Melbourne
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: Irving Saulwick and Associates
-  comment: Topics in this survey are opinions on the state of the economy, whether technological modernisation leads to unemployment, ways of dealing with unemployment, place of Aborigines, performance of Prime Minister Fraser and Leader of Opposition Hayden, whether certain occupations (including pensioners and unemployed) are well or poorly paid, and who would make the best political leader.  Standard variables are country of birth, marital status, education level, religious denomination, church attendance, occupation and industry of respondent and head of household,  whether head of household works part-time or full-time, father's education level, father's occupation and industry, age group,  vote at last Federal election, subjective assessment of social class, number of persons in household, number and ages of children under 16 in household, life cycle, home ownership, gross income of respondent and household and whether on telephone.
-  ddi_id: 
-studies_104: 
-  id: "31"
-  label: Australian Gallup Polls, Survey 147, December 9, 1960
-  resource: 
-  study3: 
-  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00186
-  published: t
-  created_at: 2011-02-23 02:53:42.000134
-  updated_at: 2011-03-28 03:06:38.438956
-  universe: adults aged 21 and over throughout Australia
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    Themes-Names: Aborigines : alcohol / Crimes Act / divorce : grounds for / Intergovernmental relations: leasing purchase / dental health : flouride / Papua New Guinea : Independence / Russia : visits to politicians etc. / shopping hours : late night shopping, attitudes to; late night shopping, preferred night / South Africa : Commonwealth, British / elections / working hours : number per week.
-    
-    Background variables: age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
-  keywords: 
-  page_id: 
-  data_kind: survey
-  sampling_abbr: area-cluster sample with sex quota
-  collection_mode_abbr: personal interview
-  contact_affiliation: 
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: ","
-  comment: |-
-    Themes-Names: Aborigines : alcohol / Crimes Act / divorce : grounds for / Intergovernmental relations: leasing purchase / dental health : flouride / Papua New Guinea : Independence / Russia : visits to politicians etc. / shopping hours : late night shopping, attitudes to; late night shopping, preferred night / South Africa : Commonwealth, British / elections / working hours : number per week.
-    
-    Background variables: age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership.
-  ddi_id: 
-studies_105: 
-  id: "102"
-  label: Australian Gallup Polls, Survey 171, August 21, 1964
-  resource: 
-  study3: 
-  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00317
-  published: t
-  created_at: 2011-02-23 02:54:44.581754
-  updated_at: 2011-03-28 03:06:40.501886
-  universe: adults aged 21 and over throughout Australia
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    Themes-Names: Aborigines : aid to / alcohol : theatres / ALP leaders : Australian Labor Party leaders / gambling : off-course incl. TAB / International relations : independent international policy / immigration, European : rate of / Liberal Party Leaders / Papua New Guinea : Russian visitors to / police : pistols / Senate : abolition / shopping hours : opening and closing hours / taxation : increases in / traffic offences : on - the - spot fines.
-    
-    Background Variables age / sex / economic classification / occupation of head of household / religion/ vote at last Federal election / present voting intention / car ownership/ country of birth.
-  keywords: 
-  page_id: 
-  data_kind: survey
-  sampling_abbr: area-cluster sample with sex quota
-  collection_mode_abbr: personal interview
-  contact_affiliation: 
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: ","
-  comment: |-
-    Themes-Names: Aborigines : aid to / alcohol : theatres / ALP leaders : Australian Labor Party leaders / gambling : off-course incl. TAB / International relations : independent international policy / immigration, European : rate of / Liberal Party Leaders / Papua New Guinea : Russian visitors to / police : pistols / Senate : abolition / shopping hours : opening and closing hours / taxation : increases in / traffic offences : on - the - spot fines.
-    
-    Background Variables age / sex / economic classification / occupation of head of household / religion/ vote at last Federal election / present voting intention / car ownership/ country of birth.
-  ddi_id: 
-studies_106: 
-  id: "89"
-  label: Australian Gallup Polls, Survey 176, April 9, 1965
-  resource: 
-  study3: 
-  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00321
-  published: t
-  created_at: 2011-02-23 02:54:32.469389
-  updated_at: 2011-03-28 03:06:40.90245
-  universe: young people aged 15-20 throughout Australia
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    Themes-Names: Aborigines - aid to / compulsory military training : age for; attitude to / Dental health: fluoride / governors : citizenship / Malaysia : troops in / marriage : age / national anthem / schools : leaving age / Sunday : sport / elections : age.
-    
-    Background Variables age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership / country of birth / numbers of voters in household.
-  keywords: 
-  page_id: 
-  data_kind: survey
-  sampling_abbr: area-cluster sample with sex quota
-  collection_mode_abbr: personal interview
-  contact_affiliation: 
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: ","
-  comment: |-
-    Themes-Names: Aborigines - aid to / compulsory military training : age for; attitude to / Dental health: fluoride / governors : citizenship / Malaysia : troops in / marriage : age / national anthem / schools : leaving age / Sunday : sport / elections : age.
-    
-    Background Variables age / sex / economic classification / occupation of head of household / vote at last Federal election / present voting intention / car ownership / country of birth / numbers of voters in household.
-  ddi_id: 
 studies_107: 
   id: "138"
   label: Australian Gallup Polls, Survey 180, December 10, 1965
@@ -8377,3 +8377,55 @@ studies_180:
     
     Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.
   ddi_id: "40083"
+studies_181: 
+  id: "181"
+  label: Australian Election Study, 2010
+  resource: 
+  study3: 
+  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01228
+  published: t
+  created_at: 2011-04-01 14:23:03.433966
+  updated_at: 2011-04-01 14:23:03.433966
+  universe: |-
+    Version1: Persons on the Australian electoral roll fat the close of rolls, July 19th 2010.;Version 2 - Stage 1: 18-44 year old persons on re-contact lists from previous Australian National University telephone based projects.
+    Version 2 - Stage 2: 18-44 year old online panel members of MyOpinions.
+  collection_date: 
+  id_number: 
+  series_name: Australian Election Study
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    The 2010 Australian Election Study(au.edu.anu.assda.ddi.01228) is the ninth in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal Elections. The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys. The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character. In addition to these long-term goals, they examine the political issues prevalent in the current election and assess their importance for the election result.  
+    
+    The 2010 survey replicates many questions from the previous Australian Election Studies, but also introduces new questions regarding internet usage in election campaigns. Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, and attitudes to a range of election issues including; global warming; taxation; unemployment; health and Medicare; refugees and asylum seekers; and population policy. Opinions on social policy issues including abortion, equal opportunities, and Australia's security were also covered in the 2010 Australian Election Study. Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.  
+    
+    Version 1.0 of this data published 24/12/10 had an inherent bias derived from the sample supplied by the Australian Electoral Commission (AEC).  This bias resulted in significant underrepresentation of younger enrolled voters in the achieved sample.  To address this skew a survey was conducted, focusing on enumeration of 18-44 year olds, in early 2011 to "top up" the Version 1.0 data. 
+    
+    The 2010 Australian Election Study is the first in the series to provide the option of completing the questionnaire online via a unique password, or via hardcopy. The "top up" survey, involved telephone recruitment of a sample of age qualified persons from previous Australian National University phone-based projects (stage 1) and the MyOpinions online panel database (stage 2), to complete the existing online version of Australian Election Survey. The MyOpinions online panel database was used to enumerate age groups still under-represented from stage 1. This was considered the most expedient method, within the budget and time constraints to address the under-representation in version 1.0.  The weighting methodology (See Weighting) was developed for Version 2.0 and was used to determine numbers for the "top up" phase. 
+    
+    This data file is also supplemented with division level election results from the Australian Electoral Commission election results website (http://results.aec.gov.au/15508/Website/). These variables are found under the variable group "AEC Election Results". Information on the source of these election results and the method by which they were created is available in a Stata *.do syntax file located in the other study materials section.
+  keywords: Attitudes;Defence;Economic policy;Elections;Environment;Ethnic groups;Immigration;International relations;Internet;Political parties;Politicians;Politics;Republicanism;Shares;Social policy;Taxation
+  page_id: 
+  data_kind: survey data
+  sampling_abbr: Stratified systematic random sample (see Sampling Procedure Notes)
+  collection_mode_abbr: "Version 1: Self completion (mail out - mail back or online) Version 2: Stage 1 - telephone recruitement to online, Stage 2 - email recruitment to online"
+  contact_affiliation: "Research School of Social Sciences The Australian National University ACTON  ACT  0200 P: 6125 5553"
+  geographical_cover: National
+  geographical_unit: Federal Electoral Division
+  analytic_unit: Individual
+  creation_date: 
+  study_auth_entity: Ian McAllister Clive Bean Rachel Kay Gibson Juliet Pietsch
+  comment: |-
+    The 2010 Australian Election Study(au.edu.anu.assda.ddi.01228) is the ninth in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal Elections. The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys. The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character. In addition to these long-term goals, they examine the political issues prevalent in the current election and assess their importance for the election result.  
+    
+    The 2010 survey replicates many questions from the previous Australian Election Studies, but also introduces new questions regarding internet usage in election campaigns. Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, and attitudes to a range of election issues including; global warming; taxation; unemployment; health and Medicare; refugees and asylum seekers; and population policy. Opinions on social policy issues including abortion, equal opportunities, and Australia's security were also covered in the 2010 Australian Election Study. Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.  
+    
+    Version 1.0 of this data published 24/12/10 had an inherent bias derived from the sample supplied by the Australian Electoral Commission (AEC).  This bias resulted in significant underrepresentation of younger enrolled voters in the achieved sample.  To address this skew a survey was conducted, focusing on enumeration of 18-44 year olds, in early 2011 to "top up" the Version 1.0 data. 
+    
+    The 2010 Australian Election Study is the first in the series to provide the option of completing the questionnaire online via a unique password, or via hardcopy. The "top up" survey, involved telephone recruitment of a sample of age qualified persons from previous Australian National University phone-based projects (stage 1) and the MyOpinions online panel database (stage 2), to complete the existing online version of Australian Election Survey. The MyOpinions online panel database was used to enumerate age groups still under-represented from stage 1. This was considered the most expedient method, within the budget and time constraints to address the under-representation in version 1.0.  The weighting methodology (See Weighting) was developed for Version 2.0 and was used to determine numbers for the "top up" phase. 
+    
+    This data file is also supplemented with division level election results from the Australian Electoral Commission election results website (http://results.aec.gov.au/15508/Website/). These variables are found under the variable group "AEC Election Results". Information on the source of these election results and the method by which they were created is available in a Stata *.do syntax file located in the other study materials section.
+  ddi_id: 01228
