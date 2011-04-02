@@ -19,68 +19,33 @@
 <% end %>
 <aside>	</aside>
 <article>
+
 	Term: <%= params[:term] %> <p/>
 	Filters:
 	
-  <% params[:filters].each do |facet|
+<% params[:filters].each do |facet|
     facet.each do |name, value| %>
  		<%= Study::FACETS[name.to_sym] %> = <%= value %>
 		<% unless facet == params[:filters].last %>, <% end %>
 		<% end %>
 <% end %>
-	
-  <div class="float-centre">
-      <%= will_paginate @search.results %>
-  </div>
-  <br/>
 
 
-  <nav class="studynav">
-    <ul>
-      <li> <a id="studies-link">Studies</a> </li>
-      <li> <a id="variables-link">Variables</a> </li>
-    </ul>
-  </nav>
+<nav class="studynav">
+  <ul>
+    <li> <a id="studies-link">Studies</a> </li>
+    <li> <a id="variables-link">Variables</a> </li>
+  </ul>
+</nav>
 
+<%= render(:partial => "studies") %>
 
-<div id="title-view" class="concealed">
-  <table id="search-results-table" >
-    <% @search.each_hit_with_result do |hit, study| %>
-      <tr>
-        <td>
-           <div id="study-<%= study.ddi_id %>">
-             <% archive_study = study.for_archive(@current_archive) %>
-             Study Title: <%= link_to study.field("docTitle"), "#{archive_study.path.slug}" %> 
-             <% unless study.field("stdyAuthEntity").blank? %> by <% study.field("stdyAuthEntity") %>. <% end %> <br/>
-             Abstract: <%= first_n_words(30, study.abstract) %> <br/>
-             Study Id: <%= study.ddi_id %> <br/>
-             Variables: <%= study.variables.size %> <br/>
-
-						Relevance: <%= hit.score %> <br/>
-
-						<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
-						<%= highlight_excerpt(hit.highlight(:abstract)) %> <br/>
-						<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>
-						
-
-           <% for archive_study in study.archive_studies %>
-             <% next if archive_study.archive == Archive.ada %>
-             <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
-           <% end %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
-</div>
-
-<div id="variables-view" class="concealed">
-vars  
-</div>
+<%= render(:partial => "variables") %>
   
   <br/>
 
  <div class="float-centre">
-     <%= will_paginate @search.results %>
+     <%= will_paginate @studies_search.results %>
  </div>
 
 </article>

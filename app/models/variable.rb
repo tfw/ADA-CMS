@@ -3,12 +3,13 @@ class Variable < ActiveRecord::Base
   has_many :variable_fields; alias fields variable_fields
   has_many :statistics
   
-  validates_presence_of :study_id
+  # validates_presence_of :study_id #it seems that not all variables are related to a study
   
   #solr config
   searchable do
-    text :label, :default_boost => 2, :stored => true
-    text :question_text
+    text :label, :stored => true
+    text :name, :stored => true
+    text :question_text, :stored => true
     integer :study_id
   end  
   

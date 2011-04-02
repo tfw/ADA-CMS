@@ -1,6 +1,6 @@
 <% content_for :sidenav do %>
   <ul>
-    <% @archive_searches.each do |archive, search| %>
+    <% @study_searches.each do |archive, search| %>
         <li> <%= archive.name %> </li>
       <% for facet in search.facets %>
 				<% if facet.rows.any? %>
