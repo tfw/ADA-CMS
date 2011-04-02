@@ -12,7 +12,6 @@ class Variable < ActiveRecord::Base
     integer :study_id
   end  
   
-  
   def self.store_with_fields(data)
     variable = Variable.find_by_label(data[:label])
     variable = Variable.new if variable.nil?
