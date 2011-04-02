@@ -5,18 +5,18 @@ class SearchController < ContentController
   def search   
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
-    @filters = (params[:filters] || [])
+    @study_filters = (params[:filters] || [])
+    variable_filters = (params[:var_filters] || [])
 
-    @archive_searches = 
-      if @filters.empty?
-         search_globally
-      elsif @current_archive == Archive.ada
-        search_globally(@filters)
+    @study_searches = 
+      if @current_archive == Archive.ada
+        search_studies_globally(@study_filters)
       else
-        {@current_archive => archive_search(@current_archive, @term, @filters)}
+        {@current_archive => study_search(@current_archive, @term, @study_filters)}
       end
-          
-    @search = @archive_searches[@current_archive]  
+    
+    @studies_search = @study_searches[@current_archive]  
+    @variable_searches = variable_search(@term, variable_filters)      
     
     @title = "Search: #{@term}"
     params[:filters] ||= []
@@ -25,17 +25,17 @@ class SearchController < ContentController
   
   private  #the logic below was moved into Study (fat model), but a performance hit occurred - strangely -
           #so, for now, the fatter controller is acceptable
-  def search_globally(filters = {})
-    {Archive.ada => archive_search(Archive.ada, @term, filters),
-     Archive.social_science => archive_search(Archive.social_science, @term, filters),
-     Archive.historical => archive_search(Archive.historical, @term, filters),
-     Archive.indigenous => archive_search(Archive.indigenous, @term, filters),
-     Archive.longitudinal => archive_search(Archive.longitudinal, @term, filters),
-     Archive.qualitative => archive_search(Archive.qualitative, @term, filters),
-     Archive.international => archive_search(Archive.international, @term, filters)}
+  def search_studies_globally(filters = {})
+    {Archive.ada => study_search(Archive.ada, @term, filters),
+     Archive.social_science => study_search(Archive.social_science, @term, filters),
+     Archive.historical => study_search(Archive.historical, @term, filters),
+     Archive.indigenous => study_search(Archive.indigenous, @term, filters),
+     Archive.longitudinal => study_search(Archive.longitudinal, @term, filters),
+     Archive.qualitative => study_search(Archive.qualitative, @term, filters),
+     Archive.international => study_search(Archive.international, @term, filters)}
   end
 
-  def archive_search(archive, term, filters = {})
+  def study_search(archive, term, filters = {})
     Sunspot.search(Study) do ;
       keywords term do 
         highlight :label, :abstract, :comment
@@ -60,6 +60,22 @@ class SearchController < ContentController
       facet :creation_date
       facet :series_name
       facet :study_auth_entity
+    end    
+  end
+
+  def variable_search(term, filters = {})
+    Sunspot.search(Variable) do ;
+      keywords term do 
+        highlight :name, :question_text
+      end
+            
+      filters.each do |facet|
+        facet.each do |name, value|
+          with(name.to_sym, value)
+        end
+      end
+      
+      # facet :label
     end    
   end
 end
