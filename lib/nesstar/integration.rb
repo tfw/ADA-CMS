@@ -213,7 +213,6 @@ module Nesstar
           end
                     
           related_materials_list.each do |related|
-            # puts "\n\n ****** #{related} ***** \n\n"
             study = Study.find_by_about(related[:study_resource])
             
             pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])

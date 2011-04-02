@@ -3,7 +3,7 @@ class Variable < ActiveRecord::Base
   has_many :variable_fields; alias fields variable_fields
   has_many :statistics
   
-  # validates_presence_of :study_id
+  validates_presence_of :study_id
   
   #solr config
   searchable do
