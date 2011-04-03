@@ -66,7 +66,7 @@ class SearchController < ContentController
   def variable_search(term, filters = {})
     Sunspot.search(Variable) do ;
       keywords term do 
-        highlight :name, :question_text
+        highlight :label, :question_text
       end
             
       filters.each do |facet|
@@ -75,7 +75,7 @@ class SearchController < ContentController
         end
       end
       
-      # facet :label
+      facet :name
     end    
   end
 end

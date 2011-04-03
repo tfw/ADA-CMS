@@ -1,26 +1,26 @@
-<div class="float-centre">
-    <%= will_paginate @variable_searches.results %>
-</div>
-<br/>
 
+<section id="variables-view" class="concealed">
+	<div class="float-centre">
+	    <%= will_paginate @variable_searches.results %>
+	</div>
+	<br/>
 
-<div id="variables-view" class="concealed">
-  <table id="search-results-table" >
+  <table id="search-results-table" border=1>
     <% @variable_searches.each_hit_with_result do |hit, variable| %>
       <tr>
         <td>
            <div id="variable-<%= variable.name %>">
-             Variable Name: <%= variable.name %> 
-            <% if variable.question_text %>
+             Variable Label: <%= variable.label %> 
+            <% if variable.question_text %> <br/>
               Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
             <% end %>
             
 						Relevance: <%= hit.score %> <br/>
 
-						<%= highlight_excerpt(hit.highlight(:name)) %> <br/>
+						<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
 						<%= highlight_excerpt(hit.highlight(:question_text)) %> <br/>
         </td>
       </tr>
     <% end %>
   </table>
-</div>
+</section>

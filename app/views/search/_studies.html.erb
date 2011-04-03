@@ -1,10 +1,10 @@
-<div class="float-centre">
-    <%= will_paginate @studies_search.results %>
-</div>
-<br/>
 
+<section id="studies-view" class="concealed">
+	<div class="float-centre">
+	    <%= will_paginate @studies_search.results %>
+	</div>
+	<br/>
 
-<div id="studies-view" class="concealed">
   <table id="search-results-table" >
     <% @studies_search.each_hit_with_result do |hit, study| %>
       <tr>
@@ -32,4 +32,4 @@
       </tr>
     <% end %>
   </table>
-</div>
+</section>

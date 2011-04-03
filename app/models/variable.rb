@@ -8,7 +8,7 @@ class Variable < ActiveRecord::Base
   #solr config
   searchable do
     text :label, :stored => true
-    text :name, :stored => true
+    string :name, :stored => true
     text :question_text, :stored => true
     integer :study_id
   end  
