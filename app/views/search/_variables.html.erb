@@ -1,12 +1,11 @@
-
-<section id="variables-view" class="concealed">
+<section id="variable-results" class="concealed">
 	<div class="float-centre">
-	    <%= will_paginate @variable_searches.results %>
+	    <%= will_paginate @variables_search.results %>
 	</div>
 	<br/>
 
   <table id="search-results-table" border=1>
-    <% @variable_searches.each_hit_with_result do |hit, variable| %>
+    <% @variables_search.each_hit_with_result do |hit, variable| %>
       <tr>
         <td>
            <div id="variable-<%= variable.name %>">

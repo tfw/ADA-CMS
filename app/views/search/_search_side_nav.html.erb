@@ -1,18 +1,35 @@
 <% content_for :sidenav do %>
-  <ul>
-    <% @study_searches.each do |archive, search| %>
-        <li> <%= archive.name %> </li>
-      <% for facet in search.facets %>
-				<% if facet.rows.any? %>
-					<h3><%= Study::FACETS[facet.name] %></h3>
-	        <ul>
-			    <% facet.rows.each do |row| %>
-			      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
-			    <% end %>
-				<% end %>
-        </ul>
-      <% end %>
-    <% end %>
-  </ul>
-<% end %>
+	<section id ="study-facets">
+	  <ul>
+	    <% @study_searches.each do |archive, search| %>
+	        <li> <%= archive.name %> </li>
+	      <% for facet in search.facets %>
+					<% if facet.rows.any? %>
+						<h3><%= Study::FACETS[facet.name] %></h3>
+		        <ul>
+				    <% facet.rows.each do |row| %>
+				      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
+				    <% end %>
+					<% end %>
+	        </ul>
+	      <% end %>
+	    <% end %>
+	  </ul>
+	</section>
 
+	<section id ="variable-facets" class="concealed">
+	  <ul>
+	    <li> ADA </li>
+	    <% for facet in @variables_search.facets %>
+			<% if facet.rows.any? %>
+				<h3><%= facet.name %></h3>
+	       <ul>
+		    <% facet.rows.each do |row| %>
+		      <li> <%= link_to row.value, search_path(:term => @term, :filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
+		    <% end %>
+			<% end %>
+	      </ul>
+	    <% end %>
+	  </ul>
+	</section>
+<% end %>

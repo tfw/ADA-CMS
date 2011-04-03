@@ -16,10 +16,11 @@ class SearchController < ContentController
       end
     
     @studies_search = @study_searches[@current_archive]  
-    @variable_searches = variable_search(@term, variable_filters)      
+    @variables_search = variable_search(@term, variable_filters)      
     
     @title = "Search: #{@term}"
     params[:filters] ||= []
+    params[:var_filters] ||= []
     render :results
   end
   

@@ -9,11 +9,13 @@
 <% content_for :js do %>
 
   $("#studies-link").click(function() {
-    $('#studies-view').toggle();
+    $('#study-results').toggle();
+    $('#study-facets').toggle();
   });
 
   $("#variables-link").click(function() {
-    $('#variables-view').toggle();
+    $('#variable-results').toggle();
+    $('#variable-facets').toggle();
   });
 
 <% end %>
@@ -23,29 +25,22 @@
 	Term: <%= params[:term] %> <p/>
 	Filters:
 	
-<% params[:filters].each do |facet|
-    facet.each do |name, value| %>
- 		<%= Study::FACETS[name.to_sym] %> = <%= value %>
+	<% params[:filters].each do |facet|
+	  facet.each do |name, value| %>
+		<%= Study::FACETS[name.to_sym] %> = <%= value %>
 		<% unless facet == params[:filters].last %>, <% end %>
 		<% end %>
-<% end %>
+	<% end %>
 
 
-<nav class="studynav">
-  <ul>
-    <li> <a id="studies-link">Studies</a> </li>
-    <li> <a id="variables-link">Variables</a> </li>
-  </ul>
-</nav>
+	<nav class="studynav">
+	  <ul>
+	    <li> <a id="studies-link">Studies</a> </li>
+	    <li> <a id="variables-link">Variables</a> </li>
+	  </ul>
+	</nav>
 
-<%= render(:partial => "studies") %>
-
-<%= render(:partial => "variables") %>
-  
-  <br/>
-
- <div class="float-centre">
-     <%= will_paginate @studies_search.results %>
- </div>
+	<%= render(:partial => "studies") %>
+	<%= render(:partial => "variables") %>
 
 </article>
