@@ -32,6 +32,15 @@
 		<% end %>
 	<% end %>
 
+	Variable Filters:
+	
+	<% params[:var_filters].each do |facet|
+	  facet.each do |name, value| %>
+		<%= name %> = <%= value %>
+		<% unless facet == params[:var_filters].last %>, <% end %>
+		<% end %>
+	<% end %>
+
 
 	<nav class="studynav">
 	  <ul>

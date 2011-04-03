@@ -25,7 +25,7 @@
 				<h3><%= facet.name %></h3>
 	       <ul>
 		    <% facet.rows.each do |row| %>
-		      <li> <%= link_to row.value, search_path(:term => @term, :filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
+		      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => Archive.ada.id, :var_filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
 		    <% end %>
 			<% end %>
 	      </ul>
