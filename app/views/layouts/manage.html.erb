@@ -16,22 +16,10 @@
     <div class="login">
       Name: <%= link_to current_user.email, staff_user_path(current_user) %> <br/>
       Role: <%= current_user.roles.first.name %> <br/>
-      <%= link_to('Sign Out', logout_path) %>  
+						<%= link_to(image_tag("structure/bttn_logout.png"), logout_path) %>
     </div>
-    <div class="masthead">
-      <a href="/staff/home">Australian Data Archive</a>
-    </div>
+    <div class="admin_masthead"><a href="/staff/home">Australian Data Archive</a></div>
   </header>
-
-  <nav class="mainnav clearfix">
-    <div class="searchContainer">
-      <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
-        <label for="menusearch"></label>
-        <input name="textfield" type="text" id="menusearch" value="Search this site"/>
-        <input type="image" alt="Go" name="imageField" id="search_button" src="/images/structure/bttn_go.png"/>
-      </form>
-    </div>
-  </nav>
 
   <nav class="subnav"> </nav>
         
