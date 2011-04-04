@@ -1,5 +1,11 @@
 .concealed {display: none;}
 
+#search-results li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;	
+}
+
 #search-results-table{
   width: 100%;
 }
