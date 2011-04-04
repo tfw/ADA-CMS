@@ -9,13 +9,17 @@
 <% content_for :js do %>
 
   $("#studies-link").click(function() {
-    $('#study-results').toggle();
-    $('#study-facets').toggle();
+    $('#study-results').show();
+    $('#study-facets').show();
+    $('#variable-results').hide();
+    $('#variable-facets').hide();
   });
 
   $("#variables-link").click(function() {
-    $('#variable-results').toggle();
-    $('#variable-facets').toggle();
+    $('#variable-results').show();
+    $('#variable-facets').show();
+    $('#study-results').hide();
+    $('#study-facets').hide();
   });
 
 <% end %>
@@ -23,24 +27,28 @@
 <article>
 
 	Term: <%= params[:term] %> <p/>
+	
+	<% if params[:filters].any? %>
 	Filters:
 	
-	<% params[:filters].each do |facet|
-	  facet.each do |name, value| %>
-		<%= Study::FACETS[name.to_sym] %> = <%= value %>
-		<% unless facet == params[:filters].last %>, <% end %>
+		<% params[:filters].each do |facet|
+		  facet.each do |name, value| %>
+			<%= Study::FACETS[name.to_sym] %> = <%= value %>
+			<% unless facet == params[:filters].last %>, <% end %>
+			<% end %>
 		<% end %>
 	<% end %>
-
-	Variable Filters:
 	
-	<% params[:var_filters].each do |facet|
-	  facet.each do |name, value| %>
-		<%= name %> = <%= value %>
-		<% unless facet == params[:var_filters].last %>, <% end %>
+	<% if params[:var_filters].any? %>
+		Variable Filters:
+	
+		<% params[:var_filters].each do |facet|
+		  facet.each do |name, value| %>
+			<%= name %> = <%= value %>
+			<% unless facet == params[:var_filters].last %>, <% end %>
+			<% end %>
 		<% end %>
 	<% end %>
-
 
 	<nav class="studynav">
 	  <ul>
