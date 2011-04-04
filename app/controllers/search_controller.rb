@@ -50,17 +50,17 @@ class SearchController < ContentController
         end
       end
       
-      facet :data_kind
-      facet :sampling_abbr
-      facet :collection_mode_abbr
-      facet :contact_affiliation
-      facet :collection_mode_abbr
-      facet :geographical_cover
-      facet :geographical_unit
-      facet :analytic_unit
-      facet :creation_date
-      facet :series_name
-      facet :study_auth_entity
+      facet :data_kind, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :sampling_abbr, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :collection_mode_abbr, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :contact_affiliation, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :collection_mode_abbr, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :geographical_cover, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :geographical_unit, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :analytic_unit, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :creation_date, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :series_name, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :study_auth_entity, :sort => :count, :limit => 7, :minimum_count => 2
     end    
   end
 
@@ -76,7 +76,7 @@ class SearchController < ContentController
         end
       end
       
-      facet :name
+      facet :name, :sort => :count, :limit => 7, :minimum_count => 2
     end    
   end
 end
