@@ -139,7 +139,7 @@ module Nesstar
         
           if http_headers.first =~ /500/
             workitem.fields['fetch_errors'] << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
-            Inkling::Log.create!(:category => "study", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
+            Inkling::Log.create!(:category => "integration", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
             next
           end
         
@@ -208,7 +208,7 @@ module Nesstar
           end
           
           if related_materials_list.nil?
-             Inkling::Log.create!(:category => "study", :text => "Empty document: #{$related_xml_dir}#{file_name}")
+             Inkling::Log.create!(:category => "integration", :text => "Empty document: #{$related_xml_dir}#{file_name}")
              next
           end
                     
@@ -245,7 +245,7 @@ module Nesstar
       engine.register_participant 'log_run' do |workitem|
         workitem.fields['downloads'] ||= {}
         workitem.fields['fetch_errors'] ||= {}        
-        Inkling::Log.create!(:category => "study", :text =>  "Downloaded #{workitem.fields['downloads'].size} studies. Encountered #{workitem.fields['fetch_errors'].size} errors. There are now #{Study.all.size} studies in ADA.")        
+        Inkling::Log.create!(:category => "integration", :text =>  "Downloaded #{workitem.fields['downloads'].size} studies. Encountered #{workitem.fields['fetch_errors'].size} errors. There are now #{Study.all.size} studies in ADA.")        
       end
     end
   end
