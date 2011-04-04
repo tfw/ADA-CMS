@@ -5,7 +5,7 @@
 	        <li> <%= archive.name %> </li>
 	      <% for facet in search.facets %>
 					<% if facet.rows.any? %>
-						<h3><%= Study::FACETS[facet.name] %></h3>
+						<h3><%= Study::FACETS[facet.name.to_sym] %></h3>
 		        <ul>
 				    <% facet.rows.each do |row| %>
 				      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>

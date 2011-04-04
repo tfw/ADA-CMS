@@ -12,16 +12,16 @@ class Study < ActiveRecord::Base
   validates :label, :presence => true
   
   #facet constants
-  FACETS = {:data_kind => (DdiMapping.find_by_ddi('dataKind')                         || "Data Kind"),
-          :sampling_abbr => (DdiMapping.find_by_ddi('sampling')                       || "Sampling"),
-          :collection_mode_abbr => (DdiMapping.find_by_ddi('collMode')                || "Collection Mode"),
-          :contact_affiliation =>  (DdiMapping.find_by_ddi('stdyContactAffiliation')  ||"Contact Affiliation"),          
-          :geographical_cover =>  (DdiMapping.find_by_ddi('geographicalCover')        || "Geographical Cover"),
-          :geographical_unit =>  (DdiMapping.find_by_ddi('geographicalUnit')          || "Geographical Unit"),
-          :analytic_unit =>  (DdiMapping.find_by_ddi('analyticUnit')                  || "Analytic Unit"),
-          :creation_date =>  (DdiMapping.find_by_ddi('creationDate')                  || "Creation Date"),
-          :series_name =>  (DdiMapping.find_by_ddi('seriesName')                      || "Series Name"),
-          :study_auth_entity =>  (DdiMapping.find_by_ddi('stdyAuthEntity')            || "Study Author")
+  FACETS = {:data_kind => (DdiMapping.find_by_ddi('dataKind').val                         || "Data Kind"),
+          :sampling_abbr => (DdiMapping.find_by_ddi('sampling').val                       || "Sampling"),
+          :collection_mode_abbr => (DdiMapping.find_by_ddi('collMode')                    || "Collection Mode"),
+          :contact_affiliation =>  (DdiMapping.find_by_ddi('stdyContactAffiliation').val  ||"Contact Affiliation"),          
+          :geographical_cover =>  (DdiMapping.find_by_ddi('geographicalCover').val        || "Geographical Cover"),
+          :geographical_unit =>  (DdiMapping.find_by_ddi('geographicalUnit').val          || "Geographical Unit"),
+          :analytic_unit =>  (DdiMapping.find_by_ddi('analyticUnit').val                  || "Analytic Unit"),
+          :creation_date =>  (DdiMapping.find_by_ddi('creationDate').val                  || "Creation Date"),
+          :series_name =>  (DdiMapping.find_by_ddi('seriesName').val                      || "Series Name"),
+          :study_auth_entity =>  (DdiMapping.find_by_ddi('stdyAuthEntity').val            || "Study Author")
         }
         
   #solr config

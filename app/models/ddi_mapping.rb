@@ -1,7 +1,7 @@
 class DdiMapping < ActiveRecord::Base
 
   validates_uniqueness_of :ddi 
-
+  
   def self.batch_create(local_data)
     local_data.each do |k,v|
       if DdiMapping.find_by_ddi(k.to_s).nil?
@@ -26,6 +26,10 @@ class DdiMapping < ActiveRecord::Base
   end
   
   def to_s
+    human_readable
+  end
+  
+  def val
     human_readable
   end
 end
