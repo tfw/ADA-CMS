@@ -16,6 +16,6 @@ class ArchiveStudy < ActiveRecord::Base
   #this method creates the slug to store on the Inkling::Path (see Inkling::Path) 
   def generate_path_slug
     slug = "/#{archive.slug}/"
-    slug += sluggerize(study.title)
+    slug += sluggerize(study.ddi_id)
   end
 end

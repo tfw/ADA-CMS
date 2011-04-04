@@ -9,7 +9,9 @@ class Study < ActiveRecord::Base
   has_many :archives, :through => :archive_studies
   has_many :variables
   
-  validates :label, :presence => true
+  validates_presence_of :label
+  validates_presence_of :ddi_id
+  validates_uniqueness_of :ddi_id
   
   #facet constants
   FACETS = {:data_kind => (DdiMapping.find_by_ddi('dataKind').val                         || "Data Kind"),
@@ -203,10 +205,6 @@ class Study < ActiveRecord::Base
   def field(key)
     field = study_fields.find_by_key(key)
     field.value if field
-  end
-  
-  def ddi_id
-    about.split(".").last
   end
   
   #returns the archive_study matching the archive
