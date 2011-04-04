@@ -3,7 +3,7 @@ module Staff::ActivityLogsHelper
   def log_icon(category)
     case category
     when "integration"
-      image_tag('icons/server.png')
+      image_tag('icons/server_connect.png')
     when "page"
       image_tag('icons/page.png')
     when "study"
