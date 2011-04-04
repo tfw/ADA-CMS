@@ -4,6 +4,8 @@ module Staff::ActivityLogsHelper
     case category
     when "integration"
       image_tag('icons/server.png')
+    when "page"
+      image_tag('icons/page.png')
     when "study"
       image_tag('icons/book_open.png')
     when "users"
