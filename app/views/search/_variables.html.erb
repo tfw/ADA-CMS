@@ -18,6 +18,13 @@
 
 						<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
 						<%= highlight_excerpt(hit.highlight(:question_text)) %> <br/>
+						
+						<br/>
+						
+						<% for archive_study in variable.study.archive_studies %>
+             <% next if archive_study.archive == Archive.ada %>
+             <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
+           <% end %>
         </td>
       </tr>
     <% end %>
