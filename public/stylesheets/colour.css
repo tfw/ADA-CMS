@@ -29,13 +29,22 @@
 	height: 180px;
 }
 
+#default .admin_masthead {
+	background: url(../images/content/Logo_main_admin.png) no-repeat 0px 0px;
+	height: 180px;
+}
+
 #default .subnav ul li p {
 	color: #1F5E2F;
 }
 /*Social Science highlight colour*/
 
 #social_science .masthead {
-	background: url(../images/content/Logo_science.png) no-repeat 0px 0px;
+	background: url(../images/content/Logo_science_admin.png) no-repeat 0px 0px;
+	height: 180px;
+}
+#social_science .admin_masthead {
+	background: url(../images/content/Logo_science_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
 
@@ -75,6 +84,10 @@
 	background: url(../images/content/Logo_qualitative.png) no-repeat 0px 0px;
 	height: 180px;
 }
+#qualitative .admin_masthead {
+	background: url(../images/content/Logo_qualitative_admin.png) no-repeat 0px 0px;
+	height: 180px;
+}
 
 #qualitative .mainnav.clearfix ul .current {
 	background: #009cda;
@@ -112,6 +125,10 @@
 	background: url(../images/content/Logo_Longitudinal.png) no-repeat 0px 0px;
 	height: 180px;
 }
+#longitudinal .admin_masthead {
+	background: url(../images/content/Logo_Longitudinal_admin.png) no-repeat 0px 0px;
+	height: 180px;
+}
 
 #longitudinal .mainnav.clearfix ul .current {
 	background: #0d8682;
@@ -147,6 +164,10 @@
 
 #indigenous .masthead {
 	background: url(../images/content/Logo_indigenous.png) no-repeat 0px 0px;
+	height: 180px;
+}
+#indigenous .admin_masthead {
+	background: url(../images/content/Logo_indigenous_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
 
@@ -187,6 +208,10 @@
 	background: url(../images/content/Logo_historical.png) no-repeat 0px 0px;
 	height: 180px;
 }
+#historical .admin_masthead {
+	background: url(../images/content/Logo_historical_admin.png) no-repeat 0px 0px;
+	height: 180px;
+}
 
 #historical .mainnav.clearfix ul .current {
 	background: #c5b37c;
@@ -223,6 +248,10 @@
 
 #international .masthead {
 	background: url(../images/content/Logo_international.png) no-repeat 0px 0px;
+	height: 180px;
+}
+#international .admin_masthead  {
+	background: url(../images/content/Logo_international_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
 

@@ -6,8 +6,7 @@
 		<!-- Include this BEFORE the body to ensure older browsers can read new html5 elements -->
     <%= stylesheet_link_tag "import" %>
     <%= csrf_meta_tag %>
-		<%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'theme', 
-		'jquery.clearableTextField.min', 'application' %>	
+		<%= javascript_include_tag 'modernizr-1.5.min' %>	
 			
 	</head
 			
@@ -24,8 +23,7 @@
             <input name="remember_me" id="remember_me" type="checkbox" value=""><label>remember me</label>
 					<% end %>
 				<% else %>
-						<%= link_to('Sign Out', logout_path) %>
-            <input type="image" alt="log out" name="imageField" id="logout_button" src="images/structure/bttn_logout.png"/>
+						<%= link_to(image_tag("structure/bttn_logout.png"), logout_path) %>
 				<% end %>
 			</div>
 			<div class="masthead"><a href="/ada/home">Australian Data Archive</a></div>
@@ -116,6 +114,8 @@
     </footer>
     </body>
     
+		<%= javascript_include_tag 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application' %>	
+
     <script type="text/javascript">
       $(document).ready(function(){
       <%= yield :js %>

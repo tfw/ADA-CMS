@@ -2,7 +2,7 @@
 	background: #FFF;
 	border-style: none;
 	height: 42px;
-	width: 150px;
+	width: 112px;
 	clear: left;
 	-webkit-border-top-left-radius: 8px;
 	-moz-border-radius-topleft: 8px;
@@ -10,79 +10,57 @@
 	padding-right: 10px;
 	padding-left: 10px;
 }
-
-/*duplication of menusearch - better variable name for our rubies*/
-.formtastic #search_term {
-	background: #FFF;
-	border-style: none;
-	height: 42px;
-	width: 150px;
-	clear: left;
-	-webkit-border-top-left-radius: 8px;
-	-moz-border-radius-topleft: 8px;
-	border-top-left-radius: 8px;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
 .formtastic #search_button {
 	margin: 0px 0px -12px;
 	padding: 0px;
 }
 .formtastic #login_name {
 	border-style: none;
-	height: 23px;
 	width: 100px;
 	padding-right: 5px;
 	padding-left: 5px;
 	float: left;
 	margin-right: 5px;
+	height: 23px;
 }
 .formtastic #login_pass {
 	border-style: none;
-	height: 23px;
 	width: 100px;
 	padding-right: 5px;
 	padding-left: 5px;
 	float: left;
 	margin-right: 5px;
+	height: 23px;
 }
 .formtastic #enter_button {
 	margin: 0px;
 	padding: 0px;
 }
-
-form.formtastic fieldset {
-  overflow: visible;
-  padding-top: 1em;
+.formtastic #logout_button {
+	padding-bottom: 0px;
+	padding-left: 10px;
+	margin: 2px 0px 5px;
+	float: right;
+	border-left: 1px solid #999;
 }
-
-/* Add :html=>{:class=>'titled'} to semantic_form_for to use this: */
-form.formtastic.titled fieldset {
-  border: 1px solid #BABABA;
-  padding: 5px 5px 5px 10px;
+.formtastic #remember_me {
+	float: left;
+	margin-right: 4px;
+	display: block;
+	margin-top: 6px;
+	padding: 0px;
 }
-form.formtastic.titled legend {
-	font-size: 1.2em;
-	padding: 2px 5px;
+.formtastic label {
+	text-align: right;
+	float: left;
+	margin-top: 7px;
+	padding-right: 5px;
+	line-height: 1;
+	font-size: 11px;
 }
-
-form.formtastic ol li, form.formtastic ul li { list-style:none; }
-
-form.formtastic fieldset.buttons { margin-top: 2em; }
-
-form.formtastic fieldset.buttons ol li { 
-  clear: none;
-  width: auto;
-  float: left;
-  padding: 1em;
+.formtastic #register_button {
+	margin: 2px 10px 5px 0px;
+	float: right;
+	border-left: 1px solid #999;
+	padding: 0px 0px 0px 10px;
 }
-
-form.formtastic fieldset > ol > li {
-  overflow: visible;
-  clear: left;
-  margin-top: 1em;
-}
-
-/* Don't know why formtastic sets this width to 25%, but it messes up the archives checkboxes on news edit */
-form.formtastic fieldset > ol > li label { width:50%; }

@@ -34,10 +34,8 @@
 }
 .content nav ul li {
 	border-bottom: 1px solid #CCC;
-
-/* n.f. editing original swell */	
+/* editing swell original n.f.*/
 /*	list-style: url(none) none;*/
-	list-style: none;	
 	display: block;
 	padding: 0px;
 }
@@ -56,32 +54,29 @@
 	color: #000;
 	background: #E8E8E8 url(../images/structure/icon_hover.png) no-repeat 5px center;
 }
-
-/*#dashboard {
-  background: url(/images/placeholders/1_sml.png) no-repeat 5px center;
-}
-#ada {
-  background: url(/images/placeholders/4_sml.png) no-repeat 5px center;
-}
-*/
-#science {
-  background: url(/images/structure/icon_socialscience.png) no-repeat 5px center;
+#science        {
+	background: url(../images/structure/icon_socialscience.png) no-repeat 5px center;
 }
 #historical {
-	background: url(/images/structure/icon_historical.png) no-repeat 5px center;
+	background: url(../images/structure/icon_historical.png) no-repeat 5px center;
+	z-index: auto;
 }
 #indigenous {
-	background: url(/images/structure/icon_indigenous.png) no-repeat 5px center;
+	background: url(../images/structure/icon_indigenous.png) no-repeat 5px center;
+	z-index: auto;
 }
 #longitudinal {
-	background: url(/images/structure/icon_longitudinal.png) no-repeat 5px center;
+	background: url(../images/structure/icon_longitudinal.png) no-repeat 5px center;
+	z-index: auto;
 }
 #qualitative {
-	background: url(/images/structure/icon_qualitative.png) no-repeat 5px center;
+	background: url(../images/structure/icon_qualitative.png) no-repeat 5px center;
+	z-index: auto;
 }
 #international {
-  background: url(/images/structure/icon_international.png) no-repeat 5px center;
+	background: url(../images/structure/icon_international.png) no-repeat 5px center;
+	z-index: auto;
 }
 .archive_current {
-	background: #333 url(/images/structure/icon_current.png) no-repeat 5px center!important;
+	background: #333 url(../images/structure/icon_current.png) no-repeat 5px center!important;
 }
