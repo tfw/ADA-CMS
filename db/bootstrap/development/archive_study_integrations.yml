@@ -1,0 +1,251 @@
+--- 
+archive_study_integrations_001: 
+  id: "2"
+  study_id: "6"
+  archive_study_id: "1"
+  archive_study_query_id: "1"
+  ddi_id: 00943
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.574512
+  updated_at: 2011-04-05 03:58:16.68064
+archive_study_integrations_002: 
+  id: "1"
+  study_id: "1"
+  archive_study_id: "2"
+  archive_study_query_id: "1"
+  ddi_id: "01001"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.564784
+  updated_at: 2011-04-05 03:58:16.798721
+archive_study_integrations_003: 
+  id: "5"
+  study_id: "5"
+  archive_study_id: "3"
+  archive_study_query_id: "1"
+  ddi_id: 01052-c
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.591226
+  updated_at: 2011-04-05 03:58:17.266381
+archive_study_integrations_004: 
+  id: "4"
+  study_id: "4"
+  archive_study_id: "4"
+  archive_study_query_id: "1"
+  ddi_id: 01079-r
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.588092
+  updated_at: 2011-04-05 03:58:17.35523
+archive_study_integrations_005: 
+  id: "3"
+  study_id: "3"
+  archive_study_id: "5"
+  archive_study_query_id: "1"
+  ddi_id: 01079-s
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.584993
+  updated_at: 2011-04-05 03:58:17.356503
+archive_study_integrations_006: 
+  id: "24"
+  study_id: "7"
+  archive_study_id: "6"
+  archive_study_query_id: "2"
+  ddi_id: "40092"
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.351185
+  updated_at: 2011-04-05 03:58:17.860436
+archive_study_integrations_007: 
+  id: "8"
+  study_id: "12"
+  archive_study_id: "7"
+  archive_study_query_id: "1"
+  ddi_id: "00763"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.6114
+  updated_at: 2011-04-05 03:58:19.957603
+archive_study_integrations_008: 
+  id: "6"
+  study_id: "8"
+  archive_study_id: "8"
+  archive_study_query_id: "1"
+  ddi_id: 00813
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.594057
+  updated_at: 2011-04-05 03:58:20.046489
+archive_study_integrations_009: 
+  id: "7"
+  study_id: "10"
+  archive_study_id: "9"
+  archive_study_query_id: "1"
+  ddi_id: "01052"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.597043
+  updated_at: 2011-04-05 03:58:20.160824
+archive_study_integrations_010: 
+  id: "10"
+  study_id: "9"
+  archive_study_id: "10"
+  archive_study_query_id: "1"
+  ddi_id: "01120"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.620679
+  updated_at: 2011-04-05 03:58:20.213134
+archive_study_integrations_011: 
+  id: "9"
+  study_id: "11"
+  archive_study_id: "11"
+  archive_study_query_id: "1"
+  ddi_id: 01079
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.618145
+  updated_at: 2011-04-05 03:58:20.216964
+archive_study_integrations_012: 
+  id: "12"
+  study_id: "14"
+  archive_study_id: "12"
+  archive_study_query_id: "1"
+  ddi_id: "00445"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.629069
+  updated_at: 2011-04-05 03:58:21.867566
+archive_study_integrations_013: 
+  id: "11"
+  study_id: "13"
+  archive_study_id: "13"
+  archive_study_query_id: "1"
+  ddi_id: 01048
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.626051
+  updated_at: 2011-04-05 03:58:21.919721
+archive_study_integrations_014: 
+  id: "13"
+  study_id: "15"
+  archive_study_id: "14"
+  archive_study_query_id: "1"
+  ddi_id: "00570"
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.634935
+  updated_at: 2011-04-05 03:58:22.008216
+archive_study_integrations_015: 
+  id: "15"
+  study_id: "17"
+  archive_study_id: "15"
+  archive_study_query_id: "2"
+  ddi_id: 00368
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.302101
+  updated_at: 2011-04-05 03:58:22.04606
+archive_study_integrations_016: 
+  id: "14"
+  study_id: "16"
+  archive_study_id: "16"
+  archive_study_query_id: "1"
+  ddi_id: 01228
+  archive_id: "1"
+  user_id: "1"
+  created_at: 2011-04-05 03:56:31.637824
+  updated_at: 2011-04-05 03:58:22.087821
+archive_study_integrations_017: 
+  id: "17"
+  study_id: "19"
+  archive_study_id: "17"
+  archive_study_query_id: "2"
+  ddi_id: 00182
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.308478
+  updated_at: 2011-04-05 03:58:23.373527
+archive_study_integrations_018: 
+  id: "16"
+  study_id: "18"
+  archive_study_id: "18"
+  archive_study_query_id: "2"
+  ddi_id: "40098"
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.30528
+  updated_at: 2011-04-05 03:58:23.418843
+archive_study_integrations_019: 
+  id: "18"
+  study_id: "20"
+  archive_study_id: "19"
+  archive_study_query_id: "2"
+  ddi_id: 00369
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.311864
+  updated_at: 2011-04-05 03:58:28.857621
+archive_study_integrations_020: 
+  id: "19"
+  study_id: "21"
+  archive_study_id: "20"
+  archive_study_query_id: "2"
+  ddi_id: "00030"
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.329756
+  updated_at: 2011-04-05 03:58:28.991335
+archive_study_integrations_021: 
+  id: "20"
+  study_id: "22"
+  archive_study_id: "21"
+  archive_study_query_id: "2"
+  ddi_id: 00631-nt
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.334842
+  updated_at: 2011-04-05 03:58:29.021154
+archive_study_integrations_022: 
+  id: "21"
+  study_id: "23"
+  archive_study_id: "22"
+  archive_study_query_id: "2"
+  ddi_id: 00631-nat
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.338077
+  updated_at: 2011-04-05 03:58:29.021947
+archive_study_integrations_023: 
+  id: "22"
+  study_id: "24"
+  archive_study_id: "23"
+  archive_study_query_id: "2"
+  ddi_id: "40082"
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.343183
+  updated_at: 2011-04-05 03:58:29.285927
+archive_study_integrations_024: 
+  id: "23"
+  study_id: "25"
+  archive_study_id: "24"
+  archive_study_query_id: "2"
+  ddi_id: "40083"
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.346988
+  updated_at: 2011-04-05 03:58:32.075596
+archive_study_integrations_025: 
+  id: "25"
+  study_id: "26"
+  archive_study_id: "25"
+  archive_study_query_id: "2"
+  ddi_id: "40093"
+  archive_id: "3"
+  user_id: "2"
+  created_at: 2011-04-05 03:56:33.354287
+  updated_at: 2011-04-05 03:58:32.096237

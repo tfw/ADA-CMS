@@ -1,0 +1,301 @@
+--- 
+archive_studies_001: 
+  id: "1"
+  study_id: "6"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:16.874043
+  updated_at: 2011-04-05 03:58:16.874043
+archive_studies_002: 
+  id: "2"
+  study_id: "1"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:16.926216
+  updated_at: 2011-04-05 03:58:16.926216
+archive_studies_003: 
+  id: "3"
+  study_id: "5"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:17.286687
+  updated_at: 2011-04-05 03:58:17.286687
+archive_studies_004: 
+  id: "4"
+  study_id: "4"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:17.430669
+  updated_at: 2011-04-05 03:58:17.430669
+archive_studies_005: 
+  id: "5"
+  study_id: "3"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:17.432826
+  updated_at: 2011-04-05 03:58:17.432826
+archive_studies_006: 
+  id: "6"
+  study_id: "7"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:17.867026
+  updated_at: 2011-04-05 03:58:17.867026
+archive_studies_007: 
+  id: "7"
+  study_id: "12"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:19.980379
+  updated_at: 2011-04-05 03:58:19.980379
+archive_studies_008: 
+  id: "8"
+  study_id: "8"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:20.064434
+  updated_at: 2011-04-05 03:58:20.064434
+archive_studies_009: 
+  id: "9"
+  study_id: "10"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:20.172622
+  updated_at: 2011-04-05 03:58:20.172622
+archive_studies_010: 
+  id: "10"
+  study_id: "9"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:20.222746
+  updated_at: 2011-04-05 03:58:20.222746
+archive_studies_011: 
+  id: "11"
+  study_id: "11"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:20.227484
+  updated_at: 2011-04-05 03:58:20.227484
+archive_studies_012: 
+  id: "12"
+  study_id: "14"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:21.889298
+  updated_at: 2011-04-05 03:58:21.889298
+archive_studies_013: 
+  id: "13"
+  study_id: "13"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:21.944252
+  updated_at: 2011-04-05 03:58:21.944252
+archive_studies_014: 
+  id: "14"
+  study_id: "15"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:22.026822
+  updated_at: 2011-04-05 03:58:22.026822
+archive_studies_015: 
+  id: "15"
+  study_id: "17"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:22.057048
+  updated_at: 2011-04-05 03:58:22.057048
+archive_studies_016: 
+  id: "16"
+  study_id: "16"
+  archive_id: "1"
+  created_at: 2011-04-05 03:58:22.092724
+  updated_at: 2011-04-05 03:58:22.092724
+archive_studies_017: 
+  id: "17"
+  study_id: "19"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:23.383236
+  updated_at: 2011-04-05 03:58:23.383236
+archive_studies_018: 
+  id: "18"
+  study_id: "18"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:23.427825
+  updated_at: 2011-04-05 03:58:23.427825
+archive_studies_019: 
+  id: "19"
+  study_id: "20"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:28.877536
+  updated_at: 2011-04-05 03:58:28.877536
+archive_studies_020: 
+  id: "20"
+  study_id: "21"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:29.015596
+  updated_at: 2011-04-05 03:58:29.015596
+archive_studies_021: 
+  id: "21"
+  study_id: "22"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:29.0405
+  updated_at: 2011-04-05 03:58:29.0405
+archive_studies_022: 
+  id: "22"
+  study_id: "23"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:29.042419
+  updated_at: 2011-04-05 03:58:29.042419
+archive_studies_023: 
+  id: "23"
+  study_id: "24"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:29.29518
+  updated_at: 2011-04-05 03:58:29.29518
+archive_studies_024: 
+  id: "24"
+  study_id: "25"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:32.085541
+  updated_at: 2011-04-05 03:58:32.085541
+archive_studies_025: 
+  id: "25"
+  study_id: "26"
+  archive_id: "3"
+  created_at: 2011-04-05 03:58:32.104811
+  updated_at: 2011-04-05 03:58:32.104811
+archive_studies_026: 
+  id: "26"
+  study_id: "1"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.790221
+  updated_at: 2011-04-05 05:26:16.790221
+archive_studies_027: 
+  id: "27"
+  study_id: "3"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.895771
+  updated_at: 2011-04-05 05:26:16.895771
+archive_studies_028: 
+  id: "28"
+  study_id: "4"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.943283
+  updated_at: 2011-04-05 05:26:16.943283
+archive_studies_029: 
+  id: "29"
+  study_id: "5"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.954548
+  updated_at: 2011-04-05 05:26:16.954548
+archive_studies_030: 
+  id: "30"
+  study_id: "6"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.961294
+  updated_at: 2011-04-05 05:26:16.961294
+archive_studies_031: 
+  id: "31"
+  study_id: "7"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.970485
+  updated_at: 2011-04-05 05:26:16.970485
+archive_studies_032: 
+  id: "32"
+  study_id: "8"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.979513
+  updated_at: 2011-04-05 05:26:16.979513
+archive_studies_033: 
+  id: "33"
+  study_id: "9"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.986311
+  updated_at: 2011-04-05 05:26:16.986311
+archive_studies_034: 
+  id: "34"
+  study_id: "10"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:16.996277
+  updated_at: 2011-04-05 05:26:16.996277
+archive_studies_035: 
+  id: "35"
+  study_id: "11"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.002853
+  updated_at: 2011-04-05 05:26:17.002853
+archive_studies_036: 
+  id: "36"
+  study_id: "12"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.013163
+  updated_at: 2011-04-05 05:26:17.013163
+archive_studies_037: 
+  id: "37"
+  study_id: "13"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.021283
+  updated_at: 2011-04-05 05:26:17.021283
+archive_studies_038: 
+  id: "38"
+  study_id: "14"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.027737
+  updated_at: 2011-04-05 05:26:17.027737
+archive_studies_039: 
+  id: "39"
+  study_id: "25"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.036577
+  updated_at: 2011-04-05 05:26:17.036577
+archive_studies_040: 
+  id: "40"
+  study_id: "15"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.044884
+  updated_at: 2011-04-05 05:26:17.044884
+archive_studies_041: 
+  id: "41"
+  study_id: "16"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.054448
+  updated_at: 2011-04-05 05:26:17.054448
+archive_studies_042: 
+  id: "42"
+  study_id: "17"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.061214
+  updated_at: 2011-04-05 05:26:17.061214
+archive_studies_043: 
+  id: "43"
+  study_id: "18"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.10801
+  updated_at: 2011-04-05 05:26:17.10801
+archive_studies_044: 
+  id: "44"
+  study_id: "19"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.115509
+  updated_at: 2011-04-05 05:26:17.115509
+archive_studies_045: 
+  id: "45"
+  study_id: "26"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.13012
+  updated_at: 2011-04-05 05:26:17.13012
+archive_studies_046: 
+  id: "46"
+  study_id: "20"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.137415
+  updated_at: 2011-04-05 05:26:17.137415
+archive_studies_047: 
+  id: "47"
+  study_id: "21"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.144453
+  updated_at: 2011-04-05 05:26:17.144453
+archive_studies_048: 
+  id: "48"
+  study_id: "22"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.15303
+  updated_at: 2011-04-05 05:26:17.15303
+archive_studies_049: 
+  id: "49"
+  study_id: "23"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.161656
+  updated_at: 2011-04-05 05:26:17.161656
+archive_studies_050: 
+  id: "50"
+  study_id: "24"
+  archive_id: "7"
+  created_at: 2011-04-05 05:26:17.169782
+  updated_at: 2011-04-05 05:26:17.169782
