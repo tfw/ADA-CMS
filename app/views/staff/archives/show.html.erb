@@ -1,5 +1,5 @@
 <% content_for(:breadcrumbs) do %>
-	Archives: <%= @archive.name %>
+  Archives: <%= @archive.name %>
 <% end %>
 
 <%= render_archive_partial(@archive) %>
@@ -11,16 +11,22 @@
   </p>
 
   <ul class="sortable">
-  	<%= render(:partial => "page", :collection => @parent_pages) %>
+    <%= render(:partial => "page", :collection => @parent_pages) %>
   </ul>
 </fieldset>
 
 <% content_for :js do %>
-	$( ".sortable" ).sortable({
-		update: function(event, ui){
-			var moved = $(ui.item).attr("id");
-			var page_order = $(this).sortable('toArray').toString();
-		  $.post("/staff/archives/update_page_order?archive_id=<%= @archive %>", {page_order: page_order, moved: moved});
-		}
-	});
+  var top_item = $('.sortable > li')[0].id;
+  $( ".sortable" ).sortable({
+    update: function(event, ui){
+      var moved = $(ui.item).attr("id");
+      var page_order = $(this).sortable('toArray').toString();
+      var re = new RegExp(","+top_item);
+      if (re.test(page_order)) {
+	$(this).sortable('cancel');
+	alert("Please don't move the home page from the first position!");
+      } else
+	$.post("/staff/archives/update_page_order?archive_id=<%= @archive %>", {page_order: page_order, moved: moved});
+    }
+  });
 <% end %>

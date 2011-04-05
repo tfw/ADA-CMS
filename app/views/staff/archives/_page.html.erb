@@ -1,15 +1,15 @@
 <li id="page-options-<%= page.id %>">
   <span><%= page.title %></span>  </a>
 
-		<%= link_to 'Public View', page.path.slug %>, 
-		<%= link_to 'Edit', edit_staff_archive_page_path(page.archive, page) %>,  
-		<%= link_to 'Delete', staff_archive_page_path(page.archive, page), :method => :delete %> 
+    <%= link_to 'Public View', page.path.slug %>, 
+    <%= link_to 'Edit', edit_staff_archive_page_path(page.archive, page) %>,  
+    <%= link_to 'Delete', staff_archive_page_path(page.archive, page), :method => :delete %> 
 
-	  <% if page.children %>
-		    <ul class="sortable">
-		      <%= render(:partial => "page", :collection => page.children) %> 
-		    </ul>
-	  <% end %>
+    <% if page.children %>
+      <ul class="sortable">
+	<%= render(:partial => "page", :collection => page.children) %> 
+      </ul>
+    <% end %>
 </li>
 
 
