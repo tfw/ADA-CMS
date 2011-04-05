@@ -34,3 +34,21 @@
   <%- end -%>
 
 <%- end %>
+
+<div id="preview"></div>
+
+<% content_for :js do %>
+  // .:| Page Preview |:. //
+  $("#preview-link").click(function(event){
+    var title         = $("#news_title").val();
+    var body           = CKEDITOR.instances.news_body_editor.getData();    
+    var archives      = $.map($('#news_archives_input ol li input'), function(i) { if (i.checked) return i.value; else return null; });
+    $.post(
+	'<%= staff_news_preview_path(resource.id||0) %>', {news: {title: title, body: body, archives: archives}},
+        function update_preview_pane(html){
+          $("#preview").html(html);
+        }
+      );
+    event.preventDefault();
+  });
+<% end %>

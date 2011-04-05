@@ -1,7 +1,7 @@
 <div class="news">
   <h2><%= @news.title %></h2>
   <%= raw(@news.body) %>
-  <p>(In archive<%= @news.archives.size > 1 ? 's' : ''%> <%= @news.archives.map(&:name) * ',' %>)
+  <p>(In archive<%= @assigned_archives.size > 1 ? 's' : ''%> <%= @assigned_archives.map(&:name) * ',' %>)
   </p>
   <!-- tag cloud -->
   <%= link_to 'Edit', edit_staff_news_path(@news) %>

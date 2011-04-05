@@ -1,8 +1,8 @@
 
 class Staff::Archives::PagesController < Staff::Archives::BaseController
   include Inkling::Util::Slugs
-  
-  inherit_resources                                                                                     
+
+  inherit_resources
   defaults :resource_class => Page, :instance_name => 'page'
   before_filter :get_archive
   before_filter :get_archives, :except => [:destroy, :update_tree]
@@ -15,32 +15,32 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
     @page.partial = "/pages/default_page"
     end
   end
-  
+
   def create
-    create! do |format| 
+    create! do |format|
       format.html {
         if @page.archive
-          redirect_to staff_archive_path(@page.archive) 
-        end        
-        } 
+          redirect_to staff_archive_path(@page.archive)
+        end
+        }
     end
   end
 
   def update
-    update! do |format|   
+    update! do |format|
       format.html {
         if @page.archive
-          redirect_to staff_archive_path(@page.archive) 
+          redirect_to staff_archive_path(@page.archive)
         end
-      } 
+      }
     end
   end
-  
+
   def destroy
     archive = Page.find(params[:id]).archive
-    destroy! do |format|   
-      format.html { 
-        redirect_to staff_archive_path(archive) 
+    destroy! do |format|
+      format.html {
+        redirect_to staff_archive_path(archive)
         }
     end
   end
@@ -52,10 +52,10 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
     child_id      = params[:child]
     new_parent    = Page.find(new_parent_id)
     child         = Page.find(child_id)
-    
+
     child.parent_id = new_parent.id
-    
-    child.save! 
+
+    child.save!
     render :nothing => true
     return
   end
@@ -63,38 +63,38 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   def sluggerize_path
     parent_page = Page.find(params[:parent]) unless params[:parent].empty?
     slug = sluggerize(params[:title])
-    
-    if parent_page 
+
+    if parent_page
       debugger
-      slug = "#{parent_page.path.slug}/#{slug}" 
-    elsif @archive 
-      slug = "/#{@archive.slug}/#{slug}" 
+      slug = "#{parent_page.path.slug}/#{slug}"
+    elsif @archive
+      slug = "/#{@archive.slug}/#{slug}"
     end
-    
-    json_hash = {:success => true, :data => slug}        
+
+    json_hash = {:success => true, :data => slug}
     render :json => json_hash
   end
-  
+
   def preview
     @page = Page.new(params[:page])
     @page.archive = @archive
-  	html = render(:partial => @page.partial, :object => @page)
-  	html
+    html = render(:partial => @page.partial, :object => @page)
+    html
   end
-  
+
   private
   def get_archives
     @archives = Archive.all(:order => "name asc")
   end
-  
+
   def get_pages
     @pages = Page.archive_root_pages(@archive)
-    
+
     parent_pages = @pages.dup
     for parent_page in @pages
       @pages += parent_page.children
     end
-    
+
     if params[:id]
       @pages.delete(Page.find(params[:id]))
     end
