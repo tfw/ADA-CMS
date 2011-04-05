@@ -26,6 +26,14 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
     end
   end
 
+  def browse      # browse_staff_documents_path
+    # Render a browser for CKEditor
+    @documents = Document.all
+    @pages = @archive.pages
+    @archive_studies = @archive.archive_studies
+    render :layout => "browser"
+  end
+
   def update
     update! do |format|
       format.html {

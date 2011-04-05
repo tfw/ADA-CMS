@@ -55,7 +55,7 @@
 
     <h3>Body</h3>
     <%= form.inputs do %>
-      <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px' %>
+      <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px', :ckeditor_options => {:filebrowserBrowseUrl => browse_staff_archive_pages_path} %>
     <% end %>
 
     <% if resource.breakout_box.blank? %>
@@ -95,6 +95,7 @@ CKEDITOR.on( 'dialogDefinition', function( ev )
 		{
 			// FCKConfig.LinkDlgHideAdvanced = true
 			dialogDefinition.removeContents( 'advanced' );
+			dialogDefinition.removeContents( 'Upload' );
  
 			// FCKConfig.LinkDlgHideTarget = true
 			dialogDefinition.removeContents( 'target' );

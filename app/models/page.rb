@@ -53,6 +53,13 @@ class Page < ActiveRecord::Base
   def default_partial
     self.partial = "/pages/default_page"
   end
+
+  # accessor methods expected by the ckeditor browse views (can refactor, we have our own copies)
+  def url_content
+    self.path.slug
+  end
+
+  def format_created_at
+    self.created_at
+  end
 end
-
-

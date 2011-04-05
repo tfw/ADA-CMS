@@ -14,7 +14,7 @@ gem "devise", ">= 1.1.3"
 gem 'inherited_resources'
 gem 'cancan'
 gem 'formtastic', '>= 1.1.0'
-gem 'ckeditor' , :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+gem 'ckeditor' , :git => 'git://github.com/cjheath/rails-ckeditor.git', :branch => 'rails3'
 gem 'ruote', '2.1.11'
 gem 'yajl-ruby'
 gem 'yaml_db'

@@ -22,7 +22,11 @@ Ada::Application.routes.draw do
     post 'archives/update_page_order'
 
     resources :archives, :only => :show do
-      resources :pages, :except => :index, :controller => "archives/pages"
+      resources :pages, :except => :index, :controller => "archives/pages" do
+        collection do
+          get 'browse'
+        end
+      end
       match '/integrations' => "archives/integrations#index"
       resources :archive_study_integrations, :except => [:index, :show], :controller => "archives/archive_study_integrations"
       resources :archive_study_blocks, :except => [:index, :show], :controller => "archives/archive_study_blocks"

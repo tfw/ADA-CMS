@@ -18,4 +18,13 @@ class ArchiveStudy < ActiveRecord::Base
     slug = "/#{archive.slug}/"
     slug += sluggerize(study.title)
   end
+
+  # accessor methods expected by app/views/ckeditor/archive_study
+  def url_content
+    self.path.slug
+  end
+
+  def format_created_at
+    self.created_at
+  end
 end
