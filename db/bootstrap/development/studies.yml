@@ -176,6 +176,54 @@ studies_004:
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 01052-c
 studies_005: 
+  id: "20"
+  label: Northern Territory post election survey, 1983
+  resource: 
+  study3: 
+  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369
+  published: t
+  created_at: 2011-04-05 03:58:27.860354
+  updated_at: 2011-04-05 03:58:27.860354
+  universe: urban residents, aged 18 and over in Darwin, Katherine, Nhulunbuy and Alice Springs
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    This is a study of voters and voting behaviour of urban voters in the 1983 Northern Territory election. The survey was conducted immediately after the election. Some questions were designed to allow comparison with the results of the Northern Territory Urban Voters Survey, 1982 [SSDA Study No. 368].
+    
+    Topics include perceived problems to be dealt with by the Northern Territory Government; voting behaviour in the election just held and in previous territory and federal elections; attitudes towards territory and federal political parties and their policies, in particular their aboriginal policies; future federal voting intention; attitude towards social class structure and class mobility in the Northern Territory; economic development in the Northern Territory.
+    
+    Background variables include work status; occupation; employer status;
+    education level; age; religion; sex; period of residence in the Northern Territory and current town of residence.
+    
+    Data not available on Nesstar. Please contact archive staff at assda@anu.edu.au if you wish to access these data.
+  keywords: Aboriginal land rights;Elections;Northern Territory:;Politics and government;Political parties
+  page_id: 
+  data_kind: 
+  sampling_abbr: simple random sample
+  collection_mode_abbr: self-completion (mail out, mail back)
+  contact_affiliation: School of Social Sciences, Flinders University
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: Jaensch , D. Loveday, P.
+  comment: |-
+    This is a study of voters and voting behaviour of urban voters in the 1983 Northern Territory election. The survey was conducted immediately after the election. Some questions were designed to allow comparison with the results of the Northern Territory Urban Voters Survey, 1982 [SSDA Study No. 368].
+    
+    Topics include perceived problems to be dealt with by the Northern Territory Government; voting behaviour in the election just held and in previous territory and federal elections; attitudes towards territory and federal political parties and their policies, in particular their aboriginal policies; future federal voting intention; attitude towards social class structure and class mobility in the Northern Territory; economic development in the Northern Territory.
+    
+    Background variables include work status; occupation; employer status;
+    education level; age; religion; sex; period of residence in the Northern Territory and current town of residence.
+    
+    Data not available on Nesstar. Please contact archive staff at assda@anu.edu.au if you wish to access these data.
+  ddi_id: 00369
+studies_006: 
   id: "6"
   label: Australian Election Study, 1996
   resource: 
@@ -217,7 +265,7 @@ studies_005:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 00943
-studies_006: 
+studies_007: 
   id: "7"
   label: Australian Election Database - All States Lower House Data
   resource: 
@@ -449,7 +497,7 @@ studies_006:
     VIC House of Assembly  are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
     WA House of Assembly are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
   ddi_id: "40092"
-studies_007: 
+studies_008: 
   id: "8"
   label: New Zealand Election Study, 1993
   resource: 
@@ -487,7 +535,7 @@ studies_007:
     
     Background variables include age, sex, country of birth, place of residence, racial, religious and class identity, personal income, marital status, level of education, employment status, income, spouse's employment status and  income.
   ddi_id: 00813
-studies_008: 
+studies_009: 
   id: "9"
   label: Australian Election Study, 2007
   resource: 
@@ -529,7 +577,7 @@ studies_008:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: "01120"
-studies_009: 
+studies_010: 
   id: "10"
   label: Australian Election Study Online, 2001
   resource: 
@@ -571,7 +619,7 @@ studies_009:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: "01052"
-studies_010: 
+studies_011: 
   id: "11"
   label: Australian Election Study, 2004
   resource: 
@@ -613,7 +661,7 @@ studies_010:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 01079
-studies_011: 
+studies_012: 
   id: "12"
   label: Australian Election Study, 1993
   resource: 
@@ -655,7 +703,7 @@ studies_011:
     
     Background variables covered include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, year and place of birth, parents' birthplaces, parents' political preferences, father's occupation, length of residence in state or territory, religion, marital status, number of children, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: "00763"
-studies_012: 
+studies_013: 
   id: "13"
   label: Australian Election Study, 2001
   resource: 
@@ -697,7 +745,7 @@ studies_012:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 01048
-studies_013: 
+studies_014: 
   id: "14"
   label: Australian Election Study, 1987
   resource: 
@@ -739,7 +787,7 @@ studies_013:
     
     Background information included level of schooling; highest level of qualification; current activity; occupation; employment sector; supervision; union membership; self assessed social class; sex; age; length of current residence; country of birth of self  and parents; year arrived in Australia; father's occupation; parents' schooling and political preference; marital status; number of children; partner's schooling, occupation, employment sector, supervision, union membership and political preference; religion and attendance at religious services.
   ddi_id: "00445"
-studies_014: 
+studies_015: 
   id: "25"
   label: Australian Election Database  - Northern Territory Legislative Assembly Party Election Data
   resource: 
@@ -823,7 +871,7 @@ studies_014:
     
     Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.
   ddi_id: "40083"
-studies_015: 
+studies_016: 
   id: "15"
   label: Australian Election Study, 1990
   resource: 
@@ -865,7 +913,7 @@ studies_015:
     
     As in the 1987 AES, a range of questions are included in the survey which cover election issues and the respondent's assessment of the most effective party to handle them, as well as questions on specific political issues such as government spending and the pilots' dispute. A section on social policy includes questions on around 30 contemporary social and moral issues, including abortion, Aboriginal rights, pornography, health care and many others. A section on industrial policy focuses on attitudes towards the control of the economy, attitudes to trade unions and big business, and to industrial conflict in general. In addition to the standard questions on vote in the current election, recalled vote in the 1987 federal election, and party identification, the survey contains an extensive section dealing with attitudes to the major parties and to the party leaders. Finally, a range of demographic data are collected for each respondent and their spouse or partner, if applicable.
   ddi_id: "00570"
-studies_016: 
+studies_017: 
   id: "16"
   label: Australian Election Study, 2010
   resource: 
@@ -917,7 +965,7 @@ studies_016:
     
     This data file is also supplemented with division level election results from the Australian Electoral Commission election results website (http://results.aec.gov.au/15508/Website/). These variables are found under the variable group "AEC Election Results". Information on the source of these election results and the method by which they were created is available in a Stata *.do syntax file located in the other study materials section.
   ddi_id: 01228
-studies_017: 
+studies_018: 
   id: "17"
   label: Northern Territory urban voters survey, 1982
   resource: 
@@ -959,7 +1007,7 @@ studies_017:
     
     Background variables include age; sex; country of origin; state of origin; racial identification; marital status; occupation of self, spouse, parents and parents-in-law; duration of NT residence; union membership, club and association membership; level of education; religion.
   ddi_id: 00368
-studies_018: 
+studies_019: 
   id: "18"
   label: "Australian Election Database: House of Representatives - Northern Territory data"
   resource: 
@@ -991,7 +1039,7 @@ studies_018:
   study_auth_entity: Campbell Sharman
   comment: Summary details for each election year for the House of Representatives elections since 1901.  This data includes electoral system characteristics, seats in chamber, number of enrolled voters, ballots cast, rate of voter turnout and rate of informal voting for the Northern Territory.
   ddi_id: "40098"
-studies_019: 
+studies_020: 
   id: "19"
   label: Australian Gallup Polls, Survey 142, Febuary 5, 1960
   resource: 
@@ -1023,7 +1071,7 @@ studies_019:
   study_auth_entity: ","
   comment: Topics covered in this survey are extended shopping hours, means testing pensions, living costs, Northern Territory aboriginal drinking laws, book reading, the future government of Western New Guinea, Australian shares in overseas companies, church-going, Colombo Plan students, and western relations with Russia.  Standard variables are vehicle and telephone ownership, religion, occupation, economic classification, age, sex, vote intention, vote at last Federal election, and relationship of interviewee to interviewer.
   ddi_id: 00182
-studies_020: 
+studies_021: 
   id: "26"
   label: Australian Election Database - All States Lower House Data Party Data
   resource: 
@@ -1123,54 +1171,6 @@ studies_020:
     Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
     Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
   ddi_id: "40093"
-studies_021: 
-  id: "20"
-  label: Northern Territory post election survey, 1983
-  resource: 
-  study3: 
-  about: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369
-  published: t
-  created_at: 2011-04-05 03:58:27.860354
-  updated_at: 2011-04-05 03:58:27.860354
-  universe: urban residents, aged 18 and over in Darwin, Katherine, Nhulunbuy and Alice Springs
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    This is a study of voters and voting behaviour of urban voters in the 1983 Northern Territory election. The survey was conducted immediately after the election. Some questions were designed to allow comparison with the results of the Northern Territory Urban Voters Survey, 1982 [SSDA Study No. 368].
-    
-    Topics include perceived problems to be dealt with by the Northern Territory Government; voting behaviour in the election just held and in previous territory and federal elections; attitudes towards territory and federal political parties and their policies, in particular their aboriginal policies; future federal voting intention; attitude towards social class structure and class mobility in the Northern Territory; economic development in the Northern Territory.
-    
-    Background variables include work status; occupation; employer status;
-    education level; age; religion; sex; period of residence in the Northern Territory and current town of residence.
-    
-    Data not available on Nesstar. Please contact archive staff at assda@anu.edu.au if you wish to access these data.
-  keywords: Aboriginal land rights;Elections;Northern Territory:;Politics and government;Political parties
-  page_id: 
-  data_kind: 
-  sampling_abbr: simple random sample
-  collection_mode_abbr: self-completion (mail out, mail back)
-  contact_affiliation: School of Social Sciences, Flinders University
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: Jaensch , D. Loveday, P.
-  comment: |-
-    This is a study of voters and voting behaviour of urban voters in the 1983 Northern Territory election. The survey was conducted immediately after the election. Some questions were designed to allow comparison with the results of the Northern Territory Urban Voters Survey, 1982 [SSDA Study No. 368].
-    
-    Topics include perceived problems to be dealt with by the Northern Territory Government; voting behaviour in the election just held and in previous territory and federal elections; attitudes towards territory and federal political parties and their policies, in particular their aboriginal policies; future federal voting intention; attitude towards social class structure and class mobility in the Northern Territory; economic development in the Northern Territory.
-    
-    Background variables include work status; occupation; employer status;
-    education level; age; religion; sex; period of residence in the Northern Territory and current town of residence.
-    
-    Data not available on Nesstar. Please contact archive staff at assda@anu.edu.au if you wish to access these data.
-  ddi_id: 00369
 studies_022: 
   id: "21"
   label: Study of under-age drinking September/November, 1979
@@ -1333,7 +1333,7 @@ studies_025:
     electoral roll - The electoral roll is the list of voters who are registered to vote at an election. 
     
     compulsory preferences - a requirement that a voter must rank all candidates on the ballot paper under a system of preferential voting.
-     
+    
      contingent voting - This can be thought of as a form of preferential voting (AV) with compulsory or optional preferences which permits the voter to vote for one or two candidates, but no more than two, by indicating a first choice candidate and, if the voter wishes, a second choice candidate. If a candidate gains more than 50 percent of the first preference votes cast in an electoral district, he or she is declared elected. If there is no such candidate, the second preferences shown on the ballot papers of all but the two candidates with the most first preference votes are divided between the top two candidates. After this assignment, the candidate with the most votes is declared the winner.
     
     This system has been used in general elections for the Queensland Legislative Assembly from 1893 until 1941 (in single and multimember districts until 1909), and for the New South Wales Legislative Assembly in 1928. It was also used for the first direct election of the Mayor of London in 2000 where it was called supplementary voting.
@@ -1401,7 +1401,7 @@ studies_025:
     electoral roll - The electoral roll is the list of voters who are registered to vote at an election. 
     
     compulsory preferences - a requirement that a voter must rank all candidates on the ballot paper under a system of preferential voting.
-     
+    
      contingent voting - This can be thought of as a form of preferential voting (AV) with compulsory or optional preferences which permits the voter to vote for one or two candidates, but no more than two, by indicating a first choice candidate and, if the voter wishes, a second choice candidate. If a candidate gains more than 50 percent of the first preference votes cast in an electoral district, he or she is declared elected. If there is no such candidate, the second preferences shown on the ballot papers of all but the two candidates with the most first preference votes are divided between the top two candidates. After this assignment, the candidate with the most votes is declared the winner.
     
     This system has been used in general elections for the Queensland Legislative Assembly from 1893 until 1941 (in single and multimember districts until 1909), and for the New South Wales Legislative Assembly in 1928. It was also used for the first direct election of the Mayor of London in 2000 where it was called supplementary voting.

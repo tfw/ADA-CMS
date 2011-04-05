@@ -1224,7 +1224,7 @@ study_fields_166:
     electoral roll - The electoral roll is the list of voters who are registered to vote at an election. 
     
     compulsory preferences - a requirement that a voter must rank all candidates on the ballot paper under a system of preferential voting.
-     
+    
      contingent voting - This can be thought of as a form of preferential voting (AV) with compulsory or optional preferences which permits the voter to vote for one or two candidates, but no more than two, by indicating a first choice candidate and, if the voter wishes, a second choice candidate. If a candidate gains more than 50 percent of the first preference votes cast in an electoral district, he or she is declared elected. If there is no such candidate, the second preferences shown on the ballot papers of all but the two candidates with the most first preference votes are divided between the top two candidates. After this assignment, the candidate with the most votes is declared the winner.
     
     This system has been used in general elections for the Queensland Legislative Assembly from 1893 until 1941 (in single and multimember districts until 1909), and for the New South Wales Legislative Assembly in 1928. It was also used for the first direct election of the Mayor of London in 2000 where it was called supplementary voting.
@@ -3722,7 +3722,7 @@ study_fields_476:
         1/n = sum across States {(Nh/N)(Nh/N)(1/nh)}
     
     where 
-        
+    
         Nh = number of enrolments in the hth State/Territory
         N  = number of enrolments in Australia
         nh = number of responding electors from the State/Territory.
@@ -3798,7 +3798,7 @@ study_fields_482:
         1/n = sum across States {(Nh/N)(Nh/N)(1/nh)}
     
     where 
-        
+    
         Nh = number of enrolments in the hth State/Territory
         N  = number of enrolments in Australia
         nh = number of responding electors from the State/Territory.
@@ -4585,20 +4585,27 @@ study_fields_587:
   created_at: 2011-04-05 03:58:19.400819
   updated_at: 2011-04-05 03:58:19.400819
 study_fields_588: 
+  id: "458"
+  study_id: "12"
+  key: title
+  value: Australian Election Study, 1993
+  created_at: 2011-04-05 03:58:19.352041
+  updated_at: 2011-04-05 03:58:19.352041
+study_fields_589: 
   id: "476"
   study_id: "9"
   key: stdyVersionResponsibility
   value: Australian Social Science Data Archive
   created_at: 2011-04-05 03:58:19.611636
   updated_at: 2011-04-05 03:58:19.611636
-study_fields_589: 
+study_fields_590: 
   id: "481"
   study_id: "9"
   key: stdyContact
   value: Rachelle Graham Australian Social Science Data Archive 18 Balmain Crescent The Australian National University Acton  ACT  0200
   created_at: 2011-04-05 03:58:19.623875
   updated_at: 2011-04-05 03:58:19.623875
-study_fields_590: 
+study_fields_591: 
   id: "486"
   study_id: "9"
   key: abstractText
@@ -4610,196 +4617,196 @@ study_fields_590:
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   created_at: 2011-04-05 03:58:19.636247
   updated_at: 2011-04-05 03:58:19.636247
-study_fields_591: 
+study_fields_592: 
   id: "491"
   study_id: "9"
   key: collMode
   value: self-completion (mail out - mail back)
   created_at: 2011-04-05 03:58:19.651786
   updated_at: 2011-04-05 03:58:19.651786
-study_fields_592: 
+study_fields_593: 
   id: "496"
   study_id: "9"
   key: dataKind
   value: survey
   created_at: 2011-04-05 03:58:19.664926
   updated_at: 2011-04-05 03:58:19.664926
-study_fields_593: 
+study_fields_594: 
   id: "501"
   study_id: "9"
   key: distributionDate
   value: "2008-04-11"
   created_at: 2011-04-05 03:58:19.67647
   updated_at: 2011-04-05 03:58:19.67647
-study_fields_594: 
+study_fields_595: 
   id: "506"
   study_id: "9"
   key: geographicalCover
   value: National
   created_at: 2011-04-05 03:58:19.690328
   updated_at: 2011-04-05 03:58:19.690328
-study_fields_595: 
+study_fields_596: 
   id: "511"
   study_id: "9"
   key: geographicalUnit
   value: Federal Electoral Division
   created_at: 2011-04-05 03:58:19.702648
   updated_at: 2011-04-05 03:58:19.702648
-study_fields_596: 
+study_fields_597: 
   id: "516"
   study_id: "9"
   key: sampling
   value: Stratified systematic random sample. The sample of electors for all Australia was drawn from the Commonwealth Electoral Roll by the Australian Electoral Commission following the close of rolls for the 2007 election. The Commission supplied name and address information only, to be used only for this study.  The sample was selected to be proportional to the population on a state by state basis.
   created_at: 2011-04-05 03:58:19.713912
   updated_at: 2011-04-05 03:58:19.713912
-study_fields_597: 
+study_fields_598: 
   id: "521"
   study_id: "9"
   key: subcat
   value: Australian studies;Politics;Election and campaign studies
   created_at: 2011-04-05 03:58:19.727644
   updated_at: 2011-04-05 03:58:19.727644
-study_fields_598: 
+study_fields_599: 
   id: "526"
   study_id: "9"
   key: timeMeth
   value: Cross-sectional (one time) study - partial replication of a previous study
   created_at: 2011-04-05 03:58:19.739365
   updated_at: 2011-04-05 03:58:19.739365
-study_fields_599: 
+study_fields_600: 
   id: "531"
   study_id: "9"
   key: title
   value: Australian Election Study, 2007
   created_at: 2011-04-05 03:58:19.751397
   updated_at: 2011-04-05 03:58:19.751397
-study_fields_600: 
+study_fields_601: 
   id: "536"
   study_id: "9"
   key: files_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@files
   created_at: 2011-04-05 03:58:19.76605
   updated_at: 2011-04-05 03:58:19.76605
-study_fields_601: 
+study_fields_602: 
   id: "541"
   study_id: "9"
   key: files
   value: ""
   created_at: 2011-04-05 03:58:19.777908
   updated_at: 2011-04-05 03:58:19.777908
-study_fields_602: 
+study_fields_603: 
   id: "545"
   study_id: "9"
   key: cubes_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@cubes
   created_at: 2011-04-05 03:58:19.790794
   updated_at: 2011-04-05 03:58:19.790794
-study_fields_603: 
+study_fields_604: 
   id: "549"
   study_id: "9"
   key: cubes
   value: ""
   created_at: 2011-04-05 03:58:19.804715
   updated_at: 2011-04-05 03:58:19.804715
-study_fields_604: 
+study_fields_605: 
   id: "553"
   study_id: "9"
   key: factsheets_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@factsheets
   created_at: 2011-04-05 03:58:19.816445
   updated_at: 2011-04-05 03:58:19.816445
-study_fields_605: 
+study_fields_606: 
   id: "556"
   study_id: "9"
   key: factsheets
   value: ""
   created_at: 2011-04-05 03:58:19.827794
   updated_at: 2011-04-05 03:58:19.827794
-study_fields_606: 
+study_fields_607: 
   id: "559"
   study_id: "9"
   key: tables_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@tables
   created_at: 2011-04-05 03:58:19.888371
   updated_at: 2011-04-05 03:58:19.888371
-study_fields_607: 
+study_fields_608: 
   id: "562"
   study_id: "9"
   key: tables
   value: ""
   created_at: 2011-04-05 03:58:19.899911
   updated_at: 2011-04-05 03:58:19.899911
-study_fields_608: 
+study_fields_609: 
   id: "565"
   study_id: "9"
   key: variables_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@variables
   created_at: 2011-04-05 03:58:19.912052
   updated_at: 2011-04-05 03:58:19.912052
-study_fields_609: 
+study_fields_610: 
   id: "568"
   study_id: "9"
   key: variables
   value: ""
   created_at: 2011-04-05 03:58:19.92633
   updated_at: 2011-04-05 03:58:19.92633
-study_fields_610: 
+study_fields_611: 
   id: "571"
   study_id: "9"
   key: sections_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@sections
   created_at: 2011-04-05 03:58:19.93816
   updated_at: 2011-04-05 03:58:19.93816
-study_fields_611: 
+study_fields_612: 
   id: "574"
   study_id: "9"
   key: sections
   value: ""
   created_at: 2011-04-05 03:58:19.949814
   updated_at: 2011-04-05 03:58:19.949814
-study_fields_612: 
+study_fields_613: 
   id: "576"
   study_id: "9"
   key: relatedMaterials_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@relatedMaterials
   created_at: 2011-04-05 03:58:19.964787
   updated_at: 2011-04-05 03:58:19.964787
-study_fields_613: 
+study_fields_614: 
   id: "578"
   study_id: "9"
   key: relatedMaterials
   value: ""
   created_at: 2011-04-05 03:58:19.977686
   updated_at: 2011-04-05 03:58:19.977686
-study_fields_614: 
+study_fields_615: 
   id: "580"
   study_id: "9"
   key: studyDistributors_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.01120@studyDistributors
   created_at: 2011-04-05 03:58:19.991599
   updated_at: 2011-04-05 03:58:19.991599
-study_fields_615: 
+study_fields_616: 
   id: "582"
   study_id: "9"
   key: studyDistributors
   value: ""
   created_at: 2011-04-05 03:58:20.022136
   updated_at: 2011-04-05 03:58:20.022136
-study_fields_616: 
+study_fields_617: 
   id: "1200"
   study_id: "25"
   key: text
   value: "\n"
   created_at: 2011-04-05 03:58:31.045052
   updated_at: 2011-04-05 03:58:31.045052
-study_fields_617: 
+study_fields_618: 
   id: "1201"
   study_id: "25"
   key: complete
   value: "true"
   created_at: 2011-04-05 03:58:31.056427
   updated_at: 2011-04-05 03:58:31.056427
-study_fields_618: 
+study_fields_619: 
   id: "1202"
   study_id: "25"
   key: comment
@@ -4832,14 +4839,14 @@ study_fields_618:
     Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.
   created_at: 2011-04-05 03:58:31.064566
   updated_at: 2011-04-05 03:58:31.064566
-study_fields_619: 
+study_fields_620: 
   id: "1203"
   study_id: "25"
   key: creationDate
   value: 2010-05-12 12:18:33.0
   created_at: 2011-04-05 03:58:31.087795
   updated_at: 2011-04-05 03:58:31.087795
-study_fields_620: 
+study_fields_621: 
   id: "438"
   study_id: "12"
   key: abstractText
@@ -4851,14 +4858,14 @@ study_fields_620:
     Background variables covered include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, year and place of birth, parents' birthplaces, parents' political preferences, father's occupation, length of residence in state or territory, religion, marital status, number of children, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   created_at: 2011-04-05 03:58:19.284911
   updated_at: 2011-04-05 03:58:19.284911
-study_fields_621: 
+study_fields_622: 
   id: "443"
   study_id: "12"
   key: collMode
   value: self-completion (mail out, mail back)
   created_at: 2011-04-05 03:58:19.303504
   updated_at: 2011-04-05 03:58:19.303504
-study_fields_622: 
+study_fields_623: 
   id: "448"
   study_id: "12"
   key: sampling
@@ -4874,20 +4881,13 @@ study_fields_622:
     adequate numbers for separate State analyses as well as national analyses.
   created_at: 2011-04-05 03:58:19.320775
   updated_at: 2011-04-05 03:58:19.320775
-study_fields_623: 
+study_fields_624: 
   id: "453"
   study_id: "12"
   key: subcat
   value: Australian studies;Politics;Election and campaign studies
   created_at: 2011-04-05 03:58:19.337096
   updated_at: 2011-04-05 03:58:19.337096
-study_fields_624: 
-  id: "458"
-  study_id: "12"
-  key: title
-  value: Australian Election Study, 1993
-  created_at: 2011-04-05 03:58:19.352041
-  updated_at: 2011-04-05 03:58:19.352041
 study_fields_625: 
   id: "463"
   study_id: "12"
@@ -6827,6 +6827,48 @@ study_fields_892:
   created_at: 2011-04-05 03:58:21.086409
   updated_at: 2011-04-05 03:58:21.086409
 study_fields_893: 
+  id: "867"
+  study_id: "18"
+  key: stdyDepDate
+  value: "2010-05-19"
+  created_at: 2011-04-05 03:58:22.907962
+  updated_at: 2011-04-05 03:58:22.907962
+study_fields_894: 
+  id: "869"
+  study_id: "18"
+  key: stdyProdDate
+  value: "2010-05-26"
+  created_at: 2011-04-05 03:58:22.914688
+  updated_at: 2011-04-05 03:58:22.914688
+study_fields_895: 
+  id: "871"
+  study_id: "18"
+  key: analyticUnit
+  value: House of Representatives
+  created_at: 2011-04-05 03:58:22.923278
+  updated_at: 2011-04-05 03:58:22.923278
+study_fields_896: 
+  id: "873"
+  study_id: "18"
+  key: docBiblCit
+  value: Sharman, Campbell. Australian Election Data [Computer file]. Perth, W.A. Australian Social Science Data Archives. University of  Western Australia, 2010.
+  created_at: 2011-04-05 03:58:22.931524
+  updated_at: 2011-04-05 03:58:22.931524
+study_fields_897: 
+  id: "875"
+  study_id: "18"
+  key: docCopyright
+  value: "Copyright \xC2\xA9 2010, The Australian National University. All rights reserved."
+  created_at: 2011-04-05 03:58:22.942189
+  updated_at: 2011-04-05 03:58:22.942189
+study_fields_898: 
+  id: "877"
+  study_id: "18"
+  key: docProducer
+  value: Australian Social Science Data Archive
+  created_at: 2011-04-05 03:58:22.948141
+  updated_at: 2011-04-05 03:58:22.948141
+study_fields_899: 
   id: "647"
   study_id: "14"
   key: engWeight
@@ -6843,42 +6885,42 @@ study_fields_893:
     With regard to State, no weighting of the data is required."
   created_at: 2011-04-05 03:58:21.106455
   updated_at: 2011-04-05 03:58:21.106455
-study_fields_894: 
+study_fields_900: 
   id: "652"
   study_id: "14"
   key: keywords
   value: AIDS;economic policy;Elections;Social classes;Social problems;Social policy;Political parties;Politicians;Politics
   created_at: 2011-04-05 03:58:21.121981
   updated_at: 2011-04-05 03:58:21.121981
-study_fields_895: 
+study_fields_901: 
   id: "657"
   study_id: "14"
   key: stdyAuthEntity
   value: McAllister, Ian Mughan, Anthony
   created_at: 2011-04-05 03:58:21.137298
   updated_at: 2011-04-05 03:58:21.137298
-study_fields_896: 
+study_fields_902: 
   id: "662"
   study_id: "14"
   key: stdyCopyright
   value: Copyright (c)2003, The Australian National University. This publication may be copied in whole or in part by any copying or duplicating process, provided it is not sold except to recover duplicating costs.
   created_at: 2011-04-05 03:58:21.152033
   updated_at: 2011-04-05 03:58:21.152033
-study_fields_897: 
+study_fields_903: 
   id: "667"
   study_id: "14"
   key: stdyID
   value: au.edu.anu.assda.ddi.00445
   created_at: 2011-04-05 03:58:21.172954
   updated_at: 2011-04-05 03:58:21.172954
-study_fields_898: 
+study_fields_904: 
   id: "672"
   study_id: "14"
   key: stdyProducer
   value: Australian Social Science Data Archive
   created_at: 2011-04-05 03:58:21.1866
   updated_at: 2011-04-05 03:58:21.1866
-study_fields_899: 
+study_fields_905: 
   id: "677"
   study_id: "14"
   key: weight
@@ -6895,28 +6937,28 @@ study_fields_899:
     With regard to State, no weighting of the data is required."
   created_at: 2011-04-05 03:58:21.20592
   updated_at: 2011-04-05 03:58:21.20592
-study_fields_900: 
+study_fields_906: 
   id: "682"
   study_id: "14"
   key: stdyStatus
   value: Level 2
   created_at: 2011-04-05 03:58:21.220037
   updated_at: 2011-04-05 03:58:21.220037
-study_fields_901: 
+study_fields_907: 
   id: "687"
   study_id: "14"
   key: stdyProducerAbbr
   value: ASSDA
   created_at: 2011-04-05 03:58:21.235826
   updated_at: 2011-04-05 03:58:21.235826
-study_fields_902: 
+study_fields_908: 
   id: "692"
   study_id: "14"
   key: stdyVersionResponsibility
   value: Australian Social Science Data Archive
   created_at: 2011-04-05 03:58:21.25502
   updated_at: 2011-04-05 03:58:21.25502
-study_fields_903: 
+study_fields_909: 
   id: "697"
   study_id: "14"
   key: abstractText
@@ -6928,293 +6970,251 @@ study_fields_903:
     Background information included level of schooling; highest level of qualification; current activity; occupation; employment sector; supervision; union membership; self assessed social class; sex; age; length of current residence; country of birth of self  and parents; year arrived in Australia; father's occupation; parents' schooling and political preference; marital status; number of children; partner's schooling, occupation, employment sector, supervision, union membership and political preference; religion and attendance at religious services.
   created_at: 2011-04-05 03:58:21.270194
   updated_at: 2011-04-05 03:58:21.270194
-study_fields_904: 
+study_fields_910: 
   id: "702"
   study_id: "14"
   key: collMode
   value: self-completion (mail out, mail back)
   created_at: 2011-04-05 03:58:21.289019
   updated_at: 2011-04-05 03:58:21.289019
-study_fields_905: 
+study_fields_911: 
   id: "707"
   study_id: "14"
   key: dataKind
   value: survey,
   created_at: 2011-04-05 03:58:21.304338
   updated_at: 2011-04-05 03:58:21.304338
-study_fields_906: 
+study_fields_912: 
   id: "712"
   study_id: "14"
   key: sampling
   value: Systematic random sample. A systematic random sample of 2762 cases covering all States and Territories except South Australia was provided by the Australian Electoral Office from its computerised electoral roll. A supplementary sample of 299 cases was selected manually from the alphabetical list of electors in South Australia by microfiche.
   created_at: 2011-04-05 03:58:21.321244
   updated_at: 2011-04-05 03:58:21.321244
-study_fields_907: 
+study_fields_913: 
   id: "717"
   study_id: "14"
   key: subcat
   value: Australian studies;Politics;Election and campaign studies
   created_at: 2011-04-05 03:58:21.337669
   updated_at: 2011-04-05 03:58:21.337669
-study_fields_908: 
+study_fields_914: 
   id: "722"
   study_id: "14"
   key: timeMeth
   value: cross-sectional (one-time) study
   created_at: 2011-04-05 03:58:21.357546
   updated_at: 2011-04-05 03:58:21.357546
-study_fields_909: 
+study_fields_915: 
   id: "727"
   study_id: "14"
   key: title
   value: Australian Election Study, 1987
   created_at: 2011-04-05 03:58:21.371393
   updated_at: 2011-04-05 03:58:21.371393
-study_fields_910: 
+study_fields_916: 
   id: "732"
   study_id: "14"
   key: files_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@files
   created_at: 2011-04-05 03:58:21.387875
   updated_at: 2011-04-05 03:58:21.387875
-study_fields_911: 
+study_fields_917: 
   id: "737"
   study_id: "14"
   key: files
   value: ""
   created_at: 2011-04-05 03:58:21.404768
   updated_at: 2011-04-05 03:58:21.404768
-study_fields_912: 
+study_fields_918: 
   id: "742"
   study_id: "14"
   key: cubes_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@cubes
   created_at: 2011-04-05 03:58:21.421306
   updated_at: 2011-04-05 03:58:21.421306
-study_fields_913: 
+study_fields_919: 
   id: "747"
   study_id: "14"
   key: cubes
   value: ""
   created_at: 2011-04-05 03:58:21.438377
   updated_at: 2011-04-05 03:58:21.438377
-study_fields_914: 
+study_fields_920: 
   id: "752"
   study_id: "14"
   key: factsheets_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@factsheets
   created_at: 2011-04-05 03:58:21.454723
   updated_at: 2011-04-05 03:58:21.454723
-study_fields_915: 
+study_fields_921: 
   id: "757"
   study_id: "14"
   key: factsheets
   value: ""
   created_at: 2011-04-05 03:58:21.471482
   updated_at: 2011-04-05 03:58:21.471482
-study_fields_916: 
+study_fields_922: 
   id: "762"
   study_id: "14"
   key: tables_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@tables
   created_at: 2011-04-05 03:58:21.487155
   updated_at: 2011-04-05 03:58:21.487155
-study_fields_917: 
+study_fields_923: 
   id: "767"
   study_id: "14"
   key: tables
   value: ""
   created_at: 2011-04-05 03:58:21.504928
   updated_at: 2011-04-05 03:58:21.504928
-study_fields_918: 
+study_fields_924: 
   id: "772"
   study_id: "14"
   key: variables_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@variables
   created_at: 2011-04-05 03:58:21.523687
   updated_at: 2011-04-05 03:58:21.523687
-study_fields_919: 
+study_fields_925: 
   id: "777"
   study_id: "14"
   key: variables
   value: ""
   created_at: 2011-04-05 03:58:21.538192
   updated_at: 2011-04-05 03:58:21.538192
-study_fields_920: 
+study_fields_926: 
   id: "782"
   study_id: "14"
   key: sections_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@sections
   created_at: 2011-04-05 03:58:21.556926
   updated_at: 2011-04-05 03:58:21.556926
-study_fields_921: 
+study_fields_927: 
   id: "787"
   study_id: "14"
   key: sections
   value: ""
   created_at: 2011-04-05 03:58:21.57174
   updated_at: 2011-04-05 03:58:21.57174
-study_fields_922: 
+study_fields_928: 
   id: "792"
   study_id: "14"
   key: relatedMaterials_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@relatedMaterials
   created_at: 2011-04-05 03:58:21.588509
   updated_at: 2011-04-05 03:58:21.588509
-study_fields_923: 
+study_fields_929: 
   id: "797"
   study_id: "14"
   key: relatedMaterials
   value: ""
   created_at: 2011-04-05 03:58:21.607811
   updated_at: 2011-04-05 03:58:21.607811
-study_fields_924: 
+study_fields_930: 
   id: "802"
   study_id: "14"
   key: studyDistributors_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00445@studyDistributors
   created_at: 2011-04-05 03:58:21.621604
   updated_at: 2011-04-05 03:58:21.621604
-study_fields_925: 
+study_fields_931: 
   id: "807"
   study_id: "14"
   key: studyDistributors
   value: ""
   created_at: 2011-04-05 03:58:21.640782
   updated_at: 2011-04-05 03:58:21.640782
-study_fields_926: 
+study_fields_932: 
   id: "850"
   study_id: "18"
   key: text
   value: "\n"
   created_at: 2011-04-05 03:58:22.800463
   updated_at: 2011-04-05 03:58:22.800463
-study_fields_927: 
+study_fields_933: 
   id: "851"
   study_id: "18"
   key: complete
   value: "true"
   created_at: 2011-04-05 03:58:22.831328
   updated_at: 2011-04-05 03:58:22.831328
-study_fields_928: 
+study_fields_934: 
   id: "852"
   study_id: "19"
   key: text
   value: "\n"
   created_at: 2011-04-05 03:58:22.836445
   updated_at: 2011-04-05 03:58:22.836445
-study_fields_929: 
+study_fields_935: 
   id: "854"
   study_id: "19"
   key: complete
   value: "true"
   created_at: 2011-04-05 03:58:22.845828
   updated_at: 2011-04-05 03:58:22.845828
-study_fields_930: 
+study_fields_936: 
   id: "967"
   study_id: "24"
   key: text
   value: "\n"
   created_at: 2011-04-05 03:58:28.014965
   updated_at: 2011-04-05 03:58:28.014965
-study_fields_931: 
+study_fields_937: 
   id: "972"
   study_id: "24"
   key: complete
   value: "true"
   created_at: 2011-04-05 03:58:28.031744
   updated_at: 2011-04-05 03:58:28.031744
-study_fields_932: 
+study_fields_938: 
   id: "853"
   study_id: "18"
   key: comment
   value: Summary details for each election year for the House of Representatives elections since 1901.  This data includes electoral system characteristics, seats in chamber, number of enrolled voters, ballots cast, rate of voter turnout and rate of informal voting for the Northern Territory.
   created_at: 2011-04-05 03:58:22.842893
   updated_at: 2011-04-05 03:58:22.842893
-study_fields_933: 
+study_fields_939: 
   id: "855"
   study_id: "18"
   key: creationDate
   value: 2010-10-22 12:36:06.0
   created_at: 2011-04-05 03:58:22.857724
   updated_at: 2011-04-05 03:58:22.857724
-study_fields_934: 
+study_fields_940: 
   id: "857"
   study_id: "18"
   key: numCubes
   value: "0"
   created_at: 2011-04-05 03:58:22.864685
   updated_at: 2011-04-05 03:58:22.864685
-study_fields_935: 
+study_fields_941: 
   id: "859"
   study_id: "18"
   key: hasData
   value: "yes"
   created_at: 2011-04-05 03:58:22.873065
   updated_at: 2011-04-05 03:58:22.873065
-study_fields_936: 
+study_fields_942: 
   id: "861"
   study_id: "18"
   key: docProdDate
   value: "2010-05-26"
   created_at: 2011-04-05 03:58:22.882874
   updated_at: 2011-04-05 03:58:22.882874
-study_fields_937: 
+study_fields_943: 
   id: "863"
   study_id: "18"
   key: periodEnd
   value: "2007-12-31"
   created_at: 2011-04-05 03:58:22.889539
   updated_at: 2011-04-05 03:58:22.889539
-study_fields_938: 
+study_fields_944: 
   id: "865"
   study_id: "18"
   key: periodStart
   value: "1966-01-01"
   created_at: 2011-04-05 03:58:22.898131
   updated_at: 2011-04-05 03:58:22.898131
-study_fields_939: 
-  id: "867"
-  study_id: "18"
-  key: stdyDepDate
-  value: "2010-05-19"
-  created_at: 2011-04-05 03:58:22.907962
-  updated_at: 2011-04-05 03:58:22.907962
-study_fields_940: 
-  id: "869"
-  study_id: "18"
-  key: stdyProdDate
-  value: "2010-05-26"
-  created_at: 2011-04-05 03:58:22.914688
-  updated_at: 2011-04-05 03:58:22.914688
-study_fields_941: 
-  id: "871"
-  study_id: "18"
-  key: analyticUnit
-  value: House of Representatives
-  created_at: 2011-04-05 03:58:22.923278
-  updated_at: 2011-04-05 03:58:22.923278
-study_fields_942: 
-  id: "873"
-  study_id: "18"
-  key: docBiblCit
-  value: Sharman, Campbell. Australian Election Data [Computer file]. Perth, W.A. Australian Social Science Data Archives. University of  Western Australia, 2010.
-  created_at: 2011-04-05 03:58:22.931524
-  updated_at: 2011-04-05 03:58:22.931524
-study_fields_943: 
-  id: "875"
-  study_id: "18"
-  key: docCopyright
-  value: "Copyright \xC2\xA9 2010, The Australian National University. All rights reserved."
-  created_at: 2011-04-05 03:58:22.942189
-  updated_at: 2011-04-05 03:58:22.942189
-study_fields_944: 
-  id: "877"
-  study_id: "18"
-  key: docProducer
-  value: Australian Social Science Data Archive
-  created_at: 2011-04-05 03:58:22.948141
-  updated_at: 2011-04-05 03:58:22.948141
 study_fields_945: 
   id: "879"
   study_id: "18"
@@ -8018,6 +8018,65 @@ study_fields_1056:
   created_at: 2011-04-05 03:58:28.38784
   updated_at: 2011-04-05 03:58:28.38784
 study_fields_1057: 
+  id: "1080"
+  study_id: "21"
+  key: collMode
+  value: self-completion (group setting)
+  created_at: 2011-04-05 03:58:28.3916
+  updated_at: 2011-04-05 03:58:28.3916
+study_fields_1058: 
+  id: "1085"
+  study_id: "21"
+  key: dataKind
+  value: survey
+  created_at: 2011-04-05 03:58:28.408057
+  updated_at: 2011-04-05 03:58:28.408057
+study_fields_1059: 
+  id: "1090"
+  study_id: "21"
+  key: sampling
+  value: |-
+    no sampling (total universe)
+    
+    Questionnaires were sent to all schools, according to Department of Education estimates of school size.  Students were required to complete the questionnaires in school time.  School principals were responsible for the administration and return of the questionnaires.
+  created_at: 2011-04-05 03:58:28.466967
+  updated_at: 2011-04-05 03:58:28.466967
+study_fields_1060: 
+  id: "1095"
+  study_id: "21"
+  key: subcat
+  value: Australian studies;Health;Drug abuse, alcohol and smoking
+  created_at: 2011-04-05 03:58:28.482415
+  updated_at: 2011-04-05 03:58:28.482415
+study_fields_1061: 
+  id: "1100"
+  study_id: "21"
+  key: timeMeth
+  value: cross-sectional (one-time) study
+  created_at: 2011-04-05 03:58:28.499245
+  updated_at: 2011-04-05 03:58:28.499245
+study_fields_1062: 
+  id: "1105"
+  study_id: "21"
+  key: title
+  value: Study of under-age drinking September/November, 1979
+  created_at: 2011-04-05 03:58:28.516289
+  updated_at: 2011-04-05 03:58:28.516289
+study_fields_1063: 
+  id: "1110"
+  study_id: "21"
+  key: files_attribute_resource
+  value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00030@files
+  created_at: 2011-04-05 03:58:28.532727
+  updated_at: 2011-04-05 03:58:28.532727
+study_fields_1064: 
+  id: "1115"
+  study_id: "21"
+  key: files
+  value: ""
+  created_at: 2011-04-05 03:58:28.549607
+  updated_at: 2011-04-05 03:58:28.549607
+study_fields_1065: 
   id: "1083"
   study_id: "22"
   key: abstractText
@@ -8029,21 +8088,21 @@ study_fields_1057:
     In addition to specific contingent valuation questions, the survey also asked respondents a series of attitude questions ranging from the importance of recreational activities within national parks, the relationship between jobs and natural resources, the importance of Aboriginal cultural concerns, and the financial benefits to Australia. Respondents were also asked whether they thought governments paid attention to individual views on natural resources; the importance of forests and Australia's timber resources; and four behavioural questions - whether they recycled household materials, the purchase of environmentally sound products, the watching of environmental programs on TV and membership of a conservation organisation. Background information covered age, sex, education level, income, job status, industry, occupation and country of birth.
   created_at: 2011-04-05 03:58:28.404875
   updated_at: 2011-04-05 03:58:28.404875
-study_fields_1058: 
+study_fields_1066: 
   id: "1088"
   study_id: "22"
   key: collMode
   value: personal interview There were eight versions of the questionnaire (major and minor scenarios were presented for each of the four different dollar values).  All eight versions were to be completed in each area.  The allocation of each type of questionnaire to each age/sex combination in each area was determined beforehand to ensure an even distribution.
   created_at: 2011-04-05 03:58:28.421711
   updated_at: 2011-04-05 03:58:28.421711
-study_fields_1059: 
+study_fields_1067: 
   id: "1093"
   study_id: "22"
   key: dataKind
   value: survey
   created_at: 2011-04-05 03:58:28.479744
   updated_at: 2011-04-05 03:58:28.479744
-study_fields_1060: 
+study_fields_1068: 
   id: "1098"
   study_id: "22"
   key: sampling
@@ -8061,70 +8120,70 @@ study_fields_1060:
     Number of units in original sample: NT - 512; National - 2048
   created_at: 2011-04-05 03:58:28.496595
   updated_at: 2011-04-05 03:58:28.496595
-study_fields_1061: 
+study_fields_1069: 
   id: "1103"
   study_id: "22"
   key: subcat
   value: Australian studies;Environment, Conservation, Land use;Natural environment and conservation
   created_at: 2011-04-05 03:58:28.513179
   updated_at: 2011-04-05 03:58:28.513179
-study_fields_1062: 
+study_fields_1070: 
   id: "1108"
   study_id: "22"
   key: timeMeth
   value: cross-sectional (one-time) study
   created_at: 2011-04-05 03:58:28.530149
   updated_at: 2011-04-05 03:58:28.530149
-study_fields_1063: 
+study_fields_1071: 
   id: "1113"
   study_id: "22"
   key: title
   value: "Kakadu Conservation Zone contingent valuation survey, Australia, 1990: File nt"
   created_at: 2011-04-05 03:58:28.546769
   updated_at: 2011-04-05 03:58:28.546769
-study_fields_1064: 
+study_fields_1072: 
   id: "1118"
   study_id: "22"
   key: files_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00631-nt@files
   created_at: 2011-04-05 03:58:28.563241
   updated_at: 2011-04-05 03:58:28.563241
-study_fields_1065: 
+study_fields_1073: 
   id: "1123"
   study_id: "22"
   key: files
   value: ""
   created_at: 2011-04-05 03:58:28.580756
   updated_at: 2011-04-05 03:58:28.580756
-study_fields_1066: 
+study_fields_1074: 
   id: "1128"
   study_id: "22"
   key: cubes_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00631-nt@cubes
   created_at: 2011-04-05 03:58:28.596453
   updated_at: 2011-04-05 03:58:28.596453
-study_fields_1067: 
+study_fields_1075: 
   id: "1133"
   study_id: "22"
   key: cubes
   value: ""
   created_at: 2011-04-05 03:58:28.613511
   updated_at: 2011-04-05 03:58:28.613511
-study_fields_1068: 
+study_fields_1076: 
   id: "1204"
   study_id: "26"
   key: text
   value: "\n"
   created_at: 2011-04-05 03:58:31.187919
   updated_at: 2011-04-05 03:58:31.187919
-study_fields_1069: 
+study_fields_1077: 
   id: "1206"
   study_id: "26"
   key: complete
   value: "true"
   created_at: 2011-04-05 03:58:31.220837
   updated_at: 2011-04-05 03:58:31.220837
-study_fields_1070: 
+study_fields_1078: 
   id: "969"
   study_id: "23"
   key: comment
@@ -8136,154 +8195,154 @@ study_fields_1070:
     In addition to specific contingent valuation questions, the survey also asked respondents a series of attitude questions ranging from the importance of recreational activities within national parks, the relationship between jobs and natural resources, the importance of Aboriginal cultural concerns, and the financial benefits to Australia. Respondents were also asked whether they thought governments paid attention to individual views on natural resources; the importance of forests and Australia's timber resources; and four behavioural questions - whether they recycled household materials, the purchase of environmentally sound products, the watching of environmental programs on TV and membership of a conservation organisation. Background information covered age, sex, education level, income, job status, industry, occupation and country of birth.
   created_at: 2011-04-05 03:58:28.022759
   updated_at: 2011-04-05 03:58:28.022759
-study_fields_1071: 
+study_fields_1079: 
   id: "974"
   study_id: "23"
   key: creationDate
   value: 2009-04-02 13:57:04.0
   created_at: 2011-04-05 03:58:28.038982
   updated_at: 2011-04-05 03:58:28.038982
-study_fields_1072: 
+study_fields_1080: 
   id: "979"
   study_id: "23"
   key: numCubes
   value: "0"
   created_at: 2011-04-05 03:58:28.055758
   updated_at: 2011-04-05 03:58:28.055758
-study_fields_1073: 
+study_fields_1081: 
   id: "984"
   study_id: "23"
   key: hasData
   value: "yes"
   created_at: 2011-04-05 03:58:28.074473
   updated_at: 2011-04-05 03:58:28.074473
-study_fields_1074: 
+study_fields_1082: 
   id: "989"
   study_id: "23"
   key: collectionEnd
   value: "1990-09-26"
   created_at: 2011-04-05 03:58:28.089304
   updated_at: 2011-04-05 03:58:28.089304
-study_fields_1075: 
+study_fields_1083: 
   id: "994"
   study_id: "23"
   key: collectionStart
   value: "1990-09-08"
   created_at: 2011-04-05 03:58:28.105605
   updated_at: 2011-04-05 03:58:28.105605
-study_fields_1076: 
+study_fields_1084: 
   id: "999"
   study_id: "23"
   key: docProdDate
   value: "1992-09-01"
   created_at: 2011-04-05 03:58:28.122323
   updated_at: 2011-04-05 03:58:28.122323
-study_fields_1077: 
+study_fields_1085: 
   id: "1004"
   study_id: "23"
   key: stdyDepDate
   value: "1992-09-01"
   created_at: 2011-04-05 03:58:28.139171
   updated_at: 2011-04-05 03:58:28.139171
-study_fields_1078: 
+study_fields_1086: 
   id: "1009"
   study_id: "23"
   key: stdyProdDate
   value: "2004-08-27"
   created_at: 2011-04-05 03:58:28.155712
   updated_at: 2011-04-05 03:58:28.155712
-study_fields_1079: 
+study_fields_1087: 
   id: "1014"
   study_id: "23"
   key: dataCollector
   value: AGB:McNair
   created_at: 2011-04-05 03:58:28.174836
   updated_at: 2011-04-05 03:58:28.174836
-study_fields_1080: 
+study_fields_1088: 
   id: "1019"
   study_id: "23"
   key: docBiblCit
   value: "Resource Assessment Commission. Kakadu Conservation Zone contingent valuation survey, Australia, 1990 [computer file]. Canberra: Australian Social Science Data Archive, The Australian National University, 1992."
   created_at: 2011-04-05 03:58:28.189243
   updated_at: 2011-04-05 03:58:28.189243
-study_fields_1081: 
+study_fields_1089: 
   id: "1024"
   study_id: "23"
   key: docCopyright
   value: "Copyright \xC2\xA9 2005, The Australian National University. All rights reserved."
   created_at: 2011-04-05 03:58:28.205651
   updated_at: 2011-04-05 03:58:28.205651
-study_fields_1082: 
+study_fields_1090: 
   id: "1029"
   study_id: "23"
   key: docProducer
   value: Australian Social Science Data Archive
   created_at: 2011-04-05 03:58:28.222839
   updated_at: 2011-04-05 03:58:28.222839
-study_fields_1083: 
+study_fields_1091: 
   id: "1034"
   study_id: "23"
   key: docTitle
   value: "Kakadu Conservation Zone contingent valuation survey, Australia, 1990: File nat"
   created_at: 2011-04-05 03:58:28.239225
   updated_at: 2011-04-05 03:58:28.239225
-study_fields_1084: 
+study_fields_1092: 
   id: "1039"
   study_id: "23"
   key: keywords
   value: Conservation (Natural Resources);Environment;Mining;Parks;Values
   created_at: 2011-04-05 03:58:28.255931
   updated_at: 2011-04-05 03:58:28.255931
-study_fields_1085: 
+study_fields_1093: 
   id: "1044"
   study_id: "23"
   key: stdyAuthEntity
   value: Resource Assessment Commission
   created_at: 2011-04-05 03:58:28.274968
   updated_at: 2011-04-05 03:58:28.274968
-study_fields_1086: 
+study_fields_1094: 
   id: "1049"
   study_id: "23"
   key: stdyCopyright
   value: "Copyright \xC2\xA9 2004, The Australian National University. All rights reserved."
   created_at: 2011-04-05 03:58:28.28934
   updated_at: 2011-04-05 03:58:28.28934
-study_fields_1087: 
+study_fields_1095: 
   id: "1054"
   study_id: "23"
   key: stdyID
   value: au.edu.anu.assda.ddi.00631-nat
   created_at: 2011-04-05 03:58:28.30586
   updated_at: 2011-04-05 03:58:28.30586
-study_fields_1088: 
+study_fields_1096: 
   id: "1059"
   study_id: "23"
   key: universe
   value: persons aged 18 years or more throughout Australia
   created_at: 2011-04-05 03:58:28.322846
   updated_at: 2011-04-05 03:58:28.322846
-study_fields_1089: 
+study_fields_1097: 
   id: "1064"
   study_id: "23"
   key: stdyStatus
   value: Level 2
   created_at: 2011-04-05 03:58:28.339309
   updated_at: 2011-04-05 03:58:28.339309
-study_fields_1090: 
+study_fields_1098: 
   id: "1069"
   study_id: "23"
   key: stdyContactAffiliation
   value: Resource Assessment Commission
   created_at: 2011-04-05 03:58:28.355977
   updated_at: 2011-04-05 03:58:28.355977
-study_fields_1091: 
+study_fields_1099: 
   id: "1074"
   study_id: "23"
   key: stdyVersionResponsibility
   value: Australian Social Science Data Archive
   created_at: 2011-04-05 03:58:28.376033
   updated_at: 2011-04-05 03:58:28.376033
-study_fields_1092: 
+study_fields_1100: 
   id: "1079"
   study_id: "23"
   key: stdyContact
@@ -8294,7 +8353,7 @@ study_fields_1092:
     Parkes  ACT  2600
   created_at: 2011-04-05 03:58:28.3902
   updated_at: 2011-04-05 03:58:28.3902
-study_fields_1093: 
+study_fields_1101: 
   id: "1084"
   study_id: "23"
   key: abstractText
@@ -8306,21 +8365,21 @@ study_fields_1093:
     In addition to specific contingent valuation questions, the survey also asked respondents a series of attitude questions ranging from the importance of recreational activities within national parks, the relationship between jobs and natural resources, the importance of Aboriginal cultural concerns, and the financial benefits to Australia. Respondents were also asked whether they thought governments paid attention to individual views on natural resources; the importance of forests and Australia's timber resources; and four behavioural questions - whether they recycled household materials, the purchase of environmentally sound products, the watching of environmental programs on TV and membership of a conservation organisation. Background information covered age, sex, education level, income, job status, industry, occupation and country of birth.
   created_at: 2011-04-05 03:58:28.406525
   updated_at: 2011-04-05 03:58:28.406525
-study_fields_1094: 
+study_fields_1102: 
   id: "1089"
   study_id: "23"
   key: collMode
   value: personal interview There were eight versions of the questionnaire (major and minor scenarios were presented for each of the four different dollar values).  All eight versions were to be completed in each area.  The allocation of each type of questionnaire to each age/sex combination in each area was determined beforehand to ensure an even distribution.
   created_at: 2011-04-05 03:58:28.465531
   updated_at: 2011-04-05 03:58:28.465531
-study_fields_1095: 
+study_fields_1103: 
   id: "1094"
   study_id: "23"
   key: dataKind
   value: survey
   created_at: 2011-04-05 03:58:28.48113
   updated_at: 2011-04-05 03:58:28.48113
-study_fields_1096: 
+study_fields_1104: 
   id: "1099"
   study_id: "23"
   key: sampling
@@ -8338,70 +8397,70 @@ study_fields_1096:
     Number of units in original sample: NT - 512; National - 2048
   created_at: 2011-04-05 03:58:28.497862
   updated_at: 2011-04-05 03:58:28.497862
-study_fields_1097: 
+study_fields_1105: 
   id: "1104"
   study_id: "23"
   key: subcat
   value: Australian studies;Environment, Conservation, Land use;Natural environment and conservation
   created_at: 2011-04-05 03:58:28.514672
   updated_at: 2011-04-05 03:58:28.514672
-study_fields_1098: 
+study_fields_1106: 
   id: "1109"
   study_id: "23"
   key: timeMeth
   value: cross-sectional (one-time) study
   created_at: 2011-04-05 03:58:28.531415
   updated_at: 2011-04-05 03:58:28.531415
-study_fields_1099: 
+study_fields_1107: 
   id: "1114"
   study_id: "23"
   key: title
   value: "Kakadu Conservation Zone contingent valuation survey, Australia, 1990: File nat"
   created_at: 2011-04-05 03:58:28.548111
   updated_at: 2011-04-05 03:58:28.548111
-study_fields_1100: 
+study_fields_1108: 
   id: "1119"
   study_id: "23"
   key: files_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00631-nat@files
   created_at: 2011-04-05 03:58:28.564635
   updated_at: 2011-04-05 03:58:28.564635
-study_fields_1101: 
+study_fields_1109: 
   id: "1124"
   study_id: "23"
   key: files
   value: ""
   created_at: 2011-04-05 03:58:28.582101
   updated_at: 2011-04-05 03:58:28.582101
-study_fields_1102: 
+study_fields_1110: 
   id: "1129"
   study_id: "23"
   key: cubes_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00631-nat@cubes
   created_at: 2011-04-05 03:58:28.597749
   updated_at: 2011-04-05 03:58:28.597749
-study_fields_1103: 
+study_fields_1111: 
   id: "1134"
   study_id: "23"
   key: cubes
   value: ""
   created_at: 2011-04-05 03:58:28.614986
   updated_at: 2011-04-05 03:58:28.614986
-study_fields_1104: 
+study_fields_1112: 
   id: "1205"
   study_id: "25"
   key: numCubes
   value: "1"
   created_at: 2011-04-05 03:58:31.214119
   updated_at: 2011-04-05 03:58:31.214119
-study_fields_1105: 
+study_fields_1113: 
   id: "1207"
   study_id: "25"
   key: hasData
   value: "no"
   created_at: 2011-04-05 03:58:31.226484
   updated_at: 2011-04-05 03:58:31.226484
-study_fields_1106: 
+study_fields_1114: 
   id: "1056"
   study_id: "20"
   key: abstractText
@@ -8416,147 +8475,147 @@ study_fields_1106:
     Data not available on Nesstar. Please contact archive staff at assda@anu.edu.au if you wish to access these data.
   created_at: 2011-04-05 03:58:28.314653
   updated_at: 2011-04-05 03:58:28.314653
-study_fields_1107: 
+study_fields_1115: 
   id: "1061"
   study_id: "20"
   key: collMode
   value: self-completion (mail out, mail back)
   created_at: 2011-04-05 03:58:28.330977
   updated_at: 2011-04-05 03:58:28.330977
-study_fields_1108: 
+study_fields_1116: 
   id: "1066"
   study_id: "20"
   key: sampling
   value: simple random sample
   created_at: 2011-04-05 03:58:28.348217
   updated_at: 2011-04-05 03:58:28.348217
-study_fields_1109: 
+study_fields_1117: 
   id: "1071"
   study_id: "20"
   key: subcat
   value: Australian studies;Politics;Election and campaign studies
   created_at: 2011-04-05 03:58:28.364593
   updated_at: 2011-04-05 03:58:28.364593
-study_fields_1110: 
+study_fields_1118: 
   id: "1076"
   study_id: "20"
   key: title
   value: Northern Territory post election survey, 1983
   created_at: 2011-04-05 03:58:28.381984
   updated_at: 2011-04-05 03:58:28.381984
-study_fields_1111: 
+study_fields_1119: 
   id: "1081"
   study_id: "20"
   key: files_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@files
   created_at: 2011-04-05 03:58:28.397601
   updated_at: 2011-04-05 03:58:28.397601
-study_fields_1112: 
+study_fields_1120: 
   id: "1086"
   study_id: "20"
   key: files
   value: ""
   created_at: 2011-04-05 03:58:28.414637
   updated_at: 2011-04-05 03:58:28.414637
-study_fields_1113: 
+study_fields_1121: 
   id: "1091"
   study_id: "20"
   key: cubes_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@cubes
   created_at: 2011-04-05 03:58:28.471033
   updated_at: 2011-04-05 03:58:28.471033
-study_fields_1114: 
+study_fields_1122: 
   id: "1096"
   study_id: "20"
   key: cubes
   value: ""
   created_at: 2011-04-05 03:58:28.489333
   updated_at: 2011-04-05 03:58:28.489333
-study_fields_1115: 
+study_fields_1123: 
   id: "1101"
   study_id: "20"
   key: factsheets_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@factsheets
   created_at: 2011-04-05 03:58:28.506139
   updated_at: 2011-04-05 03:58:28.506139
-study_fields_1116: 
+study_fields_1124: 
   id: "1106"
   study_id: "20"
   key: factsheets
   value: ""
   created_at: 2011-04-05 03:58:28.523121
   updated_at: 2011-04-05 03:58:28.523121
-study_fields_1117: 
+study_fields_1125: 
   id: "1111"
   study_id: "20"
   key: tables_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@tables
   created_at: 2011-04-05 03:58:28.539664
   updated_at: 2011-04-05 03:58:28.539664
-study_fields_1118: 
+study_fields_1126: 
   id: "1116"
   study_id: "20"
   key: tables
   value: ""
   created_at: 2011-04-05 03:58:28.556221
   updated_at: 2011-04-05 03:58:28.556221
-study_fields_1119: 
+study_fields_1127: 
   id: "1121"
   study_id: "20"
   key: variables_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@variables
   created_at: 2011-04-05 03:58:28.573105
   updated_at: 2011-04-05 03:58:28.573105
-study_fields_1120: 
+study_fields_1128: 
   id: "1126"
   study_id: "20"
   key: variables
   value: ""
   created_at: 2011-04-05 03:58:28.590248
   updated_at: 2011-04-05 03:58:28.590248
-study_fields_1121: 
+study_fields_1129: 
   id: "1131"
   study_id: "20"
   key: sections_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@sections
   created_at: 2011-04-05 03:58:28.606611
   updated_at: 2011-04-05 03:58:28.606611
-study_fields_1122: 
+study_fields_1130: 
   id: "1136"
   study_id: "20"
   key: sections
   value: ""
   created_at: 2011-04-05 03:58:28.623003
   updated_at: 2011-04-05 03:58:28.623003
-study_fields_1123: 
+study_fields_1131: 
   id: "1141"
   study_id: "20"
   key: relatedMaterials_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@relatedMaterials
   created_at: 2011-04-05 03:58:28.639573
   updated_at: 2011-04-05 03:58:28.639573
-study_fields_1124: 
+study_fields_1132: 
   id: "1146"
   study_id: "20"
   key: relatedMaterials
   value: ""
   created_at: 2011-04-05 03:58:28.656284
   updated_at: 2011-04-05 03:58:28.656284
-study_fields_1125: 
+study_fields_1133: 
   id: "1151"
   study_id: "20"
   key: studyDistributors_attribute_resource
   value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00369@studyDistributors
   created_at: 2011-04-05 03:58:28.673203
   updated_at: 2011-04-05 03:58:28.673203
-study_fields_1126: 
+study_fields_1134: 
   id: "1156"
   study_id: "20"
   key: studyDistributors
   value: ""
   created_at: 2011-04-05 03:58:28.689917
   updated_at: 2011-04-05 03:58:28.689917
-study_fields_1127: 
+study_fields_1135: 
   id: "1075"
   study_id: "21"
   key: abstractText
@@ -8566,65 +8625,6 @@ study_fields_1127:
     Secondary school students were questioned concerning how much beer, wine and/or spirits they drank, where and under what circumstances they drank, and where and how they obtained their liquor. Background variables included sex, age, country of birth and ethnic origin as identified by respondents.
   created_at: 2011-04-05 03:58:28.377495
   updated_at: 2011-04-05 03:58:28.377495
-study_fields_1128: 
-  id: "1080"
-  study_id: "21"
-  key: collMode
-  value: self-completion (group setting)
-  created_at: 2011-04-05 03:58:28.3916
-  updated_at: 2011-04-05 03:58:28.3916
-study_fields_1129: 
-  id: "1085"
-  study_id: "21"
-  key: dataKind
-  value: survey
-  created_at: 2011-04-05 03:58:28.408057
-  updated_at: 2011-04-05 03:58:28.408057
-study_fields_1130: 
-  id: "1090"
-  study_id: "21"
-  key: sampling
-  value: |-
-    no sampling (total universe)
-    
-    Questionnaires were sent to all schools, according to Department of Education estimates of school size.  Students were required to complete the questionnaires in school time.  School principals were responsible for the administration and return of the questionnaires.
-  created_at: 2011-04-05 03:58:28.466967
-  updated_at: 2011-04-05 03:58:28.466967
-study_fields_1131: 
-  id: "1095"
-  study_id: "21"
-  key: subcat
-  value: Australian studies;Health;Drug abuse, alcohol and smoking
-  created_at: 2011-04-05 03:58:28.482415
-  updated_at: 2011-04-05 03:58:28.482415
-study_fields_1132: 
-  id: "1100"
-  study_id: "21"
-  key: timeMeth
-  value: cross-sectional (one-time) study
-  created_at: 2011-04-05 03:58:28.499245
-  updated_at: 2011-04-05 03:58:28.499245
-study_fields_1133: 
-  id: "1105"
-  study_id: "21"
-  key: title
-  value: Study of under-age drinking September/November, 1979
-  created_at: 2011-04-05 03:58:28.516289
-  updated_at: 2011-04-05 03:58:28.516289
-study_fields_1134: 
-  id: "1110"
-  study_id: "21"
-  key: files_attribute_resource
-  value: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.00030@files
-  created_at: 2011-04-05 03:58:28.532727
-  updated_at: 2011-04-05 03:58:28.532727
-study_fields_1135: 
-  id: "1115"
-  study_id: "21"
-  key: files
-  value: ""
-  created_at: 2011-04-05 03:58:28.549607
-  updated_at: 2011-04-05 03:58:28.549607
 study_fields_1136: 
   id: "1120"
   study_id: "21"
@@ -8805,7 +8805,7 @@ study_fields_1158:
     electoral roll - The electoral roll is the list of voters who are registered to vote at an election. 
     
     compulsory preferences - a requirement that a voter must rank all candidates on the ballot paper under a system of preferential voting.
-     
+    
      contingent voting - This can be thought of as a form of preferential voting (AV) with compulsory or optional preferences which permits the voter to vote for one or two candidates, but no more than two, by indicating a first choice candidate and, if the voter wishes, a second choice candidate. If a candidate gains more than 50 percent of the first preference votes cast in an electoral district, he or she is declared elected. If there is no such candidate, the second preferences shown on the ballot papers of all but the two candidates with the most first preference votes are divided between the top two candidates. After this assignment, the candidate with the most votes is declared the winner.
     
     This system has been used in general elections for the Queensland Legislative Assembly from 1893 until 1941 (in single and multimember districts until 1909), and for the New South Wales Legislative Assembly in 1928. It was also used for the first direct election of the Mayor of London in 2000 where it was called supplementary voting.

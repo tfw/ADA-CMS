@@ -65,3 +65,219 @@ inkling_logs_011:
   text: Downloaded 0 studies. Encountered 0 errors. There are now 25 studies in ADA.
   user_id: 
   category: integration
+inkling_logs_012: 
+  id: "12"
+  created_at: 2011-04-05 05:34:47.770268
+  text: admin@localhost.com edited page <a href='/staff/archives/7/pages/1/edit'>Home</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_013: 
+  id: "13"
+  created_at: 2011-04-05 05:34:47.78567
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/2/pages/3/edit'>Home</a> in <a href='/staff/archives/historical'>Historical</a>.
+  user_id: 
+  category: page
+inkling_logs_014: 
+  id: "14"
+  created_at: 2011-04-05 05:34:47.799005
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/3/pages/4/edit'>Home</a> in <a href='/staff/archives/indigenous'>Indigenous</a>.
+  user_id: 
+  category: page
+inkling_logs_015: 
+  id: "15"
+  created_at: 2011-04-05 05:34:47.807687
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/4/pages/5/edit'>Home</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>.
+  user_id: 
+  category: page
+inkling_logs_016: 
+  id: "16"
+  created_at: 2011-04-05 05:34:47.817933
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/5/pages/6/edit'>Home</a> in <a href='/staff/archives/qualitative'>Qualitative</a>.
+  user_id: 
+  category: page
+inkling_logs_017: 
+  id: "17"
+  created_at: 2011-04-05 05:34:47.826363
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/6/pages/7/edit'>Home</a> in <a href='/staff/archives/international'>International</a>.
+  user_id: 
+  category: page
+inkling_logs_018: 
+  id: "18"
+  created_at: 2011-04-05 05:34:47.835409
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/8/edit'>About</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_019: 
+  id: "19"
+  created_at: 2011-04-05 05:34:47.843578
+  text: admin@localhost.com edited page <a href='/staff/archives/7/pages/10/edit'>Subarchives</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_020: 
+  id: "20"
+  created_at: 2011-04-05 05:34:47.894099
+  text: admin@localhost.com edited page <a href='/staff/archives/7/pages/11/edit'>Data Access</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_021: 
+  id: "21"
+  created_at: 2011-04-05 05:34:47.906799
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/12/edit'>Browse ADA Catalogue</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_022: 
+  id: "22"
+  created_at: 2011-04-05 05:34:47.916759
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/13/edit'>Search ADA</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_023: 
+  id: "23"
+  created_at: 2011-04-05 05:34:47.927625
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/14/edit'>Register for ADA</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_024: 
+  id: "24"
+  created_at: 2011-04-05 05:34:47.937575
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/15/edit'>ADA undertaking forms</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_025: 
+  id: "25"
+  created_at: 2011-04-05 05:34:47.946166
+  text: admin@localhost.com edited page <a href='/staff/archives/7/pages/16/edit'>Data Deposit</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_026: 
+  id: "26"
+  created_at: 2011-04-05 05:34:47.958727
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/17/edit'>Why Deposit Data?</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_027: 
+  id: "27"
+  created_at: 2011-04-05 05:34:47.969888
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/18/edit'>Sharing data and access conditions</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_028: 
+  id: "28"
+  created_at: 2011-04-05 05:34:47.979636
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/19/edit'>How to deposit data</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_029: 
+  id: "29"
+  created_at: 2011-04-05 05:34:47.992038
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/7/pages/20/edit'>Deposit forms</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_030: 
+  id: "30"
+  created_at: 2011-04-05 05:34:48.008167
+  text: admin@localhost.com edited page <a href='/staff/archives/7/pages/22/edit'>ADA News</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_031: 
+  id: "31"
+  created_at: 2011-04-05 05:34:48.049681
+  text: admin@localhost.com edited page <a href='/staff/archives/7/pages/23/edit'>Contact</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_032: 
+  id: "32"
+  created_at: 2011-04-05 05:34:48.05973
+  text: admin@localhost.com edited page <a href='/staff/archives/7/pages/24/edit'>My Account</a> in <a href='/staff/archives/ada'>ADA</a>.
+  user_id: 
+  category: page
+inkling_logs_033: 
+  id: "33"
+  created_at: 2011-04-05 05:34:48.068203
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/1/pages/26/edit'>Home</a> in <a href='/staff/archives/social-science'>Social Science</a>.
+  user_id: 
+  category: page
+inkling_logs_034: 
+  id: "34"
+  created_at: 2011-04-05 05:34:48.107888
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/1/pages/32/edit'>Themed Data</a> in <a href='/staff/archives/social-science'>Social Science</a>.
+  user_id: 
+  category: page
+inkling_logs_035: 
+  id: "35"
+  created_at: 2011-04-05 05:34:48.116903
+  text: admin@localhost.com edited page <a href='/staff/archives/1/pages/33/edit'>User Guides</a> in <a href='/staff/archives/social-science'>Social Science</a>.
+  user_id: 
+  category: page
+inkling_logs_036: 
+  id: "36"
+  created_at: 2011-04-05 05:34:48.133936
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/6/pages/35/edit'>About</a> in <a href='/staff/archives/international'>International</a>.
+  user_id: 
+  category: page
+inkling_logs_037: 
+  id: "37"
+  created_at: 2011-04-05 05:34:48.208742
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/2/pages/40/edit'>Census data</a> in <a href='/staff/archives/historical'>Historical</a>.
+  user_id: 
+  category: page
+inkling_logs_038: 
+  id: "38"
+  created_at: 2011-04-05 05:34:48.231764
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/3/pages/43/edit'>About</a> in <a href='/staff/archives/indigenous'>Indigenous</a>.
+  user_id: 
+  category: page
+inkling_logs_039: 
+  id: "39"
+  created_at: 2011-04-05 05:34:48.257972
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/3/pages/46/edit'>Using Data</a> in <a href='/staff/archives/indigenous'>Indigenous</a>.
+  user_id: 
+  category: page
+inkling_logs_040: 
+  id: "40"
+  created_at: 2011-04-05 05:34:48.26674
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/3/pages/47/edit'>Protocols</a> in <a href='/staff/archives/indigenous'>Indigenous</a>.
+  user_id: 
+  category: page
+inkling_logs_041: 
+  id: "41"
+  created_at: 2011-04-05 05:34:48.30018
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/4/pages/51/edit'>About</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>.
+  user_id: 
+  category: page
+inkling_logs_042: 
+  id: "42"
+  created_at: 2011-04-05 05:34:48.316231
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/4/pages/53/edit'>Creating Data</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>.
+  user_id: 
+  category: page
+inkling_logs_043: 
+  id: "43"
+  created_at: 2011-04-05 05:34:48.358934
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/4/pages/55/edit'>Longitudinal Studies</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>.
+  user_id: 
+  category: page
+inkling_logs_044: 
+  id: "44"
+  created_at: 2011-04-05 05:34:48.406935
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/5/pages/61/edit'>Creating Data</a> in <a href='/staff/archives/qualitative'>Qualitative</a>.
+  user_id: 
+  category: page
+inkling_logs_045: 
+  id: "45"
+  created_at: 2011-04-05 05:34:48.42387
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/5/pages/63/edit'>Completed Projects</a> in <a href='/staff/archives/qualitative'>Qualitative</a>.
+  user_id: 
+  category: page
+inkling_logs_046: 
+  id: "46"
+  created_at: 2011-04-05 05:34:48.465973
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/2/pages/68/edit'>HCCDA</a> in <a href='/staff/archives/historical'>Historical</a>.
+  user_id: 
+  category: page
+inkling_logs_047: 
+  id: "47"
+  created_at: 2011-04-05 05:34:48.507226
+  text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/2/pages/69/edit'>Census 1966-1991</a> in <a href='/staff/archives/historical'>Historical</a>.
+  user_id: 
+  category: page
