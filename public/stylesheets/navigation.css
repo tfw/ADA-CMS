@@ -39,41 +39,15 @@
 	position: relative;
 	z-index: 1;
 }
-.ada {
-	background: url(../images/structure/icon_ada.png) no-repeat 0px 0px!important;
-	font-weight: normal;
-}
-.science        {
-	background: url(../images/structure/icon_socialscience.png) no-repeat 5px center;
-}
-.historical {
-	background: url(../images/structure/icon_historical.png) no-repeat 5px center;
-	z-index: auto;
-}
-.indigenous {
-	background: url(../images/structure/icon_indigenous.png) no-repeat 5px center;
-	z-index: auto;
-}
-.longitudinal {
-	background: url(../images/structure/icon_longitudinal.png) no-repeat 5px center;
-	z-index: auto;
-}
-.qualitative {
-	background: url(../images/structure/icon_qualitative.png) no-repeat 5px center;
-	z-index: auto;
-}
-.international {
-	background: url(../images/structure/icon_international.png) no-repeat 5px center;
-	z-index: auto;
-}
 .content nav.archive_menu {
 }
+
 .content nav.archive_menu ul{
 	padding: 0px;
 }
 .content nav.archive_menu ul li{
 	border-bottom: 1px solid #CCC;
-	list-style: url(none) none;
+	list-style-type: none;
 	display: block;
 	padding: 0px;
 	background: no-repeat 0px 0px;
@@ -86,13 +60,72 @@
 	padding-top: 8px;
 	text-transform: uppercase;
 	color: #999;
+	background-position: 0px 0px;
+	background-repeat:  no-repeat;
 }
 .content nav.archive_menu ul li a:hover {
 	display: block;
 	text-decoration: none;
 	color: #000;
-	background: #E8E8E8 no-repeat -32px /*url(../images/structure/icon_hover.png) no-repeat 5px center*/;
+	background-position: 0px -32px !important;
+	background-color: #e4e4e4;
 }
-.archive_current {
-	background: #333 url(../images/structure/icon_current.png) no-repeat 5px center!important;
+.content nav.archive_menu ul li.ada a {
+	background-image: url(../images/structure/icon_ada.png);
+	font-weight: normal;
+}
+.content nav.archive_menu ul li.science      a   {
+	background-image: url(../images/structure/icon_socialscience.png);
+}
+.content nav.archive_menu ul li.historical a {
+	background-image: url(../images/structure/icon_historical.png) ;
+	z-index: auto;
+}
+.content nav.archive_menu ul li.indigenous a {
+	background-image: url(../images/structure/icon_indigenous.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.longitudinal a {
+	background-image: url(../images/structure/icon_longitudinal.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.qualitative a {
+	background-image: url(../images/structure/icon_qualitative.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.international a {
+	background-image: url(../images/structure/icon_international.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.site-resources a {
+	background-image: url(../images/structure/icon_resources.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.users a {
+	background-image: url(../images/structure/icon_user.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.reports a {
+	background-image: url(../images/structure/icon_report.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.news a {
+	background-image: url(../images/structure/icon_news.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.adapt a {
+	background-image: url(../images/structure/icon_adapt.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.hccda a {
+	background-image: url(../images/structure/icon_hccda.png);
+	z-index: auto;
+}
+
+.content nav.archive_menu ul li.usage-auditing a {
+	background-image: url(../images/structure/icon_usage.png);
+	z-index: auto;
+}
+.content nav.archive_menu ul li.archive_current a {
+	background: #333 url(../images/structure/icon_current.png) no-repeat 0px 0px;
 }

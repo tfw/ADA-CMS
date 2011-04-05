@@ -8,7 +8,7 @@
 		<%= stylesheet_link_tag "import" %>
 		<%= stylesheet_link_tag "theme" %>
     <%= csrf_meta_tag %>	
-	</head
+	</head>
 			
     <body class="<%= archive_css(@current_archive) %>">
 		<header>
@@ -79,7 +79,7 @@
 		</nav>		
     <section class="content">
 
-		<nav>
+		<nav class="archive_menu">
 		  <%= yield :sidenav %> 
 		</nav>      
 
@@ -87,7 +87,9 @@
     <div class="alert"><%= alert %></div>
 
   	<!-- page partial start -->
-  	<%= yield %>
+		<section class="main">
+  		<%= yield %>
+		</section>
   	<!-- page partial end -->
 
 </section>

@@ -16,7 +16,7 @@
 }
 .formtastic #login_name {
 	border-style: none;
-	width: 100px;
+	width: 123px;
 	padding-right: 5px;
 	padding-left: 5px;
 	float: left;
@@ -25,7 +25,7 @@
 }
 .formtastic #login_pass {
 	border-style: none;
-	width: 100px;
+	width: 122px;
 	padding-right: 5px;
 	padding-left: 5px;
 	float: left;
@@ -33,34 +33,34 @@
 	height: 23px;
 }
 .formtastic #enter_button {
-	margin: 0px;
+	margin: 5px 5px 0px 0px;
 	padding: 0px;
+	float: right;
 }
 .formtastic #logout_button {
 	padding-bottom: 0px;
 	padding-left: 10px;
-	margin: 2px 0px 5px;
+	margin: 5px 5px 5px 0px;
 	float: right;
-	border-left: 1px solid #999;
+	padding-right: 0px;
 }
 .formtastic #remember_me {
 	float: left;
 	margin-right: 4px;
 	display: block;
-	margin-top: 6px;
+	margin-top: 10px;
 	padding: 0px;
 }
 .formtastic label {
 	text-align: right;
 	float: left;
-	margin-top: 7px;
+	margin-top: 10px;
 	padding-right: 5px;
 	line-height: 1;
 	font-size: 11px;
 }
 .formtastic #register_button {
-	margin: 2px 10px 5px 0px;
+	margin: -28px 5px 5px 0px;
 	float: right;
-	border-left: 1px solid #999;
 	padding: 0px 0px 0px 10px;
 }
