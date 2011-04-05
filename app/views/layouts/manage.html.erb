@@ -6,14 +6,11 @@
   <%= stylesheet_link_tag "import" %>
   <%= stylesheet_link_tag "manage" %>
   <%= csrf_meta_tag %>
-  <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min',  'jquery-ui-1.8.6.custom.min', 'jquery.effects.core', 'scripts',
- 'rails', 'jquery.clearableTextField.min' %>  
-
  </head>
     
-<body id="default">
+<body class="default">
    
-  <header>
+  <header class="admin">
     <div class="login">
       Name: <%= link_to current_user.email, staff_user_path(current_user) %> <br/>
       Role: <%= current_user.roles.first.name %> <br/>
@@ -29,25 +26,21 @@
   </nav>
   
   <section class="content">
-    <nav>
+    <nav class="archive_menu">
       <ul>
-        <li id="dashboard"><a href="/staff/home">Dashboard</a></li>
-        <li id="ada"><%= link_to 'ADA', staff_archive_path(Archive.ada) %></li>
-        <li id="science"> <%= link_to 'social science', staff_archive_path(Archive.social_science) %></li>
-        <li id="historical"><%= link_to 'historical', staff_archive_path(Archive.historical) %></li>
-        <li id="indigenous"><%= link_to 'indigenous', staff_archive_path(Archive.indigenous) %></li>
-        <li id="longitudinal"><%= link_to 'longitudinal', staff_archive_path(Archive.longitudinal) %></li>
-        <li id="qualitative"><%= link_to 'qualitative', staff_archive_path(Archive.qualitative) %></li>
-        <li id="international"><%= link_to 'international', staff_archive_path(Archive.international) %></li>
-        <li id="blank"><!-- intentional gap -->&nbsp;</li>
-        <li id="site-resources"><a href="/staff/resources">Site Resources</a></li>
-        <li id="blank"><!-- intentional gap -->&nbsp;</li>
-        <li id="users"><a href="/staff/users">Users</a></li>
-        <li id="reports"><a href="/staff/reports">Reports</a></li>
-        <li id="news"><a href="/staff/news">News</a></li>
-        <li id="adapt"><a href="/staff/adapt">ADAPT</a></li>
-        <li id="hccds"><a href="/staff/hccda">HCCDA</a></li>
-        <li id="usage-auditing"><a href="/staff/usage-auditing">Usage Auditing</a></li>
+        <li class="dashboard"><a href="/staff/home">Dashboard</a></li>
+        <li class="ada"><%= link_to 'ADA', staff_archive_path(Archive.ada) %></li>
+        <li class="science"> <%= link_to 'social science', staff_archive_path(Archive.social_science) %></li>
+        <li class="historical"><%= link_to 'historical', staff_archive_path(Archive.historical) %></li>
+        <li class="indigenous"><%= link_to 'indigenous', staff_archive_path(Archive.indigenous) %></li>
+        <li class="longitudinal"><%= link_to 'longitudinal', staff_archive_path(Archive.longitudinal) %></li>
+        <li class="qualitative"><%= link_to 'qualitative', staff_archive_path(Archive.qualitative) %></li>
+        <li class="international"><%= link_to 'international', staff_archive_path(Archive.international) %></li>
+        <li class="site-resources"><a href="/staff/resources">Site Resources</a></li>
+        <li class="news"><a href="/staff/news">News</a></li>
+        <li class="adapt"><a href="/staff/adapt">ADAPT</a></li>
+        <li class="hccds"><a href="/staff/hccda">HCCDA</a></li>
+        <li class="usage-auditing"><a href="/staff/usage-auditing">Usage Auditing</a></li>
       </ul>
     </nav>
 
@@ -77,6 +70,9 @@
     <p>
   </footer> 
 </body>
+
+ <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min',  'jquery-ui-1.8.6.custom.min', 'jquery.effects.core', 'scripts',
+'rails', 'jquery.clearableTextField.min' %>  
 
 <script type="text/javascript">
   $(document).ready(function(){
