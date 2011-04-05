@@ -2,11 +2,12 @@ require 'spec_helper'
 
 describe Study, "The local respresentation of an ASSDA study" do
   
- it "should validate the presence of a name" do
+ it "should validate the presence of a label and a ddi_id" do
    study = Study.new()
    study.valid?.should == false
    
    study.label = "test dataset"
+   study.ddi_id = "foo"
    study.valid?.should == true
  end
  

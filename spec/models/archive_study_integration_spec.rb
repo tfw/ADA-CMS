@@ -6,7 +6,7 @@ describe ArchiveStudyIntegration, do
    archive = Archive.make
    integration = ArchiveStudyIntegration.create!(:archive_id => archive.id, :ddi_id => "foo")
    integration.archive_study.should be_nil
-   study = Study.create!(:label => "foo")
+   study = Study.create!(:label => "foo", :ddi_id => "foo")
    integration.study = study
    integration.save!
    integration.reload
