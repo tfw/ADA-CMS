@@ -10,15 +10,21 @@
 <% content_for :js do %>
 
   $("#study-link").click(function() {
-    $('#study').toggle();
+    $('#study').show();
+    $('#variables').hide();
+    $('#related-materials').hide();
   });
 
   $("#variables-link").click(function() {
-    $('#variables').toggle();
+    $('#study').hide();
+    $('#variables').show();
+    $('#related-materials').hide();
   });
   
   $("#related-materials-link").click(function() {
-    $('#related-materials').toggle();
+    $('#study').hide();
+    $('#variables').hide();
+    $('#related-materials').show();
   });
 
 <% end %>

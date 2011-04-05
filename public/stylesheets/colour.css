@@ -1,287 +1,242 @@
 @charset "ISO-8859-1";
-
 /*ADA overarching highlight colour*/
 
-#default .mainnav.clearfix ul .current {
+.default .mainnav.clearfix ul .current {
 	background: #092410;
 	background: -moz-linear-gradient(top, black, #092410 1px, #216833 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #092410), to(#216833));
 }
-
-#default h1 {
+.default h1 {
 	color: #1F5E2F;
 }
-
-#default h2 {
+.default h2 {
 	color: #1F5E2F;
 }
-
-#default .subnav {
+.default .subnav {
 	background: #F1F1F1;
 	border-top: 8px solid #1F5E2F;
 	margin-top: 0px;
 	width: 100%;
 	float: left;
 }
-
-#default .masthead {
+.default .masthead {
 	background: url(../images/content/Logo_main.png) no-repeat 0px 0px;
 	height: 180px;
 }
-
-#default .admin_masthead {
+.default .admin_masthead {
 	background: url(../images/content/Logo_main_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
-
-#default .subnav ul li p {
+.default .subnav ul li p {
 	color: #1F5E2F;
 }
 /*Social Science highlight colour*/
 
-#social_science .masthead {
+.social_science .masthead {
+	background: url(../images/content/Logo_science.png) no-repeat 0px 0px;
+	height: 180px;
+}
+.social_science .admin_masthead {
 	background: url(../images/content/Logo_science_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
-#social_science .admin_masthead {
-	background: url(../images/content/Logo_science_admin.png) no-repeat 0px 0px;
-	height: 180px;
-}
-
-#social_science .mainnav.clearfix ul .current {
+.social_science .mainnav.clearfix ul .current {
 	background: #1d1031;
 	background: -moz-linear-gradient(top, black, #24143c 1px, #442a6e 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #1d1031), to(#442a6e));
 }
-
-#social_science h1 {
+.social_science h1 {
 	color: #442a6e;
 }
-
-#social_science h2 {
+.social_science h2 {
 	color: #442a6e;
 }
-
-#social_science .subnav {
+.social_science .subnav {
 	background: #F1F1F1;
 	border-top: 8px solid #442a6e;
 	margin-top: 0px;
 	width: 100%;
 	float: left;
 }
-
-#social_science .subnav ul li p {
+.social_science .subnav ul li p {
 	color: #442a6e;
 }
-#social_science_current  a{
+.social_science_current  a{
 	background: #452A6D;
 	color: #FFF!important;
 }
-
 /*Qualitative highlight colour*/
 
-#qualitative .masthead {
+.qualitative .masthead {
 	background: url(../images/content/Logo_qualitative.png) no-repeat 0px 0px;
 	height: 180px;
 }
-#qualitative .admin_masthead {
+.qualitative .admin_masthead {
 	background: url(../images/content/Logo_qualitative_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
-
-#qualitative .mainnav.clearfix ul .current {
+.qualitative .mainnav.clearfix ul .current {
 	background: #009cda;
 	background: -moz-linear-gradient(top, black, #00415b 1px, #009cda 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #00415b), to(#009cda));
 }
-
-#qualitative h1 {
+.qualitative h1 {
 	color: #1486BB;
 }
-
-#qualitative h2 {
+.qualitative h2 {
 	color: #1486BB;
 }
-
-#qualitative .subnav {
+.qualitative .subnav {
 	background: #F1F1F1;
 	border-top: 8px solid #179CDA;
 	margin-top: 0px;
 	width: 100%;
 	float: left;
 }
-
-#qualitative .subnav ul li p {
+.qualitative .subnav ul li p {
 	color: #179CDA;
 }
-#qualitative_current  a{
+.qualitative_current  a{
 	background: #229CD8;
 	color: #FFF!important;
 }
-
 /*Longitudinal highlight colour*/
 
-#longitudinal .masthead {
+.longitudinal .masthead {
 	background: url(../images/content/Logo_Longitudinal.png) no-repeat 0px 0px;
 	height: 180px;
 }
-#longitudinal .admin_masthead {
+.longitudinal .admin_masthead {
 	background: url(../images/content/Logo_Longitudinal_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
-
-#longitudinal .mainnav.clearfix ul .current {
+.longitudinal .mainnav.clearfix ul .current {
 	background: #0d8682;
 	background: -moz-linear-gradient(top, black, #0d8682 1px, #04403f 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #0d8682), to(#04403f));
 }
-
-#longitudinal h1 {
+.longitudinal h1 {
 	color: #0A7370;
 }
-
-#longitudinal h2 {
+.longitudinal h2 {
 	color: #0A7370;
 }
-
-#longitudinal .subnav {
+.longitudinal .subnav {
 	background: #F1F1F1;
 	border-top: 8px solid #0A7370;
 	margin-top: 0px;
 	width: 100%;
 	float: left;
 }
-
-#longitudinal .subnav ul li p {
+.longitudinal .subnav ul li p {
 	color: #0A7370;
 }
-#longitudinal_current  a{
+.longitudinal_current  a{
 	background: #0A7370;
 	color: #FFF!important;
 }
-
 /*ingigenous highlight colour*/
 
-#indigenous .masthead {
+.indigenous .masthead {
 	background: url(../images/content/Logo_indigenous.png) no-repeat 0px 0px;
 	height: 180px;
 }
-#indigenous .admin_masthead {
+.indigenous .admin_masthead {
 	background: url(../images/content/Logo_indigenous_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
-
-#indigenous .mainnav.clearfix ul .current {
+.indigenous .mainnav.clearfix ul .current {
 	background: #703504;
 	background: -moz-linear-gradient(top, black, #703504 1px, #f27500 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #703504), to(#f27500));
 }
-
-#indigenous h1 {
+.indigenous h1 {
 	color: #C96413;
 }
-
-#indigenous h2 {
+.indigenous h2 {
 	color: #C96413;
 }
-
-#indigenous .subnav {
+.indigenous .subnav {
 	background: #F1F1F1;
 	border-top: 8px solid #C96413;
 	margin-top: 0px;
 	width: 100%;
 	float: left;
 }
-
-#indigenous .subnav ul li p {
+.indigenous .subnav ul li p {
 	color: #C7641B;
 }
-
-#indigenous_current  a{
+.indigenous_current  a{
 	background: #C7641B;
 	color: #FFF!important;
 }
-
 /*historical highlight colour*/
 
-#historical .masthead {
+.historical .masthead {
 	background: url(../images/content/Logo_historical.png) no-repeat 0px 0px;
 	height: 180px;
 }
-#historical .admin_masthead {
+.historical .admin_masthead {
 	background: url(../images/content/Logo_historical_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
-
-#historical .mainnav.clearfix ul .current {
+.historical .mainnav.clearfix ul .current {
 	background: #c5b37c;
 	background: -moz-linear-gradient(top, black, #5b5338 1px, #c5b37c 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #5b5338), to(#c5b37c));
 }
-
-#historical h1 {
+.historical h1 {
 	color: #9C8F63;
 }
-
-#historical h2 {
+.historical h2 {
 	color: #9C8F63;
 }
-
-#historical .subnav {
+.historical .subnav {
 	background: #F1F1F1;
 	border-top: 8px solid #9C8F63;
 	margin-top: 0px;
 	width: 100%;
 	float: left;
 }
-
-#historical .subnav ul li p {
+.historical .subnav ul li p {
 	color: #9C8F63;
 }
-
-#historical_current  a{
+.historical_current  a{
 	background: #9C8F63;
 	color: #FFF!important;
 }
-
 /*historical highlight colour*/
 
-#international .masthead {
+.international .masthead {
 	background: url(../images/content/Logo_international.png) no-repeat 0px 0px;
 	height: 180px;
 }
-#international .admin_masthead  {
+.international .admin_masthead  {
 	background: url(../images/content/Logo_international_admin.png) no-repeat 0px 0px;
 	height: 180px;
 }
-
-#international .mainnav.clearfix ul .current {
+.international .mainnav.clearfix ul .current {
 	background: #630707;
 	background: -moz-linear-gradient(top, black, #630707 1px, #e31d25 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #630707), to(#e31d25));
 }
-
-#international h1 {
+.international h1 {
 	color: #B91B20;
 }
-
-#international h2 {
+.international h2 {
 	color: #B91B20;
 }
-
-#international .subnav {
+.international .subnav {
 	background: #F1F1F1;
 	border-top: 8px solid #B91B20;
 	margin-top: 0px;
 	width: 100%;
 	float: left;
 }
-
-#international .subnav ul li p {
+.international .subnav ul li p {
 	color: #B91B20;
 }
-
-#international_current  a{
+.international_current  a{
 	background: #B91B20;
 	color: #FFF!important;
 }

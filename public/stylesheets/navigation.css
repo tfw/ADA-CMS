@@ -34,8 +34,7 @@
 }
 .content nav ul li {
 	border-bottom: 1px solid #CCC;
-/* editing swell original n.f.*/
-/*	list-style: url(none) none;*/
+	list-style: url(none) none;
 	display: block;
 	padding: 0px;
 }
@@ -54,26 +53,26 @@
 	color: #000;
 	background: #E8E8E8 url(../images/structure/icon_hover.png) no-repeat 5px center;
 }
-#science        {
+.science        {
 	background: url(../images/structure/icon_socialscience.png) no-repeat 5px center;
 }
-#historical {
+.historical {
 	background: url(../images/structure/icon_historical.png) no-repeat 5px center;
 	z-index: auto;
 }
-#indigenous {
+.indigenous {
 	background: url(../images/structure/icon_indigenous.png) no-repeat 5px center;
 	z-index: auto;
 }
-#longitudinal {
+.longitudinal {
 	background: url(../images/structure/icon_longitudinal.png) no-repeat 5px center;
 	z-index: auto;
 }
-#qualitative {
+.qualitative {
 	background: url(../images/structure/icon_qualitative.png) no-repeat 5px center;
 	z-index: auto;
 }
-#international {
+.international {
 	background: url(../images/structure/icon_international.png) no-repeat 5px center;
 	z-index: auto;
 }

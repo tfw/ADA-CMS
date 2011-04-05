@@ -53,10 +53,16 @@
 
     
 <article>
-  <div class="notice"><%= notice %></div>
-  <div class="alert"><%= alert %></div>
-
   <div class="content-area box">
+
+		<% if flash[:notice]%>
+	  	<div class="notice"><p><%= notice %></p></div>
+		<% end %>
+		
+		<% if flash[:alert]%>
+	  	<div class="alert"><p><%= alert %></p></div>
+		<% end %>
+		
     <%= yield %>
   </div>
 </article>
