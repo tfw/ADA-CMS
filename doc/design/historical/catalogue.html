@@ -8,17 +8,20 @@
 		<script src="../scripts/modernizr-1.5.min.js"></script>
 	</head>
     
-    <body onLoad=" resizeTo(1050,1100);" id="historical">
+    <body class="historical">
 		<header>
-			<div class="login">
+		  <div class="login">
 		    <h1>USER Log-in </h1>
-				<form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
-					<input type="text" name="textfield" id="login_name"/>
-					<input type="text" name="login_pass" id="login_pass"/>
-					<input type="image" alt="Log In" name="imageField" id="enter_button" src="../images/structure/bttn_enter.png"/>
-				</form>
-			</div>
-			<div class="masthead"><a href="index.html">Australian Data Archive</a></div>
+		    <form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
+		      <input type="text" name="login_name" id="login_name"/>
+		      <input type="text" name="login_pass" id="login_pass"/>
+		      <input type="image" alt="Log In" name="enter_button" id="enter_button" src="../images/structure/bttn_enter.png"/>
+		      <input type="image" alt="log out" name="logout_button" id="logout_button" src="../images/structure/bttn_logout.png"/>
+		      <input name="remember_me" id="remember_me" type="checkbox" value="">
+		      <label>remember me</label>
+	        </form>
+	      </div>
+		  <div class="masthead"><a href="index.html">Australian Data Archive</a></div>
 		</header>
 		<nav class="mainnav clearfix">
 		  <ul>
@@ -80,7 +83,7 @@
 				  <p>historical</p></li>
 				<li ><a href="#">home</a></li>
 				<li><a href="about.html">about</a></li>
-				<li id="historical_current"><a href="catalogue.html">catalogue</a></li>
+				<li class="historical_current"><a href="catalogue.html">catalogue</a></li>
 				<li><a href="creating_data.html">creating data</a></li>
                 <li><a href="using_data.html">using data</a></li>
                 <li><a href="census_data.html">Census data</a></li>
@@ -95,19 +98,19 @@
 		</nav>
 		
         <section class="content">
-			<nav>
+			<nav class="archive_menu">
 				<ul>
-                <li id="science"><a href="#">social science</a></li>
-				<li id="historical" class="archive_current"><a href="../historical/index.html">historical </a></li>
-				<li id="indigenous"><a href="../indigenous/index.html">indigenous</a></li>
-				<li id="longitudinal"><a href="../longitudinal/index.html">longitudinal</a></li>
-				<li id="qualitative"><a href="../qualitative/index.html">qualitative</a></li>
-				<li id="international"><a href="../international/index.html">international</a>
+                <li class="science"><a href="#">social science</a></li>
+				<li class="historical archive_current"><a href="../historical/index.html">historical </a></li>
+				<li class="indigenous"><a href="../indigenous/index.html">indigenous</a></li>
+				<li class="longitudinal"><a href="../longitudinal/index.html">longitudinal</a></li>
+				<li class="qualitative"><a href="../qualitative/index.html">qualitative</a></li>
+				<li class="international"><a href="../international/index.html">international</a>
 				</li>
 			  </ul>
 			</nav>
 			
-          <article>
+          <section class="main">
                 
 <h1>Catalogue </h1>
 <p>  There are two ways to access the ADA data holdings:</p>
@@ -123,8 +126,9 @@
 </ul>
 <p>All visitors to the ADA Data Catalogue can browse and search the catalogue, view study and variable documentation (including frequencies) and download related material (questionnaires, codebooks, etc). Registered users can also analyse and visualise most data online and users who have completed the relevant undertaking form(s) can download entire studies or subsets of variables in a range of formats (<a href="#">see Accessing data</a>). </p>
               
-          </article>
-	</section>
+          </section>
+	
+    </section>
         
 		<section class='partners'>
 <div class="captions">

@@ -29,16 +29,56 @@
 	display: block;
 	background: #FFF;
 }
-.content nav ul {
+.archive_menu {
+	float: left;
+	margin: 0px;
+	clear: none;
+	padding-left: 40px;
+	width: 150px;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+.ada {
+	background: url(../images/structure/icon_ada.png) no-repeat 0px 0px!important;
+	font-weight: normal;
+}
+.science        {
+	background: url(../images/structure/icon_socialscience.png) no-repeat 5px center;
+}
+.historical {
+	background: url(../images/structure/icon_historical.png) no-repeat 5px center;
+	z-index: auto;
+}
+.indigenous {
+	background: url(../images/structure/icon_indigenous.png) no-repeat 5px center;
+	z-index: auto;
+}
+.longitudinal {
+	background: url(../images/structure/icon_longitudinal.png) no-repeat 5px center;
+	z-index: auto;
+}
+.qualitative {
+	background: url(../images/structure/icon_qualitative.png) no-repeat 5px center;
+	z-index: auto;
+}
+.international {
+	background: url(../images/structure/icon_international.png) no-repeat 5px center;
+	z-index: auto;
+}
+.content nav.archive_menu {
+}
+.content nav.archive_menu ul{
 	padding: 0px;
 }
-.content nav ul li {
+.content nav.archive_menu ul li{
 	border-bottom: 1px solid #CCC;
 	list-style: url(none) none;
 	display: block;
 	padding: 0px;
+	background: no-repeat 0px 0px;
 }
-.content nav ul li a {
+.content nav.archive_menu ul li a{
 	display: block;
 	padding-bottom: 8px;
 	padding-left: 30px;
@@ -47,34 +87,11 @@
 	text-transform: uppercase;
 	color: #999;
 }
-.content nav ul li a:hover {
+.content nav.archive_menu ul li a:hover {
 	display: block;
 	text-decoration: none;
 	color: #000;
-	background: #E8E8E8 url(../images/structure/icon_hover.png) no-repeat 5px center;
-}
-#science        {
-	background: url(../images/structure/icon_socialscience.png) no-repeat 5px center;
-}
-#historical {
-	background: url(../images/structure/icon_historical.png) no-repeat 5px center;
-	z-index: auto;
-}
-#indigenous {
-	background: url(../images/structure/icon_indigenous.png) no-repeat 5px center;
-	z-index: auto;
-}
-#longitudinal {
-	background: url(../images/structure/icon_longitudinal.png) no-repeat 5px center;
-	z-index: auto;
-}
-#qualitative {
-	background: url(../images/structure/icon_qualitative.png) no-repeat 5px center;
-	z-index: auto;
-}
-#international {
-	background: url(../images/structure/icon_international.png) no-repeat 5px center;
-	z-index: auto;
+	background: #E8E8E8 no-repeat -32px /*url(../images/structure/icon_hover.png) no-repeat 5px center*/;
 }
 .archive_current {
 	background: #333 url(../images/structure/icon_current.png) no-repeat 5px center!important;

@@ -8,15 +8,19 @@
 		<script src="scripts/modernizr-1.5.min.js"></script>
 	</head>
     
-    <body  id="default">
+    <body class="default">
 		<header>
 			<div class="login">
 				<h1>USER Log-in </h1>
 				<form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
-					<input type="text" name="textfield" id="login_name"/>
-					<input type="text" name="login_pass" id="login_pass"/>
-					<input type="image" alt="Log In" name="imageField" id="enter_button" src="images/structure/bttn_enter.png"/>
-				</form>
+				<input type="text" name="textfield" id="login_name"/>
+				<input type="text" name="login_pass" id="login_pass"/>
+				<input type="image" alt="Log In" name="imageField" id="enter_button" src="images/structure/bttn_enter.png"/>
+                <input type="image" alt="log out" name="imageField" id="logout_button" src="images/structure/bttn_logout.png"/>
+                <input type="image" alt="log out" name="imageField" id="register_button" src="images/structure/bttn_register.png"/>
+                <input name="remember_me" id="remember_me" type="checkbox" value=""><label>remember me</label>
+                </form>
+                
 			</div>
 			<div class="masthead"><a href="../index.html">Australian Data Archive</a></div>
 	</header>
@@ -80,37 +84,50 @@
 		</nav>
 		
         <section class="content">
-			<nav>
+		  <nav class="archive_menu">
 				<ul>
-                <li id="science"><a href="social_science/index.html">social science</a></li>
-				<li id="historical"><a href="historical/index.html">historical </a></li>
-				<li id="indigenous"><a href="indigenous/index.html">indigenous</a></li>
-				<li id="longitudinal"><a href="longitudinal/index.html">longitudinal</a></li>
-				<li id="qualitative"><a href="qualitative/index.html">qualitative</a></li>
-				<li id="international"><a href="international/index.html">international</a>
+                <li class="science"><a href="social_science/index.html">social science</a></li>
+				<li class="historical"><a href="historical/index.html">historical </a></li>
+				<li class="indigenous"><a href="indigenous/index.html">indigenous</a></li>
+				<li class="longitudinal"><a href="longitudinal/index.html">longitudinal</a></li>
+				<li class="qualitative"><a href="qualitative/index.html">qualitative</a></li>
+				<li class="international"><a href="international/index.html">international</a>
 				</li>
 			  </ul>
 			</nav>
 			
-            <article>
+            <section class="main">
 <aside>
 					<h2>Breakout Box</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			  </aside>
+
+<nav>
+				<ul>
+                <li><a href="social_science/index.html">social science</a></li>
+				<li><a href="historical/index.html">historical </a></li>
+				<li><a href="indigenous/index.html">indigenous</a></li>
+				<li><a href="longitudinal/index.html">longitudinal</a></li>
+				<li><a href="qualitative/index.html">qualitative</a></li>
+				<li><a href="international/index.html">international</a>
+				</li>
+			  </ul>
+			</nav>
+
                 
 <h1>Welcome to the ADA</h1>
                 <p>The Australian Data Archive (ADA) provides a national service for the collection and preservation of digital research data and to make these data available for secondary analysis by academic researchers and other users.</p>
               <p>The ADA is comprised of six sub-archives:</p>
               <ul>
-                <li> ADA Social Science</li>
-                <li> ADA Historical</li>
-                <li> ADA Indigenous</li>
-                <li> ADA Longitudinal</li>
-                <li> ADA Qualitative</li>
-                <li>ADA International</li>
+                <li><a href="#"> ADA Social Science</a></li>
+                <li><a href="#"> ADA Historical</a></li>
+                <li><a href="#"> ADA Indigenous</a></li>
+                <li><a href="#"> ADA Longitudinal</a></li>
+                <li><a href="#"> ADA Qualitative</a></li>
+                <li><a href="#">ADA International</a></li>
               </ul>
               <p>The archive is provided by a consortium of leading national Australian universities, managed by the Australian National University (ANU) and including nodes around Australia, at the University of Melbourne, University of Queensland, University of Technology Sydney and University of Western Australia</p>
-		  </article>
+		  </section>
 </section>
         
 		<section class='partners'>

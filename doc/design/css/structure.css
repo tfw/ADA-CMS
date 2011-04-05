@@ -1,4 +1,9 @@
 @charset "ISO-8859-1";
+header.admin{
+	background: url(../images/structure/bg_masthead_admin.gif) repeat-x!important;
+	height: 180px;
+	display: block;
+}
 /* CSS Document */
 
 header {
@@ -32,8 +37,8 @@ header {
 	margin-right: 40px;
 }
 .login h1 {
-	padding-top: 30px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 2px;
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #666;
@@ -120,25 +125,20 @@ header {
 	padding-bottom: 40px;
 	width: 100%;
 }
-.content nav {
-	float: left;
-	margin: 0px;
-	clear: none;
-	padding-left: 40px;
-	width: 150px;
-	display: block;
-	position: relative;
-	z-index: 1;
-}
 article {
 	display: block;
 	position: relative;
 	padding-left: 210px;
 	margin-right: 40px;
 }
-
-article aside
-{
+.main {
+	display: block;
+	position: relative;
+	padding-left: 210px;
+	margin-right: 40px;
+}
+section.main
+aside{
 	display: block;
 	position: relative;
 	width: 200px;
@@ -219,7 +219,7 @@ footer p {
 .searchContainer {
 	background: #FFF;
 	margin-left: 2px;
-	float: left;
+	float: right;
 	padding-right: 5px;
 	-webkit-border-top-left-radius: 8px;
 	-moz-border-radius-topleft: 8px;
@@ -230,32 +230,39 @@ footer p {
 	-moz-box-shadow:0px -1px 3px #999;
 	-webkit-box-shadow:0px -1px 3px #999;
 	box-shadow:0px -1px 3px #999;
+	margin-right: 40px;
 }
-#social_science .content article aside {
+.social_science .content section.main aside{
 	float: left;
 	margin-left: 0px;
 	width: 430px;
 	margin-right: 20px;
 }
-#qualitative .content article aside {
+.qualitative .content section.main aside{
 	float: left;
 	margin-left: 0px;
 	width: 430px;
 	margin-right: 20px;
 }
-#longitudinal .content article aside {
+.longitudinal .content section.main aside{
 	float: left;
 	margin-left: 0px;
 	width: 430px;
 	margin-right: 20px;
 }
-#international .content article aside {
+.international .content section.main aside{
 	float: left;
 	margin-left: 0px;
 	width: 430px;
 	margin-right: 20px;
 }
-#indigenous .content article aside {
+.indigenous .content section.main aside{
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}
+.historical .content section.main aside{
 	float: left;
 	margin-left: 0px;
 	width: 430px;
@@ -264,15 +271,10 @@ footer p {
 .datasets {
 	width: 230px!important;
 	margin-right: 0px;
+	float: right;
 }
 .datasets h3 {
 	font-weight: normal;
 	padding-bottom: 10px;
 	color: #000;
-}
-#historical .content article aside {
-	float: left;
-	margin-left: 0px;
-	width: 430px;
-	margin-right: 20px;
 }

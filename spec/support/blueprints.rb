@@ -97,5 +97,6 @@ end
 
 Study.blueprint do
   label Sham.name
+  ddi_id Sham.name
   abstract Sham.body
 end

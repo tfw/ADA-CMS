@@ -131,69 +131,80 @@ module Nesstar
         file_name = "#{ddi_id}.xml"
         
         mutex = Mutexer.wait_for_mutex(2)
-
-        mutex.synchronize do
-          # puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
-          http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
-          http_headers = http_headers.split("\n")
+        begin
+          mutex.synchronize do
+            # puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
+            http_headers = `curl -i --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+            http_headers = http_headers.split("\n")
         
-          if http_headers.first =~ /500/
-            workitem.fields['fetch_errors'] << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
-            Inkling::Log.create!(:category => "integration", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
-            next
-          end
+            if http_headers.first =~ /500/
+              workitem.fields['fetch_errors'] << "Error while downloading #{ddi_id}: #{http_headers.first} \n"
+              Inkling::Log.create!(:category => "integration", :text =>  "HTTP 500 error downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}")
+              next
+            end
         
-          begin
-            `curl -o #{$studies_xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
-            workitem.fields['downloaded_files'] << file_name
-          rescue StandardError => boom
-            puts "#{boom}.to_s"
-            workitem.fields['fetch_errors'] << "Error while downloading #{ddi_id}: #{boom} \n"
+            begin
+              `curl -o #{$studies_xml_dir}#{file_name} --compressed "http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+              workitem.fields['downloaded_files'] << file_name
+            rescue StandardError => boom
+              puts "#{boom}.to_s"
+              workitem.fields['fetch_errors'] << "Error while downloading #{ddi_id}: #{boom} \n"
+            end
+
+            study_hash = Nesstar::RDF::Parser.parse("#{$studies_xml_dir}#{ddi_id}.xml")
+            study = Study.store_with_fields(study_hash)
+
+            DdiMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
+
+            #find archive study integrations which need to be linked to the new study
+            integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(ddi_id, nil)
+
+            for integration in integrations
+              integration.study_id = study.id
+              integration.save!
+            end
           end
-
-          study_hash = Nesstar::RDF::Parser.parse("#{$studies_xml_dir}#{ddi_id}.xml")
-          study = Study.store_with_fields(study_hash)
-
-          DdiMapping.batch_create(study_hash) #create mappings entries for any DDI elements/attributes we have not yet noticed
-
-          #find archive study integrations which need to be linked to the new study
-          integrations = ArchiveStudyIntegration.find_all_by_ddi_id_and_study_id(ddi_id, nil)
-
-          for integration in integrations
-            integration.study_id = study.id
-            integration.save!
-          end
+        ensure
+          ActiveRecord::Base.connection_pool.release_connection
         end
       end
 
       engine.register_participant 'download_related_materials' do |workitem|
         mutex = Mutexer.wait_for_mutex(2)
-        mutex.synchronize do 
-          ddi_id = workitem.fields['ddi_id']
-          study = Study.find_by_ddi_id(ddi_id)
-          # puts "related materials for #{study.label}"
-          #we looks for a study which records the URL of a related materials document
-          related_materials_entry = study.related_materials_attribute
-          unless related_materials_entry.nil?
-            document_name = related_materials_entry.value.split(".").last + ".xml"
-            # puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
-            `curl -o #{$related_xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
+        begin
+          mutex.synchronize do 
+            ddi_id = workitem.fields['ddi_id']
+            study = Study.find_by_ddi_id(ddi_id)
+            # puts "related materials for #{study.label}"
+            #we looks for a study which records the URL of a related materials document
+            related_materials_entry = study.related_materials_attribute
+            unless related_materials_entry.nil?
+              document_name = related_materials_entry.value.split(".").last + ".xml"
+              # puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
+              `curl -o #{$related_xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
+            end
           end
+        ensure
+          ActiveRecord::Base.connection_pool.release_connection
         end
       end
 
       engine.register_participant 'download_variables' do |workitem|
         mutex = Mutexer.wait_for_mutex(2)
-        mutex.synchronize do                  
-          mutex = Mutexer.wait_for_mutex(2)
-          ddi_id = workitem.fields['ddi_id']
-          study = Study.find_by_ddi_id(ddi_id)
+        begin
+          mutex.synchronize do                  
+            mutex = Mutexer.wait_for_mutex(2)
+            ddi_id = workitem.fields['ddi_id']
+            study = Study.find_by_ddi_id(ddi_id)
         
-          #we looks for a study's variables
-          variable_url = study.variables_attribute.value
-          var_file_name = variable_url.split(".").last
+            #we looks for a study's variables
+            variable_url = study.variables_attribute.value
+            var_file_name = variable_url.split(".").last
 
-          `curl -o #{$variables_xml_dir}#{var_file_name} --compressed "#{variable_url}"`
+            `curl -o #{$variables_xml_dir}#{var_file_name} --compressed "#{variable_url}"`
+          end
+        ensure
+          ActiveRecord::Base.connection_pool.release_connection
         end
       end
       

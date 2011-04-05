@@ -9,19 +9,21 @@ class Study < ActiveRecord::Base
   has_many :archives, :through => :archive_studies
   has_many :variables
   
-  validates :label, :presence => true
+  validates_presence_of :label
+  validates_presence_of :ddi_id
+  validates_uniqueness_of :ddi_id
   
   #facet constants
-  FACETS = {:data_kind => (DdiMapping.find_by_ddi('dataKind').val                         || "Data Kind"),
-          :sampling_abbr => (DdiMapping.find_by_ddi('sampling').val                       || "Sampling"),
-          :collection_mode_abbr => (DdiMapping.find_by_ddi('collMode')                    || "Collection Mode"),
-          :contact_affiliation =>  (DdiMapping.find_by_ddi('stdyContactAffiliation').val  ||"Contact Affiliation"),          
-          :geographical_cover =>  (DdiMapping.find_by_ddi('geographicalCover').val        || "Geographical Cover"),
-          :geographical_unit =>  (DdiMapping.find_by_ddi('geographicalUnit').val          || "Geographical Unit"),
-          :analytic_unit =>  (DdiMapping.find_by_ddi('analyticUnit').val                  || "Analytic Unit"),
-          :creation_date =>  (DdiMapping.find_by_ddi('creationDate').val                  || "Creation Date"),
-          :series_name =>  (DdiMapping.find_by_ddi('seriesName').val                      || "Series Name"),
-          :study_auth_entity =>  (DdiMapping.find_by_ddi('stdyAuthEntity').val            || "Study Author")
+  FACETS = {:data_kind => (DdiMapping.human_readable('dataKind')                        || "Data Kind"),
+          :sampling_abbr => (DdiMapping.human_readable('sampling')                      || "Sampling"),
+          :collection_mode_abbr => (DdiMapping.human_readable('collMode')               || "Collection Mode"),
+          :contact_affiliation => (DdiMapping.human_readable('stdyContactAffiliation')  ||"Contact Affiliation"),          
+          :geographical_cover => (DdiMapping.human_readable('geographicalCover')        || "Geographical Cover"),
+          :geographical_unit => (DdiMapping.human_readable('geographicalUnit')          || "Geographical Unit"),
+          :analytic_unit => (DdiMapping.human_readable('analyticUnit')                  || "Analytic Unit"),
+          :creation_date => (DdiMapping.human_readable('creationDate')                  || "Creation Date"),
+          :series_name => (DdiMapping.human_readable('seriesName')                      || "Series Name"),
+          :study_auth_entity => (DdiMapping.human_readable('stdyAuthEntity')            || "Study Author")
         }
         
   #solr config
@@ -48,6 +50,7 @@ class Study < ActiveRecord::Base
     # autocomplete :search_term, :using => :label
   end  
   
+  
   #class behaviour to create Study objects based on a hash built from scanning an XML document
   #this code might be moved out to a builder object later on.
   def self.store_with_fields(data)
@@ -57,7 +60,7 @@ class Study < ActiveRecord::Base
 
     study.label = data[:label]
     study.about = data[:about]
-    study.ddi_id = data[:about].split(".").last
+    study.ddi_id = study.about.split(".").last
     study.resource = data[:attribute_resource]
 
     local_data = data.dup
@@ -203,10 +206,6 @@ class Study < ActiveRecord::Base
   def field(key)
     field = study_fields.find_by_key(key)
     field.value if field
-  end
-  
-  def ddi_id
-    about.split(".").last
   end
   
   #returns the archive_study matching the archive

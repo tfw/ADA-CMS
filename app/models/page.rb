@@ -15,13 +15,11 @@ class Page < ActiveRecord::Base
   before_validation :default_partial, :if => "self.partial.nil?"
 
   validate :unique_archive_and_link_combination, :if => "self.archive"
+  validate :same_archive_as_parent
+  validates_presence_of :archive
   validates_presence_of :author
   validates_presence_of :link_title
   validates_presence_of :partial
-
-  # define_index do
-  #   indexes title
-  # end
 
 
   def self.archive_root_pages(archive)
@@ -40,8 +38,13 @@ class Page < ActiveRecord::Base
     return if pre_existing.size == 0
     return if pre_existing.size == 1 and pre_existing[0].id == self.id
 
-    errors.add(:name, "There's a page already named #{self.title} in the #{self.archive.name} archive.") if pre_existing and self.archive
-    errors.add(:archive, "There's a page already named #{self.title} in the #{self.archive.name} archive.")  if pre_existing and self.archive
+    errors.add(:name, "There's a page already named #{self.title} in the #{self.archive.name} archive ...") if pre_existing and self.archive
+  end
+
+  def same_archive_as_parent
+    if parent and parent.archive != self.archive
+      errors.add(:archive, "Child page (#{self.title}) must be in the same archive (#{self.parent.archive.name}) as its parent (#{self.parent.title}).")
+    end
   end
 
   def link_title_defaults_to_title
