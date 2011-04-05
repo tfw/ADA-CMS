@@ -19,6 +19,17 @@ describe Page do
       page2.valid?.should == false
       page2.errors.any?.should == true
     end
+    
+    specify "that it adheres to matching the archive of its parent" do
+      archive = Archive.make
+      another_archive = Archive.make
+      page = Page.make(:archive => archive)
+      child = Page.make(:parent => page, :archive => archive)
+      child.valid?.should be_true
+      
+      child.archive = another_archive
+      child.valid?.should be_false
+    end
   end
   
   describe "parent and child pages" do
