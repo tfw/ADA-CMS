@@ -8,17 +8,20 @@
 		<script src="../scripts/modernizr-1.5.min.js"></script>
 	</head>
     
-    <body onLoad=" resizeTo(1050,1100);" id="historical">
+    <body class="historical">
 		<header>
-			<div class="login">
+		  <div class="login">
 		    <h1>USER Log-in </h1>
-				<form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
-					<input type="text" name="textfield" id="login_name"/>
-					<input type="text" name="login_pass" id="login_pass"/>
-					<input type="image" alt="Log In" name="imageField" id="enter_button" src="../images/structure/bttn_enter.png"/>
-				</form>
-			</div>
-			<div class="masthead"><a href="index.html">Australian Data Archive</a></div>
+		    <form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
+		      <input type="text" name="login_name" id="login_name"/>
+		      <input type="text" name="login_pass" id="login_pass"/>
+		      <input type="image" alt="Log In" name="enter_button" id="enter_button" src="../images/structure/bttn_enter.png"/>
+		      <input type="image" alt="log out" name="logout_button" id="logout_button" src="../images/structure/bttn_logout.png"/>
+		      <input name="remember_me" id="remember_me" type="checkbox" value="">
+		      <label>remember me</label>
+	        </form>
+	      </div>
+		  <div class="masthead"><a href="index.html">Australian Data Archive</a></div>
 		</header>
 		<nav class="mainnav clearfix">
 		  <ul>
@@ -83,7 +86,7 @@
 				<li><a href="catalogue.html">catalogue</a></li>
 				<li><a href="creating_data.html">creating data</a></li>
                 <li><a href="using_data.html">using data</a></li>
-                <li id="historical_current"><a href="census_data.html">Census data</a></li>
+                <li class="historical_current"><a href="census_data.html">Census data</a></li>
                 <li><a href="user_guides.html">user guides</a></li>
                 <li><a href="news.html">news</a></li>
 				</li>
@@ -95,19 +98,19 @@
 		</nav>
 		
         <section class="content">
-			<nav>
+			<nav class="archive_menu">
 				<ul>
-                <li id="science"><a href="#">social science</a></li>
-				<li id="historical" class="archive_current"><a href="../historical/index.html">historical </a></li>
-				<li id="indigenous"><a href="../indigenous/index.html">indigenous</a></li>
-				<li id="longitudinal"><a href="../longitudinal/index.html">longitudinal</a></li>
-				<li id="qualitative"><a href="../qualitative/index.html">qualitative</a></li>
-				<li id="international"><a href="../international/index.html">international</a>
+                <li class="science"><a href="#">social science</a></li>
+				<li class="historical archive_current"><a href="../historical/index.html">historical </a></li>
+				<li class="indigenous"><a href="../indigenous/index.html">indigenous</a></li>
+				<li class="longitudinal"><a href="../longitudinal/index.html">longitudinal</a></li>
+				<li class="qualitative"><a href="../qualitative/index.html">qualitative</a></li>
+				<li class="international"><a href="../international/index.html">international</a>
 				</li>
 			  </ul>
 			</nav>
 			
-          <article>
+          <section class="main">
                 
 <h1>Themed Data</h1>
 <p>ADA Social Science currently hold over 2000 data sets covering topics from across the social sciences. ADA, in conjunction with leading Australian researchers, have established a series of thematic guides to content in the ADA Social Science holdings, for detailed information on specialized materials within the archive. </p>
@@ -120,7 +123,7 @@
   <li><a href="#">Australian public opinion polls</a></li>
 </ul>
 <p>If you have additional ideas for thematic content from the ADA Social Science holdings, please contact ADA at <a href="#">info@ada.edu.au</a>.</p>
-          </article>
+          </section>
 	</section>
         
 		<section class='partners'>

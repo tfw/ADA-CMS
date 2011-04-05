@@ -9,7 +9,7 @@
     <%= csrf_meta_tag %>	
 	</head
 			
-    <body id="<%= archive_css(@current_archive) %>">
+    <body class="<%= archive_css(@current_archive) %>">
 		<header>
 			<div class="login">
 				<% if current_user.nil? %>

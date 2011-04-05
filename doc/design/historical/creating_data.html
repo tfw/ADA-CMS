@@ -8,17 +8,20 @@
 		<script src="../scripts/modernizr-1.5.min.js"></script>
 	</head>
     
-    <body onLoad=" resizeTo(1050,1100);" id="historical">
+    <body class="historical">
 		<header>
-			<div class="login">
+		  <div class="login">
 		    <h1>USER Log-in </h1>
-				<form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
-					<input type="text" name="textfield" id="login_name"/>
-					<input type="text" name="login_pass" id="login_pass"/>
-					<input type="image" alt="Log In" name="imageField" id="enter_button" src="../images/structure/bttn_enter.png"/>
-				</form>
-			</div>
-			<div class="masthead"><a href="index.html">Australian Data Archive</a></div>
+		    <form action="" method="post" enctype="multipart/form-data" name="form2" class="formtastic">
+		      <input type="text" name="login_name" id="login_name"/>
+		      <input type="text" name="login_pass" id="login_pass"/>
+		      <input type="image" alt="Log In" name="enter_button" id="enter_button" src="../images/structure/bttn_enter.png"/>
+		      <input type="image" alt="log out" name="logout_button" id="logout_button" src="../images/structure/bttn_logout.png"/>
+		      <input name="remember_me" id="remember_me" type="checkbox" value="">
+		      <label>remember me</label>
+	        </form>
+	      </div>
+		  <div class="masthead"><a href="index.html">Australian Data Archive</a></div>
 		</header>
 		<nav class="mainnav clearfix">
 		  <ul>
@@ -81,7 +84,7 @@
 				<li ><a href="index.html">home</a></li>
 				<li><a href="about.html">about</a></li>
 				<li><a href="catalogue.html">catalogue</a></li>
-				<li id="historical_current"><a href="creating_data.html">creating data</a></li>
+				<li class="historical_current"><a href="creating_data.html">creating data</a></li>
                 <li><a href="using_data.html">using data</a></li>
                 <li><a href="census_data.html">Census data</a></li>
                 <li><a href="user_guides.html">user guides</a></li>
@@ -95,19 +98,19 @@
 		</nav>
 		
         <section class="content">
-			<nav>
+			<nav class="archive_menu">
 				<ul>
-                <li id="science"><a href="#">social science</a></li>
-				<li id="historical" class="archive_current"><a href="../historical/index.html">historical </a></li>
-				<li id="indigenous"><a href="../indigenous/index.html">indigenous</a></li>
-				<li id="longitudinal"><a href="../longitudinal/index.html">longitudinal</a></li>
-				<li id="qualitative"><a href="../qualitative/index.html">qualitative</a></li>
-				<li id="international"><a href="../international/index.html">international</a>
+                <li class="science"><a href="#">social science</a></li>
+				<li class="historical archive_current"><a href="../historical/index.html">historical </a></li>
+				<li class="indigenous"><a href="../indigenous/index.html">indigenous</a></li>
+				<li class="longitudinal"><a href="../longitudinal/index.html">longitudinal</a></li>
+				<li class="qualitative"><a href="../qualitative/index.html">qualitative</a></li>
+				<li class="international"><a href="../international/index.html">international</a>
 				</li>
 			  </ul>
 			</nav>
 			
-          <article>
+          <section class="main">
                 
 <h1>Creating Data </h1>
 <p>The task of managing and archiving your research data is a process, not an end state in which the researcher hands over his or her data to the archive on completion of the project. This approach would render the process of preparing the data for archiving both expensive and onerous on the researcher. Thus, data management and archiving should be incorporated into the project design and methodology at the outset of the project.</p>
@@ -119,7 +122,7 @@
   <li><a href="#"> Research ethics</a></li>
   <li><a href="#"> Collecting and managing your data</a></li>
 </ul>
-          </article>
+          </section>
 	</section>
         
 		<section class='partners'>
