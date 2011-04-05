@@ -1,5 +1,27 @@
 .concealed {display: none;}
 
+#search-tabs ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#search-tabs li {
+	display: inline;
+	border: solid;
+	border-width: 1px 1px 0 1px;
+	margin: 0 0.5em 0 0;
+}
+
+#search-tabs li a {
+	padding: 0 1em;
+}
+
+#search-tabs #selected {
+	padding-bottom: 1px; 
+	background: gray;
+}
+
 #search-results li{
 	display: inline;
 	list-style-type: none;
