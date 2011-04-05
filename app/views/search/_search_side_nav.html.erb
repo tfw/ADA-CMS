@@ -9,7 +9,7 @@
 						<h3><%= Study::FACETS[facet.name.to_sym] %></h3>
 		        <ul>
 				    <% facet.rows.each do |row| %>
-				      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
+				      <li> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
 				    <% end %>
 					<% end %>
 	        </ul>
@@ -26,7 +26,7 @@
 				<h3><%= facet.name %></h3>
 	       <ul>
 		    <% facet.rows.each do |row| %>
-		      <li> <%= link_to row.value, search_path(:term => @term, :archive_id => Archive.ada.id, :var_filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
+		      <li> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => Archive.ada.id, :var_filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
 		    <% end %>
 			<% end %>
 	      </ul>
