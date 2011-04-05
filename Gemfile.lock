@@ -1,9 +1,9 @@
 GIT
-  remote: git://github.com/galetahub/rails-ckeditor.git
-  revision: 9cacf3f9f3f987d1dffbde89eeb03ab6fdc999c5
+  remote: git://github.com/cjheath/rails-ckeditor.git
+  revision: ef3b0b08687103fa42d72d89c4bddf4e725bbbb6
   branch: rails3
   specs:
-    ckeditor (3.5.0)
+    ckeditor (3.5.2)
       mime-types (>= 1.16)
 
 GIT

@@ -2,8 +2,6 @@ class CreateResourcesTables < ActiveRecord::Migration
   extend Inkling::Util::MigrationHelpers
 
   def self.up
-    drop_table 'media'
-
     create_table 'documents' do |t|
       t.integer :user_id, :null => :false
       t.string :title, :null => false
