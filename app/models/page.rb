@@ -38,8 +38,7 @@ class Page < ActiveRecord::Base
     return if pre_existing.size == 0
     return if pre_existing.size == 1 and pre_existing[0].id == self.id
 
-    errors.add(:name, "There's a page already named #{self.title} in the #{self.archive.name} archive.") if pre_existing and self.archive
-    errors.add(:archive, "There's a page already named #{self.title} in the #{self.archive.name} archive.")  if pre_existing and self.archive
+    errors.add(:name, "There's a page already named #{self.title} in the #{self.archive.name} archive ...") if pre_existing and self.archive
   end
 
   def same_archive_as_parent

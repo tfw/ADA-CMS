@@ -34,3 +34,12 @@ end
 task :bundler do
   system('bundle install')
 end
+
+task :regenerate_paths => :environment do
+  for klass in [Page, News, ArchiveStudy, Document, Image]
+    klass.all.each do |content| 
+      puts "#{klass.to_s} - id (#{content.id} - title #{content.title})"
+      content.save! 
+    end
+  end
+end

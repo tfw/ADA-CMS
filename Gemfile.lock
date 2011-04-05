@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/tfw/inkling.git
-  revision: fd78bd95261a6359e911656847042c0bec9b93fe
+  revision: 155c3a23d430f7abc5d6d6bc1231cb7ad5bc13d7
   specs:
     inkling (0.1.0)
       cancan

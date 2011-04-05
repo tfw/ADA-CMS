@@ -18,4 +18,8 @@ class ArchiveStudy < ActiveRecord::Base
     slug = "/#{archive.slug}/"
     slug += sluggerize(study.ddi_id)
   end
+  
+  def title
+    study.title
+  end
 end

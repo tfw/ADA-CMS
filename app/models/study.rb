@@ -60,7 +60,7 @@ class Study < ActiveRecord::Base
 
     study.label = data[:label]
     study.about = data[:about]
-    study.ddi_id = data[:about].split(".").last
+    study.ddi_id = study.about.split(".").last
     study.resource = data[:attribute_resource]
 
     local_data = data.dup
