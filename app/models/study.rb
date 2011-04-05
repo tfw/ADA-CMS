@@ -14,16 +14,16 @@ class Study < ActiveRecord::Base
   validates_uniqueness_of :ddi_id
   
   #facet constants
-  FACETS = {:data_kind => (ddi_mapping('dataKind')                        || "Data Kind"),
-          :sampling_abbr => (ddi_mapping('sampling')                      || "Sampling"),
-          :collection_mode_abbr => (ddi_mapping('collMode')               || "Collection Mode"),
-          :contact_affiliation =>  (ddi_mapping('stdyContactAffiliation') ||"Contact Affiliation"),          
-          :geographical_cover =>  (ddi_mapping('geographicalCover')       || "Geographical Cover"),
-          :geographical_unit =>  (ddi_mapping('geographicalUnit')         || "Geographical Unit"),
-          :analytic_unit =>  (ddi_mapping('analyticUnit')                 || "Analytic Unit"),
-          :creation_date =>  (ddi_mapping('creationDate')                 || "Creation Date"),
-          :series_name =>  (ddi_mapping('seriesName')                     || "Series Name"),
-          :study_auth_entity =>  (ddi_mapping('stdyAuthEntity')           || "Study Author")
+  FACETS = {:data_kind => (DdiMapping.human_readable('dataKind')                        || "Data Kind"),
+          :sampling_abbr => (DdiMapping.human_readable('sampling')                      || "Sampling"),
+          :collection_mode_abbr => (DdiMapping.human_readable('collMode')               || "Collection Mode"),
+          :contact_affiliation => (DdiMapping.human_readable('stdyContactAffiliation')  ||"Contact Affiliation"),          
+          :geographical_cover => (DdiMapping.human_readable('geographicalCover')        || "Geographical Cover"),
+          :geographical_unit => (DdiMapping.human_readable('geographicalUnit')          || "Geographical Unit"),
+          :analytic_unit => (DdiMapping.human_readable('analyticUnit')                  || "Analytic Unit"),
+          :creation_date => (DdiMapping.human_readable('creationDate')                  || "Creation Date"),
+          :series_name => (DdiMapping.human_readable('seriesName')                      || "Series Name"),
+          :study_auth_entity => (DdiMapping.human_readable('stdyAuthEntity')            || "Study Author")
         }
         
   #solr config
@@ -50,11 +50,6 @@ class Study < ActiveRecord::Base
     # autocomplete :search_term, :using => :label
   end  
   
-  
-  def self.ddi_mapping(key)
-    mapping = ddi_mapping(key)
-    mapping.val if mapping
-  end
   
   #class behaviour to create Study objects based on a hash built from scanning an XML document
   #this code might be moved out to a builder object later on.
