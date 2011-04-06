@@ -30,7 +30,7 @@ class NewsObserver < ActiveRecord::Observer
             end*", "
           end
         }",
-      :category => "content"
+      :category => "news"
     )
   end
 end
