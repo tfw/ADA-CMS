@@ -5,14 +5,13 @@
 	    <% @study_searches.each do |archive, search| %>
 	        <li> <%= archive.name %> </li>
 	      <% for facet in search.facets %>
-					<% if facet.rows.any? %>
-						<h3><%= Study::FACETS[facet.name.to_sym] %></h3>
-		        <ul>
+					<dl> 
+						<% if facet.rows.any? %>
+						<dt> <%= Study::FACETS[facet.name.to_sym] %> </dt>
 				    <% facet.rows.each do |row| %>
-				      <li> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
+				      <dd> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></dd>
 				    <% end %>
 					<% end %>
-	        </ul>
 	      <% end %>
 	    <% end %>
 	  </ul>
@@ -22,14 +21,14 @@
 	  <ul>
 	    <li> ADA </li>
 	    <% for facet in @variables_search.facets %>
-			<% if facet.rows.any? %>
-				<h3><%= facet.name %></h3>
-	       <ul>
-		    <% facet.rows.each do |row| %>
-		      <li> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => Archive.ada.id, :var_filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></li>
-		    <% end %>
-			<% end %>
-	      </ul>
+				<dl>
+					<% if facet.rows.any? %>
+						<dt> <%= facet.name %></dt>
+				    <% facet.rows.each do |row| %>
+				      <dd> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => Archive.ada.id, :var_filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></dd>
+				    <% end %>
+					<% end %>
+				</dl>
 	    <% end %>
 	  </ul>
 	</section>
