@@ -10,22 +10,24 @@
 	display: inline;
 	border: solid;
 	border-width: 1px 1px 0 1px;
-	margin: 0 0.5em 0 0;
+/*	margin: 0 0.5em 0 0;*/
+	margin: 0 0 0 0;
+/*	padding-bottom: 1px; */
 }
 
 #search-tabs li a {
 	padding: 0 1em;
 }
 
-#search-tabs #selected {
-	padding-bottom: 1px; 
-	background: gray;
+/*#search-tabs*/
+.selected {
+	padding-bottom: 5px; 
+	background: white;
 }
 
-#search-results li{
-	display: inline;
-	list-style-type: none;
-	padding-right: 20px;	
+#search-results section{
+	border: 1px solid;
+	clear: both;	
 }
 
 #search-results-table{

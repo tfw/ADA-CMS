@@ -13,6 +13,8 @@
     $('#study-facets').show();
     $('#variable-results').hide();
     $('#variable-facets').hide();
+  	$('#study-items').toggleClass('selected', true);
+  	$('#variable-items').toggleClass('selected', false);
   });
 
   $("#variables-link").click(function() {
@@ -20,10 +22,14 @@
     $('#variable-facets').show();
     $('#study-results').hide();
     $('#study-facets').hide();
+  	$('#study-items').toggleClass('selected', false);
+  	$('#variable-items').toggleClass('selected', true);
   });
 
 <% end %>
 
+
+<div id="search-results">
 
 	Term: <%= params[:term] %> <p/>
 	
@@ -51,11 +57,11 @@
 
 	<div id="search-tabs">
 	  <ul>
-	    <li> <a id="studies-link">Studies</a> </li>
-	    <li> <a id="variables-link">Variables</a> </li>
+	    <li id="study-items" class="selected"> <a id="studies-link">Studies</a> </li>
+	    <li id="variable-items"> <a id="variables-link">Variables</a> </li>
 	  </ul>
 	</div>
 
 	<%= render(:partial => "studies") %>
 	<%= render(:partial => "variables") %>
-
+</div>
