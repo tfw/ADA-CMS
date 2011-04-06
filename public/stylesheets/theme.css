@@ -10,17 +10,14 @@
 	display: inline;
 	border: solid;
 	border-width: 1px 1px 0 1px;
-/*	margin: 0 0.5em 0 0;*/
 	margin: 0 0 0 0;
-/*	padding-bottom: 1px; */
 }
 
 #search-tabs li a {
 	padding: 0 1em;
 }
 
-/*#search-tabs*/
-.selected {
+.selected-tab {
 	padding-bottom: 5px; 
 	background: white;
 }
@@ -30,12 +27,27 @@
 	clear: both;	
 }
 
-#search-results-table{
+#search-results table {
   width: 100%;
 }
 
-#search-results-table td {
+#search-results td {
   padding: 5px;
+}
+
+#search-results #sub-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#search-results #sub-menu  li {
+	display: inline;
+}
+
+.selected-menu-item {
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 span.float-right {

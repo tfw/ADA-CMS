@@ -7,14 +7,13 @@
 <% end %>
 
 <% content_for :js do %>
-
   $("#studies-link").click(function() {
     $('#study-results').show();
     $('#study-facets').show();
     $('#variable-results').hide();
     $('#variable-facets').hide();
-  	$('#study-items').toggleClass('selected', true);
-  	$('#variable-items').toggleClass('selected', false);
+  	$('#study-items').toggleClass('selected-tab', true);
+  	$('#variable-items').toggleClass('selected-tab', false);
   });
 
   $("#variables-link").click(function() {
@@ -22,10 +21,9 @@
     $('#variable-facets').show();
     $('#study-results').hide();
     $('#study-facets').hide();
-  	$('#study-items').toggleClass('selected', false);
-  	$('#variable-items').toggleClass('selected', true);
+  	$('#study-items').toggleClass('selected-tab', false);
+  	$('#variable-items').toggleClass('selected-tab', true);
   });
-
 <% end %>
 
 
@@ -57,7 +55,7 @@
 
 	<div id="search-tabs">
 	  <ul>
-	    <li id="study-items" class="selected"> <a id="studies-link">Studies</a> </li>
+	    <li id="study-items" class="selected-tab"> <a id="studies-link">Studies</a> </li>
 	    <li id="variable-items"> <a id="variables-link">Variables</a> </li>
 	  </ul>
 	</div>

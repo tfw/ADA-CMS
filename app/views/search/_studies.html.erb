@@ -1,8 +1,22 @@
+<% content_for :js do %>
+  $("#title-view-link").click(function() {
+  	$('#title-view-item').toggleClass('selected-tab', true);
+  });
+
+<% end %>
+
+
 <section id="study-results">
 	<div class="float-centre">
 	    <%= will_paginate @studies_search.results %>
 	</div>
 	<br/>
+
+	<ul id="sub-menu">
+		<li id="title-view-item" class="selected-menu-item"><a id="title-view-link">Title View</a></li> 
+		<li>|</li> 
+		<li>Extended</li>
+	</ul>
 
   <table id="search-results-table" >
     <% @studies_search.each_hit_with_result do |hit, study| %>
