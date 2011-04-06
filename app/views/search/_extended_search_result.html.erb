@@ -1,0 +1,33 @@
+<tr>
+	<td valign=top>
+		<fieldset class="search-border"> 
+      <% archive_study = study.for_archive(@current_archive) %>           
+			<legend> Study Title: <%= link_to study.field("docTitle"), "#{archive_study.path.slug}" %> </legend>
+				
+			<ul class="ext-brief">
+				<li><a id="title-view-link">Title View</a></li> 
+				<li>|</li> 
+				<li id="ext-view-item"><a id="ext-view-link">Extended</a></li>
+			</ul>
+				
+        <% unless study.field("stdyAuthEntity").blank? %> by <% study.field("stdyAuthEntity") %>. <% end %> <br/>
+        Abstract: <%= first_n_words(30, study.abstract) %> <br/>
+        Study Id: <%= study.ddi_id %> <br/>
+        Variables: <%= study.variables.size %> <br/>
+
+				Relevance: <%= hit.score %> <br/>
+
+				<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
+				<%= highlight_excerpt(hit.highlight(:abstract)) %> <br/>
+				<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>
+		</fieldset>
+		</td>
+		<td width=20% valign=top>
+			<% for archive_study in study.archive_studies %>
+        <% next if archive_study.archive == Archive.ada %>
+        <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a><br/>
+				<%= archive_study.archive.name %>
+      <% end %>
+		</td>
+	</td>
+</tr>
