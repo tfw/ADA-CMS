@@ -55,7 +55,7 @@
 
     <h3>Body</h3>
     <%= form.inputs do %>
-      <%= form.cktext_area :body, :toolbar=>'Full', :width=>'90%', :height=>'200px', :ckeditor_options => {:filebrowserBrowseUrl => browse_staff_archive_pages_path} %>
+      <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'90%', :height=>'200px', :ckeditor_options => {:filebrowserBrowseUrl => browse_staff_archive_pages_path} %>
     <% end %>
 
     <% if resource.breakout_box.blank? %>
