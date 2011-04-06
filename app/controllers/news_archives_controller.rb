@@ -1,4 +1,4 @@
-class NewsController < ContentController
+class NewsArchivesController < ContentController
   respond_to :html
 
   def show
