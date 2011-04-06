@@ -7,7 +7,7 @@
 	      <% for facet in search.facets %>
 					<dl> 
 						<% if facet.rows.any? %>
-						<dt> <%= Study::FACETS[facet.name.to_sym] %> </dt>
+						<dt> <strong><%= Study::FACETS[facet.name.to_sym] %></strong> </dt>
 				    <% facet.rows.each do |row| %>
 				      <dd> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></dd>
 				    <% end %>
@@ -23,7 +23,7 @@
 	    <% for facet in @variables_search.facets %>
 				<dl>
 					<% if facet.rows.any? %>
-						<dt> <%= facet.name %></dt>
+						<dt><strong><%= facet.name %></strong></dt>
 				    <% facet.rows.each do |row| %>
 				      <dd> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => Archive.ada.id, :var_filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></dd>
 				    <% end %>
