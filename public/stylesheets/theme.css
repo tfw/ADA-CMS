@@ -24,7 +24,6 @@
 
 #search-results section{
 	border: 1px solid;
-	clear: both;	
 }
 
 #search-results table {
@@ -48,6 +47,17 @@
 
 #search-results #sub-menu  li {
 	display: inline;
+}
+
+
+.search-border fieldset {
+/*	background: whitesmoke;*/
+	padding: 5px 5px 5px 10px;
+	margin: 5px;
+	border: 1px solid #BABABA;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
 }
 
 .selected-menu-item {

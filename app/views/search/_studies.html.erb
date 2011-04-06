@@ -56,29 +56,32 @@
 
   <table id="search-results-ext" class="concealed">
     <% @studies_search.each_hit_with_result do |hit, study| %>
-      <tr>
-        <td>
-           <div id="study-<%= study.ddi_id %>">
-             <% archive_study = study.for_archive(@current_archive) %>
-             Study Title: <%= link_to study.field("docTitle"), "#{archive_study.path.slug}" %> 
-             <% unless study.field("stdyAuthEntity").blank? %> by <% study.field("stdyAuthEntity") %>. <% end %> <br/>
-             Abstract: <%= first_n_words(30, study.abstract) %> <br/>
-             Study Id: <%= study.ddi_id %> <br/>
-             Variables: <%= study.variables.size %> <br/>
+		<tr>
+			<td>
+				<fieldset class="search-border"> 
+	        <% archive_study = study.for_archive(@current_archive) %>           
+					<legend> Study Title: <%= link_to study.field("docTitle"), "#{archive_study.path.slug}" %> </legend>
+	            <% unless study.field("stdyAuthEntity").blank? %> by <% study.field("stdyAuthEntity") %>. <% end %> <br/>
+	            Abstract: <%= first_n_words(30, study.abstract) %> <br/>
+	            Study Id: <%= study.ddi_id %> <br/>
+	            Variables: <%= study.variables.size %> <br/>
 
 						Relevance: <%= hit.score %> <br/>
 
 						<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
 						<%= highlight_excerpt(hit.highlight(:abstract)) %> <br/>
 						<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>
-						
-
-           <% for archive_study in study.archive_studies %>
-             <% next if archive_study.archive == Archive.ada %>
-             <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
-           <% end %>
-        </td>
-      </tr>
+				</fieldset>
+				</td>
+				<td>
+					[<% for archive_study in study.archive_studies %>
+            <% next if archive_study.archive == Archive.ada %>
+            (<a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a> * <br/>
+						<%= archive_study.archive.name %>)
+          <% end %>]
+				</td>
+			</td>
+		</tr>
     <% end %>
   </table>
 </section>
