@@ -1,6 +1,12 @@
 <% content_for :js do %>
   $("#title-view-link").click(function() {
-  	$('#title-view-item').toggleClass('selected-tab', true);
+  	$('#title-view-item').toggleClass('selected-menu-item', true);
+  	$('#ext-view-item').toggleClass('selected-menu-item', false);
+  });
+
+  $("#ext-view-link").click(function() {
+  	$('#title-view-item').toggleClass('selected-menu-item', false);
+  	$('#ext-view-item').toggleClass('selected-menu-item', true);
   });
 
 <% end %>
@@ -15,7 +21,7 @@
 	<ul id="sub-menu">
 		<li id="title-view-item" class="selected-menu-item"><a id="title-view-link">Title View</a></li> 
 		<li>|</li> 
-		<li>Extended</li>
+		<li id="ext-view-item"><a id="ext-view-link">Extended</a></li>
 	</ul>
 
   <table id="search-results-table" >
