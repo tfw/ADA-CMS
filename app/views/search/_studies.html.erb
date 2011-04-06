@@ -7,6 +7,7 @@
   $("#ext-view-link").click(function() {
   	$('#title-view-item').toggleClass('selected-menu-item', false);
   	$('#ext-view-item').toggleClass('selected-menu-item', true);
+    $('#search-results-ext').show();
   });
 
 <% end %>
@@ -24,7 +25,33 @@
 		<li id="ext-view-item"><a id="ext-view-link">Extended</a></li>
 	</ul>
 
-  <table id="search-results-table" >
+	<table id="search-results-title">
+		<thead>
+			<tr>
+				<th>Study</th>
+				<th>Authoring Entity</th>
+				<th>Year</th>
+				<th>Type (Archive?)</th>
+			</tr>
+		</thead>
+		<tbody>
+	    <% @studies_search.each_hit_with_result do |hit, study| %>	
+	      <tr id="study-<%= study.ddi_id %>">
+	        <td> <%= link_to study.field("docTitle"), "#{study.for_archive(@current_archive).path.slug}" %> </td>
+	        <td> <%= study.field("stdyAuthEntity") %> </td>
+	        <td> <%= study.field("stdyProdDate") %> </td>
+	        <td> <%= study.field("stdyProdDate") %>
+	           <% for archive_study in study.archive_studies %>
+	             <% next if archive_study.archive == Archive.ada %>
+	             <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
+	           <% end %>
+	        </td>
+	      </tr>	
+			<% end %>
+		</tbody>	
+	</table>
+
+  <table id="search-results-ext" class="concealed">
     <% @studies_search.each_hit_with_result do |hit, study| %>
       <tr>
         <td>
