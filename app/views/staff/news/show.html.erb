@@ -1,3 +1,7 @@
+<% content_for(:breadcrumbs) do %>
+  News Show
+<% end %>
+
 <div class="news">
   <h2><%= @news.title %></h2>
   <%= raw(@news.body) %>
