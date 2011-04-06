@@ -1,0 +1,5 @@
+<% content_for(:breadcrumbs) do %>
+  <%= @news_archive.path.slug %>
+<% end %>
+
+<%= render :partial => "show", :news => @news %>
