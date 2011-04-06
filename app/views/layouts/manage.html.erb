@@ -6,6 +6,9 @@
   <%= stylesheet_link_tag "import" %>
   <%= stylesheet_link_tag "manage" %>
   <%= csrf_meta_tag %>
+
+	 <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min',  'jquery-ui-1.8.6.custom.min', 'jquery.effects.core', 'scripts',
+	'rails', 'jquery.clearableTextField.min' %>
  </head>
     
 <body class="default">
@@ -71,8 +74,6 @@
   </footer> 
 </body>
 
- <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min',  'jquery-ui-1.8.6.custom.min', 'jquery.effects.core', 'scripts',
-'rails', 'jquery.clearableTextField.min' %>  
 
 <script type="text/javascript">
   $(document).ready(function(){
