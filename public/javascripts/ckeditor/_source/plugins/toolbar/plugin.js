@@ -442,19 +442,19 @@ CKEDITOR.config.toolbar_Full =
 	['Maximize', 'ShowBlocks','-','About']
 ];
 
-CKEDITOR.config.toolbar_Medium =
-[
-	['NewPage','Preview'],
-	['Cut','Copy','Paste'],
-	['Undo','Redo','-','Find','Replace'],
-	['Image','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
-	'/',
-	['Styles','Format'],
-	['Bold','Italic','Strike'],
-	['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
-	['Link','Unlink','Anchor'],
-	['Maximize','-','About']
-];
+// CKEDITOR.config.toolbar_Medium =
+// [
+// 	['NewPage','Preview'],
+// 	['Cut','Copy','Paste'],
+// 	['Undo','Redo','-','Find','Replace'],
+// 	['Image','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+// 	'/',
+// 	['Styles','Format'],
+// 	['Bold','Italic','Strike'],
+// 	['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+// 	['Link','Unlink','Anchor'],
+// 	['Maximize','-','About']
+// ];
 
 /**
  * The toolbox (alias toolbar) definition. It is a toolbar name or an array of

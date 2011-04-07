@@ -9,64 +9,60 @@
 <br/>
 Map human readable names to DDI elements & attributes. <br/> See table below form for existing mappings.
 
-<div id="mappings-form" align='left'>
-  
-  <% semantic_form_for([:staff, @ddi_mapping]) do |f| %>
-    <% unless @ddi_mapping.new_record? %>
-      <%= f.hidden_field :id %>
-    <% end %>
+ <% semantic_form_for([:staff, @ddi_mapping]) do |f| %>
+   <% unless @ddi_mapping.new_record? %>
+     <%= f.hidden_field :id %>
+   <% end %>
 
-    <li class="string">
-      <label for="ddi_mapping_id">DDI Element</label>
-      <%= f.input :id, :as => :select, :collection => @ddi_missing_mappings  %>
-    </li> 
+	<% f.inputs :name => "Select a DDI and set the human readable" do %>
+	   <li class="string">
+	    <% if @ddi_mapping.new_record? %>
+	      <%= f.input(:id, :as => :select,
+	 				:input_html => {:rows => 3, :cols => 20},
+	 				:collection => @ddi_missing_mappings.collect{|mapping| [mapping.ddi, mapping.id]}) %>
+	    <% else %>
+	      <em><%= @ddi_mapping.friendly_name %></em> <%= link_to "(Choose another)",  staff_ddi_mappings_path %>
+	    <% end %>
+	   </li>
+ 
+	   <li class="string">
+		   <%= f.input :human_readable  %>
+	   </li>
 
+	   <li class="string">
+		   <%= f.input :description  %>
+	   </li>
+	<% end %>
 
-  <div class="fields select_fields">
-     <p> <%= f.label 'DDI' %>
-      <% if @ddi_mapping.new_record? %>
-        <%= select_tag("ddi_mapping_id", options_from_collection_for_select(@ddi_missing_mappings, 'id', 'friendly_name')) %>
-      <% else %>
-        <em><%= @ddi_mapping.friendly_name %></em> <%= link_to "(Choose another)",  staff_ddi_mappings_path %>
-      <% end %>
-    </p>
-  </div>
-   <div class="fields text_fields">
-    <%= f.label 'Human Readable' %>
-    <%= f.text_field :human_readable  %>
-  </div>
-   <div class="fields textarea_fields">
-    <%= f.label 'Note' %>
-    <%= f.text_area :description, :rows => 3 %>
-   </div>
-
-   <h3>Actions</h3>
-   <%- f.buttons do -%>
-     <%= f.commit_button %>
-   <%- end -%>
-   
-  <% end %>
-</div>
+  <h3>Actions</h3>
+  <%- f.buttons do -%>
+    <%= f.commit_button %>
+  <%- end -%>  
+<% end %>
 
 <br/>
 
 <div>
-  <table width="80%">
+  <table width="100%">
+	<thead>
     <tr>
       <th>DDI</th>
       <th>Human Readable</th>
       <th>Note</th>
       <th>Controls</th>
     </tr>
+	</thead>
+	<tbody>
     <% for ddi_mapping in @ddi_mappings %>
       <tr>
-        <td><div class="dividers"><%= ddi_mapping.ddi %></div></td>
-        <td><div class="dividers"><%= ddi_mapping.human_readable %></div></td>
-        <td><div class="dividers"><%= ddi_mapping.description %></div></td>
-        <td><div class="dividers"><%= link_to 'Edit', edit_staff_ddi_mapping_url(ddi_mapping) %></div></td>
+        <td><%= ddi_mapping.ddi %></td>
+        <td><%= ddi_mapping.human_readable %></td>
+        <td><%= ddi_mapping.description %></td>
+        <td><%= link_to 'Edit', edit_staff_ddi_mapping_url(ddi_mapping) %></td>
       </tr>
     <% end %>
-  </table>
+	</tbody>
+ </table>
 </div>
 
 </fieldset>
