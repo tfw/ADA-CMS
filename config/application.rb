@@ -42,3 +42,25 @@ module Ada
     config.filter_parameters += [:password]
   end
 end
+
+
+# class Inkling::User
+#   has_many :pages
+#   has_many :news
+#   has_many :archive_integrations
+# end
+
+# 
+# module UserAdditions
+#   def self.included(base)
+#     base.extend(ClassMethods)
+#   end
+# 
+#   module ClassMethods
+#     has_many :pages
+#     has_many :news
+#     has_many :archive_integrations
+#   end
+# end
+# 
+# Inkling::User.send :include, UserAdditions
