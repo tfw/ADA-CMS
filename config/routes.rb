@@ -10,6 +10,7 @@ Ada::Application.routes.draw do
     resources :activity_logs, :only => :index
     resources :ddi_mappings
     resources :users, :only => [:index, :show]
+    resources :user_reports, :only => [:index, :show], :controller => :users
 
     get 'site_resources', :to => "site_resources#index" #temporary 
     # get 'users', :to => "users#index" #temporary 
@@ -44,9 +45,7 @@ Ada::Application.routes.draw do
     get 'resources', :to => 'resources#index'
   end
 
-  get '/search', :to => "search#search"
-  # get '/browse', :to => "search#facets"
-  
+  get '/search', :to => "search#search"  
 
   inkling_match(:archive_studies)
   inkling_match(:pages)
