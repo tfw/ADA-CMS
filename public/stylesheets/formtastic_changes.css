@@ -11,8 +11,18 @@
 	padding-left: 10px;
 }
 .formtastic #search_button {
-	margin: 0px 0px -12px;
-	padding: 0px;
+	margin: 0px;
+	padding: 8px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CCC;
+	text-transform: uppercase;
 }
 .formtastic #login_name {
 	border-style: none;
@@ -32,25 +42,6 @@
 	margin-right: 5px;
 	height: 23px;
 }
-.formtastic #enter_button {
-	margin: 5px 5px 0px 0px;
-	padding: 0px;
-	float: right;
-}
-.formtastic #logout_button {
-	padding-bottom: 0px;
-	padding-left: 10px;
-	margin: 5px 5px 5px 0px;
-	float: right;
-	padding-right: 0px;
-}
-.formtastic #remember_me {
-	float: left;
-	margin-right: 4px;
-	display: block;
-	margin-top: 10px;
-	padding: 0px;
-}
 /*.formtastic label {
 	text-align: right;
 	float: left;
@@ -59,8 +50,64 @@
 	line-height: 1;
 	font-size: 11px;
 }*/
+
 .formtastic #register_button {
-	margin: -28px 5px 5px 0px;
 	float: right;
-	padding: 0px 0px 0px 10px;
+	background: #666;
+	padding: 8px;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #FFF;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#217a38), to(#113d1d));
+	background: -moz-linear-gradient(#217a38, #113d1d);
+	background: linear-gradient(#217a38, #113d1d);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	margin: 5px 5px 5px 0px;
+}
+
+.formtastic #logout_button {
+	margin: 5px 5px 5px 0px;
+	float: right;
+	background: #666;
+	padding: 8px;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #CCC;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.formtastic #enter_button {
+	margin: 5px 5px 5px 0px;
+	float: right;
+	background: #666;
+	padding: 8px;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #CCC;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.formtastic #register_button:hover, .formtastic #enter_button:hover, .formtastic #logout_button:hover, .formtastic #search_button:hover {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(#666, #000);
+	background: linear-gradient(#666, #000);
+}
+.formtastic #rember_me {
+	display: block;
+	float: left;
+	clear: none;
+	margin-top: 8px;
 }
