@@ -1,10 +1,10 @@
 <fieldset>
 	<legend><%= link_to user.email, staff_user_path(user) %> </legend>
 
-	Pages:  user.pages.size %>
+	Pages:  <%= user.pages.size %>
 	<br/>
-	News:  user.news.size %>
+	News:  <%= user.news.size %>
 	<br/>
-	Archive Integratopms:  user.archive_study_integrations.size %>
+	Archive Integratopms:  <%= user.archive_study_integrations.size %>
 	<br/>
 </fieldset>
