@@ -2,19 +2,26 @@
 
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
-<%= semantic_form_for([:staff, @archive, resource]) do |form| %>
+<fieldset>
+  <legend> <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> </legend>
 
-  <%= form.hidden_field :user_id, :value => current_user.id %>
-  <%= form.input :title, :input_html => {:size => "50"} %>
-  <%= form.input :keywords, :input_html => {:size => "50"} %>
-  <%= form.input :archives, :as => :check_boxes %>
+	<%= semantic_form_for([:staff, @archive, resource]) do |form| %>
 
-  <%= form.cktext_area :body, :toolbar=>'Menium', :width=>'90%', :height=>'200px', :toolbar => 'Medium' %>
+	  <%= form.hidden_field :user_id, :value => current_user.id %>
 
-  <%= form.commit_button %>
-  <%= content_tag(:li, content_tag(:a, "Preview", :id => "preview-link", :href => "#")) %>
+	  <%= form.inputs do %>
+		  <%= form.input :title %>
+		  <%= form.input :keywords %>
+		  <%= form.input :archives, :as => :check_boxes %>
 
-<%- end %>
+		  <%= form.cktext_area :body, :toolbar=>'Menium', :width=>'90%', :height=>'200px', :toolbar => 'Medium' %>
+		<% end %>
+
+	  <%= form.commit_button %>
+	  <%= content_tag(:li, content_tag(:a, "Preview", :id => "preview-link", :href => "#")) %>
+
+	<%- end %>
+</fieldset>
 
 <div id="preview"></div>
 
