@@ -21,6 +21,10 @@ class Page < ActiveRecord::Base
   validates_presence_of :link_title
   validates_presence_of :partial
 
+  PARTIALS = {"Default" => "/pages/default_page",
+   "Home" => "/pages/home_page",
+   "Breakout Page" => "/pages/breakout_page",
+   "News Page" => "/pages/news_page"}
 
   def self.archive_root_pages(archive)
     roots = Page.roots

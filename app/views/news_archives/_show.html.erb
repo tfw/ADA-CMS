@@ -1,7 +1,5 @@
-<div class="news">
+<article>
   <h2><%= @news.title %></h2>
   <%= @news.body.html_safe %>
-  <p>(In archive<%= @assigned_archives.size > 1 ? 's' : ''%> <%= @assigned_archives.map(&:name) * ',' %>)
   </p>
-  <!-- tag cloud -->
-</div>
+</article>
