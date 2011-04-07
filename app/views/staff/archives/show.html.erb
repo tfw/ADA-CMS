@@ -24,7 +24,7 @@
       var re = new RegExp(","+top_item);
       if (re.test(page_order)) {
 	$(this).sortable('cancel');
-	alert("Please don't move the home page from the first position!");
+	alert("Please don't move the home page from first position!");
       } else
 	$.post("/staff/archives/update_page_order?archive_id=<%= @archive %>", {page_order: page_order, moved: moved});
     }
