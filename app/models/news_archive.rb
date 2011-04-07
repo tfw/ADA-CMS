@@ -16,6 +16,10 @@ class NewsArchive < ActiveRecord::Base
 
   # This method creates the slug to store on the Inkling::Path (see Inkling::Path) 
   def generate_path_slug
-    slug = "/#{archive.slug}/#{news.updated_at.strftime("%Y/%m/%d")}/#{sluggerize(news.title)}"
+    slug = "/#{archive.slug}/#{ymd}/#{sluggerize(news.title)}"
+  end
+  
+  def ymd
+    news.updated_at.strftime("%Y/%m/%d")
   end
 end

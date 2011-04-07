@@ -21,7 +21,7 @@ class NewsObserver < ActiveRecord::Observer
         } #{
           verb
         } news <a href='#{edit_staff_news_path(news)}'>#{news.title}</a>" +
-        "in #{
+        " in #{
           if (nas = news.news_archives).size == 0
             "no archives"
           else

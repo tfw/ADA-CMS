@@ -6,4 +6,13 @@
   <%= @news_archive.path.slug %>
 <% end %>
 
-<%= render :partial => "show", :news => @news %>
+
+<article>
+  <h2><%= @news.title %></h2> <span>released <%= time_ago_in_words(@news.updated_at) %> ago</span>
+
+	<p>  
+	<%= @news.body.html_safe %>
+	</p>
+	<%= @news_archive.ymd %>
+</article>
+
