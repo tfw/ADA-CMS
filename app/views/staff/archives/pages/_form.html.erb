@@ -1,13 +1,6 @@
 <%= javascript_include_tag :ckeditor %>
 
-<% if resource.errors.any? %>
-    <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
-    <ul>
-    <% resource.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-<% end %>
+<%= render(:partial => "/staff/shared/resource_errors") %>
 
 <fieldset>
   <legend> <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %> </legend>
