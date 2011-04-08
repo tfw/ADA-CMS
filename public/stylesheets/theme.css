@@ -85,3 +85,8 @@ div.float-centre {
   margin: auto;
  }
 
+/* Search */
+span.highlight {
+  background-color: white;
+  font-weight: bold;
+}
