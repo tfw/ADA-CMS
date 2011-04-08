@@ -63,3 +63,14 @@ task :sample_study => :environment do
   puts "ArchiveStudyIntegration created between #{archive_study_integration.ddi_id} and the Social Science archive. "
   puts "Run 'rake nesstar' to create and reference the study to the archive."
 end
+
+
+# au.edu.anu.assda.ddi.01233
+# au.edu.anu.assda.ddi.01118-population
+# au.edu.anu.assda.ddi.01088
+task :nesstar4 => :environment do
+#  archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "01233", :archive => Archive.international, :user_id => Inkling::User.first.id)
+  archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "01118-population", :archive => Archive.international, :user_id => Inkling::User.first.id)
+  archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "01088", :archive => Archive.international, :user_id => Inkling::User.first.id)
+  
+end

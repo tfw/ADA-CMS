@@ -23,9 +23,9 @@
 	<br/>
 
 	<ul id="sub-menu">
-		<li id="title-view-item" <%= selected?('title', params[:format]) %>> <a id="title-view-link">Title View</a></li> 
+		<li id="title-view-item" <%= selected('title', params[:format]) %>> <a id="title-view-link">Title View</a></li> 
 		<li>|</li> 
-		<li id="ext-view-item" <%= selected?('ext', params[:format]) %>> <a id="ext-view-link">Extended</a></li>
+		<li id="ext-view-item" <%= selected('ext', params[:format]) %>> <a id="ext-view-link">Extended</a></li>
 	</ul>
 
 	<table id="search-results-title" <%= conceal?('title', params[:format]) %>>

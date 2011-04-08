@@ -9,7 +9,8 @@ module Nesstar
         file = File.read("#{rdf_file}")
         doc = Nokogiri::XML::Document.parse(file)
 
-        study = doc.xpath('//p4:Study3').first
+        # study = doc.xpath('//p4:Study3').first
+        study = doc.xpath('//p4:Study5').first
         about = study.attribute('about').value
         dataset = {:about => about}
 
@@ -46,7 +47,8 @@ module Nesstar
       def self.parse_variables(xmlfile) 
         file = File.read(xmlfile)
         doc = Nokogiri::XML::Document.parse(file)
-        vars_entries = doc.xpath("//p4:Variable2")
+        # vars_entries = doc.xpath("//p4:Variable2")
+        vars_entries = doc.xpath("//p4:Variable3")
         variables = []
         
         vars_entries.each do |var_xml|

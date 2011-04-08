@@ -42,10 +42,10 @@ CKEDITOR.editorConfig = function( config )
 
 		config.toolbar_Medium =
 		[
-			['NewPage','Preview'],
+			['NewPage'],
 			['Cut','Copy','Paste'],
 			['Undo','Redo','-','Find','Replace'],
-			['Image','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+			['Image','Table','HorizontalRule','SpecialChar','PageBreak'],
 			'/',
 			['Styles','Format'],
 			['Bold','Italic','Strike'],
