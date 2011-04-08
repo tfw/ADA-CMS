@@ -53,6 +53,7 @@ end
 after 'deploy:update', :generate_database_yml
 after 'deploy:update', :symlinks
 after 'deploy:update', :deploy_log
+after 'deploy:update', :refresh_theme
 before 'deploy:update_code', :echo_ruby_env
 
 task :echo_ruby_env do
@@ -69,4 +70,8 @@ end
 task :deploy_log, :roles => :app do
   run "touch #{current_path}/tmp/deploy-log.txt"
   run "echo \"Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}\" > #{current_path}/tmp/deploy-log.txt"
+end
+
+task :refresh_theme, :roles => :app do
+  run "rake install_theme"
 end

@@ -4,7 +4,7 @@
 	  <ul>
 	    <% @study_searches.each do |archive, search| %>
 	        <li> <%= archive.name %> </li>
-	      <% for facet in search.facets %>
+	      <% for facet in search.facets  %>
 					<dl> 
 						<% if facet.rows.any? %>
 						<dt> <strong><%= Study::FACETS[facet.name.to_sym] %></strong> </dt>
