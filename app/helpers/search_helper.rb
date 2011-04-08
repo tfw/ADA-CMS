@@ -11,7 +11,8 @@ module SearchHelper
   
   
   def conceal?(format_name, format = "title")
-    "class = 'concealed'" unless format_name == format  
+    return if format.nil? and format_name == "title"
+    "class = 'concealed'" unless format_name == format
   end
   
   #the below is just bizarre.
@@ -19,4 +20,5 @@ module SearchHelper
     "class='selected-menu-item'" if format_name == format  
     "class='selected-menu-item'" if format.nil? and format_name == "title"  
   end
+
 end

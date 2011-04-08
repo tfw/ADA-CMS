@@ -23,11 +23,24 @@
 		</fieldset>
 		</td>
 		<td width=20% valign=top>
-			<% for archive_study in study.archive_studies %>
-        <% next if archive_study.archive == Archive.ada %>
-        <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a><br/>
-				<%= archive_study.archive.name %>
-      <% end %>
+			<table>
+				<% i = 0 %>
+				<% for archive_study in study.archive_studies 
+         	next if archive_study.archive == Archive.ada
+					if i == 0 %> 
+					<tr>
+					<% end 
+					i += 1%>
+						<td> <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a><br/>
+							<%= archive_study.archive.name %>
+						</td>
+						
+					<% if i == 2 %>
+						</tr>
+					<% i = 0 
+						end %>
+	      <% end %>
+			</table>
 		</td>
 	</td>
 </tr>
