@@ -5,8 +5,8 @@ module HelperMethods
     click_button("Go")
   end
 
-  def search(term, view = "title")
-    visit("/search?term=#{term}&view=#{view}")
+  def search(term, view = "title", archive = Archive.ada)
+    visit("/search?term=#{term}&view=#{view}&archive_id=#{archive.id}")
   end
   
   def visit_archive(slug)
