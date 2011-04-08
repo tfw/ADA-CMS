@@ -29,19 +29,18 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_examples = true
   
-  config.before(:all, :type => :acceptance) do
-    @pid = fork { Sunspot::Rails::Server.new.run }
-    sleep 5 # allow some time for the instance to spin up
-  end
-  
-  # config.after(:all, :type => :acceptance) { Sunspot::Rails::Server.stop }
-  
+  # config.before(:all, :type => :acceptance) do
+  #   @pid = fork { Sunspot::Rails::Server.new.run }
+  #   sleep 5 # allow some time for the instance to spin up
+  # end
+    
+  #kill off sunspot instances running for test
   at_exit do
     `ps ax|egrep "solr.*test"|grep -v grep|awk '{print $1}'|xargs kill`
   end
   
   config.before(:each, :type => :acceptance) do
-    ::Sunspot.session = ::Sunspot.session.original_session
+    # ::Sunspot.session = ::Sunspot.session.original_session
     Sham.reset(:before_each) 
     DatabaseCleaner.start
     ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 

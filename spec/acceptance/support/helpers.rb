@@ -1,4 +1,14 @@
 module HelperMethods
+  
+  def search_form(term)
+    fill_in("search_term", :with => term)
+    click_button("Go")
+  end
+
+  def search(term, view = "title")
+    visit("/search?term=#{term}&view=#{view}")
+  end
+  
   def visit_archive(slug)
     archive = Archive.find_by_slug(slug)
     visit staff_archive_path(archive)

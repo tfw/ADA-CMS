@@ -1,4 +1,4 @@
-<section id="variable-results" class="concealed">
+<section id="variable-results" <%= conceal?('var', params[:format]) %>>
 	<div class="float-centre">
 	    <%= will_paginate @variables_search.results %>
 	</div>

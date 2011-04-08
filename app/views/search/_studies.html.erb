@@ -23,12 +23,12 @@
 	<br/>
 
 	<ul id="sub-menu">
-		<li id="title-view-item" class="selected-menu-item"><a id="title-view-link">Title View</a></li> 
+		<li id="title-view-item" <%= selected?('title', params[:format]) %>> <a id="title-view-link">Title View</a></li> 
 		<li>|</li> 
-		<li id="ext-view-item"><a id="ext-view-link">Extended</a></li>
+		<li id="ext-view-item" <%= selected?('ext', params[:format]) %>> <a id="ext-view-link">Extended</a></li>
 	</ul>
 
-	<table id="search-results-title">
+	<table id="search-results-title" <%= conceal?('title', params[:format]) %>>
 		<thead>
 			<tr>
 				<th>Study</th>
@@ -54,7 +54,7 @@
 		</tbody>	
 	</table>
 
-  <table id="search-results-ext" class="concealed" border=1>
+  <table id="search-results-ext" <%= conceal?('ext', params[:format]) %> border=1>
     <% @studies_search.each_hit_with_result do |hit, study| %>
 			<%= render(:partial => "extended_search_result", :locals => {:hit => hit, :study => study})%>
     <% end %>
