@@ -73,5 +73,5 @@ task :deploy_log, :roles => :app do
 end
 
 task :refresh_theme, :roles => :app do
-  run "rake install_theme"
+  run "cd #{current_path}; rake install_theme"
 end
