@@ -1,32 +1,26 @@
 
-<section id="variable-results" <%= conceal?('var', params[:format]) %>>
+<section id="variable-results" <%= conceal_unless(['var'], params[:format]) %>>
 	<div class="float-centre">
 	    <%= will_paginate @variables_search.results %>
 	</div>
-	<br/>
-  <table id="search-results-table" border=1>
-    <% @variables_search.each_hit_with_result do |hit, variable| %>
-      <tr>
-        <td>
-           <div id="variable-<%= variable.name %>">
-             Variable Label: <%= variable.label %> 
-            <% if variable.question_text %> <br/>
-              Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
-            <% end %>
-            
-						Relevance: <%= hit.score %> <br/>
-
-						<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
-						<%= highlight_excerpt(hit.highlight(:question_text)) %> <br/>
-						
-						<br/>
-						
-						<% for archive_study in variable.study.archive_studies %>
-             <% next if archive_study.archive == Archive.ada %>
-             <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
-           <% end %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
+	<fieldset class="search-border"> 
+    <table id="search-results-table" border=0>
+      <% @variables_search.each_hit_with_result do |hit, variable| %>
+        <tr>
+          <td>
+             <div id="variable-<%= variable.name %>">
+               Variable Label: <%= variable.label %> 
+              <% if variable.question_text %> <br/>
+                Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
+              <% end %>
+            						
+  						<% for archive_study in variable.study.archive_studies %>
+               <% next if archive_study.archive == Archive.ada %>
+               <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
+             <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </fieldset>
 </section>
