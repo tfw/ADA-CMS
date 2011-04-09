@@ -17,8 +17,8 @@ module SearchHelper
   
   #the below is just bizarre.
   def selected(format_name, format = "title")
-    puts "\n\n\n format: #{format} / format_name #{format_name} \n\n\n"
+    # puts "\n\n\n format: #{format} / format_name #{format_name} \n\n\n"
     "class = 'selected-menu-item'" if format_name == format  
-    "class = 'selected-menu-item'" if format.nil? and format_name == "title"  
+    # "class = 'selected-menu-item'" if format.nil? and format_name == "title"  
   end
 end
