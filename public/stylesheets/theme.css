@@ -1,19 +1,19 @@
 .concealed {display: none;}
 
-#search-tabs ul {
+#tabs ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-#search-tabs li {
+#tabs li {
 	display: inline;
 	border: solid;
 	border-width: 1px 1px 0 1px;
 	margin: 0 0 0 0;
 }
 
-#search-tabs li a {
+#tabs li a {
 	padding: 0 1em;
 }
 
@@ -23,6 +23,10 @@
 }
 
 #search-results section{
+	border: 1px solid;
+}
+
+#study section{
 	border: 1px solid;
 }
 

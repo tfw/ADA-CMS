@@ -9,11 +9,6 @@ module SearchHelper
     highlights.html_safe	
   end
     
-  def conceal_unless(format_names, format = "title")
-    return if format.nil? and format_names.include?("title")
-    "class = 'concealed'" unless format_names.include?(format)
-  end
-
   def selected_tab_if(format_names, format = "title")
     css_class = nil
     css_class = "class='selected-tab'" if format_names.include?(format) or (format.nil? and format_names.include?("title")) 

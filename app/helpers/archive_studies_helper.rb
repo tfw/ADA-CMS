@@ -19,4 +19,17 @@ module ArchiveStudiesHelper
       "#{key}: #{field[1]}"
     end
   end
+
+  def selected_tab_if(format_names, format = "study")
+    css_class = nil
+    css_class = "class='selected-tab'" if format_names.include?(format) or (format.nil? and format_names.include?("study")) 
+    css_class
+  end
+  
+  # def selected_menu_if(format_names, format = "title")
+  #   css_class = nil
+  #   css_class = "class = 'selected-menu-item'" if format_names.include?(format) or (format.nil? and format_names.include?("title")) 
+  #   css_class
+  # end
+  
 end

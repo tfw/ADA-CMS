@@ -29,10 +29,50 @@
 
 <% end %>
 
-<aside></aside>
+<aside>
+  <ul>
+    <li>Analyse this study in Nesstar.</li>
+    <li>Download this study in Nesstar.</li>    
+  </ul>
+	<br/>
+</aside>
 
 <section>
   <% study = @study %>
+
+	<div id="tabs">
+	  <ul>
+	    <li id="study" <%= selected_tab_if(['study'], params[:format]) %>> <a id="study-link">Study</a> </li>
+	    <li id="variables" <%= selected_tab_if(['var'], params[:format]) %>> <a id="variables-link">Variables</a> </li>
+	    <li id="related-materials" <%= selected_tab_if(['rm'], params[:format]) %>> <a id="related-materials-link">Related Materials</a> </li>
+	  </ul>
+	</div>
+	
+  <section id="study">
+      <%= render :partial => "table", :locals => {:study => study} %>
+  </section>
+  
+  <section id="related-materials" class="concealed">
+    <h3>Related Materials</h3>
+    <ul>
+  		<% for rm in study.study_related_materials %>
+      <li>
+         <a href="nesstar/related_material/<%= rm.id %>"><%=rm.comment %></a>
+      </li>
+  		<% end %>
+    </ul>
+  </section>
+  
+  <section id="variables" class="concealed">
+    <h3>Variable Description</h3>
+    <ul>
+		<%= render(:partial => "variable", :collection => study.variables)%>
+    </ul>
+  </section>
+  
+  
+    
+<br/><br/><br/><br/><br/><br/>
 
   <nav class="studynav">
     <ul>
@@ -42,38 +82,6 @@
     </ul>
   </nav>
 
-	<br/>
-  <span class="float-right">Analyse this study in Nesstar.</span>
-	<br/>
-  <span class="float-right">Download this study in Nesstar.</span>
-	<br/>
-
     
   <p><p>
-
-  <div id="study">
-    <%= render :partial => "table", :locals => {:study => study} %>
-  </div>
-
-  <div id="related-materials" class="concealed">
-    <h3>Related Materials</h3>
-    <ul>
-  		<% for rm in study.study_related_materials %>
-      <li>
-         <a href="nesstar/related_material/<%= rm.id %>"><%=rm.comment %></a>
-      </li>
-  		<% end %>
-    </ul>
-  </div>
-
-  <div id="variables" class="concealed">
-    <h3>Variable Description</h3>
-    <ul>
-		<%= render(:partial => "variable", :collection => study.variables)%>
-    </ul>
-  </div>
-
-  <div id="categories" class="concealed">
-    <h3>Categories</h3>      
-  </div>
 </section>
