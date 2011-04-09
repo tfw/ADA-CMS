@@ -4,23 +4,33 @@
 	    <%= will_paginate @variables_search.results %>
 	</div>
 	<fieldset class="search-border"> 
-    <table id="search-results-table" border=0>
-      <% @variables_search.each_hit_with_result do |hit, variable| %>
+    <table id="search-results-table" border=1>
+      <thead>
         <tr>
-          <td>
-             <div id="variable-<%= variable.name %>">
-               Variable Label: <%= variable.label %> 
-              <% if variable.question_text %> <br/>
-                Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
-              <% end %>
-            						
-  						<% for archive_study in variable.study.archive_studies %>
-               <% next if archive_study.archive == Archive.ada %>
-               <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
-             <% end %>
-          </td>
+          <th>Variable</th>
+          <th>Archive</th>
         </tr>
-      <% end %>
+      </thead>
+      <tbody>
+        <% @variables_search.each_hit_with_result do |hit, variable| %>
+          <tr>
+            <td>
+               <div id="variable-<%= variable.name %>">
+                 Variable Label: <%= variable.label %> 
+                <% if variable.question_text %> <br/>
+                  Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
+                <% end %>
+            						
+            </td>
+            <td>
+              <% for archive_study in variable.study.archive_studies %>
+                <% next if archive_study.archive == Archive.ada %>
+                <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
+              <% end %>	
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
     </table>
   </fieldset>
 </section>
