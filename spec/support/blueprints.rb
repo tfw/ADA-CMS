@@ -19,7 +19,6 @@ Sham.display_to   { (0..60).to_a.rand.days.since }
 Sham.keywords   { Faker::Lorem.sentence }
 
 Inkling::User.blueprint do 
-  # email "somebody#{Time.now.to_i}@anu.edu.au"
   email Sham.email
   password 'test123'
   password_confirmation  'test123'

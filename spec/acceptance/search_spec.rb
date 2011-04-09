@@ -7,7 +7,7 @@ feature "searching studies" do
     sleep 5 # allow some time for the instance to spin up
     ::Sunspot.session = ::Sunspot.session.original_session
   end
-
+  
   before(:each) do
     10.times {Study.make()}
     reindex
@@ -24,13 +24,19 @@ feature "searching studies" do
     page.status_code.should == 200
   end
   
+  scenario "it should default to a studies title view if the format http para isnt set" do
+    search_form("foo")
+    page.should have_content("TITLE")    
+  end
+  
   scenario "the view http param should define whether jquery renders onload the title view (study), extended view (study, or variables)" do
     search("foo", "title")
-    page.body.should =~ /TITLE/
+    puts page.body
+    page.should have_content("TITLE")
     search("foo", "ext")
-    page.body.should =~ /EXTENDED/
+    page.should have_content("EXTENDED")
     search("foo", "var")    
-    page.body.should_not =~ /EXTENDED/
-    page.body.should_not =~ /TITLE/
+    page.should_not have_content("EXTENDED")
+    page.should_not  have_content("TITLE")
   end
 end

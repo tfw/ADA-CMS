@@ -11,6 +11,7 @@ module Nesstar
 
         # study = doc.xpath('//p4:Study3').first
         study = doc.xpath('//p4:Study5').first
+        # debugger
         about = study.attribute('about').value
         dataset = {:about => about}
 

@@ -1,11 +1,9 @@
-*
 
 <section id="variable-results" <%= conceal?('var', params[:format]) %>>
 	<div class="float-centre">
 	    <%= will_paginate @variables_search.results %>
 	</div>
 	<br/>
-*	
   <table id="search-results-table" border=1>
     <% @variables_search.each_hit_with_result do |hit, variable| %>
       <tr>
