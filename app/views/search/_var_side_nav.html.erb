@@ -1,0 +1,16 @@
+<div id ="variable-facets">
+  <ul>
+    <li> ADA <br/>
+    <% for facet in @variables_search.facets %>
+			<dl>
+				<% if facet.rows.any? %>
+					<dt><strong><%= facet.name %></strong></dt>
+			    <% facet.rows.each do |row| %>
+			      <dd> <%= link_to first_n_words(5, row.value), search_path(:term => @term, :archive_id => Archive.ada.id, :var_filters => (params[:var_filters].dup << {facet.name => row.value})) %>  <%= row.count %></dd>
+			    <% end %>
+				<% end %>
+			</dl>
+    <% end %>
+    </li>
+  </ul>
+</div>

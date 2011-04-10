@@ -9,22 +9,31 @@
 
 <% content_for :js do %>
 
-  $("#study-link").click(function() {
-    $('#study').show();
+  $("#study-fields-link").click(function() {
+    $('#study-fields').show();
     $('#variables').hide();
-    $('#related-materials').hide();
+    $('#rms').hide();
+    $('#study-menu-item').toggleClass('selected-tab', true);
+  	$('#variables-menu-item').toggleClass('selected-tab', false);
+  	$('#rms-menu-item').toggleClass('selected-tab', false);
   });
 
   $("#variables-link").click(function() {
-    $('#study').hide();
+    $('#study-fields').hide();
     $('#variables').show();
-    $('#related-materials').hide();
+    $('#rms').hide();
+    $('#variables-menu-item').toggleClass('selected-tab', true);
+  	$('#study-menu-item').toggleClass('selected-tab', false);
+  	$('#rms-menu-item').toggleClass('selected-tab', false);
   });
   
-  $("#related-materials-link").click(function() {
-    $('#study').hide();
+  $("#rms-link").click(function() {
+    $('#study-fields').hide();
     $('#variables').hide();
-    $('#related-materials').show();
+    $('#rms').show();
+    $('#rms-menu-item').toggleClass('selected-tab', true);
+  	$('#variables-menu-item').toggleClass('selected-tab', false);
+  	$('#study-menu-item').toggleClass('selected-tab', false);
   });
 
 <% end %>
@@ -37,22 +46,31 @@
 	<br/>
 </aside>
 
-<section>
+<br/><br/><br/>
+
+<section id="study">
   <% study = @study %>
 
 	<div id="tabs">
 	  <ul>
-	    <li id="study" <%= selected_tab_if(['study'], params[:format]) %>> <a id="study-link">Study</a> </li>
-	    <li id="variables" <%= selected_tab_if(['var'], params[:format]) %>> <a id="variables-link">Variables</a> </li>
-	    <li id="related-materials" <%= selected_tab_if(['rm'], params[:format]) %>> <a id="related-materials-link">Related Materials</a> </li>
+	    <li id="study-menu-item" <%= selected_tab_if(['study'], params[:format]) %>> <a id="study-fields-link">Study</a> </li>
+	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:format]) %>> <a id="variables-link">Variables</a> </li>
+	    <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:format]) %>> <a id="rms-link">Related Materials</a> </li>
 	  </ul>
 	</div>
 	
-  <section id="study">
-      <%= render :partial => "table", :locals => {:study => study} %>
+  <section id="study-fields">
+      <%= render :partial => "study_table", :locals => {:study => study} %>
+  </section>
+    
+  <section id="variables" class="concealed">
+    <h3>Variable Description</h3>
+    <ul>
+		<%= render(:partial => "variable", :collection => study.variables)%>
+    </ul>
   </section>
   
-  <section id="related-materials" class="concealed">
+  <section id="rms" class="concealed">
     <h3>Related Materials</h3>
     <ul>
   		<% for rm in study.study_related_materials %>
@@ -63,25 +81,4 @@
     </ul>
   </section>
   
-  <section id="variables" class="concealed">
-    <h3>Variable Description</h3>
-    <ul>
-		<%= render(:partial => "variable", :collection => study.variables)%>
-    </ul>
-  </section>
-  
-  
-    
-<br/><br/><br/><br/><br/><br/>
-
-  <nav class="studynav">
-    <ul>
-      <li> <a id="study-link">Study Description</a> </li>
-      <li> <a id="variables-link">Variable Description</a> </li>
-      <li> <a id="related-materials-link">Related Materials</a> </li>
-    </ul>
-  </nav>
-
-    
-  <p><p>
 </section>

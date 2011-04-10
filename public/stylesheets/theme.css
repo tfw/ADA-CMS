@@ -1,5 +1,6 @@
 .concealed {display: none;}
 
+/*Tabbing*/
 #tabs ul {
 	list-style: none;
 	padding: 0;
@@ -22,11 +23,8 @@
 	background: white;
 }
 
+/*Search Results*/
 #search-results section{
-	border: 1px solid;
-}
-
-#study section{
 	border: 1px solid;
 }
 
@@ -78,6 +76,28 @@
 	display: inline;
 }
 
+
+/*Study Page*/
+
+#study section{
+	border: 1px solid;
+}
+
+#study table {
+  width: 100%;
+}
+
+#study th {
+  padding: 5px;
+	background: ghostwhite;
+}
+
+#study td {
+  padding: 5px;
+}
+
+/*Misc.*/
+
 span.float-right {
    float: right;
    margin: 0 0 0 0.2em;
@@ -89,7 +109,6 @@ div.float-centre {
   margin: auto;
  }
 
-/* Search */
 span.highlight {
   background-color: white;
   font-weight: bold;
