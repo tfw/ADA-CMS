@@ -1,6 +1,6 @@
 <% fields = StudyField.to_hash(study) %>
 
-<table id="study-table">
+<table id="study-table" border=1>
   <thead>
     <tr>
       <th>Item</th>
@@ -17,9 +17,9 @@
 
   	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
   	 <tr>
-       <td>
+       <td>Date of Collection</td>
+      <td>
          <table>
-           <caption>Date of Collection</caption>
          	 <%= study_field_table_row('collectionStart', study, fields, 'standard') %>
          	 <%= study_field_table_row('collectionEnd', study, fields, 'standard') %>
          </table>
@@ -30,8 +30,10 @@
   	<% if fields.has_key?("stdyContact") or fields.has_key?("stdyContactAffiliation") or fields.has_key?("stdyContactEmail") %>
       <tr>
        <td>
+         Contact Person
+       </td>
+       <td>
          <table>
-           <caption>Contact Person</caption>
           	<%= study_field_table_row('stdyContact', study, fields, 'standard') %>
           	<%= study_field_table_row('stdyContactAffiliation', study, fields, 'standard') %>
           	<%= study_field_table_row('stdyContactEmail', study, fields, 'standard') %>
