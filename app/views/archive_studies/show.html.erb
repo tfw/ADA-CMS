@@ -59,18 +59,18 @@
 	  </ul>
 	</div>
 	
-  <section id="study-fields">
+  <section id="study-fields" <%= conceal_unless(['default'], params[:format]) %>>
       <%= render :partial => "study_table", :locals => {:study => study} %>
   </section>
     
-  <section id="variables" class="concealed">
+  <section id="variables" <%= conceal_unless(['var'], params[:format]) %>
     <h3>Variable Description</h3>
     <ul>
 		  <%= render(:partial => "variable", :collection => study.variables)%>
     </ul>
   </section>
   
-  <section id="rms" class="concealed">
+  <section id="rms" <%= conceal_unless(['rms'], params[:format]) %> >
     <h3>Related Materials</h3>
     <ul>
   		<% for rm in study.study_related_materials %>

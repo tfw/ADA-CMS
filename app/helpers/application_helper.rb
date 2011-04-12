@@ -42,12 +42,12 @@ module ApplicationHelper
     end
   end
   
-  def conceal_unless(format_names, format = "title")
-    return if format.nil? and format_names.include?("title")
+  def conceal_unless(format_names, format = "default")
+    return if format.nil? and format_names.include?("default")
     "class = 'concealed'" unless format_names.include?(format)
   end
   
   def variable_anchor(variable)
-    "#{variable.study.ddi_id}-#{variable.id}"
+    "#{variable.id}"
   end
 end
