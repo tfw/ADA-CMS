@@ -1,6 +1,6 @@
 <% fields = VariableField.to_hash(variable) %>
 
-<li>
+<li id="<%= variable.study.ddi_id %>-<%= variable.id %>">
 	Label: <%= variable.label %> <br/>
 	Name: <%= variable.name %> <br/>
 	Numcats: <%= variable.num_cats %> <br/>
@@ -9,6 +9,5 @@
 	
 	<% for field in fields %>
 	  <%= variable_field(field) %> <br/>
-	<% end %>
-	
+	<% end %>	
 </li>
