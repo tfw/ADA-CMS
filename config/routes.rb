@@ -2,7 +2,8 @@ Ada::Application.routes.draw do
   devise_for :users, :controllers => { :sessions => 'user_sessions' }
 
   match 'staff/home', :to => 'staff/home#dashboard', :as => "inkling_user_root"
-
+  match 'staff/home', :to => 'staff/home#dashboard', :as => "user_root"
+  
   devise_scope :inkling_user do
     get "login", :to => "devise/sessions#new"    
     get "logout", :to => "devise/sessions#destroy"
@@ -55,6 +56,7 @@ Ada::Application.routes.draw do
   inkling_match(:documents)
   inkling_match(:images)
 
+  # user_root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
 end
 
