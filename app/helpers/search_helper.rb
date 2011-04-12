@@ -20,4 +20,9 @@ module SearchHelper
     css_class = "class = 'selected-menu-item'" if format_names.include?(format) or (format.nil? and format_names.include?("title")) 
     css_class
   end
+  
+  def conceal_unless(format_names, format = "title")
+    return if format.nil? and format_names.include?("title")
+    "class = 'concealed'" unless format_names.include?(format)
+  end
 end

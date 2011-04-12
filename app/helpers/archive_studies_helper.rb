@@ -32,4 +32,8 @@ module ArchiveStudiesHelper
   #   css_class
   # end
   
+  def conceal_unless(format_names, format = "default")
+    return if format.nil? and format_names.include?("default")
+    "class = 'concealed'" unless format_names.include?(format)
+  end
 end
