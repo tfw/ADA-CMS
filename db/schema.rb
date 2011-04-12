@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110331012142) do
+ActiveRecord::Schema.define(:version => 20110412005203) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -182,6 +182,7 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "password_salt"
+    t.string   "identity_url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "username"

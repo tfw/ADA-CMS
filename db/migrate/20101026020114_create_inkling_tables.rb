@@ -7,6 +7,7 @@ class CreateInklingTables < ActiveRecord::Migration
       t.rememberable
       t.trackable
       t.encryptable      
+      t.string :identity_url
       t.timestamps
       t.string :username
       t.string :firstname
