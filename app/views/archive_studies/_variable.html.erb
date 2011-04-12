@@ -1,7 +1,7 @@
 <% fields = VariableField.to_hash(variable) %>
 
-<li id="<%= variable.study.ddi_id %>-<%= variable.id %>">
-	Label: <%= variable.label %> <br/>
+<li>
+	<a  id="<%= variable_anchor(variable) %>">Label: <%= variable.label %> </a><br/>
 	Name: <%= variable.name %> <br/>
 	Numcats: <%= variable.num_cats %> <br/>
 	Val Range Max: <%= variable.val_range_max %> <br/>

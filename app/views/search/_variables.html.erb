@@ -16,7 +16,7 @@
           <tr>
             <td>
                <div id="variable-<%= variable.name %>">
-                 Variable Label: <%= variable.label %> 
+                 Variable Label: <%= link_to variable.label, "#{variable.study.for_archive(@current_archive).path.slug}##{variable_anchor(variable)}" %> 
                 <% if variable.question_text %> <br/>
                   Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
                 <% end %>

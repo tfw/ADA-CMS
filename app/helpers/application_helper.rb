@@ -46,4 +46,8 @@ module ApplicationHelper
     return if format.nil? and format_names.include?("title")
     "class = 'concealed'" unless format_names.include?(format)
   end
+  
+  def variable_anchor(variable)
+    "#{variable.study.ddi_id}-#{variable.id}"
+  end
 end
