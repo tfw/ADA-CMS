@@ -25,15 +25,9 @@ module ArchiveStudiesHelper
     css_class = "class='selected-tab'" if format_names.include?(format) or (format.nil? and format_names.include?("study")) 
     css_class
   end
-  
-  # def selected_menu_if(format_names, format = "title")
-  #   css_class = nil
-  #   css_class = "class = 'selected-menu-item'" if format_names.include?(format) or (format.nil? and format_names.include?("title")) 
-  #   css_class
+  # 
+  # def conceal_unless(format_names, format = "study")
+  #   puts "\n\n *** #{format}  #{format_names.include?(format)}"
+  #   "class = 'concealed'" unless format_names.include?(format)
   # end
-  
-  def conceal_unless(format_names, format = "default")
-    return if format.nil? and format_names.include?("default")
-    "class = 'concealed'" unless format_names.include?(format)
-  end
 end

@@ -1,5 +1,5 @@
 class Mutexer
-  LIMIT = 2
+  LIMIT = 1
   MUXES = []
   
   LIMIT.times {MUXES << Mutex.new}

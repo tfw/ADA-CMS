@@ -21,8 +21,8 @@ module SearchHelper
     css_class
   end
   
-  def conceal_unless(format_names, format = "title")
-    return if format.nil? and format_names.include?("title")
+  def conceal_unless(format_names, format = "default")
+    # puts "\n\n -- #{format} : #{format_names.include?(format)} -- \n\n"
     "class = 'concealed'" unless format_names.include?(format)
   end
 end

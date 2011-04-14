@@ -20,13 +20,13 @@
 	</div>
 	<br/>
 
-	<ul id="sub-menu" <%= conceal_unless(['title', 'ext'], params[:format]) %>>
-		<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link">Title View</a></li> 
+	<ul id="sub-menu" <%= conceal_unless(['title', 'ext','default'], params[:format]) %>>
+		<li id="title-view-item" <%= selected_menu_if(['title', 'default'], params[:format]) %>> <a id="title-view-link">Title View</a></li> 
 		<li>|</li> 
 		<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link">Extended</a></li>
 	</ul>
 
-	<table id="search-results-title" <%= conceal_unless(['title'], params[:format]) %>>
+	<table id="search-results-title" <%= conceal_unless(['title', 'default'], params[:format]) %>>
 		<thead>
 			<tr>
 				<th>Study</th>
