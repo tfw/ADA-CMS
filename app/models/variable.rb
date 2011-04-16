@@ -58,4 +58,9 @@ class Variable < ActiveRecord::Base
 
     variable_field.save!
   end
+  
+  def field(key)
+    field = variable_fields.find_by_key(key)
+    field.value if field
+  end
 end  

@@ -1,6 +1,7 @@
 <% fields = VariableField.to_hash(variable) %>
 
 <li>
+  <a href="<%= NESSTAR %>/webview/index.jsp?object=http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.<%= variable.study.ddi_id  %>_<%= variable.field('varID') %>&archive=<%= archive_css(@current_archive)  %>&cms_url=<%= variable.study.archive_studies.first.path.slug %>"> test link </a> <br/>
 	<a  id="<%= variable_anchor(variable) %>">Label: <%= variable.label %> </a><br/>
 	Name: <%= variable.name %> <br/>
 	Numcats: <%= variable.num_cats %> <br/>

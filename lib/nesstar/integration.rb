@@ -192,13 +192,11 @@ puts "finished dling the rm"
       end
 
       engine.register_participant 'download_variables' do |workitem|
-        puts "vars ...... "
         mutex = Mutexer.wait_for_mutex(2)
-        puts "vars ...... "
+        puts "vars ......  with a mutex"
         
         begin
           mutex.synchronize do                  
-            mutex = Mutexer.wait_for_mutex(2)
             ddi_id = workitem.fields['ddi_id']
             study = Study.find_by_ddi_id(ddi_id)
         
@@ -232,7 +230,8 @@ puts "finished"
                     
           related_materials_list.each do |related|
             study = Study.find_by_about(related[:study_resource])
-            
+            next if study.nil?
+
             pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
             next if pre_existing
 

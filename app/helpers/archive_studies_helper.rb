@@ -26,8 +26,13 @@ module ArchiveStudiesHelper
     css_class
   end
   # 
-  # def conceal_unless(format_names, format = "study")
-  #   puts "\n\n *** #{format}  #{format_names.include?(format)}"
-  #   "class = 'concealed'" unless format_names.include?(format)
-  # end
+  def conceal_unless(format_names, format = "study")
+    # puts "\n\n archive_studies .... *** #{format}  #{format_names.include?(format)}"
+    # "class = 'concealed'" unless format_names.include?(format)
+
+    css_class = nil
+    # css_class = "class='selected-tab'" if format_names.include?(format) or (format.nil? and format_names.include?("study")) 
+    "class = 'concealed'" unless format_names.include?(format) or (format.nil? and format_names.include?("study")) 
+    css_class 
+  end
 end

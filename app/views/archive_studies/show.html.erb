@@ -44,7 +44,6 @@
   </ul>
 	<br/>
 	
-http://bonus.anu.edu.au:81/webview/index.jsp?object=http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.01118-population
 </aside>
 
 <br/><br/><br/>
@@ -60,9 +59,7 @@ http://bonus.anu.edu.au:81/webview/index.jsp?object=http://bonus.anu.edu.au:81/o
 	  </ul>
 	</div>
 	
-	
-	>>> <%= conceal_unless(['study'], params[:format]) %> <<<>
-	
+		
   <section id="study-fields" <%= conceal_unless(['study'], params[:format]) %>>
       <%= render :partial => "study_table", :locals => {:study => study} %>
   </section>
