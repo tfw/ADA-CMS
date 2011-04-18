@@ -21,13 +21,6 @@ module SearchHelper
     css_class
   end
   
-  
-  # def conceal_unless(format_names, format = "study")
-  #   css_class = nil
-  #   "class = 'concealed'" unless format_names.include?(format)
-  #   css_class 
-  # end
-  
   def conceal_unless(format_names, format = "title")
     #this if shouldn't be necessary, appears to be a bug in helpers using default values in method args
     if format.nil?

@@ -25,12 +25,16 @@ module ArchiveStudiesHelper
     css_class = "class='selected-tab'" if format_names.include?(format) or (format.nil? and format_names.include?("study")) 
     css_class
   end
-  
-  def conceal_unless(format_names, format = "study")
-    css_class = nil
+    
+  def conceal_unless(format_names, format = "title")
+    #this if shouldn't be necessary, appears to be a bug in helpers using default values in method args
+    if format.nil?
+      format = "study"
+    end
+    
     "class = 'concealed'" unless format_names.include?(format)
-    css_class 
   end
+  
   
   def variable_href(variable, archive)       
     archive_study = ArchiveStudy.find_by_archive_id_and_study_id(archive.id, variable.study.id)
