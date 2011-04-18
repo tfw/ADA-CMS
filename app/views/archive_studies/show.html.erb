@@ -46,29 +46,32 @@
 	
 </aside>
 
-<br/><br/><br/>
+<br/>
+format: [<%= params[:show] %>]
+<br/>
+<br/>
 
 <section id="study">
   <% study = @study %>
 
 	<div id="tabs">
 	  <ul>
-	    <li id="study-menu-item" <%= selected_tab_if(['study'], params[:format]) %>> <a id="study-fields-link">Study</a> </li>
-	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:format]) %>> <a id="variables-link">Variables</a> <%= @study.variables.size %> </li>
-	    <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:format]) %>> <a id="rms-link">Related Materials</a> <%= @study.study_related_materials.size %> </li>
+	    <li id="study-menu-item" <%= selected_tab_if(['study'], params[:show]) %>> <a id="study-fields-link">Study</a> </li>
+	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:show]) %>> <a id="variables-link">Variables</a> <%= @study.variables.size %> </li>
+	    <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:show]) %>> <a id="rms-link">Related Materials</a> <%= @study.study_related_materials.size %> </li>
 	  </ul>
 	</div>
 	
 		
-  <section id="study-fields" <%= conceal_unless(['study'], params[:format]) %>>
+  <section id="study-fields" <%= conceal_unless(['study'], params[:show]) %>>
       <%= render :partial => "study_table", :locals => {:study => study} %>
   </section>
     
-  <section id="variables" <%= conceal_unless(['var'], params[:format]) %>>
+  <section id="variables" <%= conceal_unless(['var'], params[:show]) %>>
 	  <%= render :partial => "variable", :collection => study.variables, :spacer_template => "spacer" %>
   </section>
   
-  <section id="rms" <%= conceal_unless(['rms'], params[:format]) %> >
+  <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
     <ul>
   		<% for rm in study.study_related_materials %>
       <li>
