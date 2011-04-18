@@ -74,9 +74,11 @@ format: [<%= params[:show] %>]
   <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
     <ul>
   		<% for rm in study.study_related_materials %>
-      <li>
-         <a href="nesstar/related_material/<%= rm.id %>"><%=rm.comment %></a>
-      </li>
+    		<% unless rm.uri.nil? %>
+          <li>
+             <a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a> 
+          </li>
+        <% end %>
   		<% end %>
     </ul>
   </section>

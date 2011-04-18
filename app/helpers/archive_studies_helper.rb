@@ -48,4 +48,19 @@ module ArchiveStudiesHelper
   def down_arrow_anchor(position)
     "var-#{position + 1}"
   end
+  
+  def related_material_url(related_material)
+    uri = related_material.uri.gsub("..", "")
+    "#{NESSTAR}#{uri}"
+  end
+  
+  def related_material_comment_then_file_name(related_material)
+    link_text = nil
+    if related_material.comment
+      link_text = related_material.comment
+    else
+      link_text = related_material.uri.split(/\//).last
+    end
+    link_text
+  end
 end
