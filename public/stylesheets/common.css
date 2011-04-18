@@ -2,10 +2,20 @@
 
 /* CSS Document */
 
+html {
+	height: 100%;
+	position: relative;
+}
+
 body {
 	font: 11px/16px Arial, Helvetica, sans-serif;
-	background: #E8E8E8!important;
+	background-color: #FFF;
+	display: block;
+	min-height: 100%;
+	overflow: auto;
+	position: relative;
 }
+
 h1 {
 	font-size: 21px;
 	color: #999;
@@ -77,10 +87,7 @@ a:active {
 	padding: 0px 0px 10px;
 	font-weight: bold;
 }
-.content nav.archive_menu ul li.adapt a{
-	text-decoration: none;
-	font-weight: normal;
-}
+
 header .masthead a  {
 	display: block;
 	width: 500px;

@@ -27,12 +27,13 @@ module ArchiveStudiesHelper
   end
   # 
   def conceal_unless(format_names, format = "study")
-    # puts "\n\n archive_studies .... *** #{format}  #{format_names.include?(format)}"
-    # "class = 'concealed'" unless format_names.include?(format)
-
     css_class = nil
-    # css_class = "class='selected-tab'" if format_names.include?(format) or (format.nil? and format_names.include?("study")) 
     "class = 'concealed'" unless format_names.include?(format) or (format.nil? and format_names.include?("study")) 
     css_class 
+  end
+  
+  def variable_href(variable, archive)       
+    archive_study = ArchiveStudy.find_by_archive_id_and_study_id(archive.id, variable.study.id)
+           "#{NESSTAR}/webview/index.jsp?object=http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.#{variable.study.ddi_id}_#{variable.field('varID')}&archive=#{archive_css(archive)}&cms_url=#{archive_study.path.slug}"  
   end
 end

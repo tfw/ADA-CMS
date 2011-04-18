@@ -1,14 +1,32 @@
 <% fields = VariableField.to_hash(variable) %>
-
-<li>
-  <a href="<%= NESSTAR %>/webview/index.jsp?object=http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.<%= variable.study.ddi_id  %>_<%= variable.field('varID') %>&archive=<%= archive_css(@current_archive)  %>&cms_url=<%= variable.study.archive_studies.first.path.slug %>"> test link </a> <br/>
-	<a  id="<%= variable_anchor(variable) %>">Label: <%= variable.label %> </a><br/>
-	Name: <%= variable.name %> <br/>
-	Numcats: <%= variable.num_cats %> <br/>
-	Val Range Max: <%= variable.val_range_max %> <br/>
-	Val Range Max: <%= variable.val_range_min %> <br/>
-	
-	<% for field in fields %>
-	  <%= variable_field(field) %> <br/>
-	<% end %>	
-</li>
+<table border=1>
+  <thead>
+    <tr>
+      <th colspan=2><a id="<%= variable_anchor(variable) %>"  href="<%= variable_href(variable, @current_archive) %>" ><%= variable.label %></a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th> Name</th>
+      <th> Numcats</th>
+    </tr>
+    <tr>
+      <td><%= variable.name %> </td>
+      <td><%= variable.num_cats %> </td>
+    </tr>
+    <tr>
+      <th> Val Range Min</th>
+      <th> Val Range Max</th>
+    </tr>
+    <tr>
+      <td><%= variable.name %> </td>
+      <td><%= variable.val_range_max %> </td>
+    </tr>
+  	<% for field in fields %>
+  	  <tr>
+  	    <td colspan=2> <%= variable_field(field) %> </td>
+  	  </tr>
+  	<% end %>	
+  </tbody>
+</table>

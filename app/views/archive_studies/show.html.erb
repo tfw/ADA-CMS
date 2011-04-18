@@ -64,15 +64,11 @@
       <%= render :partial => "study_table", :locals => {:study => study} %>
   </section>
     
-  <section id="variables" <%= conceal_unless(['var'], params[:format]) %>
-    <h3>Variable Description</h3>
-    <ul>
-		  <%= render(:partial => "variable", :collection => study.variables)%>
-    </ul>
+  <section id="variables" <%= conceal_unless(['var'], params[:format]) %>>
+	  <%= render :partial => "variable", :collection => study.variables %>
   </section>
   
   <section id="rms" <%= conceal_unless(['rms'], params[:format]) %> >
-    <h3>Related Materials</h3>
     <ul>
   		<% for rm in study.study_related_materials %>
       <li>
