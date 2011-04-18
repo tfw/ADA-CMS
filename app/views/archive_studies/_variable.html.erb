@@ -2,7 +2,17 @@
 <table border=1>
   <thead>
     <tr>
-      <th colspan=2><a id="<%= variable_anchor(variable) %>"  href="<%= variable_href(variable, @current_archive) %>" ><%= variable.label %></a>
+      <th colspan=2><a id="<%= variable_anchor(variable) %>"  href="<%= variable_href(variable, @current_archive) %>" ><%= variable.label %></a> 
+      </th>
+      <th align="right">
+        <% unless variable == variable.study.variables.first %>
+          up arrow 
+        <% end %>
+      </th>
+      <th>  
+        <% unless variable == variable.study.variables.last %>
+          down arrow
+        <% end %>
       </th>
     </tr>
   </thead>
@@ -10,23 +20,25 @@
     <tr>
       <th> Name</th>
       <th> Numcats</th>
+      <th width=5%> Val Range Min</th>
+      <th width=5%> Val Range Max</th>
     </tr>
     <tr>
       <td><%= variable.name %> </td>
       <td><%= variable.num_cats %> </td>
-    </tr>
-    <tr>
-      <th> Val Range Min</th>
-      <th> Val Range Max</th>
-    </tr>
-    <tr>
-      <td><%= variable.name %> </td>
+      <td><%= variable.val_range_min %> </td>
       <td><%= variable.val_range_max %> </td>
     </tr>
+    <% if fields.size > 0 %>
+    <tr>
+      <th colspan=4 align="center">Misc.</th>
+    </tr>
+    <% end %>
   	<% for field in fields %>
   	  <tr>
-  	    <td colspan=2> <%= variable_field(field) %> </td>
+  	    <td colspan=4> <%= variable_field(field) %> </td>
   	  </tr>
   	<% end %>	
   </tbody>
 </table>
+
