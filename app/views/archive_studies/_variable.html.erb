@@ -2,16 +2,16 @@
 <table border=1>
   <thead>
     <tr>
-      <th colspan=2><a id="<%= variable_anchor(variable) %>"  href="<%= variable_href(variable, @current_archive) %>" ><%= variable.label %></a> 
+      <th colspan=2><a id="<%= variable_anchor(variable) %>" href="<%= variable_href(variable, @current_archive) %>" ><%= variable.label %></a> 
       </th>
       <th align="right">
         <% unless variable == variable.study.variables.first %>
-          up arrow 
+          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).path.slug %>#<%= up_arrow_anchor(variable_counter) %>" > <%= image_tag 'icons/arrow_up.png' %> </a>
         <% end %>
       </th>
       <th>  
         <% unless variable == variable.study.variables.last %>
-          down arrow
+          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).path.slug %>#<%= down_arrow_anchor(variable_counter) %>"> <%= image_tag 'icons/arrow_down.png' %> </a>
         <% end %>
       </th>
     </tr>
