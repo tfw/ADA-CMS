@@ -1,6 +1,9 @@
 class SearchController < ContentController
   
   respond_to :html
+  clear_helpers
+  helper :application
+  helper :search
     
   def search   
     @term = params[:term]    
