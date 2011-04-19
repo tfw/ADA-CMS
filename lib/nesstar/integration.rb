@@ -181,9 +181,7 @@ module Nesstar
             related_materials_entry = study.related_materials_attribute
             unless related_materials_entry.nil?
               document_name = related_materials_entry.value.split(".").last + ".xml"
-puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
               `curl -o #{$related_xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-puts "finished dling the rm"
             end
           end
         ensure
@@ -204,9 +202,7 @@ puts "finished dling the rm"
             variable_url = study.variables_attribute.value
             var_file_name = variable_url.split(".").last
 
-puts "\n\nbeginning to dl #{variable_url}"
             `curl -o #{$variables_xml_dir}#{var_file_name} --compressed "#{variable_url}"`
-puts "finished"
           end
         ensure
           ActiveRecord::Base.connection_pool.release_connection
