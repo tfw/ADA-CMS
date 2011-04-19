@@ -17,7 +17,7 @@
 
   	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
   	 <tr>
-       <td>Date of Collection</td>
+       <td valign=top>Date of Collection</td>
       <td>
          <table>
          	 <%= study_field_table_row('collectionStart', study, fields, 'standard') %>
@@ -29,7 +29,7 @@
 
   	<% if fields.has_key?("stdyContact") or fields.has_key?("stdyContactAffiliation") or fields.has_key?("stdyContactEmail") %>
       <tr>
-       <td>
+       <td valign=top>
          Contact Person
        </td>
        <td>

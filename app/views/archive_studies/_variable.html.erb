@@ -6,6 +6,7 @@
       </th>
       <th align="right">
         <% unless variable == variable.study.variables.first %>
+          <%= link_to "Return to #{variable.study.ddi_id}", variable.study.for_archive(@current_archive).path.slug %> &nbsp;
           <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).path.slug %>#<%= up_arrow_anchor(variable_counter) %>" > <%= image_tag 'icons/arrow_up.png' %> </a>
         <% end %>
       </th>
