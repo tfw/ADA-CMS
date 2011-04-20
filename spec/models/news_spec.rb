@@ -42,7 +42,7 @@ describe News do
       a.should_not be_nil
       na = news.news_archives[0]
       na.should_not be_nil
-      na.path.slug.should =~ %r{/#{a.slug}/\d\d\d\d/\d\d/\d\d/#{sluggerize(news.title)}}
+      na.path.slug.should =~ %r{/#{a.slug}/news/\d\d\d\d/\d\d/\d\d/#{sluggerize(news.title)}}
     end
   end
 
