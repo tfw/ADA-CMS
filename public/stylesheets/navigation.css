@@ -51,15 +51,13 @@
 
 #study-facets,
 .archive_menu {
-	float: none;
-	height: 100%
+	float: left;
 	width: 150px;
 	display: block;
 	z-index: 1;
-	clear: none;
-	width: 150px;
 	padding-left: 40px;
-	position: absolute;
+	padding-right: 40px;
+	position: relative;
 }
 
 .content nav.archive_menu {

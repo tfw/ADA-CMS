@@ -135,13 +135,24 @@ header {
 
 article {
 }
+
 .main {
 	display: block;
-	padding-left: 210px;
+	margin-left: 210px;
 	margin-right: 40px;
-	float: none;
 	position: relative;
 }
+
+.main_admin {
+	display: block;
+	float: none;
+	margin-right: 40px;
+	padding-left: 0px;
+	position: relative;
+	padding-bottom: 110px;
+
+}
+
 
 section.main
 aside{
