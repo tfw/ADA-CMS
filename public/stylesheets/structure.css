@@ -145,9 +145,9 @@ article {
 
 .main_admin {
 	display: block;
-	float: none;
+	float: left;
 	margin-right: 40px;
-	padding-left: 0px;
+	padding-left: 20px;
 	position: relative;
 	padding-bottom: 110px;
 
@@ -340,4 +340,11 @@ footer p {
 .logged_in span {
 	font-weight: bold;
 	margin-right: 3px;
+}
+
+.breakout {
+	float: right !important;
+	width: 200px !important;
+	margin-right: 0px !important
+    margin-top: 0px !important;
 }

@@ -33,20 +33,6 @@
 	background-color: #EDEDED;
 	height: 5px;
 }
-/*#study-facets,
-.archive_menu {
-	float: none;
-	height: 100%
-	width: 150px;
-	display: block;
-	z-index: 1;
-	clear: none;
-	width: 150px;
-	padding-left: 40px;
-	position: absolute;
-	top: 304px;
-	height: 496px;
-}*/
 
 
 #study-facets,
@@ -56,7 +42,6 @@
 	display: block;
 	z-index: 1;
 	padding-left: 40px;
-	padding-right: 40px;
 	position: relative;
 }
 
