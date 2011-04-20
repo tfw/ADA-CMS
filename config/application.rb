@@ -44,7 +44,8 @@ module Ada
 end
 
 
-NESSTAR = "http://bonus.anu.edu.au:81"
+# NESSTAR = "http://bonus.anu.edu.au:81"
+require 'nesstar/config'
 
 # /webview/index.jsp?
 # &mode=download?v=2&analysismode=table&top=yes&
