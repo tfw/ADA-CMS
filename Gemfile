@@ -9,7 +9,7 @@ gem 'inkling', :git => "git://github.com/tfw/inkling.git" #, :ref => "02c7b2a87d
 
 gem "devise", ">= 1.2.0"
 gem 'devise_openid_authenticatable'
-gem 'openid_client', :path => '/Users/nick/code/src/ruby/OpenID-Client-Engine' # :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
+gem 'openid_client', :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
 
 gem 'inherited_resources'
 gem 'cancan'
@@ -26,6 +26,7 @@ gem 'will_paginate', ">=3.0pre"
 gem 'paperclip', "~>2.3"
 gem 'ratom'
 gem 'sunspot_rails', '>=1.2.1'
+gem 'mongrel', '~> 1.2.0.pre2'
 
 # gem "ruby-debug19" #move this into dev group alone later
 
