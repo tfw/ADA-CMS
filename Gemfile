@@ -45,9 +45,3 @@ group :development, :test do
 	gem 'database_cleaner'
 	gem 'capistrano'
 end
-
-# gems required for Microsoft SQL (where Clifford creates the schema diagrams)
-#group :mssql do
-#	gem 'activerecord-sqlserver-adapter'
-#	gem 'tiny_tds'
-#end
