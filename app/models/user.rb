@@ -3,12 +3,17 @@ class User < Inkling::User
   
   devise :openid_authenticatable
 
-  def self.create_from_identity_url(identity_url)
-    User.create(:identity_url => identity_url)
+  attr_accessible :identity_url
+
+  def self.build_from_identity_url(identity_url)
+    new({:identity_url => identity_url,
+          #TODO these are dummies to satisfy devise
+          :password => 'password',
+          :password_confirmation => 'password'})
   end
 
   def self.openid_optional_fields
-    ["email", "fullname"]
+    ["email"]
   end
 
   def openid_fields=(fields)
@@ -19,8 +24,6 @@ class User < Inkling::User
       end
 
       case key.to_s
-      when "fullname"
-        self.name = value
       when "email"
         self.email = value
       else
