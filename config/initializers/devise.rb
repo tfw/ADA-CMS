@@ -1,3 +1,5 @@
+require 'pp'
+
 # Use this hook to configure devise mailer, warden hooks and so forth. The first
 # four configuration values can also be set straight in your models.
 Devise.setup do |config|
@@ -143,6 +145,14 @@ Devise.setup do |config|
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
+  config.warden do |manager|
+    manager.failure_app = proc { |env|
+      message = env['warden'].winning_strategy.message
+      [500,
+       {"Content-Type" => "text/plain"},
+       [message.to_s + "\n" + message.backtrace.join("\n")]]
+    }
+  end
   #
   # config.warden do |manager|
   #   manager.failure_app = AnotherApp
