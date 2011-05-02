@@ -1,6 +1,16 @@
-class User < Inkling::User
-  set_table_name 'inkling_users'
+class User < ActiveRecord::Base
   
+  #abstract into inkling helper START
+  has_many :role_memberships
+  has_many :roles, :through => :role_memberships
+  has_many :logs
+  
+  def has_role?(role)
+    role = role.to_s
+    self.roles.find_by_name(role)
+  end  
+  #abstract into inkling helper END
+
   devise :openid_authenticatable
 
   attr_accessible :identity_url
