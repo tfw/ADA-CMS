@@ -6,7 +6,7 @@ namespace :db do
     include FileUtils
     
     sql = "SELECT * FROM %s"
-    skip_tables = ["schema_info", "sessions"]
+    skip_tables = ["schema_migrations", "sessions"]
     ActiveRecord::Base.establish_connection
     tables = ENV['FIXTURES'] ? ENV['FIXTURES'].split(/,/) : ActiveRecord::Base.connection.tables - skip_tables
     puts "\n\n #{tables} \n\n"
