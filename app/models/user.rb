@@ -13,7 +13,8 @@ class User < Inkling::User
   end
 
   def self.openid_optional_fields
-    ["email"]
+    ['email', 'http://users.ada.edu.au/email',
+     'http://users.ada.edu.au/role']
   end
 
   def openid_fields=(fields)
@@ -24,8 +25,10 @@ class User < Inkling::User
       end
 
       case key.to_s
-      when "email"
+      when 'email', 'http://users.ada.edu.au/email'
         self.email = value
+      when 'http://users.ada.edu.au/role'
+        #TODO do something with the role value here
       else
         logger.error "Unknown OpenID field: #{key}"
       end
