@@ -4,7 +4,7 @@ Ada::Application.routes.draw do
   match 'staff/home', :to => 'staff/home#dashboard', :as => "inkling_user_root"
   match 'staff/home', :to => 'staff/home#dashboard', :as => "user_root"
   
-  devise_scope :inkling_user do
+  devise_scope :user do
     get "login", :to => "devise/sessions#new"    
     get "logout", :to => "devise/sessions#destroy"
   end

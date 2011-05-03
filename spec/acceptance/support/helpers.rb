@@ -61,7 +61,7 @@ module HelperMethods
   def sign_in(user)
     visit '/login'
     fill_in('inkling_user_email', :with => user.email)
-    fill_in('inkling_user_password', :with => 'test123')
+    # fill_in('inkling_user_password', :with => 'test123')
     click_button('Sign in')
   end
 
