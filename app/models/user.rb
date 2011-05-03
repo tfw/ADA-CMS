@@ -28,7 +28,7 @@ class User < Inkling::User
       when 'email', 'http://users.ada.edu.au/email'
         self.email = value
       when 'http://users.ada.edu.au/role'
-        #TODO do something with the role value here
+        self.roles << Inkling::Role.find_or_create_by_name(value)
       else
         logger.error "Unknown OpenID field: #{key}"
       end
