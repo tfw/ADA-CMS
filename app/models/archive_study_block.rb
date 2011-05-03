@@ -2,7 +2,7 @@ class ArchiveStudyBlock < ActiveRecord::Base
 
   belongs_to :archive
   belongs_to :archive_study_query
-  belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
+  belongs_to :user
   
   validates_uniqueness_of :ddi_id
   

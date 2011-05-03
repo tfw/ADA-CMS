@@ -5,7 +5,7 @@ class News < ActiveRecord::Base
   has_many :archives, :through => :news_archives
   SNIPPET_WORDS = 20
 
-  belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
+  belongs_to :user
 
   validates_presence_of :user
   validates_presence_of :title

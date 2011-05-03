@@ -13,7 +13,7 @@ class Image < ActiveRecord::Base
   cattr_reader :per_page
   @@per_page = 10
 
-  belongs_to :user, :class_name => "Inkling::User", :foreign_key => "user_id"
+  belongs_to :user
   belongs_to :archive
 
   validates_presence_of :user

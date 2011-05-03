@@ -18,10 +18,10 @@ Sham.display_from { (0..60).to_a.rand.days.ago }
 Sham.display_to   { (0..60).to_a.rand.days.since }
 Sham.keywords   { Faker::Lorem.sentence }
 
-Inkling::User.blueprint do 
+User.blueprint do 
   email Sham.email
-  password 'test123'
-  password_confirmation  'test123'
+  # password 'test123'
+  # password_confirmation  'test123'
 end
 
 Inkling::Role.blueprint do
@@ -54,7 +54,7 @@ def make_user(role_name)
   role_entry = Inkling::RoleMembership.find_by_role_id(role.id)
 
   unless role_entry
-    user = Inkling::User.make
+    user = User.make
     role_membership = Inkling::RoleMembership.create(:role => role, :user => user) 
   end
 
@@ -63,8 +63,8 @@ end
 
 Page.blueprint do 
   title Sham.name
-  author {(Inkling::User.make)}
-  author_id {(Inkling::User.make).id}
+  author {(User.make)}
+  author_id {(User.make).id}
   archive {Archive.make}
   link_title Sham.title
   description Sham.description
@@ -78,8 +78,8 @@ end
 
 News.blueprint do
   title Sham.name
-  user {(Inkling::User.make)}
-  user_id {(Inkling::User.make).id}
+  user {(User.make)}
+  user_id {(User.make).id}
   body Sham.body
 end
 

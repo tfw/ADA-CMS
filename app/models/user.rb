@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+
+  devise :openid_authenticatable
   
   #abstract into inkling helper START
   has_many :role_memberships
@@ -10,8 +12,10 @@ class User < ActiveRecord::Base
     self.roles.find_by_name(role)
   end  
   #abstract into inkling helper END
-
-  devise :openid_authenticatable
+  
+  has_many :pages, :foreign_key => "author_id"
+  has_many :news, :foreign_key => "user_id"
+  has_many :archive_study_integrations, :foreign_key => "user_id"
 
   attr_accessible :identity_url
 
