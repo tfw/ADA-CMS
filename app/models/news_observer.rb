@@ -17,7 +17,7 @@ class NewsObserver < ActiveRecord::Observer
   def log(verb, news)
     Inkling::Log.create!(
       :text => "#{
-          news.user.email
+          news.user
         } #{
           verb
         } news <a href='#{edit_staff_news_path(news)}'>#{news.title}</a>" +

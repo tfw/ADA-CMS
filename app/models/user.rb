@@ -48,4 +48,8 @@ class User < ActiveRecord::Base
       end
     end
   end
+  
+  def to_s
+    "#{firstname} #{surname}"
+  end
 end

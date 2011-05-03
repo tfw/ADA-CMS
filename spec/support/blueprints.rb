@@ -19,9 +19,7 @@ Sham.display_to   { (0..60).to_a.rand.days.since }
 Sham.keywords   { Faker::Lorem.sentence }
 
 User.blueprint do 
-  email Sham.email
-  # password 'test123'
-  # password_confirmation  'test123'
+  identity_url Sham.word
 end
 
 Inkling::Role.blueprint do
