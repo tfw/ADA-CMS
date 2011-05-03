@@ -20,10 +20,7 @@ class User < ActiveRecord::Base
   attr_accessible :identity_url
 
   def self.build_from_identity_url(identity_url)
-    new({:identity_url => identity_url,
-          #TODO these are dummies to satisfy devise
-          :password => 'password',
-          :password_confirmation => 'password'})
+    new({:identity_url => identity_url})
   end
 
   def self.openid_optional_fields

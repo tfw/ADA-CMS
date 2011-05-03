@@ -1,6 +1,6 @@
 class UserSessionsController < OpenidClient::SessionsController
-  #DEFAULT_SERVER='http://178.79.149.181:4000'
-  DEFAULT_SERVER='http://localhost:3000'
+  #DEFAULT_SERVER='http://:4000'
+  DEFAULT_SERVER='http://178.79.149.181:81'
 
   protected
 

@@ -60,8 +60,8 @@ module HelperMethods
 
   def sign_in(user)
     visit '/login'
-    fill_in('user_login', :with => user.identity_url)
-    click_button('Sign in')
+    # fill_in('user_login', :with => user.identity_url)
+    click_button('Log in')
   end
 
   def sign_out

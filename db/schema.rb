@@ -293,6 +293,7 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "identity_url"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "firstname"
