@@ -23,7 +23,6 @@ module HelperMethods
 
   def create_page(archive, page_title, page_body)
     visit_archive(archive.slug)
-
     within(:xpath, "//fieldset[@id='page-management']") do
       click_link("+")
     end
@@ -59,9 +58,10 @@ module HelperMethods
   end
 
   def sign_in(user)
-    visit '/login'
+    visit '/'
     # fill_in('user_login', :with => user.identity_url)
-    click_button('Log in')
+    puts page.body
+    click_button('LOG IN')
   end
 
   def sign_out

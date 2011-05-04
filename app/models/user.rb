@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
   devise :openid_authenticatable
   
   #abstract into inkling helper START
-  has_many :role_memberships
-  has_many :roles, :through => :role_memberships
+  has_many :role_memberships, :class_name => "Inkling::RoleMembership"#, :foreign_key => "user.id"
+  has_many :roles, :class_name => "Inkling::Role", :through => :role_memberships
   has_many :logs
   
   def has_role?(role)
