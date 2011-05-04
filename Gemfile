@@ -5,16 +5,16 @@ gem 'rails', '3.0.6'
 
 gem "pg"
 
-gem 'inkling', :path =>  "/Users/nicholas/code/src/tfw/inkling-project/inkling" # :git => "git://github.com/tfw/inkling.git", :ref => "78a917b5ed9c3f45fa5941ef02979ec346048740"
+gem 'inkling', :git => "git://github.com/tfw/inkling.git", :ref => "14498f1ada715c36ed92107ff126f484d91fe093" #, :path =>  "/Users/nicholas/code/src/tfw/inkling-project/inkling" # 
 
 gem "devise", ">= 1.2.0"
 gem 'devise_openid_authenticatable'
 
-if ENV['GEMS_LOCAL'] and File.exist? ENV['GEMS_LOCAL']
-  gem 'openid_client', :path => "#{ENV['GEMS_LOCAL']}/openid_client"
-else
+# if ENV['GEMS_LOCAL'] and File.exist? ENV['GEMS_LOCAL']
+#   gem 'openid_client', :path => "#{ENV['GEMS_LOCAL']}/openid_client"
+# else
   gem 'openid_client', :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
-end
+# end
 
 gem 'inherited_resources'
 gem 'cancan'

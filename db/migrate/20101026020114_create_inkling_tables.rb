@@ -1,13 +1,9 @@
 class CreateInklingTables < ActiveRecord::Migration
   def self.up
     create_table :inkling_users do |t|
-      t.database_authenticatable
-      t.confirmable
-      t.recoverable
+      t.openid_authenticatable
       t.rememberable
       t.trackable
-      t.encryptable      
-      t.string :identity_url
       t.timestamps
       t.string :username
       t.string :firstname

@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
       when 'email', 'http://users.ada.edu.au/email'
         self.email = value
       when 'http://users.ada.edu.au/role'
-        self.roles << Inkling::Role.find_or_create_by_name(value)
+        self.roles << Inkling::Role.find_or_create_by_name(value) #refactor this! Shouldn't automatically create roles
       else
         logger.error "Unknown OpenID field: #{key}"
       end

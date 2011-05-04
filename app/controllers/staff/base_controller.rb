@@ -5,4 +5,14 @@ class Staff::BaseController < ApplicationController
   
   layout 'manage'
   
+  before_filter :test
+  
+  def test
+    debugger
+  end
+  
+  def devise_controller?
+    true
+  end
+  
 end
