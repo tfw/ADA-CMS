@@ -16,14 +16,14 @@
 				<% if current_user.nil? %>
 					<h1>USER Log-in </h1>
 					<%= form_for(:user, :url => new_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
-						<input type="text" name="user[login]" id="login_name"/>
+						<input type="text" name="user[identity_url]" id="user_identity_url"/>
 						<!-- <input type="image" alt="Log In" id="enter_button" src="/images/structure/bttn_enter.png"/>
             <input type="image" alt="register" name="imageField" id="register_button" src="/images/structure/bttn_register.png"/> -->
   
             <input type="submit" alt="register" value="register" id="register_button"/>
             <input type="submit" alt="Log In" value="LOG IN" id="enter_button" />
 						
-						<label id="rember_me"><input name="remember_me" id="remember_me" type="checkbox" value="yes"> remember me</label>
+						<label id="rember_me"><%= f.check_box :remember_me %></label>
 						
 					<% end %>
 				<% else %>				

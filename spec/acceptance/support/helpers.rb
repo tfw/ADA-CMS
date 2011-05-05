@@ -59,8 +59,7 @@ module HelperMethods
 
   def sign_in(user)
     visit '/'
-    # fill_in('user_login', :with => user.identity_url)
-    puts page.body
+    fill_in('user_identity_url', :with => user.identity_url)
     click_button('LOG IN')
   end
 

@@ -14,8 +14,10 @@ GIT
     ckeditor (3.5.2)
       mime-types (>= 1.16)
 
-PATH
-  remote: /Users/nicholas/code/src/tfw/inkling-project/inkling
+GIT
+  remote: git://github.com/tfw/inkling.git
+  revision: 14498f1ada715c36ed92107ff126f484d91fe093
+  ref: 14498f1ada715c36ed92107ff126f484d91fe093
   specs:
     inkling (0.1.0)
       cancan

@@ -146,11 +146,17 @@ Devise.setup do |config|
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
   config.warden do |manager|
+    # manager.failure_app = proc { |env|
+    #   message = env['warden'].winning_strategy.message
+    #   [500,
+    #    {"Content-Type" => "text/plain"},
+    #    [message.to_s + "\n" + message.backtrace.join("\n")]]
+    # }
     manager.failure_app = proc { |env|
       message = env['warden'].winning_strategy.message
       [500,
        {"Content-Type" => "text/plain"},
-       [message.to_s + "\n" + message.backtrace.join("\n")]]
+       [message.to_s + "\n"]]
     }
   end
   #

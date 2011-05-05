@@ -1,5 +1,4 @@
 class UserSessionsController < OpenidClient::SessionsController
-  #DEFAULT_SERVER='http://:4000'
   DEFAULT_SERVER='http://178.79.149.181:81'
 
   protected
@@ -18,5 +17,10 @@ class UserSessionsController < OpenidClient::SessionsController
     else
       nil
     end
+  end
+  
+  # Whether to bypass OpenID verification see OpenID Client Engine
+  def bypass_openid?
+    false
   end
 end
