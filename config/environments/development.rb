@@ -27,3 +27,6 @@ end
 
 Paperclip.options[:command_path] = "/opt/local/bin/" if `uname`.strip == "Darwin"
 Paperclip.options[:command_path] = "/usr/bin/" if `uname`.strip == "Linux"
+
+OPENID_SERVER='http://178.79.149.181:81'
+

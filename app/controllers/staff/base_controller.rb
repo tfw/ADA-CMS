@@ -8,5 +8,4 @@ class Staff::BaseController < ApplicationController
   def devise_controller?
     true
   end
-  
 end
