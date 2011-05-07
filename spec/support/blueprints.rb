@@ -97,3 +97,8 @@ Study.blueprint do
   ddi_id Sham.name
   abstract Sham.body
 end
+
+DdiMapping.blueprint do
+  ddi Sham.word
+  xml_element true
+end

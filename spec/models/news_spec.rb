@@ -25,13 +25,14 @@ describe News do
       end
     end
 
-    it "requires an archive" do
-      news = make_news(:archives => 0)
-      news.archives.size.should == 0
-      news.valid?
-      pending "validates_at_least_one doesn't work correctly yet"
-      news.errors.size.should == 1
-    end
+    # consider deleting? This has never passed and was left in a pending state.
+    # it "requires an archive" do
+    #   news = make_news(:archives => 0)
+    #   news.archives.size.should == 0
+    #   news.valid?
+    #   pending "validates_at_least_one doesn't work correctly yet"
+    #   news.errors.size.should == 1
+    # end
   end
 
   describe "belonging to an archive" do
@@ -41,7 +42,7 @@ describe News do
       a.should_not be_nil
       na = news.news_archives[0]
       na.should_not be_nil
-      na.path.slug.should =~ %r{/#{a.slug}/\d\d\d\d/\d\d/\d\d/#{sluggerize(news.title)}}
+      na.path.slug.should =~ %r{/#{a.slug}/news/\d\d\d\d/\d\d/\d\d/#{sluggerize(news.title)}}
     end
   end
 

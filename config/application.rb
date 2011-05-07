@@ -42,3 +42,11 @@ module Ada
     config.filter_parameters += [:password]
   end
 end
+
+
+# NESSTAR = "http://bonus.anu.edu.au:81"
+require 'nesstar/config'
+
+# /webview/index.jsp?
+# &mode=download?v=2&analysismode=table&top=yes&
+# study=http%3A%2F%2Fbonus.anu.edu.au%3A81%2Fobj%2FfStudy%2Fau.edu.anu.ada.ddi.steve"

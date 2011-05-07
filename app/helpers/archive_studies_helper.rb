@@ -25,11 +25,42 @@ module ArchiveStudiesHelper
     css_class = "class='selected-tab'" if format_names.include?(format) or (format.nil? and format_names.include?("study")) 
     css_class
   end
+    
+  def conceal_unless(format_names, format = "title")
+    #this if shouldn't be necessary, appears to be a bug in helpers using default values in method args
+    if format.nil?
+      format = "study"
+    end
+    
+    "class = 'concealed'" unless format_names.include?(format)
+  end
   
-  # def selected_menu_if(format_names, format = "title")
-  #   css_class = nil
-  #   css_class = "class = 'selected-menu-item'" if format_names.include?(format) or (format.nil? and format_names.include?("title")) 
-  #   css_class
-  # end
   
+  def variable_href(variable, archive)       
+    archive_study = ArchiveStudy.find_by_archive_id_and_study_id(archive.id, variable.study.id)
+           "#{$nesstar_server}/index.jsp?object=#{variable.study.about}_#{variable.field('varID')}&archive=#{archive_css(archive)}&cms_url=#{archive_study.path.slug}"  
+  end
+  
+  def up_arrow_anchor(position)
+    "var-#{position - 1}"
+  end
+  
+  def down_arrow_anchor(position)
+    "var-#{position + 1}"
+  end
+  
+  def related_material_url(related_material)
+    uri = related_material.uri.gsub("..", "")
+    "#{NESSTAR}#{uri}"
+  end
+  
+  def related_material_comment_then_file_name(related_material)
+    link_text = nil
+    if related_material.comment
+      link_text = related_material.comment
+    else
+      link_text = related_material.uri.split(/\//).last
+    end
+    link_text
+  end
 end

@@ -20,18 +20,17 @@
 						<!-- <input type="image" alt="Log In" id="enter_button" src="/images/structure/bttn_enter.png"/>
             <input type="image" alt="register" name="imageField" id="register_button" src="/images/structure/bttn_register.png"/> -->
   
-            <input type="submit" alt="register" value="register" id="register_button"/>
             <input type="submit" alt="Log In" value="LOG IN" id="enter_button" />
+            <input type="submit" alt="register" value="register" id="register_button"/>
 						
 						<label id="rember_me"><%= f.check_box :remember_me %></label>
 						
 					<% end %>
-				<% else %>				
-					<h1>Logged In </h1> 
-					<div class="logged_in"><span><%= current_user.roles.first.name %>:</span><%= current_user.email %><%= link_to 'view profile', staff_user_report_path(current_user) %></div> 
-					<input type="submit" alt="log out" value="LOG OUT" id="logout_button" /> 
-
-						<%= link_to(image_tag("structure/bttn_logout.png"), logout_path) %>
+				<% else %>
+					<form action="<%= logout_path %>" method="get" enctype="multipart/form-data" name="form2" class="formtastic">
+						<div class="logged_in"><span><%= current_user.roles.first.name %>:</span><%= current_user.email %><%= link_to 'view profile', staff_user_report_path(current_user) %></div>
+						<input type="submit" alt="log out" value="LOG OUT" id="logout_button" />
+	         </form>
 				<% end %>
 			</div>
 			
@@ -58,9 +57,9 @@
 		      <input type="text" name="term" id="search_term" value="Search this site"/>
 		
 		      <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
-         <input type="image" alt="Go" id="search_button" src="/images/structure/bttn_go.png"/>
-	        </form>
-	      </div>
+					<input type="submit" alt="Go" value="go" id="search_button"/>
+	      </form>
+	    </div>	
   </nav>
 
 		<nav class="subnav">
@@ -114,14 +113,15 @@
 				<img src="/images/content/logo_um.gif" width="110" height="56" alt="logo_um"/>
 				<img src="/images/content/logo_uq.gif" width="110" height="56" alt="logo_uq"/>
 			</div>
-		</section>
 		<footer>
 		  <p>General Enquiries: <a href="#">assda@anu.edu.au</a></p>
 		  <p>Web Enquiries: <a href="#">webmaster@assda.anu.edu.au</a></p>
 		  <p> <em><%= deploy_log %></em></p>
 		  <p> &#xA9; Australian Data Archive</p>
     </footer>
-    </body>
+	</section>
+
+  </body>
     
 		<%= javascript_include_tag 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application' %>	
 

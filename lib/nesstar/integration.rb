@@ -133,8 +133,8 @@ module Nesstar
         mutex = Mutexer.wait_for_mutex(2)
         begin
           mutex.synchronize do
-            # puts "\\n\n study download: downloading: http://palo.anu.edu.au:80/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
-            http_headers = `curl -i --compressed "#{$nesstar_server}/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+            puts "\\n\n study download: downloading: #{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"
+            http_headers = `curl -i --compressed "#{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"`
             http_headers = http_headers.split("\n")
         
             if http_headers.first =~ /500/
@@ -144,8 +144,8 @@ module Nesstar
             end
         
             begin
-              puts " #{$nesstar_server}/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"
-              `curl -o #{$studies_xml_dir}#{file_name} --compressed "#{$nesstar_server}/obj/fStudy/au.edu.anu.assda.ddi.#{ddi_id}"`
+              puts " #{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"
+              `curl -o #{$studies_xml_dir}#{file_name} --compressed "#{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"`
               workitem.fields['downloaded_files'] << file_name
             rescue StandardError => boom
               puts "#{boom}.to_s"
@@ -181,9 +181,7 @@ module Nesstar
             related_materials_entry = study.related_materials_attribute
             unless related_materials_entry.nil?
               document_name = related_materials_entry.value.split(".").last + ".xml"
-puts "\n\n #{$related_xml_dir}#{document_name} related material download: #{related_materials_entry.value}"
               `curl -o #{$related_xml_dir}#{document_name} --compressed "#{related_materials_entry.value}"`
-puts "finished dling the rm"
             end
           end
         ensure
@@ -192,13 +190,11 @@ puts "finished dling the rm"
       end
 
       engine.register_participant 'download_variables' do |workitem|
-        puts "vars ...... "
         mutex = Mutexer.wait_for_mutex(2)
-        puts "vars ...... "
+        puts "vars ......  with a mutex"
         
         begin
           mutex.synchronize do                  
-            mutex = Mutexer.wait_for_mutex(2)
             ddi_id = workitem.fields['ddi_id']
             study = Study.find_by_ddi_id(ddi_id)
         
@@ -206,9 +202,7 @@ puts "finished dling the rm"
             variable_url = study.variables_attribute.value
             var_file_name = variable_url.split(".").last
 
-puts "\n\nbeginning to dl #{variable_url}"
             `curl -o #{$variables_xml_dir}#{var_file_name} --compressed "#{variable_url}"`
-puts "finished"
           end
         ensure
           ActiveRecord::Base.connection_pool.release_connection
@@ -232,7 +226,8 @@ puts "finished"
                     
           related_materials_list.each do |related|
             study = Study.find_by_about(related[:study_resource])
-            
+            next if study.nil?
+
             pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
             next if pre_existing
 

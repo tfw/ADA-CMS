@@ -1,13 +1,45 @@
 <% fields = VariableField.to_hash(variable) %>
+<table border=1>
+  <thead>
+    <tr>
+      <th colspan=2><a id="<%= variable_anchor(variable) %>" href="<%= variable_href(variable, @current_archive) %>" ><%= variable.label %></a> 
+      </th>
+      <th align="right">
+        <% unless variable == variable.study.variables.first %>
+          <%= link_to "Return to #{variable.study.ddi_id}", variable.study.for_archive(@current_archive).path.slug %> &nbsp;
+          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).path.slug %>#<%= up_arrow_anchor(variable_counter) %>" > <%= image_tag 'icons/arrow_up.png' %> </a>
+        <% end %>
+      </th>
+      <th>  
+        <% unless variable == variable.study.variables.last %>
+          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).path.slug %>#<%= down_arrow_anchor(variable_counter) %>"> <%= image_tag 'icons/arrow_down.png' %> </a>
+        <% end %>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th> Name</th>
+      <th> Numcats</th>
+      <th width=5%> Val Range Min</th>
+      <th width=5%> Val Range Max</th>
+    </tr>
+    <tr>
+      <td><%= variable.name %> </td>
+      <td><%= variable.num_cats %> </td>
+      <td><%= variable.val_range_min %> </td>
+      <td><%= variable.val_range_max %> </td>
+    </tr>
+    <% if fields.size > 0 %>
+    <tr>
+      <th colspan=4 align="center">Misc.</th>
+    </tr>
+    <% end %>
+  	<% for field in fields %>
+  	  <tr>
+  	    <td colspan=4> <%= variable_field(field) %> </td>
+  	  </tr>
+  	<% end %>	
+  </tbody>
+</table>
 
-<li>
-	<a  id="<%= variable_anchor(variable) %>">Label: <%= variable.label %> </a><br/>
-	Name: <%= variable.name %> <br/>
-	Numcats: <%= variable.num_cats %> <br/>
-	Val Range Max: <%= variable.val_range_max %> <br/>
-	Val Range Max: <%= variable.val_range_min %> <br/>
-	
-	<% for field in fields %>
-	  <%= variable_field(field) %> <br/>
-	<% end %>	
-</li>

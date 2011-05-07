@@ -38,45 +38,43 @@
 
 <% end %>
 
-<aside>
-  <ul>
-    <li>Analyse this study in Nesstar.</li>
-    <li>Download this study in Nesstar.</li>    
-  </ul>
-	<br/>
+<aside class="breakout">
+    <a href="<%= NESSTAR %>/webview/index.jsp?object=http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.<%= @study.ddi_id %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
 </aside>
 
-<br/><br/><br/>
+
+<br/>
+<br/>
+<br/>
 
 <section id="study">
   <% study = @study %>
 
 	<div id="tabs">
 	  <ul>
-	    <li id="study-menu-item" <%= selected_tab_if(['study'], params[:format]) %>> <a id="study-fields-link">Study</a> </li>
-	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:format]) %>> <a id="variables-link">Variables</a> </li>
-	    <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:format]) %>> <a id="rms-link">Related Materials</a> </li>
+	    <li id="study-menu-item" <%= selected_tab_if(['study'], params[:show]) %>> <a id="study-fields-link">Study</a> </li>
+	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:show]) %>> <a id="variables-link">Variables</a> <%= @study.variables.size %> </li>
+	    <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:show]) %>> <a id="rms-link">Related Materials</a> <%= @study.study_related_materials.size %> </li>
 	  </ul>
 	</div>
 	
-  <section id="study-fields" <%= conceal_unless(['default'], params[:format]) %>>
+		
+  <section id="study-fields" <%= conceal_unless(['study'], params[:show]) %>>
       <%= render :partial => "study_table", :locals => {:study => study} %>
   </section>
     
-  <section id="variables" <%= conceal_unless(['var'], params[:format]) %>
-    <h3>Variable Description</h3>
-    <ul>
-		  <%= render(:partial => "variable", :collection => study.variables)%>
-    </ul>
+  <section id="variables" <%= conceal_unless(['var'], params[:show]) %>>
+	  <%= render :partial => "variable", :collection => study.variables, :spacer_template => "spacer" %>
   </section>
   
-  <section id="rms" <%= conceal_unless(['rms'], params[:format]) %> >
-    <h3>Related Materials</h3>
+  <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
     <ul>
   		<% for rm in study.study_related_materials %>
-      <li>
-         <a href="nesstar/related_material/<%= rm.id %>"><%=rm.comment %></a>
-      </li>
+    		<% unless rm.uri.nil? %>
+          <li>
+             <a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a> 
+          </li>
+        <% end %>
   		<% end %>
     </ul>
   </section>

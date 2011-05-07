@@ -1,6 +1,9 @@
 class ArchiveStudiesController < ContentController
   
   respond_to :html
+  clear_helpers
+  helper :application
+  helper :archive_studies
   
   def show
     @archive_study = ArchiveStudy.find_by_id(params[:id])

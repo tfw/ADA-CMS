@@ -16,17 +16,11 @@
 </fieldset>
 
 <% content_for :js do %>
-  var top_item = $('.sortable > li')[0].id;
   $( ".sortable" ).sortable({
     update: function(event, ui){
       var moved = $(ui.item).attr("id");
       var page_order = $(this).sortable('toArray').toString();
-      var re = new RegExp(","+top_item);
-      if (re.test(page_order)) {
-	$(this).sortable('cancel');
-	alert("Please don't move the home page from first position!");
-      } else
-	$.post("/staff/archives/update_page_order?archive_id=<%= @archive %>", {page_order: page_order, moved: moved});
-    }
+			$.post("/staff/archives/update_page_order?archive_id=<%= @archive %>", {page_order: page_order, moved: moved});
+		}
   });
 <% end %>

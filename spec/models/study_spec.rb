@@ -40,7 +40,7 @@ describe Study, "The local respresentation of an ASSDA study" do
  end
  
  specify "Study.store_with_entries should use the RDF parser to capture essential values" do
-   study_hash = Nesstar::RDF::Parser.parse(File.expand_path("../nesstar/rdf/00102-f-test.xml", File.dirname(__FILE__)))
+   study_hash = Nesstar::RDF::Parser.parse(File.expand_path("../nesstar/rdf/test-study.xml", File.dirname(__FILE__)))
    study = Study.store_with_fields(study_hash)
    study.abstract.should_not be_nil
  end

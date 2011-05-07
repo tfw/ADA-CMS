@@ -2,7 +2,7 @@ module HelperMethods
   
   def search_form(term)
     fill_in("search_term", :with => term)
-    click_button("Go")
+    click_on("Go")
   end
 
   def search(term, view = "title", archive = Archive.ada)

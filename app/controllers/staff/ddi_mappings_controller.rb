@@ -13,7 +13,7 @@ class Staff::DdiMappingsController < Staff::BaseController
   end
 
   def create
-    @ddi_mapping = DdiMapping.find(params[:ddi_mapping_id])
+    @ddi_mapping = DdiMapping.find(params[:ddi_mapping][:id])
     @ddi_mapping.update_attributes(params[:ddi_mapping])
 
     get_missing_mappings

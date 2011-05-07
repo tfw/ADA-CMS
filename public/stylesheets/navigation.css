@@ -29,17 +29,22 @@
 	display: block;
 	background: #FFF;
 }
+#admin  {
+	background-color: #EDEDED;
+	height: 5px;
+}
+
+
 #study-facets,
 .archive_menu {
 	float: left;
-	margin: 0px;
-	clear: none;
-	padding-left: 40px;
 	width: 150px;
 	display: block;
-	position: relative;
 	z-index: 1;
+	padding-left: 40px;
+	position: relative;
 }
+
 .content nav.archive_menu {
 }
 
@@ -72,65 +77,70 @@
 	background-color: #e4e4e4;
 }
 .content nav.archive_menu ul li.ada a {
-	background-image: url(../images/structure/icon_ada.png);
+	background-image: url(../images/structure/menu_icon_ada.png);
 	font-weight: normal;
 }
 .content nav.archive_menu ul li.science      a   {
-	background-image: url(../images/structure/icon_socialscience.png);
+	background-image: url(../images/structure/menu_icon_socialscience.png);
 }
 .content nav.archive_menu ul li.historical a {
-	background-image: url(../images/structure/icon_historical.png) ;
+	background-image: url(../images/structure/menu_icon_historical.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.indigenous a {
-	background-image: url(../images/structure/icon_indigenous.png);
+	background-image: url(../images/structure/menu_icon_indigenous.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.longitudinal a {
-	background-image: url(../images/structure/icon_longitudinal.png);
+	background-image: url(../images/structure/menu_icon_longitudinal.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.qualitative a {
-	background-image: url(../images/structure/icon_qualitative.png);
+	background-image: url(../images/structure/menu_icon_qualitative.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.international a {
-	background-image: url(../images/structure/icon_international.png);
+	background-image: url(../images/structure/menu_icon_international.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.dashboard a {
-	background-image: url(../images/structure/icon_home.png);
+	background-image: url(../images/structure/menu_icon_home.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.site-resources a {
-	background-image: url(../images/structure/icon_resources.png);
+	background-image: url(../images/structure/menu_icon_resources.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.users a {
-	background-image: url(../images/structure/icon_user.png);
+	background-image: url(../images/structure/menu_icon_user.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.reports a {
-	background-image: url(../images/structure/icon_report.png);
+	background-image: url(../images/structure/menu_icon_report.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.news a {
-	background-image: url(../images/structure/icon_news.png);
+	background-image: url(../images/structure/menu_icon_news.png);
 	z-index: auto;
 }
+
 .content nav.archive_menu ul li.adapt a {
-	background-image: url(../images/structure/icon_adapt.png);
+	background-image: url(../images/structure/menu_icon_adapt.png);
 	z-index: auto;
 }
+
 .content nav.archive_menu ul li.hccda a {
-	background-image: url(../images/structure/icon_hccda.png);
+	background-image: url(../images/structure/menu_icon_hccda.png);
 	z-index: auto;
 }
 
 .content nav.archive_menu ul li.usage-auditing a {
-	background-image: url(../images/structure/icon_usage.png);
+	background-image: url(../images/structure/menu_icon_usage.png);
 	z-index: auto;
 }
 .content nav.archive_menu ul li.archive_current a {
-	background: #333 url(../images/structure/icon_current.png) no-repeat 0px 0px;
+	background-color: #333;
+	background-image: url(../images/structure/menu_icon_current.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
 }

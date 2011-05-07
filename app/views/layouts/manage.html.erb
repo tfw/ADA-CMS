@@ -15,20 +15,33 @@
    
   <header class="admin">
     <div class="login">
-      Name: <%= link_to current_user.email, staff_user_path(current_user) %> <br/>
-      Role: <%= current_user.roles.first.name %> <br/>
-						<%= link_to(image_tag("structure/bttn_logout.png"), logout_path) %>
-    </div>
-    <div class="admin_masthead"><a href="/staff/home">Australian Data Archive</a></div>
+			<h1>USER Log-in </h1>
+			<form action="<%= logout_path %>" method="get" enctype="multipart/form-data" name="form2" class="formtastic">
+				<div class="logged_in"><span><%= current_user.roles.first.name %>:</span><%= current_user.email %><%= link_to 'view profile', staff_user_report_path(current_user) %></div>
+				<input type="submit" alt="log out" value="LOG OUT" id="logout_button" />
+       </form>
+		</div>
+		
+	  <div class="masthead admin_masthead"><a href="../index.html">Australian Data Archive</a></div>
   </header>
 
-  <nav class="subnav"> </nav>
+	<nav class="mainnav clearfix">
+			  <div class="searchContainer">
+			    <form action="" method="post" enctype="multipart/form-data" name="form1" class="formtastic">
+			    <label for="search_term"></label>
+			    <input name="textfield" type="text" id="search_term" value="Search this site"/>
+			    <input type="submit" alt="Go" value="go" id="search_button"/>
+		        </form>
+		      </div>
+	</nav>
+
+ 	<nav class="subnav" id="admin"></nav>
         
   <nav class="breadcrumbs">
    <p><strong>YOU ARE HERE:</strong><a href="<%= request.path %>"> <%= yield(:breadcrumbs) %></a></p>
   </nav>
   
-  <section class="content">
+  <section class="content box content-area">
     <nav class="archive_menu">
       <ul>
         <li class="dashboard"><a href="/staff/home">Dashboard</a></li>
@@ -49,23 +62,23 @@
     </nav>
 
     
-<article>
-  <div class="content-area box">
+	<section class="main">
+	  <div class="ada">
 
-		<% if flash[:notice]%>
-	  	<div class="notice"><p><%= notice %></p></div>
-		<% end %>
+			<% if flash[:notice]%>
+		  	<div class="notice"><p><%= notice %></p></div>
+			<% end %>
 		
-		<% if flash[:alert]%>
-	  	<div class="alert"><p><%= alert %></p></div>
-		<% end %>
+			<% if flash[:alert]%>
+		  	<div class="alert"><p><%= alert %></p></div>
+			<% end %>
 		
-    <%= yield %>
-  </div>
-</article>
+	    <%= yield %>
+	  </div>
+		</section>
+	</section>
 
-  </section>
-        
+<!-- <section class='partners' id="admin_footer"> -->
   <footer>
     <p>&#xA9; Australian Data Archive<% if Rails.env == "development" %>,
       <em><%= deploy_log %></em>
@@ -73,6 +86,7 @@
     </p>
     <p>
   </footer> 
+<!-- </section> -->
 </body>
 
 

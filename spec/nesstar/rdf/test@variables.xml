@@ -1,0 +1,307 @@
+<r:RDF 
+xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:s="http://www.w3.org/TR/1999/PR-rdf-schema-19990303#" 
+xmlns:n="http://www.nesstar.org/rdf/" 
+xmlns:p5="http://www.nesstar.org/rdf/hc/"
+xmlns:p4="http://www.nesstar.org/rdf/faster/"
+xmlns:p3="http://www.nesstar.org/rdf/"
+xmlns:p2="http://www.nesstar.org/rdf/common/"
+xmlns:p1="http://www.nesstar.org/rdf/acu/"
+xmlns:n43="http://www.nesstar.org/rdf/faster/Variable#"
+>
+
+
+<r:Bag r:about="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625@variables">
+<r:_1 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V1" />
+<r:_2 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V2" />
+<r:_3 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V3" />
+<r:_4 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V4" />
+<r:_5 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V5" />
+<r:_6 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V6" />
+<r:_7 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V7" />
+<r:_8 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V8" />
+<r:_9 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V9" />
+<r:_10 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V10" />
+<r:_11 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V11" />
+<r:_12 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V12" />
+<r:_13 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V13" />
+<r:_14 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V14" />
+<r:_15 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V15" />
+<r:_16 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V16" />
+<r:_17 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V17" />
+<r:_18 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V18" />
+<r:_19 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V19" />
+<r:_20 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V20" />
+<r:_21 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V21" />
+<r:_22 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V22" />
+<r:_23 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V23" />
+<r:_24 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V24" />
+<r:_25 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V25" />
+<r:_26 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V26" />
+<r:_27 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V27" />
+<r:_28 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V28" />
+<r:_29 r:resource="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V29" />
+</r:Bag>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V1">
+<s:label>Unique course identifier</s:label>
+<n:creationDate>2011-04-11 10:25:52.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>COURSESELC</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V1</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V2">
+<s:label>Unique course number</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>COURSENR</n43:name>
+<n43:format>numeric</n43:format>
+<n43:varID>V2</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V3">
+<s:label>Institution abbreviated string</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>INSTCODE</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V3</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V4">
+<s:label>Name of institution</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>INSTNAME</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V4</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V5">
+<s:label>Street/box no. of institution</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>STREET</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V5</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V6">
+<s:label>Town of institution</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>TOWN</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V6</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V7">
+<s:label>State/territory of institution</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>STATE</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V7</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V8">
+<s:label>Postcode</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>POSTCODE</n43:name>
+<n43:format>numeric</n43:format>
+<n43:varID>V8</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V9">
+<s:label>Title/position of contact person</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>CONTACTTIT</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V9</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V10">
+<s:label>Name of contact person</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>CONTACTPER</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V10</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V11">
+<s:label>Responded with more info</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>RESPONDED</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V11</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V12">
+<s:label>Title of course</s:label>
+<n:creationDate>2011-04-11 10:25:54.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>COURSETITL</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V12</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V13">
+<s:label>Subject of course</s:label>
+<n:creationDate>2011-04-11 10:25:55.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>SUBJECT</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V13</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V14">
+<s:label>Award level of course</s:label>
+<n:creationDate>2011-04-11 10:25:55.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>AWARDLEVEL</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V14</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V15">
+<s:label>Campus where course held?</s:label>
+<n:creationDate>2011-04-11 10:25:55.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>CAMPUS</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V15</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V16">
+<s:label>Faculty where course held</s:label>
+<n:creationDate>2011-04-11 10:25:55.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>FACULTY</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V16</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V17">
+<s:label>Mode of course (e.g. external)</s:label>
+<n:creationDate>2011-04-11 10:25:55.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>DELIVERYMO</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V17</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V18">
+<s:label>Minimum time period required</s:label>
+<n:creationDate>2011-04-11 10:25:55.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>MINIMUMPER</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V18</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V19">
+<s:label>Attendance required of external students</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>ATTENDANCE</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V19</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V20">
+<s:label>Number of funded places avail</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>NRFUNDEDPL</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V20</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V21">
+<s:label>Demand exceeds no. of places</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>DEMANDEXCE</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V21</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V22">
+<s:label>Additional info supplied to principal investigator</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>INFOINCLU</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V22</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V23">
+<s:label>Unique unit number</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>UNITNR</n43:name>
+<n43:format>numeric</n43:format>
+<n43:varID>V23</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V24">
+<s:label>Course number</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>COURSENR</n43:name>
+<n43:format>numeric</n43:format>
+<n43:varID>V24</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V25">
+<s:label>Course identifier</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>COURSESELC</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V25</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V26">
+<s:label>Title of unit</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>UNITTITLE</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V26</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V27">
+<s:label>Unit code</s:label>
+<n:creationDate>2011-04-11 10:25:56.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>UNITCD</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V27</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V28">
+<s:label>Year/stage at which unit can be undertaken</s:label>
+<n:creationDate>2011-04-11 10:25:57.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>YEARSTAGE</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V28</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+<p4:Variable3 r:about="http://bonus.anu.edu.au:81/obj/fVariable/au.edu.anu.ada.ddi.00625_V29">
+<s:label>Course credit value of unit</s:label>
+<n:creationDate>2011-04-11 10:25:58.0</n:creationDate>
+<n:email>true</n:email>
+<n43:name>CREDITS</n43:name>
+<n43:format>character</n43:format>
+<n43:varID>V29</n43:varID>
+<n43:study r:resource="http://bonus.anu.edu.au:81/obj/fStudy/au.edu.anu.ada.ddi.00625" />
+</p4:Variable3>
+
+</r:RDF>
