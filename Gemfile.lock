@@ -32,6 +32,12 @@ GIT
       rails (>= 3.0.3)
       rails
 
+GIT
+  remote: https://github.com/roman/rots.git
+  revision: babb5559aae8914556da528147b6649b9c48f48c
+  specs:
+    rots (0.2.1)
+
 GEM
   remote: http://rubygems.org/
   remote: http://rubygems.org/
@@ -294,6 +300,7 @@ DEPENDENCIES
   pg
   rails (= 3.0.7)
   ratom
+  rots!
   rspec-core (>= 2.5.0)
   rspec-rails (>= 2.5.0)
   ruby-debug19

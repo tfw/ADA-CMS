@@ -31,6 +31,7 @@ gem 'mongrel', '~> 1.2.0.pre2'
 # gem "ruby-debug19" #move this into dev group alone later
 
 group :development, :test do
+	gem "rots", :git => "https://github.com/roman/rots.git"
 	gem "ruby-debug19"
 	gem "rspec-rails", ">= 2.5.0"
 	gem "rspec-core", ">= 2.5.0"
