@@ -61,6 +61,7 @@ module HelperMethods
   def sign_in(user)
     login_as user
     user.openid_fields=({"http://users.ada.edu.au/role" => user.roles.first.name})
+    visit("/staff/home")
   end
 
   def sign_out
