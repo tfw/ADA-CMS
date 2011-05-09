@@ -27,3 +27,7 @@ inkling_role_memberships_007:
   id: "8"
   user_id: "7"
   role_id: "4"
+inkling_role_memberships_008: 
+  id: "9"
+  user_id: "1"
+  role_id: "1"

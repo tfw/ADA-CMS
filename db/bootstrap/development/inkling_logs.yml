@@ -281,3 +281,15 @@ inkling_logs_047:
   text: steven.mceachern@anu.edu.au edited page <a href='/staff/archives/2/pages/69/edit'>Census 1966-1991</a> in <a href='/staff/archives/historical'>Historical</a>.
   user_id: 
   category: page
+inkling_logs_048: 
+  id: "48"
+  created_at: 2011-05-09 03:27:52.23328
+  text: "   (firstname surname combo needs to be sent from ADA Users) signed in."
+  user_id: "1"
+  category: user
+inkling_logs_049: 
+  id: "49"
+  created_at: 2011-05-09 04:48:38.414493
+  text: Downloaded 0 studies. Encountered 0 errors. There are now 25 studies in ADA.
+  user_id: 
+  category: integration

@@ -1,1151 +1,501 @@
 --- 
 inkling_paths_001: 
-  id: "1"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/home
-  content_id: "1"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.756521
-  updated_at: 2011-04-05 05:34:47.756521
-inkling_paths_002: 
-  id: "2"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/home
-  content_id: "3"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.784314
-  updated_at: 2011-04-05 05:34:47.784314
-inkling_paths_003: 
-  id: "3"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/home
-  content_id: "4"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.79783
-  updated_at: 2011-04-05 05:34:47.79783
-inkling_paths_004: 
-  id: "4"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/home
-  content_id: "5"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.806587
-  updated_at: 2011-04-05 05:34:47.806587
-inkling_paths_005: 
-  id: "5"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/home
-  content_id: "6"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.816531
-  updated_at: 2011-04-05 05:34:47.816531
-inkling_paths_006: 
-  id: "6"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /international/home
-  content_id: "7"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.825254
-  updated_at: 2011-04-05 05:34:47.825254
-inkling_paths_007: 
-  id: "7"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/about
-  content_id: "8"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.834205
-  updated_at: 2011-04-05 05:34:47.834205
-inkling_paths_008: 
-  id: "8"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/subarchives
-  content_id: "10"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.842502
-  updated_at: 2011-04-05 05:34:47.842502
-inkling_paths_009: 
-  id: "9"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/using-data
-  content_id: "54"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.883122
-  updated_at: 2011-04-05 05:34:47.883122
-inkling_paths_010: 
-  id: "10"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/data-access
-  content_id: "11"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.892729
-  updated_at: 2011-04-05 05:34:47.892729
-inkling_paths_011: 
-  id: "11"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/browse-ada-catalogue
-  content_id: "12"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.905599
-  updated_at: 2011-04-05 05:34:47.905599
-inkling_paths_012: 
-  id: "12"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/search-ada
-  content_id: "13"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.915673
-  updated_at: 2011-04-05 05:34:47.915673
-inkling_paths_013: 
-  id: "13"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/register-for-ada
-  content_id: "14"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.926245
-  updated_at: 2011-04-05 05:34:47.926245
-inkling_paths_014: 
-  id: "14"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/ada-undertaking-forms
-  content_id: "15"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.93628
-  updated_at: 2011-04-05 05:34:47.93628
-inkling_paths_015: 
-  id: "15"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/data-deposit
-  content_id: "16"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.945046
-  updated_at: 2011-04-05 05:34:47.945046
-inkling_paths_016: 
-  id: "16"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/why-deposit-data-
-  content_id: "17"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.957554
-  updated_at: 2011-04-05 05:34:47.957554
-inkling_paths_017: 
-  id: "17"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/sharing-data-and-access-conditions
-  content_id: "18"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.9685
-  updated_at: 2011-04-05 05:34:47.9685
-inkling_paths_018: 
-  id: "18"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/how-to-deposit-data
-  content_id: "19"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.978458
-  updated_at: 2011-04-05 05:34:47.978458
-inkling_paths_019: 
-  id: "19"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/deposit-forms
-  content_id: "20"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.990694
-  updated_at: 2011-04-05 05:34:47.990694
-inkling_paths_020: 
-  id: "20"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/user-guides
-  content_id: "21"
-  content_type: Page
-  created_at: 2011-04-05 05:34:47.998816
-  updated_at: 2011-04-05 05:34:47.998816
-inkling_paths_021: 
-  id: "21"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/ada-news
-  content_id: "22"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.006375
-  updated_at: 2011-04-05 05:34:48.006375
-inkling_paths_022: 
-  id: "22"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/contact
-  content_id: "23"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.048285
-  updated_at: 2011-04-05 05:34:48.048285
-inkling_paths_023: 
-  id: "23"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/my-account
-  content_id: "24"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.058307
-  updated_at: 2011-04-05 05:34:48.058307
-inkling_paths_024: 
-  id: "24"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/home
-  content_id: "26"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.066985
-  updated_at: 2011-04-05 05:34:48.066985
-inkling_paths_025: 
-  id: "25"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/about
-  content_id: "27"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.075701
-  updated_at: 2011-04-05 05:34:48.075701
-inkling_paths_026: 
-  id: "26"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/catalogue
-  content_id: "28"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.083177
-  updated_at: 2011-04-05 05:34:48.083177
-inkling_paths_027: 
-  id: "27"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/creating-data
-  content_id: "29"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.090251
-  updated_at: 2011-04-05 05:34:48.090251
-inkling_paths_028: 
-  id: "28"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/using-data
-  content_id: "30"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.098554
-  updated_at: 2011-04-05 05:34:48.098554
-inkling_paths_029: 
-  id: "29"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/themed-data
-  content_id: "32"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.106469
-  updated_at: 2011-04-05 05:34:48.106469
-inkling_paths_030: 
-  id: "30"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/user-guides
-  content_id: "33"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.115713
-  updated_at: 2011-04-05 05:34:48.115713
-inkling_paths_031: 
-  id: "31"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/news
-  content_id: "34"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.124821
-  updated_at: 2011-04-05 05:34:48.124821
-inkling_paths_032: 
-  id: "32"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /international/about
-  content_id: "35"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.132647
-  updated_at: 2011-04-05 05:34:48.132647
-inkling_paths_033: 
-  id: "33"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/about
-  content_id: "36"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.142759
-  updated_at: 2011-04-05 05:34:48.142759
-inkling_paths_034: 
-  id: "34"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/catalogue
-  content_id: "37"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.150643
-  updated_at: 2011-04-05 05:34:48.150643
-inkling_paths_035: 
-  id: "35"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/creating-data
-  content_id: "38"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.158091
-  updated_at: 2011-04-05 05:34:48.158091
-inkling_paths_036: 
-  id: "36"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/using-data
-  content_id: "39"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.200492
-  updated_at: 2011-04-05 05:34:48.200492
-inkling_paths_037: 
-  id: "37"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/census-data
-  content_id: "40"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.207588
-  updated_at: 2011-04-05 05:34:48.207588
-inkling_paths_038: 
-  id: "38"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/user-guides
-  content_id: "41"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.215716
-  updated_at: 2011-04-05 05:34:48.215716
-inkling_paths_039: 
-  id: "39"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/news
-  content_id: "42"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.223285
-  updated_at: 2011-04-05 05:34:48.223285
-inkling_paths_040: 
-  id: "40"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/about
-  content_id: "43"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.230667
-  updated_at: 2011-04-05 05:34:48.230667
-inkling_paths_041: 
-  id: "41"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/catalogue
-  content_id: "44"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.240191
-  updated_at: 2011-04-05 05:34:48.240191
-inkling_paths_042: 
-  id: "42"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/creating-data
-  content_id: "45"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.248084
-  updated_at: 2011-04-05 05:34:48.248084
-inkling_paths_043: 
-  id: "43"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/using-data
-  content_id: "46"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.256804
-  updated_at: 2011-04-05 05:34:48.256804
-inkling_paths_044: 
-  id: "44"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/protocols
-  content_id: "47"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.265392
-  updated_at: 2011-04-05 05:34:48.265392
-inkling_paths_045: 
-  id: "45"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/community
-  content_id: "48"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.274521
-  updated_at: 2011-04-05 05:34:48.274521
-inkling_paths_046: 
-  id: "46"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/user-guides
-  content_id: "49"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.283419
-  updated_at: 2011-04-05 05:34:48.283419
-inkling_paths_047: 
-  id: "47"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/news
-  content_id: "50"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.291261
-  updated_at: 2011-04-05 05:34:48.291261
-inkling_paths_048: 
-  id: "48"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/about
-  content_id: "51"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.299087
-  updated_at: 2011-04-05 05:34:48.299087
-inkling_paths_049: 
-  id: "49"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/catalogue
-  content_id: "52"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.307427
-  updated_at: 2011-04-05 05:34:48.307427
-inkling_paths_050: 
-  id: "50"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/creating-data
-  content_id: "53"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.314934
-  updated_at: 2011-04-05 05:34:48.314934
-inkling_paths_051: 
-  id: "51"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/longitudinal-studies
-  content_id: "55"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.357757
-  updated_at: 2011-04-05 05:34:48.357757
-inkling_paths_052: 
-  id: "52"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/visualisation
-  content_id: "56"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.365928
-  updated_at: 2011-04-05 05:34:48.365928
-inkling_paths_053: 
-  id: "53"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/user-guides
-  content_id: "57"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.373571
-  updated_at: 2011-04-05 05:34:48.373571
-inkling_paths_054: 
-  id: "54"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /longitudinal/news
-  content_id: "58"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.38101
-  updated_at: 2011-04-05 05:34:48.38101
-inkling_paths_055: 
-  id: "55"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/about
-  content_id: "59"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.389819
-  updated_at: 2011-04-05 05:34:48.389819
-inkling_paths_056: 
-  id: "56"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/catalogue
-  content_id: "60"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.397599
-  updated_at: 2011-04-05 05:34:48.397599
-inkling_paths_057: 
-  id: "57"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/creating-data
-  content_id: "61"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.405758
-  updated_at: 2011-04-05 05:34:48.405758
-inkling_paths_058: 
-  id: "58"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/using-data
-  content_id: "62"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.413884
-  updated_at: 2011-04-05 05:34:48.413884
-inkling_paths_059: 
-  id: "59"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/completed-projects
-  content_id: "63"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.422767
-  updated_at: 2011-04-05 05:34:48.422767
-inkling_paths_060: 
-  id: "60"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/user-guides
-  content_id: "64"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.432125
-  updated_at: 2011-04-05 05:34:48.432125
-inkling_paths_061: 
-  id: "61"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /qualitative/news
-  content_id: "65"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.439944
-  updated_at: 2011-04-05 05:34:48.439944
-inkling_paths_062: 
-  id: "62"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /international/catalogue
-  content_id: "66"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.448836
-  updated_at: 2011-04-05 05:34:48.448836
-inkling_paths_063: 
-  id: "63"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /international/other-tabs-tbd
-  content_id: "67"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.456502
-  updated_at: 2011-04-05 05:34:48.456502
-inkling_paths_064: 
-  id: "64"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/hccda
-  content_id: "68"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.464711
-  updated_at: 2011-04-05 05:34:48.464711
-inkling_paths_065: 
-  id: "65"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /historical/census-1966-1991
-  content_id: "69"
-  content_type: Page
-  created_at: 2011-04-05 05:34:48.506045
-  updated_at: 2011-04-05 05:34:48.506045
-inkling_paths_066: 
-  id: "66"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/00943
-  content_id: "1"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.707721
-  updated_at: 2011-04-05 05:34:48.707721
-inkling_paths_067: 
-  id: "67"
+  id: "116"
   parent_id: 
   lft: 
   rgt: 
   slug: /social-science/01001
-  content_id: "2"
+  content_id: "53"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.716058
-  updated_at: 2011-04-05 05:34:48.716058
-inkling_paths_068: 
-  id: "68"
+  created_at: 2011-05-09 04:44:22.202436
+  updated_at: 2011-05-09 04:44:22.202436
+inkling_paths_002: 
+  id: "117"
   parent_id: 
   lft: 
   rgt: 
-  slug: /social-science/01052-c
-  content_id: "3"
+  slug: /social-science/00943
+  content_id: "54"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.724051
-  updated_at: 2011-04-05 05:34:48.724051
-inkling_paths_069: 
-  id: "69"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/01079-r
-  content_id: "4"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.731951
-  updated_at: 2011-04-05 05:34:48.731951
-inkling_paths_070: 
-  id: "70"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/01079-s
-  content_id: "5"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.740091
-  updated_at: 2011-04-05 05:34:48.740091
-inkling_paths_071: 
-  id: "71"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/40092
-  content_id: "6"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.749586
-  updated_at: 2011-04-05 05:34:48.749586
-inkling_paths_072: 
-  id: "72"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/00763
-  content_id: "7"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.758855
-  updated_at: 2011-04-05 05:34:48.758855
-inkling_paths_073: 
-  id: "73"
+  created_at: 2011-05-09 04:44:23.655227
+  updated_at: 2011-05-09 04:44:23.655227
+inkling_paths_003: 
+  id: "118"
   parent_id: 
   lft: 
   rgt: 
   slug: /social-science/00813
-  content_id: "8"
+  content_id: "55"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.766766
-  updated_at: 2011-04-05 05:34:48.766766
-inkling_paths_074: 
-  id: "74"
+  created_at: 2011-05-09 04:44:45.633287
+  updated_at: 2011-05-09 04:44:45.633287
+inkling_paths_004: 
+  id: "119"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /social-science/01052-c
+  content_id: "56"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:45.706607
+  updated_at: 2011-05-09 04:44:45.706607
+inkling_paths_005: 
+  id: "120"
   parent_id: 
   lft: 
   rgt: 
   slug: /social-science/01052
-  content_id: "9"
+  content_id: "57"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.807573
-  updated_at: 2011-04-05 05:34:48.807573
-inkling_paths_075: 
-  id: "75"
+  created_at: 2011-05-09 04:44:45.775188
+  updated_at: 2011-05-09 04:44:45.775188
+inkling_paths_006: 
+  id: "121"
   parent_id: 
   lft: 
   rgt: 
-  slug: /social-science/01120
-  content_id: "10"
+  slug: /social-science/01079-s
+  content_id: "58"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.815382
-  updated_at: 2011-04-05 05:34:48.815382
-inkling_paths_076: 
-  id: "76"
+  created_at: 2011-05-09 04:44:45.832739
+  updated_at: 2011-05-09 04:44:45.832739
+inkling_paths_007: 
+  id: "122"
   parent_id: 
   lft: 
   rgt: 
-  slug: /social-science/01079
-  content_id: "11"
+  slug: /social-science/01079-r
+  content_id: "59"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.82252
-  updated_at: 2011-04-05 05:34:48.82252
-inkling_paths_077: 
-  id: "77"
+  created_at: 2011-05-09 04:44:45.833939
+  updated_at: 2011-05-09 04:44:45.833939
+inkling_paths_008: 
+  id: "123"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /social-science/00763
+  content_id: "60"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:48.81833
+  updated_at: 2011-05-09 04:44:48.81833
+inkling_paths_009: 
+  id: "124"
   parent_id: 
   lft: 
   rgt: 
   slug: /social-science/00445
-  content_id: "12"
+  content_id: "61"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.831595
-  updated_at: 2011-04-05 05:34:48.831595
-inkling_paths_078: 
-  id: "78"
+  created_at: 2011-05-09 04:44:48.950169
+  updated_at: 2011-05-09 04:44:48.950169
+inkling_paths_010: 
+  id: "125"
   parent_id: 
   lft: 
   rgt: 
   slug: /social-science/01048
-  content_id: "13"
+  content_id: "62"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.839296
-  updated_at: 2011-04-05 05:34:48.839296
-inkling_paths_079: 
-  id: "79"
+  created_at: 2011-05-09 04:44:48.986861
+  updated_at: 2011-05-09 04:44:48.986861
+inkling_paths_011: 
+  id: "126"
   parent_id: 
   lft: 
   rgt: 
-  slug: /social-science/00570
-  content_id: "14"
+  slug: /social-science/01079
+  content_id: "63"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.848769
-  updated_at: 2011-04-05 05:34:48.848769
-inkling_paths_080: 
-  id: "80"
+  created_at: 2011-05-09 04:44:49.081229
+  updated_at: 2011-05-09 04:44:49.081229
+inkling_paths_012: 
+  id: "127"
   parent_id: 
   lft: 
   rgt: 
-  slug: /indigenous/00368
-  content_id: "15"
+  slug: /social-science/01120
+  content_id: "64"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.85648
-  updated_at: 2011-04-05 05:34:48.85648
-inkling_paths_081: 
-  id: "81"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /social-science/01228
-  content_id: "16"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.864064
-  updated_at: 2011-04-05 05:34:48.864064
-inkling_paths_082: 
-  id: "82"
+  created_at: 2011-05-09 04:44:49.098791
+  updated_at: 2011-05-09 04:44:49.098791
+inkling_paths_013: 
+  id: "128"
   parent_id: 
   lft: 
   rgt: 
   slug: /indigenous/00182
-  content_id: "17"
+  content_id: "65"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.872931
-  updated_at: 2011-04-05 05:34:48.872931
-inkling_paths_083: 
-  id: "83"
+  created_at: 2011-05-09 04:44:51.074716
+  updated_at: 2011-05-09 04:44:51.074716
+inkling_paths_014: 
+  id: "129"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /social-science/00570
+  content_id: "66"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:51.13035
+  updated_at: 2011-05-09 04:44:51.13035
+inkling_paths_015: 
+  id: "130"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00368
+  content_id: "67"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:51.145531
+  updated_at: 2011-05-09 04:44:51.145531
+inkling_paths_016: 
+  id: "131"
   parent_id: 
   lft: 
   rgt: 
   slug: /indigenous/40098
-  content_id: "18"
+  content_id: "68"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.881598
-  updated_at: 2011-04-05 05:34:48.881598
-inkling_paths_084: 
-  id: "84"
+  created_at: 2011-05-09 04:44:51.22333
+  updated_at: 2011-05-09 04:44:51.22333
+inkling_paths_017: 
+  id: "132"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /social-science/01228
+  content_id: "69"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:51.250528
+  updated_at: 2011-05-09 04:44:51.250528
+inkling_paths_018: 
+  id: "133"
   parent_id: 
   lft: 
   rgt: 
   slug: /indigenous/00369
-  content_id: "19"
+  content_id: "70"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.924124
-  updated_at: 2011-04-05 05:34:48.924124
-inkling_paths_085: 
-  id: "85"
+  created_at: 2011-05-09 04:44:52.788934
+  updated_at: 2011-05-09 04:44:52.788934
+inkling_paths_019: 
+  id: "134"
   parent_id: 
   lft: 
   rgt: 
   slug: /indigenous/00030
-  content_id: "20"
+  content_id: "71"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.932061
-  updated_at: 2011-04-05 05:34:48.932061
-inkling_paths_086: 
-  id: "86"
+  created_at: 2011-05-09 04:44:52.978187
+  updated_at: 2011-05-09 04:44:52.978187
+inkling_paths_020: 
+  id: "135"
   parent_id: 
   lft: 
   rgt: 
   slug: /indigenous/00631-nt
-  content_id: "21"
+  content_id: "72"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.940118
-  updated_at: 2011-04-05 05:34:48.940118
-inkling_paths_087: 
-  id: "87"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/00631-nat
-  content_id: "22"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.94892
-  updated_at: 2011-04-05 05:34:48.94892
-inkling_paths_088: 
-  id: "88"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /indigenous/40082
-  content_id: "23"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.958194
-  updated_at: 2011-04-05 05:34:48.958194
-inkling_paths_089: 
-  id: "89"
+  created_at: 2011-05-09 04:44:53.078289
+  updated_at: 2011-05-09 04:44:53.078289
+inkling_paths_021: 
+  id: "136"
   parent_id: 
   lft: 
   rgt: 
   slug: /indigenous/40083
-  content_id: "24"
+  content_id: "73"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.966028
-  updated_at: 2011-04-05 05:34:48.966028
-inkling_paths_090: 
-  id: "90"
+  created_at: 2011-05-09 04:44:53.20454
+  updated_at: 2011-05-09 04:44:53.20454
+inkling_paths_022: 
+  id: "137"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/40082
+  content_id: "74"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:53.211673
+  updated_at: 2011-05-09 04:44:53.211673
+inkling_paths_023: 
+  id: "138"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00631-nat
+  content_id: "75"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:54.907219
+  updated_at: 2011-05-09 04:44:54.907219
+inkling_paths_024: 
+  id: "139"
   parent_id: 
   lft: 
   rgt: 
   slug: /indigenous/40093
-  content_id: "25"
+  content_id: "76"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.973685
-  updated_at: 2011-04-05 05:34:48.973685
-inkling_paths_091: 
-  id: "91"
+  created_at: 2011-05-09 04:44:55.157248
+  updated_at: 2011-05-09 04:44:55.157248
+inkling_paths_025: 
+  id: "140"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/40092
+  content_id: "77"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:44:55.182437
+  updated_at: 2011-05-09 04:44:55.182437
+inkling_paths_026: 
+  id: "141"
   parent_id: 
   lft: 
   rgt: 
   slug: /ada/01001
-  content_id: "26"
+  content_id: "78"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.982184
-  updated_at: 2011-04-05 05:34:48.982184
-inkling_paths_092: 
-  id: "92"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01079-s
-  content_id: "27"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:48.989855
-  updated_at: 2011-04-05 05:34:48.989855
-inkling_paths_093: 
-  id: "93"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01079-r
-  content_id: "28"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.031828
-  updated_at: 2011-04-05 05:34:49.031828
-inkling_paths_094: 
-  id: "94"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01052-c
-  content_id: "29"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.039425
-  updated_at: 2011-04-05 05:34:49.039425
-inkling_paths_095: 
-  id: "95"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/00943
-  content_id: "30"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.048106
-  updated_at: 2011-04-05 05:34:49.048106
-inkling_paths_096: 
-  id: "96"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/40092
-  content_id: "31"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.056532
-  updated_at: 2011-04-05 05:34:49.056532
-inkling_paths_097: 
-  id: "97"
+  created_at: 2011-05-09 04:48:37.421282
+  updated_at: 2011-05-09 04:48:37.421282
+inkling_paths_027: 
+  id: "142"
   parent_id: 
   lft: 
   rgt: 
   slug: /ada/00813
-  content_id: "32"
+  content_id: "79"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.064367
-  updated_at: 2011-04-05 05:34:49.064367
-inkling_paths_098: 
-  id: "98"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01120
-  content_id: "33"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.074001
-  updated_at: 2011-04-05 05:34:49.074001
-inkling_paths_099: 
-  id: "99"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01052
-  content_id: "34"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.082098
-  updated_at: 2011-04-05 05:34:49.082098
-inkling_paths_100: 
-  id: "100"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01079
-  content_id: "35"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.089905
-  updated_at: 2011-04-05 05:34:49.089905
-inkling_paths_101: 
-  id: "101"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/00763
-  content_id: "36"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.098501
-  updated_at: 2011-04-05 05:34:49.098501
-inkling_paths_102: 
-  id: "102"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01048
-  content_id: "37"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.138735
-  updated_at: 2011-04-05 05:34:49.138735
-inkling_paths_103: 
-  id: "103"
+  created_at: 2011-05-09 04:48:37.432847
+  updated_at: 2011-05-09 04:48:37.432847
+inkling_paths_028: 
+  id: "143"
   parent_id: 
   lft: 
   rgt: 
   slug: /ada/00445
-  content_id: "38"
+  content_id: "80"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.147762
-  updated_at: 2011-04-05 05:34:49.147762
-inkling_paths_104: 
-  id: "104"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/40083
-  content_id: "39"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.15595
-  updated_at: 2011-04-05 05:34:49.15595
-inkling_paths_105: 
-  id: "105"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/00570
-  content_id: "40"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.1644
-  updated_at: 2011-04-05 05:34:49.1644
-inkling_paths_106: 
-  id: "106"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/01228
-  content_id: "41"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.172428
-  updated_at: 2011-04-05 05:34:49.172428
-inkling_paths_107: 
-  id: "107"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/00368
-  content_id: "42"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.182067
-  updated_at: 2011-04-05 05:34:49.182067
-inkling_paths_108: 
-  id: "108"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/40098
-  content_id: "43"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.189728
-  updated_at: 2011-04-05 05:34:49.189728
-inkling_paths_109: 
-  id: "109"
+  created_at: 2011-05-09 04:48:37.444484
+  updated_at: 2011-05-09 04:48:37.444484
+inkling_paths_029: 
+  id: "144"
   parent_id: 
   lft: 
   rgt: 
   slug: /ada/00182
-  content_id: "44"
+  content_id: "81"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.198384
-  updated_at: 2011-04-05 05:34:49.198384
-inkling_paths_110: 
-  id: "110"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/40093
-  content_id: "45"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.205945
-  updated_at: 2011-04-05 05:34:49.205945
-inkling_paths_111: 
-  id: "111"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/00369
-  content_id: "46"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.214983
-  updated_at: 2011-04-05 05:34:49.214983
-inkling_paths_112: 
-  id: "112"
-  parent_id: 
-  lft: 
-  rgt: 
-  slug: /ada/00030
-  content_id: "47"
-  content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.257204
-  updated_at: 2011-04-05 05:34:49.257204
-inkling_paths_113: 
-  id: "113"
+  created_at: 2011-05-09 04:48:37.458378
+  updated_at: 2011-05-09 04:48:37.458378
+inkling_paths_030: 
+  id: "145"
   parent_id: 
   lft: 
   rgt: 
   slug: /ada/00631-nt
-  content_id: "48"
+  content_id: "82"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.265337
-  updated_at: 2011-04-05 05:34:49.265337
-inkling_paths_114: 
-  id: "114"
+  created_at: 2011-05-09 04:48:37.470646
+  updated_at: 2011-05-09 04:48:37.470646
+inkling_paths_031: 
+  id: "146"
   parent_id: 
   lft: 
   rgt: 
-  slug: /ada/00631-nat
-  content_id: "49"
+  slug: /ada/40092
+  content_id: "83"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.273181
-  updated_at: 2011-04-05 05:34:49.273181
-inkling_paths_115: 
-  id: "115"
+  created_at: 2011-05-09 04:48:37.520174
+  updated_at: 2011-05-09 04:48:37.520174
+inkling_paths_032: 
+  id: "147"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01052
+  content_id: "84"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.534025
+  updated_at: 2011-05-09 04:48:37.534025
+inkling_paths_033: 
+  id: "148"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01120
+  content_id: "85"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.547955
+  updated_at: 2011-05-09 04:48:37.547955
+inkling_paths_034: 
+  id: "149"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01228
+  content_id: "86"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.564709
+  updated_at: 2011-05-09 04:48:37.564709
+inkling_paths_035: 
+  id: "150"
   parent_id: 
   lft: 
   rgt: 
   slug: /ada/40082
-  content_id: "50"
+  content_id: "87"
   content_type: ArchiveStudy
-  created_at: 2011-04-05 05:34:49.28165
-  updated_at: 2011-04-05 05:34:49.28165
+  created_at: 2011-05-09 04:48:37.578016
+  updated_at: 2011-05-09 04:48:37.578016
+inkling_paths_036: 
+  id: "151"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01079
+  content_id: "88"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.632607
+  updated_at: 2011-05-09 04:48:37.632607
+inkling_paths_037: 
+  id: "152"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00570
+  content_id: "89"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.648309
+  updated_at: 2011-05-09 04:48:37.648309
+inkling_paths_038: 
+  id: "153"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00369
+  content_id: "90"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.664555
+  updated_at: 2011-05-09 04:48:37.664555
+inkling_paths_039: 
+  id: "154"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00631-nat
+  content_id: "91"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.718712
+  updated_at: 2011-05-09 04:48:37.718712
+inkling_paths_040: 
+  id: "155"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01048
+  content_id: "92"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.737236
+  updated_at: 2011-05-09 04:48:37.737236
+inkling_paths_041: 
+  id: "156"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00368
+  content_id: "93"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.753045
+  updated_at: 2011-05-09 04:48:37.753045
+inkling_paths_042: 
+  id: "157"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00030
+  content_id: "94"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.809496
+  updated_at: 2011-05-09 04:48:37.809496
+inkling_paths_043: 
+  id: "158"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00763
+  content_id: "95"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.828631
+  updated_at: 2011-05-09 04:48:37.828631
+inkling_paths_044: 
+  id: "159"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/40098
+  content_id: "96"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.884091
+  updated_at: 2011-05-09 04:48:37.884091
+inkling_paths_045: 
+  id: "160"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/40083
+  content_id: "97"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.903452
+  updated_at: 2011-05-09 04:48:37.903452
+inkling_paths_046: 
+  id: "161"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/40093
+  content_id: "98"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.961144
+  updated_at: 2011-05-09 04:48:37.961144
+inkling_paths_047: 
+  id: "162"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01052-c
+  content_id: "99"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:37.980058
+  updated_at: 2011-05-09 04:48:37.980058
+inkling_paths_048: 
+  id: "163"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00943
+  content_id: "100"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:38.04081
+  updated_at: 2011-05-09 04:48:38.04081
+inkling_paths_049: 
+  id: "164"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01079-s
+  content_id: "101"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:38.06078
+  updated_at: 2011-05-09 04:48:38.06078
+inkling_paths_050: 
+  id: "165"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01079-r
+  content_id: "102"
+  content_type: ArchiveStudy
+  created_at: 2011-05-09 04:48:38.121785
+  updated_at: 2011-05-09 04:48:38.121785

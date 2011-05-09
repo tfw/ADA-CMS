@@ -1,17 +1,17 @@
 --- 
 archive_study_queries_001: 
-  id: "1"
+  id: "3"
   archive_id: "1"
   name: "social-science1: elections"
   query: http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT(o)+FROM+Study+o+WHERE+o.title+like+%27%25election%20study%25%27
   user_id: 
-  created_at: 2011-04-05 03:56:03.490977
-  updated_at: 2011-04-05 03:56:03.490977
+  created_at: 2011-05-09 04:41:35.279454
+  updated_at: 2011-05-09 04:41:35.279454
 archive_study_queries_002: 
-  id: "2"
+  id: "4"
   archive_id: "3"
   name: generic
   query: http://palo.anu.edu.au/obj/fStudyHome/StudyHome?http%3A%2F%2Fwww.nesstar.org%2Frdf%2Fmethod=http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery&http%3A%2F%2Fwww.nesstar.org%2Frdf%2FDatasetHome%2FEJBQuery%23query=SELECT+OBJECT%28o%29+FROM+Study+o+WHERE+o.abstractText+like+%27%25Northern%20Territory%25%27
   user_id: 
-  created_at: 2011-04-05 03:56:18.821735
-  updated_at: 2011-04-05 03:56:18.821735
+  created_at: 2011-05-09 04:41:51.683885
+  updated_at: 2011-05-09 04:41:51.683885

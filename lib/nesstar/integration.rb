@@ -133,7 +133,7 @@ module Nesstar
         mutex = Mutexer.wait_for_mutex(2)
         begin
           mutex.synchronize do
-            puts "\\n\n study download: downloading: #{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"
+            # puts "\\n\n study download: downloading: #{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"
             http_headers = `curl -i --compressed "#{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"`
             http_headers = http_headers.split("\n")
         
@@ -144,7 +144,7 @@ module Nesstar
             end
         
             begin
-              puts " #{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"
+              # puts " #{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"
               `curl -o #{$studies_xml_dir}#{file_name} --compressed "#{$nesstar_server}/obj/fStudy/au.edu.anu.ada.ddi.#{ddi_id}"`
               workitem.fields['downloaded_files'] << file_name
             rescue StandardError => boom
@@ -191,7 +191,6 @@ module Nesstar
 
       engine.register_participant 'download_variables' do |workitem|
         mutex = Mutexer.wait_for_mutex(2)
-        puts "vars ......  with a mutex"
         
         begin
           mutex.synchronize do                  

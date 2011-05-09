@@ -1,5 +1,104 @@
 --- 
 pages_001: 
+  id: "38"
+  title: Creating Data
+  link_title: Creating Data
+  description: 
+  author_id: "2"
+  body: |
+    <p>
+    	Holding page for Creating Historical Data</p>
+    <p>
+    	Do we need a creating data page for this subarchive?</p>
+
+  breakout_box: |
+    <p>
+    	Historical creating data breakout box</p>
+
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/breakout_page
+  lft: "71"
+  rgt: "72"
+  created_at: 2010-11-25 10:04:17.50621
+  updated_at: 2010-11-25 10:04:17.50621
+  state: 
+  archive_to_study_integration_id: 
+pages_002: 
+  id: "44"
+  title: Catalogue
+  link_title: Catalogue
+  description: 
+  author_id: "2"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA INDIGENOUS CATALOGUE</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "83"
+  rgt: "84"
+  created_at: 2010-11-25 10:27:34.580851
+  updated_at: 2010-11-25 10:27:34.580851
+  state: 
+  archive_to_study_integration_id: 
+pages_003: 
+  id: "39"
+  title: Using Data
+  link_title: Using Data
+  description: 
+  author_id: "2"
+  body: |
+    <p>
+    	Using Historical Data start page</p>
+    <p>
+    	What will go here?</p>
+
+  breakout_box: |
+    <p>
+    	Breakout box for using historical data</p>
+    <p>
+    	Probably an example of how a researcher has used historical data.</p>
+
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/breakout_page
+  lft: "73"
+  rgt: "74"
+  created_at: 2010-11-25 10:06:15.241045
+  updated_at: 2010-11-25 10:06:15.241045
+  state: 
+  archive_to_study_integration_id: 
+pages_004: 
+  id: "45"
+  title: Creating Data
+  link_title: Creating Data
+  description: 
+  author_id: "2"
+  body: |
+    <h1>
+    	Creating Data</h1>
+    <p>
+    	Insert information on creating indigenous data here.</p>
+
+  breakout_box: |
+    <p>
+    	Breakout box text for creating indigenous data.</p>
+    <p>
+    	Perhaps a case study?</p>
+
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/breakout_page
+  lft: "85"
+  rgt: "86"
+  created_at: 2010-11-25 10:28:39.390517
+  updated_at: 2010-11-25 10:28:39.390517
+  state: 
+  archive_to_study_integration_id: 
+pages_005: 
   id: "1"
   title: Home
   link_title: ADA Home
@@ -46,7 +145,7 @@ pages_001:
   updated_at: 2011-02-23 02:46:18.333818
   state: 
   archive_to_study_integration_id: 
-pages_002: 
+pages_006: 
   id: "3"
   title: Home
   link_title: Home
@@ -75,7 +174,7 @@ pages_002:
   updated_at: 2011-03-02 03:51:22.434159
   state: 
   archive_to_study_integration_id: 
-pages_003: 
+pages_007: 
   id: "4"
   title: Home
   link_title: Home
@@ -104,7 +203,7 @@ pages_003:
   updated_at: 2010-11-26 01:55:24.176659
   state: 
   archive_to_study_integration_id: 
-pages_004: 
+pages_008: 
   id: "5"
   title: Home
   link_title: Home
@@ -146,7 +245,37 @@ pages_004:
   updated_at: 2010-11-26 01:57:08.472824
   state: 
   archive_to_study_integration_id: 
-pages_005: 
+pages_009: 
+  id: "40"
+  title: Census data
+  link_title: Census data
+  description: 
+  author_id: "2"
+  body: |
+    <h1>
+    	Historical Census Data</h1>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	The Australian Data Archive operates a preservation and distribution service for historical census materials, under agreement with the Australian Bureau of Statistics. This service includes two main clusters of data holdings:</p>
+    <ol>
+    	<li>
+    		Census tables and documentation for the 1966 - 1991 Censuses</li>
+    	<li>
+    		The Historical Census and Colonial Data Archive, covering colonial censuses conducted by the colonial governments from 1833 - 1901</li>
+    </ol>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "75"
+  rgt: "76"
+  created_at: 2010-11-25 10:11:04.298394
+  updated_at: 2011-03-02 03:41:57.835015
+  state: 
+  archive_to_study_integration_id: 
+pages_010: 
   id: "6"
   title: Home
   link_title: Home
@@ -172,7 +301,7 @@ pages_005:
   updated_at: 2010-11-26 01:48:27.480007
   state: 
   archive_to_study_integration_id: 
-pages_006: 
+pages_011: 
   id: "7"
   title: Home
   link_title: Home
@@ -193,7 +322,7 @@ pages_006:
   updated_at: 2010-11-26 01:58:58.541066
   state: 
   archive_to_study_integration_id: 
-pages_007: 
+pages_012: 
   id: "8"
   title: About
   link_title: Test1
@@ -242,7 +371,7 @@ pages_007:
   updated_at: 2010-11-24 12:29:17.966434
   state: 
   archive_to_study_integration_id: 
-pages_008: 
+pages_013: 
   id: "10"
   title: Subarchives
   link_title: Subarchives
@@ -262,7 +391,7 @@ pages_008:
   updated_at: 2011-02-23 02:38:57.527845
   state: 
   archive_to_study_integration_id: 
-pages_009: 
+pages_014: 
   id: "54"
   title: Using Data
   link_title: Using Data
@@ -289,7 +418,7 @@ pages_009:
   updated_at: 2010-11-25 10:45:13.40924
   state: 
   archive_to_study_integration_id: 
-pages_010: 
+pages_015: 
   id: "11"
   title: Data Access
   link_title: Data Access
@@ -315,7 +444,7 @@ pages_010:
   updated_at: 2011-02-23 02:39:11.551196
   state: 
   archive_to_study_integration_id: 
-pages_011: 
+pages_016: 
   id: "12"
   title: Browse ADA Catalogue
   link_title: Browse ADA Catalogue
@@ -337,7 +466,7 @@ pages_011:
   updated_at: 2011-02-23 02:36:56.166955
   state: 
   archive_to_study_integration_id: 
-pages_012: 
+pages_017: 
   id: "13"
   title: Search ADA
   link_title: Search ADA
@@ -359,7 +488,7 @@ pages_012:
   updated_at: 2011-02-23 02:36:56.180475
   state: 
   archive_to_study_integration_id: 
-pages_013: 
+pages_018: 
   id: "14"
   title: Register for ADA
   link_title: Register for ADA
@@ -383,7 +512,7 @@ pages_013:
   updated_at: 2011-02-23 02:36:56.153152
   state: 
   archive_to_study_integration_id: 
-pages_014: 
+pages_019: 
   id: "15"
   title: ADA undertaking forms
   link_title: ADA undertaking forms
@@ -407,7 +536,7 @@ pages_014:
   updated_at: 2011-02-23 02:36:56.207161
   state: 
   archive_to_study_integration_id: 
-pages_015: 
+pages_020: 
   id: "16"
   title: Data Deposit
   link_title: Data Deposit
@@ -424,7 +553,7 @@ pages_015:
   updated_at: 2011-02-23 02:46:32.738172
   state: 
   archive_to_study_integration_id: 
-pages_016: 
+pages_021: 
   id: "17"
   title: Why Deposit Data?
   link_title: Why Deposit Data?
@@ -449,7 +578,7 @@ pages_016:
   updated_at: 2011-02-23 02:36:56.220013
   state: 
   archive_to_study_integration_id: 
-pages_017: 
+pages_022: 
   id: "18"
   title: Sharing data and access conditions
   link_title: Sharing data and access conditions
@@ -469,7 +598,7 @@ pages_017:
   updated_at: 2011-02-23 02:36:56.135753
   state: 
   archive_to_study_integration_id: 
-pages_018: 
+pages_023: 
   id: "19"
   title: How to deposit data
   link_title: How to deposit data
@@ -489,7 +618,7 @@ pages_018:
   updated_at: 2011-02-23 02:36:56.193918
   state: 
   archive_to_study_integration_id: 
-pages_019: 
+pages_024: 
   id: "20"
   title: Deposit forms
   link_title: Deposit forms
@@ -511,7 +640,7 @@ pages_019:
   updated_at: 2011-02-23 02:36:56.230856
   state: 
   archive_to_study_integration_id: 
-pages_020: 
+pages_025: 
   id: "21"
   title: User Guides
   link_title: User Guides
@@ -538,7 +667,7 @@ pages_020:
   updated_at: 2010-11-24 13:06:40.2627
   state: 
   archive_to_study_integration_id: 
-pages_021: 
+pages_026: 
   id: "22"
   title: ADA News
   link_title: ADA News
@@ -560,7 +689,7 @@ pages_021:
   updated_at: 2011-02-23 02:46:44.875984
   state: 
   archive_to_study_integration_id: 
-pages_022: 
+pages_027: 
   id: "23"
   title: Contact
   link_title: Contact
@@ -580,7 +709,7 @@ pages_022:
   updated_at: 2011-02-23 02:46:56.778952
   state: 
   archive_to_study_integration_id: 
-pages_023: 
+pages_028: 
   id: "24"
   title: My Account
   link_title: My Account
@@ -604,7 +733,67 @@ pages_023:
   updated_at: 2011-02-23 02:47:08.972278
   state: 
   archive_to_study_integration_id: 
-pages_024: 
+pages_029: 
+  id: "41"
+  title: User Guides
+  link_title: User Guides
+  description: 
+  author_id: "2"
+  body: |
+    <p>
+    	HOLDING PAGE FOR USER GUIDES</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "77"
+  rgt: "78"
+  created_at: 2010-11-25 10:17:32.08885
+  updated_at: 2010-11-25 10:17:32.08885
+  state: 
+  archive_to_study_integration_id: 
+pages_030: 
+  id: "42"
+  title: News
+  link_title: News
+  description: 
+  author_id: "2"
+  body: |
+    <p>
+    	HOLDING PAGE FOR HISTORICAL NEWS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "79"
+  rgt: "80"
+  created_at: 2010-11-25 10:18:00.303517
+  updated_at: 2010-11-25 10:18:00.303517
+  state: 
+  archive_to_study_integration_id: 
+pages_031: 
+  id: "43"
+  title: About
+  link_title: About
+  description: 
+  author_id: "2"
+  body: |
+    <p>
+    	INSERT INFORMATION ON ADA INDIGENOUS SITE HERE.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "81"
+  rgt: "82"
+  created_at: 2010-11-25 10:27:06.414842
+  updated_at: 2010-11-25 10:37:16.349891
+  state: 
+  archive_to_study_integration_id: 
+pages_032: 
   id: "26"
   title: Home
   link_title: Home3
@@ -627,7 +816,7 @@ pages_024:
   updated_at: 2010-11-26 01:49:16.178569
   state: 
   archive_to_study_integration_id: 
-pages_025: 
+pages_033: 
   id: "27"
   title: About
   link_title: About
@@ -673,7 +862,7 @@ pages_025:
   updated_at: 2010-11-24 21:42:35.405111
   state: 
   archive_to_study_integration_id: 
-pages_026: 
+pages_034: 
   id: "28"
   title: Catalogue
   link_title: Catalogue
@@ -697,7 +886,7 @@ pages_026:
   updated_at: 2010-11-24 21:46:25.263317
   state: 
   archive_to_study_integration_id: 
-pages_027: 
+pages_035: 
   id: "29"
   title: Creating Data
   link_title: Creating Data
@@ -741,7 +930,7 @@ pages_027:
   updated_at: 2010-11-24 21:48:37.750452
   state: 
   archive_to_study_integration_id: 
-pages_028: 
+pages_036: 
   id: "30"
   title: Using Data
   link_title: Using Data
@@ -780,7 +969,7 @@ pages_028:
   updated_at: 2010-11-24 21:51:42.777809
   state: 
   archive_to_study_integration_id: 
-pages_029: 
+pages_037: 
   id: "32"
   title: Themed Data
   link_title: Themed Data
@@ -815,7 +1004,7 @@ pages_029:
   updated_at: 2010-11-25 05:10:12.612598
   state: 
   archive_to_study_integration_id: 
-pages_030: 
+pages_038: 
   id: "33"
   title: User Guides
   link_title: User Guides
@@ -837,7 +1026,7 @@ pages_030:
   updated_at: 2011-02-23 02:48:42.126921
   state: 
   archive_to_study_integration_id: 
-pages_031: 
+pages_039: 
   id: "34"
   title: News
   link_title: News
@@ -859,7 +1048,7 @@ pages_031:
   updated_at: 2010-11-24 21:59:15.300457
   state: 
   archive_to_study_integration_id: 
-pages_032: 
+pages_040: 
   id: "35"
   title: About
   link_title: nick's test
@@ -883,7 +1072,7 @@ pages_032:
   updated_at: 2010-11-25 11:22:27.842884
   state: 
   archive_to_study_integration_id: 
-pages_033: 
+pages_041: 
   id: "36"
   title: About
   link_title: About
@@ -903,7 +1092,7 @@ pages_033:
   updated_at: 2010-11-25 10:01:00.618844
   state: 
   archive_to_study_integration_id: 
-pages_034: 
+pages_042: 
   id: "37"
   title: Catalogue
   link_title: Catalogue
@@ -921,195 +1110,6 @@ pages_034:
   rgt: "70"
   created_at: 2010-11-25 10:01:51.237683
   updated_at: 2010-11-25 10:01:51.237683
-  state: 
-  archive_to_study_integration_id: 
-pages_035: 
-  id: "38"
-  title: Creating Data
-  link_title: Creating Data
-  description: 
-  author_id: "2"
-  body: |
-    <p>
-    	Holding page for Creating Historical Data</p>
-    <p>
-    	Do we need a creating data page for this subarchive?</p>
-
-  breakout_box: |
-    <p>
-    	Historical creating data breakout box</p>
-
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/breakout_page
-  lft: "71"
-  rgt: "72"
-  created_at: 2010-11-25 10:04:17.50621
-  updated_at: 2010-11-25 10:04:17.50621
-  state: 
-  archive_to_study_integration_id: 
-pages_036: 
-  id: "39"
-  title: Using Data
-  link_title: Using Data
-  description: 
-  author_id: "2"
-  body: |
-    <p>
-    	Using Historical Data start page</p>
-    <p>
-    	What will go here?</p>
-
-  breakout_box: |
-    <p>
-    	Breakout box for using historical data</p>
-    <p>
-    	Probably an example of how a researcher has used historical data.</p>
-
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/breakout_page
-  lft: "73"
-  rgt: "74"
-  created_at: 2010-11-25 10:06:15.241045
-  updated_at: 2010-11-25 10:06:15.241045
-  state: 
-  archive_to_study_integration_id: 
-pages_037: 
-  id: "40"
-  title: Census data
-  link_title: Census data
-  description: 
-  author_id: "2"
-  body: |
-    <h1>
-    	Historical Census Data</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	The Australian Data Archive operates a preservation and distribution service for historical census materials, under agreement with the Australian Bureau of Statistics. This service includes two main clusters of data holdings:</p>
-    <ol>
-    	<li>
-    		Census tables and documentation for the 1966 - 1991 Censuses</li>
-    	<li>
-    		The Historical Census and Colonial Data Archive, covering colonial censuses conducted by the colonial governments from 1833 - 1901</li>
-    </ol>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/default_page
-  lft: "75"
-  rgt: "76"
-  created_at: 2010-11-25 10:11:04.298394
-  updated_at: 2011-03-02 03:41:57.835015
-  state: 
-  archive_to_study_integration_id: 
-pages_038: 
-  id: "41"
-  title: User Guides
-  link_title: User Guides
-  description: 
-  author_id: "2"
-  body: |
-    <p>
-    	HOLDING PAGE FOR USER GUIDES</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/default_page
-  lft: "77"
-  rgt: "78"
-  created_at: 2010-11-25 10:17:32.08885
-  updated_at: 2010-11-25 10:17:32.08885
-  state: 
-  archive_to_study_integration_id: 
-pages_039: 
-  id: "42"
-  title: News
-  link_title: News
-  description: 
-  author_id: "2"
-  body: |
-    <p>
-    	HOLDING PAGE FOR HISTORICAL NEWS</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/default_page
-  lft: "79"
-  rgt: "80"
-  created_at: 2010-11-25 10:18:00.303517
-  updated_at: 2010-11-25 10:18:00.303517
-  state: 
-  archive_to_study_integration_id: 
-pages_040: 
-  id: "43"
-  title: About
-  link_title: About
-  description: 
-  author_id: "2"
-  body: |
-    <p>
-    	INSERT INFORMATION ON ADA INDIGENOUS SITE HERE.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "81"
-  rgt: "82"
-  created_at: 2010-11-25 10:27:06.414842
-  updated_at: 2010-11-25 10:37:16.349891
-  state: 
-  archive_to_study_integration_id: 
-pages_041: 
-  id: "44"
-  title: Catalogue
-  link_title: Catalogue
-  description: 
-  author_id: "2"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA INDIGENOUS CATALOGUE</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "83"
-  rgt: "84"
-  created_at: 2010-11-25 10:27:34.580851
-  updated_at: 2010-11-25 10:27:34.580851
-  state: 
-  archive_to_study_integration_id: 
-pages_042: 
-  id: "45"
-  title: Creating Data
-  link_title: Creating Data
-  description: 
-  author_id: "2"
-  body: |
-    <h1>
-    	Creating Data</h1>
-    <p>
-    	Insert information on creating indigenous data here.</p>
-
-  breakout_box: |
-    <p>
-    	Breakout box text for creating indigenous data.</p>
-    <p>
-    	Perhaps a case study?</p>
-
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/breakout_page
-  lft: "85"
-  rgt: "86"
-  created_at: 2010-11-25 10:28:39.390517
-  updated_at: 2010-11-25 10:28:39.390517
   state: 
   archive_to_study_integration_id: 
 pages_043: 

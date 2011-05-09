@@ -2,7 +2,7 @@ namespace :db do
   desc 'Create YAML test fixtures from data in an existing database.  
   Defaults to development database. Set RAILS_ENV to override.'
 
-  task :extract_fixtures => :environment do
+  task :fixtures => :environment do
     include FileUtils
     
     sql = "SELECT * FROM %s"
