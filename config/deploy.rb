@@ -13,7 +13,7 @@ set :deploy_via, :remote_cache
 # role :db,  "ada", :primary => true # This is where Rails migrations will run
 
 set :user,        "deploy"
-set :use_sudo,    true
+# set :use_sudo,    true  #let's see how far we can get without this
 set :deploy_to,   "/data"
 
 default_run_options[:pty] = true
@@ -53,7 +53,7 @@ end
 after 'deploy:update', :generate_database_yml
 after 'deploy:update', :symlinks
 after 'deploy:update', :deploy_log
-# after 'deploy:update', :refresh_theme
+after 'deploy:update', :refresh_theme
 before 'deploy:update_code', :echo_ruby_env
 
 task :echo_ruby_env do

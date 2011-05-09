@@ -44,6 +44,8 @@ class User < ActiveRecord::Base
         logger.error "Unknown OpenID field: #{key}"
       end
     end
+    
+    UserObserver.re_enters(self)
   end
   
   def to_s
