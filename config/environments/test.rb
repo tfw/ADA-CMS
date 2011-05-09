@@ -34,4 +34,4 @@ Ada::Application.configure do
   config.active_support.deprecation = :stderr
 end
 
-OPENID_SERVER='http://178.79.149.181:81'
+OPENID_SERVER='http://localhost:1132'
