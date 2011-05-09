@@ -1,5 +1,519 @@
 --- 
 studies_001: 
+  id: "46"
+  label: Northern Territory urban voters survey, 1982
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00368
+  published: t
+  created_at: 2011-05-09 04:44:49.737332
+  updated_at: 2011-05-09 04:44:49.737332
+  universe: Urban residents aged 18 and over in Darwin, Katherine, Tennant Creek, Alice Springs, Jabiru and Nhulunbuy.
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    A study of population mobility and party allegiance in the urban population of the Northern Territory was carried out in order to examine whether Territorians see themselves as being 'different' and are in fact different to other Australians, with consequent political implications.
+    
+    Topics investigated include past and present voting preferences; attitudes towards political parties, their leaders and their policies; attitudes towards class mobility and conflict; perceived power groups; and problems facing the Northern Territory. 
+    
+    Background variables include age; sex; country of origin; state of origin; racial identification; marital status; occupation of self, spouse, parents and parents-in-law; duration of NT residence; union membership, club and association membership; level of education; religion.
+  keywords: "Aborigines;Northern Territory;Northern Territory: Politics;Northern Territory Political parties;Politicians;Public administration;Social classes"
+  page_id: 
+  data_kind: survey
+  sampling_abbr: Simple random sample (see Sampling Notes)
+  collection_mode_abbr: personal interview
+  contact_affiliation: School of Social Sciences, Flinders University
+  geographical_cover: Urban Northern Territory
+  geographical_unit: Town
+  analytic_unit: Individual
+  creation_date: 
+  study_auth_entity: Jaensch, D. Loveday, P.
+  comment: |-
+    A study of population mobility and party allegiance in the urban population of the Northern Territory was carried out in order to examine whether Territorians see themselves as being 'different' and are in fact different to other Australians, with consequent political implications.
+    
+    Topics investigated include past and present voting preferences; attitudes towards political parties, their leaders and their policies; attitudes towards class mobility and conflict; perceived power groups; and problems facing the Northern Territory. 
+    
+    Background variables include age; sex; country of origin; state of origin; racial identification; marital status; occupation of self, spouse, parents and parents-in-law; duration of NT residence; union membership, club and association membership; level of education; religion.
+  ddi_id: 00368
+studies_002: 
+  id: "51"
+  label: Study of under-age drinking September/November, 1979
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00030
+  published: t
+  created_at: 2011-05-09 04:44:51.756868
+  updated_at: 2011-05-09 04:44:51.756868
+  universe: all students aged 12 to 17 attending Northern Territory high schools, area schools and Aboriginal colleges
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    This study of teenage drinking habits was commissioned by the Northern Territory Liquor Commission in an effort to obtain information on the extent of the problem so that preventive measures could be taken.
+    
+    Secondary school students were questioned concerning how much beer, wine and/or spirits they drank, where and under what circumstances they drank, and where and how they obtained their liquor. Background variables included sex, age, country of birth and ethnic origin as identified by respondents.
+  keywords: Youth Alcohol;Alcohol consumption
+  page_id: 
+  data_kind: survey
+  sampling_abbr: 
+  collection_mode_abbr: self-completion (group setting)
+  contact_affiliation: Northern Territory Liquor Commission
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: Northern Territory Liquor Commission
+  comment: |-
+    This study of teenage drinking habits was commissioned by the Northern Territory Liquor Commission in an effort to obtain information on the extent of the problem so that preventive measures could be taken.
+    
+    Secondary school students were questioned concerning how much beer, wine and/or spirits they drank, where and under what circumstances they drank, and where and how they obtained their liquor. Background variables included sex, age, country of birth and ethnic origin as identified by respondents.
+  ddi_id: "00030"
+studies_003: 
+  id: "42"
+  label: Australian Election Study, 1993
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00763
+  published: t
+  created_at: 2011-05-09 04:44:47.816144
+  updated_at: 2011-05-09 04:44:47.816144
+  universe: 
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    The 1993 Australian Election Study is the third in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections. The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys. The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character. In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
+    
+    The 1993 survey replicates many questions from the 1987 and 1990 Australian Election Studies, but also introduces a variety of new questions including a section on foreign affairs and defence, and attitudes to Federal and State government. As in previous surveys, other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
+    
+    Background variables covered include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, year and place of birth, parents' birthplaces, parents' political preferences, father's occupation, length of residence in state or territory, religion, marital status, number of children, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+  keywords: Defence;Economic policy;Elections;Environment;International relations;Political parties;Politicians;Politics;Social policy
+  page_id: 
+  data_kind: 
+  sampling_abbr: 
+  collection_mode_abbr: self-completion (mail out, mail back)
+  contact_affiliation: 
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: Jones, Roger McAllister, Ian Denemark, David Gow, David
+  comment: |-
+    The 1993 Australian Election Study is the third in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections. The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys. The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character. In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
+    
+    The 1993 survey replicates many questions from the 1987 and 1990 Australian Election Studies, but also introduces a variety of new questions including a section on foreign affairs and defence, and attitudes to Federal and State government. As in previous surveys, other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
+    
+    Background variables covered include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, year and place of birth, parents' birthplaces, parents' political preferences, father's occupation, length of residence in state or territory, religion, marital status, number of children, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+  ddi_id: "00763"
+studies_004: 
+  id: "47"
+  label: "Australian Election Database: House of Representatives - Northern Territory data"
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.40098
+  published: t
+  created_at: 2011-05-09 04:44:49.762928
+  updated_at: 2011-05-09 04:44:49.762928
+  universe: Seats in the House of Representatives (Lower House) and voters in the Northern Territory.
+  collection_date: 
+  id_number: 
+  series_name: Australian Election Data
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: Summary details for each election year for the House of Representatives elections since 1901.  This data includes electoral system characteristics, seats in chamber, number of enrolled voters, ballots cast, rate of voter turnout and rate of informal voting for the Northern Territory.
+  keywords: Political Parties;Politicians;Elections
+  page_id: 
+  data_kind: Election returns
+  sampling_abbr: 
+  collection_mode_abbr: Compilation or synthesis of existing material
+  contact_affiliation: UWA
+  geographical_cover: Northern Territory
+  geographical_unit: State
+  analytic_unit: House of Representatives
+  creation_date: 
+  study_auth_entity: Campbell Sharman
+  comment: Summary details for each election year for the House of Representatives elections since 1901.  This data includes electoral system characteristics, seats in chamber, number of enrolled voters, ballots cast, rate of voter turnout and rate of informal voting for the Northern Territory.
+  ddi_id: "40098"
+studies_005: 
+  id: "52"
+  label: Australian Election Database  - Northern Territory Legislative Assembly Party Election Data
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.40083
+  published: t
+  created_at: 2011-05-09 04:44:51.978044
+  updated_at: 2011-05-09 04:44:51.978044
+  universe: Votes for groups and political parties at NT Legislative Assembly elections
+  collection_date: 
+  id_number: 
+  series_name: Australian Election Data
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
+    
+    The Northern Territory did not gain full representative self-government until 1978, although this had been planned since 1973.
+    
+    'In 1973 the Whitlam [federal] Labor government established a joint committee of the federal parliament to plan for a setting up of a legislative assembly in 1974. But, in a style which Territorians would claim has been a consistent pattern, the Commonwealth Committee reported after the new assembly had been designed, confirmed and elected. The Legislative Assembly of nineteen members had all of the structures and processes of a representative parliament, but its powers remained the same as those of the previous Legislative Council. In 1978, however, after protracted negotiations with the Fraser Liberal government, the territory was granted self-government', Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, at p.225 (Melbourne: Cambridge University Press, 2003, ISBN 0521532051).
+    
+     Notwithstanding the problems in setting up the machinery for full self-government (see note above), this was the first election for a fully elected Legislative Assembly for the Northern Territory. For a survey of representation and government in the Northern Territory, see Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, (Melbourne: Cambridge University Press, 2003, ISBN 0521532051), and Jaensch and Wade-Marshall , Point of Order! The Legislative Assembly of the Northern Territory, 1974-1994, Darwin: Legislative Assembly of the Northern Territory and North Australia Research Unit, Australian National University, 1994 (ISBN 0 7315 2077 9)
+    
+    Definitions for First Preference votes, Swing and Seats Won by Party are:
+    
+    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
+    
+    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
+    
+    Seats won by party: the number of seat in the lower house the party holds after the election.
+    
+    Data from the cube can be downloaded and combined with the Northern Territory Lower House data. Simply download both files then merge using the Election year as the common variable to create a table with both sets of data. See example in Other materials.
+    
+    Independents: 
+    2005 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (18) and one candidates who ran for office without any registered party name (who gained 104 votes).
+    
+    2008 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (11 candidates in 9 electoral districts).
+    
+    Uncontested seats (2008 Election): 	Only one candidate was nominated for each of the Northern Territory electoral districts of Arnhem and Macdonnell; M McCarthy was elected unopposed for the Australian Labor Party from Arnhem, and A Anderson was elected unopposed for the Australian Labor Party from Macdonnell. This is the first time that there have been uncontested seats in an election for the Northern Territory Legislative Assembly, and the first time for 25 years that there has been an uncontested seat for an Australian lower house election. Uncontested seats were common at Australian state and Commonwealth lower house elections until the 1960s but changes in party campaign strategy has meant that there had been no uncontested seats since the 1983 election for the Western Australian Legislative Assembly. For more information and analysis, see Campbell Sharman, 'Uncontested Seats and the Evolution of Party Competition: The Australian Case', Party Politics, 9(6) November 2003: 679-702.
+    
+    Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.
+  keywords: Political parties;Elections;Politics
+  page_id: 
+  data_kind: Election returns
+  sampling_abbr: 
+  collection_mode_abbr: Compilation or synthesis of existing material
+  contact_affiliation: University of Western Australia and University of British Columbia
+  geographical_cover: Northern Territory
+  geographical_unit: Territory
+  analytic_unit: NT Legislative Assembly
+  creation_date: 
+  study_auth_entity: Sharman, Campbell
+  comment: |-
+    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
+    
+    The Northern Territory did not gain full representative self-government until 1978, although this had been planned since 1973.
+    
+    'In 1973 the Whitlam [federal] Labor government established a joint committee of the federal parliament to plan for a setting up of a legislative assembly in 1974. But, in a style which Territorians would claim has been a consistent pattern, the Commonwealth Committee reported after the new assembly had been designed, confirmed and elected. The Legislative Assembly of nineteen members had all of the structures and processes of a representative parliament, but its powers remained the same as those of the previous Legislative Council. In 1978, however, after protracted negotiations with the Fraser Liberal government, the territory was granted self-government', Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, at p.225 (Melbourne: Cambridge University Press, 2003, ISBN 0521532051).
+    
+     Notwithstanding the problems in setting up the machinery for full self-government (see note above), this was the first election for a fully elected Legislative Assembly for the Northern Territory. For a survey of representation and government in the Northern Territory, see Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, (Melbourne: Cambridge University Press, 2003, ISBN 0521532051), and Jaensch and Wade-Marshall , Point of Order! The Legislative Assembly of the Northern Territory, 1974-1994, Darwin: Legislative Assembly of the Northern Territory and North Australia Research Unit, Australian National University, 1994 (ISBN 0 7315 2077 9)
+    
+    Definitions for First Preference votes, Swing and Seats Won by Party are:
+    
+    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
+    
+    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
+    
+    Seats won by party: the number of seat in the lower house the party holds after the election.
+    
+    Data from the cube can be downloaded and combined with the Northern Territory Lower House data. Simply download both files then merge using the Election year as the common variable to create a table with both sets of data. See example in Other materials.
+    
+    Independents: 
+    2005 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (18) and one candidates who ran for office without any registered party name (who gained 104 votes).
+    
+    2008 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (11 candidates in 9 electoral districts).
+    
+    Uncontested seats (2008 Election): 	Only one candidate was nominated for each of the Northern Territory electoral districts of Arnhem and Macdonnell; M McCarthy was elected unopposed for the Australian Labor Party from Arnhem, and A Anderson was elected unopposed for the Australian Labor Party from Macdonnell. This is the first time that there have been uncontested seats in an election for the Northern Territory Legislative Assembly, and the first time for 25 years that there has been an uncontested seat for an Australian lower house election. Uncontested seats were common at Australian state and Commonwealth lower house elections until the 1960s but changes in party campaign strategy has meant that there had been no uncontested seats since the 1983 election for the Western Australian Legislative Assembly. For more information and analysis, see Campbell Sharman, 'Uncontested Seats and the Evolution of Party Competition: The Australian Case', Party Politics, 9(6) November 2003: 679-702.
+    
+    Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.
+  ddi_id: "40083"
+studies_006: 
+  id: "56"
+  label: Australian Election Database - All States Lower House Data Party Data
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.40093
+  published: t
+  created_at: 2011-05-09 04:44:54.056544
+  updated_at: 2011-05-09 04:44:54.056544
+  universe: Seats in the Australian State Lower Houses and voters in the  Australian States.
+  collection_date: 
+  id_number: 
+  series_name: Australian Election Data
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
+    
+    Definitions for First Preference votes, Swing and Seats Won by Party are:
+    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
+    
+    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
+    
+    Seats won by party: the number of seat in the lower house the party holds after the election.
+    
+    For information about Parties and elections please see individual State data.
+    
+    Data from au.edu.anu.ada.ddi.40092 and au.edu.anu.ada.ddi.40093 can be combined by date to produce a table with all data. An example of the graph that can be produced is in Other Material.
+    
+    Election dates for the Tasmanian House of Assembly elections are: 8  September 1856, 29 June 1861, 6 November 1862, 3 October 1866, 6 September 1871, 5 September 1872, 30 May 1877, 25 May 1882, 26 July 1886, 22 May 1891, 29 December 1893, 20 January 1897, 9 March 1900, 2 April 1903, 29 March 1906, 30 April 1909, 30 April 1912, 23 January 1913, 26 March 1916, 31 May 1919, 10 June 1922, 3 June 1925, 30 May 1928, 9 May 1931, 9 June 1934, 20 February 1937, 13 December 1941, 23 November 1946, 21 August 1948, 6 May 1950, 19 February 1955, 13 October 1956, 2 May 1959, 2 May 1964, 10 May 1969, 22 April 1972, 11 December 1976, 28 July 1979, 15 May 1982, 8 February 1986, 13 May 1989, 1 February 1992, 24 February 1996, 29 August 1998, 20 July 2002.
+    
+    Dates for the Australian Capital Territory elections are: 4 March 1989, 14 February 1992, 18 February 1995, 21 February 1998, 20 October 2001, 16 October 2004, 18 October 2008.
+    
+    Dates for New South Wales House of Assembly elections are: 11 March 1856, 13 January 1858, 8 June 1859, 6 December 1860, 22 November 1864, 3 December 1969, 13 February 1872, 8 December 1874, 24 October 1877, 18 November 1880, 30 November 1880, 15 October 1882, 16 October 1885, 4 February 1887, 1 February 1889, 17 June 1891, 17 July 1894, 24 July 1895, 27 July 1898, 3 July 1901, 6 August 1904, 10 September 1907, 14 October 1910, 6 December 1910, 6 December 1913, 24 March 1917, 20 March 1920, 25 March 1920, 20 May 1925, 8 October 1927, 25 October 1930, 11 June 1932, 11 May 1935, 25 March 1938, 10 May 1941, 27 May 1944, 3 may 1947, 17 June 1950, 14 February 1953, 3 March 1956, 21 March 1959, 3 March 1962, 1 May 1965, 24 February 1968, 13 February 1971, 17 November 1973, 1 May 1976, 7 October 1978, 19 September 1981, 24 March 1984, 19 March 1988, 25 May 1991, 25 March 1995, 27 March 1999, 22 March 2003, 24 March 2007. 
+    
+    Dates for the Northern Territory elections are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.	
+    	
+    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
+    
+    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
+    
+    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
+    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
+    	
+    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
+    
+    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
+    
+    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
+    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
+  keywords: Elections;Politics
+  page_id: 
+  data_kind: Election returns
+  sampling_abbr: 
+  collection_mode_abbr: Compilation or synthesis of existing material
+  contact_affiliation: University of Western Australia and University of British Columbia
+  geographical_cover: National
+  geographical_unit: State
+  analytic_unit: Lower Houses, Australia
+  creation_date: 
+  study_auth_entity: Sharman, Campbell
+  comment: |-
+    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
+    
+    Definitions for First Preference votes, Swing and Seats Won by Party are:
+    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
+    
+    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
+    
+    Seats won by party: the number of seat in the lower house the party holds after the election.
+    
+    For information about Parties and elections please see individual State data.
+    
+    Data from au.edu.anu.ada.ddi.40092 and au.edu.anu.ada.ddi.40093 can be combined by date to produce a table with all data. An example of the graph that can be produced is in Other Material.
+    
+    Election dates for the Tasmanian House of Assembly elections are: 8  September 1856, 29 June 1861, 6 November 1862, 3 October 1866, 6 September 1871, 5 September 1872, 30 May 1877, 25 May 1882, 26 July 1886, 22 May 1891, 29 December 1893, 20 January 1897, 9 March 1900, 2 April 1903, 29 March 1906, 30 April 1909, 30 April 1912, 23 January 1913, 26 March 1916, 31 May 1919, 10 June 1922, 3 June 1925, 30 May 1928, 9 May 1931, 9 June 1934, 20 February 1937, 13 December 1941, 23 November 1946, 21 August 1948, 6 May 1950, 19 February 1955, 13 October 1956, 2 May 1959, 2 May 1964, 10 May 1969, 22 April 1972, 11 December 1976, 28 July 1979, 15 May 1982, 8 February 1986, 13 May 1989, 1 February 1992, 24 February 1996, 29 August 1998, 20 July 2002.
+    
+    Dates for the Australian Capital Territory elections are: 4 March 1989, 14 February 1992, 18 February 1995, 21 February 1998, 20 October 2001, 16 October 2004, 18 October 2008.
+    
+    Dates for New South Wales House of Assembly elections are: 11 March 1856, 13 January 1858, 8 June 1859, 6 December 1860, 22 November 1864, 3 December 1969, 13 February 1872, 8 December 1874, 24 October 1877, 18 November 1880, 30 November 1880, 15 October 1882, 16 October 1885, 4 February 1887, 1 February 1889, 17 June 1891, 17 July 1894, 24 July 1895, 27 July 1898, 3 July 1901, 6 August 1904, 10 September 1907, 14 October 1910, 6 December 1910, 6 December 1913, 24 March 1917, 20 March 1920, 25 March 1920, 20 May 1925, 8 October 1927, 25 October 1930, 11 June 1932, 11 May 1935, 25 March 1938, 10 May 1941, 27 May 1944, 3 may 1947, 17 June 1950, 14 February 1953, 3 March 1956, 21 March 1959, 3 March 1962, 1 May 1965, 24 February 1968, 13 February 1971, 17 November 1973, 1 May 1976, 7 October 1978, 19 September 1981, 24 March 1984, 19 March 1988, 25 May 1991, 25 March 1995, 27 March 1999, 22 March 2003, 24 March 2007. 
+    
+    Dates for the Northern Territory elections are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.	
+    	
+    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
+    
+    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
+    
+    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
+    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
+    	
+    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
+    
+    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
+    
+    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
+    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
+  ddi_id: "40093"
+studies_007: 
+  id: "36"
+  label: "Australian Election Study Online, 2001: File c"
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.01052-c
+  published: t
+  created_at: 2011-05-09 04:43:54.490335
+  updated_at: 2011-05-09 04:43:54.490335
+  universe: Australian residents with internet access
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    The study was designed to test the use of the web as a methodological tool for survey research in national election studies.  The online survey ran a truncated set of questions from the Australian Election Study, 2001 (ADA No. 1048) that was conducted as a post-election mail-out and mail-back survey.  The goal was to compare the results from this new form of polling methodology with those from the more established method to see how far the two modes yielded comparable results.  As opinion polls become more costly to fund and response rates drop, survey researchers are looking for new and more cost effective ways to run election studies.  Although the web is being increasingly used for opinion polling it has attracted significant criticism due to the non-probalistic nature of the samples it generates.  The aim of this study was to subject web-based surveys to greater scientific scrutiny in order to assess their methods.
+    
+    The online survey replicates many questions from the previous Australian Election Studies, including a section on political and social institutions.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, and attitudes to a range of election issues including immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and workers entitlements.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+  keywords: Attitudes;Culture;Defence;Economic policy;Elections;Environment;Immigration;International relations;Internet;Political parties;Politicians;Politics;Racial discrimination;Republicanism;Social policy
+  page_id: 
+  data_kind: survey
+  sampling_abbr: 
+  collection_mode_abbr: Web survey linked to home page of ninemsn.com.au. Respondents taken to a secure site hosted by YouGov where filled in form online. Data then transferred to unit record file into a mysql database.
+  contact_affiliation: The Australian National University
+  geographical_cover: National
+  geographical_unit: Postcode
+  analytic_unit: Individual
+  creation_date: 
+  study_auth_entity: Rachel Gibson Ian McAllister Clive Bean David Gow
+  comment: |-
+    The study was designed to test the use of the web as a methodological tool for survey research in national election studies.  The online survey ran a truncated set of questions from the Australian Election Study, 2001 (ADA No. 1048) that was conducted as a post-election mail-out and mail-back survey.  The goal was to compare the results from this new form of polling methodology with those from the more established method to see how far the two modes yielded comparable results.  As opinion polls become more costly to fund and response rates drop, survey researchers are looking for new and more cost effective ways to run election studies.  Although the web is being increasingly used for opinion polling it has attracted significant criticism due to the non-probalistic nature of the samples it generates.  The aim of this study was to subject web-based surveys to greater scientific scrutiny in order to assess their methods.
+    
+    The online survey replicates many questions from the previous Australian Election Studies, including a section on political and social institutions.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, and attitudes to a range of election issues including immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and workers entitlements.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+  ddi_id: 01052-c
+studies_008: 
+  id: "32"
+  label: Australian Election Study, 1996
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00943
+  published: t
+  created_at: 2011-05-09 04:43:53.951934
+  updated_at: 2011-05-09 04:43:53.951934
+  universe: Persons on the Australian electoral roll at the close of rolls, February 1996.
+  collection_date: 
+  id_number: 
+  series_name: 
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    The 1996 Australian Election Study is the fourth in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections.  The series also builds on the 1967 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assesses their importance for the election result.
+    
+    The 1996 survey replicates many questions from the 1987, 1990 and 1993 Australian Election Studies, but also introduces a variety of new questions including a section on national identity.  Other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, attitudes to foreign affairs and defence issues and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+  keywords: Attitudes;Culture;Defence;Economic policy;Elections;Environment;International relations;Political parties;Politicians;Politics;Social policy
+  page_id: 
+  data_kind: survey
+  sampling_abbr: 
+  collection_mode_abbr: "number of units in original sample: 3000 number of return-to-senders: 95 number of other losses: 1110 number of replacements: 0 number of cases (unweighted): 1795"
+  contact_affiliation: 
+  geographical_cover: 
+  geographical_unit: 
+  analytic_unit: 
+  creation_date: 
+  study_auth_entity: Jones, Roger McAllister, Ian Gow, David
+  comment: |-
+    The 1996 Australian Election Study is the fourth in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections.  The series also builds on the 1967 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assesses their importance for the election result.
+    
+    The 1996 survey replicates many questions from the 1987, 1990 and 1993 Australian Election Studies, but also introduces a variety of new questions including a section on national identity.  Other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, attitudes to foreign affairs and defence issues and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+  ddi_id: 00943
+studies_009: 
+  id: "34"
+  label: "Australian Election Study, 2004: Supplementary sample"
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.01079-s
+  published: t
+  created_at: 2011-05-09 04:43:54.302984
+  updated_at: 2011-05-09 04:43:54.302984
+  universe: persons on the Australian electoral roll at the close of rolls, September 2004
+  collection_date: 
+  id_number: 
+  series_name: Australian Election Study
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
+    
+    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+    
+    This dataset (01079-s) contains both the main sample and the supplementary sample.
+  keywords: Attitudes;Defence;Economic policy;Elections;Environment;Ethnic groups;Immigration;International relations;Internet;Political parties;Politicians;Politics;Republicanism;Shares;Social policy;Taxation
+  page_id: 
+  data_kind: survey
+  sampling_abbr: 
+  collection_mode_abbr: self-completion (mail out - mail back)
+  contact_affiliation: 
+  geographical_cover: National
+  geographical_unit: Federal Electoral Division
+  analytic_unit: Individual
+  creation_date: 
+  study_auth_entity: Clive Bean Ian McAllister Rachel Gibson David Gow
+  comment: |-
+    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
+    
+    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+    
+    This dataset (01079-s) contains both the main sample and the supplementary sample.
+  ddi_id: 01079-s
+studies_010: 
+  id: "35"
+  label: "Australian Election Study, 2004: Restricted version"
+  resource: 
+  study3: 
+  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.01079-r
+  published: t
+  created_at: 2011-05-09 04:43:54.445696
+  updated_at: 2011-05-09 04:43:54.445696
+  universe: persons on the Australian electoral roll at the close of rolls, September 2004
+  collection_date: 
+  id_number: 
+  series_name: Australian Election Study
+  topics: 
+  country: 
+  geo_coverage: 
+  investigator: 
+  language: 
+  abstract: |-
+    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
+    
+    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+    
+    This is the restricted version of the dataset, which includes the postcode variable.
+  keywords: Attitudes;Defence;Economic policy;Elections;Environment;Ethnic groups;Immigration;International relations;Internet;Political parties;Politicians;Politics;Republicanism;Shares;Social policy;Taxation
+  page_id: 
+  data_kind: survey
+  sampling_abbr: 
+  collection_mode_abbr: self-completion (mail out - mail back)
+  contact_affiliation: 
+  geographical_cover: National
+  geographical_unit: Federal Electoral Division
+  analytic_unit: Individual
+  creation_date: 
+  study_auth_entity: Clive Bean Ian McAllister Rachel Gibson David Gow
+  comment: |-
+    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
+    
+    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
+    
+    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
+    
+    This is the restricted version of the dataset, which includes the postcode variable.
+  ddi_id: 01079-r
+studies_011: 
   id: "37"
   label: Australian Election Study, 1998
   resource: 
@@ -41,7 +555,7 @@ studies_001:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: "01001"
-studies_002: 
+studies_012: 
   id: "38"
   label: New Zealand Election Study, 1993
   resource: 
@@ -79,7 +593,7 @@ studies_002:
     
     Background variables include age, sex, country of birth, place of residence, racial, religious and class identity, personal income, marital status, level of education, employment status, income, spouse's employment status and  income.
   ddi_id: 00813
-studies_003: 
+studies_013: 
   id: "43"
   label: Australian Election Study, 1987
   resource: 
@@ -121,7 +635,7 @@ studies_003:
     
     Background information included level of schooling; highest level of qualification; current activity; occupation; employment sector; supervision; union membership; self assessed social class; sex; age; length of current residence; country of birth of self  and parents; year arrived in Australia; father's occupation; parents' schooling and political preference; marital status; number of children; partner's schooling, occupation, employment sector, supervision, union membership and political preference; religion and attendance at religious services.
   ddi_id: "00445"
-studies_004: 
+studies_014: 
   id: "48"
   label: Australian Gallup Polls, Survey 142, Febuary 5, 1960
   resource: 
@@ -153,7 +667,7 @@ studies_004:
   study_auth_entity: ","
   comment: Topics covered in this survey are extended shopping hours, means testing pensions, living costs, Northern Territory aboriginal drinking laws, book reading, the future government of Western New Guinea, Australian shares in overseas companies, church-going, Colombo Plan students, and western relations with Russia.  Standard variables are vehicle and telephone ownership, religion, occupation, economic classification, age, sex, vote intention, vote at last Federal election, and relationship of interviewee to interviewer.
   ddi_id: 00182
-studies_005: 
+studies_015: 
   id: "53"
   label: "Kakadu Conservation Zone contingent valuation survey, Australia, 1990: File nt"
   resource: 
@@ -195,7 +709,7 @@ studies_005:
     
     In addition to specific contingent valuation questions, the survey also asked respondents a series of attitude questions ranging from the importance of recreational activities within national parks, the relationship between jobs and natural resources, the importance of Aboriginal cultural concerns, and the financial benefits to Australia. Respondents were also asked whether they thought governments paid attention to individual views on natural resources; the importance of forests and Australia's timber resources; and four behavioural questions - whether they recycled household materials, the purchase of environmentally sound products, the watching of environmental programs on TV and membership of a conservation organisation. Background information covered age, sex, education level, income, job status, industry, occupation and country of birth.
   ddi_id: 00631-nt
-studies_006: 
+studies_016: 
   id: "57"
   label: Australian Election Database - All States Lower House Data
   resource: 
@@ -427,7 +941,7 @@ studies_006:
     VIC House of Assembly  are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
     WA House of Assembly are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
   ddi_id: "40092"
-studies_007: 
+studies_017: 
   id: "39"
   label: Australian Election Study Online, 2001
   resource: 
@@ -469,7 +983,7 @@ studies_007:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: "01052"
-studies_008: 
+studies_018: 
   id: "44"
   label: Australian Election Study, 2007
   resource: 
@@ -511,7 +1025,7 @@ studies_008:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: "01120"
-studies_009: 
+studies_019: 
   id: "49"
   label: Australian Election Study, 2010
   resource: 
@@ -563,7 +1077,7 @@ studies_009:
     
     This data file is also supplemented with division level election results from the Australian Electoral Commission election results website (http://results.aec.gov.au/15508/Website/). These variables are found under the variable group "AEC Election Results". Information on the source of these election results and the method by which they were created is available in a Stata *.do syntax file located in the other study materials section.
   ddi_id: 01228
-studies_010: 
+studies_020: 
   id: "54"
   label: Australian Election Database  - Northern Territory Legislative Assembly
   resource: 
@@ -603,7 +1117,7 @@ studies_010:
     electoral roll - The electoral roll is the list of voters who are registered to vote at an election. 
     
     compulsory preferences - a requirement that a voter must rank all candidates on the ballot paper under a system of preferential voting.
-     
+    
      contingent voting - This can be thought of as a form of preferential voting (AV) with compulsory or optional preferences which permits the voter to vote for one or two candidates, but no more than two, by indicating a first choice candidate and, if the voter wishes, a second choice candidate. If a candidate gains more than 50 percent of the first preference votes cast in an electoral district, he or she is declared elected. If there is no such candidate, the second preferences shown on the ballot papers of all but the two candidates with the most first preference votes are divided between the top two candidates. After this assignment, the candidate with the most votes is declared the winner.
     
     This system has been used in general elections for the Queensland Legislative Assembly from 1893 until 1941 (in single and multimember districts until 1909), and for the New South Wales Legislative Assembly in 1928. It was also used for the first direct election of the Mayor of London in 2000 where it was called supplementary voting.
@@ -671,7 +1185,7 @@ studies_010:
     electoral roll - The electoral roll is the list of voters who are registered to vote at an election. 
     
     compulsory preferences - a requirement that a voter must rank all candidates on the ballot paper under a system of preferential voting.
-     
+    
      contingent voting - This can be thought of as a form of preferential voting (AV) with compulsory or optional preferences which permits the voter to vote for one or two candidates, but no more than two, by indicating a first choice candidate and, if the voter wishes, a second choice candidate. If a candidate gains more than 50 percent of the first preference votes cast in an electoral district, he or she is declared elected. If there is no such candidate, the second preferences shown on the ballot papers of all but the two candidates with the most first preference votes are divided between the top two candidates. After this assignment, the candidate with the most votes is declared the winner.
     
     This system has been used in general elections for the Queensland Legislative Assembly from 1893 until 1941 (in single and multimember districts until 1909), and for the New South Wales Legislative Assembly in 1928. It was also used for the first direct election of the Mayor of London in 2000 where it was called supplementary voting.
@@ -707,7 +1221,7 @@ studies_010:
     
     Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1997, 18 August 2001, 18 June 2005, 9 August 2008.
   ddi_id: "40082"
-studies_011: 
+studies_021: 
   id: "40"
   label: Australian Election Study, 2004
   resource: 
@@ -749,7 +1263,7 @@ studies_011:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 01079
-studies_012: 
+studies_022: 
   id: "45"
   label: Australian Election Study, 1990
   resource: 
@@ -791,7 +1305,7 @@ studies_012:
     
     As in the 1987 AES, a range of questions are included in the survey which cover election issues and the respondent's assessment of the most effective party to handle them, as well as questions on specific political issues such as government spending and the pilots' dispute. A section on social policy includes questions on around 30 contemporary social and moral issues, including abortion, Aboriginal rights, pornography, health care and many others. A section on industrial policy focuses on attitudes towards the control of the economy, attitudes to trade unions and big business, and to industrial conflict in general. In addition to the standard questions on vote in the current election, recalled vote in the 1987 federal election, and party identification, the survey contains an extensive section dealing with attitudes to the major parties and to the party leaders. Finally, a range of demographic data are collected for each respondent and their spouse or partner, if applicable.
   ddi_id: "00570"
-studies_013: 
+studies_023: 
   id: "50"
   label: Northern Territory post election survey, 1983
   resource: 
@@ -839,7 +1353,7 @@ studies_013:
     
     Data not available on Nesstar. Please contact archive staff at ada@anu.edu.au if you wish to access these data.
   ddi_id: 00369
-studies_014: 
+studies_024: 
   id: "55"
   label: "Kakadu Conservation Zone contingent valuation survey, Australia, 1990: File nat"
   resource: 
@@ -881,7 +1395,7 @@ studies_014:
     
     In addition to specific contingent valuation questions, the survey also asked respondents a series of attitude questions ranging from the importance of recreational activities within national parks, the relationship between jobs and natural resources, the importance of Aboriginal cultural concerns, and the financial benefits to Australia. Respondents were also asked whether they thought governments paid attention to individual views on natural resources; the importance of forests and Australia's timber resources; and four behavioural questions - whether they recycled household materials, the purchase of environmentally sound products, the watching of environmental programs on TV and membership of a conservation organisation. Background information covered age, sex, education level, income, job status, industry, occupation and country of birth.
   ddi_id: 00631-nat
-studies_015: 
+studies_025: 
   id: "41"
   label: Australian Election Study, 2001
   resource: 
@@ -923,517 +1437,3 @@ studies_015:
     
     Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
   ddi_id: 01048
-studies_016: 
-  id: "46"
-  label: Northern Territory urban voters survey, 1982
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00368
-  published: t
-  created_at: 2011-05-09 04:44:49.737332
-  updated_at: 2011-05-09 04:44:49.737332
-  universe: Urban residents aged 18 and over in Darwin, Katherine, Tennant Creek, Alice Springs, Jabiru and Nhulunbuy.
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    A study of population mobility and party allegiance in the urban population of the Northern Territory was carried out in order to examine whether Territorians see themselves as being 'different' and are in fact different to other Australians, with consequent political implications.
-    
-    Topics investigated include past and present voting preferences; attitudes towards political parties, their leaders and their policies; attitudes towards class mobility and conflict; perceived power groups; and problems facing the Northern Territory. 
-    
-    Background variables include age; sex; country of origin; state of origin; racial identification; marital status; occupation of self, spouse, parents and parents-in-law; duration of NT residence; union membership, club and association membership; level of education; religion.
-  keywords: "Aborigines;Northern Territory;Northern Territory: Politics;Northern Territory Political parties;Politicians;Public administration;Social classes"
-  page_id: 
-  data_kind: survey
-  sampling_abbr: Simple random sample (see Sampling Notes)
-  collection_mode_abbr: personal interview
-  contact_affiliation: School of Social Sciences, Flinders University
-  geographical_cover: Urban Northern Territory
-  geographical_unit: Town
-  analytic_unit: Individual
-  creation_date: 
-  study_auth_entity: Jaensch, D. Loveday, P.
-  comment: |-
-    A study of population mobility and party allegiance in the urban population of the Northern Territory was carried out in order to examine whether Territorians see themselves as being 'different' and are in fact different to other Australians, with consequent political implications.
-    
-    Topics investigated include past and present voting preferences; attitudes towards political parties, their leaders and their policies; attitudes towards class mobility and conflict; perceived power groups; and problems facing the Northern Territory. 
-    
-    Background variables include age; sex; country of origin; state of origin; racial identification; marital status; occupation of self, spouse, parents and parents-in-law; duration of NT residence; union membership, club and association membership; level of education; religion.
-  ddi_id: 00368
-studies_017: 
-  id: "51"
-  label: Study of under-age drinking September/November, 1979
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00030
-  published: t
-  created_at: 2011-05-09 04:44:51.756868
-  updated_at: 2011-05-09 04:44:51.756868
-  universe: all students aged 12 to 17 attending Northern Territory high schools, area schools and Aboriginal colleges
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    This study of teenage drinking habits was commissioned by the Northern Territory Liquor Commission in an effort to obtain information on the extent of the problem so that preventive measures could be taken.
-    
-    Secondary school students were questioned concerning how much beer, wine and/or spirits they drank, where and under what circumstances they drank, and where and how they obtained their liquor. Background variables included sex, age, country of birth and ethnic origin as identified by respondents.
-  keywords: Youth Alcohol;Alcohol consumption
-  page_id: 
-  data_kind: survey
-  sampling_abbr: 
-  collection_mode_abbr: self-completion (group setting)
-  contact_affiliation: Northern Territory Liquor Commission
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: Northern Territory Liquor Commission
-  comment: |-
-    This study of teenage drinking habits was commissioned by the Northern Territory Liquor Commission in an effort to obtain information on the extent of the problem so that preventive measures could be taken.
-    
-    Secondary school students were questioned concerning how much beer, wine and/or spirits they drank, where and under what circumstances they drank, and where and how they obtained their liquor. Background variables included sex, age, country of birth and ethnic origin as identified by respondents.
-  ddi_id: "00030"
-studies_018: 
-  id: "42"
-  label: Australian Election Study, 1993
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00763
-  published: t
-  created_at: 2011-05-09 04:44:47.816144
-  updated_at: 2011-05-09 04:44:47.816144
-  universe: 
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    The 1993 Australian Election Study is the third in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections. The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys. The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character. In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
-    
-    The 1993 survey replicates many questions from the 1987 and 1990 Australian Election Studies, but also introduces a variety of new questions including a section on foreign affairs and defence, and attitudes to Federal and State government. As in previous surveys, other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
-    
-    Background variables covered include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, year and place of birth, parents' birthplaces, parents' political preferences, father's occupation, length of residence in state or territory, religion, marital status, number of children, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-  keywords: Defence;Economic policy;Elections;Environment;International relations;Political parties;Politicians;Politics;Social policy
-  page_id: 
-  data_kind: 
-  sampling_abbr: 
-  collection_mode_abbr: self-completion (mail out, mail back)
-  contact_affiliation: 
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: Jones, Roger McAllister, Ian Denemark, David Gow, David
-  comment: |-
-    The 1993 Australian Election Study is the third in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections. The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys. The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character. In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
-    
-    The 1993 survey replicates many questions from the 1987 and 1990 Australian Election Studies, but also introduces a variety of new questions including a section on foreign affairs and defence, and attitudes to Federal and State government. As in previous surveys, other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
-    
-    Background variables covered include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, year and place of birth, parents' birthplaces, parents' political preferences, father's occupation, length of residence in state or territory, religion, marital status, number of children, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-  ddi_id: "00763"
-studies_019: 
-  id: "47"
-  label: "Australian Election Database: House of Representatives - Northern Territory data"
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.40098
-  published: t
-  created_at: 2011-05-09 04:44:49.762928
-  updated_at: 2011-05-09 04:44:49.762928
-  universe: Seats in the House of Representatives (Lower House) and voters in the Northern Territory.
-  collection_date: 
-  id_number: 
-  series_name: Australian Election Data
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: Summary details for each election year for the House of Representatives elections since 1901.  This data includes electoral system characteristics, seats in chamber, number of enrolled voters, ballots cast, rate of voter turnout and rate of informal voting for the Northern Territory.
-  keywords: Political Parties;Politicians;Elections
-  page_id: 
-  data_kind: Election returns
-  sampling_abbr: 
-  collection_mode_abbr: Compilation or synthesis of existing material
-  contact_affiliation: UWA
-  geographical_cover: Northern Territory
-  geographical_unit: State
-  analytic_unit: House of Representatives
-  creation_date: 
-  study_auth_entity: Campbell Sharman
-  comment: Summary details for each election year for the House of Representatives elections since 1901.  This data includes electoral system characteristics, seats in chamber, number of enrolled voters, ballots cast, rate of voter turnout and rate of informal voting for the Northern Territory.
-  ddi_id: "40098"
-studies_020: 
-  id: "52"
-  label: Australian Election Database  - Northern Territory Legislative Assembly Party Election Data
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.40083
-  published: t
-  created_at: 2011-05-09 04:44:51.978044
-  updated_at: 2011-05-09 04:44:51.978044
-  universe: Votes for groups and political parties at NT Legislative Assembly elections
-  collection_date: 
-  id_number: 
-  series_name: Australian Election Data
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
-    
-    The Northern Territory did not gain full representative self-government until 1978, although this had been planned since 1973.
-    
-    'In 1973 the Whitlam [federal] Labor government established a joint committee of the federal parliament to plan for a setting up of a legislative assembly in 1974. But, in a style which Territorians would claim has been a consistent pattern, the Commonwealth Committee reported after the new assembly had been designed, confirmed and elected. The Legislative Assembly of nineteen members had all of the structures and processes of a representative parliament, but its powers remained the same as those of the previous Legislative Council. In 1978, however, after protracted negotiations with the Fraser Liberal government, the territory was granted self-government', Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, at p.225 (Melbourne: Cambridge University Press, 2003, ISBN 0521532051).
-    
-     Notwithstanding the problems in setting up the machinery for full self-government (see note above), this was the first election for a fully elected Legislative Assembly for the Northern Territory. For a survey of representation and government in the Northern Territory, see Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, (Melbourne: Cambridge University Press, 2003, ISBN 0521532051), and Jaensch and Wade-Marshall , Point of Order! The Legislative Assembly of the Northern Territory, 1974-1994, Darwin: Legislative Assembly of the Northern Territory and North Australia Research Unit, Australian National University, 1994 (ISBN 0 7315 2077 9)
-    
-    Definitions for First Preference votes, Swing and Seats Won by Party are:
-    
-    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
-    
-    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
-    
-    Seats won by party: the number of seat in the lower house the party holds after the election.
-    
-    Data from the cube can be downloaded and combined with the Northern Territory Lower House data. Simply download both files then merge using the Election year as the common variable to create a table with both sets of data. See example in Other materials.
-    
-    Independents: 
-    2005 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (18) and one candidates who ran for office without any registered party name (who gained 104 votes).
-    
-    2008 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (11 candidates in 9 electoral districts).
-    
-    Uncontested seats (2008 Election): 	Only one candidate was nominated for each of the Northern Territory electoral districts of Arnhem and Macdonnell; M McCarthy was elected unopposed for the Australian Labor Party from Arnhem, and A Anderson was elected unopposed for the Australian Labor Party from Macdonnell. This is the first time that there have been uncontested seats in an election for the Northern Territory Legislative Assembly, and the first time for 25 years that there has been an uncontested seat for an Australian lower house election. Uncontested seats were common at Australian state and Commonwealth lower house elections until the 1960s but changes in party campaign strategy has meant that there had been no uncontested seats since the 1983 election for the Western Australian Legislative Assembly. For more information and analysis, see Campbell Sharman, 'Uncontested Seats and the Evolution of Party Competition: The Australian Case', Party Politics, 9(6) November 2003: 679-702.
-    
-    Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.
-  keywords: Political parties;Elections;Politics
-  page_id: 
-  data_kind: Election returns
-  sampling_abbr: 
-  collection_mode_abbr: Compilation or synthesis of existing material
-  contact_affiliation: University of Western Australia and University of British Columbia
-  geographical_cover: Northern Territory
-  geographical_unit: Territory
-  analytic_unit: NT Legislative Assembly
-  creation_date: 
-  study_auth_entity: Sharman, Campbell
-  comment: |-
-    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
-    
-    The Northern Territory did not gain full representative self-government until 1978, although this had been planned since 1973.
-    
-    'In 1973 the Whitlam [federal] Labor government established a joint committee of the federal parliament to plan for a setting up of a legislative assembly in 1974. But, in a style which Territorians would claim has been a consistent pattern, the Commonwealth Committee reported after the new assembly had been designed, confirmed and elected. The Legislative Assembly of nineteen members had all of the structures and processes of a representative parliament, but its powers remained the same as those of the previous Legislative Council. In 1978, however, after protracted negotiations with the Fraser Liberal government, the territory was granted self-government', Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, at p.225 (Melbourne: Cambridge University Press, 2003, ISBN 0521532051).
-    
-     Notwithstanding the problems in setting up the machinery for full self-government (see note above), this was the first election for a fully elected Legislative Assembly for the Northern Territory. For a survey of representation and government in the Northern Territory, see Dean Jaensch, 'Northern Territory', in Jeremy Moon and Campbell Sharman (editors), Australian Politics and Government: The Commonwealth, the States and the Territories, pp 224-238, (Melbourne: Cambridge University Press, 2003, ISBN 0521532051), and Jaensch and Wade-Marshall , Point of Order! The Legislative Assembly of the Northern Territory, 1974-1994, Darwin: Legislative Assembly of the Northern Territory and North Australia Research Unit, Australian National University, 1994 (ISBN 0 7315 2077 9)
-    
-    Definitions for First Preference votes, Swing and Seats Won by Party are:
-    
-    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
-    
-    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
-    
-    Seats won by party: the number of seat in the lower house the party holds after the election.
-    
-    Data from the cube can be downloaded and combined with the Northern Territory Lower House data. Simply download both files then merge using the Election year as the common variable to create a table with both sets of data. See example in Other materials.
-    
-    Independents: 
-    2005 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (18) and one candidates who ran for office without any registered party name (who gained 104 votes).
-    
-    2008 Election	The vote shown for Independents at this Northern Territory Legislative Assembly election is the sum of votes cast for all candidates registered as Independents (11 candidates in 9 electoral districts).
-    
-    Uncontested seats (2008 Election): 	Only one candidate was nominated for each of the Northern Territory electoral districts of Arnhem and Macdonnell; M McCarthy was elected unopposed for the Australian Labor Party from Arnhem, and A Anderson was elected unopposed for the Australian Labor Party from Macdonnell. This is the first time that there have been uncontested seats in an election for the Northern Territory Legislative Assembly, and the first time for 25 years that there has been an uncontested seat for an Australian lower house election. Uncontested seats were common at Australian state and Commonwealth lower house elections until the 1960s but changes in party campaign strategy has meant that there had been no uncontested seats since the 1983 election for the Western Australian Legislative Assembly. For more information and analysis, see Campbell Sharman, 'Uncontested Seats and the Evolution of Party Competition: The Australian Case', Party Politics, 9(6) November 2003: 679-702.
-    
-    Election dates are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.
-  ddi_id: "40083"
-studies_021: 
-  id: "56"
-  label: Australian Election Database - All States Lower House Data Party Data
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.40093
-  published: t
-  created_at: 2011-05-09 04:44:54.056544
-  updated_at: 2011-05-09 04:44:54.056544
-  universe: Seats in the Australian State Lower Houses and voters in the  Australian States.
-  collection_date: 
-  id_number: 
-  series_name: Australian Election Data
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
-    
-    Definitions for First Preference votes, Swing and Seats Won by Party are:
-    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
-    
-    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
-    
-    Seats won by party: the number of seat in the lower house the party holds after the election.
-    
-    For information about Parties and elections please see individual State data.
-    
-    Data from au.edu.anu.ada.ddi.40092 and au.edu.anu.ada.ddi.40093 can be combined by date to produce a table with all data. An example of the graph that can be produced is in Other Material.
-    
-    Election dates for the Tasmanian House of Assembly elections are: 8  September 1856, 29 June 1861, 6 November 1862, 3 October 1866, 6 September 1871, 5 September 1872, 30 May 1877, 25 May 1882, 26 July 1886, 22 May 1891, 29 December 1893, 20 January 1897, 9 March 1900, 2 April 1903, 29 March 1906, 30 April 1909, 30 April 1912, 23 January 1913, 26 March 1916, 31 May 1919, 10 June 1922, 3 June 1925, 30 May 1928, 9 May 1931, 9 June 1934, 20 February 1937, 13 December 1941, 23 November 1946, 21 August 1948, 6 May 1950, 19 February 1955, 13 October 1956, 2 May 1959, 2 May 1964, 10 May 1969, 22 April 1972, 11 December 1976, 28 July 1979, 15 May 1982, 8 February 1986, 13 May 1989, 1 February 1992, 24 February 1996, 29 August 1998, 20 July 2002.
-    
-    Dates for the Australian Capital Territory elections are: 4 March 1989, 14 February 1992, 18 February 1995, 21 February 1998, 20 October 2001, 16 October 2004, 18 October 2008.
-    
-    Dates for New South Wales House of Assembly elections are: 11 March 1856, 13 January 1858, 8 June 1859, 6 December 1860, 22 November 1864, 3 December 1969, 13 February 1872, 8 December 1874, 24 October 1877, 18 November 1880, 30 November 1880, 15 October 1882, 16 October 1885, 4 February 1887, 1 February 1889, 17 June 1891, 17 July 1894, 24 July 1895, 27 July 1898, 3 July 1901, 6 August 1904, 10 September 1907, 14 October 1910, 6 December 1910, 6 December 1913, 24 March 1917, 20 March 1920, 25 March 1920, 20 May 1925, 8 October 1927, 25 October 1930, 11 June 1932, 11 May 1935, 25 March 1938, 10 May 1941, 27 May 1944, 3 may 1947, 17 June 1950, 14 February 1953, 3 March 1956, 21 March 1959, 3 March 1962, 1 May 1965, 24 February 1968, 13 February 1971, 17 November 1973, 1 May 1976, 7 October 1978, 19 September 1981, 24 March 1984, 19 March 1988, 25 May 1991, 25 March 1995, 27 March 1999, 22 March 2003, 24 March 2007. 
-    
-    Dates for the Northern Territory elections are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.	
-    	
-    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
-    
-    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
-    
-    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
-    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
-    	
-    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
-    
-    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
-    
-    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
-    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
-  keywords: Elections;Politics
-  page_id: 
-  data_kind: Election returns
-  sampling_abbr: 
-  collection_mode_abbr: Compilation or synthesis of existing material
-  contact_affiliation: University of Western Australia and University of British Columbia
-  geographical_cover: National
-  geographical_unit: State
-  analytic_unit: Lower Houses, Australia
-  creation_date: 
-  study_auth_entity: Sharman, Campbell
-  comment: |-
-    Summary details of political parties which have won more than 2 percent of the vote or won a seat at any of the general elections, showing their share of votes and seats, and the various electoral forums in which they have run candidates.
-    
-    Definitions for First Preference votes, Swing and Seats Won by Party are:
-    First preference  votes: Percentage of first preference votes won by a party at each election. Preferential voting requires a voter to rank candidates on the ballot paper in the order of the voter's choice. A voter's most preferred candidate is the one against whose name the voter has written '1' on the ballot paper. This candidate represents the voter's first preference vote. This definition also applies to voting under systems of proportional representation. Where a first past the post (plurality) electoral system is used, the first preference vote refers to the number of ticks or crosses gained by each candidate.
-    
-    Swing: Percentage of the change in first preference vote won by a party at a given election when compared with the previous election, expressed as the difference between the percentage first preference vote shares. No swing infromation is given for parties contesting their first election or who did not contest the last the election.
-    
-    Seats won by party: the number of seat in the lower house the party holds after the election.
-    
-    For information about Parties and elections please see individual State data.
-    
-    Data from au.edu.anu.ada.ddi.40092 and au.edu.anu.ada.ddi.40093 can be combined by date to produce a table with all data. An example of the graph that can be produced is in Other Material.
-    
-    Election dates for the Tasmanian House of Assembly elections are: 8  September 1856, 29 June 1861, 6 November 1862, 3 October 1866, 6 September 1871, 5 September 1872, 30 May 1877, 25 May 1882, 26 July 1886, 22 May 1891, 29 December 1893, 20 January 1897, 9 March 1900, 2 April 1903, 29 March 1906, 30 April 1909, 30 April 1912, 23 January 1913, 26 March 1916, 31 May 1919, 10 June 1922, 3 June 1925, 30 May 1928, 9 May 1931, 9 June 1934, 20 February 1937, 13 December 1941, 23 November 1946, 21 August 1948, 6 May 1950, 19 February 1955, 13 October 1956, 2 May 1959, 2 May 1964, 10 May 1969, 22 April 1972, 11 December 1976, 28 July 1979, 15 May 1982, 8 February 1986, 13 May 1989, 1 February 1992, 24 February 1996, 29 August 1998, 20 July 2002.
-    
-    Dates for the Australian Capital Territory elections are: 4 March 1989, 14 February 1992, 18 February 1995, 21 February 1998, 20 October 2001, 16 October 2004, 18 October 2008.
-    
-    Dates for New South Wales House of Assembly elections are: 11 March 1856, 13 January 1858, 8 June 1859, 6 December 1860, 22 November 1864, 3 December 1969, 13 February 1872, 8 December 1874, 24 October 1877, 18 November 1880, 30 November 1880, 15 October 1882, 16 October 1885, 4 February 1887, 1 February 1889, 17 June 1891, 17 July 1894, 24 July 1895, 27 July 1898, 3 July 1901, 6 August 1904, 10 September 1907, 14 October 1910, 6 December 1910, 6 December 1913, 24 March 1917, 20 March 1920, 25 March 1920, 20 May 1925, 8 October 1927, 25 October 1930, 11 June 1932, 11 May 1935, 25 March 1938, 10 May 1941, 27 May 1944, 3 may 1947, 17 June 1950, 14 February 1953, 3 March 1956, 21 March 1959, 3 March 1962, 1 May 1965, 24 February 1968, 13 February 1971, 17 November 1973, 1 May 1976, 7 October 1978, 19 September 1981, 24 March 1984, 19 March 1988, 25 May 1991, 25 March 1995, 27 March 1999, 22 March 2003, 24 March 2007. 
-    
-    Dates for the Northern Territory elections are: 19 October 1974, 13 August 1977, 7 June 1980, 3 December 1983, 7 March 1987, 27 October 1990, 4 June 1994, 30 August 1998, 18 August 2001, 18 June 2005, 9 August 2008.	
-    	
-    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
-    
-    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
-    
-    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
-    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
-    	
-    Dates for the Queensland House of Assembly are: 29 April 1893, 21 March 1896, 11 March 1899, 11 March 1902, 27 August 1904, 18 May 1907, 2 October 1909,  27 April  1912, 22 May 1915, 15 March 1918, 9 October 1920, 12 May 1923, 8 May 1926, 11 May 1929, 11 June 1932, 11 May 1935, 2 April 1938, 29 March 1941, 15 April 1944, 3 May 1947, 29 April 1950, 7 March 1953, 19 May 1956, 3 August 1957, 28 May 1960, 1 June 1963, 28 May 1966, 17 May 1969, 27 May 1972, 7 December 1974,  12 November 1977, 29 November 1980, 22 October 1983, 1 November 1986, 2 December 1989,  19 September 1992,  15 July 1995, 13 June 1998, 17 February 2001, 7 February 2004, 9 September 2006,  21 March 2009.	
-    
-    Dates for the South Australian House of Assembly election are: 9 April 1890, 14 April 1893, 25 April 1896, 29 april 1899, 3 May 1902, 27 May 1905, 3 November 1906, 2 April 1910, 10 February 1912, 27 March 1915, 5 April 1918, 9 April 1921, 5 April 1924, 26 March 1927, 5 April 1930, 8 April 1933, 19 March 1938, 29 March 1941, 29 April 1944, 8 March 1947, 4 March 1950, 7 March 1953, 3 March 1956, 7 March 1959, 3 March 1962, 6 March 1965, 2 March 1968, 30 May 1970, 10 March 1973, 12 July 1975, 17 September 1977, 15 September 1979, 6 November 1982, 7 December 1985, 25 November 1989, 11 December 1993, 11 October 1997, 9 February 2002, 18 March 2006.
-    
-    Dates for Victorian House of Assembly elections are: 20 April 1892, 20 September 1894, 14 October 1897, 1 November 1900, 1 October 1902, 1 June 1904, 14 April 1907, 29 December 1908, 16 November 1911, 26 November 1914, 15 November 1917, 21 October 1920, 30 August 1921, 26 June 1924, 9 April 1927, 30 November 1929, 14 May 1932, 2 March 1935, 2 October 1937, 15 March 1940, 12 June 1943, 10 November 1945, 8 November 1947, 13 May 1950, 5 December 1952, 28 May 1955, 31 May 1958, 15 July 1961, 27 June 1964, 29 April 1967, 30 May 1970, 19 May 1973, 20 March 1976, 5 May 1979,  3 April 1982, 2 March 1985, 1 October 1988, 3 October 1992, 30 March 1996, 18 September 1999, 30 November 2002, 25 November 2006.
-    Dates for the Western Australian House of Assembly elections are: 5 December 1890, 14 June 1894, 27 April 1897, 24 April 1901, 28 June 1904, 27 October 1905, 11 September 1908, 3 October 1911, 21 April 1914, 29 September 1917, 12 March 1921, 22 March 1924, 25 March 1927, 12 April 1930, 8 April 1933, 15 February 1936, 18 March 1939, 20 November 1943, 14 March 1947, 25 March 1950, 14 February 1953, 7 April 1956, 21 March 1959, 31 March 1962, 20 February 1965, 23 March 1968, 20 February 1971, 30 March 1974, 19 February 1977,  23 February 1980,  19 February 1983, 8 February 1986, 4 February 1989, 6 February 1993, 14 December 1996,  10 February 2001, 26 February 2005, 6 September 2008.
-  ddi_id: "40093"
-studies_022: 
-  id: "36"
-  label: "Australian Election Study Online, 2001: File c"
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.01052-c
-  published: t
-  created_at: 2011-05-09 04:43:54.490335
-  updated_at: 2011-05-09 04:43:54.490335
-  universe: Australian residents with internet access
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    The study was designed to test the use of the web as a methodological tool for survey research in national election studies.  The online survey ran a truncated set of questions from the Australian Election Study, 2001 (ADA No. 1048) that was conducted as a post-election mail-out and mail-back survey.  The goal was to compare the results from this new form of polling methodology with those from the more established method to see how far the two modes yielded comparable results.  As opinion polls become more costly to fund and response rates drop, survey researchers are looking for new and more cost effective ways to run election studies.  Although the web is being increasingly used for opinion polling it has attracted significant criticism due to the non-probalistic nature of the samples it generates.  The aim of this study was to subject web-based surveys to greater scientific scrutiny in order to assess their methods.
-    
-    The online survey replicates many questions from the previous Australian Election Studies, including a section on political and social institutions.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, and attitudes to a range of election issues including immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and workers entitlements.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-  keywords: Attitudes;Culture;Defence;Economic policy;Elections;Environment;Immigration;International relations;Internet;Political parties;Politicians;Politics;Racial discrimination;Republicanism;Social policy
-  page_id: 
-  data_kind: survey
-  sampling_abbr: 
-  collection_mode_abbr: Web survey linked to home page of ninemsn.com.au. Respondents taken to a secure site hosted by YouGov where filled in form online. Data then transferred to unit record file into a mysql database.
-  contact_affiliation: The Australian National University
-  geographical_cover: National
-  geographical_unit: Postcode
-  analytic_unit: Individual
-  creation_date: 
-  study_auth_entity: Rachel Gibson Ian McAllister Clive Bean David Gow
-  comment: |-
-    The study was designed to test the use of the web as a methodological tool for survey research in national election studies.  The online survey ran a truncated set of questions from the Australian Election Study, 2001 (ADA No. 1048) that was conducted as a post-election mail-out and mail-back survey.  The goal was to compare the results from this new form of polling methodology with those from the more established method to see how far the two modes yielded comparable results.  As opinion polls become more costly to fund and response rates drop, survey researchers are looking for new and more cost effective ways to run election studies.  Although the web is being increasingly used for opinion polling it has attracted significant criticism due to the non-probalistic nature of the samples it generates.  The aim of this study was to subject web-based surveys to greater scientific scrutiny in order to assess their methods.
-    
-    The online survey replicates many questions from the previous Australian Election Studies, including a section on political and social institutions.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, and attitudes to a range of election issues including immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and workers entitlements.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-  ddi_id: 01052-c
-studies_023: 
-  id: "32"
-  label: Australian Election Study, 1996
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00943
-  published: t
-  created_at: 2011-05-09 04:43:53.951934
-  updated_at: 2011-05-09 04:43:53.951934
-  universe: Persons on the Australian electoral roll at the close of rolls, February 1996.
-  collection_date: 
-  id_number: 
-  series_name: 
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    The 1996 Australian Election Study is the fourth in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections.  The series also builds on the 1967 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assesses their importance for the election result.
-    
-    The 1996 survey replicates many questions from the 1987, 1990 and 1993 Australian Election Studies, but also introduces a variety of new questions including a section on national identity.  Other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, attitudes to foreign affairs and defence issues and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-  keywords: Attitudes;Culture;Defence;Economic policy;Elections;Environment;International relations;Political parties;Politicians;Politics;Social policy
-  page_id: 
-  data_kind: survey
-  sampling_abbr: 
-  collection_mode_abbr: "number of units in original sample: 3000 number of return-to-senders: 95 number of other losses: 1110 number of replacements: 0 number of cases (unweighted): 1795"
-  contact_affiliation: 
-  geographical_cover: 
-  geographical_unit: 
-  analytic_unit: 
-  creation_date: 
-  study_auth_entity: Jones, Roger McAllister, Ian Gow, David
-  comment: |-
-    The 1996 Australian Election Study is the fourth in a series of surveys beginning in 1987 which have been timed to coincide with Australian Federal elections.  The series also builds on the 1967 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assesses their importance for the election result.
-    
-    The 1996 survey replicates many questions from the 1987, 1990 and 1993 Australian Election Studies, but also introduces a variety of new questions including a section on national identity.  Other sections covered the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the economic situation and economic policies, attitudes to a range of environmental issues, attitudes to foreign affairs and defence issues and attitudes to contemporary social policy issues including equal opportunity, censorship, migration, assistance for aborigines, abortion, criminal law, expenditure on social services, the monarchy and the Australian flag.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-  ddi_id: 00943
-studies_024: 
-  id: "34"
-  label: "Australian Election Study, 2004: Supplementary sample"
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.01079-s
-  published: t
-  created_at: 2011-05-09 04:43:54.302984
-  updated_at: 2011-05-09 04:43:54.302984
-  universe: persons on the Australian electoral roll at the close of rolls, September 2004
-  collection_date: 
-  id_number: 
-  series_name: Australian Election Study
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
-    
-    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-    
-    This dataset (01079-s) contains both the main sample and the supplementary sample.
-  keywords: Attitudes;Defence;Economic policy;Elections;Environment;Ethnic groups;Immigration;International relations;Internet;Political parties;Politicians;Politics;Republicanism;Shares;Social policy;Taxation
-  page_id: 
-  data_kind: survey
-  sampling_abbr: 
-  collection_mode_abbr: self-completion (mail out - mail back)
-  contact_affiliation: 
-  geographical_cover: National
-  geographical_unit: Federal Electoral Division
-  analytic_unit: Individual
-  creation_date: 
-  study_auth_entity: Clive Bean Ian McAllister Rachel Gibson David Gow
-  comment: |-
-    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
-    
-    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-    
-    This dataset (01079-s) contains both the main sample and the supplementary sample.
-  ddi_id: 01079-s
-studies_025: 
-  id: "35"
-  label: "Australian Election Study, 2004: Restricted version"
-  resource: 
-  study3: 
-  about: http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.01079-r
-  published: t
-  created_at: 2011-05-09 04:43:54.445696
-  updated_at: 2011-05-09 04:43:54.445696
-  universe: persons on the Australian electoral roll at the close of rolls, September 2004
-  collection_date: 
-  id_number: 
-  series_name: Australian Election Study
-  topics: 
-  country: 
-  geo_coverage: 
-  investigator: 
-  language: 
-  abstract: |-
-    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
-    
-    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-    
-    This is the restricted version of the dataset, which includes the postcode variable.
-  keywords: Attitudes;Defence;Economic policy;Elections;Environment;Ethnic groups;Immigration;International relations;Internet;Political parties;Politicians;Politics;Republicanism;Shares;Social policy;Taxation
-  page_id: 
-  data_kind: survey
-  sampling_abbr: 
-  collection_mode_abbr: self-completion (mail out - mail back)
-  contact_affiliation: 
-  geographical_cover: National
-  geographical_unit: Federal Electoral Division
-  analytic_unit: Individual
-  creation_date: 
-  study_auth_entity: Clive Bean Ian McAllister Rachel Gibson David Gow
-  comment: |-
-    The 2004 Australian Election Study is the seventh in a series of surveys beginning in 1987 that have been timed to coincide with Australian Federal elections.  The series also builds on the 1967, 1969 and 1979 Australian Political Attitudes Surveys.  The Australian Election Studies aim to provide a long-term perspective on stability and change in the political attitudes and behaviour of the Australian electorate, and investigate the changing social bases of Australian politics as the economy and society modernise and change character.  In addition to these long-term goals they examine the political issues prevalent in the election and assess their importance for the election result.
-    
-    The 2004 survey replicates many questions from the previous Australian Election Studies, but also introduces a variety of new questions including a section on political and global issues.  Other sections cover the respondent's interest in the election campaign and politics, their past and present political affiliation, evaluation of parties and candidates, alignment with parties on various election issues, evaluation of the current economic situation, attitudes to a range of election issues including the immigration, refugees and asylum seekers, terrorism, taxation, unemployment, and interest rates, attitudes to issues relating to the environment and defence, and opinions on various social policy issues including abortion, equal opportunities, sex discrimination, and government assistance to Aborigines.
-    
-    Background variables include level of education, employment status, occupation, type of employer, position at workplace, trade union membership, sex, age, own and parents' country of birth, parents' political preferences, religion, marital status, income, and where applicable, the occupation, trade union membership and political preference of the respondent's spouse.
-    
-    This is the restricted version of the dataset, which includes the postcode variable.
-  ddi_id: 01079-r

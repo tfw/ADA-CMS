@@ -293,3 +293,219 @@ inkling_logs_049:
   text: Downloaded 0 studies. Encountered 0 errors. There are now 25 studies in ADA.
   user_id: 
   category: integration
+inkling_logs_050: 
+  id: "50"
+  created_at: 2011-05-09 06:11:21.26962
+  text: "  edited page <a href='/staff/archives/7/pages/1/edit'>Home</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_051: 
+  id: "51"
+  created_at: 2011-05-09 06:11:21.286461
+  text: "  edited page <a href='/staff/archives/2/pages/3/edit'>Home</a> in <a href='/staff/archives/historical'>Historical</a>."
+  user_id: "1"
+  category: page
+inkling_logs_052: 
+  id: "52"
+  created_at: 2011-05-09 06:11:21.29631
+  text: "  edited page <a href='/staff/archives/3/pages/4/edit'>Home</a> in <a href='/staff/archives/indigenous'>Indigenous</a>."
+  user_id: "1"
+  category: page
+inkling_logs_053: 
+  id: "53"
+  created_at: 2011-05-09 06:11:21.304844
+  text: "  edited page <a href='/staff/archives/4/pages/5/edit'>Home</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>."
+  user_id: "1"
+  category: page
+inkling_logs_054: 
+  id: "54"
+  created_at: 2011-05-09 06:11:21.313443
+  text: "  edited page <a href='/staff/archives/2/pages/40/edit'>Census data</a> in <a href='/staff/archives/historical'>Historical</a>."
+  user_id: "1"
+  category: page
+inkling_logs_055: 
+  id: "55"
+  created_at: 2011-05-09 06:11:21.324429
+  text: "  edited page <a href='/staff/archives/5/pages/6/edit'>Home</a> in <a href='/staff/archives/qualitative'>Qualitative</a>."
+  user_id: "1"
+  category: page
+inkling_logs_056: 
+  id: "56"
+  created_at: 2011-05-09 06:11:21.368016
+  text: "  edited page <a href='/staff/archives/6/pages/7/edit'>Home</a> in <a href='/staff/archives/international'>International</a>."
+  user_id: "1"
+  category: page
+inkling_logs_057: 
+  id: "57"
+  created_at: 2011-05-09 06:11:21.379283
+  text: "  edited page <a href='/staff/archives/7/pages/8/edit'>About</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_058: 
+  id: "58"
+  created_at: 2011-05-09 06:11:21.388434
+  text: "  edited page <a href='/staff/archives/7/pages/10/edit'>Subarchives</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_059: 
+  id: "59"
+  created_at: 2011-05-09 06:11:21.404361
+  text: "  edited page <a href='/staff/archives/7/pages/11/edit'>Data Access</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_060: 
+  id: "60"
+  created_at: 2011-05-09 06:11:21.418762
+  text: "  edited page <a href='/staff/archives/7/pages/12/edit'>Browse ADA Catalogue</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_061: 
+  id: "61"
+  created_at: 2011-05-09 06:11:21.428729
+  text: "  edited page <a href='/staff/archives/7/pages/13/edit'>Search ADA</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_062: 
+  id: "62"
+  created_at: 2011-05-09 06:11:21.438763
+  text: "  edited page <a href='/staff/archives/7/pages/14/edit'>Register for ADA</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_063: 
+  id: "63"
+  created_at: 2011-05-09 06:11:21.448113
+  text: "  edited page <a href='/staff/archives/7/pages/15/edit'>ADA undertaking forms</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_064: 
+  id: "64"
+  created_at: 2011-05-09 06:11:21.45652
+  text: "  edited page <a href='/staff/archives/7/pages/16/edit'>Data Deposit</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_065: 
+  id: "65"
+  created_at: 2011-05-09 06:11:21.468382
+  text: "  edited page <a href='/staff/archives/7/pages/17/edit'>Why Deposit Data?</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_066: 
+  id: "66"
+  created_at: 2011-05-09 06:11:21.478459
+  text: "  edited page <a href='/staff/archives/7/pages/18/edit'>Sharing data and access conditions</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_067: 
+  id: "67"
+  created_at: 2011-05-09 06:11:21.488743
+  text: "  edited page <a href='/staff/archives/7/pages/19/edit'>How to deposit data</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_068: 
+  id: "68"
+  created_at: 2011-05-09 06:11:21.534381
+  text: "  edited page <a href='/staff/archives/7/pages/20/edit'>Deposit forms</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_069: 
+  id: "69"
+  created_at: 2011-05-09 06:11:21.550433
+  text: "  edited page <a href='/staff/archives/7/pages/22/edit'>ADA News</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_070: 
+  id: "70"
+  created_at: 2011-05-09 06:11:21.563243
+  text: "  edited page <a href='/staff/archives/7/pages/23/edit'>Contact</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_071: 
+  id: "71"
+  created_at: 2011-05-09 06:11:21.572684
+  text: "  edited page <a href='/staff/archives/7/pages/24/edit'>My Account</a> in <a href='/staff/archives/ada'>ADA</a>."
+  user_id: "1"
+  category: page
+inkling_logs_072: 
+  id: "72"
+  created_at: 2011-05-09 06:11:21.598004
+  text: "  edited page <a href='/staff/archives/3/pages/43/edit'>About</a> in <a href='/staff/archives/indigenous'>Indigenous</a>."
+  user_id: "1"
+  category: page
+inkling_logs_073: 
+  id: "73"
+  created_at: 2011-05-09 06:11:21.606685
+  text: "  edited page <a href='/staff/archives/2/pages/69/edit'>Census 1966-1991</a> in <a href='/staff/archives/historical'>Historical</a>."
+  user_id: "1"
+  category: page
+inkling_logs_074: 
+  id: "74"
+  created_at: 2011-05-09 06:11:21.615583
+  text: "  edited page <a href='/staff/archives/1/pages/26/edit'>Home</a> in <a href='/staff/archives/social-science'>Social Science</a>."
+  user_id: "1"
+  category: page
+inkling_logs_075: 
+  id: "75"
+  created_at: 2011-05-09 06:11:21.692334
+  text: "  edited page <a href='/staff/archives/1/pages/32/edit'>Themed Data</a> in <a href='/staff/archives/social-science'>Social Science</a>."
+  user_id: "1"
+  category: page
+inkling_logs_076: 
+  id: "76"
+  created_at: 2011-05-09 06:11:21.70117
+  text: "  edited page <a href='/staff/archives/1/pages/33/edit'>User Guides</a> in <a href='/staff/archives/social-science'>Social Science</a>."
+  user_id: "1"
+  category: page
+inkling_logs_077: 
+  id: "77"
+  created_at: 2011-05-09 06:11:21.721526
+  text: "  edited page <a href='/staff/archives/6/pages/35/edit'>About</a> in <a href='/staff/archives/international'>International</a>."
+  user_id: "1"
+  category: page
+inkling_logs_078: 
+  id: "78"
+  created_at: 2011-05-09 06:11:21.747275
+  text: "  edited page <a href='/staff/archives/3/pages/46/edit'>Using Data</a> in <a href='/staff/archives/indigenous'>Indigenous</a>."
+  user_id: "1"
+  category: page
+inkling_logs_079: 
+  id: "79"
+  created_at: 2011-05-09 06:11:21.755995
+  text: "  edited page <a href='/staff/archives/3/pages/47/edit'>Protocols</a> in <a href='/staff/archives/indigenous'>Indigenous</a>."
+  user_id: "1"
+  category: page
+inkling_logs_080: 
+  id: "80"
+  created_at: 2011-05-09 06:11:21.789553
+  text: "  edited page <a href='/staff/archives/4/pages/51/edit'>About</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>."
+  user_id: "1"
+  category: page
+inkling_logs_081: 
+  id: "81"
+  created_at: 2011-05-09 06:11:21.806274
+  text: "  edited page <a href='/staff/archives/4/pages/53/edit'>Creating Data</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>."
+  user_id: "1"
+  category: page
+inkling_logs_082: 
+  id: "82"
+  created_at: 2011-05-09 06:11:21.851738
+  text: "  edited page <a href='/staff/archives/4/pages/55/edit'>Longitudinal Studies</a> in <a href='/staff/archives/longitudinal'>Longitudinal</a>."
+  user_id: "1"
+  category: page
+inkling_logs_083: 
+  id: "83"
+  created_at: 2011-05-09 06:11:21.906489
+  text: "  edited page <a href='/staff/archives/5/pages/61/edit'>Creating Data</a> in <a href='/staff/archives/qualitative'>Qualitative</a>."
+  user_id: "1"
+  category: page
+inkling_logs_084: 
+  id: "84"
+  created_at: 2011-05-09 06:11:21.922746
+  text: "  edited page <a href='/staff/archives/5/pages/63/edit'>Completed Projects</a> in <a href='/staff/archives/qualitative'>Qualitative</a>."
+  user_id: "1"
+  category: page
+inkling_logs_085: 
+  id: "85"
+  created_at: 2011-05-09 06:11:21.963795
+  text: "  edited page <a href='/staff/archives/2/pages/68/edit'>HCCDA</a> in <a href='/staff/archives/historical'>Historical</a>."
+  user_id: "1"
+  category: page

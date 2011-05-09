@@ -69,7 +69,7 @@ end
 
 task :deploy_log, :roles => :app do
   run "touch #{current_path}/tmp/deploy-log.txt"
-  run "echo \"Deployed at #{Time.now.strftime('%Y-%m-%d %I:%M')}\" > #{current_path}/tmp/deploy-log.txt"
+  run "echo \"Deployed #{branch} at #{Time.now.strftime('%Y-%m-%d %I:%M')}\" > #{current_path}/tmp/deploy-log.txt"
 end
 
 task :refresh_theme, :roles => :app do

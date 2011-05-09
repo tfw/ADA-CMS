@@ -6,14 +6,14 @@ namespace :db do
     include FileUtils
     
     sql = "SELECT * FROM %s"
-    skip_tables = ["schema_migrations", "sessions"]
+    skip_tables = ["schema_migrations", "sessions", "inkling_themes"]
     ActiveRecord::Base.establish_connection
     tables = ENV['FIXTURES'] ? ENV['FIXTURES'].split(/,/) : ActiveRecord::Base.connection.tables - skip_tables
     puts "\n\n #{tables} \n\n"
     
     tables.each do |table_name|
       i = "000"
-      system("mkdir tmp/fixtures")
+      system("mkdir tmp/fixtures") unless File.exist?("tmp/fixtures")
       File.open("#{RAILS_ROOT}/tmp/fixtures/#{table_name}.yml", 'w') do |file|
         data = ActiveRecord::Base.connection.select_all(sql % table_name)
         file.write data.inject({}) { |hash, record|
