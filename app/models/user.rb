@@ -29,7 +29,6 @@ class User < ActiveRecord::Base
   end
 
   def openid_fields=(fields)
-    puts "------- #{fields}"
     fields.each do |key, value|
       # Some AX providers can return multiple values per key
       if value.is_a? Array
@@ -40,7 +39,6 @@ class User < ActiveRecord::Base
       when 'email', 'http://users.ada.edu.au/email'
         self.email = value
       when 'http://users.ada.edu.au/role'
-        puts "bingo! - #{value}"
         self.roles << Inkling::Role.find_or_create_by_name(value) #refactor this! Shouldn't automatically create roles
       else
         logger.error "Unknown OpenID field: #{key}"

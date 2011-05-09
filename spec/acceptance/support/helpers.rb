@@ -59,10 +59,6 @@ module HelperMethods
   end
 
   def sign_in(user)
-    # visit '/'
-    # fill_in('user_identity_url', :with => user.identity_url)
-    # click_button('LOG IN')
-    # post("/users/sign_in", 'identity_url' => '#{OPENID_SERVER}/#{user.identity_url}?openid.success=true')
     login_as user
     user.openid_fields=({"http://users.ada.edu.au/role" => user.roles.first.name})
   end
