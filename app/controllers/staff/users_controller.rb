@@ -1,6 +1,6 @@
 class Staff::UsersController < Staff::BaseController
   inherit_resources                                                                                     
-  defaults :resource_class => UserReport, :instance_name => 'user'
+  defaults :resource_class => User, :instance_name => 'user'
   
   def show
     show! do 

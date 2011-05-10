@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   end  
   #abstract into inkling helper END
   
+  validates_uniqueness_of :identity_url
+  
   has_many :pages, :foreign_key => "author_id"
   has_many :news, :foreign_key => "user_id"
   has_many :archive_study_integrations, :foreign_key => "user_id"
@@ -20,7 +22,9 @@ class User < ActiveRecord::Base
   attr_accessible :identity_url
 
   def self.build_from_identity_url(identity_url)
-    new({:identity_url => identity_url})
+    #first, try to locate existing user
+    openid_user = User.find_by_identity_url(identity_url)
+    openid_user ||= new({:identity_url => identity_url})
   end
 
   def self.openid_optional_fields
@@ -47,7 +51,8 @@ class User < ActiveRecord::Base
         logger.error "Unknown OpenID field: #{key}"
       end
     end
-    
+
+    save! if self.changed? 
     UserObserver.re_enters(self)
   end
   

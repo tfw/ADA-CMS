@@ -13,7 +13,7 @@ Ada::Application.routes.draw do
     resources :activity_logs, :only => :index
     resources :ddi_mappings
     resources :users, :only => [:index, :show]
-    resources :user_reports, :only => [:index, :show], :controller => :users
+    # resources :users, :only => [:index, :show], :controller => :users
 
     get 'site_resources', :to => "site_resources#index" #temporary 
     # get 'users', :to => "users#index" #temporary 

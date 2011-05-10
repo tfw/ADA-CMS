@@ -24,7 +24,7 @@
 					<% end %>
 				<% else %>
 					<form action="<%= logout_path %>" method="get" enctype="multipart/form-data" name="form2" class="formtastic">
-						<div class="logged_in"><span><%= current_user.roles.first.name %>:</span><%= current_user.email %><%= link_to 'view profile', staff_user_report_path(current_user) %></div>
+						<div class="logged_in"><span><%= current_user.roles.first.name %>:</span><%= current_user.email %><%= link_to 'view profile', staff_user_path(current_user) %></div>
 						<input type="submit" alt="log out" value="LOG OUT" id="logout_button" />
 	         </form>
 				<% end %>
