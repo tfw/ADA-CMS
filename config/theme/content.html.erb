@@ -16,7 +16,7 @@
 				<% if current_user.nil? %>
 					<h1>USER Log-in </h1>
 					<%= form_for(:user, :url => new_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
-						<input type="text" name="user[identity_url]" id="user_identity_url" value="http://178.79.149.181:81/user/ ..."/>  
+						<input type="text" name="user[identity_url]" id="user_identity_url" />  
             <input type="submit" alt="Log In" value="LOG IN" id="enter_button" />
             <input type="submit" alt="register" value="register" id="register_button"/>
 						

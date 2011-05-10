@@ -40,6 +40,10 @@ class User < ActiveRecord::Base
         self.email = value
       when 'http://users.ada.edu.au/role'
         self.roles << Inkling::Role.find_or_create_by_name(value) #refactor this! Shouldn't automatically create roles
+      when 'http://axschema.org/namePerson/first'
+        self.firstname = value
+      when 'http://axschema.org/namePerson/last'
+        self.surname = value        
       else
         logger.error "Unknown OpenID field: #{key}"
       end

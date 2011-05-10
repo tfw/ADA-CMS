@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ANUSF/OpenID-Client-Engine.git
-  revision: 43731c48279a30494dbe76643be0eae04c56139a
+  revision: 086ea749534344e304058e9e16f04a8fd6e8dcd5
   specs:
     openid_client (0.1.0)
       devise
@@ -31,12 +31,6 @@ GIT
       jeweler
       rails (>= 3.0.3)
       rails
-
-GIT
-  remote: https://github.com/roman/rots.git
-  revision: babb5559aae8914556da528147b6649b9c48f48c
-  specs:
-    rots (0.2.1)
 
 GEM
   remote: http://rubygems.org/
@@ -162,7 +156,7 @@ GEM
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
     nokogiri (1.4.4)
-    orm_adapter (0.0.4)
+    orm_adapter (0.0.5)
     paperclip (2.3.8)
       activerecord
       activesupport
@@ -263,8 +257,8 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.27)
-    warden (1.0.3)
-      rack (>= 1.0.0)
+    warden (1.0.4)
+      rack (>= 1.0)
     will_paginate (3.0.pre2)
     xpath (0.1.3)
       nokogiri (~> 1.3)
@@ -300,7 +294,6 @@ DEPENDENCIES
   pg
   rails (= 3.0.7)
   ratom
-  rots!
   rspec-core (>= 2.5.0)
   rspec-rails (>= 2.5.0)
   ruby-debug19
