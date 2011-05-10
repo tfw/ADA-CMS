@@ -24,8 +24,7 @@ class User < ActiveRecord::Base
   end
 
   def self.openid_optional_fields
-    ['email', 'http://users.ada.edu.au/email',
-     'http://users.ada.edu.au/role']
+    ['email', 'http://users.ada.edu.au/email', 'http://users.ada.edu.au/role', 'http://axschema.org/namePerson/first', 'http://axschema.org/namePerson/last']
   end
 
   def openid_fields=(fields)
