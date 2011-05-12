@@ -2,7 +2,7 @@ require 'bundler/capistrano' #use bundler's support for capistrano to make it ea
 require 'capistrano/ext/multistage'
 
 set :application, "Australian Data Archives Website"
-set :repository,  "git@adar.unfuddle.com:adar/ada.git"
+set :repository,  'git@github.com:ANUSF/ADA-CMS.git'
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
