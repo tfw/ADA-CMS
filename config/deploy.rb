@@ -1,11 +1,10 @@
-require 'bundler/capistrano' #use bundler's support for capistrano to make it easy
+require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
 
 set :application, "Australian Data Archives Website"
 set :repository,  'git@github.com:ANUSF/ADA-CMS.git'
 
 set :scm, :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :deploy_via, :remote_cache
 
 # role :web, "ada"                          # Your HTTP server, Apache/etc
@@ -26,10 +25,7 @@ ssh_options[:compression] = false
 
 # set :branch, "master"
 
-# If you are using Passenger mod_rails uncomment this:
-# if you're still using the script/reapear helper you will need
-# these http://github.com/rails/irs_process_scripts
-
+# The restart procedure for Passenger
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
@@ -42,15 +38,14 @@ set(:branch) do
   Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
 end
 
-desc "generate a new database.yml"
-task :generate_database_yml, :roles => :app do
-  
-  # buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'postgres', :password => "test123", :encoding => 'unicode'}}
-  buffer = {"#{rails_env}" => {'database' => "ada_#{rails_env}", 'adapter' => 'postgresql', 'username' => 'deploy', 'password' => '2d2d3pl0y', 'encoding' => 'unicode'}}
-  put YAML::dump(buffer), "#{current_path}/config/database.yml", :mode => 0664
+desc "copy the database configuration to the server"
+task :copy_database_yml, :roles => :app do
+  data = File.read("#{database_config_path}/database.yml")
+  put data, "#{shared_path}/database.yml", :mode => 0640
 end
 
-after 'deploy:update', :generate_database_yml
+after 'deploy:setup', :copy_database_yml
+
 after 'deploy:update', :symlinks
 after 'deploy:update', :deploy_log
 after 'deploy:update', :refresh_theme
@@ -63,8 +58,9 @@ task :echo_ruby_env do
 end
 
 task :symlinks, :roles => :app do
-  run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
+  #run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
   run "ln -nfs #{shared_path}/solr #{current_path}/solr"  
+  run "ln -nfs #{shared_path}/database.yml #{current_path}/config/"  
 end
 
 task :deploy_log, :roles => :app do
