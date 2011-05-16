@@ -48,3 +48,5 @@ Ada::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 end
+
+OPENID_SERVER='http://178.79.149.181:81' # using testada for now
