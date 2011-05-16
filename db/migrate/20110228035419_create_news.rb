@@ -11,7 +11,7 @@ class CreateNews < ActiveRecord::Migration
       t.datetime :publish_at
       t.timestamps
     end
-    add_foreign_key(:news, :user_id, :inkling_users)
+    add_foreign_key(:news, :user_id, :users)
     add_index(:news, :user_id)
 
     create_table :news_archives do |t|

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110331012142) do
+ActiveRecord::Schema.define(:version => 20110328234346) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -70,10 +70,11 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "resource_file_name"
     t.string   "resource_content_type"
     t.integer  "resource_file_size"
+    t.integer  "archive_id"
+    t.integer  "integer"
     t.datetime "resource_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "archive_id"
   end
 
   add_index "documents", ["title"], :name => "index_documents_on_title", :unique => true
@@ -85,10 +86,11 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "resource_file_name"
     t.string   "resource_content_type"
     t.integer  "resource_file_size"
+    t.integer  "archive_id"
+    t.integer  "integer"
     t.datetime "resource_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "archive_id"
   end
 
   add_index "images", ["title"], :name => "index_images_on_title", :unique => true
@@ -109,7 +111,7 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
 
   create_table "inkling_feeds", :force => true do |t|
     t.datetime "created_at", :null => false
-    t.integer  "user_id",    :null => false
+    t.string   "authors"
     t.string   "title",      :null => false
     t.string   "format",     :null => false
     t.string   "source",     :null => false
@@ -117,10 +119,10 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
   end
 
   create_table "inkling_logs", :force => true do |t|
-    t.datetime "created_at"
+    t.datetime "created_at", :null => false
     t.text     "text",       :null => false
-    t.integer  "user_id"
     t.string   "category",   :null => false
+    t.integer  "user_id"
   end
 
   create_table "inkling_paths", :force => true do |t|
@@ -165,22 +167,6 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "klass_name"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "inkling_users", :force => true do |t|
-    t.string   "identity_url"
-    t.string   "remember_token"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",       :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "username"
-    t.string   "firstname"
-    t.string   "surname"
   end
 
   create_table "news", :force => true do |t|

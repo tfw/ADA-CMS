@@ -22,4 +22,8 @@ class NewsArchive < ActiveRecord::Base
   def ymd
     news.updated_at.strftime("%Y/%m/%d")
   end
+  
+  def to_feedable
+    {:title => news.title, :url => path.slug, :updated_at => created_at, :text => news.body}
+  end
 end

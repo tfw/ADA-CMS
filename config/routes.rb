@@ -55,7 +55,8 @@ Ada::Application.routes.draw do
   inkling_match(:news_archives)
   inkling_match(:documents)
   inkling_match(:images)
-
+  inkling_match("inkling/feeds")
+  
   # user_root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
 end

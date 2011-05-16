@@ -1,0 +1,16 @@
+require File.dirname(__FILE__) + '/acceptance_helper'
+
+feature "serving out feeds" do
+  
+  scenario "requesting the url of a feed should deliver a feed document" do
+    archive = Archive.make
+    news = News.make
+    news_archive = NewsArchive.create!(:archive => archive, :news => news)
+    feed = Inkling::Feed.create!(:title => "#{archive.name} Atom Feed", :format => "Inkling::Feeds::Atom", :source => "NewsArchiveFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
+    puts "****** #{feed.path.slug}" 
+    visit feed.path.slug
+    
+    page.status_code.should == 200
+    page.should have_content(news.body)
+  end
+end
