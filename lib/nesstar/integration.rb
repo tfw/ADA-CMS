@@ -28,9 +28,10 @@ module Nesstar
 
     #call this from the client to run the integration.
     def self.run
-      @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
+      @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/", "use_ruby_treechecker" => false)
       @worker = Ruote::Worker.new(@storage)
       @engine = Ruote::Engine.new(@worker)
+      # @engine.context['use_ruby_treechecker'] = false
 
       register_workflow_participants(@engine)
 
