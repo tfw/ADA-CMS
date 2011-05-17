@@ -38,19 +38,27 @@ set(:branch) do
   Capistrano::CLI.ui.ask "Open the hatch door please HAL: (specify a tag name to deploy):"
 end
 
+after 'deploy:setup', :create_extra_dirs
+after 'deploy:setup', :copy_database_yml
+
+before 'deploy:update_code', :echo_ruby_env
+
+after 'deploy:update', :symlinks
+after 'deploy:update', :deploy_log
+after 'deploy:update', :refresh_theme
+
+desc "create additional shared directories during setup"
+task :create_extra_dirs, :roles => :app do
+  run "mkdir -p #{shared_path}/inkling"
+  run "mkdir -p #{shared_path}/solr"
+end
+
 desc "copy the database configuration to the server"
 task :copy_database_yml, :roles => :app do
   database_config_path = Capistrano::CLI.ui.ask "Specify a database configuration file to copy to the server:"
   data = File.read("#{database_config_path}")
   put data, "#{shared_path}/database.yml", :mode => 0640
 end
-
-after 'deploy:setup', :copy_database_yml
-
-after 'deploy:update', :symlinks
-after 'deploy:update', :deploy_log
-after 'deploy:update', :refresh_theme
-before 'deploy:update_code', :echo_ruby_env
 
 task :echo_ruby_env do
   puts "Checking ruby env ..."
@@ -59,7 +67,7 @@ task :echo_ruby_env do
 end
 
 task :symlinks, :roles => :app do
-  #run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
+  run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/inkling"
   run "ln -nfs #{shared_path}/solr #{current_path}/solr"  
   run "ln -nfs #{shared_path}/database.yml #{current_path}/config/"  
 end
