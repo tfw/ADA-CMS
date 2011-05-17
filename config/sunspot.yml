@@ -1,6 +1,6 @@
 production:
   solr:
-    hostname: localhost
+    hostname: falo.anu.edu.au
     port: 8983
     log_level: WARNING
 
