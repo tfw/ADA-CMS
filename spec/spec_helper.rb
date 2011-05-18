@@ -49,9 +49,7 @@ RSpec.configure do |config|
   config.before(:each, :type => :acceptance) do
     # ::Sunspot.session = ::Sunspot.session.original_session
     Sham.reset(:before_each) 
-    
     DatabaseCleaner.start
-    
     ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    

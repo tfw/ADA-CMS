@@ -60,24 +60,25 @@ def make_user(role_name)
 end
 
 Page.blueprint do 
-  archive # {Archive.make}
   title Sham.name
-  author # {(User.make)}
-  # author_id {(User.make).id}
+  author {(User.make)}
+  author_id {(User.make).id}
+  archive {Archive.make}
+  archive_id  {(Archive.make).id}
   link_title Sham.title
   description Sham.description
   body Sham.body
 end
 
 ArchiveNews.blueprint do
-  # Is this enough? What about :news?
-  archive {Archive.make}
+  news
+  archive
 end
 
 News.blueprint do
   title Sham.name
-  user # {(User.make)}
-  # user_id {(User.make).id}
+  user {(User.make)}
+  user_id {(User.make).id}
   body Sham.body
 end
 
