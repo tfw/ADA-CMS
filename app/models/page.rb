@@ -16,10 +16,10 @@ class Page < ActiveRecord::Base
 
   validate :unique_archive_and_link_combination, :if => "self.archive"
   validate :same_archive_as_parent
-  validates_presence_of :archive
-  validates_presence_of :author
-  validates_presence_of :link_title
-  validates_presence_of :partial
+  # validates_presence_of :author
+  # # validates_presence_of :archive
+  # validates_presence_of :link_title
+  # validates_presence_of :partial
 
   PARTIALS = {"Default" => "/pages/default_page",
    "Home" => "/pages/home_page",
