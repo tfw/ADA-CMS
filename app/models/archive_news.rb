@@ -1,7 +1,7 @@
 # The connection between a news items and an archive.
 # Each news item must be mapped to one or more archives.
 
-class ArchiveNws < ActiveRecord::Base
+class ArchiveNews < ActiveRecord::Base
   include Inkling::Util::Slugs, ContentPathIncludesArchive
 
   acts_as_inkling 'ArchiveNews'

@@ -20,14 +20,14 @@ class CreateNews < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_foreign_key(:news_archives, :archive_id, :archives)
-    add_foreign_key(:news_archives, :news_id, :news)
-    add_index(:news_archives, [:news_id, :archive_id])
-    add_index(:news_archives, [:archive_id, :news_id])
+    add_foreign_key(:archive_news, :archive_id, :archives)
+    add_foreign_key(:archive_news, :news_id, :news)
+    add_index(:archive_news, [:news_id, :archive_id])
+    add_index(:archive_news, [:archive_id, :news_id])
   end
 
   def self.down
-    drop_table :news_archives
+    drop_table :archive_news
     drop_table :news
   end
 end

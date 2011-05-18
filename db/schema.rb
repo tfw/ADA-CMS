@@ -10,11 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20110517233832) do
-=======
-ActiveRecord::Schema.define(:version => 20110517034202) do
->>>>>>> ruote_upgrade
+
+  create_table "archive_news", :force => true do |t|
+    t.integer  "news_id"
+    t.integer  "archive_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "archive_news", ["archive_id", "news_id"], :name => "index_archive_news_on_archive_id_and_news_id"
+  add_index "archive_news", ["news_id", "archive_id"], :name => "index_archive_news_on_news_id_and_archive_id"
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -68,7 +74,6 @@ ActiveRecord::Schema.define(:version => 20110517034202) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
   create_table "categorizations", :force => true do |t|
     t.integer  "category_id"
     t.integer  "study_id"
@@ -76,8 +81,6 @@ ActiveRecord::Schema.define(:version => 20110517034202) do
     t.datetime "updated_at"
   end
 
-=======
->>>>>>> ruote_upgrade
   create_table "ddi_mappings", :force => true do |t|
     t.string   "ddi"
     t.string   "human_readable"
@@ -204,17 +207,6 @@ ActiveRecord::Schema.define(:version => 20110517034202) do
   end
 
   add_index "news", ["user_id"], :name => "index_news_on_user_id"
-
-  create_table "news_archives", :force => true do |t|
-    t.integer  "news_id"
-    t.integer  "archive_id"
-    t.string   "foo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "news_archives", ["archive_id", "news_id"], :name => "index_news_archives_on_archive_id_and_news_id"
-  add_index "news_archives", ["news_id", "archive_id"], :name => "index_news_archives_on_news_id_and_archive_id"
 
   create_table "pages", :force => true do |t|
     t.string   "title",                           :null => false

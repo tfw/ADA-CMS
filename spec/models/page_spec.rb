@@ -6,6 +6,7 @@ describe Page do
   describe "validations" do
     context "archive and page names" do
       it "saves pages with unique archive and page name combos" do
+        debugger
         page = Page.make
         page.errors.size.should == 0
       end
