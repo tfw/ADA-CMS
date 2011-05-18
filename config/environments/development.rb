@@ -30,5 +30,5 @@ Paperclip.options[:command_path] = "/usr/bin/" if `uname`.strip == "Linux"
 
 # OPENID_SERVER='http://178.79.149.181:81'
 
-OPENID_SERVER='http://falo.anu.edu.au:3001' #olaf's machine
+OPENID_SERVER='http://falo.anu.edu.au:81' #olaf's machine
 
