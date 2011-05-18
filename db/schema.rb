@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110328234346) do
+ActiveRecord::Schema.define(:version => 20110517233832) do
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -51,6 +51,22 @@ ActiveRecord::Schema.define(:version => 20110328234346) do
   create_table "archives", :force => true do |t|
     t.string   "name",       :null => false
     t.string   "slug",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "title",      :null => false
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categorizations", :force => true do |t|
+    t.integer  "category_id"
+    t.integer  "study_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
