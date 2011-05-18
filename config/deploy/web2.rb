@@ -16,5 +16,3 @@ set :user,        "oxd900"
 #set :use_sudo,    true
 set :use_sudo,    false
 set :deploy_to,   "/data/httpd/Rails/ADA-CMS"
-
-set :database_config_path, "#{ENV['HOME']}/etc/ada-cms/web2"
