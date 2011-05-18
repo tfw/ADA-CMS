@@ -69,7 +69,7 @@ Page.blueprint do
   body Sham.body
 end
 
-NewsArchive.blueprint do
+ArchiveNews.blueprint do
   # Is this enough? What about :news?
   archive {Archive.make}
 end

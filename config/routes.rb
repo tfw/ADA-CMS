@@ -49,7 +49,7 @@ Ada::Application.routes.draw do
 
   inkling_match(:archive_studies)
   inkling_match(:pages)
-  inkling_match(:news_archives)
+  inkling_match(:archive_news)
   inkling_match(:documents)
   inkling_match(:images)
   inkling_match("inkling/feeds")

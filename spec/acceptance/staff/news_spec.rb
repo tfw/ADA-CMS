@@ -39,7 +39,7 @@ feature "Creating news" do
     lambda {
       visit(staff_news_path(news_id))
     }.should raise_error
-    NewsArchive.find(:all, :conditions => {:news_id => news_id}).size.should == 0
+    ArchiveNews.find(:all, :conditions => {:news_id => news_id}).size.should == 0
   end
 
 end

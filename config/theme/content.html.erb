@@ -115,7 +115,12 @@
 		  <p> <em><%= deploy_log %></em></p>
 		  <p> &#xA9; Australian Data Archive</p>
       <p><em><%= deploy_log %></em></p>
+<<<<<<< HEAD
 			<p><%= image_tag 'icons/feed.png' %> <a rel="feed" type="application/rss+xml" title="<%= get_atom_feed(@current_archive).title %>" href="<%= get_atom_feed(@current_archive).path.slug %>?format=xml"><%= get_atom_feed(@current_archive).title %></a> </p>
+=======
+
+			<%= image_tag 'icons/rss.png' %> <a rel="feed" type="application/rss+xml" title="<%= get_atom_feed(@current_archive).title %>" href="<%= get_atom_feed(@current_archive).path.slug %>?format=xml"><%= get_atom_feed(@current_archive).title %></a> 
+>>>>>>> ruote_upgrade
     </footer>
 	</section>
 

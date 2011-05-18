@@ -14,10 +14,9 @@ class CreateNews < ActiveRecord::Migration
     add_foreign_key(:news, :user_id, :users)
     add_index(:news, :user_id)
 
-    create_table :news_archives do |t|
+    create_table :archive_news do |t|
       t.integer :news_id, :null => :false
       t.integer :archive_id, :null => :false
-      t.string :foo, :null => :false
       t.timestamps
     end
 
