@@ -1,6 +1,6 @@
-class CreateCategories < ActiveRecord::Migration
+class CreateArchiveCategories < ActiveRecord::Migration
   def self.up
-    create_table :categories do |t|
+    create_table :archive_catalogues do |t|
       t.string  :title, :null => false
       t.integer :parent_id
       t.integer :lft
@@ -10,6 +10,6 @@ class CreateCategories < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :categories
+    drop_table :archive_catalogues
   end
 end
