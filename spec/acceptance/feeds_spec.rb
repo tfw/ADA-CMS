@@ -8,7 +8,7 @@ feature "serving out feeds" do
     archive_news = ArchiveNews.create!(:archive => archive, :news => news)
     feed = Inkling::Feed.create!(:title => "#{archive.name} Atom Feed", :format => "Inkling::Feeds::Atom", :source => "ArchiveFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
     visit archive_news.path.slug
-    click_link "feed"
+    click_link feed.title
     page.status_code.should == 200
     page.should have_content(news.body)
   end
