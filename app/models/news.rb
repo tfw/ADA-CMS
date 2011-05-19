@@ -2,7 +2,7 @@ class News < ActiveRecord::Base
   include ApplicationHelper
 
   has_many :archive_news, :dependent => :destroy
-  has_many :archives, :through => :archive_news
+  has_many :archives, :through => :archive_news, :class_name => 'Archive', :foreign_key => "archive_id"
   SNIPPET_WORDS = 20
 
   belongs_to :user

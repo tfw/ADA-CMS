@@ -12,6 +12,7 @@ describe News do
 
       it "is in an archive" do
         news = make_news(:archives => 1)
+        # debugger
         news.archives.size.should == 1
       end
 
