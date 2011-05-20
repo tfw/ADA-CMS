@@ -79,7 +79,8 @@ module Nesstar
         children = []
 
         for item in node.children
-          children << {:resource => item.attribute('resource'), :position => item.name}
+          next if item.attributes.empty?
+          children << {:resource => item.attribute('resource').text, :position => item.name.gsub("_", "")}
         end
         
         children
