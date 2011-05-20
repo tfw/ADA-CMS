@@ -45,24 +45,24 @@ module Nesstar
             participant :ref => 'download_catalogue_tree' 
           end
 
-          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-             participant :ref => 'download_study' 
-           end
-         
-           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-             participant :ref => 'download_related_materials' 
-           end
-         
-           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-             participant :ref => 'download_variables' 
-           end
-                 
-           participant :ref => 'convert_related_materials' 
-           participant :ref => 'convert_variables' 
-         
-           participant :ref => 'ada_archive_contains_all_studies' 
-           participant :ref => 'log_run'           
-         end
+         #  concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+         #     participant :ref => 'download_study' 
+         #   end
+         # 
+         #   concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+         #     participant :ref => 'download_related_materials' 
+         #   end
+         # 
+         #   concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+         #     participant :ref => 'download_variables' 
+         #   end
+         #         
+         #   participant :ref => 'convert_related_materials' 
+         #   participant :ref => 'convert_variables' 
+         # 
+         #   participant :ref => 'ada_archive_contains_all_studies' 
+         #   participant :ref => 'log_run'           
+         # end
  
         process_definition :name => 'initialize_directories' do
           sequence do
@@ -71,7 +71,11 @@ module Nesstar
             participant :ref => 'mkdir', :dir => $studies_xml_dir            
             participant :ref => 'mkdir', :dir => $related_xml_dir
             participant :ref => 'mkdir', :dir => $variables_xml_dir
-            participant :ref => 'mkdir', :dir => $catalogues_xml_dir            
+            participant :ref => 'mkdir', :dir => $catalogues_xml_dir        
+            
+            Archive.all.each do |a|
+              participant :ref => 'mkdir', :dir => "#{$catalogues_xml_dir}/#{a.slug}"                      
+            end    
           end
         end
       end
