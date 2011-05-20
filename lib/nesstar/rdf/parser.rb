@@ -64,6 +64,27 @@ module Nesstar
         variables        
       end
       
+      #takes the label from a catalogue file
+      def self.parse_catalogue(xmlfile)
+        file = File.read(xmlfile)
+        doc = Nokogiri::XML::Document.parse(file)
+        label = doc.xpath("//s:label")
+        {:label => label.text}
+      end
+      
+      def self.parse_catalogue_children(xmlfile)
+        file = File.read(xmlfile)
+        doc = Nokogiri::XML::Document.parse(file)
+        node = doc.xpath("//r:Bag")
+        children = []
+
+        for item in node.children
+          children << {:resource => item.attribute('resource'), :position => item.name}
+        end
+        
+        children
+      end
+      
       
       def self.hasherize_attributes(node, hash)
         node.attributes.each do |a, v|

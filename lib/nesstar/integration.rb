@@ -45,24 +45,24 @@ module Nesstar
             participant :ref => 'download_catalogue_tree' 
           end
 
-         #  concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-         #     participant :ref => 'download_study' 
-         #   end
-         # 
-         #   concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-         #     participant :ref => 'download_related_materials' 
-         #   end
-         # 
-         #   concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-         #     participant :ref => 'download_variables' 
-         #   end
-         #         
-         #   participant :ref => 'convert_related_materials' 
-         #   participant :ref => 'convert_variables' 
-         # 
-         #   participant :ref => 'ada_archive_contains_all_studies' 
-         #   participant :ref => 'log_run'           
-         # end
+          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+             participant :ref => 'download_study' 
+           end
+         
+           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+             participant :ref => 'download_related_materials' 
+           end
+         
+           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+             participant :ref => 'download_variables' 
+           end
+                 
+           participant :ref => 'convert_related_materials' 
+           participant :ref => 'convert_variables' 
+         
+           participant :ref => 'ada_archive_contains_all_studies' 
+           participant :ref => 'log_run'           
+         end
  
         process_definition :name => 'initialize_directories' do
           sequence do
@@ -103,17 +103,21 @@ module Nesstar
 
       engine.register_participant 'load_archive_catalogue_integrations' do |workitem|
         ids = []
-        
-        ArchiveCatalogueIntegration.all.each {|i| ids << i.id}
-        
+        ArchiveCatalogueIntegration.all.each {|i| ids << i.id}        
         workitem.fields['archive_catalogue_integrations'] = ids
       end
       
       engine.register_participant 'download_catalogue_tree' do |workitem|
         archive_catalogue_integration = ArchiveCatalogueIntegration.find(workitem.fields['archive_catalogue_integration_id'])
+        archive = archive_catalogue_integration.archive
+        file = "#{$catalogues_xml_dir}#{archive.slug}/#{archive_catalogue_integration.label}.xml"
         
+        `curl -o #{file} --compressed "#{archive_catalogue_integration.url}"`
+        label_hash = Nesstar::RDF::Parser.parse_catalogue("#{file}")        
         
-        puts archive_catalogue_integration.url
+        children_file = "#{$catalogues_xml_dir}#{archive.slug}/#{archive_catalogue_integration.label}@children.xml"
+        `curl -o #{children_file} --compressed "#{archive_catalogue_integration.url}@children"`
+        children = Nesstar::RDF::Parser.parse_catalogue_children("#{children_file}")        
       end
       
       ## load_study_ids
