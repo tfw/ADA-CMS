@@ -37,28 +37,33 @@ module Nesstar
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
           subprocess :ref => 'initialize_directories'
+          participant :ref => 'load_archive_catalogue_integrations'          
           participant :ref => 'load_study_integrations'
-          cancel_process :if => '${f:study_ids.size} == 0'
+          # cancel_process :if => '${f:study_ids.size} == 0'
 
-          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            participant :ref => 'download_study' 
+          concurrent_iterator :on_field => 'archive_catalogue_integrations', :to_f => "archive_catalogue_integration_id" do
+            participant :ref => 'download_catalogue_tree' 
           end
 
           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            participant :ref => 'download_related_materials' 
-          end
-
-          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            participant :ref => 'download_variables' 
-          end
-
-          participant :ref => 'convert_related_materials' 
-          participant :ref => 'convert_variables' 
-
-          participant :ref => 'ada_archive_contains_all_studies' 
-          participant :ref => 'log_run'           
-        end
-
+             participant :ref => 'download_study' 
+           end
+         
+           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+             participant :ref => 'download_related_materials' 
+           end
+         
+           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+             participant :ref => 'download_variables' 
+           end
+                 
+           participant :ref => 'convert_related_materials' 
+           participant :ref => 'convert_variables' 
+         
+           participant :ref => 'ada_archive_contains_all_studies' 
+           participant :ref => 'log_run'           
+         end
+ 
         process_definition :name => 'initialize_directories' do
           sequence do
             participant :ref => 'initialize_directory', :dir => $nesstar_dir
@@ -66,6 +71,7 @@ module Nesstar
             participant :ref => 'mkdir', :dir => $studies_xml_dir            
             participant :ref => 'mkdir', :dir => $related_xml_dir
             participant :ref => 'mkdir', :dir => $variables_xml_dir
+            participant :ref => 'mkdir', :dir => $catalogues_xml_dir            
           end
         end
       end
@@ -91,6 +97,21 @@ module Nesstar
         mkdir(workitem.fields['params']['dir'])
       end
 
+      engine.register_participant 'load_archive_catalogue_integrations' do |workitem|
+        ids = []
+        
+        ArchiveCatalogueIntegration.all.each {|i| ids << i.id}
+        
+        workitem.fields['archive_catalogue_integrations'] = ids
+      end
+      
+      engine.register_participant 'download_catalogue_tree' do |workitem|
+        archive_catalogue_integration = ArchiveCatalogueIntegration.find(workitem.fields['archive_catalogue_integration_id'])
+        
+        
+        puts archive_catalogue_integration.url
+      end
+      
       ## load_study_ids
       engine.register_participant 'load_study_integrations' do |workitem|
         dataset_urls = []

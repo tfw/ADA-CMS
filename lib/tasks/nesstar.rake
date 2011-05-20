@@ -72,5 +72,8 @@ task :nesstar4 => :environment do
 #  archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "01233", :archive => Archive.international, :user_id => Inkling::User.first.id)
   archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "01118-population", :archive => Archive.international, :user_id => Inkling::User.first.id)
   archive_study_integration = ArchiveStudyIntegration.create!(:ddi_id => "01088", :archive => Archive.international, :user_id => Inkling::User.first.id)
-  
+end
+
+task :catalogues => :environment do
+  ArchiveCatalogueIntegration.create!(:archive => Archive.international, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/international")
 end

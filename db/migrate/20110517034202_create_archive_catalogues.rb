@@ -1,7 +1,7 @@
-class CreateArchiveCategories < ActiveRecord::Migration
+class CreateArchiveCatalogues < ActiveRecord::Migration
   def self.up
     create_table :archive_catalogues do |t|
-      t.string  :title, :null => false
+      t.string  :title, :null => false 
       t.integer :parent_id
       t.integer :lft
       t.integer :rgt
