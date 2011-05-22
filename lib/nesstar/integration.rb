@@ -108,6 +108,8 @@ module Nesstar
       end
       
       engine.register_participant 'download_catalogue_tree' do |workitem|
+        workitem.fields['catalogues_oustanding'] ||= Set.new
+        
         archive_catalogue_integration = ArchiveCatalogueIntegration.find(workitem.fields['archive_catalogue_integration_id'])
         archive = archive_catalogue_integration.archive
         file = "#{$catalogues_xml_dir}#{archive.slug}/#{archive_catalogue_integration.label}.xml"
@@ -117,7 +119,9 @@ module Nesstar
         
         children_file = "#{$catalogues_xml_dir}#{archive.slug}/#{archive_catalogue_integration.label}@children.xml"
         `curl -o #{children_file} --compressed "#{archive_catalogue_integration.url}@children"`
-        children = Nesstar::RDF::Parser.parse_catalogue_children("#{children_file}")        
+        children = Nesstar::RDF::Parser.parse_catalogue_children("#{children_file}")
+        puts children
+        # workitem.fields['catalogues_oustanding'] << 
       end
       
       ## load_study_ids
