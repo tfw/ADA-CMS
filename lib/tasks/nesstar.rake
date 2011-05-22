@@ -65,5 +65,5 @@ task :sample_study => :environment do
 end
 
 task :catalogs => :environment do
-  ArchiveCatalogIntegration.create!(:archive => Archive.indigenous, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/indigenous@dataset")
+  ArchiveCatalogIntegration.create!(:archive => Archive.indigenous, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/indigenous")
 end

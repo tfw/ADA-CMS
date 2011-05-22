@@ -9,6 +9,6 @@ module Nesstar
     $studies_xml_dir = "#{$xml_dir}studies/"
     $related_xml_dir = "#{$xml_dir}related/"
     $variables_xml_dir = "#{$xml_dir}variables/"
-    $catalogues_xml_dir = "#{$xml_dir}catalogues/"
+    $catalogs_xml_dir = "#{$xml_dir}catalogs/"
   end
 end

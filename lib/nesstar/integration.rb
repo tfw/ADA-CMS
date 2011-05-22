@@ -154,7 +154,7 @@ module Nesstar
           archive = catalog.archive
           file = "#{$catalogs_xml_dir}#{archive.slug}/#{catalog.label}@datasets.xml" #request all datasets referenced by this catalog
 
-          `curl -o #{file} --compressed "#{archive_catalog_integration.url}@datasets"`
+          `curl -o #{file} --compressed "#{catalog.url}@datasets"`
           studies_in_catalog = Nesstar::RDF::Parser.parse_catalog_children("#{file}")
           
           for study in studies_in_catalog
