@@ -1,4 +1,4 @@
-class CreateArchiveCatalogueNode < ActiveRecord::Migration
+class CreateArchiveCatalogNode < ActiveRecord::Migration
   def self.up
     create_table :archive_catalogue_nodes do |t|
       t.integer :archive_catalogue_id

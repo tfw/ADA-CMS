@@ -37,31 +37,32 @@ module Nesstar
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
           subprocess :ref => 'initialize_directories'
-          participant :ref => 'load_archive_catalogue_integrations'          
+          participant :ref => 'load_archive_catalog_integrations'          
           participant :ref => 'load_study_integrations'
           # cancel_process :if => '${f:study_ids.size} == 0'
-
-          concurrent_iterator :on_field => 'archive_catalogue_integrations', :to_f => "archive_catalogue_integration_id" do
-            participant :ref => 'download_catalogue_tree' 
-          end
 
           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
              participant :ref => 'download_study' 
            end
-         
+
            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
              participant :ref => 'download_related_materials' 
            end
-         
+
            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
              participant :ref => 'download_variables' 
            end
-                 
+
            participant :ref => 'convert_related_materials' 
            participant :ref => 'convert_variables' 
-         
+
            participant :ref => 'ada_archive_contains_all_studies' 
-           participant :ref => 'log_run'           
+
+           concurrent_iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration_id" do
+             participant :ref => 'download_and_convert_catalog_tree' 
+           end
+
+           participant :ref => 'log_run'
          end
  
         process_definition :name => 'initialize_directories' do
@@ -71,10 +72,10 @@ module Nesstar
             participant :ref => 'mkdir', :dir => $studies_xml_dir            
             participant :ref => 'mkdir', :dir => $related_xml_dir
             participant :ref => 'mkdir', :dir => $variables_xml_dir
-            participant :ref => 'mkdir', :dir => $catalogues_xml_dir        
+            participant :ref => 'mkdir', :dir => $Catalogs_xml_dir        
             
             Archive.all.each do |a|
-              participant :ref => 'mkdir', :dir => "#{$catalogues_xml_dir}/#{a.slug}"                      
+              participant :ref => 'mkdir', :dir => "#{$Catalogs_xml_dir}#{a.slug}"                      
             end    
           end
         end
@@ -101,27 +102,25 @@ module Nesstar
         mkdir(workitem.fields['params']['dir'])
       end
 
-      engine.register_participant 'load_archive_catalogue_integrations' do |workitem|
+      engine.register_participant 'load_archive_catalog_integrations' do |workitem|
         ids = []
-        ArchiveCatalogueIntegration.all.each {|i| ids << i.id}        
-        workitem.fields['archive_catalogue_integrations'] = ids
+        ArchiveCatalogIntegration.all.each {|i| ids << i.id}        
+        workitem.fields['archive_catalog_integrations'] = ids
       end
       
-      engine.register_participant 'download_catalogue_tree' do |workitem|
-        workitem.fields['catalogues_oustanding'] ||= Set.new
+      engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
+        archive_Catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
+        archive = archive_Catalog_integration.archive
+        file = "#{$Catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
-        archive_catalogue_integration = ArchiveCatalogueIntegration.find(workitem.fields['archive_catalogue_integration_id'])
-        archive = archive_catalogue_integration.archive
-        file = "#{$catalogues_xml_dir}#{archive.slug}/#{archive_catalogue_integration.label}.xml"
+        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
+        label_hash = Nesstar::RDF::Parser.parse_Catalog("#{file}")        
         
-        `curl -o #{file} --compressed "#{archive_catalogue_integration.url}"`
-        label_hash = Nesstar::RDF::Parser.parse_catalogue("#{file}")        
-        
-        children_file = "#{$catalogues_xml_dir}#{archive.slug}/#{archive_catalogue_integration.label}@children.xml"
-        `curl -o #{children_file} --compressed "#{archive_catalogue_integration.url}@children"`
-        children = Nesstar::RDF::Parser.parse_catalogue_children("#{children_file}")
+        children_file = "#{$Catalogs_xml_dir}#{archive.slug}/#{archive_Catalog_integration.label}@children.xml"
+        `curl -o #{children_file} --compressed "#{archive_Catalog_integration.url}@children"`
+        children = Nesstar::RDF::Parser.parse_Catalog_children("#{children_file}")
         puts children
-        # workitem.fields['catalogues_oustanding'] << 
+        # workitem.fields['Catalogs_oustanding'] << 
       end
       
       ## load_study_ids
@@ -147,6 +146,16 @@ module Nesstar
                                             :archive_study_query => query, :user_id => query.id)
             end
           end
+        end
+        
+        Catalogs = ArchiveCatalogIntegration.all
+        
+        for Catalog in Catalogs
+          archive = Catalog.archive
+          file = "#{$Catalogs_xml_dir}#{archive.slug}/#{Catalog.label}@datasets.xml" #request all datasets referenced by this catalog
+
+          `curl -o #{file} --compressed "#{archive_Catalog_integration.url}@datasets"`
+          label_hash = Nesstar::RDF::Parser.parse_Catalog("#{file}")
         end
         
         workitem.fields['studies_to_download'] = Set.new

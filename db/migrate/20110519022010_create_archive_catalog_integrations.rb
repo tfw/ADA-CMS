@@ -1,4 +1,4 @@
-class CreateArchiveCatalogueIntegrations < ActiveRecord::Migration
+class CreateArchiveCatalogIntegrations < ActiveRecord::Migration
   def self.up
     create_table :archive_catalogue_integrations do |t|
       t.integer :archive_catalogue_id

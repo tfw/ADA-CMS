@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110519022010) do
+ActiveRecord::Schema.define(:version => 20110520013848) do
 
   create_table "archive_catalogue_integrations", :force => true do |t|
     t.integer  "archive_catalogue_id"
@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(:version => 20110519022010) do
     t.string   "url"
     t.string   "url_of_children"
     t.integer  "catalogue_position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "archive_catalogue_nodes", :force => true do |t|
+    t.integer  "archive_catalogue_id"
+    t.integer  "archive_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -235,7 +242,6 @@ ActiveRecord::Schema.define(:version => 20110519022010) do
     t.string   "study3"
     t.string   "about"
     t.boolean  "published"
-    t.integer  "catalog_position"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "universe"

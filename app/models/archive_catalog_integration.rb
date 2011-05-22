@@ -1,7 +1,7 @@
-class ArchiveCatalogueIntegration < ActiveRecord::Base
+class ArchiveCatalogIntegration < ActiveRecord::Base
   
   belongs_to :archive
-  belongs_to :archive_catalogue
+  belongs_to :archive_catalog
   
   validates_presence_of :archive
 
