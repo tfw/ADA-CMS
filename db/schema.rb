@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(:version => 20110520013848) do
 
-  create_table "archive_catalogue_integrations", :force => true do |t|
+  create_table "archive_catalog_integrations", :force => true do |t|
     t.integer  "archive_catalogue_id"
     t.integer  "archive_id"
     t.string   "url"
@@ -22,14 +22,14 @@ ActiveRecord::Schema.define(:version => 20110520013848) do
     t.datetime "updated_at"
   end
 
-  create_table "archive_catalogue_nodes", :force => true do |t|
+  create_table "archive_catalog_nodes", :force => true do |t|
     t.integer  "archive_catalogue_id"
     t.integer  "archive_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "archive_catalogues", :force => true do |t|
+  create_table "archive_catalogs", :force => true do |t|
     t.string   "title",      :null => false
     t.integer  "parent_id"
     t.integer  "lft"
@@ -68,7 +68,8 @@ ActiveRecord::Schema.define(:version => 20110520013848) do
     t.integer  "study_id"
     t.integer  "archive_study_id"
     t.integer  "archive_study_query_id"
-    t.string   "ddi_id",                 :null => false
+    t.integer  "archive_catalog_integration_id"
+    t.string   "ddi_id",                         :null => false
     t.integer  "archive_id"
     t.integer  "user_id"
     t.datetime "created_at"

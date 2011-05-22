@@ -5,6 +5,7 @@ class CreateArchiveStudyIntegrations < ActiveRecord::Migration
       t.integer :study_id
       t.integer :archive_study_id
       t.integer :archive_study_query_id
+      t.integer :archive_catalog_integration_id
       t.string :ddi_id, :null => false
       t.integer :archive_id, :null => :false
       t.integer :user_id, :null => :false

@@ -72,10 +72,10 @@ module Nesstar
             participant :ref => 'mkdir', :dir => $studies_xml_dir            
             participant :ref => 'mkdir', :dir => $related_xml_dir
             participant :ref => 'mkdir', :dir => $variables_xml_dir
-            participant :ref => 'mkdir', :dir => $Catalogs_xml_dir        
+            participant :ref => 'mkdir', :dir => $catalogs_xml_dir        
             
             Archive.all.each do |a|
-              participant :ref => 'mkdir', :dir => "#{$Catalogs_xml_dir}#{a.slug}"                      
+              participant :ref => 'mkdir', :dir => "#{$catalogs_xml_dir}#{a.slug}"                      
             end    
           end
         end
@@ -116,9 +116,9 @@ module Nesstar
         `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
         label_hash = Nesstar::RDF::Parser.parse_Catalog("#{file}")        
         
-        children_file = "#{$Catalogs_xml_dir}#{archive.slug}/#{archive_Catalog_integration.label}@children.xml"
-        `curl -o #{children_file} --compressed "#{archive_Catalog_integration.url}@children"`
-        children = Nesstar::RDF::Parser.parse_Catalog_children("#{children_file}")
+        children_file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}@children.xml"
+        `curl -o #{children_file} --compressed "#{archive_catalog_integration.url}@children"`
+        children = Nesstar::RDF::Parser.parse_catalog_children("#{children_file}")
         puts children
         # workitem.fields['Catalogs_oustanding'] << 
       end
@@ -148,14 +148,19 @@ module Nesstar
           end
         end
         
-        Catalogs = ArchiveCatalogIntegration.all
+        catalogs = ArchiveCatalogIntegration.all
         
-        for Catalog in Catalogs
-          archive = Catalog.archive
-          file = "#{$Catalogs_xml_dir}#{archive.slug}/#{Catalog.label}@datasets.xml" #request all datasets referenced by this catalog
+        for catalog in catalogs
+          archive = catalog.archive
+          file = "#{$catalogs_xml_dir}#{archive.slug}/#{catalog.label}@datasets.xml" #request all datasets referenced by this catalog
 
-          `curl -o #{file} --compressed "#{archive_Catalog_integration.url}@datasets"`
-          label_hash = Nesstar::RDF::Parser.parse_Catalog("#{file}")
+          `curl -o #{file} --compressed "#{archive_catalog_integration.url}@datasets"`
+          studies_in_catalog = Nesstar::RDF::Parser.parse_catalog_children("#{file}")
+          
+          for study in studies_in_catalog
+            ddi_id = study[:resource].split(".").last
+            ArchiveStudyIntegration.create!(:ddi_id => ddi_id, :archive => catalog.archive, :archive_catalog_integration_id => catalog.id)
+          end
         end
         
         workitem.fields['studies_to_download'] = Set.new

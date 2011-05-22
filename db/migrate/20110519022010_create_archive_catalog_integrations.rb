@@ -1,6 +1,6 @@
 class CreateArchiveCatalogIntegrations < ActiveRecord::Migration
   def self.up
-    create_table :archive_catalogue_integrations do |t|
+    create_table :archive_catalog_integrations do |t|
       t.integer :archive_catalogue_id
       t.integer :archive_id
       t.string :url
@@ -11,6 +11,6 @@ class CreateArchiveCatalogIntegrations < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :archive_catalogue_integrations
+    drop_table :archive_catalog_integrations
   end
 end

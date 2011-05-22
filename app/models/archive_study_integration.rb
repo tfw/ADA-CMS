@@ -9,6 +9,7 @@ class ArchiveStudyIntegration < ActiveRecord::Base
   belongs_to :study
   belongs_to :user
   belongs_to :archive_study
+  belongs_to :archive_catalog_integration
 
   validate :unique_study_and_archive, :message => "There is already an integration for that study."
   
