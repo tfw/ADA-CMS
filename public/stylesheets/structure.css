@@ -37,6 +37,7 @@ header {
 	border-bottom-right-radius: 10px;
 	padding: 10px;
 	margin-right: 40px;
+	position: relative;
 }
 .login h1 {
 	padding-top: 8px;
