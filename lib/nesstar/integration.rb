@@ -37,30 +37,38 @@ module Nesstar
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
           subprocess :ref => 'initialize_directories'
-          participant :ref => 'load_archive_catalog_integrations'          
-          participant :ref => 'load_study_integrations'
-          # cancel_process :if => '${f:study_ids.size} == 0'
-
-          concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-             participant :ref => 'download_study' 
-           end
-
+           participant :ref => 'load_archive_catalog_integrations'          
+           participant :ref => 'load_study_integrations'
+           # cancel_process :if => '${f:study_ids.size} == 0'
+          
            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-             participant :ref => 'download_related_materials' 
+              participant :ref => 'download_study' 
+            end
+           
+            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+            #   participant :ref => 'download_related_materials' 
+            # end
+            #            
+            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+            #   participant :ref => 'download_variables' 
+            # end
+            #            
+            # participant :ref => 'convert_related_materials' 
+            # participant :ref => 'convert_variables' 
+            #            
+            # participant :ref => 'ada_archive_contains_all_studies' 
+            #            
+           cursor do
+             iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration_id" do
+               participant :ref => 'download_and_convert_catalog_tree' 
+             end
+             
+             rewind :if => '${archive_catalog_integrations.size} != 0'
            end
 
-           concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-             participant :ref => 'download_variables' 
-           end
-
-           participant :ref => 'convert_related_materials' 
-           participant :ref => 'convert_variables' 
-
-           participant :ref => 'ada_archive_contains_all_studies' 
-
-           concurrent_iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration_id" do
-             participant :ref => 'download_and_convert_catalog_tree' 
-           end
+           # concurrent_iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration_id" do
+           #   participant :ref => 'download_and_convert_catalog_tree' 
+           # end
 
            participant :ref => 'log_run'
          end
@@ -104,22 +112,51 @@ module Nesstar
 
       engine.register_participant 'load_archive_catalog_integrations' do |workitem|
         ids = []
-        ArchiveCatalogIntegration.all.each {|i| ids << i.id}        
+        ArchiveCatalogIntegration.all.each {|i| ids << i.id}
+        workitem.fields['children_to_parents'] = {} #this hash will hold the relationships to build later on
         workitem.fields['archive_catalog_integrations'] = ids
       end
+
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
-        archive_Catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
-        archive = archive_Catalog_integration.archive
-        file = "#{$Catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
+puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
+        archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
+        workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
+puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
+        
+        archive = archive_catalog_integration.archive
+        file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
+        
+        #does a parent exist for this catalog?
+        parent_id = workitem.fields['children_to_parents'][archive_catalog_integration.url]
         
         `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
-        label_hash = Nesstar::RDF::Parser.parse_Catalog("#{file}")        
+        label_hash = Nesstar::RDF::Parser.parse_catalog("#{file}")
+        catalog = ArchiveCatalog.create!(:title => label_hash[:label], :archive_catalog_integration => archive_catalog_integration)
+        
+        if parent_id
+          node = ArchiveCatalogNode.create!(:archive_catalog => catalog, :parent_id => parent_id)
+        else
+          node = ArchiveCatalogNode.create!(:archive_catalog => catalog)
+        end
         
         children_file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}@children.xml"
         `curl -o #{children_file} --compressed "#{archive_catalog_integration.url}@children"`
         children = Nesstar::RDF::Parser.parse_catalog_children("#{children_file}")
-        puts children
+        
+        for child in children
+          if child[:resource] =~ /fStudy/
+            study = Study.find_by_about(child[:resource])
+            archive_study = study.for_archive(archive)
+            node = ArchiveCatalogNode.create!(:archive_study => archive_study, :parent => node, :catalog_position => child[:position])
+          else
+            integration = ArchiveCatalogIntegration.create(:archive => archive, :url => child[:resource])
+            workitem.fields['archive_catalog_integrations'] << integration.id
+puts "--- #{workitem.fields['archive_catalog_integrations']} ---"
+            workitem.fields['children_to_parents'][integration.url]= node.id #store the parent for future association
+          end
+        end
+        
         # workitem.fields['Catalogs_oustanding'] << 
       end
       

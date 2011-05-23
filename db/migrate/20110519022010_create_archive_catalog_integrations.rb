@@ -4,8 +4,6 @@ class CreateArchiveCatalogIntegrations < ActiveRecord::Migration
       t.integer :archive_catalogue_id
       t.integer :archive_id
       t.string :url
-      t.string :url_of_children
-      t.integer :catalogue_position
       t.timestamps
     end
   end

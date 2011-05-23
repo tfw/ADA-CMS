@@ -200,7 +200,7 @@ GEM
     rufus-cloche (0.1.21)
       rufus-json (>= 0.2.5)
     rufus-dollar (1.0.4)
-    rufus-json (0.2.5)
+    rufus-json (0.2.7)
     rufus-mnemo (1.2.0)
     rufus-scheduler (2.0.9)
       tzinfo (>= 0.3.23)

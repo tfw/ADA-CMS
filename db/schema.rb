@@ -16,24 +16,25 @@ ActiveRecord::Schema.define(:version => 20110520013848) do
     t.integer  "archive_catalogue_id"
     t.integer  "archive_id"
     t.string   "url"
-    t.string   "url_of_children"
-    t.integer  "catalogue_position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "archive_catalog_nodes", :force => true do |t|
-    t.integer  "archive_catalogue_id"
+    t.integer  "archive_catalog_id"
+    t.integer  "archive_study_id"
+    t.integer  "catalog_position"
+    t.integer  "parent_id"
     t.integer  "archive_id"
+    t.integer  "lft"
+    t.integer  "rgt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "archive_catalogs", :force => true do |t|
-    t.string   "title",      :null => false
-    t.integer  "parent_id"
-    t.integer  "lft"
-    t.integer  "rgt"
+    t.string   "title",                       :null => false
+    t.integer  "archive_catalog_integration"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
