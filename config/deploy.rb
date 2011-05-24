@@ -50,7 +50,7 @@ after 'deploy:update', :refresh_theme
 desc "create additional shared directories during setup"
 task :create_extra_dirs, :roles => :app do
   run "mkdir -p #{shared_path}/inkling"
-  run "mkdir -p #{shared_path}/solr/conf"
+  run "mkdir -p #{shared_path}/solr/data"
 end
 
 desc "copy the database configuration to the server"
@@ -68,7 +68,7 @@ end
 
 task :symlinks, :roles => :app do
   run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/"
-  run "ln -nfs #{shared_path}/solr/conf #{current_path}/solr/"  
+  run "ln -nfs #{shared_path}/solr/data #{current_path}/solr/"  
   run "ln -nfs #{shared_path}/database.yml #{current_path}/config/"  
 end
 
