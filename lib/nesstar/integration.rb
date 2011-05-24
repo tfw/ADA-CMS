@@ -115,35 +115,43 @@ module Nesstar
 
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
-# puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
+        debugger
+puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
         archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
         workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
-# puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
+puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
         
         archive = archive_catalog_integration.archive
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
         #does a parent exist for this catalog?
         parent_id = workitem.fields['children_to_parents'][archive_catalog_integration.url]
-        
+puts "---- A"     
         `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
         label_hash = Nesstar::RDF::Parser.parse_catalog("#{file}")
+puts "---- B"     
         
         pre_existing_catalog = ArchiveCatalog.find_by_title_and_archive_catalog_integration_id(label_hash[:label], archive_catalog_integration.id)
+puts "---- C"     
+# debugger        
         catalog = ArchiveCatalog.create!(:title => label_hash[:label], :archive_catalog_integration => archive_catalog_integration) unless pre_existing_catalog
         
         pre_existing_node = ArchiveCatalogNode.find_by_archive_catalog_id(catalog.id)
 
-        if parent_id
-          if pre_existing_node
+        if pre_existing_node
+          if parent_id
             pre_existing_node.parent_id = parent
             pre_existing_node.save!
             node = pre_existing
-          else
-            node = ArchiveCatalogNode.create!(:archive_catalog => catalog, :parent_id => parent_id) 
           end
         else
-          node = ArchiveCatalogNode.create!(:archive_catalog => catalog) unless pre_existing_node
+          if parent_id
+            puts "1 ------------"
+            node = ArchiveCatalogNode.create!(:archive_catalog => catalog, :parent_id => parent_id) 
+          else
+            puts "2 ------------"
+            node = ArchiveCatalogNode.create!(:archive_catalog => catalog)
+          end
         end
         
         children_file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}@children.xml"
@@ -160,6 +168,8 @@ module Nesstar
               pre_existing.catalog_position = child[:position]
               pre_existing.save!
             else
+              puts "3 ------------"
+              
               node = ArchiveCatalogNode.create!(:archive_study => archive_study, :parent => node, :catalog_position => child[:position])
             end
           else
