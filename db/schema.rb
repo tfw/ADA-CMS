@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110331012142) do
+ActiveRecord::Schema.define(:version => 20110517233832) do
+
+  create_table "archive_news", :force => true do |t|
+    t.integer  "news_id"
+    t.integer  "archive_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "archive_news", ["archive_id", "news_id"], :name => "index_archive_news_on_archive_id_and_news_id"
+  add_index "archive_news", ["news_id", "archive_id"], :name => "index_archive_news_on_news_id_and_archive_id"
 
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
@@ -55,6 +65,22 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.datetime "updated_at"
   end
 
+  create_table "categories", :force => true do |t|
+    t.string   "title",      :null => false
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categorizations", :force => true do |t|
+    t.integer  "category_id"
+    t.integer  "study_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "ddi_mappings", :force => true do |t|
     t.string   "ddi"
     t.string   "human_readable"
@@ -70,10 +96,11 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "resource_file_name"
     t.string   "resource_content_type"
     t.integer  "resource_file_size"
+    t.integer  "archive_id"
+    t.integer  "integer"
     t.datetime "resource_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "archive_id"
   end
 
   add_index "documents", ["title"], :name => "index_documents_on_title", :unique => true
@@ -85,10 +112,11 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.string   "resource_file_name"
     t.string   "resource_content_type"
     t.integer  "resource_file_size"
+    t.integer  "archive_id"
+    t.integer  "integer"
     t.datetime "resource_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "archive_id"
   end
 
   add_index "images", ["title"], :name => "index_images_on_title", :unique => true
@@ -109,7 +137,7 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
 
   create_table "inkling_feeds", :force => true do |t|
     t.datetime "created_at", :null => false
-    t.integer  "user_id",    :null => false
+    t.string   "authors"
     t.string   "title",      :null => false
     t.string   "format",     :null => false
     t.string   "source",     :null => false
@@ -117,10 +145,10 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
   end
 
   create_table "inkling_logs", :force => true do |t|
-    t.datetime "created_at"
+    t.datetime "created_at", :null => false
     t.text     "text",       :null => false
-    t.integer  "user_id"
     t.string   "category",   :null => false
+    t.integer  "user_id"
   end
 
   create_table "inkling_paths", :force => true do |t|
@@ -167,22 +195,6 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
     t.datetime "updated_at"
   end
 
-  create_table "inkling_users", :force => true do |t|
-    t.string   "identity_url"
-    t.string   "remember_token"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",       :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "username"
-    t.string   "firstname"
-    t.string   "surname"
-  end
-
   create_table "news", :force => true do |t|
     t.integer  "user_id"
     t.string   "title",                                           :null => false
@@ -195,17 +207,6 @@ ActiveRecord::Schema.define(:version => 20110331012142) do
   end
 
   add_index "news", ["user_id"], :name => "index_news_on_user_id"
-
-  create_table "news_archives", :force => true do |t|
-    t.integer  "news_id"
-    t.integer  "archive_id"
-    t.string   "foo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "news_archives", ["archive_id", "news_id"], :name => "index_news_archives_on_archive_id_and_news_id"
-  add_index "news_archives", ["news_id", "archive_id"], :name => "index_news_archives_on_news_id_and_archive_id"
 
   create_table "pages", :force => true do |t|
     t.string   "title",                           :null => false

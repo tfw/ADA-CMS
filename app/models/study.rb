@@ -78,7 +78,9 @@ class Study < ActiveRecord::Base
     data.delete(:comment)
     study.contact_affiliation = data[:stdyContactAffiliation]
     data.delete(:stdyContactAffiliation)
-
+    study.creation_date = data[:creationDate]
+    data.delete(:creationDate)
+    
     #facet data
     if data[:dataKind]      
       study.data_kind = data[:dataKind]

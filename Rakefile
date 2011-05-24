@@ -8,12 +8,7 @@ require 'thinking_sphinx/tasks'
 Ada::Application.load_tasks
 
 namespace :ada do
-  # task :rebuild => ["db:drop", "db:create", "restore_postgres", "db:migrate", "db:seed", "install_theme"]
   task :rebuild => ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme"]
-end
-
-task :foo do
-  system("rm -rf db/schema.rb")
 end
 
 task :restore_postgres do
@@ -41,5 +36,11 @@ task :regenerate_paths => :environment do
       puts "#{klass.to_s} - id (#{content.id} - title #{content.title})"
       content.save! 
     end
+  end
+end
+
+task :create_feeds => :environment do
+  for archive in Archive.all
+    Inkling::Feed.create!(:title => "#{archive.name} Atom Feed", :format => "Inkling::Feeds::Atom", :source => "NewsFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
   end
 end

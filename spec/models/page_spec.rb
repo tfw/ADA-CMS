@@ -5,7 +5,7 @@ describe Page do
 
   describe "validations" do
     context "archive and page names" do
-      it "saves pages with unique archive and page name combos" do
+      it "saves pages with unique archive and page name combos" do 
         page = Page.make
         page.errors.size.should == 0
       end
@@ -34,6 +34,7 @@ describe Page do
   
   describe "parent and child pages" do
     specify "parents know about children, children know about parents" do
+      # debugger
       parent = Page.make
       child = Page.make(:parent => parent, :archive => parent.archive)
       parent.children.size.should == 1

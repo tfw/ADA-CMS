@@ -31,11 +31,11 @@
       <tr id=<%= "newsrow-#{news.id}" %>>
         <td> <%= news.title %> </td>
         <!-- Need a helper here: -->
-        <td> <%= raw(news.news_archives.map{|na| h(na.archive.name)}*'</br>') %> </td>
+        <td> <%= raw(news.archive_news.map{|na| h(na.archive.name)}*'</br>') %> </td>
         <td> <%= time_ago_in_words(news.created_at) %> ago </td>
         <!-- <td> <%= news.publish_at && news.publish_at.strftime("%a, %b %e at %l:%M") %> </td> -->
         <td>
-          <%= link_to 'Public View', news.news_archives.first.path.slug %>
+          <%= link_to 'Public View', news.archive_news.first.path.slug %>
           <%= link_to 'Edit', edit_staff_news_path(news) %>
           <%= link_to 'Delete', staff_news_path(news), :method => :delete %>
         </td>

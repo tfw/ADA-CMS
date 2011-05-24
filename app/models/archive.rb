@@ -7,8 +7,8 @@ class Archive < ActiveRecord::Base
   has_many :archive_studies, :through => :archive_study_integrations
   has_many :studies, :through => :archive_studies
   has_many :archive_study_queries
-  has_many :news_archives
-  has_many :news, :through => :news_archives
+  has_many :archive_news
+  has_many :news, :through => :archive_news
 
   validates_presence_of :name
   validates_uniqueness_of :name

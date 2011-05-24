@@ -1,10 +1,10 @@
 # The connection between a news items and an archive.
 # Each news item must be mapped to one or more archives.
 
-class NewsArchive < ActiveRecord::Base
+class ArchiveNews < ActiveRecord::Base
   include Inkling::Util::Slugs, ContentPathIncludesArchive
 
-  acts_as_inkling 'NewsArchive'
+  acts_as_inkling 'ArchiveNews'
 
   belongs_to :news
   belongs_to :archive
@@ -21,5 +21,9 @@ class NewsArchive < ActiveRecord::Base
   
   def ymd
     news.updated_at.strftime("%Y/%m/%d")
+  end
+  
+  def to_feedable
+    {:title => news.title, :url => path.slug, :updated_at => created_at, :text => news.body}
   end
 end

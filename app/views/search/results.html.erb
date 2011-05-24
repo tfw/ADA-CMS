@@ -20,7 +20,6 @@
     $('#variable-results').show();
     $('#variable-facets').show();
     $('#study-results').hide();
-    <!-- $('#study-facets').hide(); -->
   	$('#study-items').toggleClass('selected-tab', false);
   	$('#variable-items').toggleClass('selected-tab', true);
   });
@@ -34,22 +33,12 @@
 	
 		<% params[:filters].each do |facet|
 		  facet.each do |name, value| %>
-			<%= Study::FACETS[name.to_sym] %> = <%= value %>
+			<%= Study::FACETS[name.to_sym] %> = <%= value %> (<%= link_to '-', request.params %>)
 			<% unless facet == params[:filters].last %>, <% end %>
 			<% end %>
 		<% end %>
 	<% end %>
-	
-	<% if params[:var_filters].any? %>
-		Variable Filters:
-	
-		<% params[:var_filters].each do |facet|
-		  facet.each do |name, value| %>
-			<%= name %> = <%= value %>
-			<% unless facet == params[:var_filters].last %>, <% end %>
-			<% end %>
-		<% end %>
-	<% end %>
+
 
 	<div id="tabs">
 	  <ul>

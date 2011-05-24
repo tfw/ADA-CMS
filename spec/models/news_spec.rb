@@ -12,6 +12,7 @@ describe News do
 
       it "is in an archive" do
         news = make_news(:archives => 1)
+        # debugger
         news.archives.size.should == 1
       end
 
@@ -24,26 +25,5 @@ describe News do
         news2.errors.any?.should == true
       end
     end
-
-    # consider deleting? This has never passed and was left in a pending state.
-    # it "requires an archive" do
-    #   news = make_news(:archives => 0)
-    #   news.archives.size.should == 0
-    #   news.valid?
-    #   pending "validates_at_least_one doesn't work correctly yet"
-    #   news.errors.size.should == 1
-    # end
   end
-
-  describe "belonging to an archive" do
-    specify "news which belong to archives take the archive name as a prefix, e.g. social-science/home" do
-      news = make_news
-      a = news.archives[0]
-      a.should_not be_nil
-      na = news.news_archives[0]
-      na.should_not be_nil
-      na.path.slug.should =~ %r{/#{a.slug}/news/\d\d\d\d/\d\d/\d\d/#{sluggerize(news.title)}}
-    end
-  end
-
 end

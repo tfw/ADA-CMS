@@ -1,7 +1,6 @@
 Ada::Application.routes.draw do
   devise_for :users, :controllers => { :sessions => 'user_sessions' }
-
-  match 'staff/home', :to => 'staff/home#dashboard', :as => "inkling_user_root"
+  
   match 'staff/home', :to => 'staff/home#dashboard', :as => "user_root"
   
   devise_scope :user do 
@@ -13,10 +12,8 @@ Ada::Application.routes.draw do
     resources :activity_logs, :only => :index
     resources :ddi_mappings
     resources :users, :only => [:index, :show]
-    # resources :users, :only => [:index, :show], :controller => :users
 
     get 'site_resources', :to => "site_resources#index" #temporary 
-    # get 'users', :to => "users#index" #temporary 
     get 'hccda', :to => "hccda#index" #temporary 
     get 'adapt', :to => "adapt#index" #temporary 
     get 'usage-auditing', :to => "usage_auditing#index" #temporary 
@@ -52,11 +49,11 @@ Ada::Application.routes.draw do
 
   inkling_match(:archive_studies)
   inkling_match(:pages)
-  inkling_match(:news_archives)
+  inkling_match(:archive_news)
   inkling_match(:documents)
   inkling_match(:images)
-
-  # user_root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
+  inkling_match("inkling/feeds")
+  
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
 end
 

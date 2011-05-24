@@ -30,14 +30,60 @@ Inkling::Role.blueprint(:admin) do
   name "administrator"
 end
 
-Inkling::RoleMembership.blueprint do 
-  role
-  user
-end
+# Inkling::RoleMembership.blueprint do 
+#   role
+#   user
+# end
 
 ArchiveStudy.blueprint do
-  archive
-  study
+  archive_id {(Archive.make).id}
+  study_id {(Study.make).id}
+end
+
+Page.blueprint do 
+  title Sham.name
+  # author {(User.make)}
+  author_id {(User.make).id}
+  # archive {Archive.make}
+  archive_id  {(Archive.make).id}
+  link_title Sham.title
+  description Sham.description
+  body Sham.body
+end
+
+ArchiveNews.blueprint do
+  news_id {(News.make).id}
+  archive_id {(Archive.make).id}
+end
+
+News.blueprint do
+  title Sham.name
+  user {(User.make)}
+  user_id {(User.make).id}
+  body Sham.body
+end
+
+Archive.blueprint do 
+  name Sham.name
+end
+
+Study.blueprint do
+  label Sham.name
+  ddi_id Sham.name
+  abstract Sham.body
+end
+
+DdiMapping.blueprint do
+  ddi Sham.word
+  xml_element true
+end
+
+#blueprint helpers go here 
+def make_news attrs = {}
+  archives = attrs.delete(:archives) || 1
+  News.make(attrs) do |news|
+    archives.times do news.archive_news.make; end
+  end
 end
 
 def make_user(role_name)
@@ -57,48 +103,4 @@ def make_user(role_name)
   end
 
   role.users.first
-end
-
-Page.blueprint do 
-  title Sham.name
-  author {(User.make)}
-  author_id {(User.make).id}
-  archive {Archive.make}
-  link_title Sham.title
-  description Sham.description
-  body Sham.body
-end
-
-NewsArchive.blueprint do
-  # Is this enough? What about :news?
-  archive {Archive.make}
-end
-
-News.blueprint do
-  title Sham.name
-  user {(User.make)}
-  user_id {(User.make).id}
-  body Sham.body
-end
-
-def make_news attrs = {}
-  archives = attrs.delete(:archives) || 1
-  News.make(attrs) do |news|
-    archives.times do news.news_archives.make; end
-  end
-end
-
-Archive.blueprint do 
-  name Sham.name
-end
-
-Study.blueprint do
-  label Sham.name
-  ddi_id Sham.name
-  abstract Sham.body
-end
-
-DdiMapping.blueprint do
-  ddi Sham.word
-  xml_element true
 end
