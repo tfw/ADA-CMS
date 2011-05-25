@@ -63,7 +63,7 @@ module Nesstar
                participant :ref => 'download_and_convert_catalog_tree' 
              end
              
-             rewind :if => '${archive_catalog_integrations.size} != 0'
+             rewind :if => '${archive_catalog_integrations.size.any?}'
            end
 
            participant :ref => 'log_run'
@@ -86,6 +86,7 @@ module Nesstar
       end
 
       ARGV << "-d"
+      # @engine.noisy = true
       wfid = @engine.launch(dataset_process_def)
       @engine.wait_for(wfid)
     end
@@ -115,26 +116,29 @@ module Nesstar
 
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
-        debugger
-puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
+        puts "- #{workitem.fields['archive_catalog_integrations'].size}"
+#puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
         archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
         workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
-puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
+#puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
         
         archive = archive_catalog_integration.archive
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
         #does a parent exist for this catalog?
         parent_id = workitem.fields['children_to_parents'][archive_catalog_integration.url]
-puts "---- A"     
-        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
+       `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
         label_hash = Nesstar::RDF::Parser.parse_catalog("#{file}")
-puts "---- B"     
         
-        pre_existing_catalog = ArchiveCatalog.find_by_title_and_archive_catalog_integration_id(label_hash[:label], archive_catalog_integration.id)
-puts "---- C"     
-# debugger        
-        catalog = ArchiveCatalog.create!(:title => label_hash[:label], :archive_catalog_integration => archive_catalog_integration) unless pre_existing_catalog
+        pre_existing_catalog = ArchiveCatalog.find_by_title(label_hash[:label])
+        if pre_existing_catalog
+          catalog = pre_existing_catalog
+        else
+          catalog = ArchiveCatalog.create(:title => label_hash[:label])
+        end
+
+        archive_catalog_integration.archive_catalog = catalog
+        archive_catalog_integration.save!
         
         pre_existing_node = ArchiveCatalogNode.find_by_archive_catalog_id(catalog.id)
 
@@ -142,14 +146,12 @@ puts "---- C"
           if parent_id
             pre_existing_node.parent_id = parent
             pre_existing_node.save!
-            node = pre_existing
           end
+          node = pre_existing_node
         else
           if parent_id
-            puts "1 ------------"
             node = ArchiveCatalogNode.create!(:archive_catalog => catalog, :parent_id => parent_id) 
           else
-            puts "2 ------------"
             node = ArchiveCatalogNode.create!(:archive_catalog => catalog)
           end
         end
@@ -162,26 +164,27 @@ puts "---- C"
           if child[:resource] =~ /fStudy/
             study = Study.find_by_about(child[:resource])
             archive_study = study.for_archive(archive)
+            # debugger
             pre_existing = ArchiveCatalogNode.find_by_archive_study_id_and_parent_id(archive_study.id, node.id)
             
             if pre_existing
               pre_existing.catalog_position = child[:position]
               pre_existing.save!
             else
-              puts "3 ------------"
-              
               node = ArchiveCatalogNode.create!(:archive_study => archive_study, :parent => node, :catalog_position => child[:position])
             end
           else
             pre_existing_integration = ArchiveCatalogIntegration.find_by_archive_id_and_url(archive.id, child[:resource])
-            integration = ArchiveCatalogIntegration.create(:archive => archive, :url => child[:resource]) unless pre_existing_integration
+            
+            integration = pre_existing_integration if pre_existing_integration
+            integration = ArchiveCatalogIntegration.create(:archive => archive, :url => child[:resource]) if integration.nil?
             workitem.fields['archive_catalog_integrations'] << integration.id
-# puts "--- #{workitem.fields['archive_catalog_integrations']} ---"
             workitem.fields['children_to_parents'][integration.url]= node.id #store the parent for future association
           end
+          puts "looping through #{children} with #{child}"
         end
         
-        # workitem.fields['Catalogs_oustanding'] << 
+puts " --- ending ----"
       end
       
       ## load_study_ids
@@ -363,6 +366,7 @@ puts "---- C"
       end
 
       engine.register_participant 'log_run' do |workitem|
+        puts "--- logging run ---"
         workitem.fields['downloads'] ||= {}
         workitem.fields['fetch_errors'] ||= {}        
         Inkling::Log.create!(:category => "integration", :text =>  "Downloaded #{workitem.fields['downloads'].size} studies. Encountered #{workitem.fields['fetch_errors'].size} errors. There are now #{Study.all.size} studies in ADA.")        
