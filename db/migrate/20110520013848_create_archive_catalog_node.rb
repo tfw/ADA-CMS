@@ -5,7 +5,6 @@ class CreateArchiveCatalogNode < ActiveRecord::Migration
       t.integer :archive_study_id
       t.integer :catalog_position
       t.integer :parent_id
-      t.integer :archive_id
       t.integer :lft
       t.integer :rgt
       t.timestamps

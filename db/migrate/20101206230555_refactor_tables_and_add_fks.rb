@@ -19,7 +19,6 @@ class RefactorTablesAndAddFks < ActiveRecord::Migration
     remove_column :studies, :keywords
     add_column :studies, :abstract, :text
     add_column :studies, :keywords, :text
-    add_column :studies, :page_id, :integer
 
     #refactor pages
     add_column :pages, :state, :string    
@@ -57,7 +56,6 @@ class RefactorTablesAndAddFks < ActiveRecord::Migration
     remove_column :studies, :geo_coverage
     remove_column :studies, :investigator
     remove_column :studies, :language
-    remove_column :studies, :page_id
 
     remove_column :pages, :state
     remove_column :pages, :archive_to_study_integration_id

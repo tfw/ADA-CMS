@@ -45,19 +45,19 @@ module Nesstar
               participant :ref => 'download_study' 
             end
            
-            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            #   participant :ref => 'download_related_materials' 
-            # end
-            #            
-            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            #   participant :ref => 'download_variables' 
-            # end
-            #            
-            # participant :ref => 'convert_related_materials' 
-            # participant :ref => 'convert_variables' 
-            #            
-            # participant :ref => 'ada_archive_contains_all_studies' 
-            #            
+            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+              participant :ref => 'download_related_materials' 
+            end
+                       
+            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+              participant :ref => 'download_variables' 
+            end
+                       
+            participant :ref => 'convert_related_materials' 
+            participant :ref => 'convert_variables' 
+                       
+            participant :ref => 'ada_archive_contains_all_studies' 
+                       
            cursor do
              iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration_id" do
                participant :ref => 'download_and_convert_catalog_tree' 
@@ -181,10 +181,7 @@ module Nesstar
             workitem.fields['archive_catalog_integrations'] << integration.id
             workitem.fields['children_to_parents'][integration.url]= node.id #store the parent for future association
           end
-          puts "looping through #{children} with #{child}"
-        end
-        
-puts " --- ending ----"
+        end        
       end
       
       ## load_study_ids
@@ -366,7 +363,6 @@ puts " --- ending ----"
       end
 
       engine.register_participant 'log_run' do |workitem|
-        puts "--- logging run ---"
         workitem.fields['downloads'] ||= {}
         workitem.fields['fetch_errors'] ||= {}        
         Inkling::Log.create!(:category => "integration", :text =>  "Downloaded #{workitem.fields['downloads'].size} studies. Encountered #{workitem.fields['fetch_errors'].size} errors. There are now #{Study.all.size} studies in ADA.")        
