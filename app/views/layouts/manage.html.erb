@@ -70,7 +70,7 @@
 
 <!-- <section class='partners' id="admin_footer"> -->
   <footer>
-    <p>&#xA9; Australian Data Archive<% if Rails.env == "development" %>,
+    <p>&#xA9; Australian Data Archive<% if Rails.env.starts_with? == "dev" %>,
       <em><%= deploy_log %></em>
     <% end %>
     </p>

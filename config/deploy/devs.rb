@@ -12,4 +12,4 @@ set :use_sudo,    false
 set :deploy_to,   "/data/httpd/Rails/ADA-CMS"
 
 # used by migrations:
-set :rails_env, "development"
+set :rails_env, "devs"
