@@ -1149,3 +1149,423 @@ inkling_paths_115:
   content_type: ArchiveStudy
   created_at: 2011-05-09 04:48:38.121785
   updated_at: 2011-05-09 04:48:38.121785
+inkling_paths_116: 
+  id: "231"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00102-f
+  content_id: "1"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:38.349343
+  updated_at: 2011-05-25 02:17:38.349343
+inkling_paths_117: 
+  id: "232"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00102-h
+  content_id: "2"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:39.925975
+  updated_at: 2011-05-25 02:17:39.925975
+inkling_paths_118: 
+  id: "233"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00102-m
+  content_id: "3"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:41.932637
+  updated_at: 2011-05-25 02:17:41.932637
+inkling_paths_119: 
+  id: "234"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00103
+  content_id: "4"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:43.926155
+  updated_at: 2011-05-25 02:17:43.926155
+inkling_paths_120: 
+  id: "235"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00115
+  content_id: "5"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:45.856379
+  updated_at: 2011-05-25 02:17:45.856379
+inkling_paths_121: 
+  id: "236"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00349
+  content_id: "6"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:47.899161
+  updated_at: 2011-05-25 02:17:47.899161
+inkling_paths_122: 
+  id: "237"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00602
+  content_id: "7"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:49.980406
+  updated_at: 2011-05-25 02:17:49.980406
+inkling_paths_123: 
+  id: "238"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00603
+  content_id: "8"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:52.022779
+  updated_at: 2011-05-25 02:17:52.022779
+inkling_paths_124: 
+  id: "239"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00601
+  content_id: "9"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:17:54.020943
+  updated_at: 2011-05-25 02:17:54.020943
+inkling_paths_125: 
+  id: "240"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00604
+  content_id: "10"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:35.95652
+  updated_at: 2011-05-25 02:22:35.95652
+inkling_paths_126: 
+  id: "241"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00822-c01
+  content_id: "11"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:37.130245
+  updated_at: 2011-05-25 02:22:37.130245
+inkling_paths_127: 
+  id: "242"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00822-p01
+  content_id: "12"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:39.161511
+  updated_at: 2011-05-25 02:22:39.161511
+inkling_paths_128: 
+  id: "243"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00822-c02
+  content_id: "13"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:41.168459
+  updated_at: 2011-05-25 02:22:41.168459
+inkling_paths_129: 
+  id: "244"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00822-p02
+  content_id: "14"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:43.107379
+  updated_at: 2011-05-25 02:22:43.107379
+inkling_paths_130: 
+  id: "245"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00967
+  content_id: "15"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:45.175213
+  updated_at: 2011-05-25 02:22:45.175213
+inkling_paths_131: 
+  id: "246"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/00986
+  content_id: "16"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:47.209478
+  updated_at: 2011-05-25 02:22:47.209478
+inkling_paths_132: 
+  id: "247"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous/01159
+  content_id: "17"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 02:22:49.125957
+  updated_at: 2011-05-25 02:22:49.125957
+inkling_paths_133: 
+  id: "248"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous
+  content_id: "1"
+  content_type: ArchiveCatalog
+  created_at: 2011-05-25 03:25:22.673215
+  updated_at: 2011-05-25 03:25:22.673215
+inkling_paths_134: 
+  id: "249"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /aborigines-who-abstain-from-alcohol--1990-1993
+  content_id: "2"
+  content_type: ArchiveCatalog
+  created_at: 2011-05-25 03:32:03.575746
+  updated_at: 2011-05-25 03:32:03.575746
+inkling_paths_135: 
+  id: "250"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /aboriginal-survey--new-south-wales-and-south-australia--1965
+  content_id: "3"
+  content_type: ArchiveCatalog
+  created_at: 2011-05-25 03:32:04.045842
+  updated_at: 2011-05-25 03:32:04.045842
+inkling_paths_136: 
+  id: "251"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /national-police-custody-survey
+  content_id: "4"
+  content_type: ArchiveCatalog
+  created_at: 2011-05-25 03:32:04.626184
+  updated_at: 2011-05-25 03:32:04.626184
+inkling_paths_137: 
+  id: "252"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /royal-commission-into-aboriginal-deaths-in-custody-surveys
+  content_id: "5"
+  content_type: ArchiveCatalog
+  created_at: 2011-05-25 03:32:05.130168
+  updated_at: 2011-05-25 03:32:05.130168
+inkling_paths_138: 
+  id: "253"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00102-f
+  content_id: "18"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.557804
+  updated_at: 2011-05-25 04:55:24.557804
+inkling_paths_139: 
+  id: "254"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00102-h
+  content_id: "19"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.576052
+  updated_at: 2011-05-25 04:55:24.576052
+inkling_paths_140: 
+  id: "255"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00102-m
+  content_id: "20"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.590359
+  updated_at: 2011-05-25 04:55:24.590359
+inkling_paths_141: 
+  id: "256"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00103
+  content_id: "21"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.657454
+  updated_at: 2011-05-25 04:55:24.657454
+inkling_paths_142: 
+  id: "257"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00115
+  content_id: "22"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.677733
+  updated_at: 2011-05-25 04:55:24.677733
+inkling_paths_143: 
+  id: "258"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00349
+  content_id: "23"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.690611
+  updated_at: 2011-05-25 04:55:24.690611
+inkling_paths_144: 
+  id: "259"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00602
+  content_id: "24"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.715059
+  updated_at: 2011-05-25 04:55:24.715059
+inkling_paths_145: 
+  id: "260"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00603
+  content_id: "25"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.733128
+  updated_at: 2011-05-25 04:55:24.733128
+inkling_paths_146: 
+  id: "261"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00601
+  content_id: "26"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.789295
+  updated_at: 2011-05-25 04:55:24.789295
+inkling_paths_147: 
+  id: "262"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00604
+  content_id: "27"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.81217
+  updated_at: 2011-05-25 04:55:24.81217
+inkling_paths_148: 
+  id: "263"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00822-c01
+  content_id: "28"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.833058
+  updated_at: 2011-05-25 04:55:24.833058
+inkling_paths_149: 
+  id: "264"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00822-p01
+  content_id: "29"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.852892
+  updated_at: 2011-05-25 04:55:24.852892
+inkling_paths_150: 
+  id: "265"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00822-c02
+  content_id: "30"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.913144
+  updated_at: 2011-05-25 04:55:24.913144
+inkling_paths_151: 
+  id: "266"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00822-p02
+  content_id: "31"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.931484
+  updated_at: 2011-05-25 04:55:24.931484
+inkling_paths_152: 
+  id: "267"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00967
+  content_id: "32"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:24.959686
+  updated_at: 2011-05-25 04:55:24.959686
+inkling_paths_153: 
+  id: "268"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/00986
+  content_id: "33"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:25.042838
+  updated_at: 2011-05-25 04:55:25.042838
+inkling_paths_154: 
+  id: "269"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada/01159
+  content_id: "34"
+  content_type: ArchiveStudy
+  created_at: 2011-05-25 04:55:25.065194
+  updated_at: 2011-05-25 04:55:25.065194
+inkling_paths_155: 
+  id: "270"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /ada-atom-feed.atom
+  content_id: "1"
+  content_type: Inkling::Feed
+  created_at: 2011-05-25 05:03:56.322557
+  updated_at: 2011-05-25 05:03:56.322557
+inkling_paths_156: 
+  id: "271"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /social-science-atom-feed.atom
+  content_id: "2"
+  content_type: Inkling::Feed
+  created_at: 2011-05-25 05:04:27.914511
+  updated_at: 2011-05-25 05:04:27.914511
+inkling_paths_157: 
+  id: "272"
+  parent_id: 
+  lft: 
+  rgt: 
+  slug: /indigenous-atom-feed.atom
+  content_id: "3"
+  content_type: Inkling::Feed
+  created_at: 2011-05-25 05:27:22.020835
+  updated_at: 2011-05-25 05:27:22.020835

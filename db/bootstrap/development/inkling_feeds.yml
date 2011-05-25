@@ -1,2 +1,28 @@
---- {}
-
+--- 
+inkling_feeds_001: 
+  id: "1"
+  created_at: 2011-05-25 05:03:56.261629
+  authors: ADA
+  title: ADA Atom Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 7\n"
+inkling_feeds_002: 
+  id: "2"
+  created_at: 2011-05-25 05:04:27.894135
+  authors: Social Science
+  title: Social Science Atom Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 1\n"
+inkling_feeds_003: 
+  id: "3"
+  created_at: 2011-05-25 05:27:22.000761
+  authors: Indigenous
+  title: Indigenous Atom Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 3\n"

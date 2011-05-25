@@ -852,6 +852,95 @@ pages_032:
   state: 
   archive_to_study_integration_id: 
 pages_033: 
+  id: "46"
+  title: Using Data
+  link_title: Using Data
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Using Data</h1>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	Insert information on using indigenous data here.</p>
+
+  breakout_box: |
+    <p>
+    	Breakout box on using indigenous data.</p>
+    <p>
+    	Case study example?</p>
+
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/breakout_page
+  lft: "87"
+  rgt: "88"
+  created_at: 2010-11-25 10:29:35.242171
+  updated_at: 2010-11-25 10:31:01.758949
+  state: 
+  archive_to_study_integration_id: 
+pages_034: 
+  id: "47"
+  title: Protocols
+  link_title: Protocols
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	PAGE FOR ADA INDIGENOUS DEPOSIT AND ACCESS PROTOCOLS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "89"
+  rgt: "90"
+  created_at: 2010-11-25 10:31:49.017228
+  updated_at: 2010-11-25 10:32:30.005038
+  state: 
+  archive_to_study_integration_id: 
+pages_035: 
+  id: "48"
+  title: Community
+  link_title: Community
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	Insert information on ADA Indigenous community site here.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "91"
+  rgt: "92"
+  created_at: 2010-11-25 10:34:41.01338
+  updated_at: 2010-11-25 10:34:41.01338
+  state: 
+  archive_to_study_integration_id: 
+pages_036: 
+  id: "49"
+  title: User Guides
+  link_title: User Guides
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA INDIGENOUS NEWS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "93"
+  rgt: "94"
+  created_at: 2010-11-25 10:35:41.244162
+  updated_at: 2010-11-25 10:35:41.244162
+  state: 
+  archive_to_study_integration_id: 
+pages_037: 
   id: "26"
   title: Home
   link_title: Home3
@@ -874,7 +963,7 @@ pages_033:
   updated_at: 2010-11-26 01:49:16.178569
   state: 
   archive_to_study_integration_id: 
-pages_034: 
+pages_038: 
   id: "27"
   title: About
   link_title: About
@@ -920,7 +1009,7 @@ pages_034:
   updated_at: 2010-11-24 21:42:35.405111
   state: 
   archive_to_study_integration_id: 
-pages_035: 
+pages_039: 
   id: "28"
   title: Catalogue
   link_title: Catalogue
@@ -944,7 +1033,7 @@ pages_035:
   updated_at: 2010-11-24 21:46:25.263317
   state: 
   archive_to_study_integration_id: 
-pages_036: 
+pages_040: 
   id: "29"
   title: Creating Data
   link_title: Creating Data
@@ -988,7 +1077,7 @@ pages_036:
   updated_at: 2010-11-24 21:48:37.750452
   state: 
   archive_to_study_integration_id: 
-pages_037: 
+pages_041: 
   id: "30"
   title: Using Data
   link_title: Using Data
@@ -1027,7 +1116,7 @@ pages_037:
   updated_at: 2010-11-24 21:51:42.777809
   state: 
   archive_to_study_integration_id: 
-pages_038: 
+pages_042: 
   id: "32"
   title: Themed Data
   link_title: Themed Data
@@ -1062,7 +1151,7 @@ pages_038:
   updated_at: 2010-11-25 05:10:12.612598
   state: 
   archive_to_study_integration_id: 
-pages_039: 
+pages_043: 
   id: "33"
   title: User Guides
   link_title: User Guides
@@ -1084,7 +1173,7 @@ pages_039:
   updated_at: 2011-02-23 02:48:42.126921
   state: 
   archive_to_study_integration_id: 
-pages_040: 
+pages_044: 
   id: "34"
   title: News
   link_title: News
@@ -1106,7 +1195,7 @@ pages_040:
   updated_at: 2010-11-24 21:59:15.300457
   state: 
   archive_to_study_integration_id: 
-pages_041: 
+pages_045: 
   id: "35"
   title: About
   link_title: nick's test
@@ -1130,7 +1219,7 @@ pages_041:
   updated_at: 2010-11-25 11:22:27.842884
   state: 
   archive_to_study_integration_id: 
-pages_042: 
+pages_046: 
   id: "36"
   title: About
   link_title: About
@@ -1150,7 +1239,7 @@ pages_042:
   updated_at: 2010-11-25 10:01:00.618844
   state: 
   archive_to_study_integration_id: 
-pages_043: 
+pages_047: 
   id: "37"
   title: Catalogue
   link_title: Catalogue
@@ -1168,95 +1257,6 @@ pages_043:
   rgt: "70"
   created_at: 2010-11-25 10:01:51.237683
   updated_at: 2010-11-25 10:01:51.237683
-  state: 
-  archive_to_study_integration_id: 
-pages_044: 
-  id: "46"
-  title: Using Data
-  link_title: Using Data
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Using Data</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	Insert information on using indigenous data here.</p>
-
-  breakout_box: |
-    <p>
-    	Breakout box on using indigenous data.</p>
-    <p>
-    	Case study example?</p>
-
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/breakout_page
-  lft: "87"
-  rgt: "88"
-  created_at: 2010-11-25 10:29:35.242171
-  updated_at: 2010-11-25 10:31:01.758949
-  state: 
-  archive_to_study_integration_id: 
-pages_045: 
-  id: "47"
-  title: Protocols
-  link_title: Protocols
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	PAGE FOR ADA INDIGENOUS DEPOSIT AND ACCESS PROTOCOLS</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "89"
-  rgt: "90"
-  created_at: 2010-11-25 10:31:49.017228
-  updated_at: 2010-11-25 10:32:30.005038
-  state: 
-  archive_to_study_integration_id: 
-pages_046: 
-  id: "48"
-  title: Community
-  link_title: Community
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Insert information on ADA Indigenous community site here.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "91"
-  rgt: "92"
-  created_at: 2010-11-25 10:34:41.01338
-  updated_at: 2010-11-25 10:34:41.01338
-  state: 
-  archive_to_study_integration_id: 
-pages_047: 
-  id: "49"
-  title: User Guides
-  link_title: User Guides
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA INDIGENOUS NEWS</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "93"
-  rgt: "94"
-  created_at: 2010-11-25 10:35:41.244162
-  updated_at: 2010-11-25 10:35:41.244162
   state: 
   archive_to_study_integration_id: 
 pages_048: 
