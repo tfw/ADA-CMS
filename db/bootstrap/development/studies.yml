@@ -31,7 +31,7 @@ studies_001:
     
     Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
   keywords: Aboriginal education;Aboriginal employment;Aboriginal;health;Aboriginal women;Aborigines;Employment;Family;Housing;Income;Living standards;Mortality
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -87,7 +87,7 @@ studies_002:
     
     Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
   keywords: Aboriginal education;Aboriginal employment;Aboriginal;health;Aboriginal women;Aborigines;Employment;Family;Housing;Income;Living standards;Mortality
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -143,7 +143,7 @@ studies_003:
     
     Males were asked about dependent children; military service; time spent in government institutions; ownership of vehicles, tools of trade, house, real estate, shares, livestock, insurance policies and property; and about trade union membership and hire purchase.
   keywords: Aboriginal education;Aboriginal employment;Aboriginal;health;Aboriginal women;Aborigines;Employment;Family;Housing;Income;Living standards;Mortality
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -192,7 +192,7 @@ studies_004:
     
     Demographic variables covered age, sex and relationship to head of household.
   keywords: Aboriginal education;Aboriginal employment;Aboriginal;health;Aboriginal languages;Aboriginal men;Aboriginal women;Assets;Employment;Health services;Housing;Income;Land;Leadership;Literacy;Mortality;Political parties;Social Welfare;Trade unions
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -234,7 +234,7 @@ studies_005:
     
     Aboriginal and Torres Strait Islander people, researchers and other users should be aware that material in this dataset may contain material that is considered offensive. The data has been retained in its original format because it represents an evidential record of language, beliefs or other cultural situations at a point in time.
   keywords: Aborigines;Newspapers
-  page_id: 
+
   data_kind: 
   sampling_abbr: no sampling (total universe)
   collection_mode_abbr: content analysis
@@ -274,7 +274,7 @@ studies_006:
     
     Demographic variables covered age, sex and relationship to head of household.
   keywords: Aboriginal education;Aboriginal employment;Aboriginal health;Aboriginal women;Housing;Income
-  page_id: 
+
   data_kind: 
   sampling_abbr: non-probability sample
   collection_mode_abbr: personal interview
@@ -316,7 +316,7 @@ studies_007:
     
     In line with normal ADA policy, variables (such as postcode) which could possibly be used to identify individuals have been removed or recoded from the public data file.  Much of the original data, however, have been made publicy available by other parties, and if researchers would like to access the original data files, they can contact ADA and make a case for gaining access to these data.
   keywords: Aborigines;Alcohol;Crime;Criminals;Death;Drugs;Suicide
-  page_id: 
+
   data_kind: census
   sampling_abbr: no sampling (total universe)
   collection_mode_abbr: reports drawn in 1988-9 from existing records
@@ -364,7 +364,7 @@ studies_008:
     
     In line with normal ADA policy, variables (such as postcode) which could possibly be used to identify individuals have been removed or recoded from the public data file.  Much of the original data, however, have been made publicy available by other parties, and if researchers would like to access the original data files, they can contact ADA and make a case for gaining access to these data.
   keywords: Aborigines;Accidents;Crime;Criminals;Death;Prison;Suicide
-  page_id: 
+
   data_kind: census
   sampling_abbr: no sampling (total universe)
   collection_mode_abbr: Compilation or synthesis of existing material
@@ -410,7 +410,7 @@ studies_009:
     
     In line with normal ADA policy, variables (such as postcode) which could possibly be used to identify individuals have been removed or recoded from the public data file.  Much of the original data, however, have been made publicy available by other parties, and if researchers would like to access the original data files, they can contact ADA and make a case for gaining access to these data.
   keywords: Aborigines;Arrest;Crime;Criminals;Prisons
-  page_id: 
+
   data_kind: census
   sampling_abbr: no sampling (total universe)
   collection_mode_abbr: forms completed by police-station staff
@@ -454,7 +454,7 @@ studies_010:
     
     Aboriginal and Torres Strait Islander people, researchers and other users should be aware that material in this dataset may contain material that is considered offensive. The data have been retained because it represents an evidential record of language, beliefs or other cultural situations at a point in time.
   keywords: Aborigines;Alcohol;Crime;Criminals;Drugs;Injuries;Prison;Suicide
-  page_id: 
+
   data_kind: census
   sampling_abbr: no sampling (total universe)
   collection_mode_abbr: reports completed by custodial personnel
@@ -496,7 +496,7 @@ studies_011:
     
     Background variables collected in the first interview included: sex, age, birthplace, usual residence, marital status, children, education, income and employment.
   keywords: Aborigines;Alcohol;Alcohol abuse.
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -538,7 +538,7 @@ studies_012:
     
     Background variables collected in the first interview included: sex, age, birthplace, usual residence, marital status, children, education, income and employment.
   keywords: Aborigines;Alcohol;Alcohol abuse.
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -580,7 +580,7 @@ studies_013:
     
     Background variables collected in the first interview included: sex, age, birthplace, usual residence, marital status, children, education, income and employment.
   keywords: Aborigines;Alcohol;Alcohol abuse.
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -622,7 +622,7 @@ studies_014:
     
     Background variables collected in the first interview included: sex, age, birthplace, usual residence, marital status, children, education, income and employment.
   keywords: Aborigines;Alcohol;Alcohol abuse.
-  page_id: 
+
   data_kind: survey
   sampling_abbr: 
   collection_mode_abbr: personal interview
@@ -666,7 +666,7 @@ studies_015:
     
     In line with normal ADA policy, variables (such as postcode) which could possibly be used to identify individuals have been removed or recoded from the public data file.  Much of the original data, however, have been made publicy available by other parties, and if researchers would like to access the original data files, they can contact ADA and make a case for gaining access to these data.
   keywords: Aborigines;Arrest;Crime;Police
-  page_id: 
+
   data_kind: census data
   sampling_abbr: no sampling (total universe)
   collection_mode_abbr: forms completed by police station staff
@@ -712,7 +712,7 @@ studies_016:
     
     In line with normal ADA policy, variables (such as postcode) which could possibly be used to identify individuals have been removed or recoded from the public data file.  Much of the original data, however, have been made publicy available by other parties, and if researchers would like to access the original data files, they can contact ADA and make a case for gaining access to these data.
   keywords: Aborigines;Arrest;Crime;Police
-  page_id: 
+
   data_kind: census data
   sampling_abbr: no sampling (total universe)
   collection_mode_abbr: forms completed by police station staff
@@ -760,7 +760,7 @@ studies_017:
     \xE2\x80\xA2 Issues and concerns of institutions relating to Indigenous issues.\n\n\
     Papers are also planned for national and international conferences with the aim of enlisting support for a consistent approach to Indigenous materials held in libraries, archives and information services."
   keywords: Libraries;Information Services;Indigenous Peoples;Aborigines;Torres Strait Islanders;Archives
-  page_id: 
+
   data_kind: Survey data
   sampling_abbr: 
   collection_mode_abbr: Web-based self-completion

@@ -5,7 +5,6 @@ archive_catalog_nodes_001:
   archive_study_id: "14"
   catalog_position: "4"
   parent_id: "5"
-  archive_id: 
   lft: "27"
   rgt: "28"
   created_at: 2011-05-25 03:53:33.499049
@@ -16,7 +15,6 @@ archive_catalog_nodes_002:
   archive_study_id: "17"
   catalog_position: "7"
   parent_id: "1"
-  archive_id: 
   lft: "86"
   rgt: "87"
   created_at: 2011-05-25 03:51:32.354204
@@ -27,7 +25,6 @@ archive_catalog_nodes_003:
   archive_study_id: "6"
   catalog_position: "6"
   parent_id: "1"
-  archive_id: 
   lft: "82"
   rgt: "85"
   created_at: 2011-05-25 03:49:39.987335
@@ -38,7 +35,6 @@ archive_catalog_nodes_004:
   archive_study_id: "3"
   catalog_position: "4"
   parent_id: "13"
-  archive_id: 
   lft: "34"
   rgt: "35"
   created_at: 2011-05-25 03:32:04.336173
@@ -49,7 +45,6 @@ archive_catalog_nodes_005:
   archive_study_id: 
   catalog_position: 
   parent_id: 
-  archive_id: 
   lft: "1"
   rgt: "88"
   created_at: 2011-05-25 03:32:02.627402
@@ -60,7 +55,6 @@ archive_catalog_nodes_006:
   archive_study_id: "5"
   catalog_position: "5"
   parent_id: "1"
-  archive_id: 
   lft: "2"
   rgt: "7"
   created_at: 2011-05-25 03:32:02.841067
@@ -71,7 +65,6 @@ archive_catalog_nodes_007:
   archive_study_id: "6"
   catalog_position: "6"
   parent_id: "2"
-  archive_id: 
   lft: "3"
   rgt: "6"
   created_at: 2011-05-25 03:32:02.853615
@@ -82,7 +75,6 @@ archive_catalog_nodes_008:
   archive_study_id: "17"
   catalog_position: "7"
   parent_id: "3"
-  archive_id: 
   lft: "4"
   rgt: "5"
   created_at: 2011-05-25 03:32:02.930108
@@ -93,7 +85,6 @@ archive_catalog_nodes_009:
   archive_study_id: 
   catalog_position: 
   parent_id: "1"
-  archive_id: 
   lft: "8"
   rgt: "29"
   created_at: 2011-05-25 03:32:03.59268
@@ -104,7 +95,6 @@ archive_catalog_nodes_010:
   archive_study_id: "11"
   catalog_position: "1"
   parent_id: "5"
-  archive_id: 
   lft: "9"
   rgt: "16"
   created_at: 2011-05-25 03:32:03.744831
@@ -115,7 +105,6 @@ archive_catalog_nodes_011:
   archive_study_id: "13"
   catalog_position: "2"
   parent_id: "6"
-  archive_id: 
   lft: "10"
   rgt: "15"
   created_at: 2011-05-25 03:32:03.754419
@@ -126,7 +115,6 @@ archive_catalog_nodes_012:
   archive_study_id: "12"
   catalog_position: "3"
   parent_id: "7"
-  archive_id: 
   lft: "11"
   rgt: "14"
   created_at: 2011-05-25 03:32:03.774206
@@ -137,7 +125,6 @@ archive_catalog_nodes_013:
   archive_study_id: "14"
   catalog_position: "4"
   parent_id: "8"
-  archive_id: 
   lft: "12"
   rgt: "13"
   created_at: 2011-05-25 03:32:03.784284
@@ -148,7 +135,6 @@ archive_catalog_nodes_014:
   archive_study_id: "8"
   catalog_position: "3"
   parent_id: "18"
-  archive_id: 
   lft: "75"
   rgt: "78"
   created_at: 2011-05-25 03:51:33.945118
@@ -159,7 +145,6 @@ archive_catalog_nodes_015:
   archive_study_id: "10"
   catalog_position: "4"
   parent_id: "40"
-  archive_id: 
   lft: "76"
   rgt: "77"
   created_at: 2011-05-25 03:51:33.960678
@@ -170,7 +155,6 @@ archive_catalog_nodes_016:
   archive_study_id: 
   catalog_position: 
   parent_id: "1"
-  archive_id: 
   lft: "30"
   rgt: "51"
   created_at: 2011-05-25 03:32:04.072377
@@ -181,7 +165,6 @@ archive_catalog_nodes_017:
   archive_study_id: "1"
   catalog_position: "1"
   parent_id: "10"
-  archive_id: 
   lft: "31"
   rgt: "38"
   created_at: 2011-05-25 03:32:04.302136
@@ -192,7 +175,6 @@ archive_catalog_nodes_018:
   archive_study_id: "2"
   catalog_position: "2"
   parent_id: "11"
-  archive_id: 
   lft: "32"
   rgt: "37"
   created_at: 2011-05-25 03:32:04.315314
@@ -203,7 +185,6 @@ archive_catalog_nodes_019:
   archive_study_id: "4"
   catalog_position: "3"
   parent_id: "12"
-  archive_id: 
   lft: "33"
   rgt: "36"
   created_at: 2011-05-25 03:32:04.327671
@@ -214,7 +195,6 @@ archive_catalog_nodes_020:
   archive_study_id: "17"
   catalog_position: "7"
   parent_id: "23"
-  archive_id: 
   lft: "83"
   rgt: "84"
   created_at: 2011-05-25 03:49:40.004741
@@ -225,7 +205,6 @@ archive_catalog_nodes_021:
   archive_study_id: "2"
   catalog_position: "2"
   parent_id: "10"
-  archive_id: 
   lft: "39"
   rgt: "44"
   created_at: 2011-05-25 03:49:40.860632
@@ -236,7 +215,6 @@ archive_catalog_nodes_022:
   archive_study_id: 
   catalog_position: 
   parent_id: "1"
-  archive_id: 
   lft: "52"
   rgt: "59"
   created_at: 2011-05-25 03:32:04.645531
@@ -247,7 +225,6 @@ archive_catalog_nodes_023:
   archive_study_id: "15"
   catalog_position: "1"
   parent_id: "15"
-  archive_id: 
   lft: "53"
   rgt: "56"
   created_at: 2011-05-25 03:32:04.785233
@@ -258,7 +235,6 @@ archive_catalog_nodes_024:
   archive_study_id: "16"
   catalog_position: "2"
   parent_id: "16"
-  archive_id: 
   lft: "54"
   rgt: "55"
   created_at: 2011-05-25 03:32:04.868536
@@ -269,7 +245,6 @@ archive_catalog_nodes_025:
   archive_study_id: 
   catalog_position: 
   parent_id: "1"
-  archive_id: 
   lft: "60"
   rgt: "81"
   created_at: 2011-05-25 03:32:05.155661
@@ -280,7 +255,6 @@ archive_catalog_nodes_026:
   archive_study_id: "9"
   catalog_position: "1"
   parent_id: "18"
-  archive_id: 
   lft: "61"
   rgt: "68"
   created_at: 2011-05-25 03:32:05.317256
@@ -291,7 +265,6 @@ archive_catalog_nodes_027:
   archive_study_id: "7"
   catalog_position: "2"
   parent_id: "19"
-  archive_id: 
   lft: "62"
   rgt: "67"
   created_at: 2011-05-25 03:32:05.329989
@@ -302,7 +275,6 @@ archive_catalog_nodes_028:
   archive_study_id: "8"
   catalog_position: "3"
   parent_id: "20"
-  archive_id: 
   lft: "63"
   rgt: "66"
   created_at: 2011-05-25 03:32:05.344478
@@ -313,7 +285,6 @@ archive_catalog_nodes_029:
   archive_study_id: "12"
   catalog_position: "3"
   parent_id: "5"
-  archive_id: 
   lft: "23"
   rgt: "26"
   created_at: 2011-05-25 03:51:32.744168
@@ -324,7 +295,6 @@ archive_catalog_nodes_030:
   archive_study_id: "14"
   catalog_position: "4"
   parent_id: "36"
-  archive_id: 
   lft: "24"
   rgt: "25"
   created_at: 2011-05-25 03:51:32.756209
@@ -335,7 +305,6 @@ archive_catalog_nodes_031:
   archive_study_id: "3"
   catalog_position: "4"
   parent_id: "10"
-  archive_id: 
   lft: "49"
   rgt: "50"
   created_at: 2011-05-25 03:53:33.952575
@@ -346,7 +315,6 @@ archive_catalog_nodes_032:
   archive_study_id: "10"
   catalog_position: "4"
   parent_id: "21"
-  archive_id: 
   lft: "64"
   rgt: "65"
   created_at: 2011-05-25 03:32:05.352597
@@ -357,7 +325,6 @@ archive_catalog_nodes_033:
   archive_study_id: "13"
   catalog_position: "2"
   parent_id: "5"
-  archive_id: 
   lft: "17"
   rgt: "22"
   created_at: 2011-05-25 03:49:40.450412
@@ -368,7 +335,6 @@ archive_catalog_nodes_034:
   archive_study_id: "12"
   catalog_position: "3"
   parent_id: "25"
-  archive_id: 
   lft: "18"
   rgt: "21"
   created_at: 2011-05-25 03:49:40.458479
@@ -379,7 +345,6 @@ archive_catalog_nodes_035:
   archive_study_id: "14"
   catalog_position: "4"
   parent_id: "26"
-  archive_id: 
   lft: "19"
   rgt: "20"
   created_at: 2011-05-25 03:49:40.481557
@@ -390,7 +355,6 @@ archive_catalog_nodes_036:
   archive_study_id: "4"
   catalog_position: "3"
   parent_id: "28"
-  archive_id: 
   lft: "40"
   rgt: "43"
   created_at: 2011-05-25 03:49:40.871246
@@ -401,7 +365,6 @@ archive_catalog_nodes_037:
   archive_study_id: "3"
   catalog_position: "4"
   parent_id: "29"
-  archive_id: 
   lft: "41"
   rgt: "42"
   created_at: 2011-05-25 03:49:40.89053
@@ -412,7 +375,6 @@ archive_catalog_nodes_038:
   archive_study_id: "16"
   catalog_position: "2"
   parent_id: "15"
-  archive_id: 
   lft: "57"
   rgt: "58"
   created_at: 2011-05-25 03:49:41.265113
@@ -423,7 +385,6 @@ archive_catalog_nodes_039:
   archive_study_id: "7"
   catalog_position: "2"
   parent_id: "18"
-  archive_id: 
   lft: "69"
   rgt: "74"
   created_at: 2011-05-25 03:49:41.648695
@@ -434,7 +395,6 @@ archive_catalog_nodes_040:
   archive_study_id: "8"
   catalog_position: "3"
   parent_id: "32"
-  archive_id: 
   lft: "70"
   rgt: "73"
   created_at: 2011-05-25 03:49:41.66333
@@ -445,7 +405,6 @@ archive_catalog_nodes_041:
   archive_study_id: "10"
   catalog_position: "4"
   parent_id: "33"
-  archive_id: 
   lft: "71"
   rgt: "72"
   created_at: 2011-05-25 03:49:41.680011
@@ -456,7 +415,6 @@ archive_catalog_nodes_042:
   archive_study_id: "4"
   catalog_position: "3"
   parent_id: "10"
-  archive_id: 
   lft: "45"
   rgt: "48"
   created_at: 2011-05-25 03:51:33.214861
@@ -467,7 +425,6 @@ archive_catalog_nodes_043:
   archive_study_id: "3"
   catalog_position: "4"
   parent_id: "38"
-  archive_id: 
   lft: "46"
   rgt: "47"
   created_at: 2011-05-25 03:51:33.223788
@@ -478,7 +435,6 @@ archive_catalog_nodes_044:
   archive_study_id: "10"
   catalog_position: "4"
   parent_id: "18"
-  archive_id: 
   lft: "79"
   rgt: "80"
   created_at: 2011-05-25 03:53:34.733374
