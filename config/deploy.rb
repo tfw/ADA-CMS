@@ -57,7 +57,7 @@ desc "copy the database configuration to the server"
 task :copy_database_yml, :roles => :app do
   database_config_path = Capistrano::CLI.ui.ask "Specify a database configuration file to copy to the server:"
   data = File.read("#{database_config_path}")
-  put data, "#{shared_path}/database.yml", :mode => 0640
+  put data, "#{shared_path}/database.yml", :mode => 0600
 end
 
 task :echo_ruby_env do
