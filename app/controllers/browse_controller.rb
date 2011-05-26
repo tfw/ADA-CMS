@@ -1,4 +1,4 @@
-class PagesController < ContentController
+class ArchiveNodesController < ContentController
     
   respond_to :html
   

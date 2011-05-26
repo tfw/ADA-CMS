@@ -33,15 +33,18 @@ Ada::Application.routes.draw do
       resources :archive_study_blocks, :except => [:index, :show], :controller => "archives/archive_study_blocks"
       resources :archive_study_queries, :except => [:index, :show], :controller => "archives/archive_study_queries"
     end
+
     resources :news do
       post 'preview'
     end
+
     resources :documents, :images do
       collection do
         # Generate /staff/documents/browse -> browse_staff_documents, same for images
         get 'browse'
       end
     end
+    
     get 'resources', :to => 'resources#index'
   end
 
