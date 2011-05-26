@@ -18,8 +18,8 @@ class SearchController < ContentController
         {@current_archive => study_search(@current_archive, @term, @study_filters)}
       end
     
-    @studies_search = @study_searches[@current_archive]  
-    @variables_search = variable_search(@term, variable_filters)      
+    @studies_search = @study_searches[@current_archive]
+    @variables_search = variable_search(@term, variable_filters)
     
     @title = "Search: #{@term}"
     params[:filters] ||= []
@@ -52,7 +52,7 @@ class SearchController < ContentController
           with(name.to_sym, value)
         end
       end
-      
+
       facet :data_kind, :sort => :count, :limit => 7, :minimum_count => 2
       facet :sampling_abbr, :sort => :count, :limit => 7, :minimum_count => 2
       facet :collection_mode_abbr, :sort => :count, :limit => 7, :minimum_count => 2
