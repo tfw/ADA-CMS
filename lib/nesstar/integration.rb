@@ -63,7 +63,8 @@ module Nesstar
                participant :ref => 'download_and_convert_catalog_tree' 
              end
              
-             rewind :if => '${archive_catalog_integrations.size.any?}'
+             # rewind :if => '${archive_catalog_integrations.size.any?}'
+            rewind :if => '${archive_catalog_integrations.size.size} != 0'
            end
 
            participant :ref => 'log_run'
@@ -123,11 +124,9 @@ module Nesstar
 
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
-        puts "- #{workitem.fields['archive_catalog_integrations'].size}"
-puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
-        archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
+         archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
+puts "starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name} ---"
         workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
-puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
         
         archive = archive_catalog_integration.archive
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
@@ -140,10 +139,12 @@ puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} ---
         pre_existing_catalog = ArchiveCatalog.find_by_title_and_archive_id(label_hash[:label], archive.id)
         
         if pre_existing_catalog
+          puts "found pre_existing for #{label_hash[:label]} in #{archive.name}"
           catalog = pre_existing_catalog
         else
-puts "kaboom? - 1"
-          catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive)
+          puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
+          # debugger
+          catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive) #here, you must already have a node or a parent node
         end
 
         archive_catalog_integration.archive_catalog = catalog
@@ -176,7 +177,6 @@ puts "kaboom? - 1"
           if child[:resource] =~ /fStudy/
             study = Study.find_by_about(child[:resource])
             archive_study = study.for_archive(archive)
-            # debugger
             pre_existing = ArchiveCatalogNode.find_by_archive_study_id_and_parent_id(archive_study.id, node.id)
             
             if pre_existing
@@ -186,17 +186,12 @@ puts "kaboom? - 1"
               node = ArchiveCatalogNode.create!(:archive_study => archive_study, :parent => node, :catalog_position => child[:position])
             end
           else
-            pre_existing_integration = ArchiveCatalogIntegration.find_by_archive_id_and_url(archive.id, child[:resource])
-            
-puts "found pre_existing - #{pre_existing_integration.id}" if pre_existing_integration
-            
+            pre_existing_integration = ArchiveCatalogIntegration.find_by_archive_id_and_url(archive.id, child[:resource])            
             integration = pre_existing_integration 
             integration ||= ArchiveCatalogIntegration.create!(:archive => archive, :url => child[:resource]) 
-            
-            puts "-- #{integration.url}"
-            
+                        
             workitem.fields['archive_catalog_integrations'] << integration.id
-puts "added #{integration.id} --- #{workitem.fields['archive_catalog_integrations']} ---"            
+puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url}"            
             workitem.fields['children_to_parents'][integration.url]= node.id #store the parent for future association
           end
         end        

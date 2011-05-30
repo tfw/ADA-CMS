@@ -1,6 +1,4 @@
-class ArchiveCatalogNode < ActiveRecord::Base
-
-  acts_as_nested_set  
+class ArchiveCatalogStudy < ActiveRecord::Base
 
   belongs_to :archive_study
   belongs_to :archive_catalog
