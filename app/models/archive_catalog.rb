@@ -18,10 +18,8 @@ class ArchiveCatalog < ActiveRecord::Base
       slug = "#{self.parent.path.slug}/"
       slug += sluggerize(title)    
     else
-      slug = "/#{archive.slug}/browse" #this creates /social-science/browse/foo rather than /browse/social-science/foo
+      slug = "/#{archive.slug}/browse" 
     end
-    
-    puts "\n --- slug: #{slug} ----"
     
     slug
   end

@@ -11,5 +11,8 @@ class ArchiveCatalogsController < ContentController
     @title = @catalog.title
     respond_with(@catalog)
   end  
+  
+  protected
+  
 end
 

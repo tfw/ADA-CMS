@@ -6,6 +6,7 @@ class Archive < ActiveRecord::Base
   has_many :archive_study_integrations
   has_many :archive_studies, :through => :archive_study_integrations
   has_many :studies, :through => :archive_studies
+  has_many :archive_catalogues
   has_many :archive_study_queries
   has_many :archive_news
   has_many :news, :through => :archive_news
