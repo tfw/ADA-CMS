@@ -50,5 +50,4 @@ Ada::Application.configure do
 end
 
 #OPENID_SERVER='http://178.79.149.181:81' # testada (somewhere in the UK)
-OPENID_SERVER='http://users-test.ada.edu.au'
-
+OPENID_SERVER='http://users.ada.edu.au'
