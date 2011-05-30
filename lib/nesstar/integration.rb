@@ -125,10 +125,11 @@ module Nesstar
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
          archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
-puts "starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name} ---"
         workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
         
         archive = archive_catalog_integration.archive
+
+        puts "\n starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name} ---"
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
@@ -142,10 +143,10 @@ puts "starting --- #{workitem.fields['archive_catalog_integrations']} for #{arch
         
                 
         if pre_existing_catalog
-          puts "found pre_existing for #{label_hash[:label]} in #{archive.name}"
+puts "found pre_existing for #{label_hash[:label]} in #{archive.name}"
           catalog = pre_existing_catalog
         else
-          puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
+puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
           # debugger
           if parent_id
             catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive, :parent_id => parent_id) #here, you must already have a node or a parent node
@@ -156,22 +157,6 @@ puts "starting --- #{workitem.fields['archive_catalog_integrations']} for #{arch
 
         archive_catalog_integration.archive_catalog = catalog
         archive_catalog_integration.save!
-        
-        # pre_existing_node = ArchiveCatalogNode.find_by_archive_catalog_id(catalog.id)
-        # 
-        # if pre_existing_node
-        #   if parent_id
-        #     pre_existing_node.parent_id = parent
-        #     pre_existing_node.save!
-        #   end
-        #   node = pre_existing_node
-        # else
-        #   if parent_id
-        #     node = ArchiveCatalogNode.create!(:archive_catalog => catalog, :parent_id => parent_id) 
-        #   else
-        #     node = ArchiveCatalogNode.create!(:archive_catalog => catalog)
-        #   end
-        # end
         
         archive_catalog_integration.archive_catalog = catalog
         archive_catalog_integration.save
