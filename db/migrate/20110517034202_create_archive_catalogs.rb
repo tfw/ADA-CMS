@@ -2,7 +2,7 @@ class CreateArchiveCatalogs < ActiveRecord::Migration
   def self.up
     create_table :archive_catalogs do |t|
       t.string  :title, :null => false 
-      t.integer :archive_id
+      t.integer :archive_id, :null => false
       t.timestamps
     end
   end

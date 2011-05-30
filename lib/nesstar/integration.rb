@@ -45,16 +45,16 @@ module Nesstar
               participant :ref => 'download_study' 
             end
            
-            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-              participant :ref => 'download_related_materials' 
-            end
-                       
-            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-              participant :ref => 'download_variables' 
-            end
-                       
-            participant :ref => 'convert_related_materials' 
-            participant :ref => 'convert_variables' 
+            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+            #   participant :ref => 'download_related_materials' 
+            # end
+            #            
+            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+            #   participant :ref => 'download_variables' 
+            # end
+            #            
+            # participant :ref => 'convert_related_materials' 
+            # participant :ref => 'convert_variables' 
                        
             participant :ref => 'ada_archive_contains_all_studies' 
                        
@@ -124,10 +124,10 @@ module Nesstar
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
         puts "- #{workitem.fields['archive_catalog_integrations'].size}"
-#puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
+puts "starting --- #{workitem.fields['archive_catalog_integrations']} ---"
         archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
         workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
-#puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
+puts "after deletion of #{workitem.fields['archive_catalog_integration_id']} --- #{workitem.fields['archive_catalog_integrations']} ---"
         
         archive = archive_catalog_integration.archive
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
@@ -137,10 +137,12 @@ module Nesstar
        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
         label_hash = Nesstar::RDF::Parser.parse_catalog("#{file}")
         
-        pre_existing_catalog = ArchiveCatalog.find_by_title(label_hash[:label])
+        pre_existing_catalog = ArchiveCatalog.find_by_title_and_archive_id(label_hash[:label], archive.id)
+        
         if pre_existing_catalog
           catalog = pre_existing_catalog
         else
+puts "kaboom? - 1"
           catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive)
         end
 
@@ -163,6 +165,9 @@ module Nesstar
           end
         end
         
+        archive_catalog_integration.archive_catalog = catalog
+        archive_catalog_integration.save
+        
         children_file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}@children.xml"
         `curl -o #{children_file} --compressed "#{archive_catalog_integration.url}@children"`
         children = Nesstar::RDF::Parser.parse_catalog_children("#{children_file}")
@@ -183,9 +188,15 @@ module Nesstar
           else
             pre_existing_integration = ArchiveCatalogIntegration.find_by_archive_id_and_url(archive.id, child[:resource])
             
-            integration = pre_existing_integration if pre_existing_integration
-            integration = ArchiveCatalogIntegration.create(:archive => archive, :url => child[:resource]) if integration.nil?
+puts "found pre_existing - #{pre_existing_integration.id}" if pre_existing_integration
+            
+            integration = pre_existing_integration 
+            integration ||= ArchiveCatalogIntegration.create!(:archive => archive, :url => child[:resource]) 
+            
+            puts "-- #{integration.url}"
+            
             workitem.fields['archive_catalog_integrations'] << integration.id
+puts "added #{integration.id} --- #{workitem.fields['archive_catalog_integrations']} ---"            
             workitem.fields['children_to_parents'][integration.url]= node.id #store the parent for future association
           end
         end        
