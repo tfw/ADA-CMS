@@ -109,7 +109,14 @@ module Nesstar
 
       engine.register_participant 'load_archive_catalog_integrations' do |workitem|
         ids = []
-        ArchiveCatalogIntegration.all.each {|i| ids << i.id}
+        ArchiveCatalogIntegration.all.each do |i| 
+          ids << i.id
+          
+          #now we create a duplicate integration for the ADA archive
+          ada_integration = ArchiveCatalogIntegration.create!(:url => i.url, :archive => Archive.ada)
+          ids << ada_integration.id
+        end
+                
         workitem.fields['children_to_parents'] = {} #this hash will hold the relationships to build later on
         workitem.fields['archive_catalog_integrations'] = ids
       end
@@ -134,7 +141,7 @@ module Nesstar
         if pre_existing_catalog
           catalog = pre_existing_catalog
         else
-          catalog = ArchiveCatalog.create(:title => label_hash[:label])
+          catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive)
         end
 
         archive_catalog_integration.archive_catalog = catalog

@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20110520013848) do
 
   create_table "archive_catalogs", :force => true do |t|
     t.string   "title",      :null => false
+    t.integer  "archive_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
