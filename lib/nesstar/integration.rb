@@ -64,7 +64,7 @@ module Nesstar
              end
              
              # rewind :if => '${archive_catalog_integrations.size.any?}'
-            rewind :if => '${archive_catalog_integrations.size.size} != 0'
+            rewind :if => '${archive_catalog_integrations.any?}'
            end
 
            participant :ref => 'log_run'
@@ -87,7 +87,7 @@ module Nesstar
       end
 
       ARGV << "-d"
-      # @engine.noisy = true
+      #@engine.noisy = true
       wfid = @engine.launch(dataset_process_def)
       @engine.wait_for(wfid)
     end
@@ -138,7 +138,8 @@ module Nesstar
         pre_existing_catalog = ArchiveCatalog.find_by_title_and_archive_id(label_hash[:label], archive.id)
 
         #does a parent exist for this catalog?
-        parent_id = workitem.fields['children_to_parents'][archive_catalog_integration.url]
+        parent_key = archive_catalog_integration.url + "_" + archive.slug
+        parent_id = workitem.fields['children_to_parents'][parent_key]
         parent_catalog = ArchiveCatalog.find(parent_id) if parent_id
         
                 
@@ -185,8 +186,9 @@ puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
             integration ||= ArchiveCatalogIntegration.create!(:archive => archive, :url => child[:resource]) 
                         
             workitem.fields['archive_catalog_integrations'] << integration.id
-puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url}"            
-            workitem.fields['children_to_parents'][integration.url]= catalog.id #store the parent for future association
+puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url}"
+            parent_key = integration.url + "_" + archive.slug
+            workitem.fields['children_to_parents'][parent_key]= catalog.id #store the parent for future association
           end
         end        
       end
