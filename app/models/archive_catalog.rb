@@ -20,8 +20,4 @@ class ArchiveCatalog < ActiveRecord::Base
       slug = "#{archive.slug}/browse/" #this creates /social-science/browse/foo rather than /browse/social-science/foo
     end
   end
-
-  def parent
-    archive_catalog_node ? archive_catalog_node.parent : nil
-  end
 end

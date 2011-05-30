@@ -1,6 +1,6 @@
-class CreateArchiveCatalogNode < ActiveRecord::Migration
+class CreateArchiveCatalogStudies < ActiveRecord::Migration
   def self.up
-    create_table :archive_catalog_nodes do |t|
+    create_table :archive_catalog_studies do |t|
       t.integer :archive_catalog_id
       t.integer :archive_study_id
       t.integer :catalog_position
@@ -12,6 +12,6 @@ class CreateArchiveCatalogNode < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :archive_catalog_nodes
+    drop_table :archive_catalog_studies
   end
 end

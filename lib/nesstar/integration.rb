@@ -131,44 +131,52 @@ puts "starting --- #{workitem.fields['archive_catalog_integrations']} for #{arch
         archive = archive_catalog_integration.archive
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
-        #does a parent exist for this catalog?
-        parent_id = workitem.fields['children_to_parents'][archive_catalog_integration.url]
        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
         label_hash = Nesstar::RDF::Parser.parse_catalog("#{file}")
         
         pre_existing_catalog = ArchiveCatalog.find_by_title_and_archive_id(label_hash[:label], archive.id)
+
+        #does a parent exist for this catalog?
+        parent_id = workitem.fields['children_to_parents'][archive_catalog_integration.url]
+        parent_catalog = ArchiveCatalog.find(parent_id) if parent_id
         
+                
         if pre_existing_catalog
           puts "found pre_existing for #{label_hash[:label]} in #{archive.name}"
           catalog = pre_existing_catalog
         else
           puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
           # debugger
-          catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive) #here, you must already have a node or a parent node
+          if parent_id
+            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive, :parent_id => parent_id) #here, you must already have a node or a parent node
+          else
+            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive) #here, you must already have a node or a parent node
+          end
         end
 
         archive_catalog_integration.archive_catalog = catalog
         archive_catalog_integration.save!
         
-        pre_existing_node = ArchiveCatalogNode.find_by_archive_catalog_id(catalog.id)
-
-        if pre_existing_node
-          if parent_id
-            pre_existing_node.parent_id = parent
-            pre_existing_node.save!
-          end
-          node = pre_existing_node
-        else
-          if parent_id
-            node = ArchiveCatalogNode.create!(:archive_catalog => catalog, :parent_id => parent_id) 
-          else
-            node = ArchiveCatalogNode.create!(:archive_catalog => catalog)
-          end
-        end
+        # pre_existing_node = ArchiveCatalogNode.find_by_archive_catalog_id(catalog.id)
+        # 
+        # if pre_existing_node
+        #   if parent_id
+        #     pre_existing_node.parent_id = parent
+        #     pre_existing_node.save!
+        #   end
+        #   node = pre_existing_node
+        # else
+        #   if parent_id
+        #     node = ArchiveCatalogNode.create!(:archive_catalog => catalog, :parent_id => parent_id) 
+        #   else
+        #     node = ArchiveCatalogNode.create!(:archive_catalog => catalog)
+        #   end
+        # end
         
         archive_catalog_integration.archive_catalog = catalog
         archive_catalog_integration.save
         
+        #now configure the children onto the catalogue, whether studies or other catalogs
         children_file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}@children.xml"
         `curl -o #{children_file} --compressed "#{archive_catalog_integration.url}@children"`
         children = Nesstar::RDF::Parser.parse_catalog_children("#{children_file}")
@@ -177,13 +185,14 @@ puts "starting --- #{workitem.fields['archive_catalog_integrations']} for #{arch
           if child[:resource] =~ /fStudy/
             study = Study.find_by_about(child[:resource])
             archive_study = study.for_archive(archive)
-            pre_existing = ArchiveCatalogNode.find_by_archive_study_id_and_parent_id(archive_study.id, node.id)
+            pre_existing = ArchiveCatalogStudy.find_by_archive_study_id_and_parent_id(archive_study.id, catalog.id)
             
             if pre_existing
               pre_existing.catalog_position = child[:position]
+              pre_existing.parent = catalog
               pre_existing.save!
             else
-              node = ArchiveCatalogNode.create!(:archive_study => archive_study, :parent => node, :catalog_position => child[:position])
+              archive_catalog_study = ArchiveCatalogStudy.create!(:archive_study => archive_study, :archive_catalog => catalog, :catalog_position => child[:position])
             end
           else
             pre_existing_integration = ArchiveCatalogIntegration.find_by_archive_id_and_url(archive.id, child[:resource])            
@@ -192,7 +201,7 @@ puts "starting --- #{workitem.fields['archive_catalog_integrations']} for #{arch
                         
             workitem.fields['archive_catalog_integrations'] << integration.id
 puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url}"            
-            workitem.fields['children_to_parents'][integration.url]= node.id #store the parent for future association
+            workitem.fields['children_to_parents'][integration.url]= catalog.id #store the parent for future association
           end
         end        
       end
