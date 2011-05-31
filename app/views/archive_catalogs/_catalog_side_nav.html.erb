@@ -1,9 +1,35 @@
+<% content_for :js do %>
+	$("#tree").explrTree();
+<% end %>
+
 <% content_for :sidenav do %>
   <nav>
   	<div id ="catalogs">
   	  ADA <br/>
-  	  <ul>
-  	  </ul>
+
+			  <ul id="tree">
+		    <li class="icon-home">
+		        <a href="#">home</a>
+		    </li>
+		    <li class="icon-user">
+		        <a href="about.html" rel="explr-ajax">about</a>
+		    </li>
+			<li class="icon-photo">
+			    <a href="#">portfolio</a>
+			    <ul class="icon-photo">
+				<li>
+				    <a href="http://codecanyon.net/user/amatyr4n/portfolio?ref=amatyr4n" target="_blank">codecanyon</a>
+
+				</li>
+				<li>
+				    <a href="http://themeforest.net/user/amatyr4n/portfolio?ref=amatyr4n">themeforest</a>
+				</li>
+			    </ul>
+			</li>
+			<li>
+			    <a href="mailto:movedgraph@gmail.com">contact</a>
+			</li>
+        </ul>
   	</div>
   </nav>
 <% end %>  

@@ -18,9 +18,6 @@ class CreateInklingTables < ActiveRecord::Migration
     end
     
     create_table :inkling_paths do |t|
-      t.integer :parent_id
-      t.integer :lft
-      t.integer :rgt
       t.string :slug, :null => false
       t.references :content, :polymorphic => true
       t.timestamps
