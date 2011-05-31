@@ -150,9 +150,11 @@ puts "found pre_existing for #{label_hash[:label]} in #{archive.name}"
 puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
           # debugger
           if parent_id
-            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive, :parent_id => parent_id) #here, you must already have a node or a parent node
+            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive, 
+              :parent_id => parent_id, :catalog_position => label_hash[:catalog_position]) 
           else
-            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive) #here, you must already have a node or a parent node
+            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive,
+              :catalog_position => label_hash[:catalog_position]) 
           end
         end
 

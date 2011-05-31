@@ -24,9 +24,6 @@ ActiveRecord::Schema.define(:version => 20110520013848) do
     t.integer  "archive_catalog_id"
     t.integer  "archive_study_id"
     t.integer  "catalog_position"
-    t.integer  "parent_id"
-    t.integer  "lft"
-    t.integer  "rgt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -167,9 +164,6 @@ ActiveRecord::Schema.define(:version => 20110520013848) do
   end
 
   create_table "inkling_paths", :force => true do |t|
-    t.integer  "parent_id"
-    t.integer  "lft"
-    t.integer  "rgt"
     t.string   "slug",         :null => false
     t.integer  "content_id"
     t.string   "content_type"

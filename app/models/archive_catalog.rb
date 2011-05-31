@@ -23,4 +23,9 @@ class ArchiveCatalog < ActiveRecord::Base
     
     slug
   end
+  
+  def nodes_by_catalogue_position
+    nodes = []
+    
+  end
 end
