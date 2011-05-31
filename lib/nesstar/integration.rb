@@ -59,12 +59,13 @@ module Nesstar
             participant :ref => 'ada_archive_contains_all_studies' 
                        
            cursor do
-             iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration_id" do
+             iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration" do
                participant :ref => 'download_and_convert_catalog_tree' 
              end
              
-             # rewind :if => '${archive_catalog_integrations.size.any?}'
-            rewind :if => '${archive_catalog_integrations.any?}'
+              rewind :if => '${archive_catalog_integrations.size} != 0'
+            # rewind :if => '${archive_catalog_integrations.any?}'
+         #   _break :if => '${archive_catalog_integrations.size} == 0'
            end
 
            participant :ref => 'log_run'
@@ -110,12 +111,13 @@ module Nesstar
 
       engine.register_participant 'load_archive_catalog_integrations' do |workitem|
         ids = []
+        
         ArchiveCatalogIntegration.all.each do |i| 
-          ids << i.id
-          
-          #now we create a duplicate integration for the ADA archive
+          ids << [i.id, nil]  #the array stores the id the integration, and the position of the catalog entry in parent
+                              #the position is always nil for top level catalogs
+          #create a duplicate integration for the ADA archive
           ada_integration = ArchiveCatalogIntegration.create!(:url => i.url, :archive => Archive.ada)
-          ids << ada_integration.id
+          ids << [ada_integration.id, nil]
         end
                 
         workitem.fields['children_to_parents'] = {} #this hash will hold the relationships to build later on
@@ -124,12 +126,12 @@ module Nesstar
 
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
-         archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration_id'])
-        workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
-        
+        archive_catalog_info = workitem.fields['archive_catalog_integration']
+        archive_catalog_integration = ArchiveCatalogIntegration.find(archive_catalog_info.first)
+        workitem.fields['archive_catalog_integrations'].delete(archive_catalog_info)
         archive = archive_catalog_integration.archive
 
-        puts "\n starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name} ---"
+puts "\n starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name} --- in pos #{archive_catalog_info.last}"
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
@@ -148,18 +150,14 @@ puts "found pre_existing for #{label_hash[:label]} in #{archive.name}"
           catalog = pre_existing_catalog
         else
 puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
-          # debugger
           if parent_id
             catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive, 
-              :parent_id => parent_id, :catalog_position => label_hash[:catalog_position]) 
+              :parent_id => parent_id, :catalog_position => archive_catalog_info.last) 
           else
             catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive,
-              :catalog_position => label_hash[:catalog_position]) 
+              :catalog_position => archive_catalog_info.last) 
           end
         end
-
-        archive_catalog_integration.archive_catalog = catalog
-        archive_catalog_integration.save!
         
         archive_catalog_integration.archive_catalog = catalog
         archive_catalog_integration.save
@@ -173,22 +171,21 @@ puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
           if child[:resource] =~ /fStudy/
             study = Study.find_by_about(child[:resource])
             archive_study = study.for_archive(archive)
-            pre_existing = ArchiveCatalogStudy.find_by_archive_study_id_and_parent_id(archive_study.id, catalog.id)
+            pre_existing = ArchiveCatalogStudy.find_by_archive_study_id_and_archive_catalog_id(archive_study.id, catalog.id)
             
             if pre_existing
               pre_existing.catalog_position = child[:position]
-              pre_existing.parent = catalog
               pre_existing.save!
             else
               archive_catalog_study = ArchiveCatalogStudy.create!(:archive_study => archive_study, :archive_catalog => catalog, :catalog_position => child[:position])
             end
-          else
+          else #a child catalog, create an integration for it and configure this catalog as its future parent            
             pre_existing_integration = ArchiveCatalogIntegration.find_by_archive_id_and_url(archive.id, child[:resource])            
             integration = pre_existing_integration 
             integration ||= ArchiveCatalogIntegration.create!(:archive => archive, :url => child[:resource]) 
                         
-            workitem.fields['archive_catalog_integrations'] << integration.id
-puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url}"
+            workitem.fields['archive_catalog_integrations'] << [integration.id, child[:position]]
+puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url} at pos #{child[:position]}"
             parent_key = integration.url + "_" + archive.slug
             workitem.fields['children_to_parents'][parent_key]= catalog.id #store the parent for future association
           end
