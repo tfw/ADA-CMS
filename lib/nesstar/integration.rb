@@ -63,8 +63,8 @@ module Nesstar
                participant :ref => 'download_and_convert_catalog_tree' 
              end
              
-              #rewind :if => '${archive_catalog_integrations.size} != 0'
-             rewind :if => '${archive_catalog_integrations.any?}'
+              rewind :if => '${archive_catalog_integrations.size} != 0'
+             #rewind :if => '${archive_catalog_integrations.any?}'
          #   _break :if => '${archive_catalog_integrations.size} == 0'
            end
 
@@ -110,7 +110,7 @@ module Nesstar
       end
 
       engine.register_participant 'load_archive_catalog_integrations' do |workitem|
-        ids = []
+        ids = Set.new
         
         ArchiveCatalogIntegration.all.each do |i| 
           ids << i.id  #the array stores the id the integration, and the position of the catalog entry in parent
@@ -128,10 +128,11 @@ module Nesstar
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
    #     archive_catalog_info = workitem.fields['archive_catalog_integration']
         archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration'])
-        # workitem.fields['archive_catalog_integrations'].delete(archive_catalog_info)
         archive = archive_catalog_integration.archive
 
-puts "\n starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name}"
+puts "\n -- starting for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name}"
+        workitem.fields['archive_catalog_integrations'].delete(archive_catalog_integration.id)
+puts "removed #{archive_catalog_integration.id} from #{workitem.fields['archive_catalog_integrations']} --"
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`

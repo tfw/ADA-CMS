@@ -1,5 +1,4 @@
 <% content_for :js do %>
-  <!-- $("#tree").explrTree(); -->
 	
   $('#tree').explrTree({
   		treeHeight	: 200,
@@ -10,12 +9,11 @@
 <% content_for :sidenav do %>
   <nav>
   	<div id ="catalogs">
-  	  
-  	  <%= render(:partial => 'catalog_tree', :collection => ) %>
-  	  
-  	  ADA <br/>
 
-			  <ul id="tree">
+  	  ADA <br/>
+		  <ul id="tree">
+				<%= render :partial => "catalog", :collection => @ada_catalogs %>
+
 		    <li>
 		        <a href="#">home</a>
 		    </li>
