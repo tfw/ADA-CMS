@@ -1,0 +1,785 @@
+--- 
+inkling_paths_001: 
+  id: "1"
+  slug: /indigenous/browse
+  content_id: "1"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:55.933759
+  updated_at: 2011-06-01 06:15:55.933759
+inkling_paths_002: 
+  id: "2"
+  slug: /ada/browse
+  content_id: "2"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:56.471855
+  updated_at: 2011-06-01 06:15:56.471855
+inkling_paths_003: 
+  id: "3"
+  slug: /indigenous/browse/aborigines-who-abstain-from-alcohol--1990-1993
+  content_id: "3"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:57.006904
+  updated_at: 2011-06-01 06:15:57.006904
+inkling_paths_004: 
+  id: "4"
+  slug: /indigenous/browse/aboriginal-survey--new-south-wales-and-south-australia--1965
+  content_id: "4"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:57.428795
+  updated_at: 2011-06-01 06:15:57.428795
+inkling_paths_005: 
+  id: "5"
+  slug: /indigenous/browse/national-police-custody-survey
+  content_id: "5"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:57.829201
+  updated_at: 2011-06-01 06:15:57.829201
+inkling_paths_006: 
+  id: "6"
+  slug: /indigenous/browse/royal-commission-into-aboriginal-deaths-in-custody-surveys
+  content_id: "6"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:58.175057
+  updated_at: 2011-06-01 06:15:58.175057
+inkling_paths_007: 
+  id: "7"
+  slug: /ada/browse/aborigines-who-abstain-from-alcohol--1990-1993
+  content_id: "7"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:58.643638
+  updated_at: 2011-06-01 06:15:58.643638
+inkling_paths_008: 
+  id: "8"
+  slug: /ada/browse/aboriginal-survey--new-south-wales-and-south-australia--1965
+  content_id: "8"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:59.052452
+  updated_at: 2011-06-01 06:15:59.052452
+inkling_paths_009: 
+  id: "9"
+  slug: /ada/browse/national-police-custody-survey
+  content_id: "9"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:59.448322
+  updated_at: 2011-06-01 06:15:59.448322
+inkling_paths_010: 
+  id: "10"
+  slug: /ada/browse/royal-commission-into-aboriginal-deaths-in-custody-surveys
+  content_id: "10"
+  content_type: ArchiveCatalog
+  created_at: 2011-06-01 06:15:59.844522
+  updated_at: 2011-06-01 06:15:59.844522
+inkling_paths_011: 
+  id: "11"
+  slug: /historical/creating-data
+  content_id: "38"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.275175
+  updated_at: 2011-06-01 06:18:52.275175
+inkling_paths_012: 
+  id: "12"
+  slug: /indigenous/catalogue
+  content_id: "44"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.291562
+  updated_at: 2011-06-01 06:18:52.291562
+inkling_paths_013: 
+  id: "13"
+  slug: /historical/using-data
+  content_id: "39"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.30796
+  updated_at: 2011-06-01 06:18:52.30796
+inkling_paths_014: 
+  id: "14"
+  slug: /indigenous/creating-data
+  content_id: "45"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.316295
+  updated_at: 2011-06-01 06:18:52.316295
+inkling_paths_015: 
+  id: "15"
+  slug: /ada/home
+  content_id: "1"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.325545
+  updated_at: 2011-06-01 06:18:52.325545
+inkling_paths_016: 
+  id: "16"
+  slug: /historical/home
+  content_id: "3"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.388644
+  updated_at: 2011-06-01 06:18:52.388644
+inkling_paths_017: 
+  id: "17"
+  slug: /indigenous/home
+  content_id: "4"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.40052
+  updated_at: 2011-06-01 06:18:52.40052
+inkling_paths_018: 
+  id: "18"
+  slug: /longitudinal/home
+  content_id: "5"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.409586
+  updated_at: 2011-06-01 06:18:52.409586
+inkling_paths_019: 
+  id: "19"
+  slug: /historical/census-data
+  content_id: "40"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.418996
+  updated_at: 2011-06-01 06:18:52.418996
+inkling_paths_020: 
+  id: "20"
+  slug: /qualitative/home
+  content_id: "6"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.428848
+  updated_at: 2011-06-01 06:18:52.428848
+inkling_paths_021: 
+  id: "21"
+  slug: /international/home
+  content_id: "7"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.437678
+  updated_at: 2011-06-01 06:18:52.437678
+inkling_paths_022: 
+  id: "22"
+  slug: /ada/about
+  content_id: "8"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.450096
+  updated_at: 2011-06-01 06:18:52.450096
+inkling_paths_023: 
+  id: "23"
+  slug: /ada/subarchives
+  content_id: "10"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.458923
+  updated_at: 2011-06-01 06:18:52.458923
+inkling_paths_024: 
+  id: "24"
+  slug: /longitudinal/using-data
+  content_id: "54"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.467946
+  updated_at: 2011-06-01 06:18:52.467946
+inkling_paths_025: 
+  id: "25"
+  slug: /ada/data-access
+  content_id: "11"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.475568
+  updated_at: 2011-06-01 06:18:52.475568
+inkling_paths_026: 
+  id: "26"
+  slug: /ada/browse-ada-catalogue
+  content_id: "12"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.487909
+  updated_at: 2011-06-01 06:18:52.487909
+inkling_paths_027: 
+  id: "27"
+  slug: /ada/search-ada
+  content_id: "13"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.498058
+  updated_at: 2011-06-01 06:18:52.498058
+inkling_paths_028: 
+  id: "28"
+  slug: /ada/register-for-ada
+  content_id: "14"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.542615
+  updated_at: 2011-06-01 06:18:52.542615
+inkling_paths_029: 
+  id: "29"
+  slug: /ada/ada-undertaking-forms
+  content_id: "15"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.551947
+  updated_at: 2011-06-01 06:18:52.551947
+inkling_paths_030: 
+  id: "30"
+  slug: /ada/data-deposit
+  content_id: "16"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.560484
+  updated_at: 2011-06-01 06:18:52.560484
+inkling_paths_031: 
+  id: "31"
+  slug: /ada/why-deposit-data-
+  content_id: "17"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.570188
+  updated_at: 2011-06-01 06:18:52.570188
+inkling_paths_032: 
+  id: "32"
+  slug: /ada/sharing-data-and-access-conditions
+  content_id: "18"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.580473
+  updated_at: 2011-06-01 06:18:52.580473
+inkling_paths_033: 
+  id: "33"
+  slug: /ada/how-to-deposit-data
+  content_id: "19"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.592151
+  updated_at: 2011-06-01 06:18:52.592151
+inkling_paths_034: 
+  id: "34"
+  slug: /ada/deposit-forms
+  content_id: "20"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.601685
+  updated_at: 2011-06-01 06:18:52.601685
+inkling_paths_035: 
+  id: "35"
+  slug: /ada/user-guides
+  content_id: "21"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.60956
+  updated_at: 2011-06-01 06:18:52.60956
+inkling_paths_036: 
+  id: "36"
+  slug: /ada/ada-news
+  content_id: "22"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.616629
+  updated_at: 2011-06-01 06:18:52.616629
+inkling_paths_037: 
+  id: "37"
+  slug: /ada/contact
+  content_id: "23"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.62532
+  updated_at: 2011-06-01 06:18:52.62532
+inkling_paths_038: 
+  id: "38"
+  slug: /ada/my-account
+  content_id: "24"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.634231
+  updated_at: 2011-06-01 06:18:52.634231
+inkling_paths_039: 
+  id: "39"
+  slug: /historical/user-guides
+  content_id: "41"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.642748
+  updated_at: 2011-06-01 06:18:52.642748
+inkling_paths_040: 
+  id: "40"
+  slug: /historical/news
+  content_id: "42"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.65013
+  updated_at: 2011-06-01 06:18:52.65013
+inkling_paths_041: 
+  id: "41"
+  slug: /indigenous/about
+  content_id: "43"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.658048
+  updated_at: 2011-06-01 06:18:52.658048
+inkling_paths_042: 
+  id: "42"
+  slug: /historical/census-1966-1991
+  content_id: "69"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.70028
+  updated_at: 2011-06-01 06:18:52.70028
+inkling_paths_043: 
+  id: "43"
+  slug: /indigenous/using-data
+  content_id: "46"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.7087
+  updated_at: 2011-06-01 06:18:52.7087
+inkling_paths_044: 
+  id: "44"
+  slug: /indigenous/protocols
+  content_id: "47"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.717564
+  updated_at: 2011-06-01 06:18:52.717564
+inkling_paths_045: 
+  id: "45"
+  slug: /indigenous/community
+  content_id: "48"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.725971
+  updated_at: 2011-06-01 06:18:52.725971
+inkling_paths_046: 
+  id: "46"
+  slug: /indigenous/user-guides
+  content_id: "49"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.733349
+  updated_at: 2011-06-01 06:18:52.733349
+inkling_paths_047: 
+  id: "47"
+  slug: /social-science/home
+  content_id: "26"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.74189
+  updated_at: 2011-06-01 06:18:52.74189
+inkling_paths_048: 
+  id: "48"
+  slug: /social-science/about
+  content_id: "27"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.750576
+  updated_at: 2011-06-01 06:18:52.750576
+inkling_paths_049: 
+  id: "49"
+  slug: /social-science/catalogue
+  content_id: "28"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.757815
+  updated_at: 2011-06-01 06:18:52.757815
+inkling_paths_050: 
+  id: "50"
+  slug: /social-science/creating-data
+  content_id: "29"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.765812
+  updated_at: 2011-06-01 06:18:52.765812
+inkling_paths_051: 
+  id: "51"
+  slug: /social-science/using-data
+  content_id: "30"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.774126
+  updated_at: 2011-06-01 06:18:52.774126
+inkling_paths_052: 
+  id: "52"
+  slug: /social-science/themed-data
+  content_id: "32"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.783707
+  updated_at: 2011-06-01 06:18:52.783707
+inkling_paths_053: 
+  id: "53"
+  slug: /social-science/user-guides
+  content_id: "33"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.792633
+  updated_at: 2011-06-01 06:18:52.792633
+inkling_paths_054: 
+  id: "54"
+  slug: /social-science/news
+  content_id: "34"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.801642
+  updated_at: 2011-06-01 06:18:52.801642
+inkling_paths_055: 
+  id: "55"
+  slug: /international/about
+  content_id: "35"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.808709
+  updated_at: 2011-06-01 06:18:52.808709
+inkling_paths_056: 
+  id: "56"
+  slug: /historical/about
+  content_id: "36"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.817264
+  updated_at: 2011-06-01 06:18:52.817264
+inkling_paths_057: 
+  id: "57"
+  slug: /historical/catalogue
+  content_id: "37"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.858474
+  updated_at: 2011-06-01 06:18:52.858474
+inkling_paths_058: 
+  id: "58"
+  slug: /indigenous/news
+  content_id: "50"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.866057
+  updated_at: 2011-06-01 06:18:52.866057
+inkling_paths_059: 
+  id: "59"
+  slug: /longitudinal/about
+  content_id: "51"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.874325
+  updated_at: 2011-06-01 06:18:52.874325
+inkling_paths_060: 
+  id: "60"
+  slug: /longitudinal/catalogue
+  content_id: "52"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.882599
+  updated_at: 2011-06-01 06:18:52.882599
+inkling_paths_061: 
+  id: "61"
+  slug: /longitudinal/creating-data
+  content_id: "53"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.891423
+  updated_at: 2011-06-01 06:18:52.891423
+inkling_paths_062: 
+  id: "62"
+  slug: /longitudinal/longitudinal-studies
+  content_id: "55"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.900637
+  updated_at: 2011-06-01 06:18:52.900637
+inkling_paths_063: 
+  id: "63"
+  slug: /longitudinal/visualisation
+  content_id: "56"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.909305
+  updated_at: 2011-06-01 06:18:52.909305
+inkling_paths_064: 
+  id: "64"
+  slug: /longitudinal/user-guides
+  content_id: "57"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.916586
+  updated_at: 2011-06-01 06:18:52.916586
+inkling_paths_065: 
+  id: "65"
+  slug: /longitudinal/news
+  content_id: "58"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.924267
+  updated_at: 2011-06-01 06:18:52.924267
+inkling_paths_066: 
+  id: "66"
+  slug: /qualitative/about
+  content_id: "59"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.932737
+  updated_at: 2011-06-01 06:18:52.932737
+inkling_paths_067: 
+  id: "67"
+  slug: /qualitative/catalogue
+  content_id: "60"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.941534
+  updated_at: 2011-06-01 06:18:52.941534
+inkling_paths_068: 
+  id: "68"
+  slug: /qualitative/creating-data
+  content_id: "61"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.949707
+  updated_at: 2011-06-01 06:18:52.949707
+inkling_paths_069: 
+  id: "69"
+  slug: /qualitative/using-data
+  content_id: "62"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.958137
+  updated_at: 2011-06-01 06:18:52.958137
+inkling_paths_070: 
+  id: "70"
+  slug: /qualitative/completed-projects
+  content_id: "63"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.965646
+  updated_at: 2011-06-01 06:18:52.965646
+inkling_paths_071: 
+  id: "71"
+  slug: /qualitative/user-guides
+  content_id: "64"
+  content_type: Page
+  created_at: 2011-06-01 06:18:52.974456
+  updated_at: 2011-06-01 06:18:52.974456
+inkling_paths_072: 
+  id: "72"
+  slug: /qualitative/news
+  content_id: "65"
+  content_type: Page
+  created_at: 2011-06-01 06:18:53.017054
+  updated_at: 2011-06-01 06:18:53.017054
+inkling_paths_073: 
+  id: "73"
+  slug: /international/catalogue
+  content_id: "66"
+  content_type: Page
+  created_at: 2011-06-01 06:18:53.024814
+  updated_at: 2011-06-01 06:18:53.024814
+inkling_paths_074: 
+  id: "74"
+  slug: /international/other-tabs-tbd
+  content_id: "67"
+  content_type: Page
+  created_at: 2011-06-01 06:18:53.033254
+  updated_at: 2011-06-01 06:18:53.033254
+inkling_paths_075: 
+  id: "75"
+  slug: /historical/hccda
+  content_id: "68"
+  content_type: Page
+  created_at: 2011-06-01 06:18:53.041218
+  updated_at: 2011-06-01 06:18:53.041218
+inkling_paths_076: 
+  id: "76"
+  slug: /indigenous/00102-f
+  content_id: "1"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.24591
+  updated_at: 2011-06-01 06:18:53.24591
+inkling_paths_077: 
+  id: "77"
+  slug: /indigenous/00102-h
+  content_id: "2"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.255357
+  updated_at: 2011-06-01 06:18:53.255357
+inkling_paths_078: 
+  id: "78"
+  slug: /indigenous/00102-m
+  content_id: "3"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.268189
+  updated_at: 2011-06-01 06:18:53.268189
+inkling_paths_079: 
+  id: "79"
+  slug: /indigenous/00103
+  content_id: "4"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.277094
+  updated_at: 2011-06-01 06:18:53.277094
+inkling_paths_080: 
+  id: "80"
+  slug: /indigenous/00115
+  content_id: "5"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.285611
+  updated_at: 2011-06-01 06:18:53.285611
+inkling_paths_081: 
+  id: "81"
+  slug: /indigenous/00349
+  content_id: "6"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.293092
+  updated_at: 2011-06-01 06:18:53.293092
+inkling_paths_082: 
+  id: "82"
+  slug: /indigenous/00602
+  content_id: "7"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.29985
+  updated_at: 2011-06-01 06:18:53.29985
+inkling_paths_083: 
+  id: "83"
+  slug: /indigenous/00603
+  content_id: "8"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.307698
+  updated_at: 2011-06-01 06:18:53.307698
+inkling_paths_084: 
+  id: "84"
+  slug: /indigenous/00601
+  content_id: "9"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.316047
+  updated_at: 2011-06-01 06:18:53.316047
+inkling_paths_085: 
+  id: "85"
+  slug: /indigenous/00604
+  content_id: "10"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.356924
+  updated_at: 2011-06-01 06:18:53.356924
+inkling_paths_086: 
+  id: "86"
+  slug: /indigenous/00822-c01
+  content_id: "11"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.364889
+  updated_at: 2011-06-01 06:18:53.364889
+inkling_paths_087: 
+  id: "87"
+  slug: /indigenous/00822-p01
+  content_id: "12"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.375074
+  updated_at: 2011-06-01 06:18:53.375074
+inkling_paths_088: 
+  id: "88"
+  slug: /indigenous/00822-c02
+  content_id: "13"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.383116
+  updated_at: 2011-06-01 06:18:53.383116
+inkling_paths_089: 
+  id: "89"
+  slug: /indigenous/00822-p02
+  content_id: "14"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.391529
+  updated_at: 2011-06-01 06:18:53.391529
+inkling_paths_090: 
+  id: "90"
+  slug: /indigenous/00967
+  content_id: "15"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.399833
+  updated_at: 2011-06-01 06:18:53.399833
+inkling_paths_091: 
+  id: "91"
+  slug: /indigenous/00986
+  content_id: "16"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.408137
+  updated_at: 2011-06-01 06:18:53.408137
+inkling_paths_092: 
+  id: "92"
+  slug: /indigenous/01159
+  content_id: "17"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.417608
+  updated_at: 2011-06-01 06:18:53.417608
+inkling_paths_093: 
+  id: "93"
+  slug: /ada/00102-f
+  content_id: "18"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.425784
+  updated_at: 2011-06-01 06:18:53.425784
+inkling_paths_094: 
+  id: "94"
+  slug: /ada/00102-h
+  content_id: "19"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.433326
+  updated_at: 2011-06-01 06:18:53.433326
+inkling_paths_095: 
+  id: "95"
+  slug: /ada/00102-m
+  content_id: "20"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.441904
+  updated_at: 2011-06-01 06:18:53.441904
+inkling_paths_096: 
+  id: "96"
+  slug: /ada/00103
+  content_id: "21"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.482367
+  updated_at: 2011-06-01 06:18:53.482367
+inkling_paths_097: 
+  id: "97"
+  slug: /ada/00115
+  content_id: "22"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.490223
+  updated_at: 2011-06-01 06:18:53.490223
+inkling_paths_098: 
+  id: "98"
+  slug: /ada/00349
+  content_id: "23"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.499833
+  updated_at: 2011-06-01 06:18:53.499833
+inkling_paths_099: 
+  id: "99"
+  slug: /ada/00602
+  content_id: "24"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.507123
+  updated_at: 2011-06-01 06:18:53.507123
+inkling_paths_100: 
+  id: "100"
+  slug: /ada/00603
+  content_id: "25"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.517901
+  updated_at: 2011-06-01 06:18:53.517901
+inkling_paths_101: 
+  id: "101"
+  slug: /ada/00601
+  content_id: "26"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.525443
+  updated_at: 2011-06-01 06:18:53.525443
+inkling_paths_102: 
+  id: "102"
+  slug: /ada/00604
+  content_id: "27"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.5336
+  updated_at: 2011-06-01 06:18:53.5336
+inkling_paths_103: 
+  id: "103"
+  slug: /ada/00822-c01
+  content_id: "28"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.541628
+  updated_at: 2011-06-01 06:18:53.541628
+inkling_paths_104: 
+  id: "104"
+  slug: /ada/00822-p01
+  content_id: "29"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.551327
+  updated_at: 2011-06-01 06:18:53.551327
+inkling_paths_105: 
+  id: "105"
+  slug: /ada/00822-c02
+  content_id: "30"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.560824
+  updated_at: 2011-06-01 06:18:53.560824
+inkling_paths_106: 
+  id: "106"
+  slug: /ada/00822-p02
+  content_id: "31"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.569417
+  updated_at: 2011-06-01 06:18:53.569417
+inkling_paths_107: 
+  id: "107"
+  slug: /ada/00967
+  content_id: "32"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.609066
+  updated_at: 2011-06-01 06:18:53.609066
+inkling_paths_108: 
+  id: "108"
+  slug: /ada/00986
+  content_id: "33"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.616592
+  updated_at: 2011-06-01 06:18:53.616592
+inkling_paths_109: 
+  id: "109"
+  slug: /ada/01159
+  content_id: "34"
+  content_type: ArchiveStudy
+  created_at: 2011-06-01 06:18:53.625026
+  updated_at: 2011-06-01 06:18:53.625026
+inkling_paths_110: 
+  id: "110"
+  slug: /ada-atom-feed.atom
+  content_id: "1"
+  content_type: Inkling::Feed
+  created_at: 2011-06-01 06:18:53.757646
+  updated_at: 2011-06-01 06:18:53.757646
+inkling_paths_111: 
+  id: "111"
+  slug: /social-science-atom-feed.atom
+  content_id: "2"
+  content_type: Inkling::Feed
+  created_at: 2011-06-01 06:18:53.762407
+  updated_at: 2011-06-01 06:18:53.762407
+inkling_paths_112: 
+  id: "112"
+  slug: /indigenous-atom-feed.atom
+  content_id: "3"
+  content_type: Inkling::Feed
+  created_at: 2011-06-01 06:18:53.772502
+  updated_at: 2011-06-01 06:18:53.772502

@@ -1,0 +1,101 @@
+--- 
+archive_catalogs_001: 
+  id: "1"
+  title: Indigenous
+  archive_id: "3"
+  catalog_position: 
+  parent_id: 
+  lft: "1"
+  rgt: "10"
+  created_at: 2011-06-01 06:15:55.886039
+  updated_at: 2011-06-01 06:15:55.886039
+archive_catalogs_002: 
+  id: "2"
+  title: Indigenous
+  archive_id: "7"
+  catalog_position: 
+  parent_id: 
+  lft: "11"
+  rgt: "20"
+  created_at: 2011-06-01 06:15:56.463247
+  updated_at: 2011-06-01 06:15:56.463247
+archive_catalogs_003: 
+  id: "3"
+  title: Aborigines who abstain from alcohol, 1990-1993
+  archive_id: "3"
+  catalog_position: 
+  parent_id: "1"
+  lft: "2"
+  rgt: "3"
+  created_at: 2011-06-01 06:15:56.99301
+  updated_at: 2011-06-01 06:15:56.99301
+archive_catalogs_004: 
+  id: "4"
+  title: Aboriginal survey, New South Wales and South Australia, 1965
+  archive_id: "3"
+  catalog_position: 
+  parent_id: "1"
+  lft: "4"
+  rgt: "5"
+  created_at: 2011-06-01 06:15:57.422134
+  updated_at: 2011-06-01 06:15:57.422134
+archive_catalogs_005: 
+  id: "5"
+  title: National Police Custody Survey
+  archive_id: "3"
+  catalog_position: 
+  parent_id: "1"
+  lft: "6"
+  rgt: "7"
+  created_at: 2011-06-01 06:15:57.822977
+  updated_at: 2011-06-01 06:15:57.822977
+archive_catalogs_006: 
+  id: "6"
+  title: Royal Commission into Aboriginal Deaths in Custody surveys
+  archive_id: "3"
+  catalog_position: 
+  parent_id: "1"
+  lft: "8"
+  rgt: "9"
+  created_at: 2011-06-01 06:15:58.167911
+  updated_at: 2011-06-01 06:15:58.167911
+archive_catalogs_007: 
+  id: "7"
+  title: Aborigines who abstain from alcohol, 1990-1993
+  archive_id: "7"
+  catalog_position: 
+  parent_id: "2"
+  lft: "12"
+  rgt: "13"
+  created_at: 2011-06-01 06:15:58.634541
+  updated_at: 2011-06-01 06:15:58.634541
+archive_catalogs_008: 
+  id: "8"
+  title: Aboriginal survey, New South Wales and South Australia, 1965
+  archive_id: "7"
+  catalog_position: 
+  parent_id: "2"
+  lft: "14"
+  rgt: "15"
+  created_at: 2011-06-01 06:15:59.046526
+  updated_at: 2011-06-01 06:15:59.046526
+archive_catalogs_009: 
+  id: "9"
+  title: National Police Custody Survey
+  archive_id: "7"
+  catalog_position: 
+  parent_id: "2"
+  lft: "16"
+  rgt: "17"
+  created_at: 2011-06-01 06:15:59.442439
+  updated_at: 2011-06-01 06:15:59.442439
+archive_catalogs_010: 
+  id: "10"
+  title: Royal Commission into Aboriginal Deaths in Custody surveys
+  archive_id: "7"
+  catalog_position: 
+  parent_id: "2"
+  lft: "18"
+  rgt: "19"
+  created_at: 2011-06-01 06:15:59.838297
+  updated_at: 2011-06-01 06:15:59.838297

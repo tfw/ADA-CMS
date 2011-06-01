@@ -1,0 +1,485 @@
+--- 
+archive_catalog_nodes_001: 
+  id: "42"
+  archive_catalog_id: 
+  archive_study_id: "14"
+  catalog_position: "4"
+  parent_id: "5"
+  archive_id: 
+  lft: "27"
+  rgt: "28"
+  created_at: 2011-05-25 03:53:33.499049
+  updated_at: 2011-05-25 03:53:33.499049
+archive_catalog_nodes_002: 
+  id: "35"
+  archive_catalog_id: 
+  archive_study_id: "17"
+  catalog_position: "7"
+  parent_id: "1"
+  archive_id: 
+  lft: "86"
+  rgt: "87"
+  created_at: 2011-05-25 03:51:32.354204
+  updated_at: 2011-05-25 03:51:32.354204
+archive_catalog_nodes_003: 
+  id: "23"
+  archive_catalog_id: 
+  archive_study_id: "6"
+  catalog_position: "6"
+  parent_id: "1"
+  archive_id: 
+  lft: "82"
+  rgt: "85"
+  created_at: 2011-05-25 03:49:39.987335
+  updated_at: 2011-05-25 03:49:39.987335
+archive_catalog_nodes_004: 
+  id: "14"
+  archive_catalog_id: 
+  archive_study_id: "3"
+  catalog_position: "4"
+  parent_id: "13"
+  archive_id: 
+  lft: "34"
+  rgt: "35"
+  created_at: 2011-05-25 03:32:04.336173
+  updated_at: 2011-05-25 03:32:04.336173
+archive_catalog_nodes_005: 
+  id: "1"
+  archive_catalog_id: "1"
+  archive_study_id: 
+  catalog_position: 
+  parent_id: 
+  archive_id: 
+  lft: "1"
+  rgt: "88"
+  created_at: 2011-05-25 03:32:02.627402
+  updated_at: 2011-05-25 03:32:02.627402
+archive_catalog_nodes_006: 
+  id: "2"
+  archive_catalog_id: 
+  archive_study_id: "5"
+  catalog_position: "5"
+  parent_id: "1"
+  archive_id: 
+  lft: "2"
+  rgt: "7"
+  created_at: 2011-05-25 03:32:02.841067
+  updated_at: 2011-05-25 03:32:02.841067
+archive_catalog_nodes_007: 
+  id: "3"
+  archive_catalog_id: 
+  archive_study_id: "6"
+  catalog_position: "6"
+  parent_id: "2"
+  archive_id: 
+  lft: "3"
+  rgt: "6"
+  created_at: 2011-05-25 03:32:02.853615
+  updated_at: 2011-05-25 03:32:02.853615
+archive_catalog_nodes_008: 
+  id: "4"
+  archive_catalog_id: 
+  archive_study_id: "17"
+  catalog_position: "7"
+  parent_id: "3"
+  archive_id: 
+  lft: "4"
+  rgt: "5"
+  created_at: 2011-05-25 03:32:02.930108
+  updated_at: 2011-05-25 03:32:02.930108
+archive_catalog_nodes_009: 
+  id: "5"
+  archive_catalog_id: "2"
+  archive_study_id: 
+  catalog_position: 
+  parent_id: "1"
+  archive_id: 
+  lft: "8"
+  rgt: "29"
+  created_at: 2011-05-25 03:32:03.59268
+  updated_at: 2011-05-25 03:32:03.59268
+archive_catalog_nodes_010: 
+  id: "6"
+  archive_catalog_id: 
+  archive_study_id: "11"
+  catalog_position: "1"
+  parent_id: "5"
+  archive_id: 
+  lft: "9"
+  rgt: "16"
+  created_at: 2011-05-25 03:32:03.744831
+  updated_at: 2011-05-25 03:32:03.744831
+archive_catalog_nodes_011: 
+  id: "7"
+  archive_catalog_id: 
+  archive_study_id: "13"
+  catalog_position: "2"
+  parent_id: "6"
+  archive_id: 
+  lft: "10"
+  rgt: "15"
+  created_at: 2011-05-25 03:32:03.754419
+  updated_at: 2011-05-25 03:32:03.754419
+archive_catalog_nodes_012: 
+  id: "8"
+  archive_catalog_id: 
+  archive_study_id: "12"
+  catalog_position: "3"
+  parent_id: "7"
+  archive_id: 
+  lft: "11"
+  rgt: "14"
+  created_at: 2011-05-25 03:32:03.774206
+  updated_at: 2011-05-25 03:32:03.774206
+archive_catalog_nodes_013: 
+  id: "9"
+  archive_catalog_id: 
+  archive_study_id: "14"
+  catalog_position: "4"
+  parent_id: "8"
+  archive_id: 
+  lft: "12"
+  rgt: "13"
+  created_at: 2011-05-25 03:32:03.784284
+  updated_at: 2011-05-25 03:32:03.784284
+archive_catalog_nodes_014: 
+  id: "40"
+  archive_catalog_id: 
+  archive_study_id: "8"
+  catalog_position: "3"
+  parent_id: "18"
+  archive_id: 
+  lft: "75"
+  rgt: "78"
+  created_at: 2011-05-25 03:51:33.945118
+  updated_at: 2011-05-25 03:51:33.945118
+archive_catalog_nodes_015: 
+  id: "41"
+  archive_catalog_id: 
+  archive_study_id: "10"
+  catalog_position: "4"
+  parent_id: "40"
+  archive_id: 
+  lft: "76"
+  rgt: "77"
+  created_at: 2011-05-25 03:51:33.960678
+  updated_at: 2011-05-25 03:51:33.960678
+archive_catalog_nodes_016: 
+  id: "10"
+  archive_catalog_id: "3"
+  archive_study_id: 
+  catalog_position: 
+  parent_id: "1"
+  archive_id: 
+  lft: "30"
+  rgt: "51"
+  created_at: 2011-05-25 03:32:04.072377
+  updated_at: 2011-05-25 03:32:04.072377
+archive_catalog_nodes_017: 
+  id: "11"
+  archive_catalog_id: 
+  archive_study_id: "1"
+  catalog_position: "1"
+  parent_id: "10"
+  archive_id: 
+  lft: "31"
+  rgt: "38"
+  created_at: 2011-05-25 03:32:04.302136
+  updated_at: 2011-05-25 03:32:04.302136
+archive_catalog_nodes_018: 
+  id: "12"
+  archive_catalog_id: 
+  archive_study_id: "2"
+  catalog_position: "2"
+  parent_id: "11"
+  archive_id: 
+  lft: "32"
+  rgt: "37"
+  created_at: 2011-05-25 03:32:04.315314
+  updated_at: 2011-05-25 03:32:04.315314
+archive_catalog_nodes_019: 
+  id: "13"
+  archive_catalog_id: 
+  archive_study_id: "4"
+  catalog_position: "3"
+  parent_id: "12"
+  archive_id: 
+  lft: "33"
+  rgt: "36"
+  created_at: 2011-05-25 03:32:04.327671
+  updated_at: 2011-05-25 03:32:04.327671
+archive_catalog_nodes_020: 
+  id: "24"
+  archive_catalog_id: 
+  archive_study_id: "17"
+  catalog_position: "7"
+  parent_id: "23"
+  archive_id: 
+  lft: "83"
+  rgt: "84"
+  created_at: 2011-05-25 03:49:40.004741
+  updated_at: 2011-05-25 03:49:40.004741
+archive_catalog_nodes_021: 
+  id: "28"
+  archive_catalog_id: 
+  archive_study_id: "2"
+  catalog_position: "2"
+  parent_id: "10"
+  archive_id: 
+  lft: "39"
+  rgt: "44"
+  created_at: 2011-05-25 03:49:40.860632
+  updated_at: 2011-05-25 03:49:40.860632
+archive_catalog_nodes_022: 
+  id: "15"
+  archive_catalog_id: "4"
+  archive_study_id: 
+  catalog_position: 
+  parent_id: "1"
+  archive_id: 
+  lft: "52"
+  rgt: "59"
+  created_at: 2011-05-25 03:32:04.645531
+  updated_at: 2011-05-25 03:32:04.645531
+archive_catalog_nodes_023: 
+  id: "16"
+  archive_catalog_id: 
+  archive_study_id: "15"
+  catalog_position: "1"
+  parent_id: "15"
+  archive_id: 
+  lft: "53"
+  rgt: "56"
+  created_at: 2011-05-25 03:32:04.785233
+  updated_at: 2011-05-25 03:32:04.785233
+archive_catalog_nodes_024: 
+  id: "17"
+  archive_catalog_id: 
+  archive_study_id: "16"
+  catalog_position: "2"
+  parent_id: "16"
+  archive_id: 
+  lft: "54"
+  rgt: "55"
+  created_at: 2011-05-25 03:32:04.868536
+  updated_at: 2011-05-25 03:32:04.868536
+archive_catalog_nodes_025: 
+  id: "18"
+  archive_catalog_id: "5"
+  archive_study_id: 
+  catalog_position: 
+  parent_id: "1"
+  archive_id: 
+  lft: "60"
+  rgt: "81"
+  created_at: 2011-05-25 03:32:05.155661
+  updated_at: 2011-05-25 03:32:05.155661
+archive_catalog_nodes_026: 
+  id: "19"
+  archive_catalog_id: 
+  archive_study_id: "9"
+  catalog_position: "1"
+  parent_id: "18"
+  archive_id: 
+  lft: "61"
+  rgt: "68"
+  created_at: 2011-05-25 03:32:05.317256
+  updated_at: 2011-05-25 03:32:05.317256
+archive_catalog_nodes_027: 
+  id: "20"
+  archive_catalog_id: 
+  archive_study_id: "7"
+  catalog_position: "2"
+  parent_id: "19"
+  archive_id: 
+  lft: "62"
+  rgt: "67"
+  created_at: 2011-05-25 03:32:05.329989
+  updated_at: 2011-05-25 03:32:05.329989
+archive_catalog_nodes_028: 
+  id: "21"
+  archive_catalog_id: 
+  archive_study_id: "8"
+  catalog_position: "3"
+  parent_id: "20"
+  archive_id: 
+  lft: "63"
+  rgt: "66"
+  created_at: 2011-05-25 03:32:05.344478
+  updated_at: 2011-05-25 03:32:05.344478
+archive_catalog_nodes_029: 
+  id: "36"
+  archive_catalog_id: 
+  archive_study_id: "12"
+  catalog_position: "3"
+  parent_id: "5"
+  archive_id: 
+  lft: "23"
+  rgt: "26"
+  created_at: 2011-05-25 03:51:32.744168
+  updated_at: 2011-05-25 03:51:32.744168
+archive_catalog_nodes_030: 
+  id: "37"
+  archive_catalog_id: 
+  archive_study_id: "14"
+  catalog_position: "4"
+  parent_id: "36"
+  archive_id: 
+  lft: "24"
+  rgt: "25"
+  created_at: 2011-05-25 03:51:32.756209
+  updated_at: 2011-05-25 03:51:32.756209
+archive_catalog_nodes_031: 
+  id: "43"
+  archive_catalog_id: 
+  archive_study_id: "3"
+  catalog_position: "4"
+  parent_id: "10"
+  archive_id: 
+  lft: "49"
+  rgt: "50"
+  created_at: 2011-05-25 03:53:33.952575
+  updated_at: 2011-05-25 03:53:33.952575
+archive_catalog_nodes_032: 
+  id: "22"
+  archive_catalog_id: 
+  archive_study_id: "10"
+  catalog_position: "4"
+  parent_id: "21"
+  archive_id: 
+  lft: "64"
+  rgt: "65"
+  created_at: 2011-05-25 03:32:05.352597
+  updated_at: 2011-05-25 03:32:05.352597
+archive_catalog_nodes_033: 
+  id: "25"
+  archive_catalog_id: 
+  archive_study_id: "13"
+  catalog_position: "2"
+  parent_id: "5"
+  archive_id: 
+  lft: "17"
+  rgt: "22"
+  created_at: 2011-05-25 03:49:40.450412
+  updated_at: 2011-05-25 03:49:40.450412
+archive_catalog_nodes_034: 
+  id: "26"
+  archive_catalog_id: 
+  archive_study_id: "12"
+  catalog_position: "3"
+  parent_id: "25"
+  archive_id: 
+  lft: "18"
+  rgt: "21"
+  created_at: 2011-05-25 03:49:40.458479
+  updated_at: 2011-05-25 03:49:40.458479
+archive_catalog_nodes_035: 
+  id: "27"
+  archive_catalog_id: 
+  archive_study_id: "14"
+  catalog_position: "4"
+  parent_id: "26"
+  archive_id: 
+  lft: "19"
+  rgt: "20"
+  created_at: 2011-05-25 03:49:40.481557
+  updated_at: 2011-05-25 03:49:40.481557
+archive_catalog_nodes_036: 
+  id: "29"
+  archive_catalog_id: 
+  archive_study_id: "4"
+  catalog_position: "3"
+  parent_id: "28"
+  archive_id: 
+  lft: "40"
+  rgt: "43"
+  created_at: 2011-05-25 03:49:40.871246
+  updated_at: 2011-05-25 03:49:40.871246
+archive_catalog_nodes_037: 
+  id: "30"
+  archive_catalog_id: 
+  archive_study_id: "3"
+  catalog_position: "4"
+  parent_id: "29"
+  archive_id: 
+  lft: "41"
+  rgt: "42"
+  created_at: 2011-05-25 03:49:40.89053
+  updated_at: 2011-05-25 03:49:40.89053
+archive_catalog_nodes_038: 
+  id: "31"
+  archive_catalog_id: 
+  archive_study_id: "16"
+  catalog_position: "2"
+  parent_id: "15"
+  archive_id: 
+  lft: "57"
+  rgt: "58"
+  created_at: 2011-05-25 03:49:41.265113
+  updated_at: 2011-05-25 03:49:41.265113
+archive_catalog_nodes_039: 
+  id: "32"
+  archive_catalog_id: 
+  archive_study_id: "7"
+  catalog_position: "2"
+  parent_id: "18"
+  archive_id: 
+  lft: "69"
+  rgt: "74"
+  created_at: 2011-05-25 03:49:41.648695
+  updated_at: 2011-05-25 03:49:41.648695
+archive_catalog_nodes_040: 
+  id: "33"
+  archive_catalog_id: 
+  archive_study_id: "8"
+  catalog_position: "3"
+  parent_id: "32"
+  archive_id: 
+  lft: "70"
+  rgt: "73"
+  created_at: 2011-05-25 03:49:41.66333
+  updated_at: 2011-05-25 03:49:41.66333
+archive_catalog_nodes_041: 
+  id: "34"
+  archive_catalog_id: 
+  archive_study_id: "10"
+  catalog_position: "4"
+  parent_id: "33"
+  archive_id: 
+  lft: "71"
+  rgt: "72"
+  created_at: 2011-05-25 03:49:41.680011
+  updated_at: 2011-05-25 03:49:41.680011
+archive_catalog_nodes_042: 
+  id: "38"
+  archive_catalog_id: 
+  archive_study_id: "4"
+  catalog_position: "3"
+  parent_id: "10"
+  archive_id: 
+  lft: "45"
+  rgt: "48"
+  created_at: 2011-05-25 03:51:33.214861
+  updated_at: 2011-05-25 03:51:33.214861
+archive_catalog_nodes_043: 
+  id: "39"
+  archive_catalog_id: 
+  archive_study_id: "3"
+  catalog_position: "4"
+  parent_id: "38"
+  archive_id: 
+  lft: "46"
+  rgt: "47"
+  created_at: 2011-05-25 03:51:33.223788
+  updated_at: 2011-05-25 03:51:33.223788
+archive_catalog_nodes_044: 
+  id: "44"
+  archive_catalog_id: 
+  archive_study_id: "10"
+  catalog_position: "4"
+  parent_id: "18"
+  archive_id: 
+  lft: "79"
+  rgt: "80"
+  created_at: 2011-05-25 03:53:34.733374
+  updated_at: 2011-05-25 03:53:34.733374

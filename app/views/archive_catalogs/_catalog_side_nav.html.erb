@@ -1,43 +1,24 @@
 <% content_for :js do %>
-	
-  $('#tree').explrTree();
+	$('#tree').explrTree({
+		ajaxContainerId	: 'study',
+		treeHeight	: 'auto',
+		treeWidth	: 'auto',
+		ajaxLoadingText : '<p>loading data..</p>',
+		folderTooltip	: 'click to expand/collapse'
+	});
 <% end %>
 
 <% content_for :sidenav do %>
   <nav>
-  	<div id ="catalogs">
-<%= @ada_catalogs.size %>
-  	  ADA <br/>
+  	<div "study-facets">
 		  <ul id="tree">
-			<% for catalog in @ada_catalogs %>
-				<%= render :partial => "catalog", :collection => catalog.children %>
-			<% end %>
+				<% @ada_catalogs.each do |archive, catalogs| %>
+					<%= render :partial => "catalog", :collection => catalogs %>
+				<% end %>
 			</ul>
-			<br/><br/><br/><br/><br/>
-			<ul>
-		    <li>
-		        <a href="#">home</a>
-		    </li>
-		    <li class="icon-user">
-		        <a href="about.html" rel="explr-ajax">about</a>
-		    </li>
-			<li class="icon-photo">
-			    <a href="#">portfolio</a>
-			    <ul class="icon-photo">
-				<li>
-				    <a href="http://codecanyon.net/user/amatyr4n/portfolio?ref=amatyr4n" target="_blank">codecanyon</a>
-
-				</li>
-				<li>
-				    <a href="http://themeforest.net/user/amatyr4n/portfolio?ref=amatyr4n">themeforest</a>
-				</li>
-			    </ul>
-			</li>
-			<li>
-			    <a href="mailto:movedgraph@gmail.com">contact</a>
-			</li>
-        </ul>
   	</div>
   </nav>
+
+	<div id="study"></div>
 <% end %>  
 	
