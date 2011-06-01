@@ -63,8 +63,8 @@ module Nesstar
                participant :ref => 'download_and_convert_catalog_tree' 
              end
              
-              rewind :if => '${archive_catalog_integrations.size} != 0'
-            # rewind :if => '${archive_catalog_integrations.any?}'
+              #rewind :if => '${archive_catalog_integrations.size} != 0'
+             rewind :if => '${archive_catalog_integrations.any?}'
          #   _break :if => '${archive_catalog_integrations.size} == 0'
            end
 
@@ -113,11 +113,11 @@ module Nesstar
         ids = []
         
         ArchiveCatalogIntegration.all.each do |i| 
-          ids << [i.id, nil]  #the array stores the id the integration, and the position of the catalog entry in parent
+          ids << i.id  #the array stores the id the integration, and the position of the catalog entry in parent
                               #the position is always nil for top level catalogs
           #create a duplicate integration for the ADA archive
           ada_integration = ArchiveCatalogIntegration.create!(:url => i.url, :archive => Archive.ada)
-          ids << [ada_integration.id, nil]
+          ids << ada_integration.id
         end
                 
         workitem.fields['children_to_parents'] = {} #this hash will hold the relationships to build later on
@@ -126,12 +126,12 @@ module Nesstar
 
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
-        archive_catalog_info = workitem.fields['archive_catalog_integration']
-        archive_catalog_integration = ArchiveCatalogIntegration.find(archive_catalog_info.first)
-        workitem.fields['archive_catalog_integrations'].delete(archive_catalog_info)
+   #     archive_catalog_info = workitem.fields['archive_catalog_integration']
+        archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration'])
+        # workitem.fields['archive_catalog_integrations'].delete(archive_catalog_info)
         archive = archive_catalog_integration.archive
 
-puts "\n starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name} --- in pos #{archive_catalog_info.last}"
+puts "\n starting --- #{workitem.fields['archive_catalog_integrations']} for #{archive_catalog_integration.url} / #{archive_catalog_integration.archive.name}"
         file = "#{$catalogs_xml_dir}#{archive.slug}/#{archive_catalog_integration.label}.xml"
         
        `curl -o #{file} --compressed "#{archive_catalog_integration.url}"`
@@ -152,10 +152,9 @@ puts "found pre_existing for #{label_hash[:label]} in #{archive.name}"
 puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
           if parent_id
             catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive, 
-              :parent_id => parent_id, :catalog_position => archive_catalog_info.last) 
+              :parent_id => parent_id) 
           else
-            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive,
-              :catalog_position => archive_catalog_info.last) 
+            catalog = ArchiveCatalog.create(:title => label_hash[:label], :archive => archive)
           end
         end
         
@@ -184,8 +183,8 @@ puts "creating catalog for #{label_hash[:label]} in #{archive.name}"
             integration = pre_existing_integration 
             integration ||= ArchiveCatalogIntegration.create!(:archive => archive, :url => child[:resource]) 
                         
-            workitem.fields['archive_catalog_integrations'] << [integration.id, child[:position]]
-puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url} at pos #{child[:position]}"
+            workitem.fields['archive_catalog_integrations'] << integration.id
+puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['archive_catalog_integrations']} --- for url #{integration.url}"
             parent_key = integration.url + "_" + archive.slug
             workitem.fields['children_to_parents'][parent_key]= catalog.id #store the parent for future association
           end
