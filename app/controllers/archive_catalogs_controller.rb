@@ -4,6 +4,7 @@ class ArchiveCatalogsController < ContentController
   clear_helpers
   helper :application
   
+  before_filter :get_root_catalogs
   
   def show
     @catalog = ArchiveCatalog.find_by_id(params[:id])
@@ -14,6 +15,6 @@ class ArchiveCatalogsController < ContentController
   
   protected
   def get_root_catalogs
-    @ada_catalogs = ArchiveCatalog.find_by_archive_id_and_parent_id(Archive.ada.id, nil)
+    @ada_catalogs = ArchiveCatalog.find_all_by_archive_id_and_parent_id(Archive.ada.id, nil)
   end  
 end
