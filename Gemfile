@@ -9,10 +9,8 @@ gem 'inkling', :git => "git://github.com/tfw/inkling.git"
 #gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling-project/inkling"
 
 gem "devise", ">= 1.2.0"
+gem 'devise_openid_authenticatable', '~> 1.0.0'
 
-# Use our own patched devise_openid_authenticatable for immediate mode support
-gem 'devise_openid_authenticatable',
-      :git => "git://github.com/ANUSF/devise_openid_authenticatable.git"
 gem 'openid_client',
       :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
 
