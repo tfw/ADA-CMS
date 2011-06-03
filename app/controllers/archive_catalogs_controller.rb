@@ -13,6 +13,13 @@ class ArchiveCatalogsController < ContentController
     respond_with(@catalog)
   end  
   
+  def browse
+    catalog_id = params[:catalog_id]
+    @catalog = ArchiveCatalog.find(catalog_id)
+    
+    render :layout => false
+  end
+  
   protected
   def get_root_catalogs
     @ada_catalogs = {Archive.ada => ArchiveCatalog.find_all_by_archive_id_and_parent_id(Archive.ada.id, nil),

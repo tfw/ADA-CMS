@@ -1,13 +1,11 @@
-<li> <a> <%= catalog.title %></a>
+<li> <a href="<%= browse_catalog_path(:catalog_id => catalog.id) %>" rel="explr-ajax"> <%= catalog.title %></a>
+  <ul>
+    <% for archive_catalog_study in catalog.archive_catalog_studies %>
+    	<li> <a href="<%=  archive_catalog_study.archive_study.path.slug %>" rel="explr-ajax"> <%= archive_catalog_study.archive_study.study.ddi_id %> </a> </li>
+    <% end %>
 
-<ul>
-	<% for archive_catalog_study in catalog.archive_catalog_studies %>
-		<li> <a href="<%=  archive_catalog_study.archive_study.path.slug %>" rel="explr-ajax"> <%= archive_catalog_study.archive_study.study.title %> </a> </li>
-	<% end %>
-
-	<%= render :partial => "catalog", :collection => catalog.children %>
-</ul>
-
+    <%= render :partial => "catalog", :collection => catalog.children %>
+  </ul>
 </li>
 
 
