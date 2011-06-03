@@ -1,4 +1,5 @@
 module ArchiveCatalogsHelper 
+  include SearchHelper
   
   def line_break_title(title, limit)
     line_break = []

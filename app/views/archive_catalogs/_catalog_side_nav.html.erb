@@ -6,6 +6,24 @@
 		ajaxLoadingText : '<p>loading data..</p>',
 		folderTooltip	: 'click to expand/collapse'
 	});
+	
+	
+	//the js below is called by the browse partial
+	
+	$("#title-view-link").click(function() {
+  	$('#title-view-item').toggleClass('selected-menu-item', true);
+  	$('#ext-view-item').toggleClass('selected-menu-item', false);
+    $('#search-results-title').show();
+		$('#search-results-ext').hide();
+  });
+
+  $("#ext-view-link").click(function() {
+  	$('#title-view-item').toggleClass('selected-menu-item', false);
+  	$('#ext-view-item').toggleClass('selected-menu-item', true);
+    $('#search-results-ext').show();
+		$('#search-results-title').hide();
+  });
+  
 <% end %>
 
 <% content_for :sidenav do %>

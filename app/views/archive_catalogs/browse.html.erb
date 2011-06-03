@@ -1,1 +1,34 @@
-testing 1 2 3 <%= @catalog.title %>
+<div id="tabs">
+  <ul>
+    <li id="study-items" <%= selected_tab_if(['title'], params[:show]) %>> <a id="studies-link">Studies</a> </li>
+    <li id="variable-items" <%= selected_tab_if(['var'], params[:show]) %>> <a id="variables-link">Variables</a> </li>
+  </ul>
+</div>
+
+
+<div class="float-centre">
+   pagination ...
+</div>
+<br/>
+
+<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
+	<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link">Title View</a></li> 
+	<li>|</li> 
+	<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link">Extended</a></li>
+</ul>
+
+<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %>>
+	<thead>
+		<tr>
+			<th>Study</th>
+			<th>Authoring Entity</th>
+			<th>Year</th>
+			<th>Type (Archive?)</th>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>	
+</table>
+
+<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1>
+</table>
