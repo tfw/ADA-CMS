@@ -67,6 +67,11 @@ Archive.blueprint do
   name Sham.name
 end
 
+ArchiveCatalog.blueprint do 
+  archive
+  title
+end
+
 Study.blueprint do
   label Sham.name
   ddi_id Sham.name
