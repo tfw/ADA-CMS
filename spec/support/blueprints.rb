@@ -40,6 +40,11 @@ ArchiveStudy.blueprint do
   study_id {(Study.make).id}
 end
 
+ArchiveCatalogStudy.blueprint do
+  archive_catalog_id {(ArchiveCatalog.make).id}
+  archive_study_id {(ArchiveStudy.make).id}
+end
+
 Page.blueprint do 
   title Sham.name
   # author {(User.make)}
@@ -68,7 +73,7 @@ Archive.blueprint do
 end
 
 ArchiveCatalog.blueprint do 
-  archive
+  archive_id {(Archive.make).id} 
   title
 end
 
