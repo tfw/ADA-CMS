@@ -44,7 +44,6 @@ RSpec.configure do |config|
   
   config.before(:each, :type => :acceptance) do
     #this is messy ... just hacking at getting specs working
-    puts " ------------- setting up data <<<<<<<<<"
     ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    

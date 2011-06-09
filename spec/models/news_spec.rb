@@ -6,18 +6,19 @@ describe News do
   describe "validations" do
     context "news titles" do
       it "saves news with unique news title" do
-        news = make_news
+        news = News.make
         news.errors.size.should == 0
       end
 
       it "is in an archive" do
-        news = make_news(:archives => 1)
-        # debugger
+        news = News.make
+        ArchiveNews.make(:news => news)
+        news.reload
         news.archives.size.should == 1
       end
 
       it "rejects duplicate news titles" do
-        news = make_news
+        news = News.make
         news.errors.any?.should == false
 
         news2 = News.new(:title => news.title, :user => news.user)

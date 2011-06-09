@@ -88,14 +88,6 @@ DdiMapping.blueprint do
   xml_element true
 end
 
-#blueprint helpers go here 
-def make_news attrs = {}
-  archives = attrs.delete(:archives) || 1
-  News.make(attrs) do |news|
-    archives.times do news.archive_news.make; end
-  end
-end
-
 def make_user(role_name)
   role_name = role_name.to_s if role_name.is_a? Symbol
   role = Inkling::Role.find_by_name(role_name)  

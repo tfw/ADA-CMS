@@ -5,7 +5,7 @@ describe ArchiveNews do
   
   describe "belonging to an archive" do
     specify "news which belong to archives take the archive name as a prefix, e.g. social-science/home" do
-      news = make_news
+      news = News.make
       a = news.archives[0]
       a.should_not be_nil
       na = news.news_archives[0]
