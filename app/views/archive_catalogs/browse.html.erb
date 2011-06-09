@@ -41,12 +41,13 @@
 				<th>Study</th>
 				<th>Authoring Entity</th>
 				<th>Year</th>
+				<th>Doc ID</th>
 				<th>Type (Archive?)</th>
 			</tr>
 		</thead>
 		<tbody>
 	    <% @catalog.archive_catalog_studies.each do |archive_catalog_study| %>	
-	      <%= render(:partial => "/shared/title_search_result", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
+	      <%= render(:partial => "/shared/study_title_view", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 			<% end %>
 		</tbody>	
 	</table>

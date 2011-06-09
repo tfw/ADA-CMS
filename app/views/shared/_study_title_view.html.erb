@@ -2,6 +2,7 @@
   <td> <%= link_to study.field("docTitle"), "#{study.for_archive(@current_archive).path.slug}" %> </td>
   <td> <%= study.field("stdyAuthEntity") %> </td>
   <td> <%= study.field("stdyProdDate") %> </td>
+  <td> <%= study.ddi_id %> </td>
   <td>
      <% for archive_study in study.archive_studies %>
        <% next if archive_study.archive == Archive.ada %>

@@ -34,7 +34,7 @@ RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  config.use_transactional_examples = true
+  config.use_transactional_examples = false
   
   # config.before(:all, :type => :acceptance) do
   #   @pid = fork { Sunspot::Rails::Server.new.run }
@@ -44,32 +44,36 @@ RSpec.configure do |config|
   #kill off sunspot instances running for test
   at_exit do
     `ps ax|egrep "solr.*test"|grep -v grep|awk '{print $1}'|xargs kill`
-  end
+  end  
   
-  config.before(:each, :type => :acceptance) do
-    # ::Sunspot.session = ::Sunspot.session.original_session
-    Sham.reset(:before_each) 
-    DatabaseCleaner.start
-    ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
-      Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
-    end    
-    
-    make_user(:administrator)
-    
-    ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
-      if Archive.find_by_name(archive_name).nil?
-        archive = Archive.new(:name => archive_name)
-        archive.save!
-      
-        Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page") unless Page.find_by_title_and_archive_id("Home", archive.id)
-      end
-    end  
-
-    # #install the content theme, as we have to test front end presentation
-    theme = Inkling::Theme.install_from_dir("config/theme")
-  end
-
-  config.after(:each, :type => :acceptance) { Warden.test_reset! }
-    
+#   config.before(:each, :type => :acceptance) do
+#     # ::Sunspot.session = ::Sunspot.session.original_session
+# 
+# ::Rails.logger.debug "\n\n *** current driver: #{Capybara.current_driver} *** \n\n"
+#     Capybara.reset_sessions! 
+#     Sham.reset(:before_each) 
+# 
+#     DatabaseCleaner.start
+#     ["administrator", "manager", "approver", "archivist", "member"].each do |role_name| 
+#       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
+#     end    
+#     
+#     make_user(:administrator)
+#     
+#     ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
+#       if Archive.find_by_name(archive_name).nil?
+#         archive = Archive.new(:name => archive_name)
+#         archive.save!
+#       
+#         Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page") unless Page.find_by_title_and_archive_id("Home", archive.id)
+#       end
+#     end  
+# 
+#     # #install the content theme, as we have to test front end presentation
+#     theme = Inkling::Theme.install_from_dir("config/theme")
+#   end
+# 
+#   config.after(:each, :type => :acceptance) { Warden.test_reset! }
+#     
    config.include Devise::TestHelpers, :type => :controller
 end

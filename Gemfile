@@ -5,8 +5,8 @@ gem 'rails', '3.0.7'
 
 gem "pg"
 
-gem 'inkling', :git => "git://github.com/tfw/inkling.git"  
-#gem 'inkling', :path => "/Users/nick/code/src/tfw/inkling-project/inkling"
+#gem 'inkling', :git => "git://github.com/tfw/inkling.git"  
+gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling-project/inkling"
 
 gem "devise", ">= 1.2.0"
 gem 'devise_openid_authenticatable'
@@ -44,4 +44,5 @@ group :development, :test do
 	gem 'faker', '>=0.9.5'
  	gem 'machinist' , '>= 1.0.6'
 	gem 'capistrano'
+	gem 'selenium-webdriver', '>= 0.2.1'
 end
