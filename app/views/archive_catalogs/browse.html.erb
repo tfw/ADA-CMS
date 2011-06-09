@@ -1,3 +1,21 @@
+<script language="application/javascript">
+	$("#title-view-link").click(function() {
+		$('#title-view-item').toggleClass('selected-menu-item', true);
+		$('#ext-view-item').toggleClass('selected-menu-item', false);
+	  $('#search-results-title').show();
+		$('#search-results-ext').hide();
+	});
+
+	$("#ext-view-link").click(function() {
+		$('#title-view-item').toggleClass('selected-menu-item', false);
+		$('#ext-view-item').toggleClass('selected-menu-item', true);
+	  $('#search-results-ext').show();
+		$('#search-results-title').hide();
+	});
+</script>
+
+<p/>
+
 <div id="tabs">
   <ul>
     <li id="study-items" <%= selected_tab_if(['title'], params[:show]) %>> <a id="studies-link">Studies</a> </li>
@@ -5,30 +23,34 @@
   </ul>
 </div>
 
+<section id="browse-results">
+	<div class="float-centre">
+	   pagination ...
+	</div>
+	<br/>
 
-<div class="float-centre">
-   pagination ...
-</div>
-<br/>
+	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
+		<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link">Title View</a></li> 
+		<li>|</li> 
+		<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link">Extended</a></li>
+	</ul>
 
-<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
-	<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link">Title View</a></li> 
-	<li>|</li> 
-	<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link">Extended</a></li>
-</ul>
+	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %>>
+		<thead>
+			<tr>
+				<th>Study</th>
+				<th>Authoring Entity</th>
+				<th>Year</th>
+				<th>Type (Archive?)</th>
+			</tr>
+		</thead>
+		<tbody>
+	    <% @catalog.archive_catalog_studies.each do |archive_catalog_study| %>	
+	      <%= render(:partial => "/shared/title_search_result", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
+			<% end %>
+		</tbody>	
+	</table>
 
-<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %>>
-	<thead>
-		<tr>
-			<th>Study</th>
-			<th>Authoring Entity</th>
-			<th>Year</th>
-			<th>Type (Archive?)</th>
-		</tr>
-	</thead>
-	<tbody>
-	</tbody>	
-</table>
-
-<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1>
-</table>
+	<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1>
+	</table>
+</section>

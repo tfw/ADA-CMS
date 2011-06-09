@@ -77,6 +77,18 @@
 }
 
 
+/* Browse ---  */
+
+#browse-results #sub-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#browse-results #sub-menu  li {
+	display: inline;
+}
+
 /*Study Page*/
 
 #study section{
@@ -113,12 +125,4 @@ span.highlight {
   background-color: white;
   font-weight: bold;
 }
-
-/* Browse ---  */
-/*
-#foo div {
-	float: left;
-	width: 400px;
-}
-*/
 
