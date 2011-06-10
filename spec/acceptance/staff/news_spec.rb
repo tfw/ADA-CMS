@@ -41,5 +41,4 @@ feature "Creating news" do
     }.should raise_error
     ArchiveNews.find(:all, :conditions => {:news_id => news_id}).size.should == 0
   end
-
 end

@@ -2,15 +2,15 @@
 	$("#title-view-link").click(function() {
 		$('#title-view-item').toggleClass('selected-menu-item', true);
 		$('#ext-view-item').toggleClass('selected-menu-item', false);
-	  $('#search-results-title').show();
-		$('#search-results-ext').hide();
+	  $('#browse-results-title').show();
+		$('#browse-results-ext').hide();
 	});
 
 	$("#ext-view-link").click(function() {
 		$('#title-view-item').toggleClass('selected-menu-item', false);
 		$('#ext-view-item').toggleClass('selected-menu-item', true);
-	  $('#search-results-ext').show();
-		$('#search-results-title').hide();
+	  $('#browse-results-ext').show();
+		$('#browse-results-title').hide();
 	});
 </script>
 
@@ -53,5 +53,8 @@
 	</table>
 
 	<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1>
+		<% @catalog.archive_catalog_studies.each do |archive_catalog_study| %>	
+      <%= render(:partial => "/shared/study_ext_view", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
+		<% end %>
 	</table>
 </section>

@@ -26,4 +26,18 @@ feature "serving out Archive Catalogs" do
       page.should have_content archive_catalog_study.study.ddi_id
     end
   end
+  
+  scenario "requesting a catalog with studies and clicking on Extended should show extended info" do
+    visit @catalog.path.slug
+
+    click_link 'foo'
+    click_link 'Extended'
+    
+    page.should have_content 'EXTENDED'
+
+    for archive_catalog_study in @catalog.archive_catalog_studies
+      page.should have_content archive_catalog_study.study.ddi_id
+    end
+  end
+  
 end

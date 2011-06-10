@@ -24,7 +24,7 @@ feature "searching studies" do
     page.status_code.should == 200
   end
   
-  scenario "it should default to a studies title view if the format http para isnt set" do
+  scenario "it should default to a studies title view if the format http param isnt set" do
     search_form("foo")
     page.should have_content("TITLE")    
   end

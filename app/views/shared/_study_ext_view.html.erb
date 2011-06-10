@@ -15,11 +15,13 @@
         Abstract: <%= first_n_words(30, study.abstract) %> <br/>
         Variables: <%= study.variables.size %> <br/>
 
-				Relevance: <%= hit.score %> <br/>
-
-				<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
-				<%= highlight_excerpt(hit.highlight(:abstract)) %> <br/>
-				<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>
+				<% if hit %>
+					Relevance: <%= hit.score %> <br/>
+					<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
+					<%= highlight_excerpt(hit.highlight(:abstract)) %> <br/>
+					<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>				
+				<% end %>
+				
 		</fieldset>
 		</td>
 		<td width=20% valign=top>
