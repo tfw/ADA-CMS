@@ -38,4 +38,15 @@ feature "serving out Archive Catalogs" do
     end
   end
   
+  scenario "requesting a catalog should show study variables the variables section" do
+    visit @catalog.path.slug
+  
+    click_link 'foo'
+    click_link 'Extended'
+  
+    for archive_catalog_study in @catalog.archive_catalog_studies
+      page.should have_content first_n_words(30, archive_catalog_study.study.abstract)
+    end
+  end
+  
 end

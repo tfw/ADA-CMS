@@ -1,8 +1,9 @@
 
 <section id="variable-results" <%= conceal_unless(['var'], params[:show]) %>>
 	<div class="float-centre">
-	    <%= will_paginate @variables_search.results %>
+pagination ...
 	</div>
+	
 	<fieldset class="search-border"> 
     <table id="search-results-table" border=1>
       <thead>
@@ -13,7 +14,7 @@
       </thead>
       <tbody>
         <% @variables_search.each_hit_with_result do |hit, variable| %>
-<!-- move to shared partial -->
+
           <tr>
             <td>
                <div id="variable-<%= variable.name %>">

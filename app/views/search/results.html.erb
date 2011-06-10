@@ -11,16 +11,13 @@
     $('#study-results').show();
     $('#study-facets').show();
     $('#variable-results').hide();
-    $('#variable-facets').hide();
   	$('#study-items').toggleClass('selected-tab', true);
   	$('#variable-items').toggleClass('selected-tab', false);
   });
 
   $("#variables-link").click(function() {
     $('#variable-results').show();
-    $('#variable-facets').show();
     $('#study-results').hide();
-    <!-- $('#study-facets').hide(); -->
   	$('#study-items').toggleClass('selected-tab', false);
   	$('#variable-items').toggleClass('selected-tab', true);
   });
