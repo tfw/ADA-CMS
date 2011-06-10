@@ -1,8 +1,8 @@
 <% content_for :js do %>
 	$('#tree').explrTree({
-		ajaxContainerId	: 'study',
+		ajaxContainerId	: 'study-browser',
 		treeHeight	: 'auto',
-		treeWidth	: 450,
+    <!-- treeWidth  : 450, -->
 		ajaxLoadingText : '<p>loading data..</p>',
 		folderTooltip	: 'click to expand/collapse'
 	});
@@ -10,15 +10,15 @@
 
 <% content_for :sidenav do %>
   <nav>
-  	<div id="browse-tree">
+    <div id="browse-tree">
 		  <ul id= "tree">
 				<% @ada_catalogs.each do |archive, catalogs| %>
 					<%= render :partial => "catalog", :collection => catalogs %>
 				<% end %>
 			</ul>
-  	</div>
+    </div>
   </nav>
 <% end %>  
 
-<div id="study"></div>
+<div id="study-browser"></div>
 	

@@ -89,6 +89,16 @@
 	display: inline;
 }
 
+#browse-tree {
+	float: left;
+}
+
+#study-browser {
+	float: left;
+}
+
+
+
 /*Study Page*/
 
 #study section{
