@@ -67,6 +67,14 @@ module HelperMethods
   def sign_out
     visit logout_path
   end
+  
+  #copied from application_helper
+  def first_n_words(n, words)
+    return if words.nil?
+    words = words.gsub(/(<\/?[^>]*>|&[a-z]*;)/, " ").split(/\W/m).reject{|w| w.empty? }
+    words = words.size > n ? words[0...n]+['...'] : words
+    words * ' '
+  end
 end
 
 RSpec.configuration.include HelperMethods, :type => :acceptance
