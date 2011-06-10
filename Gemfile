@@ -5,8 +5,8 @@ gem 'rails', '3.0.7'
 
 gem "pg"
 
-#gem 'inkling', :git => "git://github.com/tfw/inkling.git"  
-gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling-project/inkling"
+gem 'inkling', :git => "git://github.com/tfw/inkling.git"  
+#gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling-project/inkling"
 
 gem "devise", ">= 1.2.0"
 gem 'devise_openid_authenticatable'

@@ -7,8 +7,10 @@ feature "serving out Archive Catalogs" do
     @catalog = ArchiveCatalog.make(:title => "foo", :archive => Archive.indigenous, :parent => parent)
     archive_study1 = ArchiveStudy.make(:archive_id => @catalog.archive.id)
     archive_study2 = ArchiveStudy.make(:archive_id => @catalog.archive.id)
+    archive_study3 = ArchiveStudy.make(:archive_id => @catalog.archive.id)
     ArchiveCatalogStudy.make(:archive_catalog => @catalog, :archive_study => archive_study1)
     ArchiveCatalogStudy.make(:archive_catalog => @catalog, :archive_study => archive_study2)
+    @archive_catalog_study3 = ArchiveCatalogStudy.make(:archive_catalog => @catalog, :archive_study => archive_study3)
   end
   
   scenario "requesting /ada/browse/foo should show breadcrumbs Browsing ada/foo" do
@@ -37,16 +39,15 @@ feature "serving out Archive Catalogs" do
       page.should have_content first_n_words(30, archive_catalog_study.study.abstract)
     end
   end
-  
-  scenario "requesting a catalog should show study variables the variables section" do
+
+  scenario "selecting a study should render the entire catalog of studies, but the selected study is first in the table" do
     visit @catalog.path.slug
   
-    click_link 'foo'
-    click_link 'Extended'
-  
-    for archive_catalog_study in @catalog.archive_catalog_studies
-      page.should have_content first_n_words(30, archive_catalog_study.study.abstract)
-    end
-  end
-  
+    click_link @archive_catalog_study3.study.ddi_id
+
+    within(:xpath, "//table[@id='browse-results-title']") do
+    # within(:xpath, "//table[@id='browse-results-title']/tr[1]") do -- ideally we could specify the first tabe row, not xpath friendly
+        page.should have_content(@archive_catalog_study3.study.ddi_id)
+    end    
+  end  
 end

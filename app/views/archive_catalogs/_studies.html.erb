@@ -18,8 +18,11 @@
 	<div class="float-centre">
 	   pagination ...
 	</div>
-	<br/>
 
+  <p>	
+	  Catalog: <%= catalog.title %>
+  </p>
+  
 	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
 		<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link" href="#">Title View</a></li> 
 		<li>|</li> 
@@ -37,14 +40,14 @@
 			</tr>
 		</thead>
 		<tbody>
-	    <% @catalog.archive_catalog_studies.each do |archive_catalog_study| %>	
+	    <% @archive_catalog_studies.each do |archive_catalog_study| %>	
 	      <%= render(:partial => "/shared/study_title_tr", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 			<% end %>
 		</tbody>	
 	</table>
 
 	<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1>
-		<% @catalog.archive_catalog_studies.each do |archive_catalog_study| %>	
+		<% @archive_catalog_studies.each do |archive_catalog_study| %>	
       <%= render(:partial => "/shared/study_ext_tr", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 		<% end %>
 	</table>

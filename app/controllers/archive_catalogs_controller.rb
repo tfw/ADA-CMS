@@ -16,6 +16,17 @@ class ArchiveCatalogsController < ContentController
   def browse
     catalog_id = params[:catalog_id]
     @catalog = ArchiveCatalog.find(catalog_id)
+    @archive_catalog_study = ArchiveCatalogStudy.find(params[:archive_catalog_study_id]) if params[:archive_catalog_study_id]
+
+    if @archive_catalog_study
+      @archive_catalog_studies = [@archive_catalog_study] 
+      remaining_studies = @catalog.archive_catalog_studies.dup
+      remaining_studies.delete(@archive_catalog_study)
+      @archive_catalog_studies += remaining_studies
+    else
+      @archive_catalog_studies = @catalog.archive_catalog_studies
+    end
+    
     @current_archive = @catalog.archive
     render :layout => false
   end
