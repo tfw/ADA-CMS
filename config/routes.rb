@@ -49,7 +49,7 @@ Ada::Application.routes.draw do
   end
 
   get '/search', :to => "search#search"  
-  get 'browse_catalog', :to => "archive_catalogs#browse"
+  get 'browse_archive_catalog', :to => "archive_catalogs#browse"
   
   inkling_match(:archive_studies)
   inkling_match(:archive_catalogs)

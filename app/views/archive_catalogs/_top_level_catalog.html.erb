@@ -11,6 +11,7 @@
 <h3><a href="#"><%= archive.name %></a></h3>
 <div>
   <ul id='tree-<%= archive.slug %>'>
-    <%= render :partial => "catalog", :collection => @catalog.children %>
+     render :partial => "catalog", :collection => @catalog.children 
+     <%= render catalog %>
   </ul>
 </div>
