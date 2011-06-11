@@ -1,7 +1,14 @@
-<% content_for :js do %>
-  $('#browse-tree').multiAccordion({active: [1, 2]});
-	
-<% end %>
+
+<%
+  current_archive_idx = @ada_catalogs.keys.index(@current_archive) unless @current_archive == Archive.ada
+ 
+  content_for :js do 
+    if current_archive_idx %>
+      $('#browse-tree').multiAccordion({active: [<%= current_archive_idx %>]});	
+    <% else %>
+      $('#browse-tree').multiAccordion({active: false });	       	
+    <% end
+ end %>
 
 <% content_for :sidenav do %>
   <nav>
