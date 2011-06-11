@@ -5,19 +5,19 @@
     <!-- treeWidth  : 450, -->
   	ajaxLoadingText : '<p>loading data..</p>',
   	folderTooltip	: 'click to expand/collapse'
-  });	
-
+  });	  
 <% end %>
 <h3><a href="#"><%= archive.name %></a></h3>
 <div>
   <% if top_level_catalog %>
+  <div id="simulated-children">
     <% for archive_catalog_study in top_level_catalog.archive_catalog_studies %>
     	<li> <a href="<%= browse_archive_catalog_path(:archive_catalog_id => top_level_catalog.id, :archive_catalog_study_id => archive_catalog_study.id) %>" rel="explr-ajax"> <%= archive_catalog_study.study.ddi_id %> </a> </li>
     <% end %>
-
-      <ul id='tree-<%= archive.slug %>'>
-       <%= render top_level_catalog.children %>
-    </ul>
+  </div>
+  <ul id='tree-<%= archive.slug %>'>
+    <%= render top_level_catalog.children %>
+  </ul>
   <% else %>
     empty
   <% end %>
