@@ -6,8 +6,8 @@
 <% content_for :sidenav do %>
   <nav>
     <div id="browse-tree">
-			<% @ada_catalogs.each do |archive, catalogs| %>
-			   <%= render :partial => "top_level_catalog", :locals => {:archive => archive, :catalog => catalogs} %>
+			<% @ada_catalogs.each do |archive, catalog| %>
+			   <%= render :partial => "top_level_catalog", :locals => {:archive => archive, :top_level_catalog => catalog} %>
 			<% end %>
   		  		
 		  <ul id= "tree">
