@@ -1,19 +1,33 @@
 <% content_for :js do %>
+  $('#browse-tree').multiAccordion({active: [1, 2]});
+
 	$('#tree').explrTree({
 		ajaxContainerId	: 'study-browser',
 		treeHeight	: 'auto',
     <!-- treeWidth  : 450, -->
 		ajaxLoadingText : '<p>loading data..</p>',
 		folderTooltip	: 'click to expand/collapse'
-	});
+	});	
+				
 <% end %>
 
 <% content_for :sidenav do %>
   <nav>
     <div id="browse-tree">
+      <h3><a href="#">tab 1</a></h3>
+  		<div>
+  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  			
+  		</div>
+  		<h3><a href="#">tab 2</a></h3>
+  		<div>
+  			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu mauris nulla, at cursus nulla. Morbi venenatis
+  		</div>
+  		
+  		
 		  <ul id= "tree">
 				<% @ada_catalogs.each do |archive, catalogs| %>
-				  <%= render :partial => "top_level_catalog", :locals => {:archive => archive, :catalog => catalogs} %>
+				   render :partial => "top_level_catalog", :locals => {:archive => archive, :catalog => catalogs}
 				<% end %>
 			</ul>
     </div>
