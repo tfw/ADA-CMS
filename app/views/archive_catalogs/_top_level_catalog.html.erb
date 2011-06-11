@@ -1,3 +1,16 @@
+<% content_for :js do %>
+  $('#tree-<%= archive.slug %>').explrTree({
+  	ajaxContainerId	: 'study-browser',
+  	treeHeight	: 'auto',
+    <!-- treeWidth  : 450, -->
+  	ajaxLoadingText : '<p>loading data..</p>',
+  	folderTooltip	: 'click to expand/collapse'
+  });	
 
-
-					<%= render :partial => "catalog", :collection => catalogs %>
+<% end %>
+<h3><a href="#"><%= archive.name %></a></h3>
+<div>
+  <ul id='tree-<%= archive.slug %>'>
+    <%= render :partial => "catalog", :collection => @catalog.children %>
+  </ul>
+</div>
