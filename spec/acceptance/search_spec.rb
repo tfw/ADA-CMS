@@ -39,4 +39,9 @@ feature "searching studies" do
     page.should_not have_content("EXTENDED")
     page.should_not  have_content("TITLE")
   end
+  
+  
+  scenario "filters (facets) should be subtractable" do
+    
+  end
 end
