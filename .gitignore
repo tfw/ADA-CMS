@@ -8,3 +8,5 @@ bin/
 log
 tmp
 *.swp
+solr/data/
+*~

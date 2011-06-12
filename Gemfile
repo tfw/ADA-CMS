@@ -9,8 +9,10 @@ gem 'inkling', :git => "git://github.com/tfw/inkling.git"
 #gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling-project/inkling"
 
 gem "devise", ">= 1.2.0"
-gem 'devise_openid_authenticatable'
-gem 'openid_client', :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
+gem 'devise_openid_authenticatable', '~> 1.0.0'
+
+gem 'openid_client',
+      :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
 
 gem 'inherited_resources'
 gem 'cancan'

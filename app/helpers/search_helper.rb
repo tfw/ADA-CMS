@@ -29,4 +29,10 @@ module SearchHelper
     
     "class = 'concealed'" unless format_names.include?(format)
   end
+  
+  # def request_without(key, request)
+  #   copy = params.dup
+  #   copy.delete(key)
+  #   "#{request.path}/"
+  # end
 end
