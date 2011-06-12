@@ -24,19 +24,22 @@
 <% end %>
 
 <div id="search-results">
-	Term: <%= params[:term] %> <p/>
+  <% if params[:term] %>
+	  <%= pluralize params[:term].split(/\W/).length, "Term" %>: 
 	
-	<% if params[:filters].any? %>
-	Filters:
+  	<% if params[:filters].any? %>
+  	Refine search:
 	
-		<% params[:filters].each do |facet|
-		  facet.each do |name, value| %>
-			<%= Study::FACETS[name.to_sym] %> = <%= value %> (<%= link_to '-', request.params %>)
-			<% unless facet == params[:filters].last %>, <% end %>
-			<% end %>
-		<% end %>
-	<% end %>
-
+  		<% params[:filters].each do |facet|
+  		  facet.each do |name, value| %>
+  			<%= Study::FACETS[name.to_sym] %> = <%= value %> (<%= link_to '-', request.params %>)
+  			<% unless name == params[:filters].last %>, <% end %>
+  			<% end %>
+  		<% end %>
+  	<% end %>
+  <% else %>
+    Search requires a search term.
+  <% end %>
 
 	<div id="tabs">
 	  <ul>

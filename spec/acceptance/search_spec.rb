@@ -31,7 +31,7 @@ feature "searching studies" do
   
   scenario "the view http param should define whether jquery renders onload the title view (study), extended view (study, or variables)" do
     search("foo", "title")
-    puts page.body
+    # puts page.body
     page.should have_content("TITLE")
     search("foo", "ext")
     page.should have_content("EXTENDED")
@@ -40,8 +40,13 @@ feature "searching studies" do
     page.should_not  have_content("TITLE")
   end
   
-  
-  scenario "filters (facets) should be subtractable" do
+  scenario "searches should be able to be saved" do
+    search("foo", "title")
     
   end
+
+  
+  # scenario "filters (facets) should be subtractable" do
+  #   
+  # end
 end

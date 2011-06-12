@@ -4,6 +4,7 @@ class CreateSearches < ActiveRecord::Migration
       t.integer :user_id
       t.integer :archive_id
       t.string :query
+      t.string :title
       t.timestamps
     end
   end
