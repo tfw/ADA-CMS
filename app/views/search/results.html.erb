@@ -25,8 +25,8 @@
 
 <div id="search-results">
   <% if params[:term] %>
-	  <%= pluralize params[:term].split(/\W/).length, "Term" %>: 
-	
+	  <%= pluralize params[:term].split(/\W/).length, "Term" %>: <%= params[:term] %>
+	  <br/>
   	<% if params[:filters].any? %>
   	Refine search:
 	
@@ -40,6 +40,12 @@
   <% else %>
     Search requires a search term.
   <% end %>
+  
+  <% if current_user %>
+    Save: 
+  <% end %>
+
+  <br/><br/>
 
 	<div id="tabs">
 	  <ul>
