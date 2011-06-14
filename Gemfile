@@ -47,4 +47,5 @@ group :development, :test do
  	gem 'machinist' , '>= 1.0.6'
 	gem 'capistrano'
 	gem 'selenium-webdriver', '>= 0.2.1'
+  gem 'simplecov', '>= 0.4.0', :require => false, :group => :test
 end

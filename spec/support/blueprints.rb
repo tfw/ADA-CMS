@@ -88,6 +88,12 @@ DdiMapping.blueprint do
   xml_element true
 end
 
+Search.blueprint do
+  query Sham.url
+  title Sham.word
+  archive_id {(Archive.make).id}
+end
+
 def make_user(role_name)
   role_name = role_name.to_s if role_name.is_a? Symbol
   role = Inkling::Role.find_by_name(role_name)  

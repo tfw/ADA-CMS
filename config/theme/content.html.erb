@@ -16,11 +16,11 @@
 				<% if current_user.nil? %>
 					<h1>USER Log-in </h1>
 					<%= form_for(:user, :url => new_user_session_path, :html => {:class => 'formtastic', :method => "post"}) do |f| %>
-						<input type="text" name="user[identity_url]" id="user_identity_url" />  
+            <!-- <input type="text" name="user[identity_url]" id="user_identity_url" />   -->
             <input type="submit" alt="Log In" value="LOG IN" id="enter_button" />
             <input type="submit" alt="register" value="register" id="register_button"/>
 						
-						<label id="rember_me">Remember me <%= f.check_box :remember_me %></label>						
+            <!-- <label id="rember_me">Remember me <%= f.check_box :remember_me %></label>             -->
 					<% end %>
 				<% else %>
 					<form action="<%= logout_path %>" method="get" enctype="multipart/form-data" name="form2" class="formtastic">

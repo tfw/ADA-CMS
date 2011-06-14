@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110520013848) do
+ActiveRecord::Schema.define(:version => 20110612021750) do
 
   create_table "archive_catalog_integrations", :force => true do |t|
     t.integer  "archive_catalog_id"
@@ -233,6 +233,15 @@ ActiveRecord::Schema.define(:version => 20110520013848) do
     t.datetime "updated_at"
     t.string   "state"
     t.integer  "archive_to_study_integration_id"
+  end
+
+  create_table "searches", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "archive_id"
+    t.string   "query"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "studies", :force => true do |t|

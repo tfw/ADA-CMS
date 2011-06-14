@@ -9,7 +9,7 @@ class SearchController < ContentController
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
     @study_filters = (params[:filters] || [])
-    variable_filters = (params[:var_filters] || [])
+    # variable_filters = (params[:var_filters] || [])
 
     @study_searches = 
       if @current_archive == Archive.ada
@@ -19,11 +19,11 @@ class SearchController < ContentController
       end
     
     @studies_search = @study_searches[@current_archive]
-    @variables_search = variable_search(@term, variable_filters)
+    @variables_search = variable_search(@term, [])
     
     @title = "Search: #{@term}"
     params[:filters] ||= []
-    params[:var_filters] ||= []
+    # params[:var_filters] ||= []
     render :results
   end
   
