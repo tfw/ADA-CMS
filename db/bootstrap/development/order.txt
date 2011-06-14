@@ -5,6 +5,8 @@ archive_studies.yml
 archive_study_blocks.yml
 archive_study_queries.yml
 archive_study_integrations.yml
+archive_catalogs.yml
+archive_catalog_studies.yml
 ddi_mappings.yml
 inkling_feed_roles.yml
 inkling_feeds.yml
