@@ -2,7 +2,8 @@
     <a href="<%= browse_archive_catalog_path(:archive_catalog_id => archive_catalog.id) %>" rel="explr-ajax"><%= archive_catalog.title %></a>
   <ul>
     <% for archive_catalog_study in archive_catalog.archive_catalog_studies %>
-    	<li> <a href="<%= browse_archive_catalog_path(:archive_catalog_id => archive_catalog.id, :archive_catalog_study_id => archive_catalog_study.id) %>" rel="explr-ajax"> <%= archive_catalog_study.study.ddi_id %> </a> </li>
+    	<li> <a href="<%= browse_archive_catalog_path(:archive_catalog_id => archive_catalog.id, :archive_catalog_study_id => archive_catalog_study.id) %>" rel="explr-ajax"> <%= archive_catalog_study.study.title%> </a> 
+		</li>
     <% end %>
 
     <%= render :partial => "archive_catalog", :collection => archive_catalog.children %>

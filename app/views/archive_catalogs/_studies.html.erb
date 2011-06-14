@@ -30,7 +30,7 @@
 		<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link" href="#">Extended</a></li>
 	</ul>
 
-	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %>>
+	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %> width='100%'>
 		<thead>
 			<tr>
 				<th>Study</th>
@@ -47,7 +47,7 @@
 		</tbody>	
 	</table>
 
-	<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1>
+	<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1  width='100%'>
 		<% @archive_catalog_studies.each do |archive_catalog_study| %>	
       <%= render(:partial => "/shared/study_ext_tr", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 		<% end %>

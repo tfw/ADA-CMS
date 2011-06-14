@@ -12,7 +12,7 @@
 					</tr>
 				</table>
 				
-        Abstract: <%= first_n_words(30, study.abstract) %> <br/>
+        Abstract: <%= line_break_title(first_n_words(30, study.abstract), 15).html_safe %> <br/>
         Variables: <%= study.variables.size %> <br/>
 
 				<% if hit %>
