@@ -78,17 +78,17 @@ task :deploy_log, :roles => :app do
 end
 
 task :refresh_theme, :roles => :app do
-  run "cd #{current_path}; rake RAILS_ENV=#{rails_env} install_theme"
+  run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} install_theme"
 end
 
 namespace :solr do
   task :start do
-    run "cd #{current_path}; rake RAILS_ENV=#{rails_env} sunspot:solr:start"
+    run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} sunspot:solr:start"
   end
   task :stop do
-    run "cd #{current_path}; rake RAILS_ENV=#{rails_env} sunspot:solr:stop"
+    run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} sunspot:solr:stop"
   end
   task :reindex do
-    run "cd #{current_path}; rake RAILS_ENV=#{rails_env} sunspot:reindex"
+    run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} sunspot:reindex"
   end
 end
