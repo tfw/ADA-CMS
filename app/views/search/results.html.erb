@@ -29,24 +29,23 @@
 
 <div id="search-results">
 	
-	 search_abbr(params) 
+	 <%= search_abbr(params, true).html_safe %>
 	
-  <% unless params[:term] %> Search requires a search term.<% end %>
+  <% unless params[:term] %> Search requires a term.<% end %>
   
   <% if current_user %>
-    (<a href="#" id="save-search-link">Save Search</a>)
+		<span id="save-searches">
+	    <a href="#" id="save-search-link">Save</a>
+			<br/>
+			<% semantic_form_for @search do |f|%>
+				<%= f.hidden_field :user, :value => current_user %>
+				<%= f.hidden_field :archive, :value => @current_archive %>
+				<%= f.hidden_field :query, :value => request.path %>
 
-		<% semantic_form_for @search do |f|%>
-			<%= f.hidden_field :user, :value => current_user %>
-			<%= f.hidden_field :archive, :value => @current_archive %>
-			<%= f.hidden_field :query, :value => request.path %>
-
-			<%= f.text_field :title, :value => search_abbr(params) %>
-		<% end %>
-
-		
-		<br/>
-		
+				<%= f.text_field :title, :value => search_abbr(params), :size => 80 %>
+				<%= submit_tag "Save"%>
+			<% end %>
+		</span>
   <% end %>
 
   <br/><br/>

@@ -80,6 +80,14 @@
 	display: none;
 }
 
+#save-searches {
+	float: right;
+}
+
+#save-search-link {
+	float:right;
+}
+
 /* Browse ---  */
 
 /*#browse-results section{
