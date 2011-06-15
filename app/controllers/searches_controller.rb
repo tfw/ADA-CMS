@@ -1,4 +1,4 @@
-class SearchController < ContentController
+class SearchesController < ContentController
   
   inherit_resources
   defaults :resource_class => Search, :instance_name => 'search'
@@ -28,6 +28,15 @@ class SearchController < ContentController
     @title = "Search: #{@term}"
     params[:filters] ||= []
     render :results
+  end
+  
+  def create
+    create! do |format|
+      format.html {
+      
+        redirect_to search_path + "?#{search.query}"
+      }
+    end
   end
   
   private  #the logic below was moved into Study (fat model), but a performance hit occurred - strangely -

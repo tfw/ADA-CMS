@@ -38,11 +38,11 @@
 	    <a href="#" id="save-search-link">Save</a>
 			<br/>
 			<% semantic_form_for @search do |f|%>
-				<%= f.hidden_field :user, :value => current_user %>
-				<%= f.hidden_field :archive, :value => @current_archive %>
+				<%= f.hidden_field :user_id, :value => current_user.id %>
+				<%= f.hidden_field :archive_id, :value => @current_archive.id %>
 				<%= f.hidden_field :query, :value => request.path %>
 
-				<%= f.text_field :title, :value => search_abbr(params), :size => 80 %>
+				<%= f.text_field :title, :value => search_abbr(params), :size => 50 %>
 				<%= submit_tag "Save"%>
 			<% end %>
 		</span>

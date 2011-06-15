@@ -48,7 +48,7 @@ Ada::Application.routes.draw do
     get 'resources', :to => 'resources#index'
   end
 
-  get '/search', :to => "search#search", :path => "search" #path is necessary, see http://stackoverflow.com/questions/4134606/routing-trouble-on-rails-3-related-to-singular-plural
+  get '/search', :to => "searches#search", :path => "search" #path is necessary, see http://stackoverflow.com/questions/4134606/routing-trouble-on-rails-3-related-to-singular-plural
   resources :searches, :except => [:new, :show]
   
   get 'browse_archive_catalog', :to => "archive_catalogs#browse"
