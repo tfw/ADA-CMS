@@ -1,5 +1,8 @@
 class SearchController < ContentController
   
+  inherit_resources
+  defaults :resource_class => Search, :instance_name => 'search'
+  
   respond_to :html
   clear_helpers
   helper :application
@@ -9,7 +12,8 @@ class SearchController < ContentController
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
     @study_filters = (params[:filters] || [])
-    # variable_filters = (params[:var_filters] || [])
+    
+    @search = Search.new
 
     @study_searches = 
       if @current_archive == Archive.ada
@@ -23,7 +27,6 @@ class SearchController < ContentController
     
     @title = "Search: #{@term}"
     params[:filters] ||= []
-    # params[:var_filters] ||= []
     render :results
   end
   

@@ -30,9 +30,27 @@ module SearchHelper
     "class = 'concealed'" unless format_names.include?(format)
   end
   
-  # def request_without(key, request)
-  #   copy = params.dup
-  #   copy.delete(key)
-  #   "#{request.path}/"
-  # end
+  def search_abbr(params, remove_filters = false)
+    abbr = "#{pluralize params[:term].split(/\W/).length, "term"}: #{params[:term]}"
+
+    if params[:filters].any?
+    	abbr += ", #{pluralize params[:filters].length, "filter"} - "
+
+    		params[:filters].each do |facet|
+    		  facet.each do |name, value|		    
+      			abbr += "#{Study::FACETS[name.to_sym]} = #{value}" 
+
+      			if remove_filters
+      			  abbr += "(#{link_to '-', request.params})"
+    			  end
+    			  
+      			unless name == facet.keys.last 
+      			  abbr += ", " 
+      			end
+  			end 
+  		end 
+  	end
+  	
+  	abbr
+  end
 end

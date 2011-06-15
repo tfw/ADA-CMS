@@ -76,6 +76,9 @@
 	display: inline;
 }
 
+#new_search {
+	display: none;
+}
 
 /* Browse ---  */
 

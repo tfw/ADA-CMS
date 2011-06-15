@@ -21,28 +21,32 @@
   	$('#study-items').toggleClass('selected-tab', false);
   	$('#variable-items').toggleClass('selected-tab', true);
   });
+
+  $("#save-search-link").click(function() {
+    $('#new_search').toggle();
+	});
 <% end %>
 
 <div id="search-results">
-  <% if params[:term] %>
-	  <%= pluralize params[:term].split(/\W/).length, "Term" %>: <%= params[:term] %>
-	  <br/>
-  	<% if params[:filters].any? %>
-  	Refine search:
 	
-  		<% params[:filters].each do |facet|
-  		  facet.each do |name, value| %>
-  			<%= Study::FACETS[name.to_sym] %> = <%= value %> (<%= link_to '-', request.params %>)
-  			<% unless name == params[:filters].last %>, <% end %>
-  			<% end %>
-  		<% end %>
-  	<% end %>
-  <% else %>
-    Search requires a search term.
-  <% end %>
+	 search_abbr(params) 
+	
+  <% unless params[:term] %> Search requires a search term.<% end %>
   
   <% if current_user %>
-    Save: 
+    (<a href="#" id="save-search-link">Save Search</a>)
+
+		<% semantic_form_for @search do |f|%>
+			<%= f.hidden_field :user, :value => current_user %>
+			<%= f.hidden_field :archive, :value => @current_archive %>
+			<%= f.hidden_field :query, :value => request.path %>
+
+			<%= f.text_field :title, :value => search_abbr(params) %>
+		<% end %>
+
+		
+		<br/>
+		
   <% end %>
 
   <br/><br/>

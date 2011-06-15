@@ -40,13 +40,8 @@ feature "searching studies" do
     page.should_not  have_content("TITLE")
   end
   
-  scenario "searches should be able to be saved" do
+  scenario "a save search form should be available (if there is a current_user)" do
     search("foo", "title")
-    
-  end
-
-  
-  # scenario "filters (facets) should be subtractable" do
-  #   
-  # end
+    page.should have_content("Save: ")
+  end  
 end
