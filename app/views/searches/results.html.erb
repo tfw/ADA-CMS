@@ -40,7 +40,7 @@
 	
   <% unless params[:term] %> Search requires a term.<% end %>
   
-  Filters: <%= filter_list(params, true) %>
+  Filters:  filter_list(params, true) 
   
   <% if current_user %>
 		<span id="save-searches">
