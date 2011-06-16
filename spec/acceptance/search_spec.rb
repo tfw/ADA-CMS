@@ -29,9 +29,9 @@ feature "searching studies" do
   
   scenario "the number of search results are reported" do
     sleep 6
+    debugger
     search("foo")
     puts page.body
-    # debugger
     page.should have_content "Searching for foo produced 100 results."
   end
   
