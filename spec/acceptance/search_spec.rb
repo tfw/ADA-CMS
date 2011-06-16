@@ -1,7 +1,6 @@
 require File.dirname(__FILE__) + '/acceptance_helper'
 
 feature "searching studies" do
-
   before(:all) do
     @pid = fork { Sunspot::Rails::Server.new.run }
     sleep 5 # allow some time for the instance to spin up

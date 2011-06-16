@@ -35,22 +35,41 @@ module SearchHelper
 
     if params[:filters].any?
       abbr += ": "
-
-    		params[:filters].each do |facet|
-    		  facet.each do |name, value|		    
-      			abbr += "#{Study::FACETS[name.to_sym]} = #{value}" 
-
-      			if remove_filters
-      			  abbr += "(#{link_to '-', request.params})"
-    			  end
-    			  
-      			unless name == facet.keys.last 
-      			  abbr += ", " 
-      			end
-  			end 
-  		end 
-  	end
+      filter_list(abbr, params, remove_filters)
+      #         params[:filters].each do |facet|
+      #           facet.each do |name, value|       
+      #             abbr += "#{Study::FACETS[name.to_sym]} = #{value}" 
+      # 
+      #             if remove_filters
+      #               abbr += "(#{link_to '-', request.params})"
+      #             end
+      #             
+      #             unless name == facet.keys.last 
+      #               abbr += ", " 
+      #             end
+      #           end 
+      #         end 
+    end
   	
   	abbr.downcase
+  end
+  
+  def filter_list(str, params, remove_filters = false)
+    if params[:filters].any?
+  		params[:filters].each do |facet|
+  		  facet.each do |name, value|		    
+    			str += "#{Study::FACETS[name.to_sym]} = #{value}" 
+
+    			if remove_filters
+    			  str += "(#{link_to '-', request.params})"
+  			  end
+			  
+    			unless name == facet.keys.last 
+    			  str += ", " 
+    			end
+  		  end 
+  	  end 
+	  end
+	  str
   end
 end
