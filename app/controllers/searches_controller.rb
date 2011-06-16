@@ -32,10 +32,7 @@ class SearchesController < ContentController
   
   def create
     create! do |format|
-      format.html {
-      
-        redirect_to search_path + "?#{search.query}"
-      }
+      format.js {}
     end
   end
   

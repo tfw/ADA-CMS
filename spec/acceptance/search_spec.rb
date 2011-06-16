@@ -42,6 +42,10 @@ feature "searching studies" do
   
   scenario "a save search form should be available (if there is a current_user)" do
     search("foo", "title")
-    page.should have_content("Save: ")
+    click_link("Save")
+    
+    within(:xpath, "//span[@id='save-searches']") do
+      page.should have_content "foo"
+    end
   end  
 end

@@ -1,0 +1,5 @@
+<% if @search.valid? %>
+	$("#save-search-response").html("Saved.");
+<% else %>
+	$("#save-search-response").html(@search.errors.full_messages.first);
+<% end %> 
