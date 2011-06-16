@@ -89,7 +89,7 @@ DdiMapping.blueprint do
 end
 
 Search.blueprint do
-  query Sham.url
+  query {{:term => "test term"}}
   title Sham.word
   archive_id {(Archive.make).id}
 end
