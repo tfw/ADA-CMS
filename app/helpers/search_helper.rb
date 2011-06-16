@@ -31,10 +31,10 @@ module SearchHelper
   end
   
   def search_abbr(params, remove_filters = false)
-    abbr = "#{params[:term]}: "
+    abbr = "#{params[:term]}"
 
     if params[:filters].any?
-      # abbr += ", #{pluralize params[:filters].length, "filter"} - "
+      abbr += ": "
 
     		params[:filters].each do |facet|
     		  facet.each do |name, value|		    
