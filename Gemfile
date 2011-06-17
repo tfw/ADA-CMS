@@ -31,6 +31,7 @@ gem 'paperclip', ">=2.3"
 gem 'ratom'
 gem 'sunspot_rails', '>=1.2.1'
 gem 'mongrel', '~> 1.2.0.pre2'
+gem 'httparty'
 
 # gem "ruby-debug19" #move this into dev group alone later
 

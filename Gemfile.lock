@@ -80,6 +80,7 @@ GEM
     childprocess (0.1.9)
       ffi (~> 1.0.6)
     columnize (0.3.2)
+    crack (0.1.8)
     culerity (0.2.15)
     daemons (1.0.10)
     database_cleaner (0.6.7)
@@ -105,6 +106,8 @@ GEM
     gemcutter (0.7.0)
     has_scope (0.5.0)
     highline (1.6.1)
+    httparty (0.7.8)
+      crack (= 0.1.8)
     i18n (0.5.0)
     inherited_resources (1.2.2)
       has_scope (~> 0.5.0)
@@ -261,6 +264,7 @@ DEPENDENCIES
   faker (>= 0.9.5)
   formtastic (>= 1.1.0)
   gemcutter (>= 0.6.1)
+  httparty
   inherited_resources
   inkling!
   jquery-rails (>= 0.2.6)
