@@ -53,7 +53,7 @@ module SearchHelper
     			  str += "(#{link_to '-', copy})"
   			  end
 			  
-    			unless name == facet.keys.last 
+    			unless name == params[:filters].first.keys.last 
     			  str += ", " 
     			end
   		  end 
