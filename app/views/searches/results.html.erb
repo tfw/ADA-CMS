@@ -25,23 +25,16 @@
   $("#save-search-link").click(function() {
     $('#new_search').toggle();
 	});
-
-  $("new_search").bind("ajax:failure", function(event, data, status, xhr) {
-    	$("#save-search-response").html("boo");
-		});
-	  $("new_search").bind("ajax:success", function(event, data, status, xhr) {
-			alert("--");
-      $("#save-search-response").html(data);
-    });
 <% end %>
 
 <div id="search-results">
   Searching for <%= @term %> produced <%= @studies_search.total %> results.
 	
+	<br/>
+  Filters:  <%= filter_list("", params, true).html_safe %>
+ 
   <% unless params[:term] %> Search requires a term.<% end %>
-  
-  Filters:  filter_list(params, true) 
-  
+    
   <% if current_user %>
 		<span id="save-searches">
 			<span id="save-search-response"></span>
