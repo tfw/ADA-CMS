@@ -31,26 +31,34 @@ module SearchHelper
   end
   
   def search_abbr(params, remove_filters = false)
-    abbr = "#{params[:term]}: "
+    abbr = "#{params[:term]}"
 
     if params[:filters].any?
-      # abbr += ", #{pluralize params[:filters].length, "filter"} - "
-
-    		params[:filters].each do |facet|
-    		  facet.each do |name, value|		    
-      			abbr += "#{Study::FACETS[name.to_sym]} = #{value}" 
-
-      			if remove_filters
-      			  abbr += "(#{link_to '-', request.params})"
-    			  end
-    			  
-      			unless name == facet.keys.last 
-      			  abbr += ", " 
-      			end
-  			end 
-  		end 
-  	end
+      abbr += ": "
+      filter_list(abbr, params, remove_filters)
+    end
   	
   	abbr.downcase
+  end
+  
+  def filter_list(str, params, remove_filters = false)
+    if params[:filters].any?
+  		params[:filters].each do |facet|
+  		  facet.each do |name, value|		    
+    			str += "#{Study::FACETS[name.to_sym]} = #{value}" 
+
+    			if remove_filters
+    			  copy = params.dup
+    			  copy[:filters].first.delete(name)
+    			  str += "(#{link_to '-', copy})"
+  			  end
+			  
+    			unless name == facet.keys.last 
+    			  str += ", " 
+    			end
+  		  end 
+  	  end 
+	  end
+	  str
   end
 end

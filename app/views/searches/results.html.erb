@@ -25,16 +25,16 @@
   $("#save-search-link").click(function() {
     $('#new_search').toggle();
 	});
-
 <% end %>
 
 <div id="search-results">
-
-		
-	<%= search_abbr(params, true).html_safe %>
+  Searching for <%= @term %> produced <%= @studies_search.total %> results.
 	
+	<br/>
+  Filters:  <%= filter_list("", params, true).html_safe %>
+ 
   <% unless params[:term] %> Search requires a term.<% end %>
-  
+    
   <% if current_user %>
 		<span id="save-searches">
 			<span id="save-search-response"></span>

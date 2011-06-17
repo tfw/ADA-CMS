@@ -46,8 +46,6 @@ class Study < ActiveRecord::Base
     string :study_auth_entity 
     
     integer :archive_ids, :multiple => true
-    
-    # autocomplete :search_term, :using => :label
   end  
   
   

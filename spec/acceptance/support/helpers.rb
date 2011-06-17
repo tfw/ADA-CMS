@@ -1,9 +1,9 @@
 module HelperMethods
   include Warden::Test::Helpers
   
-  def search_form(term)
+  def search_form(term, page)
     fill_in("search_term", :with => term)
-    click_on("Go")
+    page.find('#search_button').click
   end
 
   def search(term, view = "title", archive = Archive.ada)

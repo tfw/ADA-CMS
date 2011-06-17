@@ -1,7 +1,6 @@
 require File.dirname(__FILE__) + '/acceptance_helper'
 
 feature "searching studies" do
-
   before(:all) do
     @pid = fork { Sunspot::Rails::Server.new.run }
     sleep 5 # allow some time for the instance to spin up
@@ -10,7 +9,10 @@ feature "searching studies" do
   
   before(:each) do
     10.times {Study.make()}
+    100.times {|i| Study.make(:label => "foo #{i}")} #for some searchable data
     reindex
+    sleep 2
+    @study_search_term = Study.first.label.split(/\W/).first
   end
 
   def reindex
@@ -20,32 +22,35 @@ feature "searching studies" do
   
   scenario "the search form should lead to the search results page" do
     visit "/"
-    search_form(Study.first.label.split(/\w/).first)
+    search_form(@study_search_term, page) 
+    page.should have_content "Search: #{@study_search_term}" 
     page.status_code.should == 200
   end
   
-  scenario "it should default to a studies title view if the format http param isnt set" do
-    search_form("foo")
-    page.should have_content("TITLE")    
+  scenario "the number of search results are reported" do
+    sleep 6
+    debugger
+    search("foo")
+    puts page.body
+    page.should have_content "Searching for foo produced 100 results."
   end
   
-  scenario "the view http param should define whether jquery renders onload the title view (study), extended view (study, or variables)" do
-    search("foo", "title")
-    # puts page.body
-    page.should have_content("TITLE")
-    search("foo", "ext")
-    page.should have_content("EXTENDED")
-    search("foo", "var")    
-    page.should_not have_content("EXTENDED")
-    page.should_not  have_content("TITLE")
-  end
+  # scenario "it should default to a studies title view if the format http param isnt set" do
+  #   visit "/"
+  #   search_form(@study_search_term, page)
+  #   page.should have_content("TITLE")    
+  # end
   
-  scenario "a save search form should be available (if there is a current_user)" do
-    search("foo", "title")
-    click_link("Save")
-    
-    within(:xpath, "//span[@id='save-searches']") do
-      page.should have_content "foo"
-    end
-  end  
+  # scenario "a save search form should be available (if there is a current_user)" do
+  #   archivist = make_user(:editor)
+  #   sign_in(archivist)
+  #   search(@study_search_term)
+  #   
+  #   click_link("Save")
+  #   
+  #   within(:xpath, "//span[@id='save-searches']") do
+  #     puts page.body
+  #     page.should have_content "#{@study_search_term.downcase}:"
+  #   end
+  # end  
 end

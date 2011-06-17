@@ -1,9 +1,9 @@
 Australian Data Archives CMS
 ----------------------------
 
-The ADA CMS is a bespoke cms and advanced search service available freely as open source, as commissioned by the Australian Data Archives, currently at http://www.assda.edu.au/ until this application is deployed in production to http://ada.edu.au . It is being written by the Tree Falling In The Woods team - http://treefallinginthewoods.com.
+The ADA CMS is a bespoke cms and advanced search service available freely as open source, as commissioned by the Australian Data Archives, currently at http://www.assda.edu.au/ until this application is deployed in production to http://ada.edu.au . It is being developed by Tree Falling In The Woods - http://treefallinginthewoods.com.
 
-It's chief feature is to integrate with Nesstar and present its content via search (using solr). A CMS system based on Inkling (http://github.com/tfw/inkling) has been framed around it.
+Its chief feature is to integrate with Nesstar and present its content via search (using solr). A CMS system based on Inkling (http://github.com/tfw/inkling) has been framed around it.
 
 REQUIREMENTS
 
