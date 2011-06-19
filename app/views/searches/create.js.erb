@@ -1,5 +1,6 @@
 <% if @search.valid? %>
-	$("#save-search-response").html("Saved.").fadeOut("slow");
+	$("#save-search-response").html("Saved").fadeOut(5000);
+	$("#save-search-area").hide();
 <% else %>
-	$("#save-search-response").html(@search.errors.full_messages.first).fadeOut("slow");
+	$("#save-search-response").html(@search.error.messages.first).fadeOut(5000);
 <% end %> 

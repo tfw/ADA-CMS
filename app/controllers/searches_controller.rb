@@ -7,23 +7,38 @@ class SearchesController < ContentController
   clear_helpers
   helper :application
   helper :search
-    
-  def search   
+  
+  def transient_search
     @term = params[:term]    
     @current_archive = Archive.find(params[:archive_id])  
     @study_filters = (params[:filters] || [])
+    
+    search(@term, @current_archive, @study_filters)
+  end
+  
+  def show
+    show! do |format|
+      format.html {
+        search(@search.term, @search.archive, @search.study_filters)
+      }
+  end
+    
+  def search(term, current_archive, study_filters)   
+    # @term = params[:term]    
+    # @current_archive = Archive.find(params[:archive_id])  
+    # @study_filters = (params[:filters] || [])
     
     @search = Search.new
 
     @study_searches = 
       if @current_archive == Archive.ada
-        search_studies_globally(@study_filters)
+        search_studies_globally(study_filters)
       else
-        {@current_archive => study_search(@current_archive, @term, @study_filters)}
+        {current_archive => study_search(current_archive, term, study_filters)}
       end
     
-    @studies_search = @study_searches[@current_archive]
-    @variables_search = variable_search(@term, [])
+    @studies_search = @study_searches[current_archive]
+    @variables_search = variable_search(term, [])
     
     @title = "Search: #{@term}"
     params[:filters] ||= []
@@ -32,7 +47,9 @@ class SearchesController < ContentController
   
   def create
     create! do |format|
-      format.js {}
+      format.js {
+        session[:recent_saved_search] = @search.id
+      }
     end
   end
   

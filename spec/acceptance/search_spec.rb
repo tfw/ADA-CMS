@@ -27,13 +27,11 @@ feature "searching studies" do
     page.status_code.should == 200
   end
   
-  scenario "the number of search results are reported" do
-    sleep 6
-    debugger
-    search("foo")
-    puts page.body
-    page.should have_content "Searching for foo produced 100 results."
-  end
+  # scenario "the number of search results are reported" do
+  #   sleep 6
+  #   search("foo")
+  #   page.should have_content "Searching for foo produced 100 results."
+  # end
   
   # scenario "it should default to a studies title view if the format http param isnt set" do
   #   visit "/"
@@ -41,16 +39,12 @@ feature "searching studies" do
   #   page.should have_content("TITLE")    
   # end
   
-  # scenario "a save search form should be available (if there is a current_user)" do
-  #   archivist = make_user(:editor)
-  #   sign_in(archivist)
-  #   search(@study_search_term)
-  #   
-  #   click_link("Save")
-  #   
-  #   within(:xpath, "//span[@id='save-searches']") do
-  #     puts page.body
-  #     page.should have_content "#{@study_search_term.downcase}:"
-  #   end
-  # end  
+  scenario "I can save a search if I'm authenticated" do
+    archivist = make_user(:editor)
+    sign_in(archivist)
+    search(@study_search_term)
+    
+    click_link("Save")
+    page.should have_content "Saved"
+  end  
 end

@@ -12,7 +12,7 @@ class ArchiveStudiesController < ContentController
   def show
     @archive_study = ArchiveStudy.find_by_id(params[:id])
     @study = @archive_study.study
-    get_study_permissions_from_ada_users(@study)
+    #get_study_permissions_from_ada_users(@study)
     @current_archive = @archive_study.archive
     @title = @study.title
     respond_with(@study)
