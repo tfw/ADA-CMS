@@ -1,0 +1,24 @@
+<% content_for(:sidenav) do %>
+  <%= render :partial => '/shared/side_nav' %>
+<% end %>
+
+<% content_for(:breadcrumbs) do %>
+	Saved searches - <%= current_user %> 
+<% end %>
+
+<table width=100%>
+  <tr>
+    <th>Title</th>
+    <th>Term(s)</th>
+    <th>Filter(s)</th>
+    <th>Time</th>
+  </tr>
+  <% for search in @searches %>
+    <tr>
+      <td> <%= search.title %> </td>
+      <td> <%= search.terms %> </td>
+      <td> <%= search.filters %> </td>
+      <td> <%= time_ago_in_words(search.created_at).capitalize %> </td>
+    </tr>
+  <% end %>
+</table>

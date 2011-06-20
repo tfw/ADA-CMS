@@ -25,13 +25,13 @@ feature "searching studies" do
     Variable.reindex
   end
   
-  # scenario "the search form should lead to the search results page (transient search)" do
-  #   visit "/"
-  #   search_form("foo", page) 
-  #   page.should have_content "Search: foo" 
-  #   page.should have_content "Searching for foo produced 100 results."
-  #   page.status_code.should == 200
-  # end
+  scenario "the search form should lead to the search results page (transient search)" do
+    visit "/"
+    search_form("foo", page) 
+    page.should have_content "Search: foo" 
+    page.should have_content "Searching for foo produced 100 results."
+    page.status_code.should == 200
+  end
   
   scenario "I can save a search if I'm authenticated" do
     archivist = make_user(:editor)
@@ -40,6 +40,8 @@ feature "searching studies" do
     
     click_link("Save this search")
     click_button("Save")
-    page.should have_content "Saved"
+    # page.should have_content "Saved"
+    archivist.reload
+    archivist.searches.first.title.should == "foo"
   end  
 end

@@ -1,16 +1,16 @@
 class User < ActiveRecord::Base
-
   devise :openid_authenticatable
+  acts_as_inkling_user
   
   #abstract into inkling helper START
-  has_many :role_memberships, :class_name => "Inkling::RoleMembership"#, :foreign_key => "user.id"
-  has_many :roles, :class_name => "Inkling::Role", :through => :role_memberships
-  has_many :logs
-  
-  def has_role?(role)
-    role = role.to_s
-    self.roles.find_by_name(role)
-  end  
+  # has_many :role_memberships, :class_name => "Inkling::RoleMembership"#, :foreign_key => "user.id"
+  # has_many :roles, :class_name => "Inkling::Role", :through => :role_memberships
+  # has_many :logs
+  # 
+  # def has_role?(role)
+  #   role = role.to_s
+  #   self.roles.find_by_name(role)
+  # end  
   #abstract into inkling helper END
   
   validates_uniqueness_of :identity_url
@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
   has_many :pages, :foreign_key => "author_id"
   has_many :news, :foreign_key => "user_id"
   has_many :archive_study_integrations, :foreign_key => "user_id"
-
+  has_many :searches
   attr_accessible :identity_url
 
   def self.build_from_identity_url(identity_url)
@@ -59,4 +59,8 @@ class User < ActiveRecord::Base
   def to_s
     "#{firstname} #{surname}"
   end
+   #  
+   # def to_param
+   #   identity_url
+   # end
 end

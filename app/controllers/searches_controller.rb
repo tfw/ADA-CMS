@@ -12,14 +12,10 @@ class SearchesController < ContentController
   end
   
   def show
-    unless params[:id]
-      transient
-    else
-      show! do |format|
-        format.html {
-          search(@search.terms, @search.archive, @search.filters, @search.id)
-        }
-      end
+    show! do |format|
+      format.html {
+        search(@search.terms, @search.archive, @search.filters, @search.id)
+      }
     end
   end
       
@@ -33,23 +29,13 @@ class SearchesController < ContentController
       }
     end
   end
-  
-  def destroy
-    search = Search.find(params[:id])
-    
-    if search.user != current_user
-      flash[:error] = "You cannot delete another user's search."
-    end
-    
-    delete!
-  end
-  
+
   private
   def search(term, current_archive, study_filters, search_id = nil)
     @term = term
     @current_archive = current_archive
-    @search = Search.find(search_id) if search_id  
-    @search ||= Search.new
+    # @search = Search.find(search_id) if search_id  
+    @search = Search.new
 
     @study_searches = 
       if @current_archive == Archive.ada

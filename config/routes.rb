@@ -48,10 +48,13 @@ Ada::Application.routes.draw do
     get 'resources', :to => 'resources#index'
   end
 
+  resources :users do
+    resources :searches, :controller => 'users/searches'
+  end
+
   resources :searches
   get '/search', :to => "searches#transient", :path => "search", :as => 'transient_search' #path is necessary, see http://stackoverflow.com/questions/4134606/routing-trouble-on-rails-3-related-to-singular-plural
 
-  
   get 'browse_archive_catalog', :to => "archive_catalogs#browse"
   
   inkling_match(:archive_studies)
