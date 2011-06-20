@@ -238,7 +238,8 @@ ActiveRecord::Schema.define(:version => 20110612021750) do
   create_table "searches", :force => true do |t|
     t.integer  "user_id"
     t.integer  "archive_id"
-    t.string   "query"
+    t.string   "filters"
+    t.string   "terms"
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"

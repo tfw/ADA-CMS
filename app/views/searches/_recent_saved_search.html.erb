@@ -1,1 +1,3 @@
-Run last search 
+<% search = Search.find(session[:recent_saved_search_id]) %>
+<%= search.archive_id %>
+<%= link_to 'Last saved search', search_path(search) %>

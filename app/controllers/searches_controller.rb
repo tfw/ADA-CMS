@@ -7,31 +7,45 @@ class SearchesController < ContentController
   helper :application
   helper :search
   
-  def transient_search  
+  def transient
     search(params[:term], Archive.find(params[:archive_id]), params[:filters] || [])
   end
   
   def show
-    show! do |format|
-      format.html {
-        search(@search.term, @search.archive, @search.query[:study_filters], @search.id)
-      }
+    unless params[:id]
+      transient
+    else
+      show! do |format|
+        format.html {
+          search(@search.terms, @search.archive, @search.filters, @search.id)
+        }
+      end
     end
   end
       
   def create
     create! do |format|
       format.js {
-        session[:recent_saved_search] = @search.id
+        if @search.valid?
+          session[:recent_saved_search_id] = @search.id
+          @recent_search_partial = render_to_string(:partial => "recent_saved_search", :locals => {:search => @search})
+        end
       }
     end
   end
   
+  def destroy
+    search = Search.find(params[:id])
+    
+    if search.user != current_user
+      flash[:error] = "You cannot delete another user's search."
+    end
+    
+    delete!
+  end
+  
   private
-  def search(term, current_archive, study_filters, search_id = nil)   
-    # @term = params[:term]    
-    # @current_archive = Archive.find(params[:archive_id])  
-    # @study_filters = (params[:filters] || [])
+  def search(term, current_archive, study_filters, search_id = nil)
     @term = term
     @current_archive = current_archive
     @search = Search.find(search_id) if search_id  

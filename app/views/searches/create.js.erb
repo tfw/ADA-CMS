@@ -1,6 +1,10 @@
 <% if @search.valid? %>
+  <% puts "-------- 1 ---------" %>
+  $("#save-search-area").empty();	
 	$("#save-search-response").html("Saved").fadeOut(5000);
-	$("#save-search-area").hide();
+  <%= @recent_search_partial.html_safe %>
+	$("#save-search-area").html(recent_search);	
 <% else %>
-	$("#save-search-response").html(@search.error.messages.first).fadeOut(5000);
+<% puts "-------- 2 ---------" %>
+	$("#save-search-response").html(@search.errors.full_messages.first).fadeOut(5000);
 <% end %> 

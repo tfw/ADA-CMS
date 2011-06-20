@@ -212,4 +212,8 @@ class Study < ActiveRecord::Base
   def for_archive(archive)
     self.archive_studies.find_by_archive_id(archive.id)
   end
+  
+  def to_param
+    "saved-search-#{self.title}"
+  end
 end

@@ -40,10 +40,10 @@
 			<span id="save-search-response"></span>
 
 			<span id="save-search-area">
-				<% if session[:recent_saved_search] %>
+				<% if session[:recent_saved_search_id] %>
 					<%= render(:partial => "recent_saved_search", :locals => {:search => @search}) %>
 				<% else %>
-					<%= render(:partial => "save_search_form", :locals => {:search => @search, :current_archive => @current_archive}) %>
+					<%= render(:partial => "save_search_form") %>
 				<% end %>
 			</span>
 		</span>

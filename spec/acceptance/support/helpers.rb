@@ -7,6 +7,7 @@ module HelperMethods
   end
 
   def search(term, view = "title", archive = Archive.ada)
+    puts "/search?term=#{term}&view=#{view}&archive_id=#{archive.id}"
     visit("/search?term=#{term}&view=#{view}&archive_id=#{archive.id}")
   end
   
