@@ -8,16 +8,16 @@
 
 <table width=100%>
   <tr>
-    <th>Title</th>
-    <th>Term(s)</th>
+    <th><%= link_to 'Title', user_searches_path(current_user, :sort => "title", :order => (params[:order] == "down" ? "up" : "down")) %></th>
+    <th><%= link_to 'Term(s)', user_searches_path(current_user, :sort => "terms", :order => (params[:order] == "down" ? "up" : "down")) %></th>
     <th>Filter(s)</th>
-    <th>Time</th>
+    <th><%= link_to 'Time', user_searches_path(current_user, :sort => "created_at", :order => (params[:order] == "down" ? "up" : "down")) %></th>
   </tr>
   <% for search in @searches %>
     <tr>
       <td> <%= search.title %> </td>
       <td> <%= search.terms %> </td>
-      <td> <%= search.filters %> </td>
+      <td> <%= search.filters if search.filters.any? %> </td>
       <td> <%= time_ago_in_words(search.created_at).capitalize %> </td>
     </tr>
   <% end %>
