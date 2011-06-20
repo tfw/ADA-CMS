@@ -1,5 +1,4 @@
 class SearchesController < ContentController
-  
   inherit_resources
   defaults :resource_class => Search, :instance_name => 'search'
   
@@ -8,27 +7,35 @@ class SearchesController < ContentController
   helper :application
   helper :search
   
-  def transient_search
-    @term = params[:term]    
-    @current_archive = Archive.find(params[:archive_id])  
-    @study_filters = (params[:filters] || [])
-    
-    search(@term, @current_archive, @study_filters)
+  def transient_search  
+    search(params[:term], Archive.find(params[:archive_id]), params[:filters] || [])
   end
   
   def show
     show! do |format|
       format.html {
-        search(@search.term, @search.archive, @search.study_filters)
+        search(@search.term, @search.archive, @search.query[:study_filters], @search.id)
       }
+    end
   end
-    
-  def search(term, current_archive, study_filters)   
+      
+  def create
+    create! do |format|
+      format.js {
+        session[:recent_saved_search] = @search.id
+      }
+    end
+  end
+  
+  private
+  def search(term, current_archive, study_filters, search_id = nil)   
     # @term = params[:term]    
     # @current_archive = Archive.find(params[:archive_id])  
     # @study_filters = (params[:filters] || [])
-    
-    @search = Search.new
+    @term = term
+    @current_archive = current_archive
+    @search = Search.find(search_id) if search_id  
+    @search ||= Search.new
 
     @study_searches = 
       if @current_archive == Archive.ada
@@ -39,21 +46,14 @@ class SearchesController < ContentController
     
     @studies_search = @study_searches[current_archive]
     @variables_search = variable_search(term, [])
-    
+
     @title = "Search: #{@term}"
     params[:filters] ||= []
     render :results
   end
   
-  def create
-    create! do |format|
-      format.js {
-        session[:recent_saved_search] = @search.id
-      }
-    end
-  end
   
-  private  #the logic below was moved into Study (fat model), but a performance hit occurred - strangely -
+    #the logic below was moved into Study (fat model), but a performance hit occurred - strangely -
           #so, for now, the fatter controller is acceptable
   def search_studies_globally(filters = {})
     {Archive.ada => study_search(Archive.ada, @term, filters),
@@ -104,8 +104,6 @@ class SearchesController < ContentController
           with(name.to_sym, value)
         end
       end
-      
-      facet :name, :sort => :count, :limit => 7, :minimum_count => 2
     end    
   end
 end

@@ -16,7 +16,7 @@ gem 'openid_client',
 
 gem 'inherited_resources'
 gem 'cancan'
-gem 'formtastic', '>= 1.1.0'
+gem 'formtastic'
 gem 'ckeditor' , :git => 'git://github.com/cjheath/rails-ckeditor.git', :branch => 'rails3'
 gem 'ruote', '2.1.11' #:git => 'https://github.com/jmettraux/ruote.git'
 # gem 'sourcify', :git => "https://github.com/ngty/sourcify.git"

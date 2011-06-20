@@ -262,7 +262,7 @@ DEPENDENCIES
   devise (>= 1.2.0)
   devise_openid_authenticatable (~> 1.0.0)
   faker (>= 0.9.5)
-  formtastic (>= 1.1.0)
+  formtastic
   gemcutter (>= 0.6.1)
   httparty
   inherited_resources

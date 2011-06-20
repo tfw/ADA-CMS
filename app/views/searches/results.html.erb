@@ -33,7 +33,7 @@
 	<br/>
   Filters:  <%= filter_list("", params, true).html_safe %>
  
-  <% unless params[:term] %> Search requires a term.<% end %>
+  <% unless params[:term] %> Search requires a term. <%end %>
     
   <% if current_user %>
 		<span id="save-searches">

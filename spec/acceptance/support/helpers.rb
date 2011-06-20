@@ -75,6 +75,15 @@ module HelperMethods
     words = words.size > n ? words[0...n]+['...'] : words
     words * ' '
   end
+  
+  #this is solely here to run searches more easily from the debug console
+  def searcher(term)
+    Sunspot.search(Study) do ;
+      keywords term do 
+        highlight :label
+      end
+    end
+  end
 end
 
 RSpec.configuration.include HelperMethods, :type => :acceptance

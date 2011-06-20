@@ -9,7 +9,12 @@ feature "searching studies" do
   
   before(:each) do
     10.times {Study.make()}
-    100.times {|i| Study.make(:label => "foo #{i}")} #for some searchable data
+    
+    100.times do |i| 
+      study = Study.make(:label => "foo #{i}")
+      archive_study = ArchiveStudy.create!(:study => study, :archive => Archive.ada)
+    end
+    
     reindex
     sleep 2
     @study_search_term = Study.first.label.split(/\W/).first
@@ -20,10 +25,11 @@ feature "searching studies" do
     Variable.reindex
   end
   
-  scenario "the search form should lead to the search results page" do
+  scenario "the search form should lead to the search results page (transient search)" do
     visit "/"
-    search_form(@study_search_term, page) 
-    page.should have_content "Search: #{@study_search_term}" 
+    search_form("foo", page) 
+    page.should have_content "Search: foo" 
+    page.should have_content "Searching for foo produced 100 results."
     page.status_code.should == 200
   end
   
@@ -39,12 +45,12 @@ feature "searching studies" do
   #   page.should have_content("TITLE")    
   # end
   
-  scenario "I can save a search if I'm authenticated" do
-    archivist = make_user(:editor)
-    sign_in(archivist)
-    search(@study_search_term)
-    
-    click_link("Save")
-    page.should have_content "Saved"
-  end  
+  # scenario "I can save a search if I'm authenticated" do
+  #   archivist = make_user(:editor)
+  #   sign_in(archivist)
+  #   search(@study_search_term)
+  #   
+  #   click_link("Save")
+  #   page.should have_content "Saved"
+  # end  
 end
