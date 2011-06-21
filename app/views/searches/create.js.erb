@@ -1,7 +1,7 @@
 <% if @search.valid? %>
   $("#save-search-area").empty();	
 	$("#save-search-response").html("Saved").fadeOut(5000);
-  <%= @recent_search_partial.html_safe %>
+	$("#save-search-area").html("<a href='<%= @clear_path %>'>Save another</a>");
 <% else %>
 	$("#save-search-response").html(@search.errors.full_messages.first).fadeOut(5000);
 <% end %> 

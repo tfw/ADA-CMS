@@ -6,12 +6,17 @@ class SearchesController < ContentController
   clear_helpers
   helper :application
   helper :search
-  
+    
   def transient
     search(params[:term], Archive.find(params[:archive_id]), params[:filters] || [])
   end
   
   def show
+    if params[:clear]
+      session[:recent_saved_search_id] = nil
+      params.delete(:clear)
+    end
+
     show! do |format|
       format.html {
         search(@search.terms, @search.archive, @search.filters, @search.id)
@@ -24,7 +29,7 @@ class SearchesController < ContentController
       format.js {
         if @search.valid?
           session[:recent_saved_search_id] = @search.id
-          @recent_search_partial = render_to_string(:partial => "recent_saved_search", :locals => {:search => @search})
+          @clear_path = search_path(@search, :clear => true)
         end
       }
     end

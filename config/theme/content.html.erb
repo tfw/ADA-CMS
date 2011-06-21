@@ -28,7 +28,9 @@
 						<input type="submit" alt="log out" value="LOG OUT" id="logout_button" />
 	         </form>
 	         <br/>
-	         <%= link_to 'Saved searches', user_searches_path(current_user) %>
+	         <% if current_user.searches.any? %>
+	           <%= link_to 'Saved searches', user_searches_path(current_user) %> (<%= link_to current_user.searches.size, user_searches_path(current_user) %>)
+           <% end %> 
 				<% end %>
 			</div>
 			

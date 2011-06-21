@@ -1,3 +1,5 @@
 <% search = Search.find(session[:recent_saved_search_id]) %>
 <%= link_to 'Last saved search', search_path(search) %>
+<%= link_to 'Clear', search_path(search, :clear => true) %>
+
 
