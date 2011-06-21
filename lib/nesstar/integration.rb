@@ -28,11 +28,16 @@ module Nesstar
 
     #call this from the client to run the integration.
     def self.run
+      puts "running ..."
       @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
       @worker = Ruote::Worker.new(@storage)
       @engine = Ruote::Engine.new(@worker)
 
+      puts "running ...2"
+
       register_workflow_participants(@engine)
+
+      puts "running ...3 "
 
       dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
         sequence do
@@ -45,16 +50,16 @@ module Nesstar
               participant :ref => 'download_study' 
             end
            
-            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            #   participant :ref => 'download_related_materials' 
-            # end
-            #            
-            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            #   participant :ref => 'download_variables' 
-            # end
-            #            
-            # participant :ref => 'convert_related_materials' 
-            # participant :ref => 'convert_variables' 
+            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+              participant :ref => 'download_related_materials' 
+            end
+                       
+            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+              participant :ref => 'download_variables' 
+            end
+                       
+            participant :ref => 'convert_related_materials' 
+            participant :ref => 'convert_variables' 
                        
             participant :ref => 'ada_archive_contains_all_studies' 
                        
