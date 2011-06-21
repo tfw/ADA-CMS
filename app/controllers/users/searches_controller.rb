@@ -23,8 +23,13 @@ class Users::SearchesController < ContentController
     
     if @search.user != current_user
       flash[:error] = "You cannot delete another user's search."
+      return redirect_to user_searches_path(current_user)
     end
     
-    delete!
+    destroy! do |format|
+      format.html {
+        redirect_to user_searches_path(current_user)
+      }
+    end
   end
 end

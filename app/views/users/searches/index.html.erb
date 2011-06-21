@@ -16,6 +16,7 @@
     <th><%= link_to 'Term(s)', user_searches_path(current_user, :sort => "terms", :order => (params[:order] == "down" ? "up" : "down")) %></th>
     <th>Filter(s)</th>
     <th><%= link_to 'Time', user_searches_path(current_user, :sort => "created_at", :order => (params[:order] == "down" ? "up" : "down")) %></th>
+    <th>Functions</th>
   </tr>
   <% for search in @searches %>
     <tr>
@@ -23,6 +24,7 @@
       <td> <%= search.terms %> </td>
       <td> <%= search.filters if search.filters.any? %> </td>
       <td> <%= time_ago_in_words(search.created_at).capitalize %> </td>
+      <td> (<%= link_to 'x', user_search_path(current_user, search), :method => :delete, :confirm => "Are you sure you want this deleted?" %>) </td>
     </tr>
   <% end %>
 </table>

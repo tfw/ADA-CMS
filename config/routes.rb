@@ -49,10 +49,10 @@ Ada::Application.routes.draw do
   end
 
   resources :users do
-    resources :searches, :controller => 'users/searches'
+    resources :searches, :controller => 'users/searches', :except => [:edit, :new, :update]
   end
 
-  resources :searches
+  resources :searches, :only => [:show, :create]
   get '/search', :to => "searches#transient", :path => "search", :as => 'transient_search' #path is necessary, see http://stackoverflow.com/questions/4134606/routing-trouble-on-rails-3-related-to-singular-plural
 
   get 'browse_archive_catalog', :to => "archive_catalogs#browse"
