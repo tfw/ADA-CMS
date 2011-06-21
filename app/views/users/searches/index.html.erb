@@ -20,7 +20,7 @@
   </tr>
   <% for search in @searches %>
     <tr>
-      <td> <%= search.title %> </td>
+      <td> <%= link_to search.title, search_path(search) %> </td>
       <td> <%= search.terms %> </td>
       <td> <%= search.filters if search.filters.any? %> </td>
       <td> <%= time_ago_in_words(search.created_at).capitalize %> </td>
