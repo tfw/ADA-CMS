@@ -29,7 +29,7 @@ class SearchesController < ContentController
       format.js {
         if @search.valid?
           session[:recent_saved_search_id] = @search.id
-          @clear_path = search_path(@search, :clear => true)
+          @search_path = search_path(@search)
         end
       }
     end
