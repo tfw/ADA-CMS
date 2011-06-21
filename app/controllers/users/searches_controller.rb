@@ -13,7 +13,9 @@ class Users::SearchesController < ContentController
     end
     
     @current_archive = Archive.ada
-    @searches = current_user.searches.order("#{order_by} #{order}")
+    @searches = Search.paginate :page => params[:page], :order => "#{order_by} #{order}", 
+                :conditions => ["user_id = ?", current_user.id]
+    #@searches = current_user.searches.order("#{order_by} #{order}")
   end
   
   def destroy

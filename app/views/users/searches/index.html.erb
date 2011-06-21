@@ -6,6 +6,10 @@
 	Saved searches - <%= current_user %> 
 <% end %>
 
+<div class="float-centre">
+  <%= will_paginate @searches %>
+</div>
+<br/>
 <table width=100%>
   <tr>
     <th><%= link_to 'Title', user_searches_path(current_user, :sort => "title", :order => (params[:order] == "down" ? "up" : "down")) %></th>

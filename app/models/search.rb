@@ -1,5 +1,8 @@
 class Search < ActiveRecord::Base
   
+  cattr_reader :per_page
+  @@per_page = 20
+  
   serialize :filters, Array
   
   belongs_to :user
