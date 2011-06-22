@@ -11,8 +11,13 @@ gem 'inkling', :git => "git://github.com/tfw/inkling.git"
 gem "devise", ">= 1.2.0"
 gem 'devise_openid_authenticatable', '~> 1.0.0'
 
-gem 'openid_client',
-      :git => 'git://github.com/ANUSF/OpenID-Client-Engine.git'
+if ENV['GEMS_LOCAL'] and File.exist? ENV['GEMS_LOCAL']
+  path = ENV['GEMS_LOCAL']
+  gem 'openid_client', '~> 0.1.1', :path => "#{path}/openid_client"
+else
+  git = 'git://github.com/ANUSF'
+  gem 'openid_client', '~> 0.1.1', :git => "#{git}/OpenID-Client-Engine.git"
+end
 
 gem 'inherited_resources'
 gem 'cancan'
