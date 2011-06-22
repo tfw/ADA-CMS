@@ -131,7 +131,6 @@ module Nesstar
         ArchiveCatalogIntegration.all.each do |i| 
           ids << i.id  #the array stores the id the integration, and the position of the catalog entry in parent
                       #the position is always nil for top level catalogs
-          ids << ada_integration.id
         end
                 
         workitem.fields['children_to_parents'] = {} #this hash will hold the relationships to build later on
