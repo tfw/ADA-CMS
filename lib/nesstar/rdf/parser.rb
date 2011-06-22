@@ -27,8 +27,6 @@ module Nesstar
         file = File.read(xml)
         doc = Nokogiri::XML::Document.parse(file)
         
-        # <r:Bag r:about="http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00102-f@relatedMaterials">
-        
         bag_node = doc.xpath(".//r:Bag")
         related_materials_bag_url = bag_node.attribute('about').value
         study_url = related_materials_bag_url.gsub("@relatedMaterials", "")

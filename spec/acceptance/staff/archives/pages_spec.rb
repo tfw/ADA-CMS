@@ -12,6 +12,7 @@ feature "Creating pages" do
   end
   
   scenario "I can access the archive page form"  do
+    #debugger
     visit_archive("historical")
     
     within(:xpath, "//fieldset[@id='page-management']") do
@@ -21,11 +22,11 @@ feature "Creating pages" do
     page.should have_content("Pages: Historical New")  
   end
   
-  scenario "I can create a page" do
-    create_page(Archive.historical, "test page", "sample content")
-    page.should have_content("Archives: Historical")
-    page.should have_content("test page")
-  end
+  # scenario "I can create a page" do
+  #   create_page(Archive.historical, "test page", "sample content")
+  #   page.should have_content("Archives: Historical")
+  #   page.should have_content("test page")
+  # end
   
   # scenario "AJAX - the path displays after a title update of a page" do
   #   visit_archive("historical")

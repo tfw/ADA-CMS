@@ -54,24 +54,24 @@ module Nesstar
               participant :ref => 'download_related_materials' 
             end
                        
-            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-            #   participant :ref => 'download_variables' 
-            # end
+            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+              participant :ref => 'download_variables' 
+            end
                        
             participant :ref => 'convert_related_materials' 
-         #    participant :ref => 'convert_variables' 
-         #               
-         #    participant :ref => 'ada_archive_contains_all_studies' 
-         #               
-         #   cursor do
-         #     iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration" do
-         #       participant :ref => 'download_and_convert_catalog_tree' 
-         #     end
-         #     
-         #      rewind :if => '${archive_catalog_integrations.size} != 0'
-         #     #rewind :if => '${archive_catalog_integrations.any?}'
-         # #   _break :if => '${archive_catalog_integrations.size} == 0'
-         #   end
+            participant :ref => 'convert_variables' 
+                       
+            participant :ref => 'ada_archive_contains_all_studies' 
+                       
+           cursor do
+             iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration" do
+               participant :ref => 'download_and_convert_catalog_tree' 
+             end
+             
+              rewind :if => '${archive_catalog_integrations.size} != 0'
+             #rewind :if => '${archive_catalog_integrations.any?}'
+         #   _break :if => '${archive_catalog_integrations.size} == 0'
+           end
 
            participant :ref => 'log_run'
          end
@@ -342,11 +342,9 @@ puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['a
         puts "--convert_related_materials--"
         
         Dir.entries($related_xml_dir).each do |file_name|
-puts file_name
           next if file_name == "." or file_name == ".."
           begin
             related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{file_name}")
-p related_materials_list
           rescue StandardError => boom
             puts "#{$related_xml_dir}#{file_name}: #{boom}"
           end
@@ -356,22 +354,17 @@ p related_materials_list
              next
           end
 
-p "parsing list"                    
           related_materials_list.each do |related|
-p related
             study = Study.find_by_about(related[:study_resource])
-p "found study? #{study}"
             next if study.nil?
 
             pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
             next if pre_existing
 
-p "creating rm -"
             related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
                         :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
                         :resource => related[:study_resource])
             related_material.save!
-p "saved!"
           end
         end
       end

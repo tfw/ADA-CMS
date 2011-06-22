@@ -67,7 +67,7 @@ end
 task :catalogs => :environment do
   ArchiveCatalogIntegration.delete_all
   ArchiveCatalogIntegration.create!(:archive => Archive.indigenous, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/indigenous") 
-#  ArchiveCatalogIntegration.create!(:archive => Archive.longitudinal, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/longitudinal")
+  ArchiveCatalogIntegration.create!(:archive => Archive.longitudinal, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/longitudinal")
   # ArchiveCatalogIntegration.create!(:archive => Archive.social_science, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/social-science")
   # ArchiveCatalogIntegration.create!(:archive => Archive.historical, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/historical")
   # ArchiveCatalogIntegration.create!(:archive => Archive.qualitative, :url => "http://nesstar.ada.edu.au:80/obj/fCatalog/qualitative")
