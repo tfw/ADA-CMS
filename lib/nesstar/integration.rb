@@ -54,24 +54,24 @@ module Nesstar
               participant :ref => 'download_related_materials' 
             end
                        
-            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-              participant :ref => 'download_variables' 
-            end
+            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+            #   participant :ref => 'download_variables' 
+            # end
                        
             participant :ref => 'convert_related_materials' 
-            participant :ref => 'convert_variables' 
-                       
-            participant :ref => 'ada_archive_contains_all_studies' 
-                       
-           cursor do
-             iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration" do
-               participant :ref => 'download_and_convert_catalog_tree' 
-             end
-             
-              rewind :if => '${archive_catalog_integrations.size} != 0'
-             #rewind :if => '${archive_catalog_integrations.any?}'
-         #   _break :if => '${archive_catalog_integrations.size} == 0'
-           end
+         #    participant :ref => 'convert_variables' 
+         #               
+         #    participant :ref => 'ada_archive_contains_all_studies' 
+         #               
+         #   cursor do
+         #     iterator :on_field => 'archive_catalog_integrations', :to_f => "archive_catalog_integration" do
+         #       participant :ref => 'download_and_convert_catalog_tree' 
+         #     end
+         #     
+         #      rewind :if => '${archive_catalog_integrations.size} != 0'
+         #     #rewind :if => '${archive_catalog_integrations.any?}'
+         # #   _break :if => '${archive_catalog_integrations.size} == 0'
+         #   end
 
            participant :ref => 'log_run'
          end
@@ -131,7 +131,8 @@ module Nesstar
 
       
       engine.register_participant 'download_and_convert_catalog_tree' do |workitem|
-   #     archive_catalog_info = workitem.fields['archive_catalog_integration']
+        puts "--download_and_convert_catalog_tree--"
+        
         archive_catalog_integration = ArchiveCatalogIntegration.find(workitem.fields['archive_catalog_integration'])
         archive = archive_catalog_integration.archive
 
@@ -199,6 +200,7 @@ puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['a
       
       ## load_study_ids
       engine.register_participant 'load_study_integrations' do |workitem|
+        puts "--load_study_integrations--"
         dataset_urls = []
         workitem.fields['studies_to_download'] ||= []
 
@@ -244,6 +246,8 @@ puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['a
       end
 
       engine.register_participant 'download_study' do |workitem|
+        puts "--download_study--"
+        
         workitem.fields['fetch_errors']       ||= []
         workitem.fields['downloaded_files']   ||= []
         workitem.fields['study_ids']          ||= Set.new
@@ -292,12 +296,14 @@ puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['a
       end
 
       engine.register_participant 'download_related_materials' do |workitem|
+        puts "--down_related_materials--"
+        
         mutex = Mutexer.wait_for_mutex(2)
         begin
           mutex.synchronize do 
             ddi_id = workitem.fields['ddi_id']
             study = Study.find_by_ddi_id(ddi_id)
-            # puts "related materials for #{study.label}"
+      puts "related materials for #{study.label}"
             #we looks for a study which records the URL of a related materials document
             related_materials_entry = study.related_materials_attribute
             unless related_materials_entry.nil?
@@ -311,6 +317,8 @@ puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['a
       end
 
       engine.register_participant 'download_variables' do |workitem|
+        puts "--download_variables--"
+        
         mutex = Mutexer.wait_for_mutex(2)
         
         begin
@@ -331,10 +339,14 @@ puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['a
       
 
       engine.register_participant 'convert_related_materials' do |workitem|
+        puts "--convert_related_materials--"
+        
         Dir.entries($related_xml_dir).each do |file_name|
+puts file_name
           next if file_name == "." or file_name == ".."
           begin
             related_materials_list = RDF::Parser.parse_related_materials_document("#{$related_xml_dir}#{file_name}")
+p related_materials_list
           rescue StandardError => boom
             puts "#{$related_xml_dir}#{file_name}: #{boom}"
           end
@@ -343,24 +355,33 @@ puts "added #{integration.id} for archive #{archive.id} --- #{workitem.fields['a
              Inkling::Log.create!(:category => "integration", :text => "Empty document: #{$related_xml_dir}#{file_name}")
              next
           end
-                    
+
+p "parsing list"                    
           related_materials_list.each do |related|
+p related
             study = Study.find_by_about(related[:study_resource])
+p "found study? #{study}"
             next if study.nil?
 
             pre_existing = StudyRelatedMaterial.find_by_study_id_and_uri(study.id, related[:uri], related[:label])
             next if pre_existing
 
+p "creating rm -"
             related_material = StudyRelatedMaterial.new(:study_id => study.id, :uri => related[:uri],
                         :comment => related[:comment], :creation_date => related[:creationDate], :complete => related[:complete],
                         :resource => related[:study_resource])
             related_material.save!
+p "saved!"
           end
         end
       end
 
       engine.register_participant 'convert_variables' do |workitem|
+        puts "--convert_variables--"
+        
         Dir.entries($variables_xml_dir).each do |file_name|
+puts file_name
+ 
           next if file_name == "." or file_name == ".."
           variables_list = RDF::Parser.parse_variables("#{$variables_xml_dir }/#{file_name}")
           variables_list.each {|var_hash| variable = Variable.store_with_fields(var_hash)}

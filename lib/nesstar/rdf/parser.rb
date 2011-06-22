@@ -26,18 +26,21 @@ module Nesstar
       def self.parse_related_materials_document(xml)
         file = File.read(xml)
         doc = Nokogiri::XML::Document.parse(file)
+        
+        # <r:Bag r:about="http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00102-f@relatedMaterials">
+        
+        bag_node = doc.xpath(".//r:Bag")
+        related_materials_bag_url = bag_node.attribute('about').value
+        study_url = related_materials_bag_url.gsub("@relatedMaterials", "")
+        
         related_material_entries = doc.xpath(".//p2:EGMSResource2")
-
         related_materials = []
 
         related_material_entries.each do |entry|
           material = {}
           entry.children.each do |node|
             material[node.name.to_sym] = node.text
-
-            if node.name == "study"
-              material[:study_resource] = node.attributes.first.last.text
-            end
+            material[:study_resource] = study_url
           end
 
           related_materials << material unless material.empty?

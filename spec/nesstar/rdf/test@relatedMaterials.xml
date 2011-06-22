@@ -1,0 +1,127 @@
+<r:RDF 
+xmlns:r="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:s="http://www.w3.org/TR/1999/PR-rdf-schema-19990303#" 
+xmlns:n="http://www.nesstar.org/rdf/" 
+xmlns:p5="http://www.nesstar.org/rdf/hc/"
+xmlns:p4="http://www.nesstar.org/rdf/faster/"
+xmlns:p3="http://www.nesstar.org/rdf/"
+xmlns:p2="http://www.nesstar.org/rdf/common/"
+xmlns:p1="http://www.nesstar.org/rdf/acu/"
+xmlns:n41="http://www.nesstar.org/rdf/faster/Variable3#"
+xmlns:n1="http://www.nesstar.org/rdf/acu/Agreement#"
+xmlns:n23="http://www.nesstar.org/rdf/faster/Catalog#"
+xmlns:n40="http://www.nesstar.org/rdf/Dataset#"
+xmlns:n22="http://www.nesstar.org/rdf/common/Term#"
+xmlns:n21="http://www.nesstar.org/rdf/common/StatFormat#"
+xmlns:n20="http://www.nesstar.org/rdf/common/Statement#"
+xmlns:n45="http://www.nesstar.org/rdf/hc/Table#"
+xmlns:n5="http://www.nesstar.org/rdf/acu/User#"
+xmlns:n44="http://www.nesstar.org/rdf/hc/Factsheet#"
+xmlns:n4="http://www.nesstar.org/rdf/acu/Role#"
+xmlns:n43="http://www.nesstar.org/rdf/faster/Variable#"
+xmlns:n3="http://www.nesstar.org/rdf/acu/Purpose#"
+xmlns:n42="http://www.nesstar.org/rdf/faster/Variable2#"
+xmlns:n2="http://www.nesstar.org/rdf/acu/Project#"
+xmlns:n9="http://www.nesstar.org/rdf/common/DCResource#"
+xmlns:n8="http://www.nesstar.org/rdf/common/EGMSResource#"
+xmlns:n7="http://www.nesstar.org/rdf/common/EGMSResource2#"
+xmlns:n6="http://www.nesstar.org/rdf/common/Concept#"
+xmlns:n46="http://www.nesstar.org/rdf/hc/VariableGroup#"
+xmlns:n28="http://www.nesstar.org/rdf/faster/Datafile2#"
+xmlns:n29="http://www.nesstar.org/rdf/faster/Datafile#"
+xmlns:n26="http://www.nesstar.org/rdf/faster/Cube2#"
+xmlns:n27="http://www.nesstar.org/rdf/faster/Cube#"
+xmlns:n24="http://www.nesstar.org/rdf/Catalog#"
+xmlns:n25="http://www.nesstar.org/rdf/faster/CategoryStatistic#"
+xmlns:n10="http://www.nesstar.org/rdf/common/Resource#"
+xmlns:n30="http://www.nesstar.org/rdf/faster/Dimension#"
+xmlns:n12="http://www.nesstar.org/rdf/common/GeographicalUnit#"
+xmlns:n11="http://www.nesstar.org/rdf/common/Event#"
+xmlns:n32="http://www.nesstar.org/rdf/faster/Range#"
+xmlns:n31="http://www.nesstar.org/rdf/faster/Measure#"
+xmlns:n34="http://www.nesstar.org/rdf/faster/Series#"
+xmlns:n33="http://www.nesstar.org/rdf/faster/Section#"
+xmlns:n35="http://www.nesstar.org/rdf/faster/Study5#"
+xmlns:n17="http://www.nesstar.org/rdf/common/Resource#"
+xmlns:n36="http://www.nesstar.org/rdf/faster/Study4#"
+xmlns:n18="http://www.nesstar.org/rdf/common/Server#"
+xmlns:n37="http://www.nesstar.org/rdf/faster/Study3#"
+xmlns:n19="http://www.nesstar.org/rdf/Server#"
+xmlns:n38="http://www.nesstar.org/rdf/faster/Study2#"
+xmlns:n39="http://www.nesstar.org/rdf/faster/Study#"
+xmlns:n13="http://www.nesstar.org/rdf/common/NSDStatEngine#"
+xmlns:n14="http://www.nesstar.org/rdf/common/Organisation#"
+xmlns:n15="http://www.nesstar.org/rdf/common/Resource#"
+xmlns:n16="http://www.nesstar.org/rdf/common/Person#"
+>
+
+
+<r:Bag r:about="http://nesstar.ada.edu.au:80/obj/fStudy/au.edu.anu.ada.ddi.00102-f@relatedMaterials">
+<r:_1 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_8" />
+<r:_2 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_7" />
+<r:_3 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_6" />
+<r:_4 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_5" />
+<r:_5 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_4" />
+<r:_6 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_3" />
+<r:_7 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_2" />
+<r:_8 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_1" />
+<r:_9 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_0" />
+<r:_10 r:resource="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_9" />
+</r:Bag>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_8">
+<s:comment>Rowley, Charles D. The Aboriginal householder. Quadrant, 11, 1967, pp.</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_7">
+<s:comment>Rowley, Charles D. Outcasts in white Australia. Harmondsworth: Penguin, 1972.</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_6">
+<s:comment>Rowley, Charles D. The remote Aborigines. Canberra: A.N.U. Press, 1971.</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_5">
+<s:comment>Rowley, Charles D. The destruction of Aboriginal society.  Canberra: A.N.U. Press, 1970</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_4">
+<s:label>Codebook</s:label>
+<s:comment>Codebook</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_3">
+<s:label>Questionnaire</s:label>
+<s:comment>Questionnaire - 1.34 MB</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_2">
+<s:label>Questionnaire</s:label>
+<s:comment>Questionnaire - 1.03 MB</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_1">
+<s:label>Questionnaire</s:label>
+<s:comment>Questionnaire - 0.62 MB</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_0">
+<s:label>Coding Frame</s:label>
+<s:comment>Coding Frame</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+<p2:EGMSResource2 r:about="http://nesstar.ada.edu.au:80/obj/cEGMSResource/au.edu.anu.ada.ddi.00102-f_9">
+<s:comment>90-96.</s:comment>
+<n:creationDate>2011-04-18 17:34:06.0</n:creationDate>
+<n:email>true</n:email>
+</p2:EGMSResource2>
+
+</r:RDF>
