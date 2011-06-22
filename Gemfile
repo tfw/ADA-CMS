@@ -18,7 +18,7 @@ gem 'inherited_resources'
 gem 'cancan'
 gem 'formtastic'
 gem 'ckeditor' , :git => 'git://github.com/cjheath/rails-ckeditor.git', :branch => 'rails3'
-gem 'ruote', '2.1.11' #:git => 'https://github.com/jmettraux/ruote.git'
+gem 'ruote', :git => 'https://github.com/jmettraux/ruote.git' # '2.1.11'
 # gem 'sourcify', :git => "https://github.com/ngty/sourcify.git"
 gem 'yajl-ruby'
 gem 'yaml_db'

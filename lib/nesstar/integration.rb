@@ -28,9 +28,12 @@ module Nesstar
 
     #call this from the client to run the integration.
     def self.run
-      @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
-      @worker = Ruote::Worker.new(@storage)
-      @engine = Ruote::Engine.new(@worker)
+      # @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/", 'use_ruby_treechecker' => false)
+      # @worker = Ruote::Worker.new(@storage)
+      # @engine = Ruote::Engine.new(@worker)
+      
+      @engine = Ruote::Engine.new(Ruote::Worker.new(Ruote::FsStorage.new('/tmp/nesstar', 'use_ruby_treechecker' => false)))
+      
       register_workflow_participants(@engine)
 
       dataset_process_def = Ruote.process_definition :name => 'download_and_convert_studies' do
@@ -44,16 +47,16 @@ module Nesstar
               participant :ref => 'download_study' 
             end
            
-            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-              participant :ref => 'download_related_materials' 
-            end
-                       
-            concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
-              participant :ref => 'download_variables' 
-            end
-                       
-            participant :ref => 'convert_related_materials' 
-            participant :ref => 'convert_variables' 
+            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+            #   participant :ref => 'download_related_materials' 
+            # end
+            #            
+            # concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+            #   participant :ref => 'download_variables' 
+            # end
+            #            
+            # participant :ref => 'convert_related_materials' 
+            # participant :ref => 'convert_variables' 
                        
             participant :ref => 'ada_archive_contains_all_studies' 
                        
@@ -86,9 +89,19 @@ module Nesstar
         end
       end
       
-      dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
-      
-      end
+      # dataset_process_def = Ruote.process_definition :name => 'dow _datasets' do
+      #   concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+      #     participant :ref => 'download_related_materials' 
+      #   end
+      #              
+      #   concurrent_iterator :on_field => 'studies_to_download', :to_f => "ddi_id" do
+      #     participant :ref => 'download_variables' 
+      #   end
+      #              
+      #   participant :ref => 'convert_related_materials' 
+      #   participant :ref => 'convert_variables' 
+      # 
+      # end
 
       ARGV << "-d"
       #@engine.noisy = true
