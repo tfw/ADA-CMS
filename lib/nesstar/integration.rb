@@ -28,18 +28,12 @@ module Nesstar
 
     #call this from the client to run the integration.
     def self.run
-      puts "running ..."
       @storage = Ruote::FsStorage.new("/tmp/nesstar/ruote/")
       @worker = Ruote::Worker.new(@storage)
       @engine = Ruote::Engine.new(@worker)
-
-      puts "running ...2"
-
       register_workflow_participants(@engine)
 
-      puts "running ...3 "
-
-      dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
+      dataset_process_def = Ruote.process_definition :name => 'download_and_convert_studies' do
         sequence do
           subprocess :ref => 'initialize_directories'
            participant :ref => 'load_archive_catalog_integrations'          
@@ -90,6 +84,10 @@ module Nesstar
             end    
           end
         end
+      end
+      
+      dataset_process_def = Ruote.process_definition :name => 'convert_datasets' do
+      
       end
 
       ARGV << "-d"
