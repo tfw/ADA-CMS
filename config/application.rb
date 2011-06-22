@@ -10,6 +10,10 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Ada
   class Application < Rails::Application
+    # Secrets are required for database.yml, which is
+    # loaded before the config/initializers directory.
+    require File.expand_path('../initializers/secrets', __FILE__)
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

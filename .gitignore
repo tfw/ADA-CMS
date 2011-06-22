@@ -1,5 +1,6 @@
 .lock
 config/database.yml
+config/initializers/secrets.rb
 log/*.log
 bin/
 .bundle
@@ -10,3 +11,4 @@ tmp
 *.swp
 solr/data/
 *~
+.rvmrc
