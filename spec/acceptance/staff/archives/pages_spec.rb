@@ -22,11 +22,11 @@ feature "Creating pages" do
     page.should have_content("Pages: Historical New")  
   end
   
-  # scenario "I can create a page" do
-  #   create_page(Archive.historical, "test page", "sample content")
-  #   page.should have_content("Archives: Historical")
-  #   page.should have_content("test page")
-  # end
+  scenario "I can create a page" do
+    create_page(Archive.historical, "test page", "sample content")
+    page.should have_content("Archives: Historical")
+    page.should have_content("test page")
+  end
   
   # scenario "AJAX - the path displays after a title update of a page" do
   #   visit_archive("historical")

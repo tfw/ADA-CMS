@@ -119,9 +119,7 @@ module Nesstar
         
         ArchiveCatalogIntegration.all.each do |i| 
           ids << i.id  #the array stores the id the integration, and the position of the catalog entry in parent
-                              #the position is always nil for top level catalogs
-          #create a duplicate integration for the ADA archive
-          ada_integration = ArchiveCatalogIntegration.create!(:url => i.url, :archive => Archive.ada)
+                      #the position is always nil for top level catalogs
           ids << ada_integration.id
         end
                 
