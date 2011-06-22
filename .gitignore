@@ -12,3 +12,4 @@ tmp
 solr/data/
 *~
 .rvmrc
+/coverage/
