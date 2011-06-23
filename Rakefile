@@ -44,3 +44,9 @@ task :create_feeds => :environment do
     Inkling::Feed.create!(:title => "#{archive.name} Atom Feed", :format => "Inkling::Feeds::Atom", :source => "NewsFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
   end
 end
+
+task :exp => :environment do
+  require 'ruby-debug'
+  j = Jobs::SynchronizeCatalogs.new("indigenous", Archive.indigenous.id)
+  j.perform
+end

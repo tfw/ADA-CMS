@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110612021750) do
+ActiveRecord::Schema.define(:version => 20110623073254) do
 
   create_table "archive_catalog_integrations", :force => true do |t|
     t.integer  "archive_catalog_id"
@@ -101,6 +101,21 @@ ActiveRecord::Schema.define(:version => 20110612021750) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
   create_table "documents", :force => true do |t|
     t.integer  "user_id"
@@ -200,6 +215,15 @@ ActiveRecord::Schema.define(:version => 20110612021750) do
 
   create_table "inkling_types", :force => true do |t|
     t.string   "klass_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "integrations", :force => true do |t|
+    t.integer  "ada_object_id"
+    t.string   "ada_object_type"
+    t.integer  "nesstar_object_id"
+    t.string   "nesstar_object_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

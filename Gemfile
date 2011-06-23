@@ -4,6 +4,7 @@ source :gemcutter
 gem 'rails', '3.0.7'
 
 gem "pg"
+gem "mysql2"
 
 gem 'inkling', :git => "git://github.com/tfw/inkling.git"  
 #gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling-project/inkling"
@@ -32,6 +33,7 @@ gem 'ratom'
 gem 'sunspot_rails', '>=1.2.1'
 gem 'mongrel', '~> 1.2.0.pre2'
 gem 'httparty'
+gem 'delayed_job'
 
 # gem "ruby-debug19" #move this into dev group alone later
 

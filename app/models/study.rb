@@ -9,10 +9,10 @@ class Study < ActiveRecord::Base
   has_many :archives, :through => :archive_studies
   has_many :variables
   
-  validates_presence_of :label
-  validates_presence_of :ddi_id
-  validates_uniqueness_of :ddi_id
-  
+  # validates_presence_of :label
+  # validates_presence_of :ddi_id
+  # validates_uniqueness_of :ddi_id
+  # 
   #facet constants
   FACETS = {:data_kind => (DdiMapping.human_readable('dataKind')                        || "Data Kind"),
           :sampling_abbr => (DdiMapping.human_readable('sampling')                      || "Sampling"),

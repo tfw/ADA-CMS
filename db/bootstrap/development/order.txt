@@ -1,12 +1,6 @@
 users.yml
 archives.yml
 studies.yml
-archive_studies.yml
-archive_study_blocks.yml
-archive_study_queries.yml
-archive_study_integrations.yml
-archive_catalogs.yml
-archive_catalog_studies.yml
 ddi_mappings.yml
 inkling_feed_roles.yml
 inkling_feeds.yml
@@ -18,7 +12,3 @@ inkling_role_memberships.yml
 inkling_types.yml
 news.yml
 pages.yml
-study_fields.yml
-study_related_materials.yml
-variable_fields.yml
-variables.yml
