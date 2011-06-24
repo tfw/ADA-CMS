@@ -49,6 +49,10 @@ class Study < ActiveRecord::Base
   end  
   
   
+  def self.create_or_update_from_nesstar(hash)
+    
+  end
+  
   #class behaviour to create Study objects based on a hash built from scanning an XML document
   #this code might be moved out to a builder object later on.
   def self.store_with_fields(data)
