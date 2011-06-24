@@ -1,6 +1,5 @@
 users.yml
 archives.yml
-studies.yml
 ddi_mappings.yml
 inkling_feed_roles.yml
 inkling_feeds.yml

@@ -1,4 +1,4 @@
-class StudyRelatedMaterial < ActiveRecord::Base
+class RelatedMaterial < ActiveRecord::Base
   
   belongs_to :study
   

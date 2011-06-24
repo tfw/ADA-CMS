@@ -2,8 +2,7 @@
 
 class Study < ActiveRecord::Base  
   
-  has_many :study_fields; alias fields study_fields
-  has_many :study_related_materials
+  has_many :related_materials
   has_many :archive_study_integrations
   has_many :archive_studies
   has_many :archives, :through => :archive_studies
