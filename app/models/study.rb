@@ -25,26 +25,26 @@ class Study < ActiveRecord::Base
         }
         
   #solr config
-  searchable do
-    text :label, :default_boost => 2, :stored => true
-    text :abstract, :stored => true
-    text :series_name
-    text :universe
-    text :comment, :stored => true
-    string :data_kind
-    string :sampling_abbr
-    string :collection_mode_abbr
-    string :contact_affiliation
-    string :collection_mode_abbr
-    string :geographical_cover
-    string :geographical_unit
-    string :analytic_unit
-    string :creation_date
-    string :series_name
-    string :study_auth_entity 
-    
-    integer :archive_ids, :multiple => true
-  end  
+  # searchable do
+  #   text :label, :default_boost => 2, :stored => true
+  #   text :abstract, :stored => true
+  #   text :series_name
+  #   text :universe
+  #   text :comment, :stored => true
+  #   string :data_kind
+  #   string :sampling_abbr
+  #   string :collection_mode_abbr
+  #   string :contact_affiliation
+  #   string :collection_mode_abbr
+  #   string :geographical_cover
+  #   string :geographical_unit
+  #   string :analytic_unit
+  #   string :creation_date
+  #   string :series_name
+  #   string :study_auth_entity 
+  #   
+  #   integer :archive_ids, :multiple => true
+  # end  
   
   
   def self.create_or_update_from_nesstar(attributes)

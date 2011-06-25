@@ -8,14 +8,10 @@ class Integrations::ArchiveCatalogs
     if statement_hash["objectType"] == "fCatalog"
       archive_catalog = ArchiveCatalog.create_or_update_from_nesstar(statement_hash, archive, parent)
     elsif statement_hash["objectType"] == "fStudy"
-      studyejb = Nesstar::StudyEJB.find_by_stdyId(objectId)
+      studyejb = Nesstar::StudyEJB.find_by_stdyID(statement.objectId)
       study = Study.create_or_update_from_nesstar(studyejb.attributes)
-      puts "--- #{study}"
-      # archive_study = ArchiveStudy.create_or_update_from_nesstar(study, archive)
-      # archive_catalog_study = ArchiveCatalogStudy.create_or_update_from_nesstar(parent, study)
-      puts "create a study - #{object_id}"
-      puts "create an archive_study"
-      puts "create an archive_catalog_study"      
+      archive_study = ArchiveStudy.create_or_update_from_nesstar(study, archive)
+      ArchiveCatalogStudy.create_or_update_from_nesstar(archive_study, parent)
     end
     
     # puts " --- #{object_id} ---"

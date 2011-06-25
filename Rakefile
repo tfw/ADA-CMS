@@ -47,6 +47,6 @@ end
 
 task :exp => :environment do
   require 'ruby-debug'
-  j = Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
-  j.perform
+  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
+ 
 end
