@@ -7,6 +7,7 @@ describe Study, "The local respresentation of an ASSDA study" do
     it "should take a hash of attributes, underscore the keys, and create a study" do
       study = Study.create_or_update_from_nesstar(data)
       study.should_not be_nil
+      debugger
       study.abstract_text.should == data[:abstractText]
     end
 
