@@ -28,15 +28,12 @@ class ArchiveCatalog < ActiveRecord::Base
   
   def self.create_or_update_from_nesstar(hash, archive, parent = nil)
     catalog = ArchiveCatalog.find_by_title(hash["objectId"]) 
-    puts "found pre-existing #{catalog} / #{hash["objectId"]} ?"
     
     args = {:title => hash["objectId"], 
                       :archive_id => archive.id, 
                       :catalog_position => hash["predicateIndex"]}
                       
     args[:parent_id] = parent.id if parent
-
-p args
 
     if catalog
       catalog.update_attributes(args)

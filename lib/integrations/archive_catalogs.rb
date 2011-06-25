@@ -11,12 +11,9 @@ class Integrations::ArchiveCatalogs
       studyejb = Nesstar::StudyEJB.find_by_stdyID(statement.objectId)
       study = Study.create_or_update_from_nesstar(studyejb.attributes)
       archive_study = ArchiveStudy.create_or_update_from_nesstar(study, archive)
-      ArchiveCatalogStudy.create_or_update_from_nesstar(archive_study, parent)
+      ArchiveCatalogStudy.create_or_update_from_nesstar(archive_study, parent, statement_hash['predicateIndex'])
     end
-    
-    # puts " --- #{object_id} ---"
-    # children = Nesstar::StatementEJB.find_all_by_subjectId(statement.objectId).collect {|s| s.objectId}
-    # puts children.join " "
+
     Nesstar::StatementEJB.find_all_by_subjectId(statement.objectId).each {|s| create_or_update(s, archive_id)}
   end
 end
