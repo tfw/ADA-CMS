@@ -39,6 +39,7 @@ gem 'delayed_job'
 
 group :development, :test do
 	gem "ruby-debug19"
+	gem "mocha"
 	gem "rspec-rails", ">= 2.6.0"
 	gem "rspec-core", ">= 2.6.0"
 	gem 'capybara'
