@@ -4,19 +4,19 @@ describe Study, "The local respresentation of an ASSDA study" do
   
   context "integrating via ActiveRecord to the Nesstar mysql db" do
     
-    it "should take a hash of attributes, underscore the keys, and create a study" do
-      study = Study.create_or_update_from_nesstar(data)
-      study.should_not be_nil
-      debugger
-      study.abstract_text.should == data[:abstractText]
-    end
+    # it "should take a hash of attributes, underscore the keys, and create a study" do
+    #   study = Study.create_or_update_from_nesstar(data)
+    #   study.should_not be_nil
+    #   study.abstract_text.should == data["abstractText"]
+    # end
 
     it "should take a hash of attributes, underscore the keys, and update an existing study" do
       study = Study.create_or_update_from_nesstar(data)
       study.should_not be_nil
-      study.abstract_text.should == data[:abstractText]
-      data[:abstractText] = "foo"
-      study = Study.create_or_update_from_nesstar(data)
+      study.abstract_text.should == data["abstractText"]
+      mod_data = data
+      mod_data["abstractText"] = "foo"
+      study = Study.create_or_update_from_nesstar(mod_data)
       study.abstract_text.should == "foo"
     end
     

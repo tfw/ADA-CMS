@@ -48,7 +48,7 @@ class Study < ActiveRecord::Base
   
   
   def self.create_or_update_from_nesstar(attributes)
-    study = Study.find_by_stdy_id(attributes[:stdyId])
+    study = Study.find_by_stdy_id(attributes["stdyID"])
     
     converted_keys = {}
     attributes.each do |k,v|
@@ -62,6 +62,8 @@ class Study < ActiveRecord::Base
     else
       study.update_attributes(converted_keys)
     end
+    
+    study
   end
   
   #class behaviour to create Study objects based on a hash built from scanning an XML document
