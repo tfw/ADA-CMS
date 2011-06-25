@@ -8,10 +8,9 @@ class Study < ActiveRecord::Base
   has_many :archives, :through => :archive_studies
   has_many :variables
   
-  # validates_presence_of :label
-  # validates_presence_of :ddi_id
-  # validates_uniqueness_of :ddi_id
-  # 
+  validates_uniqueness_of :stdy_id
+  validates_presence_of :stdy_id
+  
   #facet constants
   FACETS = {:data_kind => (DdiMapping.human_readable('dataKind')                        || "Data Kind"),
           :sampling_abbr => (DdiMapping.human_readable('sampling')                      || "Sampling"),
@@ -48,8 +47,21 @@ class Study < ActiveRecord::Base
   end  
   
   
-  def self.create_or_update_from_nesstar(hash)
+  def self.create_or_update_from_nesstar(attributes)
+    study = Study.find_by_stdy_id(attributes[:stdyId])
     
+    converted_keys = {}
+    attributes.each do |k,v|
+      k = "pdfFile" if k == "pDFFile"
+        
+      converted_keys[k.underscore.to_sym] = v
+    end
+
+    if study.nil?
+      study = Study.create!(converted_keys)
+    else
+      study.update_attributes(converted_keys)
+    end
   end
   
   #class behaviour to create Study objects based on a hash built from scanning an XML document
