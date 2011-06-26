@@ -3,17 +3,146 @@ class CreateRelatedMaterials < ActiveRecord::Migration
       
   def self.up
     create_table :related_materials do |t|
-      t.integer :id
       t.integer :study_id
-      t.string :uri
-      t.string :label      
-      
-      # add_column :study_related_materials, :comment, :text
-      # add_column :study_related_materials, :creation_date, :text
-      # add_column :study_related_materials, :complete, :boolean
-      # add_column :study_related_materials, :resource, :text
-      # remove_column :study_related_materials, :label
-      
+      t.text      :abstract_text
+      t.text      :accessibility
+      t.text      :addressee
+      t.text      :addressee_copy
+      t.text      :aggregation
+      t.text      :alternative_title
+      t.text      :audience
+      t.text      :authorising_statute
+      t.text      :auto_removing_date
+      t.text      :beginning_date
+      t.text      :bibliographic_citation
+      t.text      :category
+      t.text      :comment
+      t.text      :conforms_to
+      t.text      :contributor
+      t.text      :copyright
+      t.text      :coverage
+      t.text      :coverage_temporal_date_capture_period_ends
+      t.text      :creation_date
+      t.text      :creator
+      t.text      :current_location
+      t.text      :custodian
+      t.text      :cut_off_date
+      t.text      :dpa_data_subject_access_exemption
+      t.text      :data_protection_exempt_category
+      t.text      :date_accepted
+      t.text      :date_acquired
+      t.text      :date_available
+      t.text      :date_available_end
+      t.text      :date_capture_period
+      t.text      :date_closed
+      t.text      :date_copyrighted
+      t.text      :date_created
+      t.text      :date_declared
+      t.text      :date_issued
+      t.text      :date_modified
+      t.text      :date_next_version_due
+      t.text      :date_of_last_review
+      t.text      :date_submitted
+      t.text      :date_valid
+      t.text      :date_valid_end
+      t.text      :dates_modified
+      t.text      :deploy_language
+      t.text      :descriptor
+      t.text      :digital_signature
+      t.text      :disclosability_to_dpa_data_subject
+      t.text      :disposal
+      t.text      :disposal_action
+      t.text      :disposal_authorised_by
+      t.text      :disposal_comment
+      t.text      :disposal_conditions
+      t.text      :disposal_date
+      t.text      :disposal_export_destination
+      t.text      :disposal_export_status
+      t.text      :disposal_review
+      t.text      :disposal_review_details
+      t.text      :disposal_reviewer_details
+      t.text      :disposal_schedule_id
+      t.text      :disposal_time_period
+      t.text      :eir_disclosability_indicator
+      t.text      :eir_exemption
+      t.text      :education_level
+      t.text      :end_date
+      t.text      :end_date_of_capture
+      t.text      :extend
+      t.text      :external_id
+      t.text      :foi_disclosability_indicator
+      t.text      :foi_exemption
+      t.text      :foi_release_date
+      t.text      :foi_release_details
+      t.text      :file_plan_id
+      t.text      :format
+      t.text      :group_access
+      t.text      :has_format
+      t.text      :has_part
+      t.text      :has_version
+      t.text      :home_location
+      t.text      :identifier
+      t.text      :identifier_case_id
+      t.text      :individual_user_access_list
+      t.text      :is_defined_by
+      t.text      :is_format_of
+      t.text      :is_part_of
+      t.text      :is_referenced_by
+      t.text      :is_replaced_by
+      t.text      :is_required_by
+      t.text      :is_version_of
+      t.text      :keyword
+      t.text      :label
+      t.text      :language
+      t.text      :last_fio_disclosability_review
+      t.text      :location
+      t.text      :mandate
+      t.text      :mediator
+      t.text      :medium
+      t.text      :notes
+      t.text      :original_format
+      t.text      :personal_data_acquisition_purpose
+      t.text      :position
+      t.text      :postcode
+      t.text      :preservation
+      t.text      :previous_protective_marketing
+      t.text      :process_identifier
+      t.text      :programme
+      t.text      :project
+      t.text      :protective_marketing
+      t.text      :protective_marketing_change_date
+      t.text      :protective_marketing_expiry_date
+      t.text      :provides_definition_of
+      t.text      :publisher
+      t.text      :reason_for_redaction
+      t.text      :redaction
+      t.text      :relation
+      t.text      :replaces
+      t.text      :requires
+      t.text      :resource_date
+      t.text      :resource_references
+      t.text      :resource_type
+      t.text      :rights
+      t.text      :schedule_catalog_id
+      t.text      :schedule_date
+      t.text      :schedule_email_text
+      t.text      :sequence_num
+      t.text      :source
+      t.text      :spatial_location
+      t.text      :spatiality
+      t.text      :start_date_of_capture
+      t.text      :status
+      t.text      :status_of_start_date_of_capture
+      t.text      :study_id
+      t.text      :sub_resource
+      t.text      :subject
+      t.text      :subject_person
+      t.text      :system_id
+      t.text      :table_of_contents
+      t.text      :temporal
+      t.text      :updating_frequency
+      t.text      :uri        
+
       t.timestamps
     end
     
