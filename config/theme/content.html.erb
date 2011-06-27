@@ -43,9 +43,9 @@
 				<li> <%= link_to(page.title, page.path.slug) %> 
 					<% if page.children.any? %>
 						<ul>
-								<% for child in page.children %>									
-									<li> <%= link_to(child.title, child.path.slug)%> </li>
-								<% end %>
+						  <% for child in page.children %>									
+								<li> <%= link_to(child.title, child.path.slug)%> </li>
+						  <% end %>
 						</ul
 					<% end %>
 				</li>
