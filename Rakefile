@@ -47,6 +47,6 @@ end
 
 task :exp => :environment do
   require 'ruby-debug'
-  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
- 
+ Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
+ Integrations::RelatedMaterials.create_or_update
 end

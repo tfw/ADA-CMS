@@ -41,7 +41,7 @@ class CreateVariables < ActiveRecord::Migration
       t.text      :scale
       t.text      :source
       t.integer   :start_pos
-      t.double    :std_value
+      t.decimal    :std_value
       t.string    :study_id
       t.text      :syntax
       t.text      :universe

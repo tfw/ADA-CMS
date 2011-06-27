@@ -39,7 +39,6 @@ class ArchiveCatalog < ActiveRecord::Base
       catalog.update_attributes(args)
     else
       catalog = ArchiveCatalog.create!(args)
-      puts "created #{catalog.title}"
     end
   end 
 end

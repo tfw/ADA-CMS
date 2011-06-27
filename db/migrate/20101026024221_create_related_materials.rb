@@ -27,7 +27,7 @@ class CreateRelatedMaterials < ActiveRecord::Migration
       t.text      :current_location
       t.text      :custodian
       t.date      :cut_off_date
-      t.text      :dpa_data_subject_access_exemption
+      t.text      :d_pa_data_subject_access_exemption
       t.text      :data_protection_exempt_category
       t.date      :date_accepted
       t.date      :date_acquired
@@ -63,18 +63,18 @@ class CreateRelatedMaterials < ActiveRecord::Migration
       t.text      :disposal_reviewer_details
       t.text      :disposal_schedule_id
       t.text      :disposal_time_period
-      t.text      :eir_disclosability_indicator
-      t.text      :eir_exemption
+      t.text      :e_ir_disclosability_indicator
+      t.text      :e_ir_exemption
       t.text      :education_level
       t.date      :end_date
       t.date      :end_date_of_capture
-      t.text      :extend
+      t.text      :extent
       t.text      :external_id
-      t.text      :foi_disclosability_indicator
-      t.text      :foi_exemption
-      t.date      :foi_release_date
-      t.text      :foi_release_details
-      t.text      :file_plan_id
+      t.text      :f_oi_disclosability_indicator
+      t.text      :f_oi_exemption
+      t.date      :f_oi_release_date
+      t.text      :f_oi_release_details
+      t.text      :fileplan_id
       t.text      :format
       t.text      :group_access
       t.text      :has_format
@@ -94,24 +94,24 @@ class CreateRelatedMaterials < ActiveRecord::Migration
       t.text      :keyword
       t.text      :label
       t.text      :language
-      t.text      :last_fio_disclosability_review
+      t.text      :last_foi_disclosability_review
       t.text      :location
       t.text      :mandate
       t.text      :mediator
       t.text      :medium
       t.text      :notes
       t.text      :original_format
-      t.text      :personal_data_acquisition_purpose
+      t.text      :personal_data_aquisition_purpose
       t.integer   :position
       t.text      :postcode
       t.text      :preservation
-      t.text      :previous_protective_marketing
+      t.text      :previous_protective_marking
       t.text      :process_identifier
       t.text      :programme
       t.text      :project
-      t.text      :protective_marketing
-      t.date      :protective_marketing_change_date
-      t.date      :protective_marketing_expiry_date
+      t.text      :protective_marking
+      t.date      :protective_marking_change_date
+      t.date      :protective_marking_expiry_date
       t.text      :provides_definition_of
       t.text      :publisher
       t.text      :reason_for_redaction
@@ -133,7 +133,7 @@ class CreateRelatedMaterials < ActiveRecord::Migration
       t.date      :start_date_of_capture
       t.text      :status
       t.text      :status_of_start_date_of_capture
-      t.string    :study_id
+      t.string    :stdy_id
       t.boolean   :sub_resource
       t.text      :subject
       t.text      :subject_person
