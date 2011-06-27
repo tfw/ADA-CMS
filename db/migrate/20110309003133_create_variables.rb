@@ -5,7 +5,7 @@ class CreateVariables < ActiveRecord::Migration
       t.text      :comment
       t.text      :concept
       t.datetime  :creation_date
-      t.string    :data_file_id
+      t.string    :datafile_id
       t.integer   :decimal_places
       t.integer   :end_pos
       t.text      :expression
@@ -42,7 +42,7 @@ class CreateVariables < ActiveRecord::Migration
       t.text      :source
       t.integer   :start_pos
       t.decimal    :std_value
-      t.string    :study_id
+      t.string    :stdy_id
       t.text      :syntax
       t.text      :universe
       t.decimal   :val_range_max
@@ -51,23 +51,16 @@ class CreateVariables < ActiveRecord::Migration
       t.decimal   :weighted_mean_value
       t.decimal   :weighted_median_value
       t.decimal   :weighted_mode_value
+      t.decimal   :weighted_no_valid_responses
       t.decimal   :weighted_no_invalid_responses
       t.decimal   :weighted_std_value
       t.integer   :width
       t.timestamps
     end
-    
-    create_table :variable_fields do |t|
-      t.integer :id
-      t.integer :variable_id
-      t.string :key
-      t.text :value 
-      t.timestamps
-    end
+
   end
 
   def self.down
     drop_table :variables
-    drop_table :variable_entries    
   end
 end

@@ -4,14 +4,35 @@ class Variable < ActiveRecord::Base
   has_many :statistics
   
   # validates_presence_of :study_id #it seems that not all variables are related to a study
+
+  def self.create_or_update_from_nesstar(variable)
+    var = Variable.find_by_stdy_id(variable.studyID)
+    
+    attributes = variable.attributes
+    converted_keys = {}
+    attributes.each do |k,v|
+      k = "stdyID" if k == "studyID" #for the sake of consistency with the studies table
+      next if k == "dateAquired"
+      
+      converted_keys[k.underscore.to_sym] = v
+    end
+
+    if var.nil?
+      var = Variable.create!(converted_keys)
+    else
+      var.update_attributes(converted_keys)
+    end
+    
+    var
+  end
   
   #solr config
-  searchable do
-    text :label, :stored => true
-    string :name, :stored => true
-    text :question_text, :stored => true
-    integer :study_id
-  end  
+  # searchable do
+  #   text :label, :stored => true
+  #   string :name, :stored => true
+  #   text :question_text, :stored => true
+  #   integer :study_id
+  # end  
   
   def self.store_with_fields(data)
     variable = Variable.find_by_label(data[:label])

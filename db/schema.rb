@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110623073254) do
+ActiveRecord::Schema.define(:version => 20110623072536) do
 
   create_table "archive_catalog_integrations", :force => true do |t|
     t.integer  "archive_catalog_id"
@@ -215,15 +215,6 @@ ActiveRecord::Schema.define(:version => 20110623073254) do
 
   create_table "inkling_types", :force => true do |t|
     t.string   "klass_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "integrations", :force => true do |t|
-    t.integer  "ada_object_id"
-    t.string   "ada_object_type"
-    t.integer  "nesstar_object_id"
-    t.string   "nesstar_object_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -519,20 +510,12 @@ ActiveRecord::Schema.define(:version => 20110623073254) do
     t.string   "surname"
   end
 
-  create_table "variable_fields", :force => true do |t|
-    t.integer  "variable_id"
-    t.string   "key"
-    t.text     "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "variables", :force => true do |t|
     t.text     "additivity"
     t.text     "comment"
     t.text     "concept"
     t.datetime "creation_date"
-    t.string   "data_file_id"
+    t.string   "datafile_id"
     t.integer  "decimal_places"
     t.integer  "end_pos"
     t.text     "expression"
@@ -569,7 +552,7 @@ ActiveRecord::Schema.define(:version => 20110623073254) do
     t.text     "source"
     t.integer  "start_pos"
     t.decimal  "std_value"
-    t.string   "study_id"
+    t.string   "stdy_id"
     t.text     "syntax"
     t.text     "universe"
     t.decimal  "val_range_max"
@@ -578,6 +561,7 @@ ActiveRecord::Schema.define(:version => 20110623073254) do
     t.decimal  "weighted_mean_value"
     t.decimal  "weighted_median_value"
     t.decimal  "weighted_mode_value"
+    t.decimal  "weighted_no_valid_responses"
     t.decimal  "weighted_no_invalid_responses"
     t.decimal  "weighted_std_value"
     t.integer  "width"

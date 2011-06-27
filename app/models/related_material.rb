@@ -4,7 +4,7 @@ class RelatedMaterial < ActiveRecord::Base
   validates_presence_of :stdy_id
 
   def self.create_or_update_from_nesstar(egms_resource)
-    rm = RelatedMaterial.find_by_study_id(egms_resource.studyID)
+    rm = RelatedMaterial.find_by_stdy_id(egms_resource.studyID)
     
     attributes = egms_resource.attributes
     converted_keys = {}
