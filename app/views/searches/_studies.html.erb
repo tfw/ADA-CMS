@@ -44,7 +44,7 @@
 
   <table id="search-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1>
     <% @studies_search.each_hit_with_result do |hit, study| %>
-			<%= render(:partial => "extended_search_result", :locals => {:hit => hit, :study => study}) %>
+			<%= render(:partial => "/shared/study_ext_tr", :locals => {:hit => hit, :study => study}) %>
     <% end %>
   </table>
 </section>

@@ -2,12 +2,9 @@ class Archive < ActiveRecord::Base
   include Inkling::Util::Slugs
 
   has_many :pages
-  has_many :archive_study_blocks
-  has_many :archive_study_integrations
-  has_many :archive_studies, :through => :archive_study_integrations
+  has_many :archive_studies
   has_many :studies, :through => :archive_studies
   has_many :archive_catalogs
-  has_many :archive_study_queries
   has_many :archive_news
   has_many :news, :through => :archive_news
 

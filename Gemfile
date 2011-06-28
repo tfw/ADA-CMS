@@ -4,6 +4,7 @@ source :gemcutter
 gem 'rails', '3.0.7'
 
 gem "pg"
+gem "mysql2"
 
 gem 'inkling', :git => "git://github.com/tfw/inkling.git"  
 #gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling-project/inkling"
@@ -23,9 +24,6 @@ gem 'inherited_resources'
 gem 'cancan'
 gem 'formtastic'
 gem 'ckeditor' , :git => 'git://github.com/cjheath/rails-ckeditor.git', :branch => 'rails3'
-gem 'ruote', '2.1.11' #:git => 'https://github.com/jmettraux/ruote.git'
-# gem 'sourcify', :git => "https://github.com/ngty/sourcify.git"
-gem 'yajl-ruby'
 gem 'yaml_db'
 gem 'nokogiri'
 gem 'jquery-rails', '>= 0.2.6' 
@@ -37,11 +35,13 @@ gem 'ratom'
 gem 'sunspot_rails', '>=1.2.1'
 gem 'mongrel', '~> 1.2.0.pre2'
 gem 'httparty'
+gem 'delayed_job'
 
 # gem "ruby-debug19" #move this into dev group alone later
 
 group :development, :test do
 	gem "ruby-debug19"
+	gem "mocha"
 	gem "rspec-rails", ">= 2.6.0"
 	gem "rspec-core", ">= 2.6.0"
 	gem 'capybara'

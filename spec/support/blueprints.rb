@@ -79,8 +79,8 @@ end
 
 Study.blueprint do
   label Sham.name
-  ddi_id Sham.name
-  abstract Sham.body
+  stdy_id Sham.name
+  abstract_text Sham.body
 end
 
 DdiMapping.blueprint do

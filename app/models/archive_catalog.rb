@@ -10,6 +10,8 @@ class ArchiveCatalog < ActiveRecord::Base
   has_many :archive_catalog_studies
   belongs_to :archive
   
+  has_one :integration
+
   validates_presence_of :title
   
   def generate_path_slug
@@ -23,5 +25,20 @@ class ArchiveCatalog < ActiveRecord::Base
     
     slug
   end
+  
+  def self.create_or_update_from_nesstar(hash, archive, parent = nil)
+    catalog = ArchiveCatalog.find_by_title(hash["objectId"]) 
+    
+    args = {:title => hash["objectId"], 
+                      :archive_id => archive.id, 
+                      :catalog_position => hash["predicateIndex"]}
+                      
+    args[:parent_id] = parent.id if parent
 
+    if catalog
+      catalog.update_attributes(args)
+    else
+      catalog = ArchiveCatalog.create!(args)
+    end
+  end 
 end

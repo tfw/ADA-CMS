@@ -61,4 +61,33 @@ module SearchHelper
 	  end
 	  str
   end
+  
+  def line_break_title(title, limit)
+    return "" if title.nil? #bad data in some studies
+    line_break = []
+    bits = title.split(/\W/) 
+
+    if bits.size > limit
+      i = 0      
+      for word in bits
+        line_break << word
+        i+= 1
+        if i == limit
+          line_break << "<br/>"
+          i = 0
+        end
+      end
+    else
+      title
+    end
+    line_break.join " "
+  end
+  
+  def multi_accordion_on_archive(div_id, current_archive_idx)
+    if current_archive_idx 
+      "$('##{div_id}').multiAccordion({active: [#{current_archive_idx}]});"
+    else
+      "$('##{div_id}').multiAccordion({active: false });"       	
+    end
+  end
 end

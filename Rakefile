@@ -33,8 +33,8 @@ end
 task :regenerate_paths => :environment do
   for klass in [Page, News, ArchiveStudy, Document, Image, ArchiveCatalog, Inkling::Feed]
     klass.all.each do |content| 
-      puts "#{klass.to_s} - id (#{content.id} - title #{content.title})"
       content.save! 
+      puts "#{klass.to_s}-(title #{content.title}): #{content.path.slug}"
     end
   end
 end
@@ -43,4 +43,31 @@ task :create_feeds => :environment do
   for archive in Archive.all
     Inkling::Feed.create!(:title => "#{archive.name} Atom Feed", :format => "Inkling::Feeds::Atom", :source => "NewsFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
   end
+end
+
+task :integrate => :environment do
+  require 'ruby-debug'
+  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
+  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("social-science"), Archive.social_science.id)
+  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("historical"), Archive.historical.id)
+  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("longitudinal"), Archive.longitudinal.id)
+  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("qualitative"), Archive.qualitative.id)
+  Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("international"), Archive.international.id)
+  Integrations::RelatedMaterials.create_or_update
+  vars_in_archive(Archive.indigenous)
+  vars_in_archive(Archive.qualitative)
+  vars_in_archive(Archive.international)
+  vars_in_archive(Archive.historical)
+  vars_in_archive(Archive.social_science)
+  vars_in_archive(Archive.longitudinal)
+end
+
+def vars_in_archive(archive)
+  beginning = Time.now
+  puts "Beginning #{archive.name} integration at #{Time.now}"
+  Integrations::Variables.create_or_update(archive)
+  puts Time.now
+  diff = Time.now - beginning
+
+  p diff  
 end

@@ -25,7 +25,7 @@ feature "serving out Archive Catalogs" do
     click_link 'foo'
 
     for archive_catalog_study in @catalog.archive_catalog_studies
-      page.should have_content archive_catalog_study.study.ddi_id
+      page.should have_content archive_catalog_study.study.stdy_id
     end
   end
 
@@ -36,18 +36,18 @@ feature "serving out Archive Catalogs" do
     click_link 'Extended'
   
     for archive_catalog_study in @catalog.archive_catalog_studies
-      page.should have_content first_n_words(30, archive_catalog_study.study.abstract)
+      page.should have_content first_n_words(30, archive_catalog_study.study.abstract_text)
     end
   end
 
   scenario "selecting a study should render the entire catalog of studies, but the selected study is first in the table" do
     visit @catalog.path.slug
   
-    click_link @archive_catalog_study3.study.ddi_id
+    click_link @archive_catalog_study3.study.stdy_id
 
     within(:xpath, "//table[@id='browse-results-title']") do
     # within(:xpath, "//table[@id='browse-results-title']/tr[1]") do -- ideally we could specify the first tabe row, not xpath friendly
-        page.should have_content(@archive_catalog_study3.study.ddi_id)
+        page.should have_content(@archive_catalog_study3.study.stdy_id)
     end    
   end  
 end

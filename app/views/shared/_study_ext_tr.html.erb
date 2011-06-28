@@ -2,23 +2,23 @@
 	<td valign=top>
 		<fieldset class="search-border"> 
       <% archive_study = study.for_archive(@current_archive) %>           
-			<legend> Study Title: <%= link_to study.field("docTitle"), "#{archive_study.path.slug}" %> </legend>
+			<legend> Study Title: <%= link_to study.doc_title, archive_study.path.slug %> </legend>
 
 				<table>
 					<tr>
-						<td>Authoring Entity: <% study.field("stdyAuthEntity") %> </td>
-						<td>Year: <% study.field("stdyProdDate") %> </td>
-						<td>Study ID: <%= study.ddi_id %> </td>						
+						<td>Authoring Entity: <% study.stdy_auth_entity %> </td>
+						<td>Year: <%= study.stdy_prod_date %> </td>
+						<td>Study ID: <%= study.stdy_id %> </td>						
 					</tr>
 				</table>
 				
-        Abstract: <%= line_break_title(first_n_words(30, study.abstract), 15).html_safe %> <br/>
+        Abstract: <%= line_break_title(first_n_words(30, study.abstract_text), 15).html_safe %> <br/>
         Variables: <%= study.variables.size %> <br/>
 
 				<% if hit %>
 					Relevance: <%= hit.score %> <br/>
 					<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
-					<%= highlight_excerpt(hit.highlight(:abstract)) %> <br/>
+					<%= highlight_excerpt(hit.highlight(:abstract_text)) %> <br/>
 					<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>				
 				<% end %>
 				

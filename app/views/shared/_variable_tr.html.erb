@@ -4,7 +4,7 @@
 			<% archive_study = variable.study.for_archive(@current_archive) 
 				archive_study = variable.study.for_archive(Archive.ada) if archive_study.nil? 
 			%>
-       Variable Label: <%= link_to variable.label, "#{archive_study.path.slug}##{variable_anchor(variable)}" %> 
+      <%= link_to variable.label, "#{archive_study.path.slug}##{variable_anchor(variable)}" %> 
       <% if variable.question_text %> <br/>
         Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
       <% end %>
