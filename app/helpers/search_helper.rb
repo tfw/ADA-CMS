@@ -82,4 +82,12 @@ module SearchHelper
     end
     line_break.join " "
   end
+  
+  def multi_accordion_on_archive(div_id, current_archive_idx)
+    if current_archive_idx 
+      "$('##{div_id}').multiAccordion({active: [#{current_archive_idx}]});"
+    else
+      "$('##{div_id}').multiAccordion({active: false });"       	
+    end
+  end
 end
