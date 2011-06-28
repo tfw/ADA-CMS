@@ -50,13 +50,13 @@ h6 { /* Used for Figure headings */
 }
 
 p {
-	font-size: 11px;
+	font-size: 13px;
 	padding-bottom: 5px;
 	color: #000;
 	padding-top: 0px;
 }
 ul, ol {
-	font-size: 11px;
+	font-size: 13px;
 	padding-left: 20px;
 }
 li {
@@ -81,7 +81,7 @@ a:active {
 	border-bottom: 1px solid #CCC;
 	padding-bottom: 20px;
 }
-.news h3{
+.news h3 {
 	color: #000;
 	font-size: 11px;
 	padding: 0px 0px 10px;
