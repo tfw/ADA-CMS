@@ -14,25 +14,7 @@
       <tbody>
         <% @variables_search.each_hit_with_result do |hit, variable| %>
 <!-- move to shared partial -->
-          <tr>
-            <td>
-               <div id="variable-<%= variable.name %>">
-								<% archive_study = variable.study.for_archive(@current_archive) 
-									archive_study = variable.study.for_archive(Archive.ada) if archive_study.nil? 
-								%>
-                <%= link_to variable.label, "#{archive_study.path.slug}##{variable_anchor(variable)}" %> 
-                <% if variable.question_text %> <br/>
-                  Question Text: <%= first_n_words(30, variable.question_text) %> <br/>
-                <% end %>
-            						
-            </td>
-            <td>
-              <% for archive_study in variable.study.archive_studies %>
-                <% next if archive_study.archive == Archive.ada %>
-                <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a>
-              <% end %>	
-            </td>
-          </tr>
+          <%= render :partial => "/shared/variable_tr", :locals => {:hit => hit, :variable => variable} %>
         <% end %>
       </tbody>
     </table>

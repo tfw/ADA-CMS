@@ -63,6 +63,7 @@ module SearchHelper
   end
   
   def line_break_title(title, limit)
+    return "" if title.nil? #bad data in some studies
     line_break = []
     bits = title.split(/\W/) 
 
