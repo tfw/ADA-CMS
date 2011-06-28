@@ -33,8 +33,8 @@ end
 task :regenerate_paths => :environment do
   for klass in [Page, News, ArchiveStudy, Document, Image, ArchiveCatalog, Inkling::Feed]
     klass.all.each do |content| 
-      puts "#{klass.to_s} - id (#{content.id} - title #{content.title})"
       content.save! 
+      puts "#{klass.to_s}-(title #{content.title}): #{content.path.slug}"
     end
   end
 end
@@ -58,8 +58,8 @@ task :integrate => :environment do
   vars_in_archive(Archive.qualitative)
   vars_in_archive(Archive.international)
   vars_in_archive(Archive.historical)
-  vars_in_archive(Archive.longitudinal)
   vars_in_archive(Archive.social_science)
+  vars_in_archive(Archive.longitudinal)
 end
 
 def vars_in_archive(archive)

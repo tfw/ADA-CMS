@@ -11,6 +11,8 @@ class Integrations::ArchiveCatalogs
       studyejb = Nesstar::StudyEJB.find_by_stdyID(statement.objectId)
       study = Study.create_or_update_from_nesstar(studyejb.attributes)
       archive_study = ArchiveStudy.create_or_update_from_nesstar(study, archive)
+      #plus, we create one for the ADA context, when searching
+      archive_study = ArchiveStudy.create_or_update_from_nesstar(study, Archive.ada)
       ArchiveCatalogStudy.create_or_update_from_nesstar(archive_study, parent, statement_hash['predicateIndex'])
     end
 

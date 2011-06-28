@@ -1,10 +1,15 @@
+<% current_archive_idx = @study_searches.keys.index(@current_archive) unless @current_archive == Archive.ada
+
+content_for :js do 
+  multi_accordion_on_archive('study-facets', current_archive_idx)
+end %>
+
 <% content_for :sidenav do %>
 <nav>
 	<div id ="study-facets">
-	  <ul>
-	    <% @study_searches.each do |archive, search| %>
-	        <li> <%= archive.name %> 
-	        <div>
+    <% @study_searches.each do |archive, search| %>
+      <h3><a href="#"><%= archive.name %></a></h3>
+        <div>
   	      <% for facet in search.facets  %>
   					<% if facet.rows.any? %>
     				<dl> 
@@ -13,12 +18,10 @@
   				      <dd> <%= link_to first_n_words(5, row.value), transient_search_path(:term => @term, :archive_id => archive.id, :filters => (params[:filters].dup << {facet.name => row.value})) %>  <%= row.count %></dd>
   				    <% end %>
   				  </dl>
-  					<% end %>
-  				</div>
-  					</li>
-	      <% end %>
-	    <% end %>
-	  </ul>
+					<% end %>
+        <% end %>
+			</div>
+    <% end %>
 	</div>
 </nav>
 <% end %>
