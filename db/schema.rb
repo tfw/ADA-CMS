@@ -12,14 +12,6 @@
 
 ActiveRecord::Schema.define(:version => 20110623072536) do
 
-  create_table "archive_catalog_integrations", :force => true do |t|
-    t.integer  "archive_catalog_id"
-    t.integer  "archive_id"
-    t.string   "url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "archive_catalog_studies", :force => true do |t|
     t.integer  "archive_catalog_id"
     t.integer  "archive_study_id"
@@ -52,36 +44,6 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
   create_table "archive_studies", :force => true do |t|
     t.integer  "study_id"
     t.integer  "archive_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "archive_study_blocks", :force => true do |t|
-    t.integer  "study_query_id"
-    t.string   "ddi_id",         :null => false
-    t.integer  "archive_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "archive_study_integrations", :force => true do |t|
-    t.integer  "study_id"
-    t.integer  "archive_study_id"
-    t.integer  "archive_study_query_id"
-    t.integer  "archive_catalog_integration_id"
-    t.string   "ddi_id",                         :null => false
-    t.integer  "archive_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "archive_study_queries", :force => true do |t|
-    t.integer  "archive_id", :null => false
-    t.string   "name",       :null => false
-    t.text     "query",      :null => false
-    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

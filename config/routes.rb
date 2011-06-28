@@ -28,10 +28,6 @@ Ada::Application.routes.draw do
           get 'browse'
         end
       end
-      match '/integrations' => "archives/integrations#index"
-      resources :archive_study_integrations, :except => [:index, :show], :controller => "archives/archive_study_integrations"
-      resources :archive_study_blocks, :except => [:index, :show], :controller => "archives/archive_study_blocks"
-      resources :archive_study_queries, :except => [:index, :show], :controller => "archives/archive_study_queries"
     end
 
     resources :news do
