@@ -73,7 +73,7 @@ class SearchesController < ContentController
   def study_search(archive, term, filters = {})
     Sunspot.search(Study) do ;
       keywords term do 
-        highlight :label, :abstract, :comment
+        highlight :label, :abstract_text, :comment
       end
       
       with(:archive_ids).any_of [archive.id];
@@ -85,16 +85,15 @@ class SearchesController < ContentController
       end
 
       facet :data_kind, :sort => :count, :limit => 7, :minimum_count => 2
-      facet :sampling_abbr, :sort => :count, :limit => 7, :minimum_count => 2
-      facet :collection_mode_abbr, :sort => :count, :limit => 7, :minimum_count => 2
-      facet :contact_affiliation, :sort => :count, :limit => 7, :minimum_count => 2
-      facet :collection_mode_abbr, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :sampling, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :coll_mode, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :stdy_contact_affiliation, :sort => :count, :limit => 7, :minimum_count => 2
       facet :geographical_cover, :sort => :count, :limit => 7, :minimum_count => 2
       facet :geographical_unit, :sort => :count, :limit => 7, :minimum_count => 2
       facet :analytic_unit, :sort => :count, :limit => 7, :minimum_count => 2
       facet :creation_date, :sort => :count, :limit => 7, :minimum_count => 2
       facet :series_name, :sort => :count, :limit => 7, :minimum_count => 2
-      facet :study_auth_entity, :sort => :count, :limit => 7, :minimum_count => 2
+      facet :stdy_auth_entity, :sort => :count, :limit => 7, :minimum_count => 2
     end    
   end
 

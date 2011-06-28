@@ -7,6 +7,7 @@ class Variable < ActiveRecord::Base
 
   def self.create_or_update_from_nesstar(variable)
     var = Variable.find_by_stdy_id(variable.studyID)
+    study =  Study.find_by_stdy_id(variable.studyID)
     
     attributes = variable.attributes
     converted_keys = {}
@@ -16,6 +17,8 @@ class Variable < ActiveRecord::Base
       
       converted_keys[k.underscore.to_sym] = v
     end
+    
+    converted_keys[:study_id] = study.id
 
     if var.nil?
       var = Variable.create!(converted_keys)
@@ -27,12 +30,12 @@ class Variable < ActiveRecord::Base
   end
   
   #solr config
-  # searchable do
-  #   text :label, :stored => true
-  #   string :name, :stored => true
-  #   text :question_text, :stored => true
-  #   integer :study_id
-  # end  
+  searchable :auto_index => false do
+    text :label, :stored => true
+    string :name, :stored => true
+    text :question_text, :stored => true
+    integer :study_id
+  end  
   
   def self.store_with_fields(data)
     variable = Variable.find_by_label(data[:label])

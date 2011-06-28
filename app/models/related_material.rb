@@ -5,7 +5,8 @@ class RelatedMaterial < ActiveRecord::Base
 
   def self.create_or_update_from_nesstar(egms_resource)
     rm = RelatedMaterial.find_by_stdy_id(egms_resource.studyID)
-    
+    study =  Study.find_by_stdy_id(egms_resource.studyID)
+        
     attributes = egms_resource.attributes
     converted_keys = {}
     attributes.each do |k,v|
@@ -15,6 +16,8 @@ class RelatedMaterial < ActiveRecord::Base
       converted_keys[k.underscore.to_sym] = v
     end
 
+    converted_keys[:study_id] = study.id
+    
     if rm.nil?
       rm = RelatedMaterial.create!(converted_keys)
     else

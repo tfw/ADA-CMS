@@ -1,6 +1,7 @@
 class CreateVariables < ActiveRecord::Migration
   def self.up
     create_table :variables do |t|
+      t.integer   :study_id #don't confuse with stdy_id - a string from nesstar
       t.text      :additivity
       t.text      :comment
       t.text      :concept
@@ -41,7 +42,7 @@ class CreateVariables < ActiveRecord::Migration
       t.text      :scale
       t.text      :source
       t.integer   :start_pos
-      t.decimal    :std_value
+      t.decimal   :std_value
       t.string    :stdy_id
       t.text      :syntax
       t.text      :universe

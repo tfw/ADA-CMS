@@ -511,6 +511,7 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
   end
 
   create_table "variables", :force => true do |t|
+    t.integer  "study_id"
     t.text     "additivity"
     t.text     "comment"
     t.text     "concept"
