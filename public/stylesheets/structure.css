@@ -226,12 +226,13 @@ footer p {
 	position: relative;
 }
 .captions p  {
-	padding-left: 10px;
-	border-left: 1px solid #CCC;
-	margin-left: 40px;
 	float: left;
-	padding-right: 110px;
+	width: 152px;
+	margin-left: 40px;
+	padding-left: 10px;
+	padding-right: 40px;
 	font-size: 10px;
+	border-left: 1px solid #CCC;
 }
 
 .logos {
