@@ -24,3 +24,4 @@ nesstar:
   host:     <%= Secrets::NESSTAR_DATABASE_HOST %>
   username: <%= Secrets::NESSTAR_DATABASE_USERNAME %>
   password: <%= Secrets::NESSTAR_DATABASE_PASSWORD %>
+  database: nesstar
