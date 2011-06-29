@@ -26,8 +26,4 @@ class RelatedMaterial < ActiveRecord::Base
     
     rm
   end
-  
-  # def url
-  #   return "http://assda-nesstar.anu.edu.au#{self.uri[2..-1]}" 
-  # end
 end

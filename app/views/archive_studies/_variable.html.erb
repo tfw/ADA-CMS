@@ -2,8 +2,8 @@
   fields.delete(:id) %>
 <table border=1>
   <thead>
-    <tr>
-      <th colspan=2><a id="<%= variable_anchor(variable) %>" href="<%= variable_href(variable, @current_archive) %>" ><%= variable.label %></a> 
+    <tr> 
+      <th colspan=2><a id="<%= variable_anchor(variable) %>" href="<%= variable_href(variable, @archive_study) %>" ><%= variable.label %></a> 
       </th>
       <th align="right">
         <% unless variable == variable.study.variables.first %>

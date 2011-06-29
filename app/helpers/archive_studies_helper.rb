@@ -36,9 +36,8 @@ module ArchiveStudiesHelper
   end
   
   
-  def variable_href(variable, archive)       
-    archive_study = ArchiveStudy.find_by_archive_id_and_study_id(archive.id, variable.study.id)
-           "#{NESSTAR_SERVER}/index.jsp?object=#{variable.study.stdy_id}_#{variable.var_id}&archive=#{archive_css(archive)}&cms_url=#{archive_study.path.slug}"  
+  def variable_href(variable, archive_study)          
+    "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fVariable/#{variable.stdy_id}_#{variable.var_id}&cms_url=#{archive_study.path.slug}"
   end
   
   def up_arrow_anchor(position)
