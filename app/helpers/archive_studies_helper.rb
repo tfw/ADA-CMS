@@ -5,7 +5,7 @@ module ArchiveStudiesHelper
       row = "<tr class='#{css_class}'>\n<td valign='top'>"
       row +=  (human_readable_check(key) || key)
       row +=  "</td><td valign='top'>"
-      row += fields[key]
+      row += fields[key].to_s
       row += "</td>\n</tr>"
       
      fields.delete(key)
@@ -38,7 +38,7 @@ module ArchiveStudiesHelper
   
   def variable_href(variable, archive)       
     archive_study = ArchiveStudy.find_by_archive_id_and_study_id(archive.id, variable.study.id)
-           "#{$nesstar_server}/index.jsp?object=#{variable.study.about}_#{variable.field('varID')}&archive=#{archive_css(archive)}&cms_url=#{archive_study.path.slug}"  
+           "#{NESSTAR_SERVER}/index.jsp?object=#{variable.study.stdy_id}_#{variable.var_id}&archive=#{archive_css(archive)}&cms_url=#{archive_study.path.slug}"  
   end
   
   def up_arrow_anchor(position)

@@ -53,6 +53,5 @@ CKEDITOR.editorConfig = function( config )
 			['Link','Unlink','Anchor'],
 		        ['Source','-','Maximize','-','About']
 		];
-
 };
 

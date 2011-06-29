@@ -39,7 +39,7 @@
 <% end %>
 
 <aside class="breakout">
-    <a href="<%= $nesstar_server %>/webview/index.jsp?object=<%= @study.about %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
+    <a href="<%= $nesstar_server %>/webview/index.jsp?object=<%= @study.stdy_id %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
 </aside>
 
 
@@ -55,8 +55,8 @@
 	    <li id="study-menu-item" <%= selected_tab_if(['study'], params[:show]) %>> <a id="study-fields-link">Study</a> </li>
 	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:show]) %>> <a id="variables-link">Variables</a> (<%= @study.variables.size %>) </li>
 
-  <% if study.study_related_materials.any? %>
-  	  <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:show]) %>> <a id="rms-link">Related Materials</a> (<%= @study.study_related_materials.size %>)</li>
+  <% if study.related_materials.any? %>
+  	  <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:show]) %>> <a id="rms-link">Related Materials</a> (<%= @study.related_materials.size %>)</li>
   <% end %>
 	  </ul>
 	</div>
@@ -72,7 +72,7 @@
   
     <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
       <ul>
-    		<% for rm in study.study_related_materials %>
+    		<% for rm in study.related_materials %>
       		<% unless rm.uri.nil? %>
             <li>
                <a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a> 

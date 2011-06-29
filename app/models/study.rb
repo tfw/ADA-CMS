@@ -11,16 +11,16 @@ class Study < ActiveRecord::Base
   validates_presence_of :stdy_id
   
   #facet constants
-  FACETS = {:data_kind => (DdiMapping.human_readable('dataKind')                        || "Data Kind"),
-          :sampling_abbr => (DdiMapping.human_readable('sampling')                      || "Sampling"),
-          :collection_mode_abbr => (DdiMapping.human_readable('collMode')               || "Collection Mode"),
-          :contact_affiliation => (DdiMapping.human_readable('stdyContactAffiliation')  ||"Contact Affiliation"),          
-          :geographical_cover => (DdiMapping.human_readable('geographicalCover')        || "Geographical Cover"),
-          :geographical_unit => (DdiMapping.human_readable('geographicalUnit')          || "Geographical Unit"),
-          :analytic_unit => (DdiMapping.human_readable('analyticUnit')                  || "Analytic Unit"),
-          :creation_date => (DdiMapping.human_readable('creationDate')                  || "Creation Date"),
-          :series_name => (DdiMapping.human_readable('seriesName')                      || "Series Name"),
-          :study_auth_entity => (DdiMapping.human_readable('stdyAuthEntity')            || "Study Author")
+  FACETS = {:data_kind => (DdiMapping.human_readable('data_kind')                         || "Data Kind"),
+          :sampling_abbr => (DdiMapping.human_readable('sampling')                        || "Sampling"),
+          :collection_mode_abbr => (DdiMapping.human_readable('collection_mode')          || "Collection Mode"),
+          :contact_affiliation => (DdiMapping.human_readable('stdy_contact_affiliation')  || "Contact Affiliation"),          
+          :geographical_cover => (DdiMapping.human_readable('geographical_cover')         || "Geographical Cover"),
+          :geographical_unit => (DdiMapping.human_readable('geographical_unit')           || "Geographical Unit"),
+          :analytic_unit => (DdiMapping.human_readable('analytic_unit')                   || "Analytic Unit"),
+          :creation_date => (DdiMapping.human_readable('creation_date')                   || "Creation Date"),
+          :series_name => (DdiMapping.human_readable('series_name')                       || "Series Name"),
+          :study_auth_entity => (DdiMapping.human_readable('stdy_auth_entity')            || "Study Author")
         }
         
   #solr config
@@ -63,93 +63,7 @@ class Study < ActiveRecord::Base
     
     study
   end
-  
-  #class behaviour to create Study objects based on a hash built from scanning an XML document
-  #this code might be moved out to a builder object later on.
-  def self.store_with_fields(data)
-    #first, see if this is a new dataset or we're updating an old one.
-    study = Study.find_by_label(data[:label])
-    study = Study.new if study.nil?
-
-    study.label = data[:label]
-    study.about = data[:about]
-    study.ddi_id = study.about.split(".").last
-    study.resource = data[:attribute_resource]
-
-    local_data = data.dup
-    local_data.delete(:label)
-    local_data.delete(:about)
-
-    study.universe = data[:universe]
-    data.delete(:universe)
-    study.published = true
-    study.abstract = data[:abstractText]
-    data.delete(:abstractText)
-    study.keywords = data[:keywords]
-    data.delete(:keywords)
-    study.comment = data[:comment]
-    data.delete(:comment)
-    study.contact_affiliation = data[:stdyContactAffiliation]
-    data.delete(:stdyContactAffiliation)
-    study.creation_date = data[:creationDate]
-    data.delete(:creationDate)
-    
-    #facet data
-    if data[:dataKind]      
-      study.data_kind = data[:dataKind]
-      data.delete(:dataKind)
-    end
-
-    #we dont delete abbreviated data, so all original data is in the study_fields table
-    if data[:sampling] and data[:sampling].length < 255
-      study.sampling_abbr = data[:sampling].split(/\n/).first
-    end
-    
-    if data[:collMode] and data[:collMode].length < 255
-      study.collection_mode_abbr = data[:collMode]
-    end
-
-    if data[:geographicalCover]      
-      study.geographical_cover = data[:geographicalCover]
-    end
-
-    if data[:geographicalUnit]      
-      study.geographical_unit = data[:geographicalUnit]
-    end
-
-    if data[:analyticUnit]      
-      study.analytic_unit = data[:analyticUnit]
-    end
-
-    if data[:seriesName]      
-      study.series_name = data[:seriesName]
-    end
-    
-    if data[:stdyAuthEntity]      
-      study.study_auth_entity = data[:stdyAuthEntity]
-    end
-    
-    study.save!
-    local_data.each {|k,v| create_or_update_field(study, k.to_s, v)}
-    study
-  end
-  
-  def self.create_or_update_field(study, key, value)
-    begin
-      study_field = StudyField.find_by_study_id_and_key(study.id, key)
-    rescue
-      raise StandardError, caller
-    end
-
-    if study_field
-      study_field.value = value
-    else
-      study_field = StudyField.new(:study_id => study.id, :key => key, :value => value)
-    end
-
-    study_field.save!
-  end
-  
+ 
   #it would be ideal to move this logic from search_controller to study
   #but an obvious performance hit occurs when refactoring from
   #instance based searches on the controller to class level
@@ -210,19 +124,6 @@ class Study < ActiveRecord::Base
     end
   end
   
-  def related_materials_attribute
-    fields.find_by_key("relatedMaterials_attribute_resource")
-  end
-
-  def variables_attribute
-    fields.find_by_key("variables_attribute_resource")
-  end
-  
-  def field(key)
-    field = study_fields.find_by_key(key)
-    field.value if field
-  end
-  
   #returns the archive_study matching the archive
   def for_archive(archive)
     self.archive_studies.find_by_archive_id(archive.id)
@@ -230,5 +131,10 @@ class Study < ActiveRecord::Base
   
   def to_param
     "saved-search-#{self.title}"
+  end
+  
+  def ddi_id
+    ddi_idx = self.study_id.index("ddi")
+    self.stdy_id[(ddi_idx + 1)..-1]
   end
 end

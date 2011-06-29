@@ -50,6 +50,4 @@ module Ada
 end
 
 
-# NESSTAR = "http://bonus.anu.edu.au:81"
-# require 'nesstar/config'
-
+NESSTAR_SERVER = "http://nesstar.ada.edu.au"
