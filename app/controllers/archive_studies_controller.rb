@@ -12,7 +12,7 @@ class ArchiveStudiesController < ContentController
   def show
     @archive_study = ArchiveStudy.find_by_id(params[:id])
     @study = @archive_study.study
-    get_study_permissions_from_ada_users(@study)
+   # get_study_permissions_from_ada_users(@study)
     @current_archive = @archive_study.archive
     @title = @study.title
     respond_with(@study)
@@ -29,6 +29,6 @@ class ArchiveStudiesController < ContentController
   
   def get_study_permissions_from_ada_users(study)
     resource_id = study.stdy_id
-    p ArchiveStudiesController.get('http://users.ada.edu.au/users/access', :query => {:id => current_user.identity_url, :resource => resource_id, :output => 'json'})
+    p ArchiveStudiesController.get('http://users-test.ada.edu.au/users/access', :query => {:id => current_user.identity_url, :resource => resource_id, :output => 'json'})
   end
 end

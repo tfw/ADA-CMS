@@ -134,7 +134,7 @@ class Study < ActiveRecord::Base
   end
   
   def ddi_id
-    ddi_idx = self.study_id.index("ddi")
-    self.stdy_id[(ddi_idx + 1)..-1]
+    ddi_idx = self.stdy_id.index("ddi")
+    self.stdy_id[(ddi_idx + 4)..-1]
   end
 end
