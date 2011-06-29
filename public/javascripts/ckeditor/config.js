@@ -22,7 +22,7 @@ CKEDITOR.editorConfig = function( config )
   //config.startupFocus = true;
   
   // works only with en, ru, uk languages
-  config.extraPlugins = "embed,attachment";
+  config.extraPlugins = "embed,attachment,clean_apple_style_span";
   
   config.toolbar = 'Easy';
   
@@ -42,7 +42,7 @@ CKEDITOR.editorConfig = function( config )
 
 		config.toolbar_Medium =
 		[
-			['NewPage'],
+		        ['NewPage'],
 			['Cut','Copy','Paste'],
 			['Undo','Redo','-','Find','Replace'],
 			['Image','Table','HorizontalRule','SpecialChar','PageBreak'],
@@ -51,7 +51,7 @@ CKEDITOR.editorConfig = function( config )
 			['Bold','Italic','Strike'],
 			['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
 			['Link','Unlink','Anchor'],
-			['Maximize','-','About']
+		        ['Source','-','Maximize','-','About']
 		];
 
 };
