@@ -1,4 +1,5 @@
-<% fields = StudyField.to_hash(study) %>
+<% fields = study.attributes.dup 
+  fields.delete("id") %>
 
 <table id="study-table" border=1>
   <thead>
@@ -8,12 +9,12 @@
     </tr>
   </thead>
   <tbody>
-  	<%= study_field_table_row('docTitle', study, fields, 'standard') %>
-  	<%= study_field_table_row('seriesName', study, fields, 'standard')%>
-  	<%= study_field_table_row('stdyID', study, fields, 'standard') %>
-  	<%= study_field_table_row('abstractText', study, fields, 'standard') %>
-  	<%= study_field_table_row('stdyProdDate', study, fields, 'standard') %>
-  	<%= study_field_table_row('stdyProdDate', study, fields, 'standard') %>
+  	<%= study_field_table_row('doc_title', study, fields, 'standard') %>
+  	<%= study_field_table_row('series_name', study, fields, 'standard')%>
+  	<%= study_field_table_row('stdy_id', study, fields, 'standard') %>
+  	<%= study_field_table_row('abstract_text', study, fields, 'standard') %>
+  	<%= study_field_table_row('stdy_prod_date', study, fields, 'standard') %>
+  	<%= study_field_table_row('stdy_prod_date', study, fields, 'standard') %>
 
   	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
   	 <tr>
@@ -71,11 +72,7 @@
    	<%= study_field_table_row('docBiblCit', study, fields, 'standard') %>
    	<%= study_field_table_row('stdyCopyright', study, fields, 'standard') %>
    	<%= study_field_table_row('docCopyright', study, fields, 'standard') %>
-   	<%= study_field_table_row('universe', study, fields, 'standard') %>
- 	 	
-   </tr>
-   <tr>
-     <td valign="top">Related Materials</td><td valign="top"> <a r:if="study.related_materials_attribute" href="<%=study.related_materials_attribute.value%>"><%=study.related_materials_attribute.value %></a> </td>
+   	<%= study_field_table_row('universe', study, fields, 'standard') %> 	 	
    </tr>
 
    <% for key in fields.keys %>

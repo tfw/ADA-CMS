@@ -1,4 +1,5 @@
-<% fields = VariableField.to_hash(variable) %>
+<% fields = variable.attributes.dup
+  fields.delete(:id) %>
 <table border=1>
   <thead>
     <tr>
@@ -26,7 +27,7 @@
     </tr>
     <tr>
       <td><%= variable.name %> </td>
-      <td><%= variable.num_cats %> </td>
+      <td> variable.num_cats </td>
       <td><%= variable.val_range_min %> </td>
       <td><%= variable.val_range_max %> </td>
     </tr>

@@ -43,7 +43,7 @@ CKEDITOR.editorConfig = function( config )
 		config.toolbar_Medium =
 		[
 			['NewPage'],
-			['Cut','Copy','Paste'],
+			['Cut','Copy','Paste', 'Source'],
 			['Undo','Redo','-','Find','Replace'],
 			['Image','Table','HorizontalRule','SpecialChar','PageBreak'],
 			'/',
@@ -53,6 +53,5 @@ CKEDITOR.editorConfig = function( config )
 			['Link','Unlink','Anchor'],
 			['Maximize','-','About']
 		];
-
 };
 
