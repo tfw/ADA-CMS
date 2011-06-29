@@ -107,28 +107,28 @@ pages_005:
   body: |
     <h1>
     	Welcome to the Australian Data Archive</h1>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    <p>
     	&nbsp;</p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The Australian Data Archive (ADA) provides a national service for the collection and preservation of digital research data and to make these data available for secondary analysis by academic researchers and other users. </span></span></p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The ADA is comprised of six sub-archives:</span></span></p>
-    <ul style="margin: 0px; padding: 0px 0px 0px 20px; font-size: 11px;">
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Social Science</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Historical</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Indigenous</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Longitudinal</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 10px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA International</span></span></li>
+    <p>
+    	The Australian Data Archive (ADA) provides a national service for the collection and preservation of digital research data and to make these data available for secondary analysis by academic researchers and other users. </p>
+    <p>
+    	The ADA is comprised of six sub-archives:</p>
+    <ul>
+    	<li>
+    		ADA Social Science</li>
+    	<li>
+    		ADA Historical</li>
+    	<li>
+    		ADA Indigenous</li>
+    	<li>
+    		ADA Longitudinal</li>
+    	<li>
+    		ADA Qualitative</li>
+    	<li>
+    		ADA International</li>
     </ul>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The archive is provided by a consortium of leading national Australian universities, managed by the Australian National University (ANU) and including nodes around Australia, at the University of Melbourne, University of Queensland, University of Technology Sydney and University of Western Australia.</span></span></p>
+    <p>
+    	The archive is provided by a consortium of leading national Australian universities, managed by the Australian National University (ANU) and including nodes around Australia, at the University of Melbourne, University of Queensland, University of Technology Sydney and University of Western Australia.</p>
 
   breakout_box: |
     <h2>
@@ -282,14 +282,14 @@ pages_010:
   description: 
   author_id: "1"
   body: |
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    <p>
     	&nbsp;</p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative provides specialist data archiving and access services to qualitative researchers. We can offer assistance to researchers at all stages of the research process, from developing grant applications that incorporate plans for data archiving, to negotiating ethical challenges arising from data archiving, and preparing data for deposition into the archive.</span></span></p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    <p>
+    	ADA Qualitative provides specialist data archiving and access services to qualitative researchers. We can offer assistance to researchers at all stages of the research process, from developing grant applications that incorporate plans for data archiving, to negotiating ethical challenges arising from data archiving, and preparing data for deposition into the archive.</p>
+    <p>
     	&nbsp;</p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative aims to facilitate data sharing among qualitative researchers under rigorous access and use policies determined by the depositor. Data can be deposited in virtually any format, including document, audio and video files. The integration of qualitative data into the ADA network more broadly also means researchers using mixed methods combining quantitative and qualitative data will be able to keep their data together in the one archive. We also provide guidelines for data users in areas such as citation of archived datasets in published papers and designing a project methodology based on the use of secondary data.</span></span></p>
+    <p>
+    	ADA Qualitative aims to facilitate data sharing among qualitative researchers under rigorous access and use policies determined by the depositor. Data can be deposited in virtually any format, including document, audio and video files. The integration of qualitative data into the ADA network more broadly also means researchers using mixed methods combining quantitative and qualitative data will be able to keep their data together in the one archive. We also provide guidelines for data users in areas such as citation of archived datasets in published papers and designing a project methodology based on the use of secondary data.</p>
 
   breakout_box: ""
   parent_id: 
@@ -311,7 +311,7 @@ pages_011:
     <p>
     	&nbsp;</p>
     <p>
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA International provides a central point of access for links to international data sources around the world. Through ADA International, you can gain access to major international data holdings such as national data archives in Europe, North America and elsewhere, and time series data held by organisations such as the OECD, United Nations and the World Bank.</span></span></p>
+    	ADA International provides a central point of access for links to international data sources around the world. Through ADA International, you can gain access to major international data holdings such as national data archives in Europe, North America and elsewhere, and time series data held by organisations such as the OECD, United Nations and the World Bank.</p>
   breakout_box: ""
   parent_id: 
   archive_id: "6"
@@ -329,38 +329,38 @@ pages_012:
   description: 
   author_id: "1"
   body: |
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The Australian Data Archive (ADA) is a consortium of leading national Australian universities, managed by the Australian National University (ANU). ADA was established at the ANU in 1981 with a brief to provide a national service for the collection and preservation of computer readable data relating to social, political and economic affairs and to make these data available for further analysis.</span></span></p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">A team of professional data archivists, advised by a panel of leading social scientists, provides both stewardship and outreach services to the Australian community. The archive:</span></span></p>
-    <ul style="margin: 0px; padding: 0px 0px 0px 20px; font-size: 11px;">
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">acquires, documents, preserves and disseminates data online to a broad range of social science researchers in the university, government, and other sectors</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">provides the only comprehensive social science data collection in Australia, with a catalogue of around 2070 data sets</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">holds data from Australian surveys, opinion polls and censuses and includes data from other countries within the Asia Pacific region</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">is continually expanding and diversifying its collection</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">provides specialist services within specific subject areas, including Indigenous studies, electoral behaviour, criminology and some humanities disciplines, and within specific data types, including quantitative, qualitative, time series and panel data, and historical statistics</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">locates and manages access to overseas social science data sets required by Australian based researchers</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">adopts, develops and applies standards in line with international best practice</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">belongs to international organisations (such as the International Federation of Data Organizations and the International Association of Social Science Information Service and Technology) and plays a major role in cross-national collaborative projects</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 10px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">plays an important role on behalf of the Australian Research Council (ARC) through the management and dissemination of ARC funded data collections arising from Discovery and Linkage grants</span></span></li>
+    <p>
+    	The Australian Data Archive (ADA) is a consortium of leading national Australian universities, managed by the Australian National University (ANU). ADA was established at the ANU in 1981 with a brief to provide a national service for the collection and preservation of computer readable data relating to social, political and economic affairs and to make these data available for further analysis.</p>
+    <p>
+    	A team of professional data archivists, advised by a panel of leading social scientists, provides both stewardship and outreach services to the Australian community. The archive:</p>
+    <ul>
+    	<li>
+    		acquires, documents, preserves and disseminates data online to a broad range of social science researchers in the university, government, and other sectors</li>
+    	<li>
+    		provides the only comprehensive social science data collection in Australia, with a catalogue of around 2070 data sets</li>
+    	<li>
+    		holds data from Australian surveys, opinion polls and censuses and includes data from other countries within the Asia Pacific region</li>
+    	<li>
+    		is continually expanding and diversifying its collection</li>
+    	<li>
+    		provides specialist services within specific subject areas, including Indigenous studies, electoral behaviour, criminology and some humanities disciplines, and within specific data types, including quantitative, qualitative, time series and panel data, and historical statistics</li>
+    	<li>
+    		locates and manages access to overseas social science data sets required by Australian based researchers</li>
+    	<li>
+    		adopts, develops and applies standards in line with international best practice</li>
+    	<li>
+    		belongs to international organisations (such as the International Federation of Data Organizations and the International Association of Social Science Information Service and Technology) and plays a major role in cross-national collaborative projects</li>
+    	<li>
+    		plays an important role on behalf of the Australian Research Council (ARC) through the management and dissemination of ARC funded data collections arising from Discovery and Linkage grants</li>
     </ul>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">As well as the central management at the ANU, archive nodes have been progressively established across the country. These currently include The University of Queensland, the University of Western Australia, the University of Technology, Sydney and the University of Melbourne. These nodes provide a national coverage of specialist services and thematic archives with particular foci.</span></span></p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The ANU Supercomputer Facility provides the online data services and supporting infrastructure, and develops this cyberinfrastructure for the needs of the consortium.</span></span></p>
+    <p>
+    	As well as the central management at the ANU, archive nodes have been progressively established across the country. These currently include The University of Queensland, the University of Western Australia, the University of Technology, Sydney and the University of Melbourne. These nodes provide a national coverage of specialist services and thematic archives with particular foci.</p>
+    <p>
+    	The ANU Supercomputer Facility provides the online data services and supporting infrastructure, and develops this cyberinfrastructure for the needs of the consortium.</p>
 
   breakout_box: |
     <p>
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></span></p>
+    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
   parent_id: 
   archive_id: "7"
@@ -425,13 +425,13 @@ pages_015:
   description: 
   author_id: "1"
   body: |
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">All visitors to the ADA Data Catalogue can browse and search the catalogue, view study and variable documentation (including frequencies) and download related material (questionnaires, codebooks, etc). Registered users can also analyse and visualise most data online and users who have completed the relevant undertaking form(s) can download entire studies or subsets of variables in a range of formats.</span></span></p>
-    <ul style="margin: 0px; padding: 0px 0px 0px 20px; font-size: 11px;">
-    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Data Catalogue (HYPERLINK)</span></span></li>
-    	<li style="margin: 0px; padding: 0px 0px 10px; list-style-type: square; display: list-item;">
-    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">Search data (HYPERLINK)</span></span></li>
+    <p>
+    	All visitors to the ADA Data Catalogue can browse and search the catalogue, view study and variable documentation (including frequencies) and download related material (questionnaires, codebooks, etc). Registered users can also analyse and visualise most data online and users who have completed the relevant undertaking form(s) can download entire studies or subsets of variables in a range of formats.</p>
+    <ul>
+    	<li>
+    		ADA Data Catalogue (HYPERLINK)</li>
+    	<li>
+    		Search data (HYPERLINK)</li>
     </ul>
 
   breakout_box: ""
@@ -949,10 +949,10 @@ pages_037:
   body: |-
     <p>
     	&nbsp;</p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Social Science provides a national service for the preservation of and access to data relating to social, political and economic issues, and is the primary facility for the storage of Australian data.. ADA Social Science currently holds over 2000 separate datasets from a variety of academic, government and non-government organisations, covering the spectrum of Australian and international social sciences.</span></span></p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Social Science provides access to a variety of forms of data, including survey (unit record) data, census tables and qualitative and mixed method study content such as interview and focus group materials. ADA Social Science also provides services for the geographical visualization of materials through our GIS visualization facility.</span></span></p>
+    <p>
+    	ADA Social Science provides a national service for the preservation of and access to data relating to social, political and economic issues, and is the primary facility for the storage of Australian data.. ADA Social Science currently holds over 2000 separate datasets from a variety of academic, government and non-government organisations, covering the spectrum of Australian and international social sciences.</p>
+    <p>
+    	ADA Social Science provides access to a variety of forms of data, including survey (unit record) data, census tables and qualitative and mixed method study content such as interview and focus group materials. ADA Social Science also provides services for the geographical visualization of materials through our GIS visualization facility.</p>
   breakout_box: ""
   parent_id: 
   archive_id: "1"
@@ -1465,16 +1465,16 @@ pages_056:
   description: 
   author_id: "1"
   body: |
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative is managed by a team of qualitative researchers working at The University of Queensland and The University of Sydney with a broader reference panel from The University of Melbourne, The University of Technology Sydney, The University of Western Australia and the Australian National University. The sub-archive has been developed in close consultation with the qualitative research community to ensure that the ethical, epistemological and practical issues relating to archiving and reusing qualitative data, and the needs, concerns and methodological approaches of researchers, are taken into full consideration.</span></span></p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    <p>
+    	ADA Qualitative is managed by a team of qualitative researchers working at The University of Queensland and The University of Sydney with a broader reference panel from The University of Melbourne, The University of Technology Sydney, The University of Western Australia and the Australian National University. The sub-archive has been developed in close consultation with the qualitative research community to ensure that the ethical, epistemological and practical issues relating to archiving and reusing qualitative data, and the needs, concerns and methodological approaches of researchers, are taken into full consideration.</p>
+    <p>
     	&nbsp;</p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The main function of ADA Qualitative is to archive digital qualitative data generated through social science research, broadly defined. What makes it distinct from other digitized, document-based holdings, such as those already established for Arts and Humanities scholars, is that it will specialize in primary data generated through the research process (i.e. through interviews, observation or focus groups) rather than existing written texts or historical records. Some of these existing texts may end up in the sub-archive but usually as part of a larger data set based on primary data collection.</span></span></p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    <p>
+    	The main function of ADA Qualitative is to archive digital qualitative data generated through social science research, broadly defined. What makes it distinct from other digitized, document-based holdings, such as those already established for Arts and Humanities scholars, is that it will specialize in primary data generated through the research process (i.e. through interviews, observation or focus groups) rather than existing written texts or historical records. Some of these existing texts may end up in the sub-archive but usually as part of a larger data set based on primary data collection.</p>
+    <p>
     	&nbsp;</p>
-    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
-    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">As a digital archive, we are not in a position to store non-digital data such as audio and video cassettes or hand-written fieldnotes. However, advice can be provided to researchers on digitization processes.</span></span></p>
+    <p>
+    	As a digital archive, we are not in a position to store non-digital data such as audio and video cassettes or hand-written fieldnotes. However, advice can be provided to researchers on digitization processes.</p>
 
   breakout_box: ""
   parent_id: 
