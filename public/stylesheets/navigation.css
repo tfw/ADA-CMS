@@ -51,6 +51,7 @@
 
 .content nav.archive_menu ul{
 	padding: 0px;
+	font-size: 11px;
 }
 .content nav.archive_menu ul li{
 	border-bottom: 1px solid #CCC;
