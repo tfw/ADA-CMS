@@ -1,4 +1,6 @@
 class CreateVariables < ActiveRecord::Migration
+      extend Inkling::Util::MigrationHelpers
+  
   def self.up
     create_table :variables do |t|
       t.integer   :study_id #don't confuse with stdy_id - a string from nesstar
@@ -60,6 +62,7 @@ class CreateVariables < ActiveRecord::Migration
       t.timestamps
     end
 
+    add_foreign_key(:variables, :study_id, :studies)
   end
 
   def self.down

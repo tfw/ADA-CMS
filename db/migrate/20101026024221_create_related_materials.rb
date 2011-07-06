@@ -148,7 +148,6 @@ class CreateRelatedMaterials < ActiveRecord::Migration
     end
     
     add_foreign_key(:related_materials, :study_id, :studies)
-    
   end
 
   def self.down

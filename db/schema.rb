@@ -148,6 +148,8 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
     t.datetime "updated_at"
   end
 
+  add_index "inkling_paths", ["slug"], :name => "index_inkling_paths_on_slug"
+
   create_table "inkling_permissions", :force => true do |t|
     t.integer  "type_id"
     t.integer  "role_id",           :null => false
