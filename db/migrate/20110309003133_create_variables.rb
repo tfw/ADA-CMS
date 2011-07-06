@@ -2,6 +2,7 @@ class CreateVariables < ActiveRecord::Migration
   def self.up
     create_table :variables do |t|
       t.integer   :study_id #don't confuse with stdy_id - a string from nesstar
+      t.string    :nesstar_id #maps to varchar id in variableejb mysql table
       t.text      :additivity
       t.text      :comment
       t.text      :concept

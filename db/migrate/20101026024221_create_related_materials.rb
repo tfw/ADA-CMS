@@ -3,7 +3,8 @@ class CreateRelatedMaterials < ActiveRecord::Migration
       
   def self.up
     create_table :related_materials do |t|
-      t.integer :study_id
+      t.integer   :study_id
+      t.string    :nesstar_id #maps to varchar id in egmsresourceejb mysql table
       t.text      :abstract_text
       t.text      :accessibility
       t.text      :addressee
