@@ -10,4 +10,8 @@ inkling_types.yml
 news.yml
 archives.yml
 pages.yml
+archive_catalogs.yml
+studies.yml
+archive_studies.yml
+archive_catalog_studies.yml
 
