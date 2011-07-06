@@ -14,7 +14,6 @@ class Staff::ArchivesController < Staff::BaseController
     #1 find the moved page
     moved_page_id = params[:moved].gsub("page-options-", "")
     moved_page = Page.find(moved_page_id)
-
     page_ids = params[:page_order].split(",")
     page_ids.collect! {|i| i.gsub("page-options-", "").to_i}
 

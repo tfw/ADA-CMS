@@ -5,6 +5,7 @@ describe Staff::ArchivesController do
   before(:each) do
     @admin = make_user(:administrator)
     sign_in @admin
+    session[:openid_checked] = true
   end 
   
   describe "urls via slugs" do
