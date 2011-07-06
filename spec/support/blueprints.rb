@@ -70,9 +70,14 @@ ArchiveCatalog.blueprint do
   title
 end
 
+def gen_stdy_id
+  @@stdy_inc ||= 0
+  @@stdy_inc += 1
+end
+
 Study.blueprint do
   label Sham.name
-  stdy_id "au.edu.anu.ada.ddi#{Random.rand(1000)}"
+  stdy_id "au.edu.anu.ada.ddi.#{gen_stdy_id}"
   abstract_text Sham.body
 end
 
