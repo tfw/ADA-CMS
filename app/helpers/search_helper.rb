@@ -72,13 +72,13 @@ module SearchHelper
       for word in bits
         line_break << word
         i+= 1
-        if i == limit
+        if i == limit + 1
           line_break << "<br/>"
           i = 0
         end
       end
     else
-      title
+      return title
     end
     line_break.join " "
   end
