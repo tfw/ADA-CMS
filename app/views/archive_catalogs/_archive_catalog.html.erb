@@ -1,10 +1,6 @@
   <li> 
-    <a href="<%= browse_archive_catalog_path(:archive_catalog_id => archive_catalog.id) %>" rel="explr-ajax"><%= archive_catalog.title %></a>
+    <a href="<%= browse_archive_catalog_path(:archive_catalog_id => archive_catalog.id) %>" rel="explr-ajax"><%= archive_catalog.title %><%= archive_catalog.title %><%= archive_catalog.title %><br/><%= archive_catalog.title %><%= archive_catalog.title %><%= archive_catalog.title %>(<%= archive_catalog.children.size %>)</a>
   <ul>
-    <% for archive_catalog_study in archive_catalog.archive_catalog_studies %>
-    	<li> <a href="<%= browse_archive_catalog_path(:archive_catalog_id => archive_catalog.id, :archive_catalog_study_id => archive_catalog_study.id) %>" rel="explr-ajax"> <%= archive_catalog_study.study.ddi_id%> </a> 
-		</li>
-    <% end %>
 
     <%= render :partial => "archive_catalog", :collection => archive_catalog.children %>
   </ul>

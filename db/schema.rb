@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
 
   create_table "archive_catalogs", :force => true do |t|
     t.string   "title",            :null => false
+    t.string   "label",            :null => false
     t.integer  "archive_id",       :null => false
     t.integer  "catalog_position"
     t.integer  "parent_id"

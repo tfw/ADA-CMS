@@ -31,7 +31,8 @@ class ArchiveCatalog < ActiveRecord::Base
     
     args = {:title => hash["objectId"], 
                       :archive_id => archive.id, 
-                      :catalog_position => hash["predicateIndex"]}
+                      :catalog_position => hash["predicateIndex"],
+                      :label => hash[:label]}
                       
     args[:parent_id] = parent.id if parent
 
