@@ -52,6 +52,8 @@ Ada::Application.routes.draw do
   get '/search', :to => "searches#transient", :path => "search", :as => 'transient_search' #path is necessary, see http://stackoverflow.com/questions/4134606/routing-trouble-on-rails-3-related-to-singular-plural
 
   get 'browse_archive_catalog', :to => "archive_catalogs#browse"
+  get '/ada/browse', :to => "archive_catalogs#show", :defaults => {:id => nil}
+  get '/browse', :to => "archive_catalogs#show", :defaults => {:id => nil}
   
   inkling_match(:archive_studies)
   inkling_match(:archive_catalogs)
@@ -60,7 +62,7 @@ Ada::Application.routes.draw do
   inkling_match(:documents)
   inkling_match(:images)
   inkling_match("inkling/feeds")
-  
+
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
 end
 
