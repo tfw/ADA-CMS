@@ -29,7 +29,8 @@
 	         </form>
 	         <br/>
 	         <% if current_user.searches.any? %>
-	           <%= link_to 'Saved searches', user_searches_path(current_user) %> (<%= link_to current_user.searches.size, user_searches_path(current_user) %>)
+	           <%= link_to 'Saved searches', user_searches_path(current_user) %> 
+	           (<span id="save-search-count"><%= link_to current_user.searches.size, user_searches_path(current_user) %></span>)
            <% end %> 
 				<% end %>
 			</div>

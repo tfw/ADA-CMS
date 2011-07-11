@@ -3,6 +3,7 @@
 	$("#save-search-response").html("Saved").fadeOut(5000);
 	$("#save-search-area").html("<a href='<%= @search_path %>'>Last saved search (<%= @search.title%>)</a>");
 	$("#save-search-area").html("<a href='<%= @search_path %>?clear=true'>Clear</a><br/>");
+	$("#save-search-count").html("<a href='<%= @saved_search_path %>'><%= current_user.searches.size %></a>");
 <% else %>
 	$("#save-search-response").html(@search.errors.full_messages.first).fadeOut(5000);
 <% end %> 
