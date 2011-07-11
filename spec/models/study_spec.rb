@@ -16,6 +16,7 @@ describe Study, "The local respresentation of an ASSDA study" do
       study.abstract_text.should == data["abstractText"]
       mod_data = data
       mod_data["abstractText"] = "foo"
+      mod_data["creationDate"] = Time.now
       study = Study.create_or_update_from_nesstar(mod_data)
       study.abstract_text.should == "foo"
     end
