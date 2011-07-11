@@ -56,12 +56,28 @@
 
 /* Component containers
 ----------------------------------*/
-.ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
+.ui-widget {
+	font-size: 1.1em;
+}
 .ui-widget .ui-widget { font-size: 1em; }
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
-.ui-widget-content { border: 1px solid #a6c9e2; background: #fcfdfd 50% bottom repeat-x; color: #222222; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px none #a6c9e2;
+	color: #222222;
+	background-repeat: repeat-x;
+	background-position: 50% bottom;
+}
 .ui-widget-content a { color: #222222; }
-.ui-widget-header { border: 1px solid #4297d7; background: #2191c0 50% 50% repeat-x; color: #eaf5f7; font-weight: bold; }
+.ui-widget-header {
+	border: 1px solid #4297d7;
+	color: #eaf5f7;
+	font-weight: bold;
+	background-color: #F6F6F6;
+	background-repeat: repeat-x;
+	background-position: 50% 50%;
+}
 .ui-widget-header a { color: #eaf5f7; }
 
 /* Interaction states
@@ -117,8 +133,27 @@
 .ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
 .ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
 .ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
-.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
-.ui-accordion .ui-accordion-content-active { display: block; }
+.ui-accordion .ui-accordion-content {
+	border-top: 0;
+	position: relative;
+	top: 1px;
+	overflow: auto;
+	display: none;
+	zoom: 1;
+}
+.ui-accordion .ui-accordion-content-active {
+	display: block;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #EDEDED;
+	border-left-color: #EDEDED;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EDEDED;
+	border-top-style: none;
+}
 
 /*
  * jQuery UI Menu 1.8.9
@@ -159,5 +194,3 @@
 	font-weight: normal;
 	margin: -1px;
 }
-
-

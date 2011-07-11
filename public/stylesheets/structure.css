@@ -1,10 +1,11 @@
+/* CSS Document */
+
 @charset "ISO-8859-1";
 header.admin{
 	background: url(../images/structure/bg_masthead_admin.gif) repeat-x!important;
 	height: 180px;
 	display: block;
 }
-/* CSS Document */
 
 header {
 	background: url(../images/structure/bg_masthead.gif) repeat-x;
@@ -36,8 +37,8 @@ header {
 	-moz-border-radius-bottomright: 10px;
 	border-bottom-right-radius: 10px;
 	padding: 10px;
-	margin-right: 40px;
 	position: relative;
+	margin-right: 40px;
 }
 .login h1 {
 	padding-top: 8px;
@@ -45,6 +46,9 @@ header {
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #666;
+	border-bottom-width: 1px!important;
+	border-bottom-style: solid;
+	border-bottom-color: #bebcbc;
 }
 .Pagelogin {
 	height: 90px;
@@ -86,15 +90,16 @@ header {
 
 .subnav {
 	background: #F1F1F1;
-	border-top: 8px solid #999;
 	width: 100%;
 	float: left;
 	margin: 0px;
-	padding: 0px;
 	display: block;
 	position: relative;
 	z-index: 2;
-	height: 27px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
 }
 .breadcrumbs {
 	background: #FFF;
@@ -146,12 +151,10 @@ article {
 
 .main_admin {
 	display: block;
-	float: left;
-	margin-right: 40px;
-	padding-left: 20px;
+	padding-left: 0px;
 	position: relative;
 	padding-bottom: 110px;
-
+	float: none;
 }
 
 
@@ -160,7 +163,6 @@ aside{
 	display: block;
 	width: 200px;
 	float: right;
-	padding: 10px 20px;
 	-moz-box-shadow:0px 2px 2px #666;
 	-webkit-box-shadow:0px 2px 2px #666;
 	box-shadow:0px 2px 2px #666;
@@ -176,14 +178,19 @@ aside{
 	-webkit-border-top-right-radius: 8px;
 	-moz-border-radius-topright: 8px;
 	border-top-right-radius: 8px;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 20px;
 	margin-left: 20px;
+	margin-right: 0px !important;
 	background: #eae9ea;
 	background: -moz-linear-gradient(top, #eae9ea, #f8f8f8);
 	background: -webkit-gradient(linear, left top, left bottom, from(#eae9ea), to(#f8f8f8));
 	border: 1px solid #FFF;
 	position: relative;
+	padding-top: 7px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+	padding-left: 20px;
 }
 
 .partners {
@@ -209,7 +216,6 @@ footer {
 	width: 100%;
 }
 
-
 footer p {
 	font-size: 10px;
 	line-height: 14px;
@@ -218,6 +224,25 @@ footer p {
 #admin_footer {
 	height: 110px;
 	overflow: hidden;
+}
+.footer_plain {
+	bottom: 0px;
+	height: 117px;
+	left: 0px;
+	overflow: auto;
+	position: absolute;
+	display: block;
+	width: 100%;
+}
+.footer_small {
+	bottom: 0px;
+	left: 0px;
+	overflow: auto;
+	position: absolute;
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 0px;
 }
 .captions  {
 	width: 100%;
@@ -246,14 +271,13 @@ footer p {
 	padding-bottom: 15px;
 	float: left;
 	width: 100%;
-
 }
 .logos img  {
 	padding-right: 10px;
 	border-right: 1px solid #CCC;
 	padding-left: 10px;
 }
-.partnersFirst {
+.search-border {
 	margin-left: 40px;
 	padding-left: 0px;
 }
@@ -318,6 +342,12 @@ footer p {
 	width: 430px;
 	margin-right: 20px;
 }
+.crime .content section.main aside {
+	float: left;
+	margin-left: 0px;
+	width: 430px;
+	margin-right: 20px;
+}
 .datasets {
 	width: 230px!important;
 	margin-right: 0px;
@@ -328,7 +358,7 @@ footer p {
 	padding-bottom: 10px;
 	color: #000;
 }
-.logged_in {
+#search-results-ext tr td table tr td{
 	height: 10px;
 	width: 270px;
 	float: left;
@@ -336,17 +366,55 @@ footer p {
 	border-bottom: 1px solid #999;
 	padding-bottom: 10px;
 }
+
+.logged_in {
+	border-bottom-color: #BFBFBF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-bottom: 2px;
+}
+
 .logged_in a {
 	float: right;
+	background: #666;
+	color: #CCC;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-right: 60px!important;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-decoration: none;
+	}
+
+.logged_in a:hover {
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(#666, #000);
+	background: linear-gradient(#666, #000);
 }
+	
 .logged_in span {
 	font-weight: bold;
 	margin-right: 3px;
 }
 
 .breakout {
-	float: right !important;
-	width: 200px !important;
-	margin-right: 0px !important
-    margin-top: 0px !important;
+	float: right!important;
+	width: 200px!important;
+	margin-right: 0px;
+    margin-top: 0px;
+}
+
+.partnersFirst {
+	margin-left: 40px;
+	padding-left: 0px;
 }
