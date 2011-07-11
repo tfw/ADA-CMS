@@ -50,7 +50,7 @@ module ArchiveStudiesHelper
   
   def related_material_url(related_material)
     uri = related_material.uri.gsub("..", "")
-    "#{NESSTAR}#{uri}"
+    "#{NESSTAR_SERVER}#{uri}"
   end
   
   def related_material_comment_then_file_name(related_material)
