@@ -1,3 +1,6 @@
+# coding: utf-8
+require 'ruby-debug'
+
 class Integrations::ArchiveCatalogs
   
   def self.create_or_update(statement, archive_id) 
@@ -7,12 +10,12 @@ class Integrations::ArchiveCatalogs
 
     if data["objectType"] == "fCatalog"
       catalog_ejb = Nesstar::CatalogEJB.find_by_id(statement.objectId)
-      
-      # if catalog_ejb.label.index("\xA0") # - ¤ (ASCII 164) delimits an en string - a stupid i18n strategy in Nesstar
-      #   data[:label] = catalog_ejb.label.split("\xA0").last
-      # else
-      #   data[:label] = catalog_ejb.label
-      # end
+
+      if catalog_ejb.label.index("¤") 
+        data[:label] = catalog_ejb.label.split("¤").last
+      else
+        data[:label] = catalog_ejb.label
+      end
   
       data[:label] = catalog_ejb.label
               
