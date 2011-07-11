@@ -17,7 +17,7 @@
 
 <section id="browse-results">
   <p>	
-	  Catalog: <%= catalog.label %>
+	  Catalog: <%= catalog ? catalog.label : @current_archive.name %>
   </p>
   
 	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>

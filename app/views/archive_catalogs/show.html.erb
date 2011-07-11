@@ -1,9 +1,3 @@
-<% content_for(:js) do %>
-  $(document).ready(function() {    
-    $('#browse-results').html("Please select an archive from the left");
-  });
-<% end %>
-
 <% content_for(:sidenav) do
     %>
       <%= render :partial => 'catalog_side_nav' %>
@@ -18,4 +12,5 @@
 <% end %>
 
 <div id="browse-results">
+  <%= render :partial => "browse" %>
 </div>

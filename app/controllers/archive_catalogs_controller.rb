@@ -10,6 +10,8 @@ class ArchiveCatalogsController < ContentController
     @catalog = params[:id] ? ArchiveCatalog.find_by_id(params[:id]) : nil
     @current_archive = @catalog ? @catalog.archive : Archive.ada
     @title = @catalog ? @catalog.title : "Browse ADA Catalogs"
+    @archive_catalog_studies = @catalog ? @catalog.archive_catalog_studies : []
+
     respond_with(@catalog)
   end  
   
