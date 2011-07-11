@@ -24,7 +24,7 @@ class Variable < ActiveRecord::Base
 
     if var.nil?
       var = Variable.create!(converted_keys)
-    else
+    elsif converted_keys[:creation_date] > var.updated_at
       var.update_attributes(converted_keys)
     end
     

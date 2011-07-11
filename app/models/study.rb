@@ -57,58 +57,12 @@ class Study < ActiveRecord::Base
 
     if study.nil?
       study = Study.create!(converted_keys)
-    else
+    elsif converted_keys[:creation_date] > study.updated_at
       study.update_attributes(converted_keys)
     end
     
     study
-  end
- 
-  #it would be ideal to move this logic from search_controller to study
-  #but an obvious performance hit occurs when refactoring from
-  #instance based searches on the controller to class level
-  #calls in study!
-  
-  # def self.archive_search(archive, term, filters = {})
-  #   Sunspot.search(Study) do ;
-  #     keywords term do 
-  #       highlight :label, :abstract, :comment
-  #     end
-  #     
-  #     with(:archive_ids).any_of [archive.id];
-  #     
-  #     filters.each do |facet|
-  #       facet.each do |name, value|
-  #         with(name.to_sym, value)
-  #       end
-  #     end
-  #     
-  #     facet :data_kind
-  #     facet :sampling_abbr
-  #     facet :collection_mode_abbr
-  #     facet :contact_affiliation
-  #     facet :collection_mode_abbr
-  #     facet :geographical_cover
-  #     facet :geographical_unit
-  #     facet :analytic_unit
-  #     facet :creation_date
-  #     facet :series_name
-  #     facet :study_auth_entity
-  #   end    
-  # end
-  # 
-  # #we configure this manually now to ensure the archives are sorted by
-  # #the mockup logic (which isnt natural). 
-  # def self.search_globally
-  #   {Archive.ada => self.archive_search(Archive.ada, @term),
-  #    Archive.social_science => self.archive_search(Archive.social_science, @term),
-  #    Archive.historical => self.archive_search(Archive.historical, @term),
-  #    Archive.indigenous => self.archive_search(Archive.indigenous, @term),
-  #    Archive.longitudinal => self.archive_search(Archive.longitudinal, @term),
-  #    Archive.qualitative => self.archive_search(Archive.qualitative, @term),
-  #    Archive.international => self.archive_search(Archive.international, @term)}
-  # end
-  
+  end  
   
   def title
     label
