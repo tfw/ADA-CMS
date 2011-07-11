@@ -15,7 +15,6 @@
 	});
 </script>
 
-<section id="browse-results">
   <p>	
 	  Catalog: <%= catalog ? catalog.label : @current_archive.name %>
   </p>
@@ -48,4 +47,3 @@
       <%= render(:partial => "/shared/study_ext_tr", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 		<% end %>
 	</table>
-</section>
