@@ -1,31 +1,14 @@
 <% content_for :js do %>
   $('#tree-<%= archive.slug %>').explrTree({
-  	ajaxContainerId	: 'study-browser',
+  	ajaxContainerId	: 'browse-results',
   	treeHeight	: 'auto',
-    <!-- treeWidth  : 450, -->
-  	ajaxLoadingText : '<p>loading data..</p>',
-  	folderTooltip	: 'click to expand/collapse'
+  	ajaxLoadingText : '<p> Loading studies ... </p>',
   });	  
-  
-  $('#fake-children a').click(function() {
-    $('#browse-results').empty();
-    $('#browse-results').load($(this).attr('href')); // Load content based on href
-    return false;
-  });
-  
-  $(document).ready(function() {    
-    $('#browse-results').html("Please select an archive from the left");
-  });
 <% end %>
 
 <h3><a href="#"><%= archive.name %></a></h3>
 <div>
   <% if top_level_catalog %>
-  <div id="fake-children">
-    <% for archive_catalog_study in top_level_catalog.archive_catalog_studies %>
-    	<li> <a href="<%= browse_archive_catalog_path(:archive_catalog_id => top_level_catalog.id, :archive_catalog_study_id => archive_catalog_study.id) %>" rel="explr-ajax"> <%= archive_catalog_study.study.ddi_id %> </a> </li>
-    <% end %>
-  </div>
   <ul id='tree-<%= archive.slug %>'>
     <%= render top_level_catalog.children %>
   </ul>

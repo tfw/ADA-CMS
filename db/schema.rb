@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
 
   create_table "archive_catalogs", :force => true do |t|
     t.string   "title",            :null => false
+    t.string   "label",            :null => false
     t.integer  "archive_id",       :null => false
     t.integer  "catalog_position"
     t.integer  "parent_id"
@@ -148,6 +149,8 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
     t.datetime "updated_at"
   end
 
+  add_index "inkling_paths", ["slug"], :name => "index_inkling_paths_on_slug"
+
   create_table "inkling_permissions", :force => true do |t|
     t.integer  "type_id"
     t.integer  "role_id",           :null => false
@@ -213,6 +216,7 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
 
   create_table "related_materials", :force => true do |t|
     t.integer  "study_id"
+    t.string   "nesstar_id"
     t.text     "abstract_text"
     t.text     "accessibility"
     t.text     "addressee"
@@ -474,6 +478,7 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
 
   create_table "variables", :force => true do |t|
     t.integer  "study_id"
+    t.string   "nesstar_id"
     t.text     "additivity"
     t.text     "comment"
     t.text     "concept"

@@ -6,19 +6,21 @@ class Variable < ActiveRecord::Base
   # validates_presence_of :study_id #it seems that not all variables are related to a study
 
   def self.create_or_update_from_nesstar(variable)
-    var = Variable.find_by_stdy_id(variable.studyID)
+    var = Variable.find_by_stdy_id_and_nesstar_id(variable.studyID, variable.id)
     study =  Study.find_by_stdy_id(variable.studyID)
     
     attributes = variable.attributes
     converted_keys = {}
     attributes.each do |k,v|
-      k = "stdyID" if k == "studyID" #for the sake of consistency with the studies table
+      k = "stdyID" if k == "studyID"  #for the sake of consistency with the studies table
+      
       next if k == "dateAquired"
       
       converted_keys[k.underscore.to_sym] = v
     end
     
     converted_keys[:study_id] = study.id
+    converted_keys[:nesstar_id] = variable.id
 
     if var.nil?
       var = Variable.create!(converted_keys)

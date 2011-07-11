@@ -1,4 +1,6 @@
 class CreateSearches < ActiveRecord::Migration
+    extend Inkling::Util::MigrationHelpers
+        
   def self.up
     create_table :searches do |t|
       t.integer :user_id
@@ -8,6 +10,8 @@ class CreateSearches < ActiveRecord::Migration
       t.string :title
       t.timestamps
     end
+    
+    add_foreign_key(:searches, :user_id, :users)
   end
 
   def self.down

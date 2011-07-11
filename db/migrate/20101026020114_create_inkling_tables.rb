@@ -23,6 +23,8 @@ class CreateInklingTables < ActiveRecord::Migration
       t.timestamps
     end    
     
+    add_index(:inkling_paths, :slug)
+    
     create_table :inkling_types do |t|
       t.string :klass_name
       t.timestamps

@@ -37,6 +37,19 @@ namespace :integrate do
       Integrations::Variables.create_or_update(Archive.longitudinal)
     end    
   end
+
+  task :some => :environment do
+    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
+    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("social-science"), Archive.social_science.id)
+    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("historical"), Archive.historical.id)
+    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("longitudinal"), Archive.longitudinal.id)
+    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("qualitative"), Archive.qualitative.id)
+    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("international"), Archive.international.id)
+    Integrations::RelatedMaterials.create_or_update
+    vars_in_archive(Archive.indigenous)
+    vars_in_archive(Archive.qualitative)
+    vars_in_archive(Archive.international)
+  end
   
   task :everything => :environment do
     Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)

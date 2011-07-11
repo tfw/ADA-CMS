@@ -2,13 +2,11 @@ require 'machinist/active_record'
 require 'sham'
 require 'faker'
 
-# a machinist config for quick data generation
 Sham.created_at { (0..60).to_a.rand.days.ago }
 Sham.body       { Faker::Lorem.sentence }
 Sham.reason     { Faker::Lorem.sentence }
 Sham.name       { Faker::Lorem.sentence }
 Sham.email      { Faker::Internet.email }
-# Sham.email      {"somebody#{Time.now.to_i}@anu.edu.au" }
 Sham.title      { Faker::Lorem.words(2).to_s }
 Sham.word       { Faker::Lorem.words(1).to_s }
 Sham.description  { Faker::Lorem.sentence }
@@ -29,11 +27,6 @@ end
 Inkling::Role.blueprint(:admin) do
   name "administrator"
 end
-
-# Inkling::RoleMembership.blueprint do 
-#   role
-#   user
-# end
 
 ArchiveStudy.blueprint do
   archive_id {(Archive.make).id}
@@ -77,9 +70,14 @@ ArchiveCatalog.blueprint do
   title
 end
 
+def gen_stdy_id
+  @@stdy_inc ||= 0
+  @@stdy_inc += 1
+end
+
 Study.blueprint do
   label Sham.name
-  stdy_id Sham.name
+  stdy_id "au.edu.anu.ada.ddi.#{gen_stdy_id}"
   abstract_text Sham.body
 end
 

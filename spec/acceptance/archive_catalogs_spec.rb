@@ -36,7 +36,8 @@ feature "serving out Archive Catalogs" do
     click_link 'Extended'
   
     for archive_catalog_study in @catalog.archive_catalog_studies
-      page.should have_content first_n_words(30, archive_catalog_study.study.abstract_text)
+      # page.should have_content first_n_words(30, archive_catalog_study.study.abstract_text)
+      page.should have_content archive_catalog_study.study.abstract_text
     end
   end
 

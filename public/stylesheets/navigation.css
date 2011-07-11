@@ -7,6 +7,7 @@
 
 .subnav ul li p {
 	font-weight: bold;
+	font-size: 11px;
 	margin: 0px;
 	padding: 5px 10px 5px 0px;
 }
@@ -50,6 +51,7 @@
 
 .content nav.archive_menu ul{
 	padding: 0px;
+	font-size: 11px;
 }
 .content nav.archive_menu ul li{
 	border-bottom: 1px solid #CCC;

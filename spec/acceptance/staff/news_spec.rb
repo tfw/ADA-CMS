@@ -22,10 +22,6 @@ feature "Creating news" do
     page.should have_content("In archive Social Science")
     click_link("Edit")
     page.should have_button('Update News')
-
-    # Currently, news is published immediately. Check it's visible:
-    visit('/'+Archive.social_science.slug+'/home/')
-    page.should have_content("test news")
   end
 
   scenario "I can delete news" do

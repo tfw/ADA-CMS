@@ -38,6 +38,7 @@ gem 'httparty'
 gem 'delayed_job'
 
 # gem "ruby-debug19" #move this into dev group alone later
+gem 'newrelic_rpm'
 
 group :development, :test do
 	gem "ruby-debug19"

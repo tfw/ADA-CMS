@@ -15,13 +15,8 @@
 	});
 </script>
 
-<section id="browse-results">
-	<div class="float-centre">
-	   pagination ...
-	</div>
-
   <p>	
-	  Catalog: <%= catalog.title %>
+	  Catalog: <%= catalog ? catalog.label : @current_archive.name %>
   </p>
   
 	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
@@ -37,7 +32,7 @@
 				<th>Authoring Entity</th>
 				<th>Year</th>
 				<th>Doc ID</th>
-				<th>Type (Archive?)</th>
+				<th>Archive</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -52,4 +47,3 @@
       <%= render(:partial => "/shared/study_ext_tr", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 		<% end %>
 	</table>
-</section>

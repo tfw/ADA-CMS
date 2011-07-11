@@ -2,12 +2,15 @@ users.yml
 ddi_mappings.yml
 inkling_feed_roles.yml
 inkling_feeds.yml
-inkling_paths.yml
 inkling_permissions.yml
 inkling_roles.yml
 inkling_role_memberships.yml
 inkling_types.yml
+inkling_paths.yml
 news.yml
 archives.yml
 pages.yml
+studies.txt
+archive_studies.txt
+
 
