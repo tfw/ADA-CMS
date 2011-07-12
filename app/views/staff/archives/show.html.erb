@@ -5,7 +5,7 @@
 <%= render_archive_partial(@archive) %>
 
 <fieldset id="page-management">
-  <legend> Page Management (<%= link_to "+", new_staff_archive_page_path(:archive_id => @archive) %>)</legend>
+  <legend> Public Menu: Page (<%= link_to "+", new_staff_archive_page_path(:archive_id => @archive) %>) Link (+)</legend>
   <p>
     Pages: <%= Page.find_all_by_archive_id(@archive).size%>
   </p>
