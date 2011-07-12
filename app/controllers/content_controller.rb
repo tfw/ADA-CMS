@@ -2,13 +2,13 @@ class ContentController < ApplicationController
   
   layout 'content' #this file is created by Inking::Theme (rake install_theme), and written out to tmp/inkling/themes/layouts  
   before_filter :get_archives
-  before_filter :get_ada_pages
+  before_filter :get_ada_menu_items
 
   helper_method :get_atom_feed
   
   protected    
-  def get_ada_pages
-    @ada_parent_pages = Page.archive_root_pages(Archive.ada)
+  def get_ada_menu_items
+    @ada_menu_items = MenuItem.archive_root_menu_items(Archive.ada)
   end
 
   def get_archives

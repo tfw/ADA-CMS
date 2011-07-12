@@ -5,7 +5,7 @@ class Page < ActiveRecord::Base
   acts_as_inkling 'Page'
   
   after_create  :create_menu_item
-  after_update  :update_menu_item
+  after_update  :update_menu_item, :if => "self.menu_item"
 
   belongs_to  :parent, :class_name => "Page"
   has_many    :children, :class_name => "Page", :foreign_key => "parent_id"

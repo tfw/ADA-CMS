@@ -45,6 +45,21 @@ task :create_feeds => :environment do
   end
 end
 
+task :ensure_menu_items => :environment do
+  parent_pages = Page.find_all_by_parent_id(nil)
+  parent_pages.each do |page|
+    menu_items_for_tree(page)
+  end
+end
+
+def menu_items_for_tree(page)
+  MenuItem.create_from_page(page)
+  
+  for child in page.children
+    menu_items_for_tree(child)
+  end  
+end
+
 
 
 

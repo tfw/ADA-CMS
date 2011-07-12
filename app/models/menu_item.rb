@@ -15,9 +15,9 @@ class MenuItem < ActiveRecord::Base
     menu_item = nil
     
     if page.parent
-      menu_item = MenuItem.create(:title => page.title, :uri => page.path.slug, :content => page, :archive => page.archive, :parent => parent_menu_item)
+      menu_item = MenuItem.create(:title => page.title, :uri => page.uri, :content => page, :archive => page.archive, :parent => parent_menu_item)
     else
-      menu_item = MenuItem.create(:title => page.title, :uri => page.path.slug, :archive => page.archive, :content => page)
+      menu_item = MenuItem.create(:title => page.title, :uri => page.uri, :archive => page.archive, :content => page)
     end
     
     menu_item
@@ -25,13 +25,25 @@ class MenuItem < ActiveRecord::Base
   
   def self.update_from_page(page, menu_item)
     if page.parent
-      menu_item.update_attributes(:title => page.title, :uri => page.path.slug, :content => page, :archive => page.archive, :parent => page.parent.menu_item)
+      menu_item.update_attributes(:title => page.title, :uri => page.uri, :content => page, :archive => page.archive, :parent => page.parent.menu_item)
     else
-      menu_item.update_attributes(:title => page.title, :uri => page.path.slug, :content => page, :archive => page.archive)
+      menu_item.update_attributes(:title => page.title, :uri => page.uri, :content => page, :archive => page.archive)
     end
     
     menu_item
   end
+  
+  def self.archive_root_menu_items(archive)
+    roots = MenuItem.roots
+    archive_roots = []
+
+    for menu_item in roots
+      archive_roots << menu_item if menu_item.archive == archive
+    end
+    
+    archive_roots
+  end
+  
   
   def unique_title_beneath_parent_in_archive
     pre_existing = MenuItem.find_by_title_and_parent_id_and_archive_id(self.title, self.parent_id, self.archive_id)
