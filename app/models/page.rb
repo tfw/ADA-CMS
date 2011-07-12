@@ -5,7 +5,7 @@ class Page < ActiveRecord::Base
   acts_as_inkling 'Page'
   
   after_create  :create_menu_item
-  after_update    :update_menu_item
+  after_update  :update_menu_item
 
   belongs_to  :parent, :class_name => "Page"
   has_many    :children, :class_name => "Page", :foreign_key => "parent_id"
@@ -68,7 +68,7 @@ class Page < ActiveRecord::Base
   end
   
   def update_menu_item
-    MenuItem.update_from_page(self)
+    MenuItem.update_from_page(self, self.menu_item)
   end
 
   # accessor methods expected by the ckeditor browse views (can refactor, we have our own copies)
