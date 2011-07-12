@@ -3,11 +3,15 @@ class Page < ActiveRecord::Base
 
   acts_as_nested_set
   acts_as_inkling 'Page'
+  
+  after_create  :create_menu_item
+  after_update    :update_menu_item
 
-  belongs_to :parent, :class_name => "Page"
-  has_many :children, :class_name => "Page", :foreign_key => "parent_id"
-  belongs_to :archive
-  belongs_to :author, :class_name => "User", :foreign_key => "author_id"
+  belongs_to  :parent, :class_name => "Page"
+  has_many    :children, :class_name => "Page", :foreign_key => "parent_id"
+  belongs_to  :archive
+  belongs_to  :author, :class_name => "User", :foreign_key => "author_id"
+  has_one     :menu_item, :as => :content, :dependent => :destroy
 
   before_validation :link_title_defaults_to_title
   before_validation :default_partial, :if => "self.partial.nil?"
@@ -57,6 +61,14 @@ class Page < ActiveRecord::Base
 
   def default_partial
     self.partial = "/pages/default_page"
+  end
+
+  def create_menu_item
+    MenuItem.create_from_page(self)
+  end
+  
+  def update_menu_item
+    MenuItem.update_from_page(self)
   end
 
   # accessor methods expected by the ckeditor browse views (can refactor, we have our own copies)

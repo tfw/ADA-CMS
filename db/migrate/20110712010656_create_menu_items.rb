@@ -3,7 +3,7 @@ class CreateMenuItems < ActiveRecord::Migration
       
   def self.up
     create_table :menu_items do |t|
-      t.string :text
+      t.string :title
       t.string :uri
       t.integer :archive_id
       t.references :content, :polymorphic => true

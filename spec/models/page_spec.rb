@@ -63,4 +63,12 @@ describe Page do
       end      
     end
   end
+  
+  describe "menuing" do
+    context "Page object lifecycle should trigger appropriate moments in a matching menu item" do
+      specify "after_create on a page, creates a menu_item too" do
+        
+      end
+    end
+  end
 end
