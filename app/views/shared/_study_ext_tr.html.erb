@@ -1,48 +1,46 @@
 <tr>
-	<td valign=top>
-		<fieldset class="search-border"> 
-      <% archive_study = study.for_archive(@current_archive) %>           
-			<legend> Study Title: <%= link_to study.doc_title, archive_study.path.slug %> </legend>
-
-				<table>
-					<tr>
-						<td>Authoring Entity: <% study.stdy_auth_entity %> </td>
-						<td>Year: <%= study.stdy_prod_date %> </td>
-						<td>Study ID: <%= study.stdy_id %> </td>						
-					</tr>
-				</table>
-				
-        Abstract: <%= line_break_title(first_n_words(30, study.abstract_text), 15).html_safe %> <br/>
-        Variables: <%= study.variables.size %> <br/>
-
-				<% if hit %>
-					Relevance: <%= hit.score %> <br/>
-					<%= highlight_excerpt(hit.highlight(:label)) %> <br/>
-					<%= highlight_excerpt(hit.highlight(:abstract_text)) %> <br/>
-					<%= highlight_excerpt(hit.highlight(:commment)) %> <br/>				
-				<% end %>
-				
-		</fieldset>
-		</td>
-		<td width=20% valign=top>
-			<table>
-				<% i = 0 %>
-				<% for archive_study in study.archive_studies 
-         	next if archive_study.archive == Archive.ada
-					if i == 0 %> 
-					<tr>
-					<% end 
-					i += 1%>
-						<td> <a href="<%= archive_study.path.slug %>"><%= archive_icon(archive_study.archive) %></a><br/>
-							<%= archive_study.archive.name %>
-						</td>
-						
-					<% if i == 2 %>
-						</tr>
-					<% i = 0 
-						end %>
-	      <% end %>
-			</table>
-		</td>
-	</td>
+  <th colspan="4">
+    <fieldset class="search-border">
+      <% archive_study = study.for_archive(@current_archive) %>
+      <legend>
+        Study Title: <%= link_to study.doc_title, archive_study.path.slug %>
+      </legend>
+    </fieldset>
+  </th>
 </tr>
+<tr class="alt">
+  <td>Authoring Entity: <% study.stdy_auth_entity %> </td>
+  <td>Year: <%= study.stdy_prod_date %> </td>
+  <td>Study ID: <%= study.stdy_id %> </td>
+  <td>
+    <% for archive_study in study.archive_studies
+      next if archive_study.archive == Archive.ada %>
+      <a href="<%= archive_study.path.slug %>">
+        <%= archive_icon(archive_study.archive) %>
+      </a>
+      <!-- %= archive_study.archive.name % -->
+    <% end %>
+  </td>
+</tr>
+<tr>
+  <td colspan="4">
+    Abstract:
+    <%= line_break_title(first_n_words(30, study.abstract_text), 15).html_safe %>
+  </td>
+<tr/>
+<tr class="alt">
+  <td colspan="4">Variables: <%= study.variables.size %></td>
+<tr/>
+<% if hit %>
+  <tr>
+    <td colspan="4">Relevance: <%= hit.score %></td>
+  <tr/>
+  <% for key in [:label, :abstract_text, :comment] %>
+    <% text = highlight_excerpt(hit.highlight(key)) %>
+    <% unless text.nil? %>
+      <tr class="<%= cycle('', 'alt') %>">
+        <td colspan="4"><%= text %></td>
+      <tr/>
+    <% end %>
+  <% end %>
+<% end %>
