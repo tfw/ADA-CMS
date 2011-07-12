@@ -2,7 +2,7 @@
   <td> <%= link_to study.doc_title, study.for_archive(@current_archive).path.slug %> </td>
   <td> <%= study.stdy_auth_entity %> </td>
   <td> <%= study.stdy_prod_date %> </td>
-  <td> <%= study.stdy_id %> </td>
+  <td> <%= study.ddi_id %> </td>
   <td>
      <% for archive_study in study.archive_studies %>
        <% next if archive_study.archive == Archive.ada %>
