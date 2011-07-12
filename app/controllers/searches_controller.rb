@@ -30,6 +30,7 @@ class SearchesController < ContentController
         if @search.valid?
           session[:recent_saved_search_id] = @search.id
           @search_path = search_path(@search)
+          @saved_searches_path = user_searches_path(current_user)
         end
       }
     end

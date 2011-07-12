@@ -2,7 +2,7 @@
     <a href="<%= browse_archive_catalog_path(:archive_catalog_id => archive_catalog.id) %>" rel="explr-ajax"><%= line_break_title(archive_catalog.label, 5).html_safe %></a>
 
     <% if archive_catalog.children.any? %>
-      <ul <%= archive_catalog.children.contains?(@catalog) ? "class ='explr-expand'" : ''%> >
+      <ul <%= archive_catalog.children.include?(@catalog) ? "class ='explr-expand'" : ''%> >
         <%= render :partial => "archive_catalog", :collection => archive_catalog.children %>
       </ul>
     <% end %>

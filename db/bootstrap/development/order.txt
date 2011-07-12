@@ -6,11 +6,9 @@ inkling_permissions.yml
 inkling_roles.yml
 inkling_role_memberships.yml
 inkling_types.yml
-inkling_paths.yml
 news.yml
 archives.yml
 pages.yml
-studies.txt
-archive_studies.txt
+studies.yml
 
 

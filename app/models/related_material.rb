@@ -22,7 +22,7 @@ class RelatedMaterial < ActiveRecord::Base
     
     if rm.nil?
       rm = RelatedMaterial.create!(converted_keys)
-    else
+    elsif converted_keys[:creation_date] > rm.updated_at
       rm.update_attributes(converted_keys)
     end
     
