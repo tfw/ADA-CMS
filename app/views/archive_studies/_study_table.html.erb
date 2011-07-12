@@ -9,20 +9,20 @@
     </tr>
   </thead>
   <tbody>
-  	<%= study_field_table_row('doc_title', study, fields, cycle('standard', 'alt')) %>
-  	<%= study_field_table_row('series_name', study, fields, cycle('standard', 'alt'))%>
-  	<%= study_field_table_row('stdy_id', study, fields, cycle('standard', 'alt')) %>
-  	<%= study_field_table_row('abstract_text', study, fields, cycle('standard', 'alt')) %>
-  	<%= study_field_table_row('stdy_prod_date', study, fields, cycle('standard', 'alt')) %>
-  	<%= study_field_table_row('stdy_prod_date', study, fields, cycle('standard', 'alt')) %>
+  	<%= study_field_table_row('doc_title', study, fields) %>
+  	<%= study_field_table_row('series_name', study, fields)%>
+  	<%= study_field_table_row('stdy_id', study, fields) %>
+  	<%= study_field_table_row('abstract_text', study, fields) %>
+  	<%= study_field_table_row('stdy_prod_date', study, fields) %>
+  	<%= study_field_table_row('stdy_prod_date', study, fields) %>
 
   	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
   	 <tr>
        <td valign=top>Date of Collection</td>
       <td>
          <table>
-         	 <%= study_field_table_row('collectionStart', study, fields, cycle('standard', 'alt')) %>
-         	 <%= study_field_table_row('collectionEnd', study, fields, cycle('standard', 'alt')) %>
+         	 <%= study_field_table_row('collectionStart', study, fields) %>
+         	 <%= study_field_table_row('collectionEnd', study, fields) %>
          </table>
        </td>
      </tr>
@@ -35,48 +35,48 @@
        </td>
        <td>
          <table>
-          	<%= study_field_table_row('stdyContact', study, fields, cycle('standard', 'alt')) %>
-          	<%= study_field_table_row('stdyContactAffiliation', study, fields, cycle('standard', 'alt')) %>
-          	<%= study_field_table_row('stdyContactEmail', study, fields, cycle('standard', 'alt')) %>
+          	<%= study_field_table_row('stdyContact', study, fields) %>
+          	<%= study_field_table_row('stdyContactAffiliation', study, fields) %>
+          	<%= study_field_table_row('stdyContactEmail', study, fields) %>
          </table>
        </td>
      </tr>
     <% end %>
  
-   	<%= study_field_table_row('stdyDepDate', study, fields, cycle('standard', 'alt')) %>
+   	<%= study_field_table_row('stdyDepDate', study, fields) %>
 
   	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
   	 <tr>
        <td>
          <table>
            <caption>Version</caption>
-         	 <%= study_field_table_row('stdyVersion', study, fields, cycle('standard', 'alt')) %>
-         	 <%= study_field_table_row('stdyVersionDate', study, fields, cycle('standard', 'alt')) %>
+         	 <%= study_field_table_row('stdyVersion', study, fields) %>
+         	 <%= study_field_table_row('stdyVersionDate', study, fields) %>
          </table>
        </td>
      </tr>
     <% end %>
  
-   	<%= study_field_table_row('subcat', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('keywords', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('nation', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('geographicalCover', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('geographicalUnit', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('analyticalUnit', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('universe', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('dataKind', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('sampling', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('collMode', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('timeMeth', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('weight', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('docBiblCit', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('stdyCopyright', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('docCopyright', study, fields, cycle('standard', 'alt')) %>
-   	<%= study_field_table_row('universe', study, fields, cycle('standard', 'alt')) %>
+   	<%= study_field_table_row('subcat', study, fields) %>
+   	<%= study_field_table_row('keywords', study, fields) %>
+   	<%= study_field_table_row('nation', study, fields) %>
+   	<%= study_field_table_row('geographicalCover', study, fields) %>
+   	<%= study_field_table_row('geographicalUnit', study, fields) %>
+   	<%= study_field_table_row('analyticalUnit', study, fields) %>
+   	<%= study_field_table_row('universe', study, fields) %>
+   	<%= study_field_table_row('dataKind', study, fields) %>
+   	<%= study_field_table_row('sampling', study, fields) %>
+   	<%= study_field_table_row('collMode', study, fields) %>
+   	<%= study_field_table_row('timeMeth', study, fields) %>
+   	<%= study_field_table_row('weight', study, fields) %>
+   	<%= study_field_table_row('docBiblCit', study, fields) %>
+   	<%= study_field_table_row('stdyCopyright', study, fields) %>
+   	<%= study_field_table_row('docCopyright', study, fields) %>
+   	<%= study_field_table_row('universe', study, fields) %>
    </tr>
 
    <% for key in fields.keys %>
-  	<%= study_field_table_row(key, study, fields, cycle('standard', 'alt')) %>
+  	<%= study_field_table_row(key, study, fields) %>
    <% end %>
  </tbody>
 </table>

@@ -1,8 +1,8 @@
 module ArchiveStudiesHelper
   
-  def study_field_table_row(key, study, fields, css_class)
+  def study_field_table_row(key, study, fields)
     if fields.has_key?(key) and not fields[key].blank?
-      row = "<tr class='#{css_class}'>\n<td valign='top'>"
+      row = "<tr class='#{cycle('standard', 'alt')}'>\n<td valign='top'>"
       row +=  (human_readable_check(key) || key)
       row +=  "</td><td valign='top'>"
       row += fields[key].to_s
