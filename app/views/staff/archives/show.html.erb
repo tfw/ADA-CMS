@@ -6,6 +6,12 @@
 
 <fieldset id="page-management">
   <legend> Public Menu: Page (<%= link_to "+", new_staff_archive_page_path(:archive_id => @archive) %>) Link (+)</legend>
+
+menu items
+  <ul class="sortable">
+    <%= render(:partial => "menu_item", :collection => @parent_menu_items) %>
+  </ul>
+
   <p>
     Pages: <%= Page.find_all_by_archive_id(@archive).size%>
   </p>
@@ -13,6 +19,7 @@
   <ul class="sortable">
     <%= render(:partial => "page", :collection => @parent_pages) %>
   </ul>
+  
 </fieldset>
 
 <% content_for :js do %>

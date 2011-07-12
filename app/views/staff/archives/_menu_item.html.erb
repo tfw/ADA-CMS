@@ -1,0 +1,13 @@
+<li id="page-options-<%= menu_item.id %>">
+  <span><%= menu_item.title %></span>  </a>
+
+    <%= link_to 'Public View', menu_item.uri %>, 
+    <%= link_to 'Edit', edit_staff_archive_page_path(menu_item.archive, menu_item.content) %>,  
+    <%= link_to 'Delete', staff_archive_page_path(menu_item.archive, menu_item.content), :method => :delete %> 
+
+    <% if menu_item.children %>
+      <ul class="sortable">
+	<%= render(:partial => "menu_item", :collection => menu_item.children) %> 
+      </ul>
+    <% end %>
+</li>
