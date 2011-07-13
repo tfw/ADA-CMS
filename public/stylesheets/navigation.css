@@ -81,7 +81,7 @@
 	background-image: url(../images/structure/menu_icon_ada.png);
 	font-weight: normal;
 }
-.content nav.archive_menu ul li.science a, .content nav #browse-tree .science a, .content nav #study-facets .science a{
+.content nav.archive_menu ul li.social-science a, .content nav #browse-tree .social-science a, .content nav #study-facets .social-science a  {
 	background-image: url(../images/structure/menu_icon_socialscience.png);
 }
 .content nav.archive_menu ul li.historical a, .content nav #browse-tree .historical a, .content nav #study-facets .historical a  {

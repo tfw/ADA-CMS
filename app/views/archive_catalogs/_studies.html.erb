@@ -15,9 +15,7 @@
 	});
 </script>
 
-  <p>	
-	  Catalog: <%= catalog ? catalog.label : @current_archive.name %>
-  </p>
+        <h1>Catalog: <%= catalog ? catalog.label : @current_archive.name %></h1>
   
 	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
 		<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link" href="#">Title View</a></li> 
