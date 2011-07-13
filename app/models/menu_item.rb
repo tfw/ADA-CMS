@@ -1,3 +1,5 @@
+#Menu items are either created to point to an external resource or copy themselves from their content
+
 class MenuItem < ActiveRecord::Base
   acts_as_nested_set
 

@@ -1,9 +1,18 @@
 <li id="menu-options-<%= menu_item.id %>">
-  <span><%= menu_item.title %></span>  </a>
-
+  
+  <% if menu_item.content.is_a? Page %>
+    <%= image_tag('icons/page.png') %>
+    <span><%= menu_item.title %></span>  </a>
     <%= link_to 'Public View', menu_item.urn %>, 
     <%= link_to 'Edit', edit_staff_archive_page_path(menu_item.archive, menu_item.content) %>,  
     <%= link_to 'Delete', staff_archive_page_path(menu_item.archive, menu_item.content), :method => :delete %> 
+  <% else %>
+    <%= image_tag('icons/link.png') %>
+    <span><%= menu_item.title %></span>  </a>
+    <%= link_to "Visit", menu_item.urn, :target => "_blank" %>, 
+    <%= link_to 'Edit', edit_staff_archive_menu_item_path(menu_item.archive, menu_item) %>,  
+    <%= link_to 'Delete', staff_archive_menu_item_path(menu_item.archive, menu_item), :method => :delete %>
+  <% end %>
 
     <% if menu_item.children %>
       <ul class="sortable">

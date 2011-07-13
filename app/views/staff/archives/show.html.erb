@@ -7,7 +7,11 @@
 (Drag a menu item above or beneath to order them).
   
 <fieldset id="menu-management">
-  <legend> Public Menu: Page (<%= link_to "+", new_staff_archive_page_path(:archive_id => @archive) %>) Link (+)</legend>
+  <legend> 
+    Public Menu: 
+    <%= link_to image_tag('icons/page_add.png'), new_staff_archive_page_path(:archive_id => @archive) %>
+    <%= link_to image_tag('icons/link_add.png'), new_staff_archive_menu_item_path(:archive_id => @archive) %>
+  </legend>
 
   <ul class="sortable">
     <%= render(:partial => "menu_item", :collection => @parent_menu_items) %>

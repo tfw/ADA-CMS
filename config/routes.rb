@@ -28,6 +28,7 @@ Ada::Application.routes.draw do
           get 'browse'
         end
       end
+      resources :menu_items, :controller => "archives/menu_items"
     end
 
     resources :news do
