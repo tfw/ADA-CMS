@@ -1,6 +1,6 @@
 <% fields = variable.attributes.dup
   fields.delete(:id) %>
-<table border=1>
+<table border=0>
   <thead>
     <tr> 
       <th colspan=2><a id="<%= variable_anchor(variable) %>" href="<%= variable_href(variable, @archive_study) %>" ><%= variable.label %></a> 
@@ -22,23 +22,23 @@
     <tr>
       <th> Name</th>
       <th> Numcats</th>
-      <th width=5%> Val Range Min</th>
-      <th width=5%> Val Range Max</th>
+      <th width="5%"> Val Range Min</th>
+      <th width="5%"> Val Range Max</th>
     </tr>
-    <tr>
-      <td><%= variable.name %> </td>
-      <td> variable.num_cats </td>
+    <tr class="<%= cycle('alt', '') %>">
+      <td><%= variable.name %></td>
+      <td><%= variable.num_cats %></td>
       <td><%= variable.val_range_min %> </td>
       <td><%= variable.val_range_max %> </td>
     </tr>
     <% if fields.size > 0 %>
-    <tr>
+    <tr class="<%= cycle('alt', '') %>">
       <th colspan=4 align="center">Misc.</th>
     </tr>
     <% end %>
   	<% for field in fields %>
-  	  <tr>
-  	    <td colspan=4> <%= variable_field(field) %> </td>
+  	  <tr class="<%= cycle('alt', '') %>">
+  	    <td colspan="4"> <%= variable_field(field) %> </td>
   	  </tr>
   	<% end %>	
   </tbody>

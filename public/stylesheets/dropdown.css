@@ -4,7 +4,6 @@
 	float: left;
 	padding: 0px;
 	margin: 0px;
-	font-size: 11px;
 }
 
 .mainnav ul li a, .mainnav ul li {
@@ -25,8 +24,12 @@
 .mainnav ul li a {
 	text-decoration: none;
 	color: white;
-	padding: 12px 10px;
 	border-bottom: 1px solid #333;
+	padding-top: 12px;
+	padding-right: 8px;
+	padding-bottom: 12px;
+	padding-left: 8px;
+	font-size: 10px;
 }
 
 .mainnav ul li a:hover {

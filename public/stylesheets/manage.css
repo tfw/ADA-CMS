@@ -10,6 +10,13 @@
 .tree-hover{
   background: #fdd;
 }
+.content.box.content-area {
+	border-top-style: none !important;
+	border-right-style: none!important;
+	border-bottom-style: none!important;
+	border-left-style: none!important;
+	padding: 0px;
+}
 
 .tree-item{
   padding: 2px;
@@ -121,7 +128,7 @@ a#preview-link {
 
 /* Fieldset and legend create a rounded border with a label in the top left border */
 .content-area fieldset {
-/*	background: #f2f2f2; */
+	/*	background: #f2f2f2; */
 	background: whitesmoke;
 	padding: 5px 5px 5px 10px;
 	margin: 5px;
@@ -210,4 +217,3 @@ div.float-centre {
   width: 100%;
   padding: 1em;
 }
-
