@@ -36,7 +36,7 @@
 			</tr>
 		</thead>
 		<tbody>
-	    <% @studies_search.each_hit_with_result do |hit, study| %>	
+	    <% @studies_search.each_hit_with_result do |hit, study| %>
 	      <%= render(:partial => "/shared/study_title_tr", :locals => {:hit => hit, :study => study}) %>
 			<% end %>
 		</tbody>	

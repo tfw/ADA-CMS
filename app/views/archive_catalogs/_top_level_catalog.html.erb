@@ -6,7 +6,7 @@
   });	  
 <% end %>
 
-<h3><a href="#"><%= archive.name %></a></h3>
+<h3 class="<%= archive.slug %>"><a href="#"><%= archive.name %></a></h3>
 <div>
   <% if top_level_catalog %>
   <ul id='tree-<%= archive.slug %>'>
