@@ -1,5 +1,9 @@
 @charset "ISO-8859-1";
 
+nav ul {
+	font-size: 11px;
+}
+
 .subnav ul {
 	padding-left: 40px;
 }

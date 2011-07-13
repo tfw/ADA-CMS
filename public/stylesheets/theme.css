@@ -27,6 +27,7 @@ legend {
 	float: left;
 	position: absolute;
 	top: 10px;
+	font-size: 11px;
 }
 
 #tabs li {
@@ -384,7 +385,7 @@ legend {
 	padding-top: 11px;
 	padding-bottom: 11px;
 }
-#browse-results-title, #study-results-title{
+#browse-results-title, #study-results-title {
 	border-collapse: collapse;
 	width: 100%;
 	padding: 0px;
