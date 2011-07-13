@@ -19,9 +19,7 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   def create
     create! do |format|
       format.html {
-        if @page.archive
-          redirect_to staff_archive_path(@page.archive)
-        end
+        redirect_to staff_archive_path(@page.archive)
         }
     end
   end
@@ -37,9 +35,7 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   def update
     update! do |format|
       format.html {
-        if @page.archive
-          redirect_to staff_archive_path(@page.archive)
-        end
+        redirect_to staff_archive_path(@page.archive)
       }
     end
   end

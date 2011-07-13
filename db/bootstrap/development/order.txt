@@ -12,8 +12,6 @@ archives.yml
 pages.yml
 studies.yml
 archive_studies.yml
-archive_catalogs.yml
-archive_catalog_studies.yml
 
 
 
