@@ -37,7 +37,7 @@
 	    <% @archive_catalog_studies.each do |archive_catalog_study| %>	
 	      <%= render(:partial => "/shared/study_title_tr", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 			<% end %>
-		</tbody>	
+		</tbody>
 	</table>
 
 	<table id="browse-results-ext" <%= conceal_unless(['ext'], params[:format]) %> border=1  width='100%'>

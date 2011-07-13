@@ -67,20 +67,20 @@ legend {
 
 
 /*Search Results*/
-#search-results section{
+#search-results section {
 	border: none;
 }
 
-#search-results, #search-results-ext {
+#search-results, #search-results-ext, #browse-results-ext {
 	position: relative;
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
 
-	#search-results p, #search-results-ext p {
+#search-results p, #search-results-ext p, #browse-results-ext p {
 	padding-top: 15px;
 }
-    
+
 
 #search-results h1 {
 	font-size: 15px;
@@ -119,9 +119,9 @@ legend {
 	border-right-width: 0px;
 	border-bottom-width: 0px;
 	border-left-width: 0px;
-	}
+}
 	
-	#search-results-ext {
+#search-results-ext, #browse-results-ext {
 	border-collapse: collapse;
 	padding-top: 10px;
 	color: #666;
@@ -145,14 +145,14 @@ legend {
 	border-left-width: 0px;
 	padding-right: 10px;
 	padding-left: 10px;
-	}
+}
 
 #variable-results {
 	margin-top: 65px;
 }
 	
 	
-#search-results th, #search-results-ext th {
+#search-results th, #search-results-ext th, #browse-results-ext th {
 	border-top-style: none;
 	border-right-style: none;
 	border-bottom-style: solid!important;
@@ -185,7 +185,7 @@ legend {
 	border-bottom-color: #FFF!important;
 }
 
-#search-results td, #search-results-ext td {
+#search-results td, #search-results-ext td, #browse-results-ext td {
 	border-bottom-style: solid;
 	border-top-style: none;
 	border-right-style: none;
@@ -423,7 +423,7 @@ legend {
 
 
 
-#study table, #browse-results-title table, #search-results-ext table {
+#study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table {
 	border-collapse: collapse;
 	width: 100%!important;
 	padding: 0px;
@@ -451,7 +451,7 @@ legend {
 		border-collapse: collapse;
 }
 
-#study th, #browse-results-title th, #search-results-ext th{
+#study th, #browse-results-title th, #search-results-ext th, #browse-results-ext th {
 	border-top-style: none;
 	border-right-style: none;
 	border-bottom-style: solid!important;
@@ -484,7 +484,7 @@ legend {
 	padding-left: 5px;
 }
 
-#search-results-ext td{
+#search-results-ext td, #browse-results-ext td {
 	border-bottom-style: none;
 	border-top-style: none;
 	border-right-style: none;
@@ -502,7 +502,7 @@ legend {
 }
 
 
-#study-table tbody, #browse-results-title tbody, #search-results-ext tbody{
+#study-table tbody, #browse-results-title tbody, #search-results-ext tbody, #browse-results-ext tbody {
 	margin: 0px;
 	border-top-style: none;
 	border-right-style: none;
@@ -603,7 +603,7 @@ span.highlight {
 #variable-results {
 	margin-top: 0px;
 }
-#search-results-ext tr td p {
+#search-results-ext tr td p, #browse-results-ext tr td p {
 	color: #666;
 	font-size: 11px;
 	padding-bottom: 5px;
@@ -618,30 +618,30 @@ span.highlight {
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
-#search-results-ext tr td strong {
+#search-results-ext tr td strong, #browse-results-ext tr td strong {
 	padding-right: 5px;
 	color: #333;
 }
 
-	#search-results-ext tr {
+#search-results-ext tr, #browse-results-ext tr {
 	border-collapse: collapse;
 	margin: 0px;
 	padding: 0px;
 }
     
-#search-results-ext td {
+#search-results-ext td, #browse-results-ext td {
 	border-collapse: collapse;
 	margin: 0px;
 	padding: 0px;
 }
-#search-results-ext tr td table tr {
+#search-results-ext tr td table tr, #browse-results-ext tr td table tr {
 	text-align: left;
 	width: 100%!important;
 	display: block;
 	background-color: #EDEDED;
 	margin-bottom: 10px;
 }
-#search-results-ext tr td table tr td {
+#search-results-ext tr td table tr td, #browse-results-ext tr td table tr td {
 	border-collapse: collapse;
 	text-align: left;
 	padding-top: 3px;

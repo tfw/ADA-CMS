@@ -358,14 +358,6 @@ footer p {
 	padding-bottom: 10px;
 	color: #000;
 }
-#search-results-ext tr td table tr td{
-	height: 10px;
-	width: 270px;
-	float: left;
-	padding-top: 2px;
-	border-bottom: 1px solid #999;
-	padding-bottom: 10px;
-}
 
 .logged_in {
 	border-bottom-color: #BFBFBF;
