@@ -9,6 +9,7 @@
   <%= form.inputs do %>
     <%= form.input :title %>
     <%= form.input :urn, :label => "URL" %>
+    <%= form.input :parent, :as => :select, :collection => @menu_items %>
   <% end %>
   <%= form.buttons do %>
     <%= form.commit_button %>
