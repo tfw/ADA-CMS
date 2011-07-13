@@ -14,11 +14,23 @@ describe Study, "The local respresentation of an ASSDA study" do
       study = Study.create_or_update_from_nesstar(data)
       study.should_not be_nil
       study.abstract_text.should == data["abstractText"]
-      mod_data = data
+      mod_data = data.dup
       mod_data["abstractText"] = "foo"
+      mod_data["creationDate"] = Time.now
       study = Study.create_or_update_from_nesstar(mod_data)
       study.abstract_text.should == "foo"
     end
+    
+    it "shouldn't update an existing study if the creationDate from Nesstar is <= the updated_at time" do
+      study = Study.create_or_update_from_nesstar(data)
+      study.abstract_text.should == data["abstractText"]
+      mod_data = data.dup
+      mod_data["abstractText"] = "foo"
+      mod_data["creationDate"] = study.updated_at
+      study = Study.create_or_update_from_nesstar(mod_data)
+      study.abstract_text.should ==  data["abstractText"]
+    end
+    
     
     def data
        {"abstractText"=>"This is the first wave in a series of six surveys conducted monthly from July to December 1974 commissioned by 'The Age' and undertaken by Australian Sales Research Bureau Pty. Ltd., with the cooperation of the Political Science Department of the Melbourne University. The purpose of the survey was to investigate respondent's attitudes toward the economic and political systems. \n\nThe main variables included voting preferences in the previous federal election, attitudes toward party leader's popularity, and voting intentions in the next federal election.\n\nBackground variables of respondents  include age, sex, place of birth, marital status, location, demographic, occupation, income, education, religious affiliation, telephone renting and self-rated social class.",

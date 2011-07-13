@@ -44,12 +44,12 @@
 
 	<nav class="mainnav clearfix">
 	  <ul>
-			<% for page in @ada_parent_pages %>
-				<li> <%= link_to(page.title, page.path.slug) %> 
-					<% if page.children.any? %>
+			<% for menu_item in @ada_menu_items %>
+				<li> <%= link_to(menu_item.title, menu_item.urn) %> 
+					<% if menu_item.children.any? %>
 						<ul>
-						  <% for child in page.children %>									
-								<li> <%= link_to(child.title, child.path.slug)%> </li>
+						  <% for child in menu_item.children %>									
+								<li> <%= link_to(child.title, child.urn)%> </li>
 						  <% end %>
 						</ul
 					<% end %>
@@ -71,13 +71,13 @@
 	    <% if @current_archive != Archive.ada %>
 				<ul>
 					<li><p><%= @current_archive.name %></p></li>
-					<% for page in Page.archive_root_pages(@current_archive)  %>
-						<% if page.title == @title %>
+					<% for menu_item in MenuItem.archive_root_menu_items(@current_archive)  %>
+						<% if menu_item.title == @title %>
 							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
 						<% else %>
 						<li>
 						<% end %>
-						 	<%= link_to(page.title, page.path.slug )%>
+						 	<%= link_to(menu_item.title, menu_item.urn )%>
 						</li>
 					<% end %>
 			  </ul>
@@ -109,7 +109,7 @@
 				<p>Collaboration Partners</p>
 		  </div>
 			
-            <div class="logos">
+    <div class="logos">
 				<img src="/images/content/logo_arc.gif" alt="logo_arc" width="90" height="56" class="partnersFirst"/>
 				<img src="/images/content/logo_ncr.gif" alt="logo_nrc" width="109" height="56"/>
 				<img src="/images/content/logo_anu.gif" width="90" height="56" alt="Logo_anu"/>

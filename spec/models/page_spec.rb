@@ -34,7 +34,6 @@ describe Page do
   
   describe "parent and child pages" do
     specify "parents know about children, children know about parents" do
-      # debugger
       parent = Page.make
       child = Page.make(:parent => parent, :archive => parent.archive)
       parent.children.size.should == 1
@@ -61,6 +60,14 @@ describe Page do
         Page.roots.size.should == 4
         Page.archive_root_pages(page1.archive).size.should == 3        
       end      
+    end
+  end
+  
+  describe "menuing" do
+    context "Page object lifecycle should trigger appropriate moments in a matching menu item" do
+      specify "after_create on a page, creates a menu_item too" do
+        
+      end
     end
   end
 end
