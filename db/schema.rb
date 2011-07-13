@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110623072536) do
+ActiveRecord::Schema.define(:version => 20110712010656) do
 
   create_table "archive_catalog_studies", :force => true do |t|
     t.integer  "archive_catalog_id"
@@ -180,6 +180,20 @@ ActiveRecord::Schema.define(:version => 20110623072536) do
 
   create_table "inkling_types", :force => true do |t|
     t.string   "klass_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "menu_items", :force => true do |t|
+    t.string   "title"
+    t.string   "urn"
+    t.integer  "archive_id"
+    t.integer  "content_id"
+    t.string   "content_type"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.string   "state"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

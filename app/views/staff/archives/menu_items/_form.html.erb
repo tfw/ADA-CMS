@@ -1,0 +1,16 @@
+<%= render(:partial => "/staff/shared/resource_errors") %>
+
+<fieldset>
+  <legend> <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %> </legend>
+
+<%= semantic_form_for([:staff, @archive, resource]) do |form| %>
+  <%= form.hidden_field :archive_id, :value => @archive.id %>
+
+  <%= form.inputs do %>
+    <%= form.input :title %>
+    <%= form.input :urn, :label => "URL" %>
+  <% end %>
+  <%= form.buttons do %>
+    <%= form.commit_button %>
+  <% end %>
+<% end %>
