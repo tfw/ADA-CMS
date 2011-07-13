@@ -20,7 +20,7 @@ Ada::Application.routes.draw do
     
     post 'archives/pages/sluggerize_path'
     post 'archives/pages/preview'
-    post 'archives/update_page_order'
+    post 'archives/update_menu_order'
 
     resources :archives, :only => :show do
       resources :pages, :except => :index, :controller => "archives/pages" do

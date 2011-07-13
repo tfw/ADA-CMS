@@ -14,47 +14,28 @@ class Staff::ArchivesController < Staff::BaseController
 
   def update_menu_order
     #1 find the moved page
-    moved_page_id = params[:moved].gsub("page-options-", "")
-    moved_page = Page.find(moved_page_id)
-    page_ids = params[:page_order].split(",")
-    page_ids.collect! {|i| i.gsub("page-options-", "").to_i}
+    moved_menu_id = params[:moved].gsub("menu-options-", "")
+    moved_menu = MenuItem.find(moved_menu_id)
+    menu_ids = params[:menu_order].split(",")
+    menu_ids.collect! {|i| i.gsub("menu-options-", "").to_i}
 
     #2 find the pages left and right of the moved page
-    idx = page_ids.index(moved_page.id)
-    left_idx  = idx != page_ids.first ? page_ids[idx - 1] : nil
-    right_idx = idx != page_ids.last ? page_ids[idx + 1] : nil
-    left_page =  Page.find(left_idx)
-    right_page =  Page.find(right_idx)
-    
-    moved_page.move_to_right_of left_page
-    left_page.move_to_left_of moved_page
+    idx = menu_ids.index(moved_menu_id.to_i)
+    left_idx  = idx != menu_ids.first ? menu_ids[idx - 1] : nil
+    right_idx = idx != menu_ids.last ? menu_ids[idx + 1] : nil
+puts "l #{left_idx} : r #{right_idx}"
+    debugger
+    left_menu =  MenuItem.find(left_idx)
+    right_menu =  MenuItem.find(right_idx)
 
-    moved_page.move_to_left_of right_page
-    right_page.move_to_right_of moved_page
+    moved_menu.move_to_right_of left_menu
+    left_menu.move_to_left_of moved_menu
+
+    moved_page.move_to_left_of right_menu
+    right_menu.move_to_right_of moved_menu
     render :nothing => true
   end
 
-  def update_page_order
-    #1 find the moved page
-    moved_page_id = params[:moved].gsub("page-options-", "")
-    moved_page = Page.find(moved_page_id)
-    page_ids = params[:page_order].split(",")
-    page_ids.collect! {|i| i.gsub("page-options-", "").to_i}
-
-    #2 find the pages left and right of the moved page
-    idx = page_ids.index(moved_page.id)
-    left_idx  = idx != page_ids.first ? page_ids[idx - 1] : nil
-    right_idx = idx != page_ids.last ? page_ids[idx + 1] : nil
-    left_page =  Page.find(left_idx)
-    right_page =  Page.find(right_idx)
-    
-    moved_page.move_to_right_of left_page
-    left_page.move_to_left_of moved_page
-
-    moved_page.move_to_left_of right_page
-    right_page.move_to_right_of moved_page
-    render :nothing => true
-  end
 
   private
   def get_archive

@@ -186,7 +186,7 @@ ActiveRecord::Schema.define(:version => 20110712010656) do
 
   create_table "menu_items", :force => true do |t|
     t.string   "title"
-    t.string   "uri"
+    t.string   "urn"
     t.integer  "archive_id"
     t.integer  "content_id"
     t.string   "content_type"

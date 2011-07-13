@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/tfw/inkling.git
-  revision: 5f4a5910e4f78eac983cbe08faf0578b3bf4f456
+  revision: c8a7448500302c08147b6a64911f22d3b8bf65b6
   specs:
     inkling (0.1.0)
 
