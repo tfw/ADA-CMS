@@ -122,6 +122,7 @@ legend {
 }
 	
 #search-results-ext, #browse-results-ext {
+	width: 100%;
 	border-collapse: collapse;
 	padding-top: 10px;
 	color: #666;
