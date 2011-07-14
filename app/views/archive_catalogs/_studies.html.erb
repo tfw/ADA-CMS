@@ -17,13 +17,22 @@
 
         <h1>Catalog: <%= catalog ? catalog.label : @current_archive.name %></h1>
   
+        <p></p>
+
+	<div id="tabs">
+	  <ul>
+	    <li id="study-items" <%= selected_tab_if(['title'], params[:show]) %>> <a id="studies-link">Studies</a> </li>
+	    <!-- <li id="variable-items" <%= selected_tab_if(['var'], params[:show]) %>> <a id="variables-link">Variables</a> </li> -->
+	  </ul>
+	</div>
+
 	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
 		<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link" href="#">Title View</a></li> 
 		<li>|</li> 
 		<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link" href="#">Extended</a></li>
 	</ul>
 
-	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %> width='100%'>
+	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %> width="100%">
 		<thead>
 			<tr>
 				<th>Study</th>

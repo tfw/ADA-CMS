@@ -13,7 +13,7 @@ legend {
 }
 
 /*Tabbing*/
-#tabs ul {
+#tabs ul, ul#sub-menu {
 	list-style: none;
 	border-top-style: none;
 	border-right-style: none;
@@ -30,7 +30,7 @@ legend {
 	font-size: 11px;
 }
 
-#tabs li {
+#tabs li, #sub-menu li {
 	border-top-width: 1px;
 	border-left-width: 1px;
 	border-top-style: solid;
@@ -49,13 +49,13 @@ legend {
 	margin: 0;
 }
 
-#tabs li a {
+#tabs li a, #sub-menu li a {
 	text-decoration: none;
 	padding: 0px;
 	color: #999;
 }
 
-#tabs li a:hover {
+#tabs li a:hover, #sub-menu li a:hover {
 	text-decoration: none;
 	color: #FFF;
 	cursor:pointer
@@ -66,6 +66,10 @@ legend {
 	background: white;
 }
 
+#sub-menu li {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
 
 /*Search Results*/
 #search-results section {
@@ -208,22 +212,6 @@ legend {
 	text-align: left;
 	}
 
-#search-results #sub-menu ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-#search-results #sub-menu  li {
-	display: inline-block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-transform: uppercase;
-	cursor: pointer;
-	padding-left: 0px;
-	font-size: 11px;
-	}
-
 .search-border fieldset {
 /*	background: whitesmoke;*/
 	padding: 5px 5px 5px 10px;
@@ -267,19 +255,6 @@ legend {
 /*#browse-results section{
 	border: 1px solid;
 }*/
-
-#browse-results #sub-menu ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-#browse-results #sub-menu  li {
-	display: inline-block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-transform: uppercase;
-}
 
 #browse-tree, #study-facets {
 	float: left;
@@ -601,10 +576,6 @@ span.highlight {
 	padding-left: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-}
-#sub-menu {
-	padding-left: 0px;
-	font-size: 11px;
 }
 #variable-results {
 	margin-top: 0px;
