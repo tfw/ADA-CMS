@@ -48,4 +48,8 @@ class ArchiveStudy < ActiveRecord::Base
   def format_created_at
     self.created_at
   end
+  
+  def to_feedable
+    {:title => study.title, :url => urn, :updated_at => created_at, :text => study.abstract_text}
+  end
 end
