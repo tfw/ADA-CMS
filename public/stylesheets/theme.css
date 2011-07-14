@@ -451,9 +451,9 @@ legend {
 	border-left-width: 0px;
 	display: inline-table;
 }
-#study-table {
+#study-table, #related-material-table {
 	width: 100%;
-		border-collapse: collapse;
+	border-collapse: collapse;
 }
 
 #study th, #browse-results-title th, #search-results-ext th, #browse-results-ext th {
@@ -507,7 +507,8 @@ legend {
 }
 
 
-#study-table tbody, #browse-results-title tbody, #search-results-ext tbody, #browse-results-ext tbody {
+#study-table tbody, #related-material-table tbody,
+#browse-results-title tbody, #search-results-ext tbody, #browse-results-ext tbody {
 	margin: 0px;
 	border-top-style: none;
 	border-right-style: none;

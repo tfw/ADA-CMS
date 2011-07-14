@@ -66,16 +66,8 @@
 	  <%= render :partial => "variable", :collection => study.variables %>
   </section>
   
-    <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
-      <ul>
-    		<% for rm in study.related_materials %>
-      		<% unless rm.uri.nil? %>
-            <li>
-               <a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a> 
-            </li>
-          <% end %>
-    		<% end %>
-      </ul>
-    </section>
+  <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
+    <%= render :partial => "related_material_table", :locals => {:study => study} %>
+  </section>
   
 </section>

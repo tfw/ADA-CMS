@@ -1,0 +1,16 @@
+<table id="related-material-table" border="0">
+  <thead>
+    <tr>
+      <th>Related Material</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for rm in study.related_materials %>
+      <% unless rm.uri.nil? %>
+        <tr class="<%= cycle('', 'alt') %>">
+	  <td><a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a></td>
+	</tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
