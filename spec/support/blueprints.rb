@@ -74,6 +74,7 @@ end
 ArchiveCatalog.blueprint do 
   archive_id {(Archive.make).id} 
   title
+  label Sham.name
 end
 
 def gen_stdy_id

@@ -49,7 +49,7 @@
 					<% if menu_item.children.any? %>
 						<ul>
 						  <% for child in menu_item.children %>									
-								<li> <%= link_to(child.title, child.urn)%> </li>
+								<li> <%= link_to(child.title, child.link)%> </li>
 						  <% end %>
 						</ul
 					<% end %>

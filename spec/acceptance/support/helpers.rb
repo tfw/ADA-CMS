@@ -79,6 +79,27 @@ module HelperMethods
     words * ' '
   end
   
+  def line_break_title(title, limit)
+    return "" if title.nil? #bad data in some studies
+    line_break = []
+    bits = title.split(/\W/) 
+
+    if bits.size > limit
+      i = 0      
+      for word in bits
+        line_break << word
+        i+= 1
+        if i == limit + 1
+          line_break << "<br/>"
+          i = 0
+        end
+      end
+    else
+      return title
+    end
+    line_break.join " "
+  end
+  
   #this is solely here to run searches more easily from the debug console
   def searcher(term)
     Sunspot.search(Study) do ;

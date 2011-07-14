@@ -1,11 +1,10 @@
-<% content_for(:sidenav) do
-    %>
-      <%= render :partial => 'catalog_side_nav' %>
+<% content_for(:sidenav) do %>
+  <%= render :partial => 'catalog_side_nav' %>
 <% end %>
 
 <% content_for(:breadcrumbs) do %>
   <% if @catalog %>
-	  Browsing <%= @catalog.path.slug.gsub("/browse", "")  %>
+	  Browsing <%= @catalog.urn.gsub("/browse", "")  %>
 	<% else %>
 	  Browsing <%= @current_archive.name %>
 	<% end %>

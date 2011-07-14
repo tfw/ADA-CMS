@@ -2,7 +2,7 @@
 menu_items_001: 
   id: "19"
   title: ADA undertaking forms
-  urn: /ada/ada-undertaking-forms
+  link: /ada/ada-undertaking-forms
   archive_id: "7"
   content_id: "15"
   content_type: Page
@@ -15,7 +15,7 @@ menu_items_001:
 menu_items_002: 
   id: "1"
   title: Creating Data
-  urn: /historical/creating-data
+  link: /historical/creating-data
   archive_id: "2"
   content_id: "38"
   content_type: Page
@@ -28,7 +28,7 @@ menu_items_002:
 menu_items_003: 
   id: "2"
   title: Catalogue
-  urn: /indigenous/catalogue
+  link: /indigenous/catalogue
   archive_id: "3"
   content_id: "44"
   content_type: Page
@@ -41,7 +41,7 @@ menu_items_003:
 menu_items_004: 
   id: "3"
   title: Using Data
-  urn: /historical/using-data
+  link: /historical/using-data
   archive_id: "2"
   content_id: "39"
   content_type: Page
@@ -54,7 +54,7 @@ menu_items_004:
 menu_items_005: 
   id: "4"
   title: Creating Data
-  urn: /indigenous/creating-data
+  link: /indigenous/creating-data
   archive_id: "3"
   content_id: "45"
   content_type: Page
@@ -67,7 +67,7 @@ menu_items_005:
 menu_items_006: 
   id: "5"
   title: Home
-  urn: /ada/home
+  link: /ada/home
   archive_id: "7"
   content_id: "1"
   content_type: Page
@@ -80,7 +80,7 @@ menu_items_006:
 menu_items_007: 
   id: "6"
   title: Home
-  urn: /historical/home
+  link: /historical/home
   archive_id: "2"
   content_id: "3"
   content_type: Page
@@ -93,7 +93,7 @@ menu_items_007:
 menu_items_008: 
   id: "7"
   title: Home
-  urn: /indigenous/home
+  link: /indigenous/home
   archive_id: "3"
   content_id: "4"
   content_type: Page
@@ -106,7 +106,7 @@ menu_items_008:
 menu_items_009: 
   id: "8"
   title: Home
-  urn: /longitudinal/home
+  link: /longitudinal/home
   archive_id: "4"
   content_id: "5"
   content_type: Page
@@ -119,7 +119,7 @@ menu_items_009:
 menu_items_010: 
   id: "9"
   title: Census data
-  urn: /historical/census-data
+  link: /historical/census-data
   archive_id: "2"
   content_id: "40"
   content_type: Page
@@ -132,7 +132,7 @@ menu_items_010:
 menu_items_011: 
   id: "10"
   title: Home
-  urn: /qualitative/home
+  link: /qualitative/home
   archive_id: "5"
   content_id: "6"
   content_type: Page
@@ -145,7 +145,7 @@ menu_items_011:
 menu_items_012: 
   id: "11"
   title: Home
-  urn: /international/home
+  link: /international/home
   archive_id: "6"
   content_id: "7"
   content_type: Page
@@ -158,7 +158,7 @@ menu_items_012:
 menu_items_013: 
   id: "41"
   title: Creating Data
-  urn: /social-science/creating-data
+  link: /social-science/creating-data
   archive_id: "1"
   content_id: "29"
   content_type: Page
@@ -171,7 +171,7 @@ menu_items_013:
 menu_items_014: 
   id: "42"
   title: Using Data
-  urn: /social-science/using-data
+  link: /social-science/using-data
   archive_id: "1"
   content_id: "30"
   content_type: Page
@@ -184,7 +184,7 @@ menu_items_014:
 menu_items_015: 
   id: "43"
   title: Themed Data
-  urn: /social-science/themed-data
+  link: /social-science/themed-data
   archive_id: "1"
   content_id: "32"
   content_type: Page
@@ -197,7 +197,7 @@ menu_items_015:
 menu_items_016: 
   id: "44"
   title: User Guides
-  urn: /social-science/user-guides
+  link: /social-science/user-guides
   archive_id: "1"
   content_id: "33"
   content_type: Page
@@ -210,7 +210,7 @@ menu_items_016:
 menu_items_017: 
   id: "45"
   title: News
-  urn: /social-science/news
+  link: /social-science/news
   archive_id: "1"
   content_id: "34"
   content_type: Page
@@ -223,7 +223,7 @@ menu_items_017:
 menu_items_018: 
   id: "46"
   title: About
-  urn: /international/about
+  link: /international/about
   archive_id: "6"
   content_id: "35"
   content_type: Page
@@ -236,7 +236,7 @@ menu_items_018:
 menu_items_019: 
   id: "47"
   title: About
-  urn: /historical/about
+  link: /historical/about
   archive_id: "2"
   content_id: "36"
   content_type: Page
@@ -249,7 +249,7 @@ menu_items_019:
 menu_items_020: 
   id: "48"
   title: Catalogue
-  urn: /historical/catalogue
+  link: /historical/catalogue
   archive_id: "2"
   content_id: "37"
   content_type: Page
@@ -262,7 +262,7 @@ menu_items_020:
 menu_items_021: 
   id: "49"
   title: News
-  urn: /indigenous/news
+  link: /indigenous/news
   archive_id: "3"
   content_id: "50"
   content_type: Page
@@ -275,7 +275,7 @@ menu_items_021:
 menu_items_022: 
   id: "50"
   title: About
-  urn: /longitudinal/about
+  link: /longitudinal/about
   archive_id: "4"
   content_id: "51"
   content_type: Page
@@ -288,7 +288,7 @@ menu_items_022:
 menu_items_023: 
   id: "51"
   title: Catalogue
-  urn: /longitudinal/catalogue
+  link: /longitudinal/catalogue
   archive_id: "4"
   content_id: "52"
   content_type: Page
@@ -301,7 +301,7 @@ menu_items_023:
 menu_items_024: 
   id: "52"
   title: Creating Data
-  urn: /longitudinal/creating-data
+  link: /longitudinal/creating-data
   archive_id: "4"
   content_id: "53"
   content_type: Page
@@ -314,7 +314,7 @@ menu_items_024:
 menu_items_025: 
   id: "53"
   title: Longitudinal Studies
-  urn: /longitudinal/longitudinal-studies
+  link: /longitudinal/longitudinal-studies
   archive_id: "4"
   content_id: "55"
   content_type: Page
@@ -327,7 +327,7 @@ menu_items_025:
 menu_items_026: 
   id: "54"
   title: Visualisation
-  urn: /longitudinal/visualisation
+  link: /longitudinal/visualisation
   archive_id: "4"
   content_id: "56"
   content_type: Page
@@ -340,7 +340,7 @@ menu_items_026:
 menu_items_027: 
   id: "55"
   title: User Guides
-  urn: /longitudinal/user-guides
+  link: /longitudinal/user-guides
   archive_id: "4"
   content_id: "57"
   content_type: Page
@@ -353,7 +353,7 @@ menu_items_027:
 menu_items_028: 
   id: "56"
   title: About
-  urn: /qualitative/about
+  link: /qualitative/about
   archive_id: "5"
   content_id: "59"
   content_type: Page
@@ -366,7 +366,7 @@ menu_items_028:
 menu_items_029: 
   id: "57"
   title: Catalogue
-  urn: /qualitative/catalogue
+  link: /qualitative/catalogue
   archive_id: "5"
   content_id: "60"
   content_type: Page
@@ -379,7 +379,7 @@ menu_items_029:
 menu_items_030: 
   id: "58"
   title: Creating Data
-  urn: /qualitative/creating-data
+  link: /qualitative/creating-data
   archive_id: "5"
   content_id: "61"
   content_type: Page
@@ -392,7 +392,7 @@ menu_items_030:
 menu_items_031: 
   id: "59"
   title: Using Data
-  urn: /qualitative/using-data
+  link: /qualitative/using-data
   archive_id: "5"
   content_id: "62"
   content_type: Page
@@ -405,7 +405,7 @@ menu_items_031:
 menu_items_032: 
   id: "60"
   title: Completed Projects
-  urn: /qualitative/completed-projects
+  link: /qualitative/completed-projects
   archive_id: "5"
   content_id: "63"
   content_type: Page
@@ -418,7 +418,7 @@ menu_items_032:
 menu_items_033: 
   id: "61"
   title: User Guides
-  urn: /qualitative/user-guides
+  link: /qualitative/user-guides
   archive_id: "5"
   content_id: "64"
   content_type: Page
@@ -431,7 +431,7 @@ menu_items_033:
 menu_items_034: 
   id: "12"
   title: About
-  urn: /ada/about
+  link: /ada/about
   archive_id: "7"
   content_id: "8"
   content_type: Page
@@ -444,7 +444,7 @@ menu_items_034:
 menu_items_035: 
   id: "13"
   title: Subarchives
-  urn: /ada/subarchives
+  link: /ada/subarchives
   archive_id: "7"
   content_id: "10"
   content_type: Page
@@ -457,7 +457,7 @@ menu_items_035:
 menu_items_036: 
   id: "14"
   title: Using Data
-  urn: /longitudinal/using-data
+  link: /longitudinal/using-data
   archive_id: "4"
   content_id: "54"
   content_type: Page
@@ -470,7 +470,7 @@ menu_items_036:
 menu_items_037: 
   id: "15"
   title: Data Access
-  urn: /ada/data-access
+  link: /ada/data-access
   archive_id: "7"
   content_id: "11"
   content_type: Page
@@ -483,7 +483,7 @@ menu_items_037:
 menu_items_038: 
   id: "16"
   title: Browse ADA Catalogue
-  urn: /ada/browse-ada-catalogue
+  link: /ada/browse-ada-catalogue
   archive_id: "7"
   content_id: "12"
   content_type: Page
@@ -496,7 +496,7 @@ menu_items_038:
 menu_items_039: 
   id: "17"
   title: Search ADA
-  urn: /ada/search-ada
+  link: /ada/search-ada
   archive_id: "7"
   content_id: "13"
   content_type: Page
@@ -509,7 +509,7 @@ menu_items_039:
 menu_items_040: 
   id: "18"
   title: Register for ADA
-  urn: /ada/register-for-ada
+  link: /ada/register-for-ada
   archive_id: "7"
   content_id: "14"
   content_type: Page
@@ -522,7 +522,7 @@ menu_items_040:
 menu_items_041: 
   id: "20"
   title: Data Deposit
-  urn: /ada/data-deposit
+  link: /ada/data-deposit
   archive_id: "7"
   content_id: "16"
   content_type: Page
@@ -535,7 +535,7 @@ menu_items_041:
 menu_items_042: 
   id: "21"
   title: Why Deposit Data?
-  urn: /ada/why-deposit-data-
+  link: /ada/why-deposit-data-
   archive_id: "7"
   content_id: "17"
   content_type: Page
@@ -548,7 +548,7 @@ menu_items_042:
 menu_items_043: 
   id: "22"
   title: Sharing data and access conditions
-  urn: /ada/sharing-data-and-access-conditions
+  link: /ada/sharing-data-and-access-conditions
   archive_id: "7"
   content_id: "18"
   content_type: Page
@@ -561,7 +561,7 @@ menu_items_043:
 menu_items_044: 
   id: "23"
   title: How to deposit data
-  urn: /ada/how-to-deposit-data
+  link: /ada/how-to-deposit-data
   archive_id: "7"
   content_id: "19"
   content_type: Page
@@ -574,7 +574,7 @@ menu_items_044:
 menu_items_045: 
   id: "24"
   title: Deposit forms
-  urn: /ada/deposit-forms
+  link: /ada/deposit-forms
   archive_id: "7"
   content_id: "20"
   content_type: Page
@@ -587,7 +587,7 @@ menu_items_045:
 menu_items_046: 
   id: "25"
   title: User Guides
-  urn: /ada/user-guides
+  link: /ada/user-guides
   archive_id: "7"
   content_id: "21"
   content_type: Page
@@ -600,7 +600,7 @@ menu_items_046:
 menu_items_047: 
   id: "26"
   title: ADA News
-  urn: /ada/ada-news
+  link: /ada/ada-news
   archive_id: "7"
   content_id: "22"
   content_type: Page
@@ -613,7 +613,7 @@ menu_items_047:
 menu_items_048: 
   id: "27"
   title: Contact
-  urn: /ada/contact
+  link: /ada/contact
   archive_id: "7"
   content_id: "23"
   content_type: Page
@@ -626,7 +626,7 @@ menu_items_048:
 menu_items_049: 
   id: "28"
   title: My Account
-  urn: /ada/my-account
+  link: /ada/my-account
   archive_id: "7"
   content_id: "24"
   content_type: Page
@@ -639,7 +639,7 @@ menu_items_049:
 menu_items_050: 
   id: "29"
   title: User Guides
-  urn: /historical/user-guides
+  link: /historical/user-guides
   archive_id: "2"
   content_id: "41"
   content_type: Page
@@ -652,7 +652,7 @@ menu_items_050:
 menu_items_051: 
   id: "30"
   title: News
-  urn: /historical/news
+  link: /historical/news
   archive_id: "2"
   content_id: "42"
   content_type: Page
@@ -665,7 +665,7 @@ menu_items_051:
 menu_items_052: 
   id: "31"
   title: About
-  urn: /indigenous/about
+  link: /indigenous/about
   archive_id: "3"
   content_id: "43"
   content_type: Page
@@ -678,7 +678,7 @@ menu_items_052:
 menu_items_053: 
   id: "32"
   title: Census 1966-1991
-  urn: /historical/census-1966-1991
+  link: /historical/census-1966-1991
   archive_id: "2"
   content_id: "69"
   content_type: Page
@@ -691,7 +691,7 @@ menu_items_053:
 menu_items_054: 
   id: "33"
   title: Using Data
-  urn: /indigenous/using-data
+  link: /indigenous/using-data
   archive_id: "3"
   content_id: "46"
   content_type: Page
@@ -704,7 +704,7 @@ menu_items_054:
 menu_items_055: 
   id: "34"
   title: Protocols
-  urn: /indigenous/protocols
+  link: /indigenous/protocols
   archive_id: "3"
   content_id: "47"
   content_type: Page
@@ -717,7 +717,7 @@ menu_items_055:
 menu_items_056: 
   id: "35"
   title: Community
-  urn: /indigenous/community
+  link: /indigenous/community
   archive_id: "3"
   content_id: "48"
   content_type: Page
@@ -730,7 +730,7 @@ menu_items_056:
 menu_items_057: 
   id: "36"
   title: User Guides
-  urn: /indigenous/user-guides
+  link: /indigenous/user-guides
   archive_id: "3"
   content_id: "49"
   content_type: Page
@@ -743,7 +743,7 @@ menu_items_057:
 menu_items_058: 
   id: "37"
   title: Home
-  urn: /social-science/home
+  link: /social-science/home
   archive_id: "1"
   content_id: "26"
   content_type: Page
@@ -756,7 +756,7 @@ menu_items_058:
 menu_items_059: 
   id: "38"
   title: News
-  urn: /longitudinal/news
+  link: /longitudinal/news
   archive_id: "4"
   content_id: "58"
   content_type: Page
@@ -769,7 +769,7 @@ menu_items_059:
 menu_items_060: 
   id: "39"
   title: About
-  urn: /social-science/about
+  link: /social-science/about
   archive_id: "1"
   content_id: "27"
   content_type: Page
@@ -782,7 +782,7 @@ menu_items_060:
 menu_items_061: 
   id: "40"
   title: Catalogue
-  urn: /social-science/catalogue
+  link: /social-science/catalogue
   archive_id: "1"
   content_id: "28"
   content_type: Page
@@ -795,7 +795,7 @@ menu_items_061:
 menu_items_062: 
   id: "62"
   title: News
-  urn: /qualitative/news
+  link: /qualitative/news
   archive_id: "5"
   content_id: "65"
   content_type: Page
@@ -808,7 +808,7 @@ menu_items_062:
 menu_items_063: 
   id: "63"
   title: Catalogue
-  urn: /international/catalogue
+  link: /international/catalogue
   archive_id: "6"
   content_id: "66"
   content_type: Page
@@ -821,7 +821,7 @@ menu_items_063:
 menu_items_064: 
   id: "64"
   title: Other Tabs TBD
-  urn: /international/other-tabs-tbd
+  link: /international/other-tabs-tbd
   archive_id: "6"
   content_id: "67"
   content_type: Page
@@ -834,7 +834,7 @@ menu_items_064:
 menu_items_065: 
   id: "65"
   title: HCCDA
-  urn: /historical/hccda
+  link: /historical/hccda
   archive_id: "2"
   content_id: "68"
   content_type: Page

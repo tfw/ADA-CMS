@@ -12,7 +12,7 @@
 <tr class="alt">
   <td>Authoring Entity: <% study.stdy_auth_entity %> </td>
   <td>Year: <%= study.stdy_prod_date %> </td>
-  <td>Study ID: <%= study.stdy_id %> </td>
+  <td>Study ID: <%= study.ddi_id %> </td>
   <td>
     <% for archive_study in study.archive_studies
       next if archive_study.archive == Archive.ada %>
