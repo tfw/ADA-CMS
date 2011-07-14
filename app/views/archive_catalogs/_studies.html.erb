@@ -26,9 +26,10 @@
 	  </ul>
 	</div>
 
+	<div style="clear: right;"></div>
+
 	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
 		<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link" href="#">Title View</a></li> 
-		<li>|</li> 
 		<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link" href="#">Extended</a></li>
 	</ul>
 
