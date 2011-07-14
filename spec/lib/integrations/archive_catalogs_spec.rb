@@ -7,7 +7,7 @@ describe Integrations::ArchiveCatalogs do
     archive = Archive.make
     Nesstar::StatementEJB.expects(:find_all_by_subjectId).with("indigenous").returns([])
     statement.expects(:attributes).returns(data)
-    statement.expects(:objectId).returns("indigenous")  
+    statement.expects(:objectId).at_least_once.returns("indigenous")  
     Integrations::ArchiveCatalogs.create_or_update(statement, archive)
     
     ArchiveCatalog.find_by_title("indigenous").should_not be_nil
