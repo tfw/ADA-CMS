@@ -25,7 +25,7 @@ pages_001:
   created_at: 2010-11-25 10:28:39.390517
   updated_at: 2010-11-25 10:28:39.390517
   state: 
-  archive_to_study_integration_id: 
+
 pages_002: 
   id: "58"
   title: News
@@ -45,13 +45,13 @@ pages_002:
   created_at: 2010-11-25 11:04:20.502845
   updated_at: 2010-11-25 11:04:20.502845
   state: 
-  archive_to_study_integration_id: 
+
 pages_003: 
   id: "66"
   title: Catalogue
   link_title: Catalogue
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h1>
     	ADA CRIME AND JUSTICE CATALOGUE&nbsp;</h1>
@@ -96,13 +96,13 @@ pages_003:
   created_at: 2010-11-25 11:23:02.445767
   updated_at: 2011-06-23 09:23:17.719408
   state: 
-  archive_to_study_integration_id: 
+
 pages_004: 
   id: "15"
   title: ADA Undertaking Forms
   link_title: ADA undertaking forms
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h1>
     	ADA User Undertakings</h1>
@@ -176,13 +176,13 @@ pages_004:
   created_at: 2010-11-24 12:52:38.943683
   updated_at: 2011-07-12 13:05:36.766873
   state: 
-  archive_to_study_integration_id: 
+
 pages_005: 
   id: "79"
   title: CJ2-1 RegNet
   link_title: cj2-1-RegNet
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h1>
     	RegNet catalogue</h1>
@@ -218,7 +218,7 @@ pages_005:
   created_at: 2011-06-23 08:59:51.295346
   updated_at: 2011-06-23 09:10:39.738255
   state: 
-  archive_to_study_integration_id: 
+
 pages_006: 
   id: "3"
   title: Home
@@ -247,7 +247,7 @@ pages_006:
   created_at: 2010-11-24 09:15:14.658594
   updated_at: 2011-03-02 03:51:22.434159
   state: 
-  archive_to_study_integration_id: 
+
 pages_007: 
   id: "48"
   title: Community
@@ -267,13 +267,13 @@ pages_007:
   created_at: 2010-11-25 10:34:41.01338
   updated_at: 2010-11-25 10:34:41.01338
   state: 
-  archive_to_study_integration_id: 
+
 pages_008: 
   id: "80"
   title: l1 Longitudinal Surveys of Australian Youth
   link_title: l1 Longitudinal Surveys of Australian Youth
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h1>
     	LSAY - The Longitudinal Surveys of Australian Youth</h1>
@@ -324,7 +324,7 @@ pages_008:
   created_at: 2011-06-23 10:03:37.785389
   updated_at: 2011-06-23 10:03:37.785389
   state: 
-  archive_to_study_integration_id: 
+
 pages_009: 
   id: "69"
   title: Census 1966-1991
@@ -382,13 +382,13 @@ pages_009:
   created_at: 2011-03-02 03:43:21.024076
   updated_at: 2011-03-02 03:54:23.190622
   state: 
-  archive_to_study_integration_id: 
+
 pages_010: 
   id: "35"
   title: About
   link_title: nick's test
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <h1>
     	About the National Criminal Justice Research Data Network</h1>
@@ -484,13 +484,13 @@ pages_010:
   created_at: 2010-11-25 03:34:22.756164
   updated_at: 2011-06-20 12:23:33.004514
   state: 
-  archive_to_study_integration_id: 
+
 pages_011: 
   id: "20"
   title: Deposit forms
   link_title: Deposit forms
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h1>
     	Deposit Forms</h1>
@@ -525,13 +525,13 @@ pages_011:
   created_at: 2010-11-24 13:04:10.621619
   updated_at: 2011-07-12 14:38:51.042366
   state: 
-  archive_to_study_integration_id: 
+
 pages_012: 
   id: "44"
   title: Catalogue
   link_title: Catalogue
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h1>
     	ADA - Indigenous Catalogue</h1>
@@ -611,7 +611,7 @@ pages_012:
   created_at: 2010-11-25 10:27:34.580851
   updated_at: 2011-06-23 10:34:17.474642
   state: 
-  archive_to_study_integration_id: 
+
 pages_013: 
   id: "63"
   title: Completed Projects
@@ -637,7 +637,7 @@ pages_013:
   created_at: 2010-11-25 11:18:18.025663
   updated_at: 2010-11-25 11:19:14.696386
   state: 
-  archive_to_study_integration_id: 
+
 pages_014: 
   id: "6"
   title: Home
@@ -663,13 +663,13 @@ pages_014:
   created_at: 2010-11-24 09:15:14.699423
   updated_at: 2010-11-26 01:48:27.480007
   state: 
-  archive_to_study_integration_id: 
+
 pages_015: 
   id: "68"
   title: HCCDA
   link_title: Historical Census and Colonial Data Archive
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <h1>
     	Historical and Colonial Census Data Archive - HCCDA</h1>
@@ -707,13 +707,13 @@ pages_015:
   created_at: 2011-03-02 03:33:44.032041
   updated_at: 2011-06-20 23:47:59.406075
   state: 
-  archive_to_study_integration_id: 
+
 pages_016: 
   id: "71"
   title: NCJRDN Tools
   link_title: Tools
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |-
     <p>
     	This page provides access to data analysis tools provided by the National Criminal Justice Research Data Network.</p>
@@ -761,13 +761,13 @@ pages_016:
   created_at: 2011-06-20 12:13:27.43929
   updated_at: 2011-06-20 13:18:53.157401
   state: 
-  archive_to_study_integration_id: 
+
 pages_017: 
   id: "10"
   title: Subarchives
   link_title: Subarchives
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h2>
     	THIS PAGE NEEDS TO REDIRECT TO EACH SUBARCHIVE.</h2>
@@ -782,7 +782,7 @@ pages_017:
   created_at: 2010-11-24 12:30:44.100357
   updated_at: 2011-07-11 06:56:18.933181
   state: 
-  archive_to_study_integration_id: 
+
 pages_018: 
   id: "23"
   title: Contact
@@ -802,7 +802,7 @@ pages_018:
   created_at: 2010-11-24 13:08:31.834604
   updated_at: 2011-02-23 02:46:56.778952
   state: 
-  archive_to_study_integration_id: 
+
 pages_019: 
   id: "53"
   title: Creating Data
@@ -829,7 +829,7 @@ pages_019:
   created_at: 2010-11-25 10:43:17.606898
   updated_at: 2010-11-25 10:45:48.753602
   state: 
-  archive_to_study_integration_id: 
+
 pages_020: 
   id: "28"
   title: Catalogue
@@ -853,13 +853,13 @@ pages_020:
   created_at: 2010-11-24 21:46:25.263317
   updated_at: 2010-11-24 21:46:25.263317
   state: 
-  archive_to_study_integration_id: 
+
 pages_021: 
   id: "74"
   title: User Guides
   link_title: user-guides
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <h2>
     	ADA International User Guides</h2>
@@ -891,7 +891,7 @@ pages_021:
   created_at: 2011-06-20 15:12:28.781666
   updated_at: 2011-06-20 15:12:45.728138
   state: 
-  archive_to_study_integration_id: 
+
 pages_022: 
   id: "47"
   title: Protocols
@@ -911,7 +911,7 @@ pages_022:
   created_at: 2010-11-25 10:31:49.017228
   updated_at: 2010-11-25 10:32:30.005038
   state: 
-  archive_to_study_integration_id: 
+
 pages_023: 
   id: "57"
   title: User Guides
@@ -931,13 +931,13 @@ pages_023:
   created_at: 2010-11-25 11:03:56.131984
   updated_at: 2010-11-25 11:03:56.131984
   state: 
-  archive_to_study_integration_id: 
+
 pages_024: 
   id: "8"
   title: About
   link_title: Test1
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
     	The Australian Data Archive (ADA) is a consortium of leading national Australian universities, managed by the Australian National University (ANU). ADA was established at the ANU in 1981 with a brief to provide a national service for the collection and preservation of computer readable data relating to social, political and economic affairs and to make these data available for further analysis.</p>
@@ -999,13 +999,13 @@ pages_024:
   created_at: 2010-11-24 09:39:55.846072
   updated_at: 2011-07-11 06:47:12.809149
   state: 
-  archive_to_study_integration_id: 
+
 pages_025: 
   id: "17"
   title: Why Deposit Data?
   link_title: Why Deposit Data?
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h1>
     	Why deposit your data?</h1>
@@ -1075,7 +1075,7 @@ pages_025:
   created_at: 2010-11-24 12:58:08.407768
   updated_at: 2011-07-13 12:07:34.785722
   state: 
-  archive_to_study_integration_id: 
+
 pages_026: 
   id: "27"
   title: About
@@ -1121,13 +1121,13 @@ pages_026:
   created_at: 2010-11-24 21:42:35.405111
   updated_at: 2010-11-24 21:42:35.405111
   state: 
-  archive_to_study_integration_id: 
+
 pages_027: 
   id: "76"
   title: CJ2-2 CEPS
   link_title: CEPS
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <p>
     	The Centre for Excellence in Policing and Security</p>
@@ -1146,7 +1146,7 @@ pages_027:
   created_at: 2011-06-20 23:34:38.64538
   updated_at: 2011-06-23 09:10:20.568935
   state: 
-  archive_to_study_integration_id: 
+
 pages_028: 
   id: "12"
   title: Browse ADA Catalogue
@@ -1168,7 +1168,7 @@ pages_028:
   created_at: 2010-11-24 12:46:30.831547
   updated_at: 2011-02-23 02:36:56.166955
   state: 
-  archive_to_study_integration_id: 
+
 pages_029: 
   id: "55"
   title: Longitudinal Studies
@@ -1216,13 +1216,13 @@ pages_029:
   created_at: 2010-11-25 10:51:32.308267
   updated_at: 2010-11-25 11:06:26.061697
   state: 
-  archive_to_study_integration_id: 
+
 pages_030: 
   id: "16"
   title: Data Deposit
   link_title: Data Deposit
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h1>
     	Depositing data with ADA</h1>
@@ -1257,13 +1257,13 @@ pages_030:
   created_at: 2010-11-24 12:54:18.193391
   updated_at: 2011-07-12 14:20:34.729004
   state: 
-  archive_to_study_integration_id: 
+
 pages_031: 
   id: "70"
   title: Criminal Justice
   link_title: Crime
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <p>
     	The ADA-JL Crime subarchive provides access to data from the National Criminal Justice Research Data Network&nbsp;&nbsp;</p>
@@ -1301,13 +1301,13 @@ pages_031:
   created_at: 2011-06-20 12:07:52.107909
   updated_at: 2011-06-21 02:00:58.579179
   state: 
-  archive_to_study_integration_id: 
+
 pages_032: 
   id: "72"
   title: Law and Justice
   link_title: Policing and Security
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <p>
     	Along with Crime data, ADA also provides access to other collections in the area of law and justice.</p>
@@ -1336,7 +1336,7 @@ pages_032:
   created_at: 2011-06-20 12:18:09.513742
   updated_at: 2011-06-20 23:33:16.354242
   state: 
-  archive_to_study_integration_id: 
+
 pages_033: 
   id: "54"
   title: Using Data
@@ -1363,7 +1363,7 @@ pages_033:
   created_at: 2010-11-25 10:45:13.40924
   updated_at: 2010-11-25 10:45:13.40924
   state: 
-  archive_to_study_integration_id: 
+
 pages_034: 
   id: "43"
   title: About
@@ -1383,7 +1383,7 @@ pages_034:
   created_at: 2010-11-25 10:27:06.414842
   updated_at: 2010-11-25 10:37:16.349891
   state: 
-  archive_to_study_integration_id: 
+
 pages_035: 
   id: "52"
   title: Catalogue
@@ -1403,7 +1403,7 @@ pages_035:
   created_at: 2010-11-25 10:41:50.472092
   updated_at: 2010-11-25 10:41:50.472092
   state: 
-  archive_to_study_integration_id: 
+
 pages_036: 
   id: "14"
   title: Register for ADA
@@ -1427,7 +1427,7 @@ pages_036:
   created_at: 2010-11-24 12:49:51.450729
   updated_at: 2011-02-23 02:36:56.153152
   state: 
-  archive_to_study_integration_id: 
+
 pages_037: 
   id: "59"
   title: About
@@ -1455,7 +1455,7 @@ pages_037:
   created_at: 2010-11-25 11:11:59.045623
   updated_at: 2010-11-25 11:11:59.045623
   state: 
-  archive_to_study_integration_id: 
+
 pages_038: 
   id: "32"
   title: Themed Data
@@ -1490,7 +1490,7 @@ pages_038:
   created_at: 2010-11-24 21:57:42.190703
   updated_at: 2010-11-25 05:10:12.612598
   state: 
-  archive_to_study_integration_id: 
+
 pages_039: 
   id: "46"
   title: Using Data
@@ -1519,13 +1519,13 @@ pages_039:
   created_at: 2010-11-25 10:29:35.242171
   updated_at: 2010-11-25 10:31:01.758949
   state: 
-  archive_to_study_integration_id: 
+
 pages_040: 
   id: "82"
   title: Special Access Requests
   link_title: Special Access Requests
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h1>
     	Special Access Requests</h1>
@@ -1548,7 +1548,7 @@ pages_040:
   created_at: 2011-07-12 12:40:41.70755
   updated_at: 2011-07-12 13:13:43.200472
   state: 
-  archive_to_study_integration_id: 
+
 pages_041: 
   id: "4"
   title: Home
@@ -1577,7 +1577,7 @@ pages_041:
   created_at: 2010-11-24 09:15:14.671645
   updated_at: 2010-11-26 01:55:24.176659
   state: 
-  archive_to_study_integration_id: 
+
 pages_042: 
   id: "67"
   title: Other Tabs TBD
@@ -1597,7 +1597,7 @@ pages_042:
   created_at: 2010-11-25 11:24:49.666445
   updated_at: 2010-11-25 11:24:49.666445
   state: 
-  archive_to_study_integration_id: 
+
 pages_043: 
   id: "26"
   title: Home
@@ -1620,13 +1620,13 @@ pages_043:
   created_at: 2010-11-24 21:40:53.958685
   updated_at: 2010-11-26 01:49:16.178569
   state: 
-  archive_to_study_integration_id: 
+
 pages_044: 
   id: "61"
   title: Creating Data
   link_title: Creating Data
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <h1>
     	Creating Data</h1>
@@ -1664,7 +1664,7 @@ pages_044:
   created_at: 2010-11-25 11:14:07.685543
   updated_at: 2011-06-21 03:25:15.715052
   state: 
-  archive_to_study_integration_id: 
+
 pages_045: 
   id: "33"
   title: User Guides
@@ -1686,7 +1686,7 @@ pages_045:
   created_at: 2010-11-24 21:58:22.231258
   updated_at: 2011-02-23 02:48:42.126921
   state: 
-  archive_to_study_integration_id: 
+
 pages_046: 
   id: "34"
   title: News
@@ -1708,7 +1708,7 @@ pages_046:
   created_at: 2010-11-24 21:59:15.300457
   updated_at: 2010-11-24 21:59:15.300457
   state: 
-  archive_to_study_integration_id: 
+
 pages_047: 
   id: "22"
   title: ADA News
@@ -1730,7 +1730,7 @@ pages_047:
   created_at: 2010-11-24 13:07:31.311482
   updated_at: 2011-02-23 02:46:44.875984
   state: 
-  archive_to_study_integration_id: 
+
 pages_048: 
   id: "29"
   title: Creating Data
@@ -1774,13 +1774,13 @@ pages_048:
   created_at: 2010-11-24 21:48:37.750452
   updated_at: 2010-11-24 21:48:37.750452
   state: 
-  archive_to_study_integration_id: 
+
 pages_049: 
   id: "13"
   title: Search ADA
   link_title: Search ADA
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h1>
     	&nbsp;</h1>
@@ -1836,13 +1836,13 @@ pages_049:
   created_at: 2010-11-24 12:47:30.70379
   updated_at: 2011-07-11 23:51:21.262321
   state: 
-  archive_to_study_integration_id: 
+
 pages_050: 
   id: "81"
   title: Access conditions
   link_title: Access conditions
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h1>
     	Conditions of access to data from ADA</h1>
@@ -1979,13 +1979,13 @@ pages_050:
   created_at: 2011-07-11 08:18:18.5445
   updated_at: 2011-07-12 13:48:58.255488
   state: 
-  archive_to_study_integration_id: 
+
 pages_051: 
   id: "75"
   title: News
   link_title: News
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <p>
     	HOLDING PAGE FOR INTERNATIONAL NEWS</p>
@@ -1999,7 +1999,7 @@ pages_051:
   created_at: 2011-06-20 23:32:04.568244
   updated_at: 2011-06-20 23:32:04.568244
   state: 
-  archive_to_study_integration_id: 
+
 pages_052: 
   id: "64"
   title: User Guides
@@ -2019,7 +2019,7 @@ pages_052:
   created_at: 2010-11-25 11:20:05.234581
   updated_at: 2010-11-25 11:20:05.234581
   state: 
-  archive_to_study_integration_id: 
+
 pages_053: 
   id: "42"
   title: News
@@ -2039,7 +2039,7 @@ pages_053:
   created_at: 2010-11-25 10:18:00.303517
   updated_at: 2010-11-25 10:18:00.303517
   state: 
-  archive_to_study_integration_id: 
+
 pages_054: 
   id: "36"
   title: About
@@ -2059,7 +2059,7 @@ pages_054:
   created_at: 2010-11-25 10:01:00.618844
   updated_at: 2010-11-25 10:01:00.618844
   state: 
-  archive_to_study_integration_id: 
+
 pages_055: 
   id: "51"
   title: About
@@ -2083,7 +2083,7 @@ pages_055:
   created_at: 2010-11-25 10:41:08.739756
   updated_at: 2010-11-25 10:41:25.85336
   state: 
-  archive_to_study_integration_id: 
+
 pages_056: 
   id: "49"
   title: User Guides
@@ -2103,13 +2103,13 @@ pages_056:
   created_at: 2010-11-25 10:35:41.244162
   updated_at: 2010-11-25 10:35:41.244162
   state: 
-  archive_to_study_integration_id: 
+
 pages_057: 
   id: "7"
   title: Home
   link_title: Home
   description: 
-  author_id: "8"
+  author_id: "1"
   body: |
     <p>
     	&nbsp;</p>
@@ -2164,7 +2164,7 @@ pages_057:
   created_at: 2010-11-24 09:15:14.712612
   updated_at: 2011-06-21 01:51:21.285495
   state: 
-  archive_to_study_integration_id: 
+
 pages_058: 
   id: "37"
   title: Catalogue
@@ -2184,7 +2184,7 @@ pages_058:
   created_at: 2010-11-25 10:01:51.237683
   updated_at: 2010-11-25 10:01:51.237683
   state: 
-  archive_to_study_integration_id: 
+
 pages_059: 
   id: "18"
   title: Sharing data and access conditions
@@ -2204,13 +2204,13 @@ pages_059:
   created_at: 2010-11-24 13:00:01.03464
   updated_at: 2011-02-23 02:36:56.135753
   state: 
-  archive_to_study_integration_id: 
+
 pages_060: 
   id: "73"
   title: Civil Justice
   link_title: Civil Justice
   description: 
-  author_id: "8"
+  author_id: "1"
   body: ""
   breakout_box: ""
   parent_id: "72"
@@ -2221,7 +2221,7 @@ pages_060:
   created_at: 2011-06-20 12:32:58.727899
   updated_at: 2011-06-20 23:33:35.180221
   state: 
-  archive_to_study_integration_id: 
+
 pages_061: 
   id: "56"
   title: Visualisation
@@ -2241,7 +2241,7 @@ pages_061:
   created_at: 2010-11-25 11:02:41.654233
   updated_at: 2010-11-25 11:02:41.654233
   state: 
-  archive_to_study_integration_id: 
+
 pages_062: 
   id: "39"
   title: Using Data
@@ -2268,7 +2268,7 @@ pages_062:
   created_at: 2010-11-25 10:06:15.241045
   updated_at: 2010-11-25 10:06:15.241045
   state: 
-  archive_to_study_integration_id: 
+
 pages_063: 
   id: "62"
   title: Using Data
@@ -2307,7 +2307,7 @@ pages_063:
   created_at: 2010-11-25 11:16:23.777611
   updated_at: 2010-11-25 11:16:23.777611
   state: 
-  archive_to_study_integration_id: 
+
 pages_064: 
   id: "41"
   title: User Guides
@@ -2327,7 +2327,7 @@ pages_064:
   created_at: 2010-11-25 10:17:32.08885
   updated_at: 2010-11-25 10:17:32.08885
   state: 
-  archive_to_study_integration_id: 
+
 pages_065: 
   id: "50"
   title: News
@@ -2347,13 +2347,13 @@ pages_065:
   created_at: 2010-11-25 10:36:10.319176
   updated_at: 2010-11-25 10:36:10.319176
   state: 
-  archive_to_study_integration_id: 
+
 pages_066: 
   id: "11"
   title: Data Access
   link_title: Data Access
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h1>
     	Data Access from the Australian Data Archive</h1>
@@ -2439,13 +2439,13 @@ pages_066:
   created_at: 2010-11-24 12:32:03.602175
   updated_at: 2011-07-11 23:41:11.336841
   state: 
-  archive_to_study_integration_id: 
+
 pages_067: 
   id: "21"
   title: User Guides
   link_title: User Guides
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <p>
     	Holding page for USER GUIDES.</p>
@@ -2463,7 +2463,7 @@ pages_067:
   created_at: 2010-11-24 13:06:40.2627
   updated_at: 2011-07-12 14:25:44.314178
   state: 
-  archive_to_study_integration_id: 
+
 pages_068: 
   id: "38"
   title: Creating Data
@@ -2488,13 +2488,13 @@ pages_068:
   created_at: 2010-11-25 10:04:17.50621
   updated_at: 2010-11-25 10:04:17.50621
   state: 
-  archive_to_study_integration_id: 
+
 pages_069: 
   id: "78"
   title: CJ2-Law and Justice
   link_title: Law end Justice
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |-
     <h1>
     	Law and Justice</h1>
@@ -2543,13 +2543,13 @@ pages_069:
   created_at: 2011-06-23 08:35:44.903796
   updated_at: 2011-06-23 09:11:55.688807
   state: 
-  archive_to_study_integration_id: 
+
 pages_070: 
   id: "19"
   title: How to deposit data
   link_title: How to deposit data
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h1>
     	How To Deposit Data</h1>
@@ -2646,7 +2646,7 @@ pages_070:
   created_at: 2010-11-24 13:00:59.602251
   updated_at: 2011-07-12 14:43:59.939632
   state: 
-  archive_to_study_integration_id: 
+
 pages_071: 
   id: "60"
   title: Catalogue
@@ -2668,7 +2668,7 @@ pages_071:
   created_at: 2010-11-25 11:12:48.810893
   updated_at: 2010-11-25 11:12:48.810893
   state: 
-  archive_to_study_integration_id: 
+
 pages_072: 
   id: "65"
   title: News
@@ -2688,7 +2688,7 @@ pages_072:
   created_at: 2010-11-25 11:20:41.698186
   updated_at: 2010-11-25 11:20:41.698186
   state: 
-  archive_to_study_integration_id: 
+
 pages_073: 
   id: "5"
   title: Home
@@ -2730,7 +2730,7 @@ pages_073:
   created_at: 2010-11-24 09:15:14.686228
   updated_at: 2010-11-26 01:57:08.472824
   state: 
-  archive_to_study_integration_id: 
+
 pages_074: 
   id: "30"
   title: Using Data
@@ -2769,13 +2769,13 @@ pages_074:
   created_at: 2010-11-24 21:51:42.777809
   updated_at: 2010-11-24 21:51:42.777809
   state: 
-  archive_to_study_integration_id: 
+
 pages_075: 
   id: "77"
   title: CJ1-Crime
   link_title: Crime
   description: 
-  author_id: "11"
+  author_id: "1"
   body: |
     <h2>
     	Crime</h2>
@@ -2863,7 +2863,7 @@ pages_075:
   created_at: 2011-06-23 08:03:22.512286
   updated_at: 2011-06-23 08:45:52.433028
   state: 
-  archive_to_study_integration_id: 
+
 pages_076: 
   id: "24"
   title: My Account
@@ -2887,7 +2887,7 @@ pages_076:
   created_at: 2010-11-24 13:09:39.969442
   updated_at: 2011-02-23 02:47:08.972278
   state: 
-  archive_to_study_integration_id: 
+
 pages_077: 
   id: "1"
   title: Home
@@ -2934,4 +2934,4 @@ pages_077:
   created_at: 2010-11-24 09:15:14.613667
   updated_at: 2011-02-23 02:46:18.333818
   state: 
-  archive_to_study_integration_id: 
+
