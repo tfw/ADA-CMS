@@ -65,21 +65,6 @@ ActiveRecord::Schema.define(:version => 20110712010656) do
     t.datetime "updated_at"
   end
 
-  create_table "delayed_jobs", :force => true do |t|
-    t.integer  "priority",   :default => 0
-    t.integer  "attempts",   :default => 0
-    t.text     "handler"
-    t.text     "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string   "locked_by"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
-
   create_table "documents", :force => true do |t|
     t.integer  "user_id"
     t.string   "title",                 :null => false
@@ -186,7 +171,7 @@ ActiveRecord::Schema.define(:version => 20110712010656) do
 
   create_table "menu_items", :force => true do |t|
     t.string   "title"
-    t.string   "urn"
+    t.string   "link"
     t.integer  "archive_id"
     t.integer  "content_id"
     t.string   "content_type"

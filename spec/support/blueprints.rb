@@ -49,6 +49,12 @@ Page.blueprint do
   body Sham.body
 end
 
+MenuItem.blueprint do 
+  title Sham.name
+  link  Sham.url
+  archive_id  {(Archive.make).id}
+end
+
 ArchiveNews.blueprint do
   news_id {(News.make).id}
   archive_id {(Archive.make).id}

@@ -20,23 +20,23 @@ describe Staff::ArchivesController do
     end
   end
   
-  describe "updating page order" do
-    context "with an ajax call" do
-      specify "the moved page updates its siblings" do
-        page = Page.make
-        left = Page.make
-        right = Page.make
-        left.move_to_left_of page
-        page.move_to_right_of left
-        right.move_to_right_of page
-        page.move_to_left_of right
-        page.right_sibling.should == right
-        page.left_sibling.should == left        
-        page_order = "#{page.id}, #{left.id}, #{right.id}"
-        post :update_page_order, {:page_order => page_order, :moved => "page-options-#{page.id}", :archive => nil}
-        page.reload
-        page.right_sibling.should == left
-        page.left_sibling.should == nil
+  describe "updating menu order" do
+    context "with an ajax post" do
+      specify "the moved menu_item updates its siblings" do
+        menu_item = MenuItem.make
+        left = MenuItem.make
+        right = MenuItem.make
+        left.move_to_left_of menu_item
+        menu_item.move_to_right_of left
+        right.move_to_right_of menu_item
+        menu_item.move_to_left_of right
+        menu_item.right_sibling.should == right
+        menu_item.left_sibling.should == left        
+        menu_item_order = "#{menu_item.id}, #{left.id}, #{right.id}"
+        post :update_menu_order, {:menu_order => menu_item_order, :moved => "menu-options-#{menu_item.id}", :archive => nil}
+        menu_item.reload
+        menu_item.right_sibling.should == left
+        menu_item.left_sibling.should == nil
       end
     end
   end

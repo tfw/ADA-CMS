@@ -45,7 +45,7 @@
 	<nav class="mainnav clearfix">
 	  <ul>
 			<% for menu_item in @ada_menu_items %>
-				<li> <%= link_to(menu_item.title, menu_item.urn) %> 
+				<li> <%= link_to(menu_item.title, menu_item.link) %> 
 					<% if menu_item.children.any? %>
 						<ul>
 						  <% for child in menu_item.children %>									
@@ -77,7 +77,7 @@
 						<% else %>
 						<li>
 						<% end %>
-						 	<%= link_to(menu_item.title, menu_item.urn )%>
+						 	<%= link_to(menu_item.title, menu_item.link )%>
 						</li>
 					<% end %>
 			  </ul>
