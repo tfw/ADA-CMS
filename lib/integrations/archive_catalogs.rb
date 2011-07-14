@@ -1,5 +1,4 @@
 # coding: utf-8
-require 'ruby-debug'
 
 class Integrations::ArchiveCatalogs
   
