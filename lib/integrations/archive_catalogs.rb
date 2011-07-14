@@ -16,8 +16,6 @@ class Integrations::ArchiveCatalogs
       else
         data[:label] = catalog_ejb.label
       end
-  
-      data[:label] = catalog_ejb.label
               
       archive_catalog = ArchiveCatalog.create_or_update_from_nesstar(data, archive, parent)
     elsif data["objectType"] == "fStudy"

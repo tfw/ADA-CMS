@@ -1,13 +1,20 @@
 namespace :integrate do
-  task :studies => :environment do
-    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
-    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("social-science"), Archive.social_science.id)
-    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("historical"), Archive.historical.id)
-    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("longitudinal"), Archive.longitudinal.id)
-    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("qualitative"), Archive.qualitative.id)
-    Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("international"), Archive.international.id)    
-  end
   
+  namespace :studies do
+    task :indigenous => :environment do
+      Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
+    end
+    
+    task :everything => :environment do
+      Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
+      Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("social-science"), Archive.social_science.id)
+      Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("historical"), Archive.historical.id)
+      Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("longitudinal"), Archive.longitudinal.id)
+      Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("qualitative"), Archive.qualitative.id)
+      Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("international"), Archive.international.id)    
+    end  
+  end
+    
   task :related_materials => :environment do
     Integrations::RelatedMaterials.create_or_update
   end
