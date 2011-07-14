@@ -1,5 +1,5 @@
 <% fields = variable.attributes.dup
-  fields.delete(:id) %>
+   fields.delete(:id) %>
 <table border=0>
   <thead>
     <tr> 
@@ -32,15 +32,18 @@
       <td><%= variable.val_range_max %> </td>
     </tr>
     <% if fields.size > 0 %>
-    <tr class="<%= cycle('alt', '') %>">
-      <th colspan=4 align="center">Misc.</th>
-    </tr>
+      <tr class="<%= cycle('alt', '') %>">
+        <th colspan="4" align="center">Misc.</th>
+      </tr>
     <% end %>
-  	<% for field in fields %>
-  	  <tr class="<%= cycle('alt', '') %>">
-  	    <td colspan="4"> <%= variable_field(field) %> </td>
-  	  </tr>
-  	<% end %>	
+    <% for field in fields %>
+      <% var = variable_field(field) %>
+      <% if var.present? %>
+        <tr class="<%= cycle('alt', '') %>">
+	  <td colspan="4"> <%= var %> </td>
+	</tr>
+      <% end %>
+    <% end %>
   </tbody>
 </table>
 

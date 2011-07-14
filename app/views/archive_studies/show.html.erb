@@ -63,7 +63,7 @@
   </section>
     
   <section id="variables" <%= conceal_unless(['var'], params[:show]) %>>
-	  <%= render :partial => "variable", :collection => study.variables, :spacer_template => "spacer" %>
+	  <%= render :partial => "variable", :collection => study.variables %>
   </section>
   
     <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
