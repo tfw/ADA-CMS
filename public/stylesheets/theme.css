@@ -152,7 +152,10 @@ legend {
 #variable-results {
 	margin-top: 65px;
 }
-	
+
+#variables table {
+	margin-bottom: 3em;
+}
 	
 #search-results th, #search-results-ext th, #browse-results-ext th {
 	border-top-style: none;

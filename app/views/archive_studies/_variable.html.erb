@@ -2,8 +2,9 @@
    fields.delete(:id) %>
 <table border=0>
   <thead>
-    <tr> 
-      <th colspan=2><a id="<%= variable_anchor(variable) %>" href="<%= variable_href(variable, @archive_study) %>" ><%= variable.label %></a> 
+    <tr>
+      <th>
+	<a id="<%= variable_anchor(variable) %>" href="<%= variable_href(variable, @archive_study) %>" ><%= variable.label %></a>
       </th>
       <th align="right">
         <% unless variable == variable.study.variables.first %>
@@ -21,26 +22,24 @@
   <tbody>
     <tr>
       <th> Name</th>
-      <th> Numcats</th>
       <th width="5%"> Val Range Min</th>
       <th width="5%"> Val Range Max</th>
     </tr>
     <tr class="<%= cycle('alt', '') %>">
       <td><%= variable.name %></td>
-      <td></td>
       <td><%= variable.val_range_min %> </td>
       <td><%= variable.val_range_max %> </td>
     </tr>
     <% if fields.size > 0 %>
       <tr class="<%= cycle('alt', '') %>">
-        <th colspan="4" align="center">Misc.</th>
+        <th colspan="3" align="center">Misc.</th>
       </tr>
     <% end %>
     <% for field in fields %>
       <% var = variable_field(field) %>
       <% if var.present? %>
         <tr class="<%= cycle('alt', '') %>">
-	  <td colspan="4"> <%= var %> </td>
+	  <td colspan="3"> <%= var %> </td>
 	</tr>
       <% end %>
     <% end %>
