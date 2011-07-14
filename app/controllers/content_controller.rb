@@ -17,6 +17,6 @@ class ContentController < ApplicationController
   
   def get_atom_feed(archive)
     feed = Inkling::Feed.find_by_title("#{archive.name} Feed")
-    feed ||=  Inkling::Feed.create!(:title => "#{archive.name} Atom Feed", :format => "Inkling::Feeds::Atom", :source => "ArchiveFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
+    feed ||=  Inkling::Feed.create!(:title => "#{archive.name} Feed", :format => "Inkling::Feeds::Atom", :source => "ArchiveFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
   end
 end
