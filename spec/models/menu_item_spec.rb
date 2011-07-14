@@ -31,7 +31,7 @@ describe MenuItem do
         page.save!
         menu_item.reload
         menu_item.title.should == "testing 1 2 3"
-        menu_item.link.should == page.link
+        menu_item.link.should == page.urn
       end
     end
   end

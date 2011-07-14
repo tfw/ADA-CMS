@@ -15,10 +15,10 @@ feature "Creating pages" do
     visit_archive("historical")
     
     within(:xpath, "//fieldset[@id='menu-management']") do
-      click_link("+")
+      click_link("new-page-link")
     end
     
-    page.should have_content("Pages: Historical New")  
+    page.should have_content("New Page: Historical")  
   end
   
   scenario "I can create a page" do
