@@ -17,9 +17,9 @@ class MenuItem < ActiveRecord::Base
     menu_item = nil
     
     if page.parent
-      menu_item = MenuItem.create(:title => page.title, :urn => page.urn, :content => page, :archive => page.archive, :parent => parent_menu_item)
+      menu_item = MenuItem.create(:title => page.title, :link => page.urn, :content => page, :archive => page.archive, :parent => parent_menu_item)
     else
-      menu_item = MenuItem.create(:title => page.title, :urn => page.urn, :archive => page.archive, :content => page)
+      menu_item = MenuItem.create(:title => page.title, :link => page.urn, :archive => page.archive, :content => page)
     end
     
     menu_item
@@ -27,9 +27,9 @@ class MenuItem < ActiveRecord::Base
   
   def self.update_from_page(page, menu_item)
     if page.parent
-      menu_item.update_attributes(:title => page.title, :urn => page.urn, :content => page, :archive => page.archive, :parent => page.parent.menu_item)
+      menu_item.update_attributes(:title => page.title, :link => page.urn, :content => page, :archive => page.archive, :parent => page.parent.menu_item)
     else
-      menu_item.update_attributes(:title => page.title, :urn => page.urn, :content => page, :archive => page.archive)
+      menu_item.update_attributes(:title => page.title, :link => page.urn, :content => page, :archive => page.archive)
     end
     
     menu_item
@@ -57,7 +57,7 @@ class MenuItem < ActiveRecord::Base
   def parent_menu_item_for_parent_page
     if self.content and self.content.parent
       unless self.content.parent.menu_item
-        errors.add(:content, "Parent page #{content.parent.path.slug} must have a Menu Item before one is created for the child.")
+        errors.add(:content, "Parent page #{content.parent.urn} must have a Menu Item before one is created for the child.")
       end
     end
   end

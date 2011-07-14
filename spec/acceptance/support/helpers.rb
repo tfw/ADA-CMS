@@ -25,8 +25,8 @@ module HelperMethods
 
   def create_page(archive, page_title, page_body)
     visit_archive(archive.slug)
-    within(:xpath, "//fieldset[@id='page-management']") do
-      click_link("+")
+    within(:xpath, "//fieldset[@id='menu-management']") do
+      click_link('new-page-link')
     end
 
     fill_in("page_title", :with => page_title)

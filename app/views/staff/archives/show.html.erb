@@ -9,8 +9,8 @@
 <fieldset id="menu-management">
   <legend> 
     Public Menu: 
-    <%= link_to image_tag('icons/page_add.png'), new_staff_archive_page_path(:archive_id => @archive) %>
-    <%= link_to image_tag('icons/link_add.png'), new_staff_archive_menu_item_path(:archive_id => @archive) %>
+    <%= link_to image_tag('icons/page_add.png'), new_staff_archive_page_path(:archive_id => @archive), :id => "new-page-link" %>
+    <%= link_to image_tag('icons/link_add.png'), new_staff_archive_menu_item_path(:archive_id => @archive), :id => "new-link-link"  %>
   </legend>
 
   <ul class="sortable">
