@@ -12,10 +12,9 @@ feature "Creating pages" do
   end
   
   scenario "I can access the archive page form"  do
-    #debugger
     visit_archive("historical")
     
-    within(:xpath, "//fieldset[@id='page-management']") do
+    within(:xpath, "//fieldset[@id='menu-management']") do
       click_link("+")
     end
     
