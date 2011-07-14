@@ -25,8 +25,8 @@ module HelperMethods
 
   def create_page(archive, page_title, page_body)
     visit_archive(archive.slug)
-    within(:xpath, "//fieldset[@id='page-management']") do
-      click_link("+")
+    within(:xpath, "//fieldset[@id='menu-management']") do
+      click_link('new-page-link')
     end
 
     fill_in("page_title", :with => page_title)
@@ -77,6 +77,27 @@ module HelperMethods
     words = words.gsub(/(<\/?[^>]*>|&[a-z]*;)/, " ").split(/\W/m).reject{|w| w.empty? }
     words = words.size > n ? words[0...n]+['...'] : words
     words * ' '
+  end
+  
+  def line_break_title(title, limit)
+    return "" if title.nil? #bad data in some studies
+    line_break = []
+    bits = title.split(/\W/) 
+
+    if bits.size > limit
+      i = 0      
+      for word in bits
+        line_break << word
+        i+= 1
+        if i == limit + 1
+          line_break << "<br/>"
+          i = 0
+        end
+      end
+    else
+      return title
+    end
+    line_break.join " "
   end
   
   #this is solely here to run searches more easily from the debug console

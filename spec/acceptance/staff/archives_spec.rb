@@ -41,10 +41,10 @@ feature "Archives management:" do
       admin = make_user(:administrator)
       sign_in(admin)
       create_page(Archive.historical, "test page", "sample content")
+      cms_page = Page.find_by_title("test page")
+      menu_item = cms_page.menu_item
       
-      page_id = Page.find_by_title("test page").id
-      
-      within(:xpath, "//li[@id='page-options-#{page_id}']") do
+      within(:xpath, "//li[@id='menu-options-#{menu_item.id}']") do
         click_link("Public View")
       end
             

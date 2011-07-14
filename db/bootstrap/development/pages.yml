@@ -1,77 +1,5 @@
 --- 
 pages_001: 
-  id: "38"
-  title: Creating Data
-  link_title: Creating Data
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Holding page for Creating Historical Data</p>
-    <p>
-    	Do we need a creating data page for this subarchive?</p>
-
-  breakout_box: |
-    <p>
-    	Historical creating data breakout box</p>
-
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/breakout_page
-  lft: "71"
-  rgt: "72"
-  created_at: 2010-11-25 10:04:17.50621
-  updated_at: 2010-11-25 10:04:17.50621
-  state: 
-
-pages_002: 
-  id: "44"
-  title: Catalogue
-  link_title: Catalogue
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA INDIGENOUS CATALOGUE</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "83"
-  rgt: "84"
-  created_at: 2010-11-25 10:27:34.580851
-  updated_at: 2010-11-25 10:27:34.580851
-  state: 
-
-pages_003: 
-  id: "39"
-  title: Using Data
-  link_title: Using Data
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Using Historical Data start page</p>
-    <p>
-    	What will go here?</p>
-
-  breakout_box: |
-    <p>
-    	Breakout box for using historical data</p>
-    <p>
-    	Probably an example of how a researcher has used historical data.</p>
-
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/breakout_page
-  lft: "73"
-  rgt: "74"
-  created_at: 2010-11-25 10:06:15.241045
-  updated_at: 2010-11-25 10:06:15.241045
-  state: 
-
-pages_004: 
   id: "45"
   title: Creating Data
   link_title: Creating Data
@@ -92,57 +20,203 @@ pages_004:
   parent_id: 
   archive_id: "3"
   partial: /pages/breakout_page
-  lft: "85"
-  rgt: "86"
+  lft: "111"
+  rgt: "112"
   created_at: 2010-11-25 10:28:39.390517
   updated_at: 2010-11-25 10:28:39.390517
   state: 
 
+pages_002: 
+  id: "58"
+  title: News
+  link_title: News
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA LONGITUDINAL NEWS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "4"
+  partial: /pages/default_page
+  lft: "139"
+  rgt: "140"
+  created_at: 2010-11-25 11:04:20.502845
+  updated_at: 2010-11-25 11:04:20.502845
+  state: 
+
+pages_003: 
+  id: "66"
+  title: Catalogue
+  link_title: Catalogue
+  description: 
+  author_id: "1"
+  body: |-
+    <h1>
+    	ADA CRIME AND JUSTICE CATALOGUE&nbsp;</h1>
+    <p>
+    	DEMO VERSION OF THE CATALOGUE (indigenous) IS AT:</p>
+    <p>
+    	http://test.ada.edu.au/indigenous/browse</p>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 500px; ">
+    	<tbody>
+    		<tr>
+    			<td>
+    				Cat</td>
+    			<td>
+    				Catalogue</td>
+    			<td>
+    				Datasets</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				CJ1</td>
+    			<td>
+    				<a href="/international/cj1-crime">Crime - the NCJRDN Catalogue</a></td>
+    			<td>
+    				20</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				CJ2</td>
+    			<td>
+    				<a href="/international/cj2-law-and-justice">Law and Justice</a></td>
+    			<td>
+    				15</td>
+    		</tr>
+    	</tbody>
+    </table>
+  breakout_box: ""
+  parent_id: 
+  archive_id: "6"
+  partial: /pages/default_page
+  lft: "73"
+  rgt: "82"
+  created_at: 2010-11-25 11:23:02.445767
+  updated_at: 2011-06-23 09:23:17.719408
+  state: 
+
+pages_004: 
+  id: "15"
+  title: ADA Undertaking Forms
+  link_title: ADA undertaking forms
+  description: 
+  author_id: "1"
+  body: |-
+    <h1>
+    	ADA User Undertakings</h1>
+    <p>
+    	As part of our data access requirements, ADA requires you to complete a signed undertaking before being approved to download data. These undertakings are to recognise the access conditions for your use of ADA data, and may include a request for information about your intended use of the data. In general, approval to download data will only be provided for staff members of research organisations, students conducting higher degrees by research and other authorised research purposes.<br />
+    	<br />
+    	Students are required to provide additional information, including contact details of their supervisor in order to be approved for download access (online analysis of unrestricted data is available to all registered users).</p>
+    <p>
+    	There are three forms of undertaking, which relate to the <a href="/ada/access-conditions">access conditions</a> under which the depositor provided the data to ADA :</p>
+    <h2>
+    	1. General user undertaking - <a href="http://www.assda.edu.au/forms/GeneralUndertakingACSPRI.pdf">Download PDF</a></h2>
+    <p>
+    	This undertaking is completed by any user prior to your first download of <strong>unrestricted (general access) data</strong>.</p>
+    <p>
+    	Note: If you completed the previous general user undertaking with ASSDA (prior to August 2011), your undertaking will carry over to ADA and you will not be asked to complete a new general undertaking.</p>
+    <h2>
+    	2. Restricted access user undertaking - <a href="http://www.assda.edu.au/forms/ApplicationToAccessRestrictedData.pdf">Download PDF</a></h2>
+    <p>
+    	If the depositor of a dataset has specified that the data can only be supplied with their express permission, you will need to complete an Application to Access Restricted Data (available through your Profile page, or from the Nesstar data download page).</p>
+    <p>
+    	To determine if a dataset is restricted, refer to the dataset Study Page in the ADA Data Catalogue.</p>
+    <h2>
+    	<a name="special-undertakings"></a>3. Special access undertakings</h2>
+    <p>
+    	Certain depositors have required that access to their data include completion of a specialised User Undertaking form. These undetakings are included below for your convenience.</p>
+    <table border="0.75" cellpadding="2" cellspacing="1" style="width: 80%;">
+    	<thead>
+    		<tr>
+    			<th scope="col" style="text-align: left; width: 60%;">
+    				Study</th>
+    			<th scope="col" style="text-align: center;">
+    				ID</th>
+    			<th scope="col" style="text-align: center;">
+    				Form</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td style="text-align: left; width: 60%;">
+    				Australian Longitudinal Survey of Women&#39;s Health</td>
+    			<th style="text-align: center;">
+    				01XXX</th>
+    			<th style="text-align: center;">
+    				PDF</th>
+    		</tr>
+    		<tr>
+    			<td style="text-align: left; width: 60%;">
+    				Longitudinal Surveys of Australian Youth</td>
+    			<th style="text-align: center;">
+    				01XXX</th>
+    			<th style="text-align: center;">
+    				PDF</th>
+    		</tr>
+    	</tbody>
+    </table>
+  breakout_box: |
+    <h2>
+    	Undertaking forms for download</h2>
+    <p>
+    	ADA General Undertaking - <a href="http://www.assda.edu.au/forms/GeneralUndertakingACSPRI.pdf">PDF</a></p>
+    <p>
+    	ADA Restricted Data Access Undertaking - <a href="http://www.assda.edu.au/forms/ApplicationToAccessRestrictedData.pdf">PDF</a></p>
+    <p>
+    	Special Undertakings - <a href="/ada/ada-undertaking-forms#special-undertakings">See below</a></p>
+
+  parent_id: "11"
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "30"
+  rgt: "31"
+  created_at: 2010-11-24 12:52:38.943683
+  updated_at: 2011-07-12 13:05:36.766873
+  state: 
+
 pages_005: 
-  id: "1"
-  title: Home
-  link_title: ADA Home
+  id: "79"
+  title: CJ2-1 RegNet
+  link_title: cj2-1-RegNet
   description: 
   author_id: "1"
   body: |
     <h1>
-    	Welcome to the Australian Data Archive</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	The Australian Data Archive (ADA) provides a national service for the collection and preservation of digital research data and to make these data available for secondary analysis by academic researchers and other users. </p>
-    <p>
-    	The ADA is comprised of six sub-archives:</p>
-    <ul>
-    	<li>
-    		ADA Social Science</li>
-    	<li>
-    		ADA Historical</li>
-    	<li>
-    		ADA Indigenous</li>
-    	<li>
-    		ADA Longitudinal</li>
-    	<li>
-    		ADA Qualitative</li>
-    	<li>
-    		ADA International</li>
-    </ul>
-    <p>
-    	The archive is provided by a consortium of leading national Australian universities, managed by the Australian National University (ANU) and including nodes around Australia, at the University of Melbourne, University of Queensland, University of Technology Sydney and University of Western Australia.</p>
+    	RegNet catalogue</h1>
+    <table border="0.5" cellpadding="1" cellspacing="1" style="width: 90%; ">
+    	<tbody>
+    		<tr>
+    			<td>
+    				Studies</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Tax</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Other</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    	</tbody>
+    </table>
 
-  breakout_box: |
-    <h2>
-    	News from the Australian Data Archive</h2>
-    <p>
-    	New datasets in the ADA holdings, including the Australian Survey of Social Attitudes, the Australian Election Study and the Australian Demographic Data Bank datasets, now include a mapping variable. If the mapping variable is added to a cross-tabulation, the map icon can be used to display state-level information on a map of Australia.</p>
-
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/breakout_page
-  lft: "5"
-  rgt: "6"
-  created_at: 2010-11-24 09:15:14.613667
-  updated_at: 2011-02-23 02:46:18.333818
+  breakout_box: ""
+  parent_id: "78"
+  archive_id: "6"
+  partial: /pages/default_page
+  lft: "77"
+  rgt: "78"
+  created_at: 2011-06-23 08:59:51.295346
+  updated_at: 2011-06-23 09:10:39.738255
   state: 
 
 pages_006: 
@@ -168,632 +242,90 @@ pages_006:
   parent_id: 
   archive_id: "2"
   partial: /pages/home_page
-  lft: "9"
-  rgt: "10"
+  lft: "1"
+  rgt: "2"
   created_at: 2010-11-24 09:15:14.658594
   updated_at: 2011-03-02 03:51:22.434159
   state: 
 
 pages_007: 
-  id: "4"
-  title: Home
-  link_title: Home
+  id: "48"
+  title: Community
+  link_title: Community
   description: 
   author_id: "1"
-  body: |-
+  body: |
     <p>
-    	&nbsp;</p>
-    <p>
-    	Welcome to the ADA Indigenous Archive.</p>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	ADA Indigenous provides a central hub for the preservation of and access to digital research data on topics involving Aboriginal and Torres Strait Islander peoples. ADA Indigenous is managed by the ATSIDA group, a team of researchers and experts in indigenous data access based at the Jumbunna House of Learning at the University of Technology, Sydney (UTS).</p>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	ADA Indigenous archives a range of quantitative, qualitative and other digital resources, supported by a range of culturally sensitive on-line access methods; and protocols and metadata schema for the deposit of indigenous data.</p>
+    	Insert information on ADA Indigenous community site here.</p>
+
   breakout_box: ""
   parent_id: 
   archive_id: "3"
-  partial: /pages/home_page
-  lft: "11"
-  rgt: "12"
-  created_at: 2010-11-24 09:15:14.671645
-  updated_at: 2010-11-26 01:55:24.176659
+  partial: /pages/default_page
+  lft: "117"
+  rgt: "118"
+  created_at: 2010-11-25 10:34:41.01338
+  updated_at: 2010-11-25 10:34:41.01338
   state: 
 
 pages_008: 
-  id: "5"
-  title: Home
-  link_title: Home
+  id: "80"
+  title: l1 Longitudinal Surveys of Australian Youth
+  link_title: l1 Longitudinal Surveys of Australian Youth
   description: 
   author_id: "1"
   body: |-
+    <h1>
+    	LSAY - The Longitudinal Surveys of Australian Youth</h1>
+    <p>
+    	The&nbsp;</p>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 90%; ">
+    	<tbody>
+    		<tr>
+    			<td>
+    				Cohort</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				1995</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				1998</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				2003</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				2006</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    	</tbody>
+    </table>
     <p>
     	&nbsp;</p>
-    <p>
-    	Welcome to the ADA Longitudinal Archive.</p>
-    <p>
-    	ADA Longitudinal provides a central access point for major longitudinal panel surveys of the Australian population. Studies in the ADA Longitudinal collection include:</p>
-    <p>
-    	&nbsp;</p>
-    <ul>
-    	<li>
-    		Negotiating the Life Course</li>
-    	<li>
-    		The Longitudinal Surveys of Australian Youth</li>
-    	<li>
-    		Australian Longitudinal Study on Women&#39;s Health</li>
-    	<li>
-    		Australian Longitudinal Survey of Ageing</li>
-    	<li>
-    		Longitudinal Survey of Immigrants to Australia</li>
-    	<li>
-    		Other longitudinal studies within the ADA collection.</li>
-    </ul>
-    <p>
-    	<br />
-    	Alongside access to major longitudinal studies, ADA Longitudinal also provides support and information on research methods for longitudinal data collection and analysis. These include the Panimalia visualisation tool to assist researchers in the analysis of transitions and complex social dynamics in longitudinal panel data.</p>
   breakout_box: ""
-  parent_id: 
+  parent_id: "52"
   archive_id: "4"
-  partial: /pages/home_page
-  lft: "13"
-  rgt: "14"
-  created_at: 2010-11-24 09:15:14.686228
-  updated_at: 2010-11-26 01:57:08.472824
+  partial: /pages/default_page
+  lft: "126"
+  rgt: "127"
+  created_at: 2011-06-23 10:03:37.785389
+  updated_at: 2011-06-23 10:03:37.785389
   state: 
 
 pages_009: 
-  id: "40"
-  title: Census data
-  link_title: Census data
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Historical Census Data</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	The Australian Data Archive operates a preservation and distribution service for historical census materials, under agreement with the Australian Bureau of Statistics. This service includes two main clusters of data holdings:</p>
-    <ol>
-    	<li>
-    		Census tables and documentation for the 1966 - 1991 Censuses</li>
-    	<li>
-    		The Historical Census and Colonial Data Archive, covering colonial censuses conducted by the colonial governments from 1833 - 1901</li>
-    </ol>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/default_page
-  lft: "75"
-  rgt: "76"
-  created_at: 2010-11-25 10:11:04.298394
-  updated_at: 2011-03-02 03:41:57.835015
-  state: 
-
-pages_010: 
-  id: "6"
-  title: Home
-  link_title: Home
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	&nbsp;</p>
-    <p>
-    	ADA Qualitative provides specialist data archiving and access services to qualitative researchers. We can offer assistance to researchers at all stages of the research process, from developing grant applications that incorporate plans for data archiving, to negotiating ethical challenges arising from data archiving, and preparing data for deposition into the archive.</p>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	ADA Qualitative aims to facilitate data sharing among qualitative researchers under rigorous access and use policies determined by the depositor. Data can be deposited in virtually any format, including document, audio and video files. The integration of qualitative data into the ADA network more broadly also means researchers using mixed methods combining quantitative and qualitative data will be able to keep their data together in the one archive. We also provide guidelines for data users in areas such as citation of archived datasets in published papers and designing a project methodology based on the use of secondary data.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "5"
-  partial: /pages/home_page
-  lft: "15"
-  rgt: "16"
-  created_at: 2010-11-24 09:15:14.699423
-  updated_at: 2010-11-26 01:48:27.480007
-  state: 
-
-pages_011: 
-  id: "7"
-  title: Home
-  link_title: Home
-  description: 
-  author_id: "1"
-  body: |-
-    <p>
-    	&nbsp;</p>
-    <p>
-    	ADA International provides a central point of access for links to international data sources around the world. Through ADA International, you can gain access to major international data holdings such as national data archives in Europe, North America and elsewhere, and time series data held by organisations such as the OECD, United Nations and the World Bank.</p>
-  breakout_box: ""
-  parent_id: 
-  archive_id: "6"
-  partial: /pages/home_page
-  lft: "17"
-  rgt: "18"
-  created_at: 2010-11-24 09:15:14.712612
-  updated_at: 2010-11-26 01:58:58.541066
-  state: 
-
-pages_012: 
-  id: "8"
-  title: About
-  link_title: Test1
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	The Australian Data Archive (ADA) is a consortium of leading national Australian universities, managed by the Australian National University (ANU). ADA was established at the ANU in 1981 with a brief to provide a national service for the collection and preservation of computer readable data relating to social, political and economic affairs and to make these data available for further analysis.</p>
-    <p>
-    	A team of professional data archivists, advised by a panel of leading social scientists, provides both stewardship and outreach services to the Australian community. The archive:</p>
-    <ul>
-    	<li>
-    		acquires, documents, preserves and disseminates data online to a broad range of social science researchers in the university, government, and other sectors</li>
-    	<li>
-    		provides the only comprehensive social science data collection in Australia, with a catalogue of around 2070 data sets</li>
-    	<li>
-    		holds data from Australian surveys, opinion polls and censuses and includes data from other countries within the Asia Pacific region</li>
-    	<li>
-    		is continually expanding and diversifying its collection</li>
-    	<li>
-    		provides specialist services within specific subject areas, including Indigenous studies, electoral behaviour, criminology and some humanities disciplines, and within specific data types, including quantitative, qualitative, time series and panel data, and historical statistics</li>
-    	<li>
-    		locates and manages access to overseas social science data sets required by Australian based researchers</li>
-    	<li>
-    		adopts, develops and applies standards in line with international best practice</li>
-    	<li>
-    		belongs to international organisations (such as the International Federation of Data Organizations and the International Association of Social Science Information Service and Technology) and plays a major role in cross-national collaborative projects</li>
-    	<li>
-    		plays an important role on behalf of the Australian Research Council (ARC) through the management and dissemination of ARC funded data collections arising from Discovery and Linkage grants</li>
-    </ul>
-    <p>
-    	As well as the central management at the ANU, archive nodes have been progressively established across the country. These currently include The University of Queensland, the University of Western Australia, the University of Technology, Sydney and the University of Melbourne. These nodes provide a national coverage of specialist services and thematic archives with particular foci.</p>
-    <p>
-    	The ANU Supercomputer Facility provides the online data services and supporting infrastructure, and develops this cyberinfrastructure for the needs of the consortium.</p>
-
-  breakout_box: |
-    <p>
-    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/breakout_page
-  lft: "7"
-  rgt: "8"
-  created_at: 2010-11-24 09:39:55.846072
-  updated_at: 2010-11-24 12:29:17.966434
-  state: 
-
-pages_013: 
-  id: "10"
-  title: Subarchives
-  link_title: Subarchives
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Placeholder text</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/breakout_page
-  lft: "19"
-  rgt: "20"
-  created_at: 2010-11-24 12:30:44.100357
-  updated_at: 2011-02-23 02:38:57.527845
-  state: 
-
-pages_014: 
-  id: "54"
-  title: Using Data
-  link_title: Using Data
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Using Longitudinal Data</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	INSERT INFORMATION ON USING LONGITUDINAL DATA HERE</p>
-
-  breakout_box: |
-    <p>
-    	Insert using longitudinal data case study here.</p>
-
-  parent_id: 
-  archive_id: "4"
-  partial: /pages/breakout_page
-  lft: "105"
-  rgt: "106"
-  created_at: 2010-11-25 10:45:13.40924
-  updated_at: 2010-11-25 10:45:13.40924
-  state: 
-
-pages_015: 
-  id: "11"
-  title: Data Access
-  link_title: Data Access
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	All visitors to the ADA Data Catalogue can browse and search the catalogue, view study and variable documentation (including frequencies) and download related material (questionnaires, codebooks, etc). Registered users can also analyse and visualise most data online and users who have completed the relevant undertaking form(s) can download entire studies or subsets of variables in a range of formats.</p>
-    <ul>
-    	<li>
-    		ADA Data Catalogue (HYPERLINK)</li>
-    	<li>
-    		Search data (HYPERLINK)</li>
-    </ul>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "21"
-  rgt: "30"
-  created_at: 2010-11-24 12:32:03.602175
-  updated_at: 2011-02-23 02:39:11.551196
-  state: 
-
-pages_016: 
-  id: "12"
-  title: Browse ADA Catalogue
-  link_title: Browse ADA Catalogue
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA BROWSE</p>
-    <p>
-    	THIS PAGE IS PROTOTYPED IN BALSAMIQ</p>
-
-  breakout_box: ""
-  parent_id: "11"
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "22"
-  rgt: "23"
-  created_at: 2010-11-24 12:46:30.831547
-  updated_at: 2011-02-23 02:36:56.166955
-  state: 
-
-pages_017: 
-  id: "13"
-  title: Search ADA
-  link_title: Search ADA
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA SEARCH</p>
-    <p>
-    	THIS PAGE IS PROTOTYPED IN BALSAMIQ</p>
-
-  breakout_box: ""
-  parent_id: "11"
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "24"
-  rgt: "25"
-  created_at: 2010-11-24 12:47:30.70379
-  updated_at: 2011-02-23 02:36:56.180475
-  state: 
-
-pages_018: 
-  id: "14"
-  title: Register for ADA
-  link_title: Register for ADA
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA REGISTRATION.</p>
-    <p>
-    	PAGE TO BE MIGRATED FROM ASSDA.</p>
-    <p>
-    	SPEAK TO STEVE AND OLAF FOR FURTHER DETAILS</p>
-
-  breakout_box: ""
-  parent_id: "11"
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "26"
-  rgt: "27"
-  created_at: 2010-11-24 12:49:51.450729
-  updated_at: 2011-02-23 02:36:56.153152
-  state: 
-
-pages_019: 
-  id: "15"
-  title: ADA undertaking forms
-  link_title: ADA undertaking forms
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA UNDERTAKINGS.</p>
-    <p>
-    	MAY BE INTEGRATED INTO REGISTRATION AND DATA DOWNLOAD.</p>
-    <p>
-    	SPEAK TO STEVE AND OLAF FOR FURTHER DETAILS</p>
-
-  breakout_box: ""
-  parent_id: "11"
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "28"
-  rgt: "29"
-  created_at: 2010-11-24 12:52:38.943683
-  updated_at: 2011-02-23 02:36:56.207161
-  state: 
-
-pages_020: 
-  id: "16"
-  title: Data Deposit
-  link_title: Data Deposit
-  description: 
-  author_id: "1"
-  body: ""
-  breakout_box: ""
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "31"
-  rgt: "40"
-  created_at: 2010-11-24 12:54:18.193391
-  updated_at: 2011-02-23 02:46:32.738172
-  state: 
-
-pages_021: 
-  id: "17"
-  title: Why Deposit Data?
-  link_title: Why Deposit Data?
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE - WHY DEPOSIT DATA?</p>
-    <p>
-    	HYPERLINK?</p>
-
-  breakout_box: |
-    <p>
-    	Breakout text holder</p>
-
-  parent_id: "16"
-  archive_id: "7"
-  partial: /pages/breakout_page
-  lft: "32"
-  rgt: "33"
-  created_at: 2010-11-24 12:58:08.407768
-  updated_at: 2011-02-23 02:36:56.220013
-  state: 
-
-pages_022: 
-  id: "18"
-  title: Sharing data and access conditions
-  link_title: Sharing data and access conditions
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE ON ACCESS CONDITIONS</p>
-
-  breakout_box: ""
-  parent_id: "16"
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "34"
-  rgt: "35"
-  created_at: 2010-11-24 13:00:01.03464
-  updated_at: 2011-02-23 02:36:56.135753
-  state: 
-
-pages_023: 
-  id: "19"
-  title: How to deposit data
-  link_title: How to deposit data
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE</p>
-
-  breakout_box: ""
-  parent_id: "16"
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "36"
-  rgt: "37"
-  created_at: 2010-11-24 13:00:59.602251
-  updated_at: 2011-02-23 02:36:56.193918
-  state: 
-
-pages_024: 
-  id: "20"
-  title: Deposit forms
-  link_title: Deposit forms
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Holding Page for DEPOSIT FORMS</p>
-    <p>
-    	May be complemented or replaced by ADAPT</p>
-
-  breakout_box: ""
-  parent_id: "16"
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "38"
-  rgt: "39"
-  created_at: 2010-11-24 13:04:10.621619
-  updated_at: 2011-02-23 02:36:56.230856
-  state: 
-
-pages_025: 
-  id: "21"
-  title: User Guides
-  link_title: User Guides
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Holding page for USER GUIDES.</p>
-    <p>
-    	Still to be prototyped.</p>
-
-  breakout_box: |
-    <p>
-    	Holding BREAKOUT BOX.</p>
-    <p>
-    	Could be a &quot;featured userguide&quot;??</p>
-
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/breakout_page
-  lft: "41"
-  rgt: "42"
-  created_at: 2010-11-24 13:06:40.2627
-  updated_at: 2010-11-24 13:06:40.2627
-  state: 
-
-pages_026: 
-  id: "22"
-  title: ADA News
-  link_title: ADA News
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Holding page for ADA NEWS.</p>
-    <p>
-    	This page has been prototyped in Balsamiq</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "43"
-  rgt: "44"
-  created_at: 2010-11-24 13:07:31.311482
-  updated_at: 2011-02-23 02:46:44.875984
-  state: 
-
-pages_027: 
-  id: "23"
-  title: Contact
-  link_title: Contact
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Holding page for ADA CONTACT page.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/default_page
-  lft: "45"
-  rgt: "46"
-  created_at: 2010-11-24 13:08:31.834604
-  updated_at: 2011-02-23 02:46:56.778952
-  state: 
-
-pages_028: 
-  id: "24"
-  title: My Account
-  link_title: My Account
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Holding page for MY ACCOUNT.<br />
-    	Likely to be replaced.</p>
-
-  breakout_box: |
-    <p>
-    	Could this be a HANDY HINTS breakout section.</p>
-
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/breakout_page
-  lft: "47"
-  rgt: "48"
-  created_at: 2010-11-24 13:09:39.969442
-  updated_at: 2011-02-23 02:47:08.972278
-  state: 
-
-pages_029: 
-  id: "41"
-  title: User Guides
-  link_title: User Guides
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR USER GUIDES</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/default_page
-  lft: "77"
-  rgt: "78"
-  created_at: 2010-11-25 10:17:32.08885
-  updated_at: 2010-11-25 10:17:32.08885
-  state: 
-
-pages_030: 
-  id: "42"
-  title: News
-  link_title: News
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR HISTORICAL NEWS</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/default_page
-  lft: "79"
-  rgt: "80"
-  created_at: 2010-11-25 10:18:00.303517
-  updated_at: 2010-11-25 10:18:00.303517
-  state: 
-
-pages_031: 
-  id: "43"
-  title: About
-  link_title: About
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	INSERT INFORMATION ON ADA INDIGENOUS SITE HERE.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "81"
-  rgt: "82"
-  created_at: 2010-11-25 10:27:06.414842
-  updated_at: 2010-11-25 10:37:16.349891
-  state: 
-
-pages_032: 
   id: "69"
   title: Census 1966-1991
   link_title: Census1966-1991
@@ -845,42 +377,522 @@ pages_032:
   parent_id: 
   archive_id: "2"
   partial: /pages/default_page
-  lft: "1"
-  rgt: "2"
+  lft: "7"
+  rgt: "8"
   created_at: 2011-03-02 03:43:21.024076
   updated_at: 2011-03-02 03:54:23.190622
   state: 
 
-pages_033: 
-  id: "46"
-  title: Using Data
-  link_title: Using Data
+pages_010: 
+  id: "35"
+  title: About
+  link_title: nick's test
   description: 
   author_id: "1"
   body: |
     <h1>
-    	Using Data</h1>
+    	About the National Criminal Justice Research Data Network</h1>
+    <h1>
+    	<span class="Apple-style-span" style="font-size: 12px; font-weight: normal; ">The project is funded by the Commonwealth Government&#39;s National eResearch Architecture Taskforce (NeAT), administered by the Australian Data Research Service (ANDS) and the Australian Research Collaborative Service (ARCS).</span></h1>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	The Crime Research Centre at The University of Western Australia was established in 1989 as a joint initiative between the State Government and the University. Its main role is the analysis of Western Australian criminal justice data which, since its foundation, has provided a better understanding of the extent of the crime problem in WA.</div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	The Project is overseen by a Project Committee which comprises:</div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	&nbsp; &nbsp; Dr Adam Tomison, Director, Australian Institute of Criminology (Chair)</div>
+    <div>
+    	&nbsp; &nbsp; Dr Andrew Treloar, Deputy Director, the Australian Data Research Service</div>
+    <div>
+    	&nbsp; &nbsp; Dr Paul Coddington, Custom Projects Manager, Australian Research Collaborative Service</div>
+    <div>
+    	&nbsp; &nbsp; Professor Frank Morgan , Director, UWA Crime Research Centre</div>
+    <div>
+    	&nbsp; &nbsp; Ms Jackie Fitzgerald, Deputy Director, NSW Bureau of Crime Statistics and Research</div>
+    <div>
+    	&nbsp; &nbsp; Mr Max Maller, Senior Analyst, UWA Crime Research Centre (Project Manager)</div>
+    <div>
+    	&nbsp; &nbsp; Mr Taruia Nicholls, Research Associate, UWA Crime Research Centre (Project Officer)</div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	It also includes a Project Reference Group with each member representing the different Australian criminal justice jurisdictions:</div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	&nbsp; &nbsp; Australian Capital Territory - Mr Jason Payne, Australian Institute of Criminology</div>
+    <div>
+    	&nbsp; &nbsp; New South Wales - Ms Jackie Fitzgerald, Bureau of Crime Statistics and Research</div>
+    <div>
+    	&nbsp; &nbsp; Northern Territory - Mr Stephen Jackson, Department of Justice</div>
+    <div>
+    	&nbsp; &nbsp; Queensland - Professor Anna Stewart, Griffith University</div>
+    <div>
+    	&nbsp; &nbsp; South Australia - Mr Taruia Nicholls, UWA Crime Research Centre</div>
+    <div>
+    	&nbsp; &nbsp; Tasmania - Mr Jonathon Rees, Department of Justice</div>
+    <div>
+    	&nbsp; &nbsp; Victoria - Dr Stuart Ross, University of Melbourne</div>
+    <div>
+    	&nbsp; &nbsp; Western Australia - Mr Max Maller, UWA Crime Research Centre</div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	Project governance includes the Project Committee, Funding Body Representatives and the Code of Conduct and Ethics of The University of Western Australia.</div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	&nbsp;</div>
+    <meta charset="utf-8" />
+    <div>
+    	<h1>
+    		About the ARC Centre for Excellence in Policing and Security</h1>
+    	<p>
+    		&nbsp;</p>
+    	<p>
+    		INSERT INFORMATION ABOUT CEPS HERE.</p>
+    	<div>
+    		&nbsp;</div>
+    </div>
+    <div>
+    	&nbsp;</div>
+    <div>
+    	&nbsp;</div>
+    <meta charset="utf-8" />
+    <div>
+    	<h1>
+    		About ADA International</h1>
+    	<p>
+    		&nbsp;</p>
+    	<p>
+    		INSERT INFORMATION ABOUT ADA INTERNATIONAL HERE.</p>
+    	<div>
+    		&nbsp;</div>
+    </div>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "6"
+  partial: /pages/default_page
+  lft: "95"
+  rgt: "96"
+  created_at: 2010-11-25 03:34:22.756164
+  updated_at: 2011-06-20 12:23:33.004514
+  state: 
+
+pages_011: 
+  id: "20"
+  title: Deposit forms
+  link_title: Deposit forms
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Deposit Forms</h1>
+    <p>
+    	In order to dsitribute your data, ADA needs to gather sufficient information to provide a description of your data, and an appropriate license to authorise us to distribute your data. There are two ADA deposit forms that are used for this purpose.</p>
+    <p>
+    	One set of these forms should accompany each study deposited at the Australian Data Archive, as part of your set of files for your data deposit (see How to Deposit Your Data for further details).</p>
+    <h2>
+    	Licence Form - Download PDF</h2>
+    <p>
+    	<br />
+    	This form determines how the data and associated materials may be used after they have been deposited at ASSDA. If the conditions on the Licence Form do not meet your requirements or you find the legal terminology confusing, please <a href="mailto:ada@anu.edu.au">contact ADA</a>.</p>
+    <h2>
+    	Deposit Form - Download PDF</h2>
+    <p>
+    	<br />
+    	The information on this form will be used to provide the information for the ADA study description and catalogue entry for your data set. The details will be important in enabling future users to understand the data. It also asks for details of all files that are being deposited and will be used by ADA staff for reading and checking the files.</p>
+
+  breakout_box: |
+    <h2>
+    	Deposit forms for download</h2>
+    <p>
+    	ADA License form - PDF</p>
+    <p>
+    	ADA Deposit form - PDF</p>
+
+  parent_id: "16"
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "46"
+  rgt: "47"
+  created_at: 2010-11-24 13:04:10.621619
+  updated_at: 2011-07-12 14:38:51.042366
+  state: 
+
+pages_012: 
+  id: "44"
+  title: Catalogue
+  link_title: Catalogue
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	ADA - Indigenous Catalogue</h1>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <p>
+    	&nbsp;</p>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta charset="utf-8" />
+    <p>
+    	&nbsp;</p>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <table border="1" cellpadding="2" cellspacing="1" style="width: 90%; ">
+    	<tbody>
+    		<tr>
+    			<td>
+    				Study</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Aboriginal survey, New South Wales and South Australia, 1965</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Aborigines who abstain from alcohol, 1900-1993</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				National Police Custody Survey</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Royal Commission into Aboriginal Deaths in Custody Survey</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				<a href="http://www.ada.edu.au/indigenous/01159">Mapping the Impact of the 1995 Aboriginal and Torres Strait Islander Protocols for Libraries, Archives and Information Services</a></td>
+    		</tr>
+    		<tr>
+    			<td>
+    				<a href="http://www.ada.edu.au/indigenous/00115">Image of the Australian aboriginal in illustrated newspapers, 1853-1897</a></td>
+    		</tr>
+    		<tr>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    	</tbody>
+    </table>
+    <meta charset="utf-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <p>
+    	&nbsp; &nbsp;</p>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <p>
+    	&nbsp;&nbsp;</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "109"
+  rgt: "110"
+  created_at: 2010-11-25 10:27:34.580851
+  updated_at: 2011-06-23 10:34:17.474642
+  state: 
+
+pages_013: 
+  id: "63"
+  title: Completed Projects
+  link_title: End-of-Career Archiving
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Archiving Completed Qualitative Projects</h1>
+    <p>
+    	<br />
+    	The process for creating data applies specifically to new research projects where data archiving is considered from the outset. For older or already completed projects, the intention to archive may not have been present at the time the research was designed and conducted. In these cases, there is usually considerable work involved in preparing the data for archiving. This may include converting data to digital formats, working through the ethical agreements made at the time of the research to see if archiving is possible, and collating the required accompanying documentation that make analysis by others possible. ADA Qualitative has limited resources and cannot undertake such activities for all but the most important datasets. Please review our collections policy for guidance on archiving completed projects and make contact with the archive if you have a completed dataset that meets the criteria for inclusion in the archive.</p>
+    <p>
+    	<br />
+    	Initial inquiries about archiving completed projects can be made by filling out the completed projects enquiry form. Please provide as much information as possible to assist us in establishing the feasibility of archiving your data.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "5"
+  partial: /pages/default_page
+  lft: "149"
+  rgt: "150"
+  created_at: 2010-11-25 11:18:18.025663
+  updated_at: 2010-11-25 11:19:14.696386
+  state: 
+
+pages_014: 
+  id: "6"
+  title: Home
+  link_title: Home
+  description: 
+  author_id: "1"
+  body: |
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	&nbsp;</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative provides specialist data archiving and access services to qualitative researchers. We can offer assistance to researchers at all stages of the research process, from developing grant applications that incorporate plans for data archiving, to negotiating ethical challenges arising from data archiving, and preparing data for deposition into the archive.</span></span></p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	&nbsp;</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative aims to facilitate data sharing among qualitative researchers under rigorous access and use policies determined by the depositor. Data can be deposited in virtually any format, including document, audio and video files. The integration of qualitative data into the ADA network more broadly also means researchers using mixed methods combining quantitative and qualitative data will be able to keep their data together in the one archive. We also provide guidelines for data users in areas such as citation of archived datasets in published papers and designing a project methodology based on the use of secondary data.</span></span></p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "5"
+  partial: /pages/home_page
+  lft: "19"
+  rgt: "20"
+  created_at: 2010-11-24 09:15:14.699423
+  updated_at: 2010-11-26 01:48:27.480007
+  state: 
+
+pages_015: 
+  id: "68"
+  title: HCCDA
+  link_title: Historical Census and Colonial Data Archive
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Historical and Colonial Census Data Archive - HCCDA</h1>
     <p>
     	&nbsp;</p>
     <p>
-    	Insert information on using indigenous data here.</p>
+    	The Historical Census and Colonial Data Archive (HCCDA) is a searchable archive of Australian Colonial census publications and reports for the period 1833 - 1901. It is a sub-archive of the Australian Social Science Data Archive (ASSDA). Please note that the archive contains colonial census reports and not the raw census data.</p>
+    <p>
+    	To access the HCCDA, please visit: <a href="http://hccda.ada.edu.au">http://hccda.ada.edu.au</a></p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	About the HCCDA</h2>
+    <p>
+    	The archive has sourced microfiche versions of the census publications from the Australian Bureau of Statistics (ABS) and converted them to both digital images and searchable XML markup. The HCCDA archive documents were originally published in the former colonies of NSW, Victoria, Queensland, South Australia, Tasmania and Western Australia and relate to censuses of those colonies ranging from 1833 to 1901.</p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	Development</h2>
+    <p>
+    	The HCCDA project materials, software and website were developed by a project team of ANU researchers and technical staff. The project databases, software and web hosting are provided by ANUSF.</p>
+    <h2>
+    	<br />
+    	Acknowledgements</h2>
+    <p>
+    	<br />
+    	The HCCDA project team would like to acknowledge the support of the Australian Bureau of Statistics (ABS) in providing the microfiche versions of the census publications. We would also like to acknowledge the Australian Research Council (ARC) support for the projects through the LIEF program and the National Collaborative Research Infrastructure Strategy (NCRIS). The HCCDA website design has been adapted from a design available at http://www.sparkBB.com.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "9"
+  rgt: "10"
+  created_at: 2011-03-02 03:33:44.032041
+  updated_at: 2011-06-20 23:47:59.406075
+  state: 
+
+pages_016: 
+  id: "71"
+  title: NCJRDN Tools
+  link_title: Tools
+  description: 
+  author_id: "1"
+  body: |-
+    <p>
+    	This page provides access to data analysis tools provided by the National Criminal Justice Research Data Network.</p>
+    <p>
+    	Tools available from the NCJRDN include:</p>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 500px; ">
+    	<caption>
+    		NCJRDN Tool List</caption>
+    	<tbody>
+    		<tr>
+    			<td>
+    				Tool</td>
+    			<td>
+    				User Guide</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				SuperDuperTool</td>
+    			<td>
+    				Guide1.pdf</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				WonderTool</td>
+    			<td>
+    				Guide2.pdf</td>
+    		</tr>
+    	</tbody>
+    </table>
+  breakout_box: |
+    <h2>
+    	Tool of the week: Analysis Tool One</h2>
+    <p>
+    	The current featured NCJRDN tool for the NCJRDN is the SUPERDUPERTOOL.</p>
+    <p>
+    	You can access the SUPERDUPERTOOL through the Crime Research Centre website at:</p>
+    <p>
+    	<a href="http://www.law.uwa.edu.au/research/crc/reports">http://www.law.uwa.edu.au/research/crc/reports</a></p>
+
+  parent_id: 
+  archive_id: "6"
+  partial: /pages/breakout_page
+  lft: "85"
+  rgt: "86"
+  created_at: 2011-06-20 12:13:27.43929
+  updated_at: 2011-06-20 13:18:53.157401
+  state: 
+
+pages_017: 
+  id: "10"
+  title: Subarchives
+  link_title: Subarchives
+  description: 
+  author_id: "1"
+  body: |-
+    <h2>
+    	THIS PAGE NEEDS TO REDIRECT TO EACH SUBARCHIVE.</h2>
+    <p>
+    	&nbsp;</p>
+  breakout_box: ""
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/default_page
+  lft: "23"
+  rgt: "24"
+  created_at: 2010-11-24 12:30:44.100357
+  updated_at: 2011-07-11 06:56:18.933181
+  state: 
+
+pages_018: 
+  id: "23"
+  title: Contact
+  link_title: Contact
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	Holding page for ADA CONTACT page.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/default_page
+  lft: "53"
+  rgt: "54"
+  created_at: 2010-11-24 13:08:31.834604
+  updated_at: 2011-02-23 02:46:56.778952
+  state: 
+
+pages_019: 
+  id: "53"
+  title: Creating Data
+  link_title: Creating Data
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Creating Longitudinal Data</h1>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	INSERT INFORMATION ON CREATING LONGITUDINAL DATA HERE.</p>
 
   breakout_box: |
     <p>
-    	Breakout box on using indigenous data.</p>
-    <p>
-    	Case study example?</p>
+    	Insert case study example for creating longitudinal data here.</p>
 
   parent_id: 
-  archive_id: "3"
+  archive_id: "4"
   partial: /pages/breakout_page
-  lft: "87"
-  rgt: "88"
-  created_at: 2010-11-25 10:29:35.242171
-  updated_at: 2010-11-25 10:31:01.758949
+  lft: "129"
+  rgt: "130"
+  created_at: 2010-11-25 10:43:17.606898
+  updated_at: 2010-11-25 10:45:48.753602
   state: 
 
-pages_034: 
+pages_020: 
+  id: "28"
+  title: Catalogue
+  link_title: Catalogue
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA SOCIAL SCIENCE CATALOGUE</p>
+    <p>
+    	INCLUDE SEARCH AND BROWSE.</p>
+    <p>
+    	TEMPLATE IS THE BALSAMIQ PAGE?</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "1"
+  partial: /pages/default_page
+  lft: "61"
+  rgt: "62"
+  created_at: 2010-11-24 21:46:25.263317
+  updated_at: 2010-11-24 21:46:25.263317
+  state: 
+
+pages_021: 
+  id: "74"
+  title: User Guides
+  link_title: user-guides
+  description: 
+  author_id: "1"
+  body: |
+    <h2>
+    	ADA International User Guides</h2>
+    <p>
+    	&nbsp;</p>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 500px; ">
+    	<tbody>
+    		<tr>
+    			<td>
+    				User Guide 1: Introduction to the ADA-International Archive</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				User Guide 2: ADA-Crime analysis tools</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				User Guide 3: NSW Crime Data</td>
+    		</tr>
+    	</tbody>
+    </table>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "6"
+  partial: /pages/default_page
+  lft: "91"
+  rgt: "92"
+  created_at: 2011-06-20 15:12:28.781666
+  updated_at: 2011-06-20 15:12:45.728138
+  state: 
+
+pages_022: 
   id: "47"
   title: Protocols
   link_title: Protocols
@@ -894,76 +906,177 @@ pages_034:
   parent_id: 
   archive_id: "3"
   partial: /pages/default_page
-  lft: "89"
-  rgt: "90"
+  lft: "115"
+  rgt: "116"
   created_at: 2010-11-25 10:31:49.017228
   updated_at: 2010-11-25 10:32:30.005038
   state: 
 
-pages_035: 
-  id: "48"
-  title: Community
-  link_title: Community
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Insert information on ADA Indigenous community site here.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "91"
-  rgt: "92"
-  created_at: 2010-11-25 10:34:41.01338
-  updated_at: 2010-11-25 10:34:41.01338
-  state: 
-
-pages_036: 
-  id: "49"
+pages_023: 
+  id: "57"
   title: User Guides
   link_title: User Guides
   description: 
   author_id: "1"
   body: |
     <p>
-    	HOLDING PAGE FOR ADA INDIGENOUS NEWS</p>
+    	HOLDING PAGE FOR LONGITUDINAL USER GUIDES</p>
 
   breakout_box: ""
   parent_id: 
-  archive_id: "3"
+  archive_id: "4"
   partial: /pages/default_page
-  lft: "93"
-  rgt: "94"
-  created_at: 2010-11-25 10:35:41.244162
-  updated_at: 2010-11-25 10:35:41.244162
+  lft: "137"
+  rgt: "138"
+  created_at: 2010-11-25 11:03:56.131984
+  updated_at: 2010-11-25 11:03:56.131984
   state: 
 
-pages_037: 
-  id: "26"
-  title: Home
-  link_title: Home3
+pages_024: 
+  id: "8"
+  title: About
+  link_title: Test1
+  description: 
+  author_id: "1"
+  body: |
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	The Australian Data Archive (ADA) is a consortium of leading national Australian universities, managed by the Australian National University (ANU). ADA was established at the ANU in 1981 with a brief to provide a national service for the collection and preservation of computer readable data relating to social, political and economic affairs and to make these data available for further analysis.</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	A team of professional data archivists, advised by a panel of leading social scientists, provides both stewardship and outreach services to the Australian community. The archive:</p>
+    <ul style="margin: 0px; padding: 0px 0px 0px 20px; font-size: 11px;">
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		acquires, documents, preserves and disseminates data online to a broad range of social science researchers in the university, government, and other sectors</li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		provides the only comprehensive social science data collection in Australia, with a catalogue of around 2070 data sets</li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		holds data from Australian surveys, opinion polls and censuses and includes data from other countries within the Asia Pacific region</li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		is continually expanding and diversifying its collection</li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		provides specialist services within specific subject areas, including Indigenous studies, electoral behaviour, criminology and some humanities disciplines, and within specific data types, including quantitative, qualitative, time series and panel data, and historical statistics</li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		locates and manages access to overseas social science data sets required by Australian based researchers</li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		adopts, develops and applies standards in line with international best practice</li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		belongs to international organisations (such as the International Federation of Data Organizations and the International Association of Social Science Information Service and Technology) and plays a major role in cross-national collaborative projects</li>
+    	<li style="margin: 0px; padding: 0px 0px 10px; list-style-type: square; display: list-item;">
+    		plays an important role on behalf of the Australian Research Council (ARC) through the management and dissemination of ARC funded data collections arising from Discovery and Linkage grants</li>
+    </ul>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	As well as the central management at the ANU, archive nodes have been progressively established across the country. These currently include The University of Queensland, the University of Western Australia, the University of Technology, Sydney and the University of Melbourne. These nodes provide a national coverage of specialist services and thematic archives with particular foci.</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	The ANU Supercomputer Facility provides the online data services and supporting infrastructure, and develops this cyberinfrastructure for the needs of the consortium.</p>
+
+  breakout_box: |-
+    <h2>
+    	ADA Contact Details</h2>
+    <h3>
+    	Email:</h3>
+    <p>
+    	<a href="mailto:ada@anu.edu.au"> ada@anu.edu.au</a></p>
+    <h3>
+    	Telephone:</h3>
+    <p>
+    	(+61) 2 6125 2200</p>
+    <h3>
+    	Facsimilie:</h3>
+    <p>
+    	(+61) 2 6125 0627</p>
+    <h3>
+    	Address:</h3>
+    <p>
+    	18 Balmain Crescent<br />
+    	The Australian National University<br />
+    	ACTON ACT 0200</p>
+    <p>
+    	&nbsp;</p>
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "13"
+  rgt: "14"
+  created_at: 2010-11-24 09:39:55.846072
+  updated_at: 2011-07-11 06:47:12.809149
+  state: 
+
+pages_025: 
+  id: "17"
+  title: Why Deposit Data?
+  link_title: Why Deposit Data?
   description: 
   author_id: "1"
   body: |-
+    <h1>
+    	Why deposit your data?</h1>
+    <p>
+    	There are two main reasons for depositing your research data with the Australian Data Archive: to ensure that your data is <strong>preserved for the future</strong>, and to enable it to be <strong>shared with others</strong> for secondary analysis.</p>
+    <h2>
+    	Benefits to you</h2>
+    <p>
+    	There are significant benefits to you as a researcher in depositing your data:</p>
+    <ul>
+    	<li>
+    		Your data will be stored indefinitely in a safe place, where it is easily accessible, and in a form that can be understood long after the study was originally conducted. This is useful if you are obliged to store the data for several years following the publication of results.</li>
+    	<li>
+    		The potential impact of your data is greatly increased. Other researchers, even from other disciplines, will be able to use your data (subject to the conditions you specify) to investigate issues that you may not have the desire or resources to pursue.</li>
+    	<li>
+    		Anyone who publishes results from your data is expected to cite the data file in their publications. This will result in increased citations for you and your colleages.</li>
+    	<li>
+    		Distribution of the data and documentation is managed without expense to the person who originally conducted the research. If other people become interested in the data, you will not need to be concerned with the cost and inconvenience of providing a copy for them.</li>
+    	<li>
+    		Publicity for your data: your data is published in the ADA data catalogue, raising the profile of your research.</li>
+    	<li>
+    		Sharing data through ADA allows you to get in touch with other researchers with similar research data interests to you.</li>
+    	<li>
+    		You can find your own data in future. Should you have difficulties in locating or accessing your data in the future, you will have a preserved version of the data held with ADA.</li>
+    </ul>
+    <p>
+    	The <a href="http://www.nhmrc.gov.au/guidelines/publications/r39">NHMRC/ARC Australian Code for the Responsible Conduct of Research</a> (ACRCR) also strongly promotes data preservation and sharing. Section 2 of the ACRCR relates to the management of research data.&nbsp; It suggests:</p>
+    <ul>
+    	<li>
+    		both institutions and individual researchers have an obligation to preserve research data, in a secure environment and allow others to access it where appropriate,</li>
+    	<li>
+    		datasets should be kept by departments, institutional repositories or national repositories, rather than only by the researcher, and</li>
+    	<li>
+    		the value of material for other research where the research is difficult or impossible to repeat must be considered.</li>
+    </ul>
     <p>
     	&nbsp;</p>
+    <h2>
+    	Benefits to the Research Community</h2>
     <p>
-    	ADA Social Science provides a national service for the preservation of and access to data relating to social, political and economic issues, and is the primary facility for the storage of Australian data.. ADA Social Science currently holds over 2000 separate datasets from a variety of academic, government and non-government organisations, covering the spectrum of Australian and international social sciences.</p>
+    	Sharing data builds a stronger research community by:</p>
+    <ul>
+    	<li>
+    		Providing researchers and students access to high quality data.</li>
+    	<li>
+    		Allowing verification, replication and extension,</li>
+    	<li>
+    		Supporting multidisciplinary, multi-institution research,</li>
+    	<li>
+    		Reducing the duplication of similar research</li>
+    </ul>
     <p>
-    	ADA Social Science provides access to a variety of forms of data, including survey (unit record) data, census tables and qualitative and mixed method study content such as interview and focus group materials. ADA Social Science also provides services for the geographical visualization of materials through our GIS visualization facility.</p>
-  breakout_box: ""
-  parent_id: 
-  archive_id: "1"
-  partial: /pages/home_page
-  lft: "49"
-  rgt: "50"
-  created_at: 2010-11-24 21:40:53.958685
-  updated_at: 2010-11-26 01:49:16.178569
+    	It is important to the scientific method that social science data generated from research projects be available for replication, verification and extension. A researcher can access data from ADA, verify the results of the original investigator, conduct analyses not performed by the original investigator, or use the data, survey instruments and methods to guide their own original research.</p>
+    <p>
+    	The costs of data collection are high, and beyond the reach of most students. For those with limited access to research funding. Archived data allows the students to learn about research method and analysis in a practical way.</p>
+    <p>
+    	The importance of sharing has been recognised by funding bodies in Australia and internationally (including UNESCO, the UK Economic and Social Research Council, the US National Science Foundation, NHMRC and the ARC) and is now considered a vital part of the research process.</p>
+  breakout_box: |
+    <p>
+    	Breakout text holder</p>
+
+  parent_id: "16"
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "44"
+  rgt: "45"
+  created_at: 2010-11-24 12:58:08.407768
+  updated_at: 2011-07-13 12:07:34.785722
   state: 
 
-pages_038: 
+pages_026: 
   id: "27"
   title: About
   link_title: About
@@ -1003,354 +1116,60 @@ pages_038:
   parent_id: 
   archive_id: "1"
   partial: /pages/default_page
-  lft: "51"
-  rgt: "52"
+  lft: "59"
+  rgt: "60"
   created_at: 2010-11-24 21:42:35.405111
   updated_at: 2010-11-24 21:42:35.405111
   state: 
 
-pages_039: 
-  id: "28"
-  title: Catalogue
-  link_title: Catalogue
+pages_027: 
+  id: "76"
+  title: CJ2-2 CEPS
+  link_title: CEPS
   description: 
   author_id: "1"
   body: |
     <p>
-    	HOLDING PAGE FOR ADA SOCIAL SCIENCE CATALOGUE</p>
-    <p>
-    	INCLUDE SEARCH AND BROWSE.</p>
-    <p>
-    	TEMPLATE IS THE BALSAMIQ PAGE?</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "1"
-  partial: /pages/default_page
-  lft: "53"
-  rgt: "54"
-  created_at: 2010-11-24 21:46:25.263317
-  updated_at: 2010-11-24 21:46:25.263317
-  state: 
-
-pages_040: 
-  id: "29"
-  title: Creating Data
-  link_title: Creating Data
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	Creating Data</p>
-    <p>
-    	The task of managing and archiving your research data is a process, not an end state in which the researcher hands over his or her data to the archive on completion of the project. This approach would render the process of preparing the data for archiving both expensive and onerous on the researcher. Thus, data management and archiving should be incorporated into the project design and methodology at the outset of the project.</p>
-    <p>
-    	<br />
-    	To this end, there are a number of activities you can undertake to facilitate the preservation and re-use of your data both now and into the future. The following pages explore some of these options in greater detail:</p>
-    <ul>
-    	<li>
-    		Why archive your data?</li>
-    	<li>
-    		Proposal planning and writing</li>
-    	<li>
-    		Project start-up</li>
-    	<li>
-    		Research ethics</li>
-    	<li>
-    		Collecting and managing your data</li>
-    </ul>
-    <h3 style="color: red;">
-    	(ABOVE DOTPOINTS SHOULD HYPERLINK TO SUB-PAGES)</h3>
+    	The Centre for Excellence in Policing and Security</p>
 
   breakout_box: |
     <p>
-    	BREAKOUT TEXT ON CREATING DATA.</p>
+    	From here you can:</p>
     <p>
-    	PROBABLY USED FOR HIGHLIGHTING A USER GUIDE.</p>
+    	Browse the CEPS Data collection.</p>
 
-  parent_id: 
-  archive_id: "1"
-  partial: /pages/breakout_page
-  lft: "55"
-  rgt: "56"
-  created_at: 2010-11-24 21:48:37.750452
-  updated_at: 2010-11-24 21:48:37.750452
-  state: 
-
-pages_041: 
-  id: "30"
-  title: Using Data
-  link_title: Using Data
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Using Data</h1>
-    <p>
-    	With a growing number of datasets available online for sharing through archives such as ADA and the UK Data Archive, it is possible that you will be able to make use of these data as a precursor or supplement to collecting your own. Given the rich array of research data already generated, researchers are encouraged to make use of that data wherever possible.The following pages are a set of suggestions for elements you may wish to take into account when resing secondary qualitative data:</p>
-    <ul>
-    	<li>
-    		Accessing data</li>
-    	<li>
-    		Data analysis tools and software</li>
-    	<li>
-    		Guides to ADA Social Science Content</li>
-    	<li>
-    		Citing datasets</li>
-    </ul>
-    <h3 style="color: red;">
-    	ABOVE DOTPOINTS ARE TO HYPERLINKED PAGES</h3>
-
-  breakout_box: |
-    <p>
-    	HOLDING SPACE FOR BREAKOUT.</p>
-    <p>
-    	HIGHLIGHTS A NEW USER GUIDE.</p>
-
-  parent_id: 
-  archive_id: "1"
-  partial: /pages/breakout_page
-  lft: "57"
-  rgt: "58"
-  created_at: 2010-11-24 21:51:42.777809
-  updated_at: 2010-11-24 21:51:42.777809
-  state: 
-
-pages_042: 
-  id: "32"
-  title: Themed Data
-  link_title: Themed Data
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Themed Data</h1>
-    <p>
-    	ADA Social Science currently hold over 2000 data sets covering topics from across the social sciences. ADA, in conjunction with leading Australian researchers, have established a series of thematic guides to content in the ADA Social Science holdings, for detailed information on specialized materials within the archive.<br />
-    	Thematic guides are available for the following topics:</p>
-    <ul>
-    	<li> The Australian Survey of Social Attitudes</li>
-    	<li> The National Social Science Survey</li>
-    	<li> The Australian Election Studies</li>
-    	<li> Graduate Destination Surveys</li>
-    	<li>
-    		Australian public opinion polls</li>
-    </ul>
-    <p>
-    	If you have additional ideas for thematic content from the ADA Social Science holdings, please contact ADA at info@ada.edu.au.</p>
-    <h3 style="color: red;">
-    	ADD HYPERLINKED PAGES TO ABOVE DOT POINTS</h3>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "1"
-  partial: /pages/default_page
-  lft: "59"
-  rgt: "60"
-  created_at: 2010-11-24 21:57:42.190703
-  updated_at: 2010-11-25 05:10:12.612598
-  state: 
-
-pages_043: 
-  id: "33"
-  title: User Guides
-  link_title: User Guides
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	User Guides</h1>
-    <p>
-    	User guide list to be added here.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "1"
-  partial: /pages/default_page
-  lft: "61"
-  rgt: "62"
-  created_at: 2010-11-24 21:58:22.231258
-  updated_at: 2011-02-23 02:48:42.126921
-  state: 
-
-pages_044: 
-  id: "34"
-  title: News
-  link_title: News
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	News</h1>
-    <p>
-    	Social Science News to be added here.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "1"
-  partial: /pages/default_page
-  lft: "63"
-  rgt: "64"
-  created_at: 2010-11-24 21:59:15.300457
-  updated_at: 2010-11-24 21:59:15.300457
-  state: 
-
-pages_045: 
-  id: "35"
-  title: About
-  link_title: nick's test
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	About ADA International</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	INSERT INFORMATION ABOUT ADA INTERNATIONAL HERE.</p>
-
-  breakout_box: ""
-  parent_id: 
+  parent_id: "78"
   archive_id: "6"
   partial: /pages/default_page
-  lft: "65"
-  rgt: "66"
-  created_at: 2010-11-25 03:34:22.756164
-  updated_at: 2010-11-25 11:22:27.842884
+  lft: "79"
+  rgt: "80"
+  created_at: 2011-06-20 23:34:38.64538
+  updated_at: 2011-06-23 09:10:20.568935
   state: 
 
-pages_046: 
-  id: "36"
-  title: About
-  link_title: About
+pages_028: 
+  id: "12"
+  title: Browse ADA Catalogue
+  link_title: Browse ADA Catalogue
   description: 
   author_id: "1"
   body: |
     <p>
-    	ADD ABOUT INFORMATION FOR HISTORICAL ARCHIVE HERE.</p>
+    	HOLDING PAGE FOR ADA BROWSE</p>
+    <p>
+    	THIS PAGE IS PROTOTYPED IN BALSAMIQ</p>
 
   breakout_box: ""
-  parent_id: 
-  archive_id: "2"
+  parent_id: "11"
+  archive_id: "7"
   partial: /pages/default_page
-  lft: "67"
-  rgt: "68"
-  created_at: 2010-11-25 10:01:00.618844
-  updated_at: 2010-11-25 10:01:00.618844
+  lft: "28"
+  rgt: "29"
+  created_at: 2010-11-24 12:46:30.831547
+  updated_at: 2011-02-23 02:36:56.166955
   state: 
 
-pages_047: 
-  id: "37"
-  title: Catalogue
-  link_title: Catalogue
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR HISTORICAL CATALOGUE.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "2"
-  partial: /pages/default_page
-  lft: "69"
-  rgt: "70"
-  created_at: 2010-11-25 10:01:51.237683
-  updated_at: 2010-11-25 10:01:51.237683
-  state: 
-
-pages_048: 
-  id: "50"
-  title: News
-  link_title: News
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA INDIGENOUS NEWS</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "3"
-  partial: /pages/default_page
-  lft: "95"
-  rgt: "96"
-  created_at: 2010-11-25 10:36:10.319176
-  updated_at: 2010-11-25 10:36:10.319176
-  state: 
-
-pages_049: 
-  id: "51"
-  title: About
-  link_title: About
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	About</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	INSERT INFORMATION ABOUT THE ADA LONGITUDINAL ARCHIVE HERE.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "4"
-  partial: /pages/default_page
-  lft: "99"
-  rgt: "100"
-  created_at: 2010-11-25 10:41:08.739756
-  updated_at: 2010-11-25 10:41:25.85336
-  state: 
-
-pages_050: 
-  id: "52"
-  title: Catalogue
-  link_title: Catalogue
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	HOLDING PAGE FOR ADA LONGITUDINAL CATALOGUE</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "4"
-  partial: /pages/default_page
-  lft: "101"
-  rgt: "102"
-  created_at: 2010-11-25 10:41:50.472092
-  updated_at: 2010-11-25 10:41:50.472092
-  state: 
-
-pages_051: 
-  id: "53"
-  title: Creating Data
-  link_title: Creating Data
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Creating Longitudinal Data</h1>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	INSERT INFORMATION ON CREATING LONGITUDINAL DATA HERE.</p>
-
-  breakout_box: |
-    <p>
-    	Insert case study example for creating longitudinal data here.</p>
-
-  parent_id: 
-  archive_id: "4"
-  partial: /pages/breakout_page
-  lft: "103"
-  rgt: "104"
-  created_at: 2010-11-25 10:43:17.606898
-  updated_at: 2010-11-25 10:45:48.753602
-  state: 
-
-pages_052: 
+pages_029: 
   id: "55"
   title: Longitudinal Studies
   link_title: Longitudinal datasets
@@ -1392,123 +1211,417 @@ pages_052:
   parent_id: 
   archive_id: "4"
   partial: /pages/default_page
-  lft: "97"
-  rgt: "98"
+  lft: "135"
+  rgt: "136"
   created_at: 2010-11-25 10:51:32.308267
   updated_at: 2010-11-25 11:06:26.061697
   state: 
 
-pages_053: 
-  id: "56"
-  title: Visualisation
-  link_title: Visualisation
+pages_030: 
+  id: "16"
+  title: Data Deposit
+  link_title: Data Deposit
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Depositing data with ADA</h1>
+    <p>
+    	The Australian Data Archive urges all researchers and research groups to take the opportunity of having their data professionally archived.</p>
+    <p>
+    	The ADA data deposit pages provide advice on:</p>
+    <ul>
+    	<li>
+    		<a href="/ada/why-deposit-data-">Why you should deposit your data</a>: the benefits of data archiving and sharing</li>
+    	<li>
+    		<a href="/ada/how-to-deposit-data">How to deposit your data with ADA</a></li>
+    	<li>
+    		Determining <a href="/ada/sharing-data-and-access-conditions">conditions for access</a> to your data</li>
+    </ul>
+    <p>
+    	If the information provided here does not address your questions, please don&#39;t hesitate to <a href="mailto:ada@anu.edu.au">contact us</a>.</p>
+
+  breakout_box: |
+    <h2>
+    	Interested in depositing data with ADA?</h2>
+    <p>
+    	If you would like to discuss depositing your data with the Australian Data Archive, please contact us at <a href="mailto:ada@anu.edu.au?subject=Depositing%20Data%20with%20ADA">ada@anu.edu.au</a>.</p>
+    <p>
+    	With a network of archivists based in most Australian states, we can provide local information and assistance on how to prepare your data and documentation for deposit with the archive.</p>
+
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "39"
+  rgt: "48"
+  created_at: 2010-11-24 12:54:18.193391
+  updated_at: 2011-07-12 14:20:34.729004
+  state: 
+
+pages_031: 
+  id: "70"
+  title: Criminal Justice
+  link_title: Crime
   description: 
   author_id: "1"
   body: |
     <p>
-    	HOLDING PAGE FOR PANIMALIA</p>
+    	The ADA-JL Crime subarchive provides access to data from the National Criminal Justice Research Data Network&nbsp;&nbsp;</p>
+    <p>
+    	<img alt="Crime scene" src="/images/ncephimage" style="float: left; " /></p>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <div id="main-l">
+    	<div id="content">
+    		<p>
+    			There is growing demand for quantitative research in the criminal justice sector where government agencies are increasingly calling on researchers and criminologists to provide the evidence base to enable efficient service provision and for the development of effective crime prevention/reduction strategies.</p>
+    		<p>
+    			The NCJRDN seeks to establish a web-based service through which researchers can obtain information about, and access to, an array of criminal justice research datasets and data analysis tools. The NCJRDN seeks to include criminal justice data which is already routinely collected from administrative datasets.</p>
+    		<p>
+    			The NCJRDN is a National eResearch Architecture Taskforce (NeAT) project funded by the Commonwealth&#39;s National Collaborative Research Infrastructure Strategy (NCRIS), Platforms for Collaboration (PfC) capability. NCRIS is administered by the Commonwealth Department for Innovation, Industry, Science and Research.</p>
+    		<p>
+    			The NCVRDN project is managed by The University of Western Australia Crime Research Centre and reports to the two bodies which oversee NeAT projects - the Australian National Data Service (ANDS) and the Australian Research Collaboration Service (ARCS).</p>
+    	</div>
+    </div>
 
-  breakout_box: ""
+  breakout_box: |
+    <h2>
+    	From here you can</h2>
+    <p>
+    	Browse the ADA Crime data catalogue (link)</p>
+    <p>
+    	Search the ADA Crime data catalogue from the search box above</p>
+    <p>
+    	Access ADA Crime user guides</p>
+
   parent_id: 
-  archive_id: "4"
-  partial: /pages/default_page
-  lft: "107"
-  rgt: "108"
-  created_at: 2010-11-25 11:02:41.654233
-  updated_at: 2010-11-25 11:02:41.654233
+  archive_id: "6"
+  partial: /pages/breakout_page
+  lft: "83"
+  rgt: "84"
+  created_at: 2011-06-20 12:07:52.107909
+  updated_at: 2011-06-21 02:00:58.579179
   state: 
 
-pages_054: 
-  id: "57"
-  title: User Guides
-  link_title: User Guides
+pages_032: 
+  id: "72"
+  title: Law and Justice
+  link_title: Policing and Security
   description: 
   author_id: "1"
   body: |
     <p>
-    	HOLDING PAGE FOR LONGITUDINAL USER GUIDES</p>
+    	Along with Crime data, ADA also provides access to other collections in the area of law and justice.</p>
+    <p>
+    	These include the following collections:</p>
+    <p>
+    	The Centre for Excellence in Policing and Security (CEPS) collection</p>
+    <p>
+    	RegNet: The Regulatory Institutions Network (RegNet)</p>
+    <p>
+    	The Australian Institute of Criminology (AIC)</p>
+    <p>
+    	Civil Justice: ADA holdings in the area of civil law and justice</p>
 
-  breakout_box: ""
+  breakout_box: |
+    <p>
+    	From here you can:</p>
+    <p>
+    	Browse the Law and Justice themed collections (link)</p>
+
   parent_id: 
-  archive_id: "4"
+  archive_id: "6"
   partial: /pages/default_page
-  lft: "109"
-  rgt: "110"
-  created_at: 2010-11-25 11:03:56.131984
-  updated_at: 2010-11-25 11:03:56.131984
+  lft: "87"
+  rgt: "90"
+  created_at: 2011-06-20 12:18:09.513742
+  updated_at: 2011-06-20 23:33:16.354242
   state: 
 
-pages_055: 
-  id: "58"
-  title: News
-  link_title: News
+pages_033: 
+  id: "54"
+  title: Using Data
+  link_title: Using Data
   description: 
   author_id: "1"
   body: |
+    <h1>
+    	Using Longitudinal Data</h1>
     <p>
-    	HOLDING PAGE FOR ADA LONGITUDINAL NEWS</p>
+    	&nbsp;</p>
+    <p>
+    	INSERT INFORMATION ON USING LONGITUDINAL DATA HERE</p>
 
-  breakout_box: ""
+  breakout_box: |
+    <p>
+    	Insert using longitudinal data case study here.</p>
+
   parent_id: 
   archive_id: "4"
-  partial: /pages/default_page
-  lft: "111"
-  rgt: "112"
-  created_at: 2010-11-25 11:04:20.502845
-  updated_at: 2010-11-25 11:04:20.502845
+  partial: /pages/breakout_page
+  lft: "131"
+  rgt: "132"
+  created_at: 2010-11-25 10:45:13.40924
+  updated_at: 2010-11-25 10:45:13.40924
   state: 
 
-pages_056: 
-  id: "59"
+pages_034: 
+  id: "43"
   title: About
   link_title: About
   description: 
   author_id: "1"
   body: |
     <p>
-    	ADA Qualitative is managed by a team of qualitative researchers working at The University of Queensland and The University of Sydney with a broader reference panel from The University of Melbourne, The University of Technology Sydney, The University of Western Australia and the Australian National University. The sub-archive has been developed in close consultation with the qualitative research community to ensure that the ethical, epistemological and practical issues relating to archiving and reusing qualitative data, and the needs, concerns and methodological approaches of researchers, are taken into full consideration.</p>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	The main function of ADA Qualitative is to archive digital qualitative data generated through social science research, broadly defined. What makes it distinct from other digitized, document-based holdings, such as those already established for Arts and Humanities scholars, is that it will specialize in primary data generated through the research process (i.e. through interviews, observation or focus groups) rather than existing written texts or historical records. Some of these existing texts may end up in the sub-archive but usually as part of a larger data set based on primary data collection.</p>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	As a digital archive, we are not in a position to store non-digital data such as audio and video cassettes or hand-written fieldnotes. However, advice can be provided to researchers on digitization processes.</p>
+    	INSERT INFORMATION ON ADA INDIGENOUS SITE HERE.</p>
 
   breakout_box: ""
   parent_id: 
-  archive_id: "5"
+  archive_id: "3"
   partial: /pages/default_page
-  lft: "113"
-  rgt: "114"
-  created_at: 2010-11-25 11:11:59.045623
-  updated_at: 2010-11-25 11:11:59.045623
+  lft: "107"
+  rgt: "108"
+  created_at: 2010-11-25 10:27:06.414842
+  updated_at: 2010-11-25 10:37:16.349891
   state: 
 
-pages_057: 
-  id: "60"
+pages_035: 
+  id: "52"
   title: Catalogue
   link_title: Catalogue
   description: 
   author_id: "1"
   body: |
     <p>
-    	HOLDING PAGE FOR ADA QUALITATIVE CATALOGUE.</p>
+    	HOLDING PAGE FOR ADA LONGITUDINAL CATALOGUE</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "4"
+  partial: /pages/default_page
+  lft: "125"
+  rgt: "128"
+  created_at: 2010-11-25 10:41:50.472092
+  updated_at: 2010-11-25 10:41:50.472092
+  state: 
+
+pages_036: 
+  id: "14"
+  title: Register for ADA
+  link_title: Register for ADA
+  description: 
+  author_id: "1"
+  body: |
     <p>
-    	Needs to be templated in Balsamiq</p>
+    	HOLDING PAGE FOR ADA REGISTRATION.</p>
+    <p>
+    	PAGE TO BE MIGRATED FROM ASSDA.</p>
+    <p>
+    	SPEAK TO STEVE AND OLAF FOR FURTHER DETAILS</p>
+
+  breakout_box: ""
+  parent_id: "11"
+  archive_id: "7"
+  partial: /pages/default_page
+  lft: "32"
+  rgt: "33"
+  created_at: 2010-11-24 12:49:51.450729
+  updated_at: 2011-02-23 02:36:56.153152
+  state: 
+
+pages_037: 
+  id: "59"
+  title: About
+  link_title: About
+  description: 
+  author_id: "1"
+  body: |
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative is managed by a team of qualitative researchers working at The University of Queensland and The University of Sydney with a broader reference panel from The University of Melbourne, The University of Technology Sydney, The University of Western Australia and the Australian National University. The sub-archive has been developed in close consultation with the qualitative research community to ensure that the ethical, epistemological and practical issues relating to archiving and reusing qualitative data, and the needs, concerns and methodological approaches of researchers, are taken into full consideration.</span></span></p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	&nbsp;</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The main function of ADA Qualitative is to archive digital qualitative data generated through social science research, broadly defined. What makes it distinct from other digitized, document-based holdings, such as those already established for Arts and Humanities scholars, is that it will specialize in primary data generated through the research process (i.e. through interviews, observation or focus groups) rather than existing written texts or historical records. Some of these existing texts may end up in the sub-archive but usually as part of a larger data set based on primary data collection.</span></span></p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	&nbsp;</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">As a digital archive, we are not in a position to store non-digital data such as audio and video cassettes or hand-written fieldnotes. However, advice can be provided to researchers on digitization processes.</span></span></p>
 
   breakout_box: ""
   parent_id: 
   archive_id: "5"
   partial: /pages/default_page
-  lft: "115"
-  rgt: "116"
-  created_at: 2010-11-25 11:12:48.810893
-  updated_at: 2010-11-25 11:12:48.810893
+  lft: "141"
+  rgt: "142"
+  created_at: 2010-11-25 11:11:59.045623
+  updated_at: 2010-11-25 11:11:59.045623
   state: 
 
-pages_058: 
+pages_038: 
+  id: "32"
+  title: Themed Data
+  link_title: Themed Data
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Themed Data</h1>
+    <p>
+    	ADA Social Science currently hold over 2000 data sets covering topics from across the social sciences. ADA, in conjunction with leading Australian researchers, have established a series of thematic guides to content in the ADA Social Science holdings, for detailed information on specialized materials within the archive.<br />
+    	Thematic guides are available for the following topics:</p>
+    <ul>
+    	<li> The Australian Survey of Social Attitudes</li>
+    	<li> The National Social Science Survey</li>
+    	<li> The Australian Election Studies</li>
+    	<li> Graduate Destination Surveys</li>
+    	<li>
+    		Australian public opinion polls</li>
+    </ul>
+    <p>
+    	If you have additional ideas for thematic content from the ADA Social Science holdings, please contact ADA at info@ada.edu.au.</p>
+    <h3 style="color: red;">
+    	ADD HYPERLINKED PAGES TO ABOVE DOT POINTS</h3>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "1"
+  partial: /pages/default_page
+  lft: "67"
+  rgt: "68"
+  created_at: 2010-11-24 21:57:42.190703
+  updated_at: 2010-11-25 05:10:12.612598
+  state: 
+
+pages_039: 
+  id: "46"
+  title: Using Data
+  link_title: Using Data
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Using Data</h1>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	Insert information on using indigenous data here.</p>
+
+  breakout_box: |
+    <p>
+    	Breakout box on using indigenous data.</p>
+    <p>
+    	Case study example?</p>
+
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/breakout_page
+  lft: "113"
+  rgt: "114"
+  created_at: 2010-11-25 10:29:35.242171
+  updated_at: 2010-11-25 10:31:01.758949
+  state: 
+
+pages_040: 
+  id: "82"
+  title: Special Access Requests
+  link_title: Special Access Requests
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Special Access Requests</h1>
+    <p>
+    	The majority of ADA data is available for download by completing a General or Restricted Access data access request. However, in some circumstances depositors require additional information from users</p>
+    <p>
+    	This page includes links to all ADA studies with special data access request forms. These forms are in PDF format, and may be printed, scanned and then returned to ADA via email at <a href="mailto:ada@anu.edu.au?subject=Special%20data%20access%20request">ada@anu.edu.au</a></p>
+    <p>
+    	ADA will then send this form to the depositor for approval. Applicants should allow for a time delay whilst their application is being processed. When your access has been authorised, ADa will contact you and may also advise you to complete a <a href="/ada/ada-undertaking-forms">special undertaking form</a>.</p>
+    <p>
+    	<br />
+    	&nbsp;</p>
+
+  breakout_box: ""
+  parent_id: "11"
+  archive_id: "7"
+  partial: /pages/default_page
+  lft: "36"
+  rgt: "37"
+  created_at: 2011-07-12 12:40:41.70755
+  updated_at: 2011-07-12 13:13:43.200472
+  state: 
+
+pages_041: 
+  id: "4"
+  title: Home
+  link_title: Home
+  description: 
+  author_id: "1"
+  body: |-
+    <p>
+    	&nbsp;</p>
+    <p>
+    	Welcome to the ADA Indigenous Archive.</p>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	ADA Indigenous provides a central hub for the preservation of and access to digital research data on topics involving Aboriginal and Torres Strait Islander peoples. ADA Indigenous is managed by the ATSIDA group, a team of researchers and experts in indigenous data access based at the Jumbunna House of Learning at the University of Technology, Sydney (UTS).</p>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	ADA Indigenous archives a range of quantitative, qualitative and other digital resources, supported by a range of culturally sensitive on-line access methods; and protocols and metadata schema for the deposit of indigenous data.</p>
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/home_page
+  lft: "15"
+  rgt: "16"
+  created_at: 2010-11-24 09:15:14.671645
+  updated_at: 2010-11-26 01:55:24.176659
+  state: 
+
+pages_042: 
+  id: "67"
+  title: Other Tabs TBD
+  link_title: Other Tabs TBD
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	WE NEED TO DETERMINE APPROPRIATE TABS FOR THE INTERNATIONAL ARCHIVE.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "6"
+  partial: /pages/default_page
+  lft: "97"
+  rgt: "98"
+  created_at: 2010-11-25 11:24:49.666445
+  updated_at: 2010-11-25 11:24:49.666445
+  state: 
+
+pages_043: 
+  id: "26"
+  title: Home
+  link_title: Home3
+  description: 
+  author_id: "1"
+  body: |-
+    <p>
+    	&nbsp;</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Social Science provides a national service for the preservation of and access to data relating to social, political and economic issues, and is the primary facility for the storage of Australian data.. ADA Social Science currently holds over 2000 separate datasets from a variety of academic, government and non-government organisations, covering the spectrum of Australian and international social sciences.</span></span></p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Social Science provides access to a variety of forms of data, including survey (unit record) data, census tables and qualitative and mixed method study content such as interview and focus group materials. ADA Social Science also provides services for the geographical visualization of materials through our GIS visualization facility.</span></span></p>
+  breakout_box: ""
+  parent_id: 
+  archive_id: "1"
+  partial: /pages/home_page
+  lft: "57"
+  rgt: "58"
+  created_at: 2010-11-24 21:40:53.958685
+  updated_at: 2010-11-26 01:49:16.178569
+  state: 
+
+pages_044: 
   id: "61"
   title: Creating Data
   link_title: Creating Data
@@ -1546,13 +1659,617 @@ pages_058:
   parent_id: 
   archive_id: "5"
   partial: /pages/default_page
-  lft: "117"
-  rgt: "118"
+  lft: "145"
+  rgt: "146"
   created_at: 2010-11-25 11:14:07.685543
-  updated_at: 2010-11-25 11:14:56.540852
+  updated_at: 2011-06-21 03:25:15.715052
+  state: 
+
+pages_045: 
+  id: "33"
+  title: User Guides
+  link_title: User Guides
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	User Guides</h1>
+    <p>
+    	User guide list to be added here.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "1"
+  partial: /pages/default_page
+  lft: "69"
+  rgt: "70"
+  created_at: 2010-11-24 21:58:22.231258
+  updated_at: 2011-02-23 02:48:42.126921
+  state: 
+
+pages_046: 
+  id: "34"
+  title: News
+  link_title: News
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	News</h1>
+    <p>
+    	Social Science News to be added here.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "1"
+  partial: /pages/default_page
+  lft: "71"
+  rgt: "72"
+  created_at: 2010-11-24 21:59:15.300457
+  updated_at: 2010-11-24 21:59:15.300457
+  state: 
+
+pages_047: 
+  id: "22"
+  title: ADA News
+  link_title: ADA News
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	Holding page for ADA NEWS.</p>
+    <p>
+    	This page has been prototyped in Balsamiq</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/default_page
+  lft: "51"
+  rgt: "52"
+  created_at: 2010-11-24 13:07:31.311482
+  updated_at: 2011-02-23 02:46:44.875984
+  state: 
+
+pages_048: 
+  id: "29"
+  title: Creating Data
+  link_title: Creating Data
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	Creating Data</p>
+    <p>
+    	The task of managing and archiving your research data is a process, not an end state in which the researcher hands over his or her data to the archive on completion of the project. This approach would render the process of preparing the data for archiving both expensive and onerous on the researcher. Thus, data management and archiving should be incorporated into the project design and methodology at the outset of the project.</p>
+    <p>
+    	<br />
+    	To this end, there are a number of activities you can undertake to facilitate the preservation and re-use of your data both now and into the future. The following pages explore some of these options in greater detail:</p>
+    <ul>
+    	<li>
+    		Why archive your data?</li>
+    	<li>
+    		Proposal planning and writing</li>
+    	<li>
+    		Project start-up</li>
+    	<li>
+    		Research ethics</li>
+    	<li>
+    		Collecting and managing your data</li>
+    </ul>
+    <h3 style="color: red;">
+    	(ABOVE DOTPOINTS SHOULD HYPERLINK TO SUB-PAGES)</h3>
+
+  breakout_box: |
+    <p>
+    	BREAKOUT TEXT ON CREATING DATA.</p>
+    <p>
+    	PROBABLY USED FOR HIGHLIGHTING A USER GUIDE.</p>
+
+  parent_id: 
+  archive_id: "1"
+  partial: /pages/breakout_page
+  lft: "63"
+  rgt: "64"
+  created_at: 2010-11-24 21:48:37.750452
+  updated_at: 2010-11-24 21:48:37.750452
+  state: 
+
+pages_049: 
+  id: "13"
+  title: Search ADA
+  link_title: Search ADA
+  description: 
+  author_id: "1"
+  body: |-
+    <h1>
+    	&nbsp;</h1>
+    <h1>
+    	<span _fck_bookmark="1" style="display: none; ">&nbsp;</span>Searching the ADA data holdings</h1>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	Searching</h2>
+    <p>
+    	To search the archive, simply type your search terms into the search box above.</p>
+    <p>
+    	Note that your search terms are cumulative - the search engine will search for all terms within your search expression, against information about studies in the archive, and variables within each study.</p>
+    <p>
+    	If you search for a term from within an ADA subarchives, the search will automatically limit the results to the studies within that subarchive.</p>
+    <h2>
+    	Search results</h2>
+    <p>
+    	The table of search results has two sets of results - Studies and Variables. Select the tab at the top of the table to alternate between the two. You can also move between a short Title view (listing study title, author, year and ID number only), and a more detailed Extended view (which includes abstracts and other additional information).</p>
+    <h2>
+    	Filtering your results</h2>
+    <p>
+    	To restrict the results of your search, you can use the ADA search filtering system. Click on an archive at left to filter the results by archive (and by other fields). Clicking on a filter term under the filter will limit the search results to studies that contain that term.</p>
+    <p>
+    	To remove the filter (and return an expanded set of results), click on the (-) symbol.</p>
+    <h2>
+    	Viewing studies and variables</h2>
+    <p>
+    	Once you have found a study of interest, click on the study title (or variable label in Variable view) to open the study page and view complete information about the data you are interested in.</p>
+    <h2>
+    	Saving searches</h2>
+    <p>
+    	If you would like to save the results of your search, click on the &quot;Save Search&quot; button at the top of the table.</p>
+    <p>
+    	To use a previously saved search, select the &quot;Saved Searches&quot; option in your Profile section at the top right of screen.</p>
+  breakout_box: |
+    <h3>
+    	Tips for searching:</h3>
+    <ol>
+    	<li>
+    		To filter your search, click on an archive tab at the left of screen.</li>
+    	<li>
+    		To save your search, click on the &quot;Save Search&quot; results at the top of the Search Results table</li>
+    	<li>
+    		To use a previously saved search, click on the &quot;Saved Searches&quot; option in your Profile section at the top right of screen.</li>
+    </ol>
+
+  parent_id: "11"
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "26"
+  rgt: "27"
+  created_at: 2010-11-24 12:47:30.70379
+  updated_at: 2011-07-11 23:51:21.262321
+  state: 
+
+pages_050: 
+  id: "81"
+  title: Access conditions
+  link_title: Access conditions
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Conditions of access to data from ADA</h1>
+    <p>
+    	<br />
+    	<span style="background-color:yellow;">The Australian Data Archive is committed to providing open access to Australian and international research data for research and ***public information*** purposes. This open access commitment however is balanced against our obligations to the original participants in these research studies. Data provided to the Australian Data Archive has been collected from research participants following research ethics requirements on the depositor who produced the data. These requirement place obligations on the researchers and ADA for appropriate use of the data for secondary purposes.</span><br />
+    	&nbsp;</p>
+    <h2>
+    	Access Categories</h2>
+    <p>
+    	<br />
+    	<span style="background-color: yellow;">To address these issues, </span>ADA studies are made available under three broad categories of access, which are determined by the depositor of the data:<br />
+    	&nbsp;</p>
+    <ul>
+    	<li>
+    		GENERAL ACCESS: studies with no restrictions placed on data access</li>
+    	<li>
+    		RESTRICTED ACCESS: studies where the depositor, or an authorised representative, wishes to be informed by the Archive of each request to use the data in order to give or withhold permission.</li>
+    	<li>
+    		SPECIAL ACCESS: studies where the depositor has included additional special access conditions. For example, the user may be required to obtain the permission in writing of the original depositor of the data, or an authorised representative, before publishing any interpretation of such materials.</li>
+    </ul>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	Access Levels</h2>
+    <p>
+    	<br />
+    	The Archive then provides access to data in the Australian Data Archive at three levels, depending on the access category of the study:<br />
+    	&nbsp;</p>
+    <ul>
+    	<li>
+    		BROWSE: view metadata and summary statistics for data files</li>
+    	<li>
+    		ANALYSE: use the ADA Nesstar analysis system to run cross-tabulations, correlations and linear regressions</li>
+    	<li>
+    		DOWNLOAD: export the raw data files to your own computer</li>
+    </ul>
+    <p>
+    	<br />
+    	Your access to data at any point is then a combination of the access category of the study and the level of access to the data that you are seeking. These can be summarised as follows:</p>
+    <p>
+    	&nbsp;</p>
+    <table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 80%;">
+    	<thead>
+    		<tr>
+    			<th scope="row">
+    				&nbsp;</th>
+    			<th colspan="3" rowspan="1" scope="col">
+    				Access category</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<th scope="row">
+    				Access Level</th>
+    			<th style="text-align: center; width: 25%;">
+    				General</th>
+    			<th style="text-align: center; width: 25%;">
+    				Restricted</th>
+    			<th style="text-align: center; width: 25%;">
+    				Special</th>
+    		</tr>
+    		<tr>
+    			<th scope="row">
+    				Browse</th>
+    			<td style="text-align: center; width: 25%;">
+    				Open</td>
+    			<td style="text-align: center; width: 25%;">
+    				Open</td>
+    			<td style="text-align: center; width: 25%;">
+    				Open</td>
+    		</tr>
+    		<tr>
+    			<th scope="row">
+    				Analyse</th>
+    			<td style="text-align: center; width: 25%;">
+    				Registered users</td>
+    			<td style="text-align: center; width: 25%;">
+    				Application required</td>
+    			<td style="text-align: center; width: 25%;">
+    				Study-specific</td>
+    		</tr>
+    		<tr>
+    			<th scope="row">
+    				Download</th>
+    			<td style="text-align: center; width: 25%;">
+    				Application required (ADA approval)</td>
+    			<td style="text-align: center; width: 25%;">
+    				Application required (Depositor approval)</td>
+    			<td style="text-align: center; width: 25%;">
+    				Study-specific</td>
+    		</tr>
+    	</tbody>
+    </table>
+    <p>
+    	<br />
+    	Each of these access levels incorporates additional expectations on you regarding secure and appropriate use of the data. Full details on the general and restricted data access conditions for ADA users are available from the <a href="/ada/ada-undertaking-forms">ADA Undertakings</a> page.</p>
+    <h2>
+    	Costs of Access</h2>
+    <p>
+    	<span style="background-color:yellow;">While ADA would like to provide access free of charge to all users, the costs of providing our user management services do not make this possible. The costs of data access are therefore determined as follows:</span></p>
+    <h3>
+    	1. Staff and Students of ACSPRI member institutions</h3>
+    <p>
+    	The Australian Consortium for Social and Political Research Inc. (ACSPRI) has negotiated free access to ADA data for staff and students of all its member organisations. Your organisation&#39;s ACSPRI membership is determined automatically when you enter the name of your institution in your user registration. Most Australian universites and a number of Government agencies and non-government organisations have ACSPRI membership (see the online list of <a href="http://acspri.org.au/og/members">ACSPRI Member Institutions</a>).</p>
+    <h3>
+    	2. Staff and Students of ADA international partners</h3>
+    <p>
+    	ADA is a member of the <a href="http://www.ifdo.org/network/index.html">International Federation of Data Organizations for the Social Sciences</a> (IFDO) and holds data exchange agreements with a number of different data archives and services around the globe. This includes staff and students from member institutions of the <a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/administration/institutions">Inter-University Consortium for Political and Social Research</a> (ICPSR) and the <a href="http://www.cessda.org/about/members/">Council for European Social Science Data Archives</a> (CESSDA) member institutions. You can <a href="mailto:ada@anu.edu.au">contact us</a> or your local data service to find out whether your affiliation entitles you to free access to ADA data.</p>
+    <h3>
+    	3. All others</h3>
+    <p>
+    	You are required to apply for each dataset individually and will need to complete the General Undertaking Form, and pay a $1000 (Aust.) administrative fee per dataset. For information on joining ACSPRI see Becoming a Member.<br />
+    	<br />
+    	j</p>
+
+  breakout_box: |
+    <h2>
+    	How do I access ADA data?</h2>
+    <p>
+    	1. Find the study or variable you are interested in using Search or Browse</p>
+    <p>
+    	2. Browse the study</p>
+    <p>
+    	3. Analyse the data in the Nesstar online analysis system</p>
+    <p>
+    	4. Request access to download the data from the ADA Nesstar server</p>
+
+  parent_id: "11"
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "34"
+  rgt: "35"
+  created_at: 2011-07-11 08:18:18.5445
+  updated_at: 2011-07-12 13:48:58.255488
+  state: 
+
+pages_051: 
+  id: "75"
+  title: News
+  link_title: News
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR INTERNATIONAL NEWS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "6"
+  partial: /pages/default_page
+  lft: "93"
+  rgt: "94"
+  created_at: 2011-06-20 23:32:04.568244
+  updated_at: 2011-06-20 23:32:04.568244
+  state: 
+
+pages_052: 
+  id: "64"
+  title: User Guides
+  link_title: User Guides
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA QUALITATIVE USER GUIDES</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "5"
+  partial: /pages/default_page
+  lft: "151"
+  rgt: "152"
+  created_at: 2010-11-25 11:20:05.234581
+  updated_at: 2010-11-25 11:20:05.234581
+  state: 
+
+pages_053: 
+  id: "42"
+  title: News
+  link_title: News
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR HISTORICAL NEWS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "105"
+  rgt: "106"
+  created_at: 2010-11-25 10:18:00.303517
+  updated_at: 2010-11-25 10:18:00.303517
+  state: 
+
+pages_054: 
+  id: "36"
+  title: About
+  link_title: About
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	ADD ABOUT INFORMATION FOR HISTORICAL ARCHIVE HERE.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "3"
+  rgt: "4"
+  created_at: 2010-11-25 10:01:00.618844
+  updated_at: 2010-11-25 10:01:00.618844
+  state: 
+
+pages_055: 
+  id: "51"
+  title: About
+  link_title: About
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	About</h1>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	INSERT INFORMATION ABOUT THE ADA LONGITUDINAL ARCHIVE HERE.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "4"
+  partial: /pages/default_page
+  lft: "123"
+  rgt: "124"
+  created_at: 2010-11-25 10:41:08.739756
+  updated_at: 2010-11-25 10:41:25.85336
+  state: 
+
+pages_056: 
+  id: "49"
+  title: User Guides
+  link_title: User Guides
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA INDIGENOUS NEWS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "119"
+  rgt: "120"
+  created_at: 2010-11-25 10:35:41.244162
+  updated_at: 2010-11-25 10:35:41.244162
+  state: 
+
+pages_057: 
+  id: "7"
+  title: Home
+  link_title: Home
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	&nbsp;</p>
+    <p>
+    	The ADA Crime and Justice archive provides access to major collections of legal data across Australian and international jurisdictions.</p>
+    <p>
+    	&nbsp;</p>
+    <h1>
+    	Criminal Justice</h1>
+    <h3>
+    	The National Criminal Justice Research Data Network (NCJRDN)</h3>
+    <p>
+    	The National Criminal Justice Research Data Network (NCJRDN) project aims to establish a web based data repository that will either hold (or provide links to) criminal justice data currently maintained by data custodians across Australia.&nbsp;There is growing demand for quantitative research in the criminal justice sector where government agencies are increasingly calling on researchers and criminologists to provide the evidence base to enable efficient service provision and for the development of effective crime prevention/reduction strategies.</p>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <div id="pageheader">
+    	<p>
+    		The NCJRDN provides a web-based service through which researchers can obtain information about, and access to, an array of criminal justice research datasets and data analysis tools. The NCJRDN seeks to include criminal justice data which is already routinely collected from administrative datasets.</p>
+    	<p>
+    		&nbsp;</p>
+    	<h1>
+    		Law and Justice collections:</h1>
+    	<h3>
+    		Policing and Security: the ARC Centre for Excellence in Policing and Security (CEPS)</h3>
+    	<div>
+    		The Australian Research Council (ARC) Centre of Excellence in Policing and Security (CEPS) was established by the ARC in 2007 to boost policing and security research capacity in Australia amid the growing complexity and internationalisation of transnational crime in the post 9/11 environment.</div>
+    	<div>
+    		&nbsp;</div>
+    	<h3>
+    		Criminology</h3>
+    	<p>
+    		Data collections from the Australian Institute of Criminology (AIC), and Criminology researchers around Australia.</p>
+    	<p>
+    		&nbsp;</p>
+    	<h3>
+    		Legal institutions and processes</h3>
+    	<p>
+    		Data from the Regulatory Institutions Network</p>
+    </div>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	HOLD FOR INTERNATIONAL</p>
+    <p>
+    	<span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; color: rgb(0, 0, 0); ">ADA International provides a central point of access for links to international data sources around the world. Through ADA International, you can gain access to major international data holdings such as national data archives in Europe, North America and elsewhere, and time series data held by organisations such as the OECD, United Nations and the World Bank.</span></p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "6"
+  partial: /pages/home_page
+  lft: "21"
+  rgt: "22"
+  created_at: 2010-11-24 09:15:14.712612
+  updated_at: 2011-06-21 01:51:21.285495
+  state: 
+
+pages_058: 
+  id: "37"
+  title: Catalogue
+  link_title: Catalogue
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR HISTORICAL CATALOGUE.</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "5"
+  rgt: "6"
+  created_at: 2010-11-25 10:01:51.237683
+  updated_at: 2010-11-25 10:01:51.237683
   state: 
 
 pages_059: 
+  id: "18"
+  title: Sharing data and access conditions
+  link_title: Sharing data and access conditions
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE ON ACCESS CONDITIONS</p>
+
+  breakout_box: ""
+  parent_id: "16"
+  archive_id: "7"
+  partial: /pages/default_page
+  lft: "42"
+  rgt: "43"
+  created_at: 2010-11-24 13:00:01.03464
+  updated_at: 2011-02-23 02:36:56.135753
+  state: 
+
+pages_060: 
+  id: "73"
+  title: Civil Justice
+  link_title: Civil Justice
+  description: 
+  author_id: "1"
+  body: ""
+  breakout_box: ""
+  parent_id: "72"
+  archive_id: "6"
+  partial: /pages/breakout_page
+  lft: "88"
+  rgt: "89"
+  created_at: 2011-06-20 12:32:58.727899
+  updated_at: 2011-06-20 23:33:35.180221
+  state: 
+
+pages_061: 
+  id: "56"
+  title: Visualisation
+  link_title: Visualisation
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR PANIMALIA</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "4"
+  partial: /pages/default_page
+  lft: "133"
+  rgt: "134"
+  created_at: 2010-11-25 11:02:41.654233
+  updated_at: 2010-11-25 11:02:41.654233
+  state: 
+
+pages_062: 
+  id: "39"
+  title: Using Data
+  link_title: Using Data
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	Using Historical Data start page</p>
+    <p>
+    	What will go here?</p>
+
+  breakout_box: |
+    <p>
+    	Breakout box for using historical data</p>
+    <p>
+    	Probably an example of how a researcher has used historical data.</p>
+
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/breakout_page
+  lft: "101"
+  rgt: "102"
+  created_at: 2010-11-25 10:06:15.241045
+  updated_at: 2010-11-25 10:06:15.241045
+  state: 
+
+pages_063: 
   id: "62"
   title: Using Data
   link_title: Using Data
@@ -1585,59 +2302,374 @@ pages_059:
   parent_id: 
   archive_id: "5"
   partial: /pages/default_page
-  lft: "119"
-  rgt: "120"
+  lft: "147"
+  rgt: "148"
   created_at: 2010-11-25 11:16:23.777611
   updated_at: 2010-11-25 11:16:23.777611
   state: 
 
-pages_060: 
-  id: "63"
-  title: Completed Projects
-  link_title: End-of-Career Archiving
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Archiving Completed Qualitative Projects</h1>
-    <p>
-    	<br />
-    	The process for creating data applies specifically to new research projects where data archiving is considered from the outset. For older or already completed projects, the intention to archive may not have been present at the time the research was designed and conducted. In these cases, there is usually considerable work involved in preparing the data for archiving. This may include converting data to digital formats, working through the ethical agreements made at the time of the research to see if archiving is possible, and collating the required accompanying documentation that make analysis by others possible. ADA Qualitative has limited resources and cannot undertake such activities for all but the most important datasets. Please review our collections policy for guidance on archiving completed projects and make contact with the archive if you have a completed dataset that meets the criteria for inclusion in the archive.</p>
-    <p>
-    	<br />
-    	Initial inquiries about archiving completed projects can be made by filling out the completed projects enquiry form. Please provide as much information as possible to assist us in establishing the feasibility of archiving your data.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "5"
-  partial: /pages/default_page
-  lft: "121"
-  rgt: "122"
-  created_at: 2010-11-25 11:18:18.025663
-  updated_at: 2010-11-25 11:19:14.696386
-  state: 
-
-pages_061: 
-  id: "64"
+pages_064: 
+  id: "41"
   title: User Guides
   link_title: User Guides
   description: 
   author_id: "1"
   body: |
     <p>
-    	HOLDING PAGE FOR ADA QUALITATIVE USER GUIDES</p>
+    	HOLDING PAGE FOR USER GUIDES</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/default_page
+  lft: "103"
+  rgt: "104"
+  created_at: 2010-11-25 10:17:32.08885
+  updated_at: 2010-11-25 10:17:32.08885
+  state: 
+
+pages_065: 
+  id: "50"
+  title: News
+  link_title: News
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA INDIGENOUS NEWS</p>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "3"
+  partial: /pages/default_page
+  lft: "121"
+  rgt: "122"
+  created_at: 2010-11-25 10:36:10.319176
+  updated_at: 2010-11-25 10:36:10.319176
+  state: 
+
+pages_066: 
+  id: "11"
+  title: Data Access
+  link_title: Data Access
+  description: 
+  author_id: "1"
+  body: |-
+    <h1>
+    	Data Access from the Australian Data Archive</h1>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	Accessing data in ADA may involve any of the following stages:</p>
+    <ol>
+    	<li>
+    		<strong>Finding</strong> studies and variables</li>
+    	<li>
+    		<strong>Viewing</strong> study and variable information</li>
+    	<li>
+    		<strong>Analysing</strong> data</li>
+    	<li>
+    		<strong>Downloading</strong> data</li>
+    </ol>
+    <p>
+    	For more information on each of the above, you can also read the &quot;ADA Guide to Accessing Data&quot; (PDF-LINK).</p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	1. Finding Data</h2>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	There are two methods for finding data in the Australian Data Archive.</p>
+    <ul>
+    	<li>
+    		Browse the ADA Data Catalogue (HYPERLINK: http://www.ada.edu.au/browse)</li>
+    	<li>
+    		Search data using the search box above</li>
+    </ul>
+    <p>
+    	Note that searching from within one of the ADA subarchives will automatically limit the results of a search or browse to the studies within that subarchive. You can save your searches to return to later.</p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	2. Viewing study and variable information</h2>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	Once you have located data you are interested in, you can find out more about the data by exploring the Study Page. Here you will find information on who conducted the study, data collection and methodology, access conditions, variables in the study, and related information (such as questionnaires, reports and other information). From here you can also access the Nesstar online analysis and request to download the data from the study.</p>
+    <p>
+    	INSERT PICTURE OF THE STUDY PAGE HERE.</p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	3. Online analysis</h2>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	From the Study Page, you can access the Nesstar online analysis system, to run analysis of the data you are interested in online. To analyse data, simply click on the link to &quot;Analyse this data in Nesstar&quot; at the top of the study page. This will open the Nesstar system for you. If you would like to conduct detailed analysis of the data (using the TABULATION or ANALYSIS systems) you will need to login using your ADA username and password.</p>
+    <p>
+    	More details on using the Nesstar online analysis and download system are available in the ADA Nesstar User Guide (HYPERLINK).</p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	4. Download the data</h2>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	From the Study Page, you can also access the Nesstar data download system, to export the data files for the study to your own computer. To download data, click on the link to &quot;Download this data in Nesstar&quot; at the top of the study page.</p>
+    <p>
+    	This will take you to the Nesstar Download page. From here you can then choose the data format you would prefer, and then click on the &quot;Download&quot; button.</p>
+    <ul>
+    	<li>
+    		If you have already been approved for access to the data from the study you are requesting, you will be able to download the data from this page.</li>
+    	<li>
+    		If you have not already been approved, you will need to put in a ADA Data Download request (you will be prompted to do so at this point).If you would like to request multiple studies as part of this request, simply add these to the Data Download request by choosing the additional studies you are interested in.</li>
+    </ul>
+  breakout_box: |
+    <h2>
+    	Are you registered?</h2>
+    <div>
+    	To conduct online analysis or request data for download, you will need to be logged in to the ADA website using your ADA username and password. Click the Register button at the top-right of the screen if you have not already registered.</div>
+
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "25"
+  rgt: "38"
+  created_at: 2010-11-24 12:32:03.602175
+  updated_at: 2011-07-11 23:41:11.336841
+  state: 
+
+pages_067: 
+  id: "21"
+  title: User Guides
+  link_title: User Guides
+  description: 
+  author_id: "1"
+  body: |-
+    <p>
+    	Holding page for USER GUIDES.</p>
+  breakout_box: |
+    <h2>
+    	Featured Guide</h2>
+    <p>
+    	This section features the current FEATURE GUIDE of interest.</p>
+
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "49"
+  rgt: "50"
+  created_at: 2010-11-24 13:06:40.2627
+  updated_at: 2011-07-12 14:25:44.314178
+  state: 
+
+pages_068: 
+  id: "38"
+  title: Creating Data
+  link_title: Creating Data
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	Holding page for Creating Historical Data</p>
+    <p>
+    	Do we need a creating data page for this subarchive?</p>
+
+  breakout_box: |
+    <p>
+    	Historical creating data breakout box</p>
+
+  parent_id: 
+  archive_id: "2"
+  partial: /pages/breakout_page
+  lft: "99"
+  rgt: "100"
+  created_at: 2010-11-25 10:04:17.50621
+  updated_at: 2010-11-25 10:04:17.50621
+  state: 
+
+pages_069: 
+  id: "78"
+  title: CJ2-Law and Justice
+  link_title: Law end Justice
+  description: 
+  author_id: "1"
+  body: |-
+    <h1>
+    	Law and Justice</h1>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 90%; ">
+    	<thead>
+    		<tr>
+    			<th scope="col">
+    				Catalogue</th>
+    			<th scope="col">
+    				Datasets</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>
+    				<a href="/international/cj2-2-ceps">&nbsp;Centre for Excellence in Policing and Security</a></td>
+    			<td>
+    				1</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				<a href="/international/cj2-1-regnet">&nbsp;RegNet: Regulatory Institutions Network</a></td>
+    			<td>
+    				5</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				&nbsp;Australian Institute of Criminology</td>
+    			<td>
+    				10</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				&nbsp;</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    	</tbody>
+    </table>
+  breakout_box: ""
+  parent_id: "66"
+  archive_id: "6"
+  partial: /pages/default_page
+  lft: "76"
+  rgt: "81"
+  created_at: 2011-06-23 08:35:44.903796
+  updated_at: 2011-06-23 09:11:55.688807
+  state: 
+
+pages_070: 
+  id: "19"
+  title: How to deposit data
+  link_title: How to deposit data
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	How To Deposit Data</h1>
+    <p>
+    	In the course of their normal research work, many researchers already prepare their data in a form that would be suitable for depositing with ADA. There are 4 simple steps to depositing your data.</p>
+    <h2>
+    	<br />
+    	1. Collect together all the data files</h2>
+    <p>
+    	You may want to think about:</p>
+    <ol>
+    	<li>
+    		confidentiality - removing variables like peoples&#39; names, addresses and phone numbers. (We will let you know if we find something that we think is a risk)</li>
+    	<li>
+    		naming conventions - have you labelled your data files and contents (such as variables) in a way that makes them readily understandable to others?</li>
+    	<li>
+    		created and derived variables - if they are important to replication of your work, can you provide the syntax that created it? If you can&#39;t describe how you created them, is it still important to archive them?</li>
+    	<li>
+    		data formats - are your data in an open or commonly used format? ADA can provide some data format conversion, but this is dependent on the availability of ADA archivists and appropriate software and hardware.</li>
+    </ol>
+    <p>
+    	<br />
+    	ADA does have a set of preferred data formats for deposit, but we can handle most data formats. If you&#39;re not sure about whether your data is in an appropriate format, please contact us or refer to our User Guide &quot;Depositing Data with the Australian Data Archive&quot;.</p>
+    <h2>
+    	<br />
+    	<br />
+    	2. Collect together all the relevant documentation</h2>
+    <p>
+    	<br />
+    	You may want to include:</p>
+    <ul>
+    	<li>
+    		a questionnaire and any other materials used like show cards</li>
+    	<li>
+    		technical reports</li>
+    	<li>
+    		any publications you want referenced in the documentation</li>
+    </ul>
+    <p>
+    	It is preferable if you can provide these materials in electronic format where possible.</p>
+    <h2>
+    	<br />
+    	3. Complete the ADA deposit forms</h2>
+    <p>
+    	<br />
+    	We have provided a <a href="/ada/deposit-forms">Deposit Form and Licence Form</a> to assist us in archiving your data. These forms will also assist you in getting your deposit together. The only form that is essential is the Licence Form as it gives us your permission to archive the data. The Deposit form provides us with information on your research so that we can provide an adequate description of the data, the methods use, documentation and other information useful to other users of the data. We will contact you if we find there is further information that we need to create complete documentation.</p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	<br />
+    	4 Deposit the data, documentation and forms with ADA</h2>
+    <p>
+    	<br />
+    	There are a number of ways to transfer your deposit:</p>
+    <ul>
+    	<li>
+    		by post - your electronic files can be copied onto CD-Rom and mailed to us. It&#39;s a good idea to let us know that it is coming so we can let you know when it is in our care. It is good practice to password-protect / encrypt data files that are sent by post</li>
+    	<li>
+    		by email - for smaller data files, it might be easiest to email the data to us</li>
+    	<li>
+    		online - ADA has developed specific methods for online data transfer, including FTP and a secure web deposit service.</li>
+    	<li>
+    		directly to an ADA data archivists</li>
+    </ul>
+    <p>
+    	<br />
+    	To determine the best method for the deposit of your data, please contact ADA.</p>
+
+  breakout_box: |
+    <h2>
+    	Steps to deposit your data</h2>
+    <p>
+    	1. Collect your data files</p>
+    <p>
+    	2. Collect your documentation</p>
+    <p>
+    	3. Fill out the ADA license and deposit form</p>
+    <p>
+    	4. Deposit your data with ADA</p>
+    <p>
+    	&nbsp;</p>
+    <h2>
+    	Deposit forms</h2>
+    <p>
+    	ADA License form - PDF</p>
+    <p>
+    	ADA Deposit form - PDF</p>
+
+  parent_id: "16"
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "40"
+  rgt: "41"
+  created_at: 2010-11-24 13:00:59.602251
+  updated_at: 2011-07-12 14:43:59.939632
+  state: 
+
+pages_071: 
+  id: "60"
+  title: Catalogue
+  link_title: Catalogue
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	HOLDING PAGE FOR ADA QUALITATIVE CATALOGUE.</p>
+    <p>
+    	Needs to be templated in Balsamiq</p>
 
   breakout_box: ""
   parent_id: 
   archive_id: "5"
   partial: /pages/default_page
-  lft: "123"
-  rgt: "124"
-  created_at: 2010-11-25 11:20:05.234581
-  updated_at: 2010-11-25 11:20:05.234581
+  lft: "143"
+  rgt: "144"
+  created_at: 2010-11-25 11:12:48.810893
+  updated_at: 2010-11-25 11:12:48.810893
   state: 
 
-pages_062: 
+pages_072: 
   id: "65"
   title: News
   link_title: News
@@ -1651,93 +2683,255 @@ pages_062:
   parent_id: 
   archive_id: "5"
   partial: /pages/default_page
-  lft: "125"
-  rgt: "126"
+  lft: "153"
+  rgt: "154"
   created_at: 2010-11-25 11:20:41.698186
   updated_at: 2010-11-25 11:20:41.698186
   state: 
 
-pages_063: 
-  id: "66"
-  title: Catalogue
-  link_title: Catalogue
+pages_073: 
+  id: "5"
+  title: Home
+  link_title: Home
   description: 
   author_id: "1"
-  body: |
+  body: |-
     <p>
-    	HOLDING PAGE FOR ADA INTERNATIONAL CATALOGUE</p>
-
+    	&nbsp;</p>
+    <p>
+    	Welcome to the ADA Longitudinal Archive.</p>
+    <p>
+    	ADA Longitudinal provides a central access point for major longitudinal panel surveys of the Australian population. Studies in the ADA Longitudinal collection include:</p>
+    <p>
+    	&nbsp;</p>
+    <ul>
+    	<li>
+    		Negotiating the Life Course</li>
+    	<li>
+    		The Longitudinal Surveys of Australian Youth</li>
+    	<li>
+    		Australian Longitudinal Study on Women&#39;s Health</li>
+    	<li>
+    		Australian Longitudinal Survey of Ageing</li>
+    	<li>
+    		Longitudinal Survey of Immigrants to Australia</li>
+    	<li>
+    		Other longitudinal studies within the ADA collection.</li>
+    </ul>
+    <p>
+    	<br />
+    	Alongside access to major longitudinal studies, ADA Longitudinal also provides support and information on research methods for longitudinal data collection and analysis. These include the Panimalia visualisation tool to assist researchers in the analysis of transitions and complex social dynamics in longitudinal panel data.</p>
   breakout_box: ""
   parent_id: 
-  archive_id: "6"
-  partial: /pages/default_page
-  lft: "127"
-  rgt: "128"
-  created_at: 2010-11-25 11:23:02.445767
-  updated_at: 2010-11-25 11:23:02.445767
+  archive_id: "4"
+  partial: /pages/home_page
+  lft: "17"
+  rgt: "18"
+  created_at: 2010-11-24 09:15:14.686228
+  updated_at: 2010-11-26 01:57:08.472824
   state: 
 
-pages_064: 
-  id: "67"
-  title: Other Tabs TBD
-  link_title: Other Tabs TBD
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	WE NEED TO DETERMINE APPROPRIATE TABS FOR THE INTERNATIONAL ARCHIVE.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "6"
-  partial: /pages/default_page
-  lft: "129"
-  rgt: "130"
-  created_at: 2010-11-25 11:24:49.666445
-  updated_at: 2010-11-25 11:24:49.666445
-  state: 
-
-pages_065: 
-  id: "68"
-  title: HCCDA
-  link_title: Historical Census and Colonial Data Archive
+pages_074: 
+  id: "30"
+  title: Using Data
+  link_title: Using Data
   description: 
   author_id: "1"
   body: |
     <h1>
-    	Historical and Colonial Census Data Archive - HCCDA</h1>
+    	Using Data</h1>
     <p>
-    	&nbsp;</p>
+    	With a growing number of datasets available online for sharing through archives such as ADA and the UK Data Archive, it is possible that you will be able to make use of these data as a precursor or supplement to collecting your own. Given the rich array of research data already generated, researchers are encouraged to make use of that data wherever possible.The following pages are a set of suggestions for elements you may wish to take into account when resing secondary qualitative data:</p>
+    <ul>
+    	<li>
+    		Accessing data</li>
+    	<li>
+    		Data analysis tools and software</li>
+    	<li>
+    		Guides to ADA Social Science Content</li>
+    	<li>
+    		Citing datasets</li>
+    </ul>
+    <h3 style="color: red;">
+    	ABOVE DOTPOINTS ARE TO HYPERLINKED PAGES</h3>
+
+  breakout_box: |
     <p>
-    	The Historical Census and Colonial Data Archive (HCCDA) is a searchable archive of Australian Colonial census publications and reports for the period 1833 - 1901. It is a sub-archive of the Australian Social Science Data Archive (ASSDA). Please note that the archive contains colonial census reports and not the raw census data.</p>
+    	HOLDING SPACE FOR BREAKOUT.</p>
     <p>
-    	To access the HCCDA, please visit: <a href="http://hccda.anu.edu.au">http://hccda.anu.edu.au</a></p>
-    <p>
-    	&nbsp;</p>
+    	HIGHLIGHTS A NEW USER GUIDE.</p>
+
+  parent_id: 
+  archive_id: "1"
+  partial: /pages/breakout_page
+  lft: "65"
+  rgt: "66"
+  created_at: 2010-11-24 21:51:42.777809
+  updated_at: 2010-11-24 21:51:42.777809
+  state: 
+
+pages_075: 
+  id: "77"
+  title: CJ1-Crime
+  link_title: Crime
+  description: 
+  author_id: "1"
+  body: |
     <h2>
-    	About the HCCDA</h2>
-    <p>
-    	The archive has sourced microfiche versions of the census publications from the Australian Bureau of Statistics (ABS) and converted them to both digital images and searchable XML markup. The HCCDA archive documents were originally published in the former colonies of NSW, Victoria, Queensland, South Australia, Tasmania and Western Australia and relate to censuses of those colonies ranging from 1833 to 1901.</p>
-    <p>
-    	&nbsp;</p>
+    	Crime</h2>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 90%; ">
+    	<tbody>
+    		<tr>
+    			<td>
+    				<strong>State</strong></td>
+    			<td>
+    				<strong>Courts</strong></td>
+    			<td>
+    				<strong>Police</strong></td>
+    			<td>
+    				<strong>Corrections</strong></td>
+    		</tr>
+    		<tr>
+    			<td>
+    				NSW</td>
+    			<td>
+    				NSW Courts</td>
+    			<td>
+    				NSW Police</td>
+    			<td>
+    				NSW Corrections</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Victoria</td>
+    			<td>
+    				Victoria Courts</td>
+    			<td>
+    				Vic Police</td>
+    			<td>
+    				Vic Corrections</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				Queensland</td>
+    			<td>
+    				Qld Courts</td>
+    			<td>
+    				Qld Police</td>
+    			<td>
+    				Qld Corrections</td>
+    		</tr>
+    	</tbody>
+    </table>
     <h2>
-    	Development</h2>
-    <p>
-    	The HCCDA project materials, software and website were developed by a project team of ANU researchers and technical staff. The project databases, software and web hosting are provided by ANUSF.</p>
-    <h2>
-    	<br />
-    	Acknowledgements</h2>
-    <p>
-    	<br />
-    	The HCCDA project team would like to acknowledge the support of the Australian Bureau of Statistics (ABS) in providing the microfiche versions of the census publications. We would also like to acknowledge the Australian Research Council (ARC) support for the projects through the LIEF program and the National Collaborative Research Infrastructure Strategy (NCRIS). The HCCDA website design has been adapted from a design available at http://www.sparkBB.com.</p>
+    	Law and Justice</h2>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 90%; ">
+    	<tbody>
+    		<tr>
+    			<td>
+    				&nbsp;</td>
+    			<td>
+    				&nbsp;</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				&nbsp;</td>
+    			<td>
+    				&nbsp;</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				&nbsp;</td>
+    			<td>
+    				&nbsp;</td>
+    			<td>
+    				&nbsp;</td>
+    		</tr>
+    	</tbody>
+    </table>
 
   breakout_box: ""
-  parent_id: 
-  archive_id: "2"
+  parent_id: "66"
+  archive_id: "6"
   partial: /pages/default_page
-  lft: "3"
-  rgt: "4"
-  created_at: 2011-03-02 03:33:44.032041
-  updated_at: 2011-03-02 03:53:32.09478
+  lft: "74"
+  rgt: "75"
+  created_at: 2011-06-23 08:03:22.512286
+  updated_at: 2011-06-23 08:45:52.433028
+  state: 
+
+pages_076: 
+  id: "24"
+  title: My Account
+  link_title: My Account
+  description: 
+  author_id: "1"
+  body: |
+    <p>
+    	Holding page for MY ACCOUNT.<br />
+    	Likely to be replaced.</p>
+
+  breakout_box: |
+    <p>
+    	Could this be a HANDY HINTS breakout section.</p>
+
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "55"
+  rgt: "56"
+  created_at: 2010-11-24 13:09:39.969442
+  updated_at: 2011-02-23 02:47:08.972278
+  state: 
+
+pages_077: 
+  id: "1"
+  title: Home
+  link_title: ADA Home
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Welcome to the Australian Data Archive</h1>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	&nbsp;</p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The Australian Data Archive (ADA) provides a national service for the collection and preservation of digital research data and to make these data available for secondary analysis by academic researchers and other users. </span></span></p>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The ADA is comprised of six sub-archives:</span></span></p>
+    <ul style="margin: 0px; padding: 0px 0px 0px 20px; font-size: 11px;">
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Social Science</span></span></li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Historical</span></span></li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Indigenous</span></span></li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Longitudinal</span></span></li>
+    	<li style="margin: 0px; padding: 0px 0px 5px; list-style-type: square; display: list-item;">
+    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA Qualitative</span></span></li>
+    	<li style="margin: 0px; padding: 0px 0px 10px; list-style-type: square; display: list-item;">
+    		<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">ADA International</span></span></li>
+    </ul>
+    <p style="margin: 0px; padding: 0px 0px 5px; font-size: 11px; color: rgb(0, 0, 0);">
+    	<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Times; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style="font-family: Arial,Helvetica,sans-serif; font-size: 11px; line-height: 16px;">The archive is provided by a consortium of leading national Australian universities, managed by the Australian National University (ANU) and including nodes around Australia, at the University of Melbourne, University of Queensland, University of Technology Sydney and University of Western Australia.</span></span></p>
+
+  breakout_box: |
+    <h2>
+    	News from the Australian Data Archive</h2>
+    <p>
+    	New datasets in the ADA holdings, including the Australian Survey of Social Attitudes, the Australian Election Study and the Australian Demographic Data Bank datasets, now include a mapping variable. If the mapping variable is added to a cross-tabulation, the map icon can be used to display state-level information on a map of Australia.</p>
+
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "11"
+  rgt: "12"
+  created_at: 2010-11-24 09:15:14.613667
+  updated_at: 2011-02-23 02:46:18.333818
   state: 
 

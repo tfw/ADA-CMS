@@ -57,10 +57,8 @@ class User < ActiveRecord::Base
   end
   
   def to_s
-    "#{firstname} #{surname}"
+    str = "#{firstname} #{surname}"
+    str ||= email
   end
-   #  
-   # def to_param
-   #   identity_url
-   # end
+
 end

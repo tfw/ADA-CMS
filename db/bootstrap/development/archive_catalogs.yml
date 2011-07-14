@@ -1,1581 +1,1739 @@
 --- 
 archive_catalogs_001: 
-  id: "117"
-  title: Catalog100
-  archive_id: "4"
-  catalog_position: "12"
-  parent_id: "115"
-  lft: "232"
-  rgt: "233"
-  created_at: 2011-07-06 01:26:07.832294
-  updated_at: 2011-07-06 01:26:07.832294
-archive_catalogs_002: 
-  id: "112"
-  title: Catalog171
-  archive_id: "2"
-  catalog_position: "2"
-  parent_id: "106"
-  lft: "221"
-  rgt: "222"
-  created_at: 2011-07-06 01:25:59.273782
-  updated_at: 2011-07-06 01:25:59.273782
-archive_catalogs_003: 
-  id: "1"
-  title: indigenous
-  archive_id: "3"
-  catalog_position: "3"
-  parent_id: 
-  lft: "1"
-  rgt: "10"
-  created_at: 2011-07-06 01:24:05.765987
-  updated_at: 2011-07-06 01:24:05.765987
-archive_catalogs_004: 
-  id: "2"
-  title: Catalog7
-  archive_id: "3"
-  catalog_position: "2"
-  parent_id: "1"
-  lft: "2"
-  rgt: "3"
-  created_at: 2011-07-06 01:24:05.868696
-  updated_at: 2011-07-06 01:24:05.868696
-archive_catalogs_005: 
-  id: "3"
-  title: Catalog87
-  archive_id: "3"
-  catalog_position: "4"
-  parent_id: "1"
-  lft: "4"
-  rgt: "5"
-  created_at: 2011-07-06 01:24:06.901372
-  updated_at: 2011-07-06 01:24:06.901372
-archive_catalogs_006: 
-  id: "4"
-  title: Catalog108
-  archive_id: "3"
-  catalog_position: "1"
-  parent_id: "1"
-  lft: "6"
-  rgt: "7"
-  created_at: 2011-07-06 01:24:07.160408
-  updated_at: 2011-07-06 01:24:07.160408
-archive_catalogs_007: 
-  id: "5"
-  title: Catalog126
-  archive_id: "3"
-  catalog_position: "3"
-  parent_id: "1"
-  lft: "8"
-  rgt: "9"
-  created_at: 2011-07-06 01:24:07.425524
-  updated_at: 2011-07-06 01:24:07.425524
-archive_catalogs_008: 
-  id: "6"
-  title: social-science
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: 
-  lft: "11"
-  rgt: "198"
-  created_at: 2011-07-06 01:24:07.56861
-  updated_at: 2011-07-06 01:24:07.56861
-archive_catalogs_009: 
-  id: "7"
-  title: Catalog1
-  archive_id: "1"
-  catalog_position: "15"
-  parent_id: "6"
-  lft: "12"
-  rgt: "31"
-  created_at: 2011-07-06 01:24:07.577396
-  updated_at: 2011-07-06 01:24:07.577396
-archive_catalogs_010: 
-  id: "8"
-  title: Catalog6
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "7"
-  lft: "13"
-  rgt: "14"
-  created_at: 2011-07-06 01:24:07.590331
-  updated_at: 2011-07-06 01:24:07.590331
-archive_catalogs_011: 
-  id: "9"
-  title: Catalog5
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "7"
-  lft: "15"
-  rgt: "16"
-  created_at: 2011-07-06 01:24:22.177809
-  updated_at: 2011-07-06 01:24:22.177809
-archive_catalogs_012: 
-  id: "10"
-  title: Catalog4
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "7"
-  lft: "17"
-  rgt: "18"
-  created_at: 2011-07-06 01:24:24.638004
-  updated_at: 2011-07-06 01:24:24.638004
-archive_catalogs_013: 
-  id: "37"
-  title: Catalog125
-  archive_id: "1"
-  catalog_position: "8"
-  parent_id: "32"
-  lft: "71"
-  rgt: "72"
-  created_at: 2011-07-06 01:24:57.034121
-  updated_at: 2011-07-06 01:24:57.034121
-archive_catalogs_014: 
-  id: "38"
-  title: Catalog134
-  archive_id: "1"
-  catalog_position: "6"
-  parent_id: "32"
-  lft: "73"
-  rgt: "74"
-  created_at: 2011-07-06 01:24:57.497528
-  updated_at: 2011-07-06 01:24:57.497528
-archive_catalogs_015: 
-  id: "39"
-  title: Catalog172
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "32"
-  lft: "75"
-  rgt: "76"
-  created_at: 2011-07-06 01:24:58.382691
-  updated_at: 2011-07-06 01:24:58.382691
-archive_catalogs_016: 
-  id: "40"
-  title: Catalog173
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "32"
-  lft: "77"
-  rgt: "78"
-  created_at: 2011-07-06 01:25:03.118554
-  updated_at: 2011-07-06 01:25:03.118554
-archive_catalogs_017: 
-  id: "41"
-  title: Catalog35
-  archive_id: "1"
-  catalog_position: "17"
-  parent_id: "6"
-  lft: "80"
-  rgt: "81"
-  created_at: 2011-07-06 01:25:05.845962
-  updated_at: 2011-07-06 01:25:05.845962
-archive_catalogs_018: 
-  id: "113"
-  title: Catalog104
-  archive_id: "2"
-  catalog_position: "7"
-  parent_id: "100"
-  lft: "224"
-  rgt: "225"
-  created_at: 2011-07-06 01:26:05.877771
-  updated_at: 2011-07-06 01:26:05.877771
-archive_catalogs_019: 
-  id: "114"
-  title: Catalog150
-  archive_id: "2"
-  catalog_position: "10"
-  parent_id: "100"
-  lft: "226"
-  rgt: "227"
-  created_at: 2011-07-06 01:26:05.89148
-  updated_at: 2011-07-06 01:26:05.89148
-archive_catalogs_020: 
-  id: "115"
-  title: longitudinal
-  archive_id: "4"
-  catalog_position: "4"
-  parent_id: 
-  lft: "229"
-  rgt: "258"
-  created_at: 2011-07-06 01:26:06.147116
-  updated_at: 2011-07-06 01:26:06.147116
-archive_catalogs_021: 
-  id: "116"
-  title: Catalog53
-  archive_id: "4"
-  catalog_position: "3"
-  parent_id: "115"
-  lft: "230"
-  rgt: "231"
-  created_at: 2011-07-06 01:26:06.157115
-  updated_at: 2011-07-06 01:26:06.157115
-archive_catalogs_022: 
-  id: "118"
-  title: Catalog83
-  archive_id: "4"
-  catalog_position: "5"
-  parent_id: "115"
-  lft: "234"
-  rgt: "235"
-  created_at: 2011-07-06 01:26:08.196408
-  updated_at: 2011-07-06 01:26:08.196408
-archive_catalogs_023: 
   id: "119"
   title: Catalog16
+  label: "Longitudinal Survey of Immigrants to Australia"
   archive_id: "4"
   catalog_position: "6"
   parent_id: "115"
   lft: "236"
   rgt: "237"
-  created_at: 2011-07-06 01:26:10.036676
-  updated_at: 2011-07-06 01:26:10.036676
-archive_catalogs_024: 
-  id: "120"
-  title: Catalog123
+  created_at: 2011-07-13 23:29:32.792158
+  updated_at: 2011-07-13 23:29:32.792158
+archive_catalogs_002: 
+  id: "116"
+  title: Catalog53
+  label: "Australian Longitudinal Survey"
   archive_id: "4"
-  catalog_position: "11"
+  catalog_position: "3"
   parent_id: "115"
-  lft: "238"
-  rgt: "239"
-  created_at: 2011-07-06 01:26:11.421135
-  updated_at: 2011-07-06 01:26:11.421135
-archive_catalogs_025: 
-  id: "121"
-  title: Catalog124
-  archive_id: "4"
-  catalog_position: "13"
-  parent_id: "115"
-  lft: "240"
-  rgt: "241"
-  created_at: 2011-07-06 01:26:11.658654
-  updated_at: 2011-07-06 01:26:11.658654
-archive_catalogs_026: 
-  id: "42"
-  title: Catalog29
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "6"
-  lft: "82"
-  rgt: "103"
-  created_at: 2011-07-06 01:25:05.860084
-  updated_at: 2011-07-06 01:25:05.860084
-archive_catalogs_027: 
-  id: "11"
-  title: Catalog95
-  archive_id: "1"
-  catalog_position: "7"
-  parent_id: "7"
-  lft: "19"
-  rgt: "20"
-  created_at: 2011-07-06 01:24:25.721997
-  updated_at: 2011-07-06 01:24:25.721997
-archive_catalogs_028: 
-  id: "12"
-  title: Catalog110
-  archive_id: "1"
-  catalog_position: "9"
-  parent_id: "7"
-  lft: "21"
-  rgt: "22"
-  created_at: 2011-07-06 01:24:34.19678
-  updated_at: 2011-07-06 01:24:34.19678
-archive_catalogs_029: 
-  id: "13"
-  title: Catalog112
-  archive_id: "1"
-  catalog_position: "8"
-  parent_id: "7"
-  lft: "23"
-  rgt: "24"
-  created_at: 2011-07-06 01:24:40.426423
-  updated_at: 2011-07-06 01:24:40.426423
-archive_catalogs_030: 
-  id: "14"
-  title: Catalog144
-  archive_id: "1"
-  catalog_position: "6"
-  parent_id: "7"
-  lft: "25"
-  rgt: "26"
-  created_at: 2011-07-06 01:24:42.592763
-  updated_at: 2011-07-06 01:24:42.592763
-archive_catalogs_031: 
-  id: "15"
-  title: Catalog145
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "7"
-  lft: "27"
-  rgt: "28"
-  created_at: 2011-07-06 01:24:42.97145
-  updated_at: 2011-07-06 01:24:42.97145
-archive_catalogs_032: 
-  id: "16"
-  title: Catalog147
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "7"
-  lft: "29"
-  rgt: "30"
-  created_at: 2011-07-06 01:24:43.428122
-  updated_at: 2011-07-06 01:24:43.428122
-archive_catalogs_033: 
-  id: "17"
-  title: Catalog31
-  archive_id: "1"
-  catalog_position: "10"
-  parent_id: "6"
-  lft: "32"
-  rgt: "59"
-  created_at: 2011-07-06 01:24:44.278447
-  updated_at: 2011-07-06 01:24:44.278447
-archive_catalogs_034: 
-  id: "18"
-  title: Catalog11
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "17"
-  lft: "33"
-  rgt: "34"
-  created_at: 2011-07-06 01:24:44.291821
-  updated_at: 2011-07-06 01:24:44.291821
-archive_catalogs_035: 
-  id: "19"
-  title: Catalog25
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "17"
-  lft: "35"
-  rgt: "36"
-  created_at: 2011-07-06 01:24:44.569156
-  updated_at: 2011-07-06 01:24:44.569156
-archive_catalogs_036: 
-  id: "20"
-  title: Catalog17
-  archive_id: "1"
-  catalog_position: "12"
-  parent_id: "17"
-  lft: "37"
-  rgt: "38"
-  created_at: 2011-07-06 01:24:44.916824
-  updated_at: 2011-07-06 01:24:44.916824
-archive_catalogs_037: 
-  id: "122"
-  title: Catalog127
-  archive_id: "4"
-  catalog_position: "14"
-  parent_id: "115"
-  lft: "242"
-  rgt: "243"
-  created_at: 2011-07-06 01:26:12.242018
-  updated_at: 2011-07-06 01:26:12.242018
-archive_catalogs_038: 
-  id: "123"
-  title: Catalog128
-  archive_id: "4"
-  catalog_position: "8"
-  parent_id: "115"
-  lft: "244"
-  rgt: "245"
-  created_at: 2011-07-06 01:26:12.567434
-  updated_at: 2011-07-06 01:26:12.567434
-archive_catalogs_039: 
-  id: "124"
-  title: Catalog129
-  archive_id: "4"
-  catalog_position: "7"
-  parent_id: "115"
-  lft: "246"
-  rgt: "247"
-  created_at: 2011-07-06 01:26:12.892493
-  updated_at: 2011-07-06 01:26:12.892493
-archive_catalogs_040: 
-  id: "125"
-  title: Catalog130
-  archive_id: "4"
-  catalog_position: "2"
-  parent_id: "115"
-  lft: "248"
-  rgt: "249"
-  created_at: 2011-07-06 01:26:13.276898
-  updated_at: 2011-07-06 01:26:13.276898
-archive_catalogs_041: 
-  id: "43"
-  title: Catalog24
-  archive_id: "1"
-  catalog_position: "10"
-  parent_id: "42"
-  lft: "83"
-  rgt: "84"
-  created_at: 2011-07-06 01:25:05.873246
-  updated_at: 2011-07-06 01:25:05.873246
-archive_catalogs_042: 
-  id: "44"
-  title: Catalog19
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "42"
-  lft: "85"
-  rgt: "86"
-  created_at: 2011-07-06 01:25:06.366579
-  updated_at: 2011-07-06 01:25:06.366579
-archive_catalogs_043: 
-  id: "34"
-  title: Catalog59
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "32"
-  lft: "65"
-  rgt: "66"
-  created_at: 2011-07-06 01:24:52.717705
-  updated_at: 2011-07-06 01:24:52.717705
-archive_catalogs_044: 
-  id: "21"
-  title: Catalog10
-  archive_id: "1"
-  catalog_position: "6"
-  parent_id: "17"
-  lft: "39"
-  rgt: "40"
-  created_at: 2011-07-06 01:24:45.351938
-  updated_at: 2011-07-06 01:24:45.351938
-archive_catalogs_045: 
-  id: "22"
-  title: Catalog84
-  archive_id: "1"
-  catalog_position: "8"
-  parent_id: "17"
-  lft: "41"
-  rgt: "42"
-  created_at: 2011-07-06 01:24:47.295284
-  updated_at: 2011-07-06 01:24:47.295284
-archive_catalogs_046: 
-  id: "23"
-  title: Catalog93
-  archive_id: "1"
-  catalog_position: "11"
-  parent_id: "17"
-  lft: "43"
-  rgt: "44"
-  created_at: 2011-07-06 01:24:48.090774
-  updated_at: 2011-07-06 01:24:48.090774
-archive_catalogs_047: 
-  id: "24"
-  title: Catalog92
-  archive_id: "1"
-  catalog_position: "10"
-  parent_id: "17"
-  lft: "45"
-  rgt: "46"
-  created_at: 2011-07-06 01:24:48.2379
-  updated_at: 2011-07-06 01:24:48.2379
-archive_catalogs_048: 
-  id: "25"
-  title: Catalog30
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "17"
-  lft: "47"
-  rgt: "48"
-  created_at: 2011-07-06 01:24:48.738278
-  updated_at: 2011-07-06 01:24:48.738278
-archive_catalogs_049: 
-  id: "26"
-  title: Catalog101
-  archive_id: "1"
-  catalog_position: "13"
-  parent_id: "17"
-  lft: "49"
-  rgt: "50"
-  created_at: 2011-07-06 01:24:49.117474
-  updated_at: 2011-07-06 01:24:49.117474
-archive_catalogs_050: 
-  id: "27"
-  title: Catalog109
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "17"
-  lft: "51"
-  rgt: "52"
-  created_at: 2011-07-06 01:24:49.522476
-  updated_at: 2011-07-06 01:24:49.522476
-archive_catalogs_051: 
-  id: "126"
-  title: Catalog140
-  archive_id: "4"
-  catalog_position: "1"
-  parent_id: "115"
-  lft: "250"
-  rgt: "251"
-  created_at: 2011-07-06 01:26:14.762617
-  updated_at: 2011-07-06 01:26:14.762617
-archive_catalogs_052: 
-  id: "127"
-  title: Catalog149
-  archive_id: "4"
-  catalog_position: "10"
-  parent_id: "115"
-  lft: "252"
-  rgt: "253"
-  created_at: 2011-07-06 01:26:15.526735
-  updated_at: 2011-07-06 01:26:15.526735
-archive_catalogs_053: 
-  id: "28"
-  title: Catalog117
-  archive_id: "1"
-  catalog_position: "7"
-  parent_id: "17"
-  lft: "53"
-  rgt: "54"
-  created_at: 2011-07-06 01:24:50.015053
-  updated_at: 2011-07-06 01:24:50.015053
-archive_catalogs_054: 
-  id: "29"
-  title: Catalog132
-  archive_id: "1"
-  catalog_position: "9"
-  parent_id: "17"
-  lft: "55"
-  rgt: "56"
-  created_at: 2011-07-06 01:24:51.101511
-  updated_at: 2011-07-06 01:24:51.101511
-archive_catalogs_055: 
-  id: "30"
-  title: Catalog141
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "17"
-  lft: "57"
-  rgt: "58"
-  created_at: 2011-07-06 01:24:52.007696
-  updated_at: 2011-07-06 01:24:52.007696
-archive_catalogs_056: 
-  id: "31"
-  title: Catalog34
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "6"
-  lft: "60"
-  rgt: "61"
-  created_at: 2011-07-06 01:24:52.335906
-  updated_at: 2011-07-06 01:24:52.335906
-archive_catalogs_057: 
-  id: "32"
-  title: Catalog33
-  archive_id: "1"
-  catalog_position: "14"
-  parent_id: "6"
-  lft: "62"
-  rgt: "79"
-  created_at: 2011-07-06 01:24:52.347982
-  updated_at: 2011-07-06 01:24:52.347982
-archive_catalogs_058: 
-  id: "33"
-  title: Catalog3
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "32"
-  lft: "63"
-  rgt: "64"
-  created_at: 2011-07-06 01:24:52.442735
-  updated_at: 2011-07-06 01:24:52.442735
-archive_catalogs_059: 
-  id: "35"
-  title: Catalog2
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "32"
-  lft: "67"
-  rgt: "68"
-  created_at: 2011-07-06 01:24:53.668214
-  updated_at: 2011-07-06 01:24:53.668214
-archive_catalogs_060: 
-  id: "36"
-  title: Catalog18
-  archive_id: "1"
-  catalog_position: "7"
-  parent_id: "32"
-  lft: "69"
-  rgt: "70"
-  created_at: 2011-07-06 01:24:54.644882
-  updated_at: 2011-07-06 01:24:54.644882
-archive_catalogs_061: 
-  id: "45"
-  title: Catalog75
-  archive_id: "1"
-  catalog_position: "8"
-  parent_id: "42"
-  lft: "87"
-  rgt: "88"
-  created_at: 2011-07-06 01:25:08.890198
-  updated_at: 2011-07-06 01:25:08.890198
-archive_catalogs_062: 
-  id: "46"
-  title: Catalog85
-  archive_id: "1"
-  catalog_position: "7"
-  parent_id: "42"
-  lft: "89"
-  rgt: "90"
-  created_at: 2011-07-06 01:25:09.215283
-  updated_at: 2011-07-06 01:25:09.215283
-archive_catalogs_063: 
-  id: "128"
-  title: Catalog151
-  archive_id: "4"
-  catalog_position: "9"
-  parent_id: "115"
-  lft: "254"
-  rgt: "255"
-  created_at: 2011-07-06 01:26:15.903646
-  updated_at: 2011-07-06 01:26:15.903646
-archive_catalogs_064: 
-  id: "66"
-  title: Catalog44
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "65"
-  lft: "129"
-  rgt: "130"
-  created_at: 2011-07-06 01:25:19.816894
-  updated_at: 2011-07-06 01:25:19.816894
-archive_catalogs_065: 
-  id: "63"
-  title: Catalog139
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "53"
-  lft: "123"
-  rgt: "124"
-  created_at: 2011-07-06 01:25:19.099547
-  updated_at: 2011-07-06 01:25:19.099547
-archive_catalogs_066: 
-  id: "47"
-  title: Catalog116
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "42"
-  lft: "91"
-  rgt: "92"
-  created_at: 2011-07-06 01:25:09.584071
-  updated_at: 2011-07-06 01:25:09.584071
-archive_catalogs_067: 
-  id: "48"
-  title: Catalog91
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "42"
-  lft: "93"
-  rgt: "94"
-  created_at: 2011-07-06 01:25:09.78269
-  updated_at: 2011-07-06 01:25:09.78269
-archive_catalogs_068: 
-  id: "49"
-  title: Catalog111
-  archive_id: "1"
-  catalog_position: "9"
-  parent_id: "42"
-  lft: "95"
-  rgt: "96"
-  created_at: 2011-07-06 01:25:10.67657
-  updated_at: 2011-07-06 01:25:10.67657
-archive_catalogs_069: 
-  id: "50"
-  title: Catalog113
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "42"
-  lft: "97"
-  rgt: "98"
-  created_at: 2011-07-06 01:25:11.201439
-  updated_at: 2011-07-06 01:25:11.201439
-archive_catalogs_070: 
-  id: "51"
-  title: Catalog114
-  archive_id: "1"
-  catalog_position: "6"
-  parent_id: "42"
-  lft: "99"
-  rgt: "100"
-  created_at: 2011-07-06 01:25:11.719737
-  updated_at: 2011-07-06 01:25:11.719737
-archive_catalogs_071: 
-  id: "52"
-  title: Catalog115
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "42"
-  lft: "101"
-  rgt: "102"
-  created_at: 2011-07-06 01:25:12.235344
-  updated_at: 2011-07-06 01:25:12.235344
-archive_catalogs_072: 
-  id: "53"
-  title: Catalog32
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "6"
-  lft: "104"
-  rgt: "127"
-  created_at: 2011-07-06 01:25:12.711146
-  updated_at: 2011-07-06 01:25:12.711146
-archive_catalogs_073: 
-  id: "54"
-  title: Catalog27
-  archive_id: "1"
-  catalog_position: "8"
-  parent_id: "53"
-  lft: "105"
-  rgt: "106"
-  created_at: 2011-07-06 01:25:12.723412
-  updated_at: 2011-07-06 01:25:12.723412
-archive_catalogs_074: 
-  id: "55"
-  title: Catalog26
-  archive_id: "1"
-  catalog_position: "6"
-  parent_id: "53"
-  lft: "107"
-  rgt: "108"
-  created_at: 2011-07-06 01:25:12.952948
-  updated_at: 2011-07-06 01:25:12.952948
-archive_catalogs_075: 
-  id: "56"
-  title: Catalog14
-  archive_id: "1"
-  catalog_position: "7"
-  parent_id: "53"
-  lft: "109"
-  rgt: "110"
-  created_at: 2011-07-06 01:25:13.229131
-  updated_at: 2011-07-06 01:25:13.229131
-archive_catalogs_076: 
-  id: "129"
-  title: Catalog152
-  archive_id: "4"
-  catalog_position: "4"
-  parent_id: "115"
-  lft: "256"
-  rgt: "257"
-  created_at: 2011-07-06 01:26:16.177698
-  updated_at: 2011-07-06 01:26:16.177698
-archive_catalogs_077: 
-  id: "130"
-  title: qualitative
-  archive_id: "5"
-  catalog_position: "5"
-  parent_id: 
-  lft: "259"
-  rgt: "260"
-  created_at: 2011-07-06 01:26:16.565103
-  updated_at: 2011-07-06 01:26:16.565103
-archive_catalogs_078: 
-  id: "131"
-  title: international
-  archive_id: "6"
-  catalog_position: "7"
-  parent_id: 
-  lft: "261"
-  rgt: "316"
-  created_at: 2011-07-06 01:26:16.882025
-  updated_at: 2011-07-06 01:26:16.882025
-archive_catalogs_079: 
-  id: "132"
-  title: Catalog42
-  archive_id: "6"
-  catalog_position: "3"
-  parent_id: "131"
-  lft: "262"
-  rgt: "299"
-  created_at: 2011-07-06 01:26:17.034919
-  updated_at: 2011-07-06 01:26:17.034919
-archive_catalogs_080: 
-  id: "133"
-  title: Catalog68
-  archive_id: "6"
-  catalog_position: "1"
-  parent_id: "132"
-  lft: "263"
-  rgt: "264"
-  created_at: 2011-07-06 01:26:17.106937
-  updated_at: 2011-07-06 01:26:17.106937
-archive_catalogs_081: 
-  id: "59"
-  title: Catalog63
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "53"
-  lft: "115"
-  rgt: "116"
-  created_at: 2011-07-06 01:25:15.308837
-  updated_at: 2011-07-06 01:25:15.308837
-archive_catalogs_082: 
-  id: "60"
-  title: Catalog80
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "53"
-  lft: "117"
-  rgt: "118"
-  created_at: 2011-07-06 01:25:16.130458
-  updated_at: 2011-07-06 01:25:16.130458
-archive_catalogs_083: 
-  id: "61"
-  title: Catalog81
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "53"
-  lft: "119"
-  rgt: "120"
-  created_at: 2011-07-06 01:25:16.414286
-  updated_at: 2011-07-06 01:25:16.414286
-archive_catalogs_084: 
-  id: "67"
-  title: Catalog38
-  archive_id: "1"
-  catalog_position: "19"
-  parent_id: "6"
-  lft: "132"
-  rgt: "133"
-  created_at: 2011-07-06 01:25:20.220552
-  updated_at: 2011-07-06 01:25:20.220552
-archive_catalogs_085: 
-  id: "68"
-  title: Catalog39
-  archive_id: "1"
-  catalog_position: "12"
-  parent_id: "6"
-  lft: "134"
-  rgt: "139"
-  created_at: 2011-07-06 01:25:20.614032
-  updated_at: 2011-07-06 01:25:20.614032
-archive_catalogs_086: 
-  id: "69"
-  title: Catalog20
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "68"
-  lft: "135"
-  rgt: "136"
-  created_at: 2011-07-06 01:25:20.710789
-  updated_at: 2011-07-06 01:25:20.710789
-archive_catalogs_087: 
-  id: "70"
-  title: Catalog61
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "68"
-  lft: "137"
-  rgt: "138"
-  created_at: 2011-07-06 01:25:21.464027
-  updated_at: 2011-07-06 01:25:21.464027
-archive_catalogs_088: 
-  id: "71"
-  title: Catalog40
-  archive_id: "1"
-  catalog_position: "13"
-  parent_id: "6"
-  lft: "140"
-  rgt: "147"
-  created_at: 2011-07-06 01:25:21.84433
-  updated_at: 2011-07-06 01:25:21.84433
-archive_catalogs_089: 
-  id: "72"
-  title: Catalog21
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "71"
-  lft: "141"
-  rgt: "142"
-  created_at: 2011-07-06 01:25:22.078468
-  updated_at: 2011-07-06 01:25:22.078468
-archive_catalogs_090: 
-  id: "73"
-  title: Catalog55
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "71"
-  lft: "143"
-  rgt: "144"
-  created_at: 2011-07-06 01:25:23.848943
-  updated_at: 2011-07-06 01:25:23.848943
-archive_catalogs_091: 
-  id: "134"
-  title: Catalog67
-  archive_id: "6"
-  catalog_position: "4"
-  parent_id: "132"
-  lft: "265"
-  rgt: "294"
-  created_at: 2011-07-06 01:26:17.677111
-  updated_at: 2011-07-06 01:26:17.677111
-archive_catalogs_092: 
-  id: "135"
-  title: Catalog66
-  archive_id: "6"
-  catalog_position: "1"
-  parent_id: "134"
-  lft: "266"
-  rgt: "267"
-  created_at: 2011-07-06 01:26:17.69647
-  updated_at: 2011-07-06 01:26:17.69647
-archive_catalogs_093: 
-  id: "136"
-  title: Catalog154
-  archive_id: "6"
-  catalog_position: "3"
-  parent_id: "134"
-  lft: "268"
-  rgt: "269"
-  created_at: 2011-07-06 01:26:19.041545
-  updated_at: 2011-07-06 01:26:19.041545
-archive_catalogs_094: 
-  id: "92"
-  title: Catalog15
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "91"
-  lft: "181"
-  rgt: "182"
-  created_at: 2011-07-06 01:25:37.010532
-  updated_at: 2011-07-06 01:25:37.010532
-archive_catalogs_095: 
-  id: "89"
-  title: Catalog54
-  archive_id: "1"
-  catalog_position: "8"
-  parent_id: "6"
-  lft: "176"
-  rgt: "179"
-  created_at: 2011-07-06 01:25:35.749213
-  updated_at: 2011-07-06 01:25:35.749213
-archive_catalogs_096: 
-  id: "85"
-  title: Catalog48
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "84"
-  lft: "167"
-  rgt: "168"
-  created_at: 2011-07-06 01:25:33.985726
-  updated_at: 2011-07-06 01:25:33.985726
-archive_catalogs_097: 
-  id: "57"
-  title: Catalog13
-  archive_id: "1"
-  catalog_position: "9"
-  parent_id: "53"
-  lft: "111"
-  rgt: "112"
-  created_at: 2011-07-06 01:25:13.760854
-  updated_at: 2011-07-06 01:25:13.760854
-archive_catalogs_098: 
-  id: "58"
-  title: Catalog43
-  archive_id: "1"
-  catalog_position: "11"
-  parent_id: "53"
-  lft: "113"
-  rgt: "114"
-  created_at: 2011-07-06 01:25:15.036553
-  updated_at: 2011-07-06 01:25:15.036553
-archive_catalogs_099: 
-  id: "74"
-  title: Catalog98
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "71"
-  lft: "145"
-  rgt: "146"
-  created_at: 2011-07-06 01:25:27.691556
-  updated_at: 2011-07-06 01:25:27.691556
-archive_catalogs_100: 
-  id: "75"
-  title: Catalog45
-  archive_id: "1"
-  catalog_position: "16"
-  parent_id: "6"
-  lft: "148"
-  rgt: "149"
-  created_at: 2011-07-06 01:25:27.983442
-  updated_at: 2011-07-06 01:25:27.983442
-archive_catalogs_101: 
-  id: "76"
-  title: Catalog46
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "6"
-  lft: "150"
-  rgt: "165"
-  created_at: 2011-07-06 01:25:28.183906
-  updated_at: 2011-07-06 01:25:28.183906
-archive_catalogs_102: 
-  id: "77"
-  title: Catalog51
-  archive_id: "1"
-  catalog_position: "8"
-  parent_id: "76"
-  lft: "151"
-  rgt: "152"
-  created_at: 2011-07-06 01:25:28.283018
-  updated_at: 2011-07-06 01:25:28.283018
-archive_catalogs_103: 
-  id: "78"
-  title: Catalog52
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "76"
-  lft: "153"
-  rgt: "154"
-  created_at: 2011-07-06 01:25:28.525383
-  updated_at: 2011-07-06 01:25:28.525383
-archive_catalogs_104: 
-  id: "137"
-  title: Catalog155
-  archive_id: "6"
-  catalog_position: "11"
-  parent_id: "134"
-  lft: "270"
-  rgt: "271"
-  created_at: 2011-07-06 01:26:19.532528
-  updated_at: 2011-07-06 01:26:19.532528
-archive_catalogs_105: 
-  id: "79"
-  title: Catalog56
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "76"
-  lft: "155"
-  rgt: "156"
-  created_at: 2011-07-06 01:25:28.726042
-  updated_at: 2011-07-06 01:25:28.726042
-archive_catalogs_106: 
-  id: "80"
-  title: Catalog88
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "76"
-  lft: "157"
-  rgt: "158"
-  created_at: 2011-07-06 01:25:29.318067
-  updated_at: 2011-07-06 01:25:29.318067
-archive_catalogs_107: 
-  id: "81"
-  title: Catalog89
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "76"
-  lft: "159"
-  rgt: "160"
-  created_at: 2011-07-06 01:25:30.028262
-  updated_at: 2011-07-06 01:25:30.028262
-archive_catalogs_108: 
-  id: "82"
-  title: Catalog106
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "76"
-  lft: "161"
-  rgt: "162"
-  created_at: 2011-07-06 01:25:32.676601
-  updated_at: 2011-07-06 01:25:32.676601
-archive_catalogs_109: 
-  id: "83"
-  title: Catalog119
-  archive_id: "1"
-  catalog_position: "7"
-  parent_id: "76"
-  lft: "163"
-  rgt: "164"
-  created_at: 2011-07-06 01:25:33.340779
-  updated_at: 2011-07-06 01:25:33.340779
-archive_catalogs_110: 
-  id: "84"
-  title: Catalog47
-  archive_id: "1"
-  catalog_position: "18"
-  parent_id: "6"
-  lft: "166"
-  rgt: "175"
-  created_at: 2011-07-06 01:25:33.973719
-  updated_at: 2011-07-06 01:25:33.973719
-archive_catalogs_111: 
-  id: "86"
-  title: Catalog50
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "84"
-  lft: "169"
-  rgt: "170"
-  created_at: 2011-07-06 01:25:34.515141
-  updated_at: 2011-07-06 01:25:34.515141
-archive_catalogs_112: 
-  id: "87"
-  title: Catalog49
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "84"
-  lft: "171"
-  rgt: "172"
-  created_at: 2011-07-06 01:25:34.990444
-  updated_at: 2011-07-06 01:25:34.990444
-archive_catalogs_113: 
-  id: "88"
-  title: Catalog60
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "84"
-  lft: "173"
-  rgt: "174"
-  created_at: 2011-07-06 01:25:35.351204
-  updated_at: 2011-07-06 01:25:35.351204
-archive_catalogs_114: 
-  id: "90"
-  title: Catalog77
-  archive_id: "1"
-  catalog_position: "6"
-  parent_id: "89"
-  lft: "177"
-  rgt: "178"
-  created_at: 2011-07-06 01:25:36.13471
-  updated_at: 2011-07-06 01:25:36.13471
-archive_catalogs_115: 
-  id: "91"
-  title: Catalog69
-  archive_id: "1"
-  catalog_position: "7"
-  parent_id: "6"
-  lft: "180"
-  rgt: "191"
-  created_at: 2011-07-06 01:25:36.801586
-  updated_at: 2011-07-06 01:25:36.801586
-archive_catalogs_116: 
-  id: "144"
-  title: Catalog162
-  archive_id: "6"
-  catalog_position: "16"
-  parent_id: "134"
-  lft: "284"
-  rgt: "285"
-  created_at: 2011-07-06 01:26:21.969252
-  updated_at: 2011-07-06 01:26:21.969252
-archive_catalogs_117: 
-  id: "62"
-  title: Catalog135
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "53"
-  lft: "121"
-  rgt: "122"
-  created_at: 2011-07-06 01:25:16.756072
-  updated_at: 2011-07-06 01:25:16.756072
-archive_catalogs_118: 
-  id: "64"
-  title: Catalog153
-  archive_id: "1"
-  catalog_position: "10"
-  parent_id: "53"
-  lft: "125"
-  rgt: "126"
-  created_at: 2011-07-06 01:25:19.298582
-  updated_at: 2011-07-06 01:25:19.298582
-archive_catalogs_119: 
-  id: "65"
-  title: Catalog36
-  archive_id: "1"
-  catalog_position: "11"
-  parent_id: "6"
-  lft: "128"
-  rgt: "131"
-  created_at: 2011-07-06 01:25:19.591357
-  updated_at: 2011-07-06 01:25:19.591357
-archive_catalogs_120: 
-  id: "138"
-  title: Catalog156
-  archive_id: "6"
-  catalog_position: "9"
-  parent_id: "134"
-  lft: "272"
-  rgt: "273"
-  created_at: 2011-07-06 01:26:20.07806
-  updated_at: 2011-07-06 01:26:20.07806
-archive_catalogs_121: 
-  id: "139"
-  title: Catalog157
-  archive_id: "6"
-  catalog_position: "6"
-  parent_id: "134"
-  lft: "274"
-  rgt: "275"
-  created_at: 2011-07-06 01:26:20.50604
-  updated_at: 2011-07-06 01:26:20.50604
-archive_catalogs_122: 
-  id: "146"
-  title: Catalog164
-  archive_id: "6"
-  catalog_position: "18"
-  parent_id: "134"
-  lft: "288"
-  rgt: "289"
-  created_at: 2011-07-06 01:26:22.312872
-  updated_at: 2011-07-06 01:26:22.312872
-archive_catalogs_123: 
-  id: "140"
-  title: Catalog158
-  archive_id: "6"
-  catalog_position: "12"
-  parent_id: "134"
-  lft: "276"
-  rgt: "277"
-  created_at: 2011-07-06 01:26:20.842875
-  updated_at: 2011-07-06 01:26:20.842875
-archive_catalogs_124: 
-  id: "93"
-  title: Catalog74
-  archive_id: "1"
-  catalog_position: "4"
-  parent_id: "91"
-  lft: "183"
-  rgt: "184"
-  created_at: 2011-07-06 01:25:37.411858
-  updated_at: 2011-07-06 01:25:37.411858
-archive_catalogs_125: 
-  id: "94"
-  title: Catalog121
-  archive_id: "1"
-  catalog_position: "5"
-  parent_id: "91"
-  lft: "185"
-  rgt: "186"
-  created_at: 2011-07-06 01:25:37.926161
-  updated_at: 2011-07-06 01:25:37.926161
-archive_catalogs_126: 
-  id: "95"
-  title: Catalog137
-  archive_id: "1"
-  catalog_position: "3"
-  parent_id: "91"
-  lft: "187"
-  rgt: "188"
-  created_at: 2011-07-06 01:25:38.257091
-  updated_at: 2011-07-06 01:25:38.257091
-archive_catalogs_127: 
-  id: "96"
-  title: Catalog138
-  archive_id: "1"
-  catalog_position: "2"
-  parent_id: "91"
-  lft: "189"
-  rgt: "190"
-  created_at: 2011-07-06 01:25:38.572197
-  updated_at: 2011-07-06 01:25:38.572197
-archive_catalogs_128: 
-  id: "149"
-  title: Catalog96
-  archive_id: "6"
-  catalog_position: "2"
-  parent_id: "132"
-  lft: "295"
-  rgt: "296"
-  created_at: 2011-07-06 01:26:23.990827
-  updated_at: 2011-07-06 01:26:23.990827
-archive_catalogs_129: 
-  id: "97"
-  title: Catalog70
-  archive_id: "1"
-  catalog_position: "1"
-  parent_id: "6"
-  lft: "192"
-  rgt: "193"
-  created_at: 2011-07-06 01:25:38.963258
-  updated_at: 2011-07-06 01:25:38.963258
-archive_catalogs_130: 
-  id: "98"
-  title: Catalog86
-  archive_id: "1"
-  catalog_position: "6"
-  parent_id: "6"
-  lft: "194"
-  rgt: "195"
-  created_at: 2011-07-06 01:25:39.50696
-  updated_at: 2011-07-06 01:25:39.50696
-archive_catalogs_131: 
-  id: "99"
-  title: Catalog105
-  archive_id: "1"
-  catalog_position: "9"
-  parent_id: "6"
-  lft: "196"
-  rgt: "197"
-  created_at: 2011-07-06 01:25:40.00605
-  updated_at: 2011-07-06 01:25:40.00605
-archive_catalogs_132: 
-  id: "100"
-  title: historical
-  archive_id: "2"
-  catalog_position: "2"
-  parent_id: 
-  lft: "199"
-  rgt: "228"
-  created_at: 2011-07-06 01:25:40.482059
-  updated_at: 2011-07-06 01:25:40.482059
-archive_catalogs_133: 
-  id: "101"
-  title: census-1966
-  archive_id: "2"
-  catalog_position: "1"
-  parent_id: "100"
-  lft: "200"
-  rgt: "201"
-  created_at: 2011-07-06 01:25:40.491449
-  updated_at: 2011-07-06 01:25:40.491449
-archive_catalogs_134: 
-  id: "102"
-  title: census-1976
-  archive_id: "2"
-  catalog_position: "3"
-  parent_id: "100"
-  lft: "202"
-  rgt: "203"
-  created_at: 2011-07-06 01:25:41.048366
-  updated_at: 2011-07-06 01:25:41.048366
-archive_catalogs_135: 
-  id: "141"
-  title: Catalog159
-  archive_id: "6"
-  catalog_position: "13"
-  parent_id: "134"
-  lft: "278"
-  rgt: "279"
-  created_at: 2011-07-06 01:26:21.008661
-  updated_at: 2011-07-06 01:26:21.008661
-archive_catalogs_136: 
-  id: "142"
-  title: Catalog160
-  archive_id: "6"
-  catalog_position: "14"
-  parent_id: "134"
-  lft: "280"
-  rgt: "281"
-  created_at: 2011-07-06 01:26:21.507555
-  updated_at: 2011-07-06 01:26:21.507555
-archive_catalogs_137: 
-  id: "143"
-  title: Catalog161
-  archive_id: "6"
-  catalog_position: "15"
-  parent_id: "134"
-  lft: "282"
-  rgt: "283"
-  created_at: 2011-07-06 01:26:21.581125
-  updated_at: 2011-07-06 01:26:21.581125
-archive_catalogs_138: 
-  id: "145"
-  title: Catalog163
-  archive_id: "6"
-  catalog_position: "17"
-  parent_id: "134"
-  lft: "286"
-  rgt: "287"
-  created_at: 2011-07-06 01:26:22.235147
-  updated_at: 2011-07-06 01:26:22.235147
-archive_catalogs_139: 
-  id: "147"
-  title: Catalog167
-  archive_id: "6"
-  catalog_position: "8"
-  parent_id: "134"
-  lft: "290"
-  rgt: "291"
-  created_at: 2011-07-06 01:26:22.646267
-  updated_at: 2011-07-06 01:26:22.646267
-archive_catalogs_140: 
-  id: "103"
-  title: census-1971
-  archive_id: "2"
-  catalog_position: "2"
-  parent_id: "100"
-  lft: "204"
-  rgt: "205"
-  created_at: 2011-07-06 01:25:41.063365
-  updated_at: 2011-07-06 01:25:41.063365
-archive_catalogs_141: 
-  id: "104"
-  title: Catalog72
-  archive_id: "2"
-  catalog_position: "4"
-  parent_id: "100"
-  lft: "206"
-  rgt: "207"
-  created_at: 2011-07-06 01:25:41.232064
-  updated_at: 2011-07-06 01:25:41.232064
-archive_catalogs_142: 
-  id: "105"
-  title: Catalog102
-  archive_id: "2"
-  catalog_position: "5"
-  parent_id: "100"
-  lft: "208"
-  rgt: "209"
-  created_at: 2011-07-06 01:25:41.246806
-  updated_at: 2011-07-06 01:25:41.246806
-archive_catalogs_143: 
-  id: "106"
-  title: Catalog103
-  archive_id: "2"
-  catalog_position: "6"
-  parent_id: "100"
-  lft: "210"
-  rgt: "223"
-  created_at: 2011-07-06 01:25:41.263604
-  updated_at: 2011-07-06 01:25:41.263604
-archive_catalogs_144: 
-  id: "107"
-  title: Catalog165
-  archive_id: "2"
-  catalog_position: "6"
-  parent_id: "106"
-  lft: "211"
-  rgt: "212"
-  created_at: 2011-07-06 01:25:41.280349
-  updated_at: 2011-07-06 01:25:41.280349
-archive_catalogs_145: 
-  id: "108"
-  title: Catalog166
-  archive_id: "2"
-  catalog_position: "5"
-  parent_id: "106"
-  lft: "213"
-  rgt: "214"
-  created_at: 2011-07-06 01:25:41.916977
-  updated_at: 2011-07-06 01:25:41.916977
-archive_catalogs_146: 
-  id: "109"
-  title: Catalog168
-  archive_id: "2"
-  catalog_position: "4"
-  parent_id: "106"
-  lft: "215"
-  rgt: "216"
-  created_at: 2011-07-06 01:25:46.792467
-  updated_at: 2011-07-06 01:25:46.792467
-archive_catalogs_147: 
-  id: "110"
-  title: Catalog169
-  archive_id: "2"
-  catalog_position: "1"
-  parent_id: "106"
-  lft: "217"
-  rgt: "218"
-  created_at: 2011-07-06 01:25:50.914911
-  updated_at: 2011-07-06 01:25:50.914911
-archive_catalogs_148: 
+  lft: "230"
+  rgt: "231"
+  created_at: 2011-07-13 23:29:28.481843
+  updated_at: 2011-07-13 23:29:28.481843
+archive_catalogs_003: 
   id: "111"
   title: Catalog170
+  label: "Expanded Community Profile"
   archive_id: "2"
   catalog_position: "3"
   parent_id: "106"
   lft: "219"
   rgt: "220"
-  created_at: 2011-07-06 01:25:54.885764
-  updated_at: 2011-07-06 01:25:54.885764
-archive_catalogs_149: 
-  id: "151"
-  title: Catalog41
+  created_at: 2011-07-13 23:29:16.653309
+  updated_at: 2011-07-13 23:29:16.653309
+archive_catalogs_004: 
+  id: "39"
+  title: Catalog172
+  label: "Australian Election Campaign Television News Coverage"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "32"
+  lft: "75"
+  rgt: "76"
+  created_at: 2011-07-13 23:28:12.02475
+  updated_at: 2011-07-13 23:28:12.02475
+archive_catalogs_005: 
+  id: "1"
+  title: indigenous
+  label: "Indigenous"
+  archive_id: "3"
+  catalog_position: "3"
+  parent_id: 
+  lft: "1"
+  rgt: "10"
+  created_at: 2011-07-13 23:27:11.986537
+  updated_at: 2011-07-13 23:27:11.986537
+archive_catalogs_006: 
+  id: "2"
+  title: Catalog7
+  label: "Aboriginal survey, New South Wales and South Australia, 1965"
+  archive_id: "3"
+  catalog_position: "2"
+  parent_id: "1"
+  lft: "2"
+  rgt: "3"
+  created_at: 2011-07-13 23:27:12.104008
+  updated_at: 2011-07-13 23:27:12.104008
+archive_catalogs_007: 
+  id: "3"
+  title: Catalog87
+  label: "Royal Commission into Aboriginal Deaths in Custody surveys"
+  archive_id: "3"
+  catalog_position: "4"
+  parent_id: "1"
+  lft: "4"
+  rgt: "5"
+  created_at: 2011-07-13 23:27:13.237514
+  updated_at: 2011-07-13 23:27:13.237514
+archive_catalogs_008: 
+  id: "4"
+  title: Catalog108
+  label: "Aborigines who abstain from alcohol, 1990-1993"
+  archive_id: "3"
+  catalog_position: "1"
+  parent_id: "1"
+  lft: "6"
+  rgt: "7"
+  created_at: 2011-07-13 23:27:13.534499
+  updated_at: 2011-07-13 23:27:13.534499
+archive_catalogs_009: 
+  id: "106"
+  title: Catalog103
+  label: "Census 1991"
+  archive_id: "2"
+  catalog_position: "6"
+  parent_id: "100"
+  lft: "210"
+  rgt: "223"
+  created_at: 2011-07-13 23:29:01.962865
+  updated_at: 2011-07-13 23:29:01.962865
+archive_catalogs_010: 
+  id: "112"
+  title: Catalog171
+  label: "Basic Community Profile"
+  archive_id: "2"
+  catalog_position: "2"
+  parent_id: "106"
+  lft: "221"
+  rgt: "222"
+  created_at: 2011-07-13 23:29:21.189622
+  updated_at: 2011-07-13 23:29:21.189622
+archive_catalogs_011: 
+  id: "113"
+  title: Catalog104
+  label: "Census 1996"
+  archive_id: "2"
+  catalog_position: "7"
+  parent_id: "100"
+  lft: "224"
+  rgt: "225"
+  created_at: 2011-07-13 23:29:28.219203
+  updated_at: 2011-07-13 23:29:28.219203
+archive_catalogs_012: 
+  id: "114"
+  title: Catalog150
+  label: "Household and Family Formation in Nineteenth-Century Tasmania"
+  archive_id: "2"
+  catalog_position: "10"
+  parent_id: "100"
+  lft: "226"
+  rgt: "227"
+  created_at: 2011-07-13 23:29:28.241889
+  updated_at: 2011-07-13 23:29:28.241889
+archive_catalogs_013: 
+  id: "115"
+  title: longitudinal
+  label: "Longitudinal"
+  archive_id: "4"
+  catalog_position: "4"
+  parent_id: 
+  lft: "229"
+  rgt: "258"
+  created_at: 2011-07-13 23:29:28.469781
+  updated_at: 2011-07-13 23:29:28.469781
+archive_catalogs_014: 
+  id: "117"
+  title: Catalog100
+  label: "Victorian Quality of Life Panel Study"
+  archive_id: "4"
+  catalog_position: "12"
+  parent_id: "115"
+  lft: "232"
+  rgt: "233"
+  created_at: 2011-07-13 23:29:30.341128
+  updated_at: 2011-07-13 23:29:30.341128
+archive_catalogs_015: 
+  id: "118"
+  title: Catalog83
+  label: "Australian Youth Survey"
+  archive_id: "4"
+  catalog_position: "5"
+  parent_id: "115"
+  lft: "234"
+  rgt: "235"
+  created_at: 2011-07-13 23:29:30.749128
+  updated_at: 2011-07-13 23:29:30.749128
+archive_catalogs_016: 
+  id: "5"
+  title: Catalog126
+  label: "National Police Custody Survey"
+  archive_id: "3"
+  catalog_position: "3"
+  parent_id: "1"
+  lft: "8"
+  rgt: "9"
+  created_at: 2011-07-13 23:27:13.824976
+  updated_at: 2011-07-13 23:27:13.824976
+archive_catalogs_017: 
+  id: "41"
+  title: Catalog35
+  label: "Sociology"
+  archive_id: "1"
+  catalog_position: "17"
+  parent_id: "6"
+  lft: "80"
+  rgt: "81"
+  created_at: 2011-07-13 23:28:21.107995
+  updated_at: 2011-07-13 23:28:21.107995
+archive_catalogs_018: 
+  id: "105"
+  title: Catalog102
+  label: "Census 1986"
+  archive_id: "2"
+  catalog_position: "5"
+  parent_id: "100"
+  lft: "208"
+  rgt: "209"
+  created_at: 2011-07-13 23:29:01.946564
+  updated_at: 2011-07-13 23:29:01.946564
+archive_catalogs_019: 
+  id: "120"
+  title: Catalog123
+  label: "Ten Year Longitudinal Study of School Leavers, 1980-1989"
+  archive_id: "4"
+  catalog_position: "11"
+  parent_id: "115"
+  lft: "238"
+  rgt: "239"
+  created_at: 2011-07-13 23:29:34.226923
+  updated_at: 2011-07-13 23:29:34.226923
+archive_catalogs_020: 
+  id: "6"
+  title: social-science
+  label: "Social Science"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: 
+  lft: "11"
+  rgt: "198"
+  created_at: 2011-07-13 23:27:13.975369
+  updated_at: 2011-07-13 23:27:13.975369
+archive_catalogs_021: 
+  id: "40"
+  title: Catalog173
+  label: "Australian Election Database"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "32"
+  lft: "77"
+  rgt: "78"
+  created_at: 2011-07-13 23:28:17.935978
+  updated_at: 2011-07-13 23:28:17.935978
+archive_catalogs_022: 
+  id: "42"
+  title: Catalog29
+  label: "Alcohol, Tobacco and Other Drugs"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "6"
+  lft: "82"
+  rgt: "103"
+  created_at: 2011-07-13 23:28:21.121711
+  updated_at: 2011-07-13 23:28:21.121711
+archive_catalogs_023: 
+  id: "43"
+  title: Catalog24
+  label: "Random breath test surveys, New South Wales, 1983"
+  archive_id: "1"
+  catalog_position: "10"
+  parent_id: "42"
+  lft: "83"
+  rgt: "84"
+  created_at: 2011-07-13 23:28:21.13798
+  updated_at: 2011-07-13 23:28:21.13798
+archive_catalogs_024: 
+  id: "126"
+  title: Catalog140
+  label: "Australian Longitudinal Study of Ageing"
+  archive_id: "4"
+  catalog_position: "1"
+  parent_id: "115"
+  lft: "250"
+  rgt: "251"
+  created_at: 2011-07-13 23:29:37.864771
+  updated_at: 2011-07-13 23:29:37.864771
+archive_catalogs_025: 
+  id: "44"
+  title: Catalog19
+  label: "Alcohol, drug, and forensic client record data base, 1976-1983"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "42"
+  lft: "85"
+  rgt: "86"
+  created_at: 2011-07-13 23:28:21.947202
+  updated_at: 2011-07-13 23:28:21.947202
+archive_catalogs_026: 
+  id: "45"
+  title: Catalog75
+  label: "National Campaign Against Drug Abuse Social Issues Survey"
+  archive_id: "1"
+  catalog_position: "8"
+  parent_id: "42"
+  lft: "87"
+  rgt: "88"
+  created_at: 2011-07-13 23:28:25.645103
+  updated_at: 2011-07-13 23:28:25.645103
+archive_catalogs_027: 
+  id: "7"
+  title: Catalog1
+  label: "Polls"
+  archive_id: "1"
+  catalog_position: "15"
+  parent_id: "6"
+  lft: "12"
+  rgt: "31"
+  created_at: 2011-07-13 23:27:13.984868
+  updated_at: 2011-07-13 23:27:13.984868
+archive_catalogs_028: 
+  id: "121"
+  title: Catalog124
+  label: "Youth Research Centre Life Patterns Project"
+  archive_id: "4"
+  catalog_position: "13"
+  parent_id: "115"
+  lft: "240"
+  rgt: "241"
+  created_at: 2011-07-13 23:29:34.510776
+  updated_at: 2011-07-13 23:29:34.510776
+archive_catalogs_029: 
+  id: "122"
+  title: Catalog127
+  label: "Youth in Transition"
+  archive_id: "4"
+  catalog_position: "14"
+  parent_id: "115"
+  lft: "242"
+  rgt: "243"
+  created_at: 2011-07-13 23:29:35.111289
+  updated_at: 2011-07-13 23:29:35.111289
+archive_catalogs_030: 
+  id: "123"
+  title: Catalog128
+  label: "Negotiating the Life Course"
+  archive_id: "4"
+  catalog_position: "8"
+  parent_id: "115"
+  lft: "244"
+  rgt: "245"
+  created_at: 2011-07-13 23:29:35.518516
+  updated_at: 2011-07-13 23:29:35.518516
+archive_catalogs_031: 
+  id: "46"
+  title: Catalog85
+  label: "Evaluation of the Peer Support Program (Student Drug Prevention) 1986-1987"
+  archive_id: "1"
+  catalog_position: "7"
+  parent_id: "42"
+  lft: "89"
+  rgt: "90"
+  created_at: 2011-07-13 23:28:26.046453
+  updated_at: 2011-07-13 23:28:26.046453
+archive_catalogs_032: 
+  id: "47"
+  title: Catalog116
+  label: "Drug use among primary school students, New South Wales 1986-1993"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "42"
+  lft: "91"
+  rgt: "92"
+  created_at: 2011-07-13 23:28:26.425493
+  updated_at: 2011-07-13 23:28:26.425493
+archive_catalogs_033: 
+  id: "24"
+  title: Catalog92
+  label: "National dietary survey of adults, Australia, 1983"
+  archive_id: "1"
+  catalog_position: "10"
+  parent_id: "17"
+  lft: "45"
+  rgt: "46"
+  created_at: 2011-07-13 23:28:00.469429
+  updated_at: 2011-07-13 23:28:00.469429
+archive_catalogs_034: 
+  id: "130"
+  title: qualitative
+  label: "Qualitative"
+  archive_id: "5"
+  catalog_position: "5"
+  parent_id: 
+  lft: "259"
+  rgt: "260"
+  created_at: 2011-07-13 23:29:39.819305
+  updated_at: 2011-07-13 23:29:39.819305
+archive_catalogs_035: 
+  id: "131"
+  title: international
+  label: "International"
+  archive_id: "6"
+  catalog_position: "7"
+  parent_id: 
+  lft: "261"
+  rgt: "316"
+  created_at: 2011-07-13 23:29:40.155251
+  updated_at: 2011-07-13 23:29:40.155251
+archive_catalogs_036: 
+  id: "133"
+  title: Catalog68
+  label: "Census"
+  archive_id: "6"
+  catalog_position: "1"
+  parent_id: "132"
+  lft: "263"
+  rgt: "264"
+  created_at: 2011-07-13 23:29:40.439071
+  updated_at: 2011-07-13 23:29:40.439071
+archive_catalogs_037: 
+  id: "132"
+  title: Catalog42
+  label: "Indonesia"
+  archive_id: "6"
+  catalog_position: "3"
+  parent_id: "131"
+  lft: "262"
+  rgt: "299"
+  created_at: 2011-07-13 23:29:40.356277
+  updated_at: 2011-07-13 23:29:40.356277
+archive_catalogs_038: 
+  id: "127"
+  title: Catalog149
+  label: "Sydney Older Persons Study"
+  archive_id: "4"
+  catalog_position: "10"
+  parent_id: "115"
+  lft: "252"
+  rgt: "253"
+  created_at: 2011-07-13 23:29:38.724671
+  updated_at: 2011-07-13 23:29:38.724671
+archive_catalogs_039: 
+  id: "22"
+  title: Catalog84
+  label: "National AIDS education campaign benchmark survey 1986-1987"
+  archive_id: "1"
+  catalog_position: "8"
+  parent_id: "17"
+  lft: "41"
+  rgt: "42"
+  created_at: 2011-07-13 23:27:59.340246
+  updated_at: 2011-07-13 23:27:59.340246
+archive_catalogs_040: 
+  id: "134"
+  title: Catalog67
+  label: "Susenas"
   archive_id: "6"
   catalog_position: "4"
-  parent_id: "131"
-  lft: "300"
-  rgt: "305"
-  created_at: 2011-07-06 01:26:25.276593
-  updated_at: 2011-07-06 01:26:25.276593
-archive_catalogs_150: 
+  parent_id: "132"
+  lft: "265"
+  rgt: "294"
+  created_at: 2011-07-13 23:29:41.077734
+  updated_at: 2011-07-13 23:29:41.077734
+archive_catalogs_041: 
+  id: "8"
+  title: Catalog6
+  label: "Australian Gallup Poll"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "7"
+  lft: "13"
+  rgt: "14"
+  created_at: 2011-07-13 23:27:13.999426
+  updated_at: 2011-07-13 23:27:13.999426
+archive_catalogs_042: 
+  id: "9"
+  title: Catalog5
+  label: "Age Poll"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "7"
+  lft: "15"
+  rgt: "16"
+  created_at: 2011-07-13 23:27:30.878158
+  updated_at: 2011-07-13 23:27:30.878158
+archive_catalogs_043: 
+  id: "124"
+  title: Catalog129
+  label: "Longitudinal Surveys of Australian Youth"
+  archive_id: "4"
+  catalog_position: "7"
+  parent_id: "115"
+  lft: "246"
+  rgt: "247"
+  created_at: 2011-07-13 23:29:35.865536
+  updated_at: 2011-07-13 23:29:35.865536
+archive_catalogs_044: 
+  id: "125"
+  title: Catalog130
+  label: "Australian Longitudinal Study on Womens Health"
+  archive_id: "4"
+  catalog_position: "2"
+  parent_id: "115"
+  lft: "248"
+  rgt: "249"
+  created_at: 2011-07-13 23:29:36.271238
+  updated_at: 2011-07-13 23:29:36.271238
+archive_catalogs_045: 
+  id: "52"
+  title: Catalog115
+  label: "Drug use among Hobart secondary school students 1971-1982"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "42"
+  lft: "101"
+  rgt: "102"
+  created_at: 2011-07-13 23:28:29.473691
+  updated_at: 2011-07-13 23:28:29.473691
+archive_catalogs_046: 
+  id: "12"
+  title: Catalog110
+  label: "Saulwick Age Poll"
+  archive_id: "1"
+  catalog_position: "9"
+  parent_id: "7"
+  lft: "21"
+  rgt: "22"
+  created_at: 2011-07-13 23:27:44.04939
+  updated_at: 2011-07-13 23:27:44.04939
+archive_catalogs_047: 
+  id: "13"
+  title: Catalog112
+  label: "Saulwick AGB McNair Poll"
+  archive_id: "1"
+  catalog_position: "8"
+  parent_id: "7"
+  lft: "23"
+  rgt: "24"
+  created_at: 2011-07-13 23:27:51.606076
+  updated_at: 2011-07-13 23:27:51.606076
+archive_catalogs_048: 
+  id: "14"
+  title: Catalog144
+  label: "Lowy Institute Poll"
+  archive_id: "1"
+  catalog_position: "6"
+  parent_id: "7"
+  lft: "25"
+  rgt: "26"
+  created_at: 2011-07-13 23:27:54.109433
+  updated_at: 2011-07-13 23:27:54.109433
+archive_catalogs_049: 
+  id: "15"
+  title: Catalog145
+  label: "ANUPoll"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "7"
+  lft: "27"
+  rgt: "28"
+  created_at: 2011-07-13 23:27:54.553965
+  updated_at: 2011-07-13 23:27:54.553965
+archive_catalogs_050: 
+  id: "16"
+  title: Catalog147
+  label: "JobFutures-Saulwick Employee Futures Survey"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "7"
+  lft: "29"
+  rgt: "30"
+  created_at: 2011-07-13 23:27:55.051059
+  updated_at: 2011-07-13 23:27:55.051059
+archive_catalogs_051: 
+  id: "51"
+  title: Catalog114
+  label: "Drug use among secondary school students, New South Wales 1980-1992"
+  archive_id: "1"
+  catalog_position: "6"
+  parent_id: "42"
+  lft: "99"
+  rgt: "100"
+  created_at: 2011-07-13 23:28:28.87468
+  updated_at: 2011-07-13 23:28:28.87468
+archive_catalogs_052: 
+  id: "128"
+  title: Catalog151
+  label: "PATH Through Life Project"
+  archive_id: "4"
+  catalog_position: "9"
+  parent_id: "115"
+  lft: "254"
+  rgt: "255"
+  created_at: 2011-07-13 23:29:39.124309
+  updated_at: 2011-07-13 23:29:39.124309
+archive_catalogs_053: 
+  id: "129"
+  title: Catalog152
+  label: "Australian Tax System Surveys 2000-2005"
+  archive_id: "4"
+  catalog_position: "4"
+  parent_id: "115"
+  lft: "256"
+  rgt: "257"
+  created_at: 2011-07-13 23:29:39.413699
+  updated_at: 2011-07-13 23:29:39.413699
+archive_catalogs_054: 
+  id: "10"
+  title: Catalog4
+  label: "Canberra Population Survey"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "7"
+  lft: "17"
+  rgt: "18"
+  created_at: 2011-07-13 23:27:33.669234
+  updated_at: 2011-07-13 23:27:33.669234
+archive_catalogs_055: 
+  id: "11"
+  title: Catalog95
+  label: "Saulwick Poll"
+  archive_id: "1"
+  catalog_position: "7"
+  parent_id: "7"
+  lft: "19"
+  rgt: "20"
+  created_at: 2011-07-13 23:27:34.905339
+  updated_at: 2011-07-13 23:27:34.905339
+archive_catalogs_056: 
+  id: "18"
+  title: Catalog11
+  label: "Canberra mental health survey, 1971"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "17"
+  lft: "33"
+  rgt: "34"
+  created_at: 2011-07-13 23:27:55.958992
+  updated_at: 2011-07-13 23:27:55.958992
+archive_catalogs_057: 
+  id: "20"
+  title: Catalog17
+  label: "Pregnant Pause Campaign, 1979 - 1982"
+  archive_id: "1"
+  catalog_position: "12"
+  parent_id: "17"
+  lft: "37"
+  rgt: "38"
+  created_at: 2011-07-13 23:27:56.667325
+  updated_at: 2011-07-13 23:27:56.667325
+archive_catalogs_058: 
+  id: "21"
+  title: Catalog10
+  label: "Health care surveys of Gosford-Wyong and Illawarra regions, New South Wales, 1975"
+  archive_id: "1"
+  catalog_position: "6"
+  parent_id: "17"
+  lft: "39"
+  rgt: "40"
+  created_at: 2011-07-13 23:27:57.142263
+  updated_at: 2011-07-13 23:27:57.142263
+archive_catalogs_059: 
+  id: "23"
+  title: Catalog93
+  label: "National dietary survey of schoolchildren, Australia, 1985"
+  archive_id: "1"
+  catalog_position: "11"
+  parent_id: "17"
+  lft: "43"
+  rgt: "44"
+  created_at: 2011-07-13 23:28:00.261317
+  updated_at: 2011-07-13 23:28:00.261317
+archive_catalogs_060: 
+  id: "26"
+  title: Catalog101
+  label: "Risk Factor Prevalence Study, 1980 - 1989"
+  archive_id: "1"
+  catalog_position: "13"
+  parent_id: "17"
+  lft: "49"
+  rgt: "50"
+  created_at: 2011-07-13 23:28:01.434756
+  updated_at: 2011-07-13 23:28:01.434756
+archive_catalogs_061: 
+  id: "137"
+  title: Catalog155
+  label: "Susenas 2002"
+  archive_id: "6"
+  catalog_position: "11"
+  parent_id: "134"
+  lft: "270"
+  rgt: "271"
+  created_at: 2011-07-13 23:29:43.082475
+  updated_at: 2011-07-13 23:29:43.082475
+archive_catalogs_062: 
+  id: "19"
+  title: Catalog25
+  label: "Australian national blood pressure study, 1973 - 1979"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "17"
+  lft: "35"
+  rgt: "36"
+  created_at: 2011-07-13 23:27:56.291146
+  updated_at: 2011-07-13 23:27:56.291146
+archive_catalogs_063: 
+  id: "135"
+  title: Catalog66
+  label: "Household expenditure survey, Indonesia, 1981"
+  archive_id: "6"
+  catalog_position: "1"
+  parent_id: "134"
+  lft: "266"
+  rgt: "267"
+  created_at: 2011-07-13 23:29:41.102007
+  updated_at: 2011-07-13 23:29:41.102007
+archive_catalogs_064: 
+  id: "84"
+  title: Catalog47
+  label: "Tourism, Recreation and Leisure"
+  archive_id: "1"
+  catalog_position: "18"
+  parent_id: "6"
+  lft: "166"
+  rgt: "175"
+  created_at: 2011-07-13 23:28:54.203333
+  updated_at: 2011-07-13 23:28:54.203333
+archive_catalogs_065: 
+  id: "25"
+  title: Catalog30
+  label: "General Practitioners' Referrals and Investigations, 1991-1992"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "17"
+  lft: "47"
+  rgt: "48"
+  created_at: 2011-07-13 23:28:01.023611
+  updated_at: 2011-07-13 23:28:01.023611
+archive_catalogs_066: 
+  id: "27"
+  title: Catalog109
+  label: "General Practice Use of Near-patient Testing, Australia, 1994"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "17"
+  lft: "51"
+  rgt: "52"
+  created_at: 2011-07-13 23:28:01.92591
+  updated_at: 2011-07-13 23:28:01.92591
+archive_catalogs_067: 
+  id: "136"
+  title: Catalog154
+  label: "Susenas 1987"
+  archive_id: "6"
+  catalog_position: "3"
+  parent_id: "134"
+  lft: "268"
+  rgt: "269"
+  created_at: 2011-07-13 23:29:42.530169
+  updated_at: 2011-07-13 23:29:42.530169
+archive_catalogs_068: 
+  id: "50"
+  title: Catalog113
+  label: "Census of Clients of Treatment Service Agencies"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "42"
+  lft: "97"
+  rgt: "98"
+  created_at: 2011-07-13 23:28:28.301035
+  updated_at: 2011-07-13 23:28:28.301035
+archive_catalogs_069: 
+  id: "49"
+  title: Catalog111
+  label: "National Drug Strategy Household Survey"
+  archive_id: "1"
+  catalog_position: "9"
+  parent_id: "42"
+  lft: "95"
+  rgt: "96"
+  created_at: 2011-07-13 23:28:27.675615
+  updated_at: 2011-07-13 23:28:27.675615
+archive_catalogs_070: 
+  id: "145"
+  title: Catalog163
+  label: "Susenas 2008"
+  archive_id: "6"
+  catalog_position: "17"
+  parent_id: "134"
+  lft: "286"
+  rgt: "287"
+  created_at: 2011-07-13 23:29:46.038207
+  updated_at: 2011-07-13 23:29:46.038207
+archive_catalogs_071: 
+  id: "141"
+  title: Catalog159
+  label: "Susenas 2004"
+  archive_id: "6"
+  catalog_position: "13"
+  parent_id: "134"
+  lft: "278"
+  rgt: "279"
+  created_at: 2011-07-13 23:29:44.689228
+  updated_at: 2011-07-13 23:29:44.689228
+archive_catalogs_072: 
+  id: "31"
+  title: Catalog34
+  label: "Demography and Population"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "6"
+  lft: "60"
+  rgt: "61"
+  created_at: 2011-07-13 23:28:05.136803
+  updated_at: 2011-07-13 23:28:05.136803
+archive_catalogs_073: 
+  id: "138"
+  title: Catalog156
+  label: "Susenas 2000"
+  archive_id: "6"
+  catalog_position: "9"
+  parent_id: "134"
+  lft: "272"
+  rgt: "273"
+  created_at: 2011-07-13 23:29:43.720749
+  updated_at: 2011-07-13 23:29:43.720749
+archive_catalogs_074: 
+  id: "139"
+  title: Catalog157
+  label: "Susenas 1997"
+  archive_id: "6"
+  catalog_position: "6"
+  parent_id: "134"
+  lft: "274"
+  rgt: "275"
+  created_at: 2011-07-13 23:29:44.145659
+  updated_at: 2011-07-13 23:29:44.145659
+archive_catalogs_075: 
+  id: "140"
+  title: Catalog158
+  label: "Susenas 2003"
+  archive_id: "6"
+  catalog_position: "12"
+  parent_id: "134"
+  lft: "276"
+  rgt: "277"
+  created_at: 2011-07-13 23:29:44.494225
+  updated_at: 2011-07-13 23:29:44.494225
+archive_catalogs_076: 
+  id: "32"
+  title: Catalog33
+  label: "Politics and Elections"
+  archive_id: "1"
+  catalog_position: "14"
+  parent_id: "6"
+  lft: "62"
+  rgt: "79"
+  created_at: 2011-07-13 23:28:05.152644
+  updated_at: 2011-07-13 23:28:05.152644
+archive_catalogs_077: 
   id: "148"
   title: Catalog174
+  label: "Susenas 2001"
   archive_id: "6"
   catalog_position: "10"
   parent_id: "134"
   lft: "292"
   rgt: "293"
-  created_at: 2011-07-06 01:26:23.391766
-  updated_at: 2011-07-06 01:26:23.391766
-archive_catalogs_151: 
+  created_at: 2011-07-13 23:29:47.322167
+  updated_at: 2011-07-13 23:29:47.322167
+archive_catalogs_078: 
+  id: "29"
+  title: Catalog132
+  label: "National Centre in HIV Social Research studies"
+  archive_id: "1"
+  catalog_position: "9"
+  parent_id: "17"
+  lft: "55"
+  rgt: "56"
+  created_at: 2011-07-13 23:28:03.736094
+  updated_at: 2011-07-13 23:28:03.736094
+archive_catalogs_079: 
+  id: "30"
+  title: Catalog141
+  label: "Australian Studies of Health and Relationships"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "17"
+  lft: "57"
+  rgt: "58"
+  created_at: 2011-07-13 23:28:04.769227
+  updated_at: 2011-07-13 23:28:04.769227
+archive_catalogs_080: 
+  id: "33"
+  title: Catalog3
+  label: "Australian National Political Attitudes Survey"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "32"
+  lft: "63"
+  rgt: "64"
+  created_at: 2011-07-13 23:28:05.262093
+  updated_at: 2011-07-13 23:28:05.262093
+archive_catalogs_081: 
+  id: "53"
+  title: Catalog32
+  label: "Education"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "6"
+  lft: "104"
+  rgt: "127"
+  created_at: 2011-07-13 23:28:30.03089
+  updated_at: 2011-07-13 23:28:30.03089
+archive_catalogs_082: 
+  id: "34"
+  title: Catalog59
+  label: "Australian Candidate Study"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "32"
+  lft: "65"
+  rgt: "66"
+  created_at: 2011-07-13 23:28:05.563692
+  updated_at: 2011-07-13 23:28:05.563692
+archive_catalogs_083: 
+  id: "142"
+  title: Catalog160
+  label: "Susenas 2005"
+  archive_id: "6"
+  catalog_position: "14"
+  parent_id: "134"
+  lft: "280"
+  rgt: "281"
+  created_at: 2011-07-13 23:29:45.256729
+  updated_at: 2011-07-13 23:29:45.256729
+archive_catalogs_084: 
+  id: "143"
+  title: Catalog161
+  label: "Susenas 2006"
+  archive_id: "6"
+  catalog_position: "15"
+  parent_id: "134"
+  lft: "282"
+  rgt: "283"
+  created_at: 2011-07-13 23:29:45.335954
+  updated_at: 2011-07-13 23:29:45.335954
+archive_catalogs_085: 
+  id: "144"
+  title: Catalog162
+  label: "Susenas 2007"
+  archive_id: "6"
+  catalog_position: "16"
+  parent_id: "134"
+  lft: "284"
+  rgt: "285"
+  created_at: 2011-07-13 23:29:45.795621
+  updated_at: 2011-07-13 23:29:45.795621
+archive_catalogs_086: 
+  id: "36"
+  title: Catalog18
+  label: "Australian two-party preferred votes, 1949-1982"
+  archive_id: "1"
+  catalog_position: "7"
+  parent_id: "32"
+  lft: "69"
+  rgt: "70"
+  created_at: 2011-07-13 23:28:07.731437
+  updated_at: 2011-07-13 23:28:07.731437
+archive_catalogs_087: 
+  id: "37"
+  title: Catalog125
+  label: "Australian Federal Election Returns"
+  archive_id: "1"
+  catalog_position: "8"
+  parent_id: "32"
+  lft: "71"
+  rgt: "72"
+  created_at: 2011-07-13 23:28:10.388624
+  updated_at: 2011-07-13 23:28:10.388624
+archive_catalogs_088: 
+  id: "38"
+  title: Catalog134
+  label: "Australian Parliamentary Candidates 1890-1999"
+  archive_id: "1"
+  catalog_position: "6"
+  parent_id: "32"
+  lft: "73"
+  rgt: "74"
+  created_at: 2011-07-13 23:28:10.924535
+  updated_at: 2011-07-13 23:28:10.924535
+archive_catalogs_089: 
+  id: "54"
+  title: Catalog27
+  label: "School leavers from A.C.T. and Queanbeyan schools, 1980"
+  archive_id: "1"
+  catalog_position: "8"
+  parent_id: "53"
+  lft: "105"
+  rgt: "106"
+  created_at: 2011-07-13 23:28:30.045954
+  updated_at: 2011-07-13 23:28:30.045954
+archive_catalogs_090: 
+  id: "55"
+  title: Catalog26
+  label: "Inquiry into education and training (Williams inquiry)"
+  archive_id: "1"
+  catalog_position: "6"
+  parent_id: "53"
+  lft: "107"
+  rgt: "108"
+  created_at: 2011-07-13 23:28:30.257905
+  updated_at: 2011-07-13 23:28:30.257905
+archive_catalogs_091: 
+  id: "149"
+  title: Catalog96
+  label: "Indonesian Annual Manufacturing Surveys 1975-1993"
+  archive_id: "6"
+  catalog_position: "2"
+  parent_id: "132"
+  lft: "295"
+  rgt: "296"
+  created_at: 2011-07-13 23:29:47.951805
+  updated_at: 2011-07-13 23:29:47.951805
+archive_catalogs_092: 
+  id: "56"
+  title: Catalog14
+  label: "Inquiry into management education, 1981"
+  archive_id: "1"
+  catalog_position: "7"
+  parent_id: "53"
+  lft: "109"
+  rgt: "110"
+  created_at: 2011-07-13 23:28:30.602938
+  updated_at: 2011-07-13 23:28:30.602938
+archive_catalogs_093: 
+  id: "72"
+  title: Catalog21
+  label: "Adaptation of migrants, 1979-1982"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "71"
+  lft: "141"
+  rgt: "142"
+  created_at: 2011-07-13 23:28:40.649613
+  updated_at: 2011-07-13 23:28:40.649613
+archive_catalogs_094: 
+  id: "57"
+  title: Catalog13
+  label: "Secondary school mathematics in Australia, 1964 - 1978"
+  archive_id: "1"
+  catalog_position: "9"
+  parent_id: "53"
+  lft: "111"
+  rgt: "112"
+  created_at: 2011-07-13 23:28:31.233573
+  updated_at: 2011-07-13 23:28:31.233573
+archive_catalogs_095: 
+  id: "146"
+  title: Catalog164
+  label: "Susenas 2009"
+  archive_id: "6"
+  catalog_position: "18"
+  parent_id: "134"
+  lft: "288"
+  rgt: "289"
+  created_at: 2011-07-13 23:29:46.16931
+  updated_at: 2011-07-13 23:29:46.16931
+archive_catalogs_096: 
+  id: "147"
+  title: Catalog167
+  label: "Susenas 1999"
+  archive_id: "6"
+  catalog_position: "8"
+  parent_id: "134"
+  lft: "290"
+  rgt: "291"
+  created_at: 2011-07-13 23:29:46.55047
+  updated_at: 2011-07-13 23:29:46.55047
+archive_catalogs_097: 
+  id: "48"
+  title: Catalog91
+  label: "Alcohol and medication use among older people, 1991"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "42"
+  lft: "93"
+  rgt: "94"
+  created_at: 2011-07-13 23:28:26.678
+  updated_at: 2011-07-13 23:28:26.678
+archive_catalogs_098: 
+  id: "28"
+  title: Catalog117
+  label: "Heart Walk Evaluation, Victoria, 1994-1996"
+  archive_id: "1"
+  catalog_position: "7"
+  parent_id: "17"
+  lft: "53"
+  rgt: "54"
+  created_at: 2011-07-13 23:28:02.468969
+  updated_at: 2011-07-13 23:28:02.468969
+archive_catalogs_099: 
+  id: "66"
+  title: Catalog44
+  label: "South Australian housing trust tenant survey, 1982"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "65"
+  lft: "129"
+  rgt: "130"
+  created_at: 2011-07-13 23:28:37.974901
+  updated_at: 2011-07-13 23:28:37.974901
+archive_catalogs_100: 
+  id: "35"
+  title: Catalog2
+  label: "Australian Election Study"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "32"
+  lft: "67"
+  rgt: "68"
+  created_at: 2011-07-13 23:28:06.638307
+  updated_at: 2011-07-13 23:28:06.638307
+archive_catalogs_101: 
+  id: "58"
+  title: Catalog43
+  label: "Teacher education in New South Wales, 1980"
+  archive_id: "1"
+  catalog_position: "11"
+  parent_id: "53"
+  lft: "113"
+  rgt: "114"
+  created_at: 2011-07-13 23:28:32.667627
+  updated_at: 2011-07-13 23:28:32.667627
+archive_catalogs_102: 
+  id: "59"
+  title: Catalog63
+  label: "Career development project, 1977-1987"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "53"
+  lft: "115"
+  rgt: "116"
+  created_at: 2011-07-13 23:28:32.962309
+  updated_at: 2011-07-13 23:28:32.962309
+archive_catalogs_103: 
+  id: "74"
+  title: Catalog98
+  label: "Acquisition of Australian Citizenship, 1987"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "71"
+  lft: "145"
+  rgt: "146"
+  created_at: 2011-07-13 23:28:47.084075
+  updated_at: 2011-07-13 23:28:47.084075
+archive_catalogs_104: 
+  id: "62"
+  title: Catalog135
+  label: "Graduation Destination Surveys"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "53"
+  lft: "121"
+  rgt: "122"
+  created_at: 2011-07-13 23:28:34.59634
+  updated_at: 2011-07-13 23:28:34.59634
+archive_catalogs_105: 
   id: "150"
   title: Catalog97
+  label: "Sakernas"
   archive_id: "6"
   catalog_position: "3"
   parent_id: "132"
   lft: "297"
   rgt: "298"
-  created_at: 2011-07-06 01:26:24.31969
-  updated_at: 2011-07-06 01:26:24.31969
-archive_catalogs_152: 
-  id: "152"
-  title: Catalog76
+  created_at: 2011-07-13 23:29:48.351791
+  updated_at: 2011-07-13 23:29:48.351791
+archive_catalogs_106: 
+  id: "151"
+  title: Catalog41
+  label: "New Zealand"
   archive_id: "6"
-  catalog_position: "2"
-  parent_id: "151"
-  lft: "301"
-  rgt: "302"
-  created_at: 2011-07-06 01:26:25.548851
-  updated_at: 2011-07-06 01:26:25.548851
-archive_catalogs_153: 
+  catalog_position: "4"
+  parent_id: "131"
+  lft: "300"
+  rgt: "305"
+  created_at: 2011-07-13 23:29:49.43246
+  updated_at: 2011-07-13 23:29:49.43246
+archive_catalogs_107: 
+  id: "82"
+  title: Catalog106
+  label: "Public Sector Equal Employment Opportunity Survey, 1990"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "76"
+  lft: "161"
+  rgt: "162"
+  created_at: 2011-07-13 23:28:52.371433
+  updated_at: 2011-07-13 23:28:52.371433
+archive_catalogs_108: 
   id: "153"
   title: Catalog82
+  label: "New Zealand Election Surveys"
   archive_id: "6"
   catalog_position: "1"
   parent_id: "151"
   lft: "303"
   rgt: "304"
-  created_at: 2011-07-06 01:26:25.876527
-  updated_at: 2011-07-06 01:26:25.876527
-archive_catalogs_154: 
+  created_at: 2011-07-13 23:29:50.044781
+  updated_at: 2011-07-13 23:29:50.044781
+archive_catalogs_109: 
+  id: "17"
+  title: Catalog31
+  label: "Health"
+  archive_id: "1"
+  catalog_position: "10"
+  parent_id: "6"
+  lft: "32"
+  rgt: "59"
+  created_at: 2011-07-13 23:27:55.94479
+  updated_at: 2011-07-13 23:27:55.94479
+archive_catalogs_110: 
+  id: "67"
+  title: Catalog38
+  label: "Transport"
+  archive_id: "1"
+  catalog_position: "19"
+  parent_id: "6"
+  lft: "132"
+  rgt: "133"
+  created_at: 2011-07-13 23:28:38.459997
+  updated_at: 2011-07-13 23:28:38.459997
+archive_catalogs_111: 
+  id: "68"
+  title: Catalog39
+  label: "Media and Communications"
+  archive_id: "1"
+  catalog_position: "12"
+  parent_id: "6"
+  lft: "134"
+  rgt: "139"
+  created_at: 2011-07-13 23:28:38.95546
+  updated_at: 2011-07-13 23:28:38.95546
+archive_catalogs_112: 
+  id: "69"
+  title: Catalog20
+  label: "Australian Broadcasting Corporation Audience Research"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "68"
+  lft: "135"
+  rgt: "136"
+  created_at: 2011-07-13 23:28:39.031698
+  updated_at: 2011-07-13 23:28:39.031698
+archive_catalogs_113: 
+  id: "90"
+  title: Catalog77
+  label: "ANZUS and Australia's Security: Australian Attitudes 1982-1985"
+  archive_id: "1"
+  catalog_position: "6"
+  parent_id: "89"
+  lft: "177"
+  rgt: "178"
+  created_at: 2011-07-13 23:28:56.568331
+  updated_at: 2011-07-13 23:28:56.568331
+archive_catalogs_114: 
+  id: "70"
+  title: Catalog61
+  label: "Impact of multicultural television, Adelaide, 1985-1986"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "68"
+  lft: "137"
+  rgt: "138"
+  created_at: 2011-07-13 23:28:39.91479
+  updated_at: 2011-07-13 23:28:39.91479
+archive_catalogs_115: 
+  id: "71"
+  title: Catalog40
+  label: "Migration"
+  archive_id: "1"
+  catalog_position: "13"
+  parent_id: "6"
+  lft: "140"
+  rgt: "147"
+  created_at: 2011-07-13 23:28:40.384173
+  updated_at: 2011-07-13 23:28:40.384173
+archive_catalogs_116: 
+  id: "73"
+  title: Catalog55
+  label: "Overseas arrivals and departures, Australia 1975-1994"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "71"
+  lft: "143"
+  rgt: "144"
+  created_at: 2011-07-13 23:28:42.676298
+  updated_at: 2011-07-13 23:28:42.676298
+archive_catalogs_117: 
+  id: "75"
+  title: Catalog45
+  label: "Religion"
+  archive_id: "1"
+  catalog_position: "16"
+  parent_id: "6"
+  lft: "148"
+  rgt: "149"
+  created_at: 2011-07-13 23:28:47.412711
+  updated_at: 2011-07-13 23:28:47.412711
+archive_catalogs_118: 
+  id: "76"
+  title: Catalog46
+  label: "Employment and labour"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "6"
+  lft: "150"
+  rgt: "165"
+  created_at: 2011-07-13 23:28:47.682545
+  updated_at: 2011-07-13 23:28:47.682545
+archive_catalogs_119: 
+  id: "79"
+  title: Catalog56
+  label: "South Australian work experience survey, 1983"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "76"
+  lft: "155"
+  rgt: "156"
+  created_at: 2011-07-13 23:28:48.27403
+  updated_at: 2011-07-13 23:28:48.27403
+archive_catalogs_120: 
+  id: "77"
+  title: Catalog51
+  label: "Youth and the labour market : general survey, 1983"
+  archive_id: "1"
+  catalog_position: "8"
+  parent_id: "76"
+  lft: "151"
+  rgt: "152"
+  created_at: 2011-07-13 23:28:47.756826
+  updated_at: 2011-07-13 23:28:47.756826
+archive_catalogs_121: 
+  id: "78"
+  title: Catalog52
+  label: "Evaluation of the employment initiatives program in Victoria, 1983-1984"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "76"
+  lft: "153"
+  rgt: "154"
+  created_at: 2011-07-13 23:28:48.014068
+  updated_at: 2011-07-13 23:28:48.014068
+archive_catalogs_122: 
+  id: "81"
+  title: Catalog89
+  label: "Australian Workplace Industrial Relations Survey 1995"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "76"
+  lft: "159"
+  rgt: "160"
+  created_at: 2011-07-13 23:28:49.737372
+  updated_at: 2011-07-13 23:28:49.737372
+archive_catalogs_123: 
+  id: "83"
+  title: Catalog119
+  label: "Workplace Bargaining Survey 1994"
+  archive_id: "1"
+  catalog_position: "7"
+  parent_id: "76"
+  lft: "163"
+  rgt: "164"
+  created_at: 2011-07-13 23:28:53.437912
+  updated_at: 2011-07-13 23:28:53.437912
+archive_catalogs_124: 
   id: "154"
   title: Catalog71
+  label: "Nigeria"
   archive_id: "6"
   catalog_position: "5"
   parent_id: "131"
   lft: "306"
   rgt: "311"
-  created_at: 2011-07-06 01:26:27.11674
-  updated_at: 2011-07-06 01:26:27.11674
-archive_catalogs_155: 
+  created_at: 2011-07-13 23:29:51.462885
+  updated_at: 2011-07-13 23:29:51.462885
+archive_catalogs_125: 
   id: "155"
   title: Catalog9
+  label: "The Nigerian family, December 1974 - February 1975"
   archive_id: "6"
   catalog_position: "2"
   parent_id: "154"
   lft: "307"
   rgt: "308"
-  created_at: 2011-07-06 01:26:27.140512
-  updated_at: 2011-07-06 01:26:27.140512
-archive_catalogs_156: 
+  created_at: 2011-07-13 23:29:51.482104
+  updated_at: 2011-07-13 23:29:51.482104
+archive_catalogs_126: 
   id: "156"
   title: Catalog8
+  label: "African Family Project, Nigerian Segment, 1973"
   archive_id: "6"
   catalog_position: "1"
   parent_id: "154"
   lft: "309"
   rgt: "310"
-  created_at: 2011-07-06 01:26:27.49954
-  updated_at: 2011-07-06 01:26:27.49954
-archive_catalogs_157: 
+  created_at: 2011-07-13 23:29:51.830179
+  updated_at: 2011-07-13 23:29:51.830179
+archive_catalogs_127: 
+  id: "152"
+  title: Catalog76
+  label: "Security and Defence Issues, 1982 - 1985"
+  archive_id: "6"
+  catalog_position: "2"
+  parent_id: "151"
+  lft: "301"
+  rgt: "302"
+  created_at: 2011-07-13 23:29:49.708072
+  updated_at: 2011-07-13 23:29:49.708072
+archive_catalogs_128: 
+  id: "60"
+  title: Catalog80
+  label: "Cross cultural survey of secondary student adjustment, 1989"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "53"
+  lft: "117"
+  rgt: "118"
+  created_at: 2011-07-13 23:28:33.837558
+  updated_at: 2011-07-13 23:28:33.837558
+archive_catalogs_129: 
+  id: "61"
+  title: Catalog81
+  label: "Conditions in Australian Schools, 1976-1978"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "53"
+  lft: "119"
+  rgt: "120"
+  created_at: 2011-07-13 23:28:34.194152
+  updated_at: 2011-07-13 23:28:34.194152
+archive_catalogs_130: 
+  id: "80"
+  title: Catalog88
+  label: "Australian Workplace Industrial Relations Survey, 1989-1990"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "76"
+  lft: "157"
+  rgt: "158"
+  created_at: 2011-07-13 23:28:48.932166
+  updated_at: 2011-07-13 23:28:48.932166
+archive_catalogs_131: 
+  id: "63"
+  title: Catalog139
+  label: "Australian IEA Civic Education Study"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "53"
+  lft: "123"
+  rgt: "124"
+  created_at: 2011-07-13 23:28:37.196452
+  updated_at: 2011-07-13 23:28:37.196452
+archive_catalogs_132: 
+  id: "64"
+  title: Catalog153
+  label: "Staff in Australias Schools 2006-7"
+  archive_id: "1"
+  catalog_position: "10"
+  parent_id: "53"
+  lft: "125"
+  rgt: "126"
+  created_at: 2011-07-13 23:28:37.457545
+  updated_at: 2011-07-13 23:28:37.457545
+archive_catalogs_133: 
+  id: "65"
+  title: Catalog36
+  label: "Housing and Urban Development"
+  archive_id: "1"
+  catalog_position: "11"
+  parent_id: "6"
+  lft: "128"
+  rgt: "131"
+  created_at: 2011-07-13 23:28:37.77548
+  updated_at: 2011-07-13 23:28:37.77548
+archive_catalogs_134: 
+  id: "85"
+  title: Catalog48
+  label: "Tasmanian visitor survey"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "84"
+  lft: "167"
+  rgt: "168"
+  created_at: 2011-07-13 23:28:54.261164
+  updated_at: 2011-07-13 23:28:54.261164
+archive_catalogs_135: 
+  id: "86"
+  title: Catalog50
+  label: "Activity Levels of Australians 1984-1987"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "84"
+  lft: "169"
+  rgt: "170"
+  created_at: 2011-07-13 23:28:54.860398
+  updated_at: 2011-07-13 23:28:54.860398
+archive_catalogs_136: 
+  id: "87"
+  title: Catalog49
+  label: "South Australian leisure activities survey"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "84"
+  lft: "171"
+  rgt: "172"
+  created_at: 2011-07-13 23:28:55.324543
+  updated_at: 2011-07-13 23:28:55.324543
+archive_catalogs_137: 
+  id: "88"
+  title: Catalog60
+  label: "Recreation participation survey, Australia"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "84"
+  lft: "173"
+  rgt: "174"
+  created_at: 2011-07-13 23:28:55.742094
+  updated_at: 2011-07-13 23:28:55.742094
+archive_catalogs_138: 
+  id: "89"
+  title: Catalog54
+  label: "Foreign Affairs"
+  archive_id: "1"
+  catalog_position: "8"
+  parent_id: "6"
+  lft: "176"
+  rgt: "179"
+  created_at: 2011-07-13 23:28:56.15456
+  updated_at: 2011-07-13 23:28:56.15456
+archive_catalogs_139: 
+  id: "91"
+  title: Catalog69
+  label: "Family studies"
+  archive_id: "1"
+  catalog_position: "7"
+  parent_id: "6"
+  lft: "180"
+  rgt: "191"
+  created_at: 2011-07-13 23:28:57.234946
+  updated_at: 2011-07-13 23:28:57.234946
+archive_catalogs_140: 
+  id: "92"
+  title: Catalog15
+  label: "Australian family formation project, 1971 - 1977"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "91"
+  lft: "181"
+  rgt: "182"
+  created_at: 2011-07-13 23:28:57.493927
+  updated_at: 2011-07-13 23:28:57.493927
+archive_catalogs_141: 
   id: "157"
   title: Catalog79
+  label: "China"
   archive_id: "6"
   catalog_position: "2"
   parent_id: "131"
   lft: "312"
   rgt: "313"
-  created_at: 2011-07-06 01:26:27.809825
-  updated_at: 2011-07-06 01:26:27.809825
-archive_catalogs_158: 
+  created_at: 2011-07-13 23:29:52.192764
+  updated_at: 2011-07-13 23:29:52.192764
+archive_catalogs_142: 
+  id: "93"
+  title: Catalog74
+  label: "The Australian Family Project, 1986"
+  archive_id: "1"
+  catalog_position: "4"
+  parent_id: "91"
+  lft: "183"
+  rgt: "184"
+  created_at: 2011-07-13 23:28:57.894903
+  updated_at: 2011-07-13 23:28:57.894903
+archive_catalogs_143: 
   id: "158"
   title: Catalog136
+  label: "Cambodia"
   archive_id: "6"
   catalog_position: "1"
   parent_id: "131"
   lft: "314"
   rgt: "315"
-  created_at: 2011-07-06 01:26:28.090552
-  updated_at: 2011-07-06 01:26:28.090552
+  created_at: 2011-07-13 23:29:52.477704
+  updated_at: 2011-07-13 23:29:52.477704
+archive_catalogs_144: 
+  id: "94"
+  title: Catalog121
+  label: "The Effects of Marital Separation on Men, 1984-1994"
+  archive_id: "1"
+  catalog_position: "5"
+  parent_id: "91"
+  lft: "185"
+  rgt: "186"
+  created_at: 2011-07-13 23:28:58.378586
+  updated_at: 2011-07-13 23:28:58.378586
+archive_catalogs_145: 
+  id: "95"
+  title: Catalog137
+  label: "Australian Divorce Transitions Project"
+  archive_id: "1"
+  catalog_position: "3"
+  parent_id: "91"
+  lft: "187"
+  rgt: "188"
+  created_at: 2011-07-13 23:28:58.761852
+  updated_at: 2011-07-13 23:28:58.761852
+archive_catalogs_146: 
+  id: "96"
+  title: Catalog138
+  label: "Australian Family Formation Project 1980-1991"
+  archive_id: "1"
+  catalog_position: "2"
+  parent_id: "91"
+  lft: "189"
+  rgt: "190"
+  created_at: 2011-07-13 23:28:59.092571
+  updated_at: 2011-07-13 23:28:59.092571
+archive_catalogs_147: 
+  id: "97"
+  title: Catalog70
+  label: "Ageing"
+  archive_id: "1"
+  catalog_position: "1"
+  parent_id: "6"
+  lft: "192"
+  rgt: "193"
+  created_at: 2011-07-13 23:28:59.470751
+  updated_at: 2011-07-13 23:28:59.470751
+archive_catalogs_148: 
+  id: "98"
+  title: Catalog86
+  label: "Environment"
+  archive_id: "1"
+  catalog_position: "6"
+  parent_id: "6"
+  lft: "194"
+  rgt: "195"
+  created_at: 2011-07-13 23:28:59.996006
+  updated_at: 2011-07-13 23:28:59.996006
+archive_catalogs_149: 
+  id: "99"
+  title: Catalog105
+  label: "Gambling"
+  archive_id: "1"
+  catalog_position: "9"
+  parent_id: "6"
+  lft: "196"
+  rgt: "197"
+  created_at: 2011-07-13 23:29:00.598404
+  updated_at: 2011-07-13 23:29:00.598404
+archive_catalogs_150: 
+  id: "100"
+  title: historical
+  label: "Historical"
+  archive_id: "2"
+  catalog_position: "2"
+  parent_id: 
+  lft: "199"
+  rgt: "228"
+  created_at: 2011-07-13 23:29:01.090638
+  updated_at: 2011-07-13 23:29:01.090638
+archive_catalogs_151: 
+  id: "101"
+  title: census-1966
+  label: "Census 1966"
+  archive_id: "2"
+  catalog_position: "1"
+  parent_id: "100"
+  lft: "200"
+  rgt: "201"
+  created_at: 2011-07-13 23:29:01.146254
+  updated_at: 2011-07-13 23:29:01.146254
+archive_catalogs_152: 
+  id: "102"
+  title: census-1976
+  label: "Census 1976"
+  archive_id: "2"
+  catalog_position: "3"
+  parent_id: "100"
+  lft: "202"
+  rgt: "203"
+  created_at: 2011-07-13 23:29:01.699493
+  updated_at: 2011-07-13 23:29:01.699493
+archive_catalogs_153: 
+  id: "103"
+  title: census-1971
+  label: "Census 1971"
+  archive_id: "2"
+  catalog_position: "2"
+  parent_id: "100"
+  lft: "204"
+  rgt: "205"
+  created_at: 2011-07-13 23:29:01.717119
+  updated_at: 2011-07-13 23:29:01.717119
+archive_catalogs_154: 
+  id: "104"
+  title: Catalog72
+  label: "Census 1981"
+  archive_id: "2"
+  catalog_position: "4"
+  parent_id: "100"
+  lft: "206"
+  rgt: "207"
+  created_at: 2011-07-13 23:29:01.9275
+  updated_at: 2011-07-13 23:29:01.9275
+archive_catalogs_155: 
+  id: "107"
+  title: Catalog165
+  label: "Working Population Profile"
+  archive_id: "2"
+  catalog_position: "6"
+  parent_id: "106"
+  lft: "211"
+  rgt: "212"
+  created_at: 2011-07-13 23:29:01.979161
+  updated_at: 2011-07-13 23:29:01.979161
+archive_catalogs_156: 
+  id: "108"
+  title: Catalog166
+  label: "Usual Residents Community Profile"
+  archive_id: "2"
+  catalog_position: "5"
+  parent_id: "106"
+  lft: "213"
+  rgt: "214"
+  created_at: 2011-07-13 23:29:02.667358
+  updated_at: 2011-07-13 23:29:02.667358
+archive_catalogs_157: 
+  id: "109"
+  title: Catalog168
+  label: "Time Series Community Profile"
+  archive_id: "2"
+  catalog_position: "4"
+  parent_id: "106"
+  lft: "215"
+  rgt: "216"
+  created_at: 2011-07-13 23:29:07.787554
+  updated_at: 2011-07-13 23:29:07.787554
+archive_catalogs_158: 
+  id: "110"
+  title: Catalog169
+  label: "Aboriginal and Torres Strait Islander Community Profile"
+  archive_id: "2"
+  catalog_position: "1"
+  parent_id: "106"
+  lft: "217"
+  rgt: "218"
+  created_at: 2011-07-13 23:29:12.329037
+  updated_at: 2011-07-13 23:29:12.329037
