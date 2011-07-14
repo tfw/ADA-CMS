@@ -154,7 +154,7 @@ legend {
 }
 
 #variables table {
-	margin-bottom: 3em;
+	margin-bottom: 3em !important;
 }
 	
 #search-results th, #search-results-ext th, #browse-results-ext th {
