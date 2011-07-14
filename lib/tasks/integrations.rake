@@ -60,17 +60,29 @@ namespace :integrate do
   
   task :everything => :environment do
     Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("indigenous"), Archive.indigenous.id)
+    GC.start
     Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("social-science"), Archive.social_science.id)
+    GC.start
     Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("historical"), Archive.historical.id)
+    GC.start
     Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("longitudinal"), Archive.longitudinal.id)
+    GC.start
     Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("qualitative"), Archive.qualitative.id)
+    GC.start
     Integrations::ArchiveCatalogs.create_or_update(Nesstar::StatementEJB.find_by_objectId("international"), Archive.international.id)
+    GC.start
     Integrations::RelatedMaterials.create_or_update
+    GC.start
     vars_in_archive(Archive.indigenous)
+    GC.start
     vars_in_archive(Archive.qualitative)
+    GC.start
     vars_in_archive(Archive.international)
+    GC.start
     vars_in_archive(Archive.historical)
+    GC.start
     vars_in_archive(Archive.social_science)
+    GC.start
     vars_in_archive(Archive.longitudinal)
   end
   
