@@ -31,7 +31,7 @@ task :bundler do
 end
 
 task :regenerate_paths => :environment do
-  for klass in [Page, News, ArchiveStudy, Document, Image, ArchiveCatalog, Inkling::Feed]
+  for klass in [Page, ArchiveNews, ArchiveStudy, Document, Image, ArchiveCatalog, Inkling::Feed]
     klass.all.each do |content| 
       content.save! 
       puts "#{klass.to_s}-(title #{content.title}): #{content.path.slug}"

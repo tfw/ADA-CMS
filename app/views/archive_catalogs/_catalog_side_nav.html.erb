@@ -10,10 +10,7 @@
     <div id="browse-tree">
 			<% @ada_catalogs.each do |archive, catalog| %>
 			   <%= render :partial => "top_level_catalog", :locals => {:archive => archive, :top_level_catalog => catalog} %>
-			<% end %>
-  		  		
-		  <ul id= "tree">
-			</ul>
+			<% end %>  		  		
     </div>
   </nav>
 <% end %>  

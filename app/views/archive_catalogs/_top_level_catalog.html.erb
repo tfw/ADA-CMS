@@ -2,8 +2,14 @@
   $('#tree-<%= archive.slug %>').explrTree({
   	ajaxContainerId	: 'browse-results',
   	treeHeight	: 'auto',
+  	treeWidth	: 'auto',
   	ajaxLoadingText : '<p> Loading studies ... </p>',
   });	  
+  
+  $('.citable').click(function() {
+    alert(this.href);
+    // window.location = this.href;
+  });
 <% end %>
 
 <h3><a href="#"><%= archive.name %></a></h3>

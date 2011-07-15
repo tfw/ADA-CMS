@@ -14,6 +14,10 @@ class ArchiveNews < ActiveRecord::Base
 
   scope :recent, proc { { :limit => 10, :order => "created_at DESC" } }
 
+  def title
+    news.title
+  end
+
   # This method creates the slug to store on the Inkling::Path (see Inkling::Path) 
   def generate_path_slug
     slug = "/#{archive.slug}/news/#{ymd}/#{sluggerize(news.title)}"

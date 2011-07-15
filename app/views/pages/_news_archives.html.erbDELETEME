@@ -1,4 +1,4 @@
- <aside>
+  <aside>
    <h2>Latest News</h2>
    <div class="news">
      <%= render :partial => "news_archive", :collection => @news_archives %>

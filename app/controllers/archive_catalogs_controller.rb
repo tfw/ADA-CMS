@@ -16,8 +16,10 @@ class ArchiveCatalogsController < ContentController
   end  
   
   def browse
-    catalog_id = params[:archive_catalog_id]
-    @catalog = ArchiveCatalog.find(catalog_id)
+    catalog_urn = params[:archive_catalog_urn]
+    path = Inkling::Path.find_by_slug(catalog_urn)
+    @catalog = path.content
+    
     @archive_catalog_study = ArchiveCatalogStudy.find(params[:archive_catalog_study_id]) if params[:archive_catalog_study_id]
 
     if @archive_catalog_study
