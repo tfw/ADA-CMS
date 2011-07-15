@@ -1,7 +1,6 @@
 <script type="text/javascript">
 $(document).ready(function() {
   $("#title-view-link").click(function() {
-    alert("title");
     $('#title-view-item').toggleClass('selected-menu-item', true);
     $('#ext-view-item').toggleClass('selected-menu-item', false);
     $('#browse-results-title').show();
@@ -9,7 +8,6 @@ $(document).ready(function() {
   });
 
   $("#ext-view-link").click(function() {
-    alert("ext");
     $('#title-view-item').toggleClass('selected-menu-item', false);
     $('#ext-view-item').toggleClass('selected-menu-item', true);
     $('#browse-results-ext').show();
