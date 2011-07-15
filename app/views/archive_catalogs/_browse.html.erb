@@ -1,19 +1,20 @@
-<script language="application/javascript">
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#studies-link").click(function() {
+    $('#study-results').show();
+    $('#study-facets').show();
+    $('#variable-results').hide();
+    $('#study-items').toggleClass('selected-tab', true);
+    $('#variable-items').toggleClass('selected-tab', false);
+  });
 
-	$("#studies-link").click(function() {
-	  $('#study-results').show();
-	  $('#study-facets').show();
-	  $('#variable-results').hide();
-		$('#study-items').toggleClass('selected-tab', true);
-		$('#variable-items').toggleClass('selected-tab', false);
-	});
-
-	$("#variables-link").click(function() {
-	  $('#variable-results').show();
-	  $('#study-results').hide();
-		$('#study-items').toggleClass('selected-tab', false);
-		$('#variable-items').toggleClass('selected-tab', true);
-	});
+  $("#variables-link").click(function() {
+    $('#variable-results').show();
+    $('#study-results').hide();
+    $('#study-items').toggleClass('selected-tab', false);
+    $('#variable-items').toggleClass('selected-tab', true);
+  });
+});
 </script>
 
 <p/>
