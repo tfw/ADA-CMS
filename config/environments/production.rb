@@ -49,5 +49,5 @@ Ada::Application.configure do
   config.active_support.deprecation = :notify
 end
 
-#OPENID_SERVER='http://178.79.149.181:81' # testada (somewhere in the UK)
-OPENID_SERVER='http://users.ada.edu.au'
+OPENID_SERVER='https://users.ada.edu.au'
+ADAPT_SERVER = "https://adapt.ada.edu.au"

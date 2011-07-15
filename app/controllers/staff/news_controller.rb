@@ -14,6 +14,14 @@ class Staff::NewsController < Staff::BaseController
       @assigned_archives = @news.archives
     end
   end
+  
+  def create
+    create! do |format|
+      format.html {
+        redirect_to staff_news_index_path
+        }
+    end
+  end
 
   def preview
     news = params[:news]

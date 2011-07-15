@@ -4,18 +4,8 @@
 
 <h2>ADA News</h2>
 
-<fieldset class="left half">
-  <legend> News Item Tasks </legend>
-  There are no current News Tasks
-</fieldset>
-
-<fieldset class="left half">
-  <legend>Newsletter Management </legend>
-  Create Newsletter
-</fieldset>
-
 <fieldset>
-  <legend id="news-management">News Item Management (<%= link_to '+', new_staff_news_path %>)</legend>
+  <legend id="news-management"> News Management <%= link_to image_tag('icons/newspaper_add.png'), new_staff_news_path, :id => "new-news-link" %></legend>
   <table>
     <thead>
       <tr>
