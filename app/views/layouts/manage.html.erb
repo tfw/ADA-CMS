@@ -14,14 +14,14 @@
    
   <header class="admin">
     <div class="login">
-			<h1>USER Log-in </h1>
+			<h1>USER Log-in</h1>
 			<form action="<%= logout_path %>" method="get" enctype="multipart/form-data" name="form2" class="formtastic">
 			  <div class="logged_in">
 			    <span><%= current_user.roles.first.name %>:</span>
 			    <%= current_user %>
-			    <%= link_to 'view profile', staff_user_path(current_user) %>
 			  </div>
 			  <input type="submit" alt="log out" value="LOG OUT" id="logout_button" />
+			  <div id="profile_button"><%= link_to 'view profile', staff_user_path(current_user) %></div>
 			</form>
 		</div>
 		
@@ -54,7 +54,7 @@
     </nav>
 
     
-	<section class="main">
+	<section class="main_admin">
 	  <div class="ada">
 
 			<% if flash[:notice]%>
@@ -71,7 +71,7 @@
 	</section>
 
 <!-- <section class='partners' id="admin_footer"> -->
-  <footer>
+  <footer class="footer_small">
     <p>&#xA9; Australian Data Archive<% if Rails.env.starts_with? "dev" %>,
       <em><%= deploy_log %></em>
     <% end %>

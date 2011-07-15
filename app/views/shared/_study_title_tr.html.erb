@@ -1,4 +1,4 @@
-<tr id="study-<%= study.stdy_id %>">
+<tr id="study-<%= study.stdy_id %>" class="<%= cycle('', 'alt') %>">
   <td> <%= link_to study.doc_title, study.for_archive(@current_archive).path.slug %> </td>
   <td> <%= study.stdy_auth_entity %> </td>
   <td> <%= study.stdy_prod_date %> </td>
