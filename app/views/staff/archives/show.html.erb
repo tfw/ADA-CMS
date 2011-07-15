@@ -4,7 +4,6 @@
 
 <%= render_archive_partial(@archive) %>
 
-(Drag a menu item above or beneath to order them).
   
 <fieldset id="menu-management">
   <legend> 
@@ -17,7 +16,8 @@
     <%= render(:partial => "menu_item", :collection => @parent_menu_items) %>
   </ul>
 
-  
+  <br/>
+  (Drag a menu item above or beneath to order them).    
 </fieldset>
 
 <% content_for :js do %>

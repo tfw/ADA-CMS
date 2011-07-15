@@ -12,7 +12,7 @@
         <th>News Item</th>
         <th>Archives</th>
         <th>Created</th>
-        <!-- <th>Published after</th> -->
+        <th>Author</th>
         <th></th>
       </tr>
     </thead>
@@ -23,7 +23,7 @@
         <!-- Need a helper here: -->
         <td> <%= raw(news.archive_news.map{|na| h(na.archive.name)}*'</br>') %> </td>
         <td> <%= time_ago_in_words(news.created_at) %> ago </td>
-        <!-- <td> <%= news.publish_at && news.publish_at.strftime("%a, %b %e at %l:%M") %> </td> -->
+        <td> <%= news.user %> </td>
         <td>
           <%= link_to 'Public View', news.archive_news.first.path.slug %>
           <%= link_to 'Edit', edit_staff_news_path(news) %>
