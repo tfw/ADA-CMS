@@ -76,6 +76,15 @@ a:hover {
 a:active {
 	color: #850323;
 }
+
+/* Text in legend tags doesn't wrap on some browsers. Fix this by nesting it in a span, like so:
+ * <legend><span>...</span></legend>
+ */
+legend span {
+	display: block;
+	white-space: normal;
+}
+
 .content article ul li:last-child {
 	padding-bottom: 10px;
 }
