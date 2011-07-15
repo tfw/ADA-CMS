@@ -40,7 +40,7 @@ module HelperMethods
     check(archive.name)
     fill_in("news_body_editor", :with => news_body)
     click_button("Create News")
-    current_path.sub(%r{.*/},'').to_i
+    News.find_by_title(news_title)
   end
 
   def upload_image(file_title, file_path)
@@ -48,7 +48,7 @@ module HelperMethods
     fill_in("image_title", :with => file_title)
     attach_file("image_resource", file_path)
     click_button("Create Image")
-    current_path.sub(%r{.*/},'').to_i
+    Image.find_by_title(file_title)
   end
 
   def upload_document(file_title, file_path)

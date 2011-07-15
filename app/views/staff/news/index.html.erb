@@ -20,7 +20,6 @@
       <%- @recent_news.each do |news| %>
       <tr id=<%= "newsrow-#{news.id}" %>>
         <td> <%= news.title %> </td>
-        <!-- Need a helper here: -->
         <td> <%= raw(news.archive_news.map{|na| h(na.archive.name)}*'</br>') %> </td>
         <td> <%= time_ago_in_words(news.created_at) %> ago </td>
         <td> <%= news.user %> </td>
