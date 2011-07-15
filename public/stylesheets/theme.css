@@ -7,9 +7,8 @@ legend {
 }
 .concealed {
 	display: none;
-/*	position: absolute;
-*/	top: 52px;
-	width: 100%;
+	/*position: absolute;*/
+	top: 52px;
 }
 
 /*Tabbing*/
@@ -27,8 +26,9 @@ legend {
 	padding-bottom: 0;
 	padding-left: 0;
 	margin: 0 0 10px 0;
-	float: left;
 	font-size: 11px;
+	display: block;
+	overflow: auto;
 }
 
 #tabs li, #sub-menu li {
@@ -127,14 +127,12 @@ legend {
 	border-bottom-width: 0px;
 	border-left-width: 0px;
 }
-	
+
 #search-results-ext, #browse-results-ext {
-	width: 100%;
 	border-collapse: collapse;
 	padding-top: 10px;
 	color: #666;
 	padding-bottom: 5px;
-	float: left;
 	border-top-width: 5px;
 	border-top-style: none;
 	border-right-style: none;
@@ -260,10 +258,11 @@ legend {
 
 #browse-tree, #study-facets {
 	float: left;
-	width: 150px;
+	min-width: 150px;
 	display: block;
 	z-index: 1;
 	padding-left: 40px;
+	margin-right: 20px;
 	position: relative;
 }
 
@@ -355,6 +354,7 @@ legend {
 	border-top-style: solid;
 	border-top-color: #E3E3E3;
 	font-weight: normal;
+	overflow: hidden;
 }
     
 
@@ -367,9 +367,7 @@ legend {
 }
 #browse-results-title, #study-results-title {
 	border-collapse: collapse;
-	width: 100%;
 	padding: 0px;
-	float: left;
 	border-top-width: 5px;
 	border-top-style: none;
 	border-right-style: none;
@@ -386,7 +384,6 @@ legend {
 	border-right-width: 0px;
 	border-bottom-width: 0px;
 	border-left-width: 0px;
-	display: inline-table;
 }
 
 /*.fake-tree a:hover{color:#ff0084;text-decoration:underline}.explr-line{border-left:1px dotted #999;border-bottom:1px dotted #999;height:22px;position:absolute;margin-left:0;margin-top:-12px;width:12px}.explr-line-fix{border-left:1px dotted #999}
