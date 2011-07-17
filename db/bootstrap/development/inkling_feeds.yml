@@ -26,3 +26,66 @@ inkling_feeds_003:
   source: ArchiveFeedsSource
   criteria: "--- \n\
     :archive_id: 3\n"
+inkling_feeds_004: 
+  id: "4"
+  created_at: 2011-07-17 23:34:45.349784
+  authors: Social Science
+  title: Social Science Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 1\n"
+inkling_feeds_005: 
+  id: "5"
+  created_at: 2011-07-17 23:34:45.384417
+  authors: Historical
+  title: Historical Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 2\n"
+inkling_feeds_006: 
+  id: "6"
+  created_at: 2011-07-17 23:34:45.399478
+  authors: Indigenous
+  title: Indigenous Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 3\n"
+inkling_feeds_007: 
+  id: "7"
+  created_at: 2011-07-17 23:34:45.416965
+  authors: Longitudinal
+  title: Longitudinal Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 4\n"
+inkling_feeds_008: 
+  id: "8"
+  created_at: 2011-07-17 23:34:45.425385
+  authors: Qualitative
+  title: Qualitative Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 5\n"
+inkling_feeds_009: 
+  id: "9"
+  created_at: 2011-07-17 23:34:45.432829
+  authors: International
+  title: International Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 6\n"
+inkling_feeds_010: 
+  id: "10"
+  created_at: 2011-07-17 23:34:45.458401
+  authors: ADA
+  title: ADA Feed
+  format: Inkling::Feeds::Atom
+  source: ArchiveFeedsSource
+  criteria: "--- \n\
+    :archive_id: 7\n"

@@ -8,7 +8,15 @@ require 'thinking_sphinx/tasks'
 Ada::Application.load_tasks
 
 namespace :ada do
-  task :rebuild => ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme"]
+  task :rebuild do
+    if ["development", "devs", "test"].includes? Rails.env
+      ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme"].each do |t|
+        Rake::Task[t].execute
+      end
+    else
+      puts "ada:rebuild isn't meant to run on staff, public, or any other production level environment."
+    end
+  end
 end
 
 task :restore_postgres do
