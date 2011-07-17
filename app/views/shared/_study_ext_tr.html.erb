@@ -1,47 +1,39 @@
 <tr>
-
-  <th colspan="4">
+  <td valign="top">
     <fieldset class="search-border">
       <% archive_study = study.for_archive(@current_archive) %>
-      <legend>
-        Study Title: <%= link_to study.doc_title, archive_study.path.slug %>
-      </legend>
+      <legend><span>Study Title: <%= link_to study.doc_title, archive_study.path.slug %></span></legend>
+
+      <table>
+	<tr>
+          <td>Authoring Entity: <% study.stdy_auth_entity %></td>
+          <td>Year: <%= study.stdy_prod_date %></td>
+          <td>Study ID: <%= study.stdy_id %></td>
+          <td align="center" valign="middle">
+	    <% for archive_study in study.archive_studies
+	         next if archive_study.archive == Archive.ada %>
+	      <a href="<%= archive_study.path.slug %>">
+                <%= archive_icon(archive_study.archive) %>
+		<span><%= archive_study.archive.name %></span>
+  	      </a>
+	      <!-- %= archive_study.archive.name % -->
+	    <% end %>
+	  </td>
+	</tr>
+      </table>
+
+      <p><strong>Abstract:</strong> <%= line_break_title(first_n_words(30, study.abstract_text), 15).html_safe %> </p>
+      <p><strong>Variables:</strong> <%= study.variables.size %> </p>
+      <% if hit %>
+        <p><strong>Relevance:</strong> <%= hit.score %></p>
+
+        <% for key in [:label, :abstract_text, :comment] %>
+          <% text = highlight_excerpt(hit.highlight(key)) %>
+	  <% unless text.nil? %>
+            <p><%= text %></p>
+	  <% end %>
+	<% end %>
+      <% end %>
     </fieldset>
-  </th>
-</tr>
-<tr class="alt">
-  <td>Authoring Entity: <% study.stdy_auth_entity %> </td>
-  <td>Year: <%= study.stdy_prod_date %> </td>
-  <td>Study ID: <%= study.ddi_id %> </td>
-  <td>
-    <% for archive_study in study.archive_studies
-      next if archive_study.archive == Archive.ada %>
-      <a href="<%= archive_study.path.slug %>">
-        <%= archive_icon(archive_study.archive) %>
-      </a>
-      <!-- %= archive_study.archive.name % -->
-    <% end %>
   </td>
 </tr>
-<tr>
-  <td colspan="4">
-    Abstract:
-    <%= line_break_title(first_n_words(30, study.abstract_text), 15).html_safe %>
-  </td>
-<tr/>
-<tr class="alt">
-  <td colspan="4">Variables: <%= study.variables.size %></td>
-<tr/>
-<% if hit %>
-  <tr>
-    <td colspan="4">Relevance: <%= hit.score %></td>
-  <tr/>
-  <% for key in [:label, :abstract_text, :comment] %>
-    <% text = highlight_excerpt(hit.highlight(key)) %>
-    <% unless text.nil? %>
-      <tr class="<%= cycle('', 'alt') %>">
-        <td colspan="4"><%= text %></td>
-      <tr/>
-    <% end %>
-  <% end %>
-<% end %>

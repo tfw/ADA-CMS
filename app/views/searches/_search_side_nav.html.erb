@@ -6,9 +6,9 @@ end %>
 
 <% content_for :sidenav do %>
 <nav>
-	<div id ="study-facets">
+  <div id="study-facets">
     <% @study_searches.each do |archive, search| %>
-      <h3><a href="#"><%= archive.name %></a></h3>
+      <h3 class="<%= archive.slug %>"><a href="#"><%= archive.name %></a></h3>
         <div>
   	      <% for facet in search.facets  %>
   					<% if facet.rows.any? %>

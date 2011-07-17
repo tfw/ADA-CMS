@@ -28,10 +28,9 @@
 <% end %>
 
 <div id="search-results">
-  Searching for <%= @term %> produced <%= @studies_search.total %> results.
+  <h1>Searching for <%= @term %> produced <%= @studies_search.total %> results.</h1>
 	
-	<br/>
-  Filters:  <%= filter_list("", params, true).html_safe %>
+  <p>Filters:  <%= filter_list("", params, true).html_safe %></p>
  
   <% unless @term %> Search requires a term. <% end %>
     
@@ -48,8 +47,6 @@
 			</span>
 		</span>
   <% end %>
-
-  <br/><br/>
 
 	<div id="tabs">
 	  <ul>
