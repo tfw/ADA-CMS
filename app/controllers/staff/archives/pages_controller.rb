@@ -50,7 +50,6 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   end
 
   #methods for remote call via ajax
-
   def update_tree
     new_parent_id = params[:new_parent]
     child_id      = params[:child]
