@@ -1,10 +1,12 @@
-//archive management
+//CSS done by TFW, mainly for unobtrusive js
 
-/*.content-controls{
-	text-align: right;
-	float:right;
-}*/
-
+//for the page tree
+/*button{
+  background: #fff;
+  border: solid 1px #000;
+  color: #000;
+}
+*/
 .tree-hover{
   background: #fdd;
 }
@@ -158,6 +160,17 @@ a#preview-link {
 	clear: left;
 }
 
+
+/*White boxes*/
+/*div#white-box{
+	background: white;
+	border: 1px solid #BABABA;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding: 10px;	
+}
+*/
 /* More work needed here for nice tables */
 .content-area table {
 	width: 95%;

@@ -1,9 +1,5 @@
 @charset "ISO-8859-1";
 
-nav ul {
-	font-size: 11px;
-}
-
 .subnav ul {
 	padding-left: 40px;
 }
@@ -85,7 +81,7 @@ nav ul {
 	background-image: url(../images/structure/menu_icon_ada.png);
 	font-weight: normal;
 }
-.content nav.archive_menu ul li.social-science a, .content nav #browse-tree .social-science a, .content nav #study-facets .social-science a, .content nav.archive_menu ul li.science a, .content nav #browse-tree .science a, .content nav #study-facets .science a  {
+.content nav.archive_menu ul li.science a, .content nav #browse-tree .science a, .content nav #study-facets .science a{
 	background-image: url(../images/structure/menu_icon_socialscience.png);
 }
 .content nav.archive_menu ul li.historical a, .content nav #browse-tree .historical a, .content nav #study-facets .historical a  {
@@ -108,6 +104,12 @@ nav ul {
 	background-image: url(../images/structure/menu_icon_international.png);
 	z-index: auto;
 }
+
+.content nav.archive_menu ul li.crime a, .content nav #browse-tree .crime a, .content nav #study-facets .crime_and_justice a  {
+	background-image: url(../images/structure/menu_icon_crime.png);
+	z-index: auto;
+}
+
 .content nav.archive_menu ul li.dashboard a {
 	background-image: url(../images/structure/menu_icon_home.png);
 	z-index: auto;
@@ -125,12 +127,12 @@ nav ul {
 	z-index: auto;
 }
 .content nav.archive_menu ul li.news a {
-	background-image: url(../images/icons/newspaper.png);
+	background-image: url(../images/structure/menu_icon_news.png);
 	z-index: auto;
 }
 
 .content nav.archive_menu ul li.adapt a {
-	background-image: url(../images/icons/adapt.png);
+	background-image: url(../images/structure/menu_icon_adapt.png);
 	z-index: auto;
 }
 

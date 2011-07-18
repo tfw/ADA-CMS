@@ -49,11 +49,8 @@
 	<div id="tabs">
 	  <ul>
 	    <li id="study-menu-item" <%= selected_tab_if(['study'], params[:show]) %>> <a id="study-fields-link">Study</a> </li>
-	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:show]) %>> <a id="variables-link">Variables</a> (<%= @study.variables.size %>) </li>
-
-  <% if study.related_materials.any? %>
-  	  <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:show]) %>> <a id="rms-link">Related Materials</a> (<%= @study.related_materials.size %>)</li>
-  <% end %>
+	    <li id="variables-menu-item" <%= selected_tab_if(['var'], params[:show]) %>> <a id="variables-link">Variables</a> (<%= @study.variables.count %>) </li>
+  	  <li id="rms-menu-item" <%= selected_tab_if(['rm'], params[:show]) %>> <a id="rms-link">Related Materials</a> (<%= @study.related_materials.count %>)</li>
 	  </ul>
 	</div>
 	

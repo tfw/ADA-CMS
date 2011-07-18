@@ -21,6 +21,7 @@ class Archive < ActiveRecord::Base
   LONGITUDINAL    = "Longitudinal"
   QUALITATIVE     = "Qualitative"
   INTERNATIONAL   = "International"
+  CRIME           = "Crime and Justice"
 
   def self.ada
     # @@ada_archive ||= self.find_by_name(ADA)
@@ -55,6 +56,10 @@ class Archive < ActiveRecord::Base
   def self.international
     # @@international_archive ||= self.find_by_name(INTERNATIONAL)
     self.find_by_name(INTERNATIONAL)
+  end
+  
+  def self.crime
+    self.find_by_name(CRIME)
   end
 
   def set_slug

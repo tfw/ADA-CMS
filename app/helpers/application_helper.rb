@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def archive_css(archive)
-    archive.name == "ADA" ? 'default' : archive.name.gsub(" ", "").underscore
+    archive.name == "ADA" ? 'default' : archive.name.gsub(" ", "_").downcase
   end
 
   def subarchive_home_page?
@@ -29,7 +29,7 @@ module ApplicationHelper
     image_tag("structure/icon_#{file_name}.png", :alt => archive.name)
   end
 
-  #outputs a deployment message for Product Owner to watch (so they now how fresh the code is)
+  #outputs a deployment message for Product Owner to watch (so they know how fresh the code is)
   def deploy_log
     if File.exists?("tmp/deploy-log.txt")
       log = File.read("tmp/deploy-log.txt")

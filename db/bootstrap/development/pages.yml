@@ -22,10 +22,9 @@ pages_001:
   partial: /pages/breakout_page
   lft: "111"
   rgt: "112"
+  state: 
   created_at: 2010-11-25 10:28:39.390517
   updated_at: 2010-11-25 10:28:39.390517
-  state: 
-
 pages_002: 
   id: "58"
   title: News
@@ -42,10 +41,9 @@ pages_002:
   partial: /pages/default_page
   lft: "139"
   rgt: "140"
+  state: 
   created_at: 2010-11-25 11:04:20.502845
   updated_at: 2010-11-25 11:04:20.502845
-  state: 
-
 pages_003: 
   id: "66"
   title: Catalogue
@@ -93,10 +91,9 @@ pages_003:
   partial: /pages/default_page
   lft: "73"
   rgt: "82"
+  state: 
   created_at: 2010-11-25 11:23:02.445767
   updated_at: 2011-06-23 09:23:17.719408
-  state: 
-
 pages_004: 
   id: "15"
   title: ADA Undertaking Forms
@@ -173,10 +170,9 @@ pages_004:
   partial: /pages/breakout_page
   lft: "30"
   rgt: "31"
+  state: 
   created_at: 2010-11-24 12:52:38.943683
   updated_at: 2011-07-12 13:05:36.766873
-  state: 
-
 pages_005: 
   id: "79"
   title: CJ2-1 RegNet
@@ -215,10 +211,9 @@ pages_005:
   partial: /pages/default_page
   lft: "77"
   rgt: "78"
+  state: 
   created_at: 2011-06-23 08:59:51.295346
   updated_at: 2011-06-23 09:10:39.738255
-  state: 
-
 pages_006: 
   id: "3"
   title: Home
@@ -244,10 +239,9 @@ pages_006:
   partial: /pages/home_page
   lft: "1"
   rgt: "2"
+  state: 
   created_at: 2010-11-24 09:15:14.658594
   updated_at: 2011-03-02 03:51:22.434159
-  state: 
-
 pages_007: 
   id: "48"
   title: Community
@@ -264,10 +258,9 @@ pages_007:
   partial: /pages/default_page
   lft: "117"
   rgt: "118"
+  state: 
   created_at: 2010-11-25 10:34:41.01338
   updated_at: 2010-11-25 10:34:41.01338
-  state: 
-
 pages_008: 
   id: "80"
   title: l1 Longitudinal Surveys of Australian Youth
@@ -321,10 +314,9 @@ pages_008:
   partial: /pages/default_page
   lft: "126"
   rgt: "127"
+  state: 
   created_at: 2011-06-23 10:03:37.785389
   updated_at: 2011-06-23 10:03:37.785389
-  state: 
-
 pages_009: 
   id: "69"
   title: Census 1966-1991
@@ -379,11 +371,57 @@ pages_009:
   partial: /pages/default_page
   lft: "7"
   rgt: "8"
+  state: 
   created_at: 2011-03-02 03:43:21.024076
   updated_at: 2011-03-02 03:54:23.190622
-  state: 
-
 pages_010: 
+  id: "55"
+  title: Longitudinal Studies
+  link_title: Longitudinal datasets
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Longitudinal Studies</h1>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	THIS IS A HOLDING PAGE FOR THE LONGITUDINAL DATASETS PAGE.</p>
+    <p>
+    	We need to figure out how to structure the relationship between the catalogue entries for longitudinal studies, and their support information.</p>
+    <p>
+    	&nbsp;</p>
+    <p>
+    	Studies to be included here are (with additions to come):</p>
+    <p>
+    	&nbsp;</p>
+    <ul>
+    	<li>
+    		Longitudinal Surveys of Australian Youth</li>
+    	<li>
+    		Australian Longitudinal Study on Women&#39;s Health</li>
+    	<li>
+    		Negotiating the Life Course</li>
+    	<li>
+    		Australian Longitudinal Survey of Ageing</li>
+    	<li>
+    		Longitudinal Survey of Immigrants to Australia</li>
+    	<li>
+    		Australia @ Work</li>
+    	<li>
+    		Professions In Australia</li>
+    </ul>
+
+  breakout_box: ""
+  parent_id: 
+  archive_id: "4"
+  partial: /pages/default_page
+  lft: "135"
+  rgt: "136"
+  state: 
+  created_at: 2010-11-25 10:51:32.308267
+  updated_at: 2010-11-25 11:06:26.061697
+pages_011: 
   id: "35"
   title: About
   link_title: nick's test
@@ -481,11 +519,10 @@ pages_010:
   partial: /pages/default_page
   lft: "95"
   rgt: "96"
+  state: 
   created_at: 2010-11-25 03:34:22.756164
   updated_at: 2011-06-20 12:23:33.004514
-  state: 
-
-pages_011: 
+pages_012: 
   id: "20"
   title: Deposit forms
   link_title: Deposit forms
@@ -522,11 +559,10 @@ pages_011:
   partial: /pages/breakout_page
   lft: "46"
   rgt: "47"
+  state: 
   created_at: 2010-11-24 13:04:10.621619
   updated_at: 2011-07-12 14:38:51.042366
-  state: 
-
-pages_012: 
+pages_013: 
   id: "44"
   title: Catalogue
   link_title: Catalogue
@@ -608,11 +644,10 @@ pages_012:
   partial: /pages/default_page
   lft: "109"
   rgt: "110"
+  state: 
   created_at: 2010-11-25 10:27:34.580851
   updated_at: 2011-06-23 10:34:17.474642
-  state: 
-
-pages_013: 
+pages_014: 
   id: "63"
   title: Completed Projects
   link_title: End-of-Career Archiving
@@ -634,11 +669,10 @@ pages_013:
   partial: /pages/default_page
   lft: "149"
   rgt: "150"
+  state: 
   created_at: 2010-11-25 11:18:18.025663
   updated_at: 2010-11-25 11:19:14.696386
-  state: 
-
-pages_014: 
+pages_015: 
   id: "6"
   title: Home
   link_title: Home
@@ -660,11 +694,50 @@ pages_014:
   partial: /pages/home_page
   lft: "19"
   rgt: "20"
+  state: 
   created_at: 2010-11-24 09:15:14.699423
   updated_at: 2010-11-26 01:48:27.480007
-  state: 
+pages_016: 
+  id: "16"
+  title: Data Deposit
+  link_title: Data Deposit
+  description: 
+  author_id: "1"
+  body: |
+    <h1>
+    	Depositing data with ADA</h1>
+    <p>
+    	The Australian Data Archive urges all researchers and research groups to take the opportunity of having their data professionally archived.</p>
+    <p>
+    	The ADA data deposit pages provide advice on:</p>
+    <ul>
+    	<li>
+    		<a href="/ada/why-deposit-data-">Why you should deposit your data</a>: the benefits of data archiving and sharing</li>
+    	<li>
+    		<a href="/ada/how-to-deposit-data">How to deposit your data with ADA</a></li>
+    	<li>
+    		Determining <a href="/ada/sharing-data-and-access-conditions">conditions for access</a> to your data</li>
+    </ul>
+    <p>
+    	If the information provided here does not address your questions, please don&#39;t hesitate to <a href="mailto:ada@anu.edu.au">contact us</a>.</p>
 
-pages_015: 
+  breakout_box: |
+    <h2>
+    	Interested in depositing data with ADA?</h2>
+    <p>
+    	If you would like to discuss depositing your data with the Australian Data Archive, please contact us at <a href="mailto:ada@anu.edu.au?subject=Depositing%20Data%20with%20ADA">ada@anu.edu.au</a>.</p>
+    <p>
+    	With a network of archivists based in most Australian states, we can provide local information and assistance on how to prepare your data and documentation for deposit with the archive.</p>
+
+  parent_id: 
+  archive_id: "7"
+  partial: /pages/breakout_page
+  lft: "39"
+  rgt: "48"
+  state: 
+  created_at: 2010-11-24 12:54:18.193391
+  updated_at: 2011-07-12 14:20:34.729004
+pages_017: 
   id: "68"
   title: HCCDA
   link_title: Historical Census and Colonial Data Archive
@@ -704,11 +777,10 @@ pages_015:
   partial: /pages/default_page
   lft: "9"
   rgt: "10"
+  state: 
   created_at: 2011-03-02 03:33:44.032041
   updated_at: 2011-06-20 23:47:59.406075
-  state: 
-
-pages_016: 
+pages_018: 
   id: "71"
   title: NCJRDN Tools
   link_title: Tools
@@ -758,11 +830,10 @@ pages_016:
   partial: /pages/breakout_page
   lft: "85"
   rgt: "86"
+  state: 
   created_at: 2011-06-20 12:13:27.43929
   updated_at: 2011-06-20 13:18:53.157401
-  state: 
-
-pages_017: 
+pages_019: 
   id: "10"
   title: Subarchives
   link_title: Subarchives
@@ -779,11 +850,10 @@ pages_017:
   partial: /pages/default_page
   lft: "23"
   rgt: "24"
+  state: 
   created_at: 2010-11-24 12:30:44.100357
   updated_at: 2011-07-11 06:56:18.933181
-  state: 
-
-pages_018: 
+pages_020: 
   id: "23"
   title: Contact
   link_title: Contact
@@ -799,11 +869,10 @@ pages_018:
   partial: /pages/default_page
   lft: "53"
   rgt: "54"
+  state: 
   created_at: 2010-11-24 13:08:31.834604
   updated_at: 2011-02-23 02:46:56.778952
-  state: 
-
-pages_019: 
+pages_021: 
   id: "53"
   title: Creating Data
   link_title: Creating Data
@@ -826,11 +895,10 @@ pages_019:
   partial: /pages/breakout_page
   lft: "129"
   rgt: "130"
+  state: 
   created_at: 2010-11-25 10:43:17.606898
   updated_at: 2010-11-25 10:45:48.753602
-  state: 
-
-pages_020: 
+pages_022: 
   id: "28"
   title: Catalogue
   link_title: Catalogue
@@ -850,11 +918,10 @@ pages_020:
   partial: /pages/default_page
   lft: "61"
   rgt: "62"
+  state: 
   created_at: 2010-11-24 21:46:25.263317
   updated_at: 2010-11-24 21:46:25.263317
-  state: 
-
-pages_021: 
+pages_023: 
   id: "74"
   title: User Guides
   link_title: user-guides
@@ -888,11 +955,10 @@ pages_021:
   partial: /pages/default_page
   lft: "91"
   rgt: "92"
+  state: 
   created_at: 2011-06-20 15:12:28.781666
   updated_at: 2011-06-20 15:12:45.728138
-  state: 
-
-pages_022: 
+pages_024: 
   id: "47"
   title: Protocols
   link_title: Protocols
@@ -908,11 +974,10 @@ pages_022:
   partial: /pages/default_page
   lft: "115"
   rgt: "116"
+  state: 
   created_at: 2010-11-25 10:31:49.017228
   updated_at: 2010-11-25 10:32:30.005038
-  state: 
-
-pages_023: 
+pages_025: 
   id: "57"
   title: User Guides
   link_title: User Guides
@@ -928,11 +993,10 @@ pages_023:
   partial: /pages/default_page
   lft: "137"
   rgt: "138"
+  state: 
   created_at: 2010-11-25 11:03:56.131984
   updated_at: 2010-11-25 11:03:56.131984
-  state: 
-
-pages_024: 
+pages_026: 
   id: "8"
   title: About
   link_title: Test1
@@ -996,11 +1060,10 @@ pages_024:
   partial: /pages/breakout_page
   lft: "13"
   rgt: "14"
+  state: 
   created_at: 2010-11-24 09:39:55.846072
   updated_at: 2011-07-11 06:47:12.809149
-  state: 
-
-pages_025: 
+pages_027: 
   id: "17"
   title: Why Deposit Data?
   link_title: Why Deposit Data?
@@ -1072,11 +1135,10 @@ pages_025:
   partial: /pages/breakout_page
   lft: "44"
   rgt: "45"
+  state: 
   created_at: 2010-11-24 12:58:08.407768
   updated_at: 2011-07-13 12:07:34.785722
-  state: 
-
-pages_026: 
+pages_028: 
   id: "27"
   title: About
   link_title: About
@@ -1118,11 +1180,10 @@ pages_026:
   partial: /pages/default_page
   lft: "59"
   rgt: "60"
+  state: 
   created_at: 2010-11-24 21:42:35.405111
   updated_at: 2010-11-24 21:42:35.405111
-  state: 
-
-pages_027: 
+pages_029: 
   id: "76"
   title: CJ2-2 CEPS
   link_title: CEPS
@@ -1143,11 +1204,10 @@ pages_027:
   partial: /pages/default_page
   lft: "79"
   rgt: "80"
+  state: 
   created_at: 2011-06-20 23:34:38.64538
   updated_at: 2011-06-23 09:10:20.568935
-  state: 
-
-pages_028: 
+pages_030: 
   id: "12"
   title: Browse ADA Catalogue
   link_title: Browse ADA Catalogue
@@ -1165,100 +1225,29 @@ pages_028:
   partial: /pages/default_page
   lft: "28"
   rgt: "29"
+  state: 
   created_at: 2010-11-24 12:46:30.831547
   updated_at: 2011-02-23 02:36:56.166955
-  state: 
-
-pages_029: 
-  id: "55"
-  title: Longitudinal Studies
-  link_title: Longitudinal datasets
+pages_031: 
+  id: "67"
+  title: Other Tabs TBD
+  link_title: Other Tabs TBD
   description: 
   author_id: "1"
   body: |
-    <h1>
-    	Longitudinal Studies</h1>
     <p>
-    	&nbsp;</p>
-    <p>
-    	THIS IS A HOLDING PAGE FOR THE LONGITUDINAL DATASETS PAGE.</p>
-    <p>
-    	We need to figure out how to structure the relationship between the catalogue entries for longitudinal studies, and their support information.</p>
-    <p>
-    	&nbsp;</p>
-    <p>
-    	Studies to be included here are (with additions to come):</p>
-    <p>
-    	&nbsp;</p>
-    <ul>
-    	<li>
-    		Longitudinal Surveys of Australian Youth</li>
-    	<li>
-    		Australian Longitudinal Study on Women&#39;s Health</li>
-    	<li>
-    		Negotiating the Life Course</li>
-    	<li>
-    		Australian Longitudinal Survey of Ageing</li>
-    	<li>
-    		Longitudinal Survey of Immigrants to Australia</li>
-    	<li>
-    		Australia @ Work</li>
-    	<li>
-    		Professions In Australia</li>
-    </ul>
+    	WE NEED TO DETERMINE APPROPRIATE TABS FOR THE INTERNATIONAL ARCHIVE.</p>
 
   breakout_box: ""
   parent_id: 
-  archive_id: "4"
+  archive_id: "6"
   partial: /pages/default_page
-  lft: "135"
-  rgt: "136"
-  created_at: 2010-11-25 10:51:32.308267
-  updated_at: 2010-11-25 11:06:26.061697
+  lft: "97"
+  rgt: "98"
   state: 
-
-pages_030: 
-  id: "16"
-  title: Data Deposit
-  link_title: Data Deposit
-  description: 
-  author_id: "1"
-  body: |
-    <h1>
-    	Depositing data with ADA</h1>
-    <p>
-    	The Australian Data Archive urges all researchers and research groups to take the opportunity of having their data professionally archived.</p>
-    <p>
-    	The ADA data deposit pages provide advice on:</p>
-    <ul>
-    	<li>
-    		<a href="/ada/why-deposit-data-">Why you should deposit your data</a>: the benefits of data archiving and sharing</li>
-    	<li>
-    		<a href="/ada/how-to-deposit-data">How to deposit your data with ADA</a></li>
-    	<li>
-    		Determining <a href="/ada/sharing-data-and-access-conditions">conditions for access</a> to your data</li>
-    </ul>
-    <p>
-    	If the information provided here does not address your questions, please don&#39;t hesitate to <a href="mailto:ada@anu.edu.au">contact us</a>.</p>
-
-  breakout_box: |
-    <h2>
-    	Interested in depositing data with ADA?</h2>
-    <p>
-    	If you would like to discuss depositing your data with the Australian Data Archive, please contact us at <a href="mailto:ada@anu.edu.au?subject=Depositing%20Data%20with%20ADA">ada@anu.edu.au</a>.</p>
-    <p>
-    	With a network of archivists based in most Australian states, we can provide local information and assistance on how to prepare your data and documentation for deposit with the archive.</p>
-
-  parent_id: 
-  archive_id: "7"
-  partial: /pages/breakout_page
-  lft: "39"
-  rgt: "48"
-  created_at: 2010-11-24 12:54:18.193391
-  updated_at: 2011-07-12 14:20:34.729004
-  state: 
-
-pages_031: 
+  created_at: 2010-11-25 11:24:49.666445
+  updated_at: 2010-11-25 11:24:49.666445
+pages_032: 
   id: "70"
   title: Criminal Justice
   link_title: Crime
@@ -1298,11 +1287,10 @@ pages_031:
   partial: /pages/breakout_page
   lft: "83"
   rgt: "84"
+  state: 
   created_at: 2011-06-20 12:07:52.107909
   updated_at: 2011-06-21 02:00:58.579179
-  state: 
-
-pages_032: 
+pages_033: 
   id: "72"
   title: Law and Justice
   link_title: Policing and Security
@@ -1333,11 +1321,10 @@ pages_032:
   partial: /pages/default_page
   lft: "87"
   rgt: "90"
+  state: 
   created_at: 2011-06-20 12:18:09.513742
   updated_at: 2011-06-20 23:33:16.354242
-  state: 
-
-pages_033: 
+pages_034: 
   id: "54"
   title: Using Data
   link_title: Using Data
@@ -1360,11 +1347,10 @@ pages_033:
   partial: /pages/breakout_page
   lft: "131"
   rgt: "132"
+  state: 
   created_at: 2010-11-25 10:45:13.40924
   updated_at: 2010-11-25 10:45:13.40924
-  state: 
-
-pages_034: 
+pages_035: 
   id: "43"
   title: About
   link_title: About
@@ -1380,11 +1366,10 @@ pages_034:
   partial: /pages/default_page
   lft: "107"
   rgt: "108"
+  state: 
   created_at: 2010-11-25 10:27:06.414842
   updated_at: 2010-11-25 10:37:16.349891
-  state: 
-
-pages_035: 
+pages_036: 
   id: "52"
   title: Catalogue
   link_title: Catalogue
@@ -1400,11 +1385,10 @@ pages_035:
   partial: /pages/default_page
   lft: "125"
   rgt: "128"
+  state: 
   created_at: 2010-11-25 10:41:50.472092
   updated_at: 2010-11-25 10:41:50.472092
-  state: 
-
-pages_036: 
+pages_037: 
   id: "14"
   title: Register for ADA
   link_title: Register for ADA
@@ -1424,11 +1408,10 @@ pages_036:
   partial: /pages/default_page
   lft: "32"
   rgt: "33"
+  state: 
   created_at: 2010-11-24 12:49:51.450729
   updated_at: 2011-02-23 02:36:56.153152
-  state: 
-
-pages_037: 
+pages_038: 
   id: "59"
   title: About
   link_title: About
@@ -1452,11 +1435,10 @@ pages_037:
   partial: /pages/default_page
   lft: "141"
   rgt: "142"
+  state: 
   created_at: 2010-11-25 11:11:59.045623
   updated_at: 2010-11-25 11:11:59.045623
-  state: 
-
-pages_038: 
+pages_039: 
   id: "32"
   title: Themed Data
   link_title: Themed Data
@@ -1487,11 +1469,10 @@ pages_038:
   partial: /pages/default_page
   lft: "67"
   rgt: "68"
+  state: 
   created_at: 2010-11-24 21:57:42.190703
   updated_at: 2010-11-25 05:10:12.612598
-  state: 
-
-pages_039: 
+pages_040: 
   id: "46"
   title: Using Data
   link_title: Using Data
@@ -1516,11 +1497,10 @@ pages_039:
   partial: /pages/breakout_page
   lft: "113"
   rgt: "114"
+  state: 
   created_at: 2010-11-25 10:29:35.242171
   updated_at: 2010-11-25 10:31:01.758949
-  state: 
-
-pages_040: 
+pages_041: 
   id: "82"
   title: Special Access Requests
   link_title: Special Access Requests
@@ -1545,11 +1525,10 @@ pages_040:
   partial: /pages/default_page
   lft: "36"
   rgt: "37"
+  state: 
   created_at: 2011-07-12 12:40:41.70755
   updated_at: 2011-07-12 13:13:43.200472
-  state: 
-
-pages_041: 
+pages_042: 
   id: "4"
   title: Home
   link_title: Home
@@ -1574,30 +1553,9 @@ pages_041:
   partial: /pages/home_page
   lft: "15"
   rgt: "16"
+  state: 
   created_at: 2010-11-24 09:15:14.671645
   updated_at: 2010-11-26 01:55:24.176659
-  state: 
-
-pages_042: 
-  id: "67"
-  title: Other Tabs TBD
-  link_title: Other Tabs TBD
-  description: 
-  author_id: "1"
-  body: |
-    <p>
-    	WE NEED TO DETERMINE APPROPRIATE TABS FOR THE INTERNATIONAL ARCHIVE.</p>
-
-  breakout_box: ""
-  parent_id: 
-  archive_id: "6"
-  partial: /pages/default_page
-  lft: "97"
-  rgt: "98"
-  created_at: 2010-11-25 11:24:49.666445
-  updated_at: 2010-11-25 11:24:49.666445
-  state: 
-
 pages_043: 
   id: "26"
   title: Home
@@ -1617,10 +1575,9 @@ pages_043:
   partial: /pages/home_page
   lft: "57"
   rgt: "58"
+  state: 
   created_at: 2010-11-24 21:40:53.958685
   updated_at: 2010-11-26 01:49:16.178569
-  state: 
-
 pages_044: 
   id: "61"
   title: Creating Data
@@ -1661,10 +1618,9 @@ pages_044:
   partial: /pages/default_page
   lft: "145"
   rgt: "146"
+  state: 
   created_at: 2010-11-25 11:14:07.685543
   updated_at: 2011-06-21 03:25:15.715052
-  state: 
-
 pages_045: 
   id: "33"
   title: User Guides
@@ -1683,10 +1639,9 @@ pages_045:
   partial: /pages/default_page
   lft: "69"
   rgt: "70"
+  state: 
   created_at: 2010-11-24 21:58:22.231258
   updated_at: 2011-02-23 02:48:42.126921
-  state: 
-
 pages_046: 
   id: "34"
   title: News
@@ -1705,10 +1660,9 @@ pages_046:
   partial: /pages/default_page
   lft: "71"
   rgt: "72"
+  state: 
   created_at: 2010-11-24 21:59:15.300457
   updated_at: 2010-11-24 21:59:15.300457
-  state: 
-
 pages_047: 
   id: "22"
   title: ADA News
@@ -1727,10 +1681,9 @@ pages_047:
   partial: /pages/default_page
   lft: "51"
   rgt: "52"
+  state: 
   created_at: 2010-11-24 13:07:31.311482
   updated_at: 2011-02-23 02:46:44.875984
-  state: 
-
 pages_048: 
   id: "29"
   title: Creating Data
@@ -1771,10 +1724,9 @@ pages_048:
   partial: /pages/breakout_page
   lft: "63"
   rgt: "64"
+  state: 
   created_at: 2010-11-24 21:48:37.750452
   updated_at: 2010-11-24 21:48:37.750452
-  state: 
-
 pages_049: 
   id: "13"
   title: Search ADA
@@ -1833,10 +1785,9 @@ pages_049:
   partial: /pages/breakout_page
   lft: "26"
   rgt: "27"
+  state: 
   created_at: 2010-11-24 12:47:30.70379
   updated_at: 2011-07-11 23:51:21.262321
-  state: 
-
 pages_050: 
   id: "81"
   title: Access conditions
@@ -1976,10 +1927,9 @@ pages_050:
   partial: /pages/breakout_page
   lft: "34"
   rgt: "35"
+  state: 
   created_at: 2011-07-11 08:18:18.5445
   updated_at: 2011-07-12 13:48:58.255488
-  state: 
-
 pages_051: 
   id: "75"
   title: News
@@ -1996,10 +1946,9 @@ pages_051:
   partial: /pages/default_page
   lft: "93"
   rgt: "94"
+  state: 
   created_at: 2011-06-20 23:32:04.568244
   updated_at: 2011-06-20 23:32:04.568244
-  state: 
-
 pages_052: 
   id: "64"
   title: User Guides
@@ -2016,10 +1965,9 @@ pages_052:
   partial: /pages/default_page
   lft: "151"
   rgt: "152"
+  state: 
   created_at: 2010-11-25 11:20:05.234581
   updated_at: 2010-11-25 11:20:05.234581
-  state: 
-
 pages_053: 
   id: "42"
   title: News
@@ -2036,10 +1984,9 @@ pages_053:
   partial: /pages/default_page
   lft: "105"
   rgt: "106"
+  state: 
   created_at: 2010-11-25 10:18:00.303517
   updated_at: 2010-11-25 10:18:00.303517
-  state: 
-
 pages_054: 
   id: "36"
   title: About
@@ -2056,10 +2003,9 @@ pages_054:
   partial: /pages/default_page
   lft: "3"
   rgt: "4"
+  state: 
   created_at: 2010-11-25 10:01:00.618844
   updated_at: 2010-11-25 10:01:00.618844
-  state: 
-
 pages_055: 
   id: "51"
   title: About
@@ -2080,10 +2026,9 @@ pages_055:
   partial: /pages/default_page
   lft: "123"
   rgt: "124"
+  state: 
   created_at: 2010-11-25 10:41:08.739756
   updated_at: 2010-11-25 10:41:25.85336
-  state: 
-
 pages_056: 
   id: "49"
   title: User Guides
@@ -2100,10 +2045,9 @@ pages_056:
   partial: /pages/default_page
   lft: "119"
   rgt: "120"
+  state: 
   created_at: 2010-11-25 10:35:41.244162
   updated_at: 2010-11-25 10:35:41.244162
-  state: 
-
 pages_057: 
   id: "7"
   title: Home
@@ -2161,10 +2105,9 @@ pages_057:
   partial: /pages/home_page
   lft: "21"
   rgt: "22"
+  state: 
   created_at: 2010-11-24 09:15:14.712612
   updated_at: 2011-06-21 01:51:21.285495
-  state: 
-
 pages_058: 
   id: "37"
   title: Catalogue
@@ -2181,10 +2124,9 @@ pages_058:
   partial: /pages/default_page
   lft: "5"
   rgt: "6"
+  state: 
   created_at: 2010-11-25 10:01:51.237683
   updated_at: 2010-11-25 10:01:51.237683
-  state: 
-
 pages_059: 
   id: "18"
   title: Sharing data and access conditions
@@ -2201,10 +2143,9 @@ pages_059:
   partial: /pages/default_page
   lft: "42"
   rgt: "43"
+  state: 
   created_at: 2010-11-24 13:00:01.03464
   updated_at: 2011-02-23 02:36:56.135753
-  state: 
-
 pages_060: 
   id: "73"
   title: Civil Justice
@@ -2218,10 +2159,9 @@ pages_060:
   partial: /pages/breakout_page
   lft: "88"
   rgt: "89"
+  state: 
   created_at: 2011-06-20 12:32:58.727899
   updated_at: 2011-06-20 23:33:35.180221
-  state: 
-
 pages_061: 
   id: "56"
   title: Visualisation
@@ -2238,10 +2178,9 @@ pages_061:
   partial: /pages/default_page
   lft: "133"
   rgt: "134"
+  state: 
   created_at: 2010-11-25 11:02:41.654233
   updated_at: 2010-11-25 11:02:41.654233
-  state: 
-
 pages_062: 
   id: "39"
   title: Using Data
@@ -2265,10 +2204,9 @@ pages_062:
   partial: /pages/breakout_page
   lft: "101"
   rgt: "102"
+  state: 
   created_at: 2010-11-25 10:06:15.241045
   updated_at: 2010-11-25 10:06:15.241045
-  state: 
-
 pages_063: 
   id: "62"
   title: Using Data
@@ -2304,10 +2242,9 @@ pages_063:
   partial: /pages/default_page
   lft: "147"
   rgt: "148"
+  state: 
   created_at: 2010-11-25 11:16:23.777611
   updated_at: 2010-11-25 11:16:23.777611
-  state: 
-
 pages_064: 
   id: "41"
   title: User Guides
@@ -2324,10 +2261,9 @@ pages_064:
   partial: /pages/default_page
   lft: "103"
   rgt: "104"
+  state: 
   created_at: 2010-11-25 10:17:32.08885
   updated_at: 2010-11-25 10:17:32.08885
-  state: 
-
 pages_065: 
   id: "50"
   title: News
@@ -2344,10 +2280,9 @@ pages_065:
   partial: /pages/default_page
   lft: "121"
   rgt: "122"
+  state: 
   created_at: 2010-11-25 10:36:10.319176
   updated_at: 2010-11-25 10:36:10.319176
-  state: 
-
 pages_066: 
   id: "11"
   title: Data Access
@@ -2436,10 +2371,9 @@ pages_066:
   partial: /pages/breakout_page
   lft: "25"
   rgt: "38"
+  state: 
   created_at: 2010-11-24 12:32:03.602175
   updated_at: 2011-07-11 23:41:11.336841
-  state: 
-
 pages_067: 
   id: "21"
   title: User Guides
@@ -2460,10 +2394,9 @@ pages_067:
   partial: /pages/breakout_page
   lft: "49"
   rgt: "50"
+  state: 
   created_at: 2010-11-24 13:06:40.2627
   updated_at: 2011-07-12 14:25:44.314178
-  state: 
-
 pages_068: 
   id: "38"
   title: Creating Data
@@ -2485,10 +2418,9 @@ pages_068:
   partial: /pages/breakout_page
   lft: "99"
   rgt: "100"
+  state: 
   created_at: 2010-11-25 10:04:17.50621
   updated_at: 2010-11-25 10:04:17.50621
-  state: 
-
 pages_069: 
   id: "78"
   title: CJ2-Law and Justice
@@ -2540,10 +2472,9 @@ pages_069:
   partial: /pages/default_page
   lft: "76"
   rgt: "81"
+  state: 
   created_at: 2011-06-23 08:35:44.903796
   updated_at: 2011-06-23 09:11:55.688807
-  state: 
-
 pages_070: 
   id: "19"
   title: How to deposit data
@@ -2643,10 +2574,9 @@ pages_070:
   partial: /pages/breakout_page
   lft: "40"
   rgt: "41"
+  state: 
   created_at: 2010-11-24 13:00:59.602251
   updated_at: 2011-07-12 14:43:59.939632
-  state: 
-
 pages_071: 
   id: "60"
   title: Catalogue
@@ -2665,10 +2595,9 @@ pages_071:
   partial: /pages/default_page
   lft: "143"
   rgt: "144"
+  state: 
   created_at: 2010-11-25 11:12:48.810893
   updated_at: 2010-11-25 11:12:48.810893
-  state: 
-
 pages_072: 
   id: "65"
   title: News
@@ -2685,10 +2614,9 @@ pages_072:
   partial: /pages/default_page
   lft: "153"
   rgt: "154"
+  state: 
   created_at: 2010-11-25 11:20:41.698186
   updated_at: 2010-11-25 11:20:41.698186
-  state: 
-
 pages_073: 
   id: "5"
   title: Home
@@ -2727,10 +2655,9 @@ pages_073:
   partial: /pages/home_page
   lft: "17"
   rgt: "18"
+  state: 
   created_at: 2010-11-24 09:15:14.686228
   updated_at: 2010-11-26 01:57:08.472824
-  state: 
-
 pages_074: 
   id: "30"
   title: Using Data
@@ -2766,10 +2693,9 @@ pages_074:
   partial: /pages/breakout_page
   lft: "65"
   rgt: "66"
+  state: 
   created_at: 2010-11-24 21:51:42.777809
   updated_at: 2010-11-24 21:51:42.777809
-  state: 
-
 pages_075: 
   id: "77"
   title: CJ1-Crime
@@ -2860,10 +2786,9 @@ pages_075:
   partial: /pages/default_page
   lft: "74"
   rgt: "75"
+  state: 
   created_at: 2011-06-23 08:03:22.512286
   updated_at: 2011-06-23 08:45:52.433028
-  state: 
-
 pages_076: 
   id: "24"
   title: My Account
@@ -2884,10 +2809,9 @@ pages_076:
   partial: /pages/breakout_page
   lft: "55"
   rgt: "56"
+  state: 
   created_at: 2010-11-24 13:09:39.969442
   updated_at: 2011-02-23 02:47:08.972278
-  state: 
-
 pages_077: 
   id: "1"
   title: Home
@@ -2931,7 +2855,6 @@ pages_077:
   partial: /pages/breakout_page
   lft: "11"
   rgt: "12"
+  state: 
   created_at: 2010-11-24 09:15:14.613667
   updated_at: 2011-02-23 02:46:18.333818
-  state: 
-

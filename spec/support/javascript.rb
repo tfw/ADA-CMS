@@ -27,7 +27,7 @@ RSpec.configure do |config|
   
     make_user(:administrator)
   
-    ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International"].each do |archive_name|
+    ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International", "Crime and Justice"].each do |archive_name|
       if Archive.find_by_name(archive_name).nil?
         archive = Archive.new(:name => archive_name)
         archive.save!

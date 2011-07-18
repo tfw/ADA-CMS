@@ -204,10 +204,6 @@ aside{
 
 }
 
-.partners.small .captions, .partners.small .logos {
-	display: none;
-}
-
 footer {
 	border-top: 1px solid #d5d5ca;
 	background: #E8E8E8;
@@ -346,7 +342,7 @@ footer p {
 	width: 430px;
 	margin-right: 20px;
 }
-.crime .content section.main aside {
+.crime_and_justice .content section.main aside {
 	float: left;
 	margin-left: 0px;
 	width: 430px;
@@ -361,6 +357,14 @@ footer p {
 	font-weight: normal;
 	padding-bottom: 10px;
 	color: #000;
+}
+#search-results-ext tr td table tr td{
+	height: 10px;
+	width: 270px;
+	float: left;
+	padding-top: 2px;
+	border-bottom: 1px solid #999;
+	padding-bottom: 10px;
 }
 
 .logged_in {

@@ -1,4 +1,4 @@
-.searchContainer .formtastic #search_term {
+.searchContainer .formtastic #search_term{
 	border-style: none;
 	height: 42px!important;
 	width: 112px;
@@ -69,7 +69,7 @@
 	float: right;
 	background: #666;
 	padding: 8px;
-	font: 9px/13px Arial, Helvetica, sans-serif;
+	font: 9px Arial, Helvetica, sans-serif;
 	color: #CCC;
 	border-style: none;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
@@ -113,7 +113,7 @@
 	float: right;
 	background: #666;
 	padding: 8px;
-	font: 9px/13px Arial, Helvetica, sans-serif;
+	font: 9px Arial, Helvetica, sans-serif;
 	color: #CCC;
 	border-style: none;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
