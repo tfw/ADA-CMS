@@ -1,0 +1,130 @@
+.searchContainer .formtastic #search_term{
+	border-style: none;
+	height: 42px!important;
+	width: 112px;
+	padding-left: 5px;
+	background-color:transparent
+}
+
+.formtastic #search_button {
+	margin: 0px;
+	padding: 8px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CCC;
+	text-transform: uppercase;
+}
+.formtastic #login_name {
+	border-style: none;
+	width: 123px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	margin-right: 5px;
+	height: 23px;
+}
+.formtastic #login_pass {
+	border-style: none;
+	width: 122px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+	margin-right: 5px;
+	height: 23px;
+}
+/*.formtastic label {
+	text-align: right;
+	float: left;
+	margin-top: 10px;
+	padding-right: 5px;
+	line-height: 1;
+	font-size: 11px;
+}*/
+
+.formtastic #register_button {
+	float: right;
+	background: #666;
+	padding: 8px;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #FFF;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#217a38), to(#113d1d));
+	background: -moz-linear-gradient(#217a38, #113d1d);
+	background: linear-gradient(#217a38, #113d1d);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	margin: 5px 5px 5px 0px;
+}
+
+.formtastic #logout_button {
+	margin: 5px 5px 5px 0px;
+	float: right;
+	background: #666;
+	padding: 8px;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #CCC;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.formtastic #enter_button {
+	margin: 5px 5px 5px 0px;
+	float: right;
+	background: #666;
+	padding: 8px;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #CCC;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.formtastic #register_button:hover, .formtastic #enter_button:hover, .formtastic #logout_button:hover, .formtastic #search_button:hover, .formtastic #profile_button:hover {
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(#666, #000);
+	background: linear-gradient(#666, #000);
+}
+.formtastic #rember_me {
+	display: block;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+.formtastic #profile_button {
+	margin: 5px 5px 5px 0px;
+	float: right;
+	background: #666;
+	padding: 8px;
+	font: 9px Arial, Helvetica, sans-serif;
+	color: #CCC;
+	border-style: none;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(#666, #333);
+	background: linear-gradient(#666, #333);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+.formtastic #profile_button a {
+	color: #CCC;
+	text-decoration: none;	
+}
