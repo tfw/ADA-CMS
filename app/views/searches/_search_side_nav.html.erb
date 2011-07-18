@@ -8,7 +8,7 @@ end %>
 <nav>
   <div id="study-facets">
     <% @study_searches.each do |archive, search| %>
-      <h3 class="<%= archive.slug %>"><a href="#"><%= archive.name %></a></h3>
+      <h3 class="<%= archive_css(archive) %>"><a href="#"><%= archive.name %></a></h3>
         <div>
   	      <% for facet in search.facets  %>
   					<% if facet.rows.any? %>

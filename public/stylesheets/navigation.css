@@ -77,10 +77,11 @@
 	background-color: #e4e4e4;
 }
 
-.content nav.archive_menu ul li.ada a, .content nav #study-facets .ada a {
+.content nav.archive_menu ul li.ada a, .content nav #study-facets .default a {
 	background-image: url(../images/structure/menu_icon_ada.png);
 	font-weight: normal;
 }
+
 .content nav.archive_menu ul li.social_science a, .content nav #browse-tree .social_science a, .content nav #study-facets .social_science a{
 	background-image: url(../images/structure/menu_icon_socialscience.png);
 }
@@ -105,7 +106,7 @@
 	z-index: auto;
 }
 
-.content nav.archive_menu ul li.crime a, .content nav #browse-tree .crime a, .content nav #study-facets .crime_and_justice a  {
+.content nav.archive_menu ul li.crime_and_justice a, .content nav #browse-tree .crime_and_justice a, .content nav #study-facets .crime_and_justice a  {
 	background-image: url(../images/structure/menu_icon_crime.png);
 	z-index: auto;
 }

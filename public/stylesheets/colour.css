@@ -255,7 +255,7 @@
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 }
-.crime_and_justice.mainnav.clearfix ul .current {
+.crime_and_justice .mainnav.clearfix ul .current {
 	background: #630707;
 	background: -moz-linear-gradient(top, black, #630707 1px, #e31d25 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #630707), to(#e31d25));
