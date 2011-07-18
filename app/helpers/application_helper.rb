@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def archive_css(archive)
-    archive.name == "ADA" ? 'default' : archive.name.gsub(" ", "_").downcase
+    archive.name == "ADA" ? 'default' : archive.slug.gsub("-", "_")
   end
 
   def subarchive_home_page?

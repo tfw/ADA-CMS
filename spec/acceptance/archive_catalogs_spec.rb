@@ -3,8 +3,8 @@ require File.dirname(__FILE__) + '/acceptance_helper'
 feature "serving out Archive Catalogs" do
 
   background do
-    parent = ArchiveCatalog.make(:title => "this can be anything", :archive => Archive.indigenous)
-    @catalog = ArchiveCatalog.make(:title => "foo", :archive => Archive.indigenous, :parent => parent)
+    parent = ArchiveCatalog.make(:label => "this can be anything", :archive => Archive.indigenous)
+    @catalog = ArchiveCatalog.make(:label => "foo", :archive => Archive.indigenous, :parent => parent)
     archive_study1 = ArchiveStudy.make(:archive_id => @catalog.archive.id)
     archive_study2 = ArchiveStudy.make(:archive_id => @catalog.archive.id)
     archive_study3 = ArchiveStudy.make(:archive_id => @catalog.archive.id)
@@ -21,7 +21,6 @@ feature "serving out Archive Catalogs" do
   
   scenario "requesting a catalog holding studies should render studies in title view" do
     visit @catalog.urn
-puts page.body
     click_link 'foo'
   
     for archive_catalog_study in @catalog.archive_catalog_studies
@@ -29,17 +28,20 @@ puts page.body
     end
   end
   
-  # scenario "requesting a catalog with studies and clicking on Extended should show extended info" do
-  #   visit @catalog.urn
-  # 
-  #   click_link 'foo'
-  #   click_link 'Extended'
-  # 
-  #   for archive_catalog_study in @catalog.archive_catalog_studies
-  #      page.should have_content line_break_title(first_n_words(30, archive_catalog_study.study.abstract_text), 15).html_safe
-  #   end
-  # end
-  # 
+  scenario "requesting a catalog with studies and clicking on Extended should show extended info" do
+    visit @catalog.urn
+  
+    click_link 'foo'
+    click_link 'Extended'
+  
+  puts page.body
+  
+    for archive_catalog_study in @catalog.archive_catalog_studies
+      puts line_break_title(first_n_words(30, archive_catalog_study.study.abstract_text), 15).html_safe
+       page.should have_content line_break_title(first_n_words(30, archive_catalog_study.study.abstract_text), 15).html_safe
+    end
+  end
+  
   # scenario "selecting a study should render the entire catalog of studies, but the selected study is first in the table" do
   #   visit @catalog.urn
   # 

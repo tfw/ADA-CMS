@@ -8,8 +8,8 @@ require 'thinking_sphinx/tasks'
 Ada::Application.load_tasks
 
 namespace :ada do
-  task :rebuild do
-    if ["development", "devs", "test"].includes? Rails.env
+  task :rebuild => :environment do
+    if ["development", "devs", "test"].include? Rails.env
       ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme"].each do |t|
         Rake::Task[t].execute
       end

@@ -12,7 +12,7 @@ class Archive < ActiveRecord::Base
   validates_uniqueness_of :name
 
   validates_presence_of :slug
-  before_validation :set_slug
+  before_validation :set_slug, :if => "self.slug.nil?"
 
   ADA  = "ADA"
   SOCIAL_SCIENCE  = "Social Science"
@@ -21,7 +21,7 @@ class Archive < ActiveRecord::Base
   LONGITUDINAL    = "Longitudinal"
   QUALITATIVE     = "Qualitative"
   INTERNATIONAL   = "International"
-  CRIME           = "Crime and Justice"
+  CRIME           = "Crime & Justice"
 
   def self.ada
     # @@ada_archive ||= self.find_by_name(ADA)
