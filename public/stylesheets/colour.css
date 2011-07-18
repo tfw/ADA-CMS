@@ -243,30 +243,30 @@
 
 /*crime highlight colour*/
 
-.crime .masthead {
+.crime-and-justice.masthead {
 	height: 180px;
 	background-image: url(../images/content/Logo_crime.png);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 }
-.crime .admin_masthead  {
+.crime-and-justice.admin_masthead  {
 	height: 180px;
 	background-image: url(../images/content/Logo_crime_admin.png);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 }
-.crime .mainnav.clearfix ul .current {
+.crime-and-justice.mainnav.clearfix ul .current {
 	background: #630707;
 	background: -moz-linear-gradient(top, black, #630707 1px, #e31d25 25px);
 	background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #630707), to(#e31d25));
 }
-.crime h1 {
+.crime-and-justiceh1 {
 	color: #A5751C;
 }
-.crime h2 {
+.crime-and-justiceh2 {
 	color: #A5751C;
 }
-.crime .subnav {
+.crime-and-justice.subnav {
 	background: #F1F1F1;
 	margin-top: 0px;
 	width: 100%;
@@ -275,10 +275,10 @@
 	border-top-style: solid;
 	border-top-color: #A5751C;
 }
-.crime .subnav ul li p {
+.crime-and-justice.subnav ul li p {
 	color: #A5751C;
 }
-.crime_current  a{
+.crime_and_justice_current  a{
 	background: #B91B20;
 	color: #FFF!important;
 }

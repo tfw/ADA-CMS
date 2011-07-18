@@ -108,6 +108,12 @@ nav ul {
 	background-image: url(../images/structure/menu_icon_international.png);
 	z-index: auto;
 }
+
+.content nav.archive_menu ul li.crime a, .content nav #browse-tree .crime a, .content nav #study-facets .crime a  {
+	background-image: url(../images/structure/menu_icon_crime.png);
+	z-index: auto;
+}
+
 .content nav.archive_menu ul li.dashboard a {
 	background-image: url(../images/structure/menu_icon_home.png);
 	z-index: auto;
