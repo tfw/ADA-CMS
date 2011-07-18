@@ -24,37 +24,30 @@ class Archive < ActiveRecord::Base
   CRIME           = "Crime & Justice"
 
   def self.ada
-    # @@ada_archive ||= self.find_by_name(ADA)
     self.find_by_name(ADA)
   end
 
   def self.social_science
-    # @@social_science_archive ||= self.find_by_name(SOCIAL_SCIENCE)
     self.find_by_name(SOCIAL_SCIENCE)
   end
 
   def self.historical
-    # @@historical_archive ||= self.find_by_name(HISTORICAL)
     self.find_by_name(HISTORICAL)
   end
 
   def self.indigenous
-    # @@indigenous_archive ||= self.find_by_name(INDIGENOUS)
     self.find_by_name(INDIGENOUS)
   end
 
   def self.longitudinal
-    # @@longitudinal_archive ||= self.find_by_name(LONGITUDINAL)
     self.find_by_name(LONGITUDINAL)
   end
 
   def self.qualitative
-    # @@qualitative_archive ||= self.find_by_name(QUALITATIVE)
     self.find_by_name(QUALITATIVE)
   end
 
   def self.international
-    # @@international_archive ||= self.find_by_name(INTERNATIONAL)
     self.find_by_name(INTERNATIONAL)
   end
   
