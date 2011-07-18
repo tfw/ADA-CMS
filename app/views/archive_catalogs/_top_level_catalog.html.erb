@@ -6,14 +6,6 @@
   	ajaxLoadingText : '<p> Loading studies ... </p>',
   });	  
 
-//  http://localhost:3000/browse_archive_catalog?archive_catalog_urn=%2Flongitudinal%2Fbrowse%2Flongitudinal-survey-of-immigrants-to-australia
-  
-  $('.citable').click(function() {
-    idx = this.href.indexOf("archive_catalog_urn=");
-    length = this.href.toString().length;
-    urn = this.href.substring(idx + 20, length);
-   // window.location.replace(urn);
-  });
 <% end %>
 
 <h3 class="<%= archive.slug %>"><a href="#"><%= archive.name %></a></h3>

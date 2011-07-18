@@ -68,7 +68,8 @@ class SearchesController < ContentController
      Archive.indigenous => study_search(Archive.indigenous, @term, filters),
      Archive.longitudinal => study_search(Archive.longitudinal, @term, filters),
      Archive.qualitative => study_search(Archive.qualitative, @term, filters),
-     Archive.international => study_search(Archive.international, @term, filters)}
+     Archive.international => study_search(Archive.international, @term, filters),
+     Archive.crime => study_search(Archive.crime, @term, filters)}
   end
 
   def study_search(archive, term, filters = {})

@@ -42,6 +42,7 @@ class ArchiveCatalogsController < ContentController
     Archive.indigenous => ArchiveCatalog.find_by_archive_id_and_parent_id(Archive.indigenous.id, nil),
     Archive.longitudinal => ArchiveCatalog.find_by_archive_id_and_parent_id(Archive.longitudinal.id, nil),
     Archive.qualitative => ArchiveCatalog.find_by_archive_id_and_parent_id(Archive.qualitative.id, nil),
-    Archive.international => ArchiveCatalog.find_by_archive_id_and_parent_id(Archive.international.id, nil)}
+    Archive.international => ArchiveCatalog.find_by_archive_id_and_parent_id(Archive.international.id, nil),
+    Archive.crime => ArchiveCatalog.find_by_archive_id_and_parent_id(Archive.crime.id, nil)}
   end  
 end

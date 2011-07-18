@@ -21,7 +21,7 @@ feature "serving out Archive Catalogs" do
   
   scenario "requesting a catalog holding studies should render studies in title view" do
     visit @catalog.urn
-  
+puts page.body
     click_link 'foo'
   
     for archive_catalog_study in @catalog.archive_catalog_studies
@@ -29,25 +29,25 @@ feature "serving out Archive Catalogs" do
     end
   end
   
-  scenario "requesting a catalog with studies and clicking on Extended should show extended info" do
-    visit @catalog.urn
-  
-    click_link 'foo'
-    click_link 'Extended'
-  
-    for archive_catalog_study in @catalog.archive_catalog_studies
-       page.should have_content line_break_title(first_n_words(30, archive_catalog_study.study.abstract_text), 15).html_safe
-    end
-  end
-  
-  scenario "selecting a study should render the entire catalog of studies, but the selected study is first in the table" do
-    visit @catalog.urn
-  
-    click_link @archive_catalog_study3.study.ddi_id
-  
-    within(:xpath, "//table[@id='browse-results-title']") do
-    # within(:xpath, "//table[@id='browse-results-title']/tr[1]") do -- ideally we could specify the first tabe row, not xpath friendly
-        page.should have_content(@archive_catalog_study3.study.ddi_id)
-    end    
-  end  
+  # scenario "requesting a catalog with studies and clicking on Extended should show extended info" do
+  #   visit @catalog.urn
+  # 
+  #   click_link 'foo'
+  #   click_link 'Extended'
+  # 
+  #   for archive_catalog_study in @catalog.archive_catalog_studies
+  #      page.should have_content line_break_title(first_n_words(30, archive_catalog_study.study.abstract_text), 15).html_safe
+  #   end
+  # end
+  # 
+  # scenario "selecting a study should render the entire catalog of studies, but the selected study is first in the table" do
+  #   visit @catalog.urn
+  # 
+  #   click_link @archive_catalog_study3.study.ddi_id
+  # 
+  #   within(:xpath, "//table[@id='browse-results-title']") do
+  #   # within(:xpath, "//table[@id='browse-results-title']/tr[1]") do -- ideally we could specify the first tabe row, not xpath friendly
+  #       page.should have_content(@archive_catalog_study3.study.ddi_id)
+  #   end    
+  # end  
 end
