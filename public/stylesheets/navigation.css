@@ -105,7 +105,7 @@
 	z-index: auto;
 }
 
-.content nav.archive_menu ul li.crime a, .content nav #browse-tree .crime a, .content nav #study-facets .crime a  {
+.content nav.archive_menu ul li.crime a, .content nav #browse-tree .crime a, .content nav #study-facets .crime_and_justice a  {
 	background-image: url(../images/structure/menu_icon_crime.png);
 	z-index: auto;
 }
