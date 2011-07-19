@@ -88,6 +88,12 @@ Study.blueprint do
   abstract_text Sham.body
 end
 
+Variable.blueprint do
+  name Sham.name
+  study_id  {(Study.make).id} 
+  label Sham.name
+end
+
 DdiMapping.blueprint do
   ddi Sham.word
   xml_element true

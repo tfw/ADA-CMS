@@ -8,7 +8,7 @@ class SearchesController < ContentController
   helper :search
     
   def transient
-    search(params[:term], Archive.find(params[:archive_id]), params[:filters] || [])
+    search(params[:term], Archive.find(params[:archive_id]), params[:filters] || [], params[:page])
   end
   
   def show
@@ -19,7 +19,7 @@ class SearchesController < ContentController
 
     show! do |format|
       format.html {
-        search(@search.terms, @search.archive, @search.filters, @search.id)
+        search(@search.terms, @search.archive, @search.filters, @search.id, params[:page])
       }
     end
   end
@@ -37,21 +37,20 @@ class SearchesController < ContentController
   end
 
   private
-  def search(term, current_archive, study_filters, search_id = nil)
+  def search(term, current_archive, study_filters, search_id = nil, page)
     @term = term
     @current_archive = current_archive
-    # @search = Search.find(search_id) if search_id  
     @search = Search.new
 
     @study_searches = 
       if @current_archive == Archive.ada
-        search_studies_globally(study_filters)
+        search_studies_globally(study_filters, page)
       else
-        {current_archive => study_search(current_archive, term, study_filters)}
+        {current_archive => study_search(current_archive, term, study_filters, page)}
       end
     
     @studies_search = @study_searches[current_archive]
-    @variables_search = variable_search(term, [])
+    @variables_search = variable_search(term, [], page)
 
     @title = "Search: #{@term}"
     params[:filters] ||= []
@@ -59,25 +58,26 @@ class SearchesController < ContentController
   end
   
   
-    #the logic below was moved into Study (fat model), but a performance hit occurred - strangely -
-          #so, for now, the fatter controller is acceptable
-  def search_studies_globally(filters = {})
-    {Archive.ada => study_search(Archive.ada, @term, filters),
-     Archive.social_science => study_search(Archive.social_science, @term, filters),
-     Archive.historical => study_search(Archive.historical, @term, filters),
-     Archive.indigenous => study_search(Archive.indigenous, @term, filters),
-     Archive.longitudinal => study_search(Archive.longitudinal, @term, filters),
-     Archive.qualitative => study_search(Archive.qualitative, @term, filters),
-     Archive.international => study_search(Archive.international, @term, filters),
-     Archive.crime => study_search(Archive.crime, @term, filters)}
+  #the logic below was moved into Study (fat model), but a performance hit occurred - strangely -
+  #so, for now, the fatter controller is acceptable.
+  #these searches are conducted to build facets for each archive
+  def search_studies_globally(filters = {}, page = 1)
+    {Archive.ada => study_search(Archive.ada, @term, filters, page),
+     Archive.social_science => study_search(Archive.social_science, @term, filters, page),
+     Archive.historical => study_search(Archive.historical, @term, filters, page),
+     Archive.indigenous => study_search(Archive.indigenous, @term, filters, page),
+     Archive.longitudinal => study_search(Archive.longitudinal, @term, filters, page),
+     Archive.qualitative => study_search(Archive.qualitative, @term, filters, page),
+     Archive.international => study_search(Archive.international, @term, filters, page),
+     Archive.crime => study_search(Archive.crime, @term, filters, page)}
   end
 
-  def study_search(archive, term, filters = {})
+  def study_search(archive, term, filters = {}, page = 1)
     Sunspot.search(Study) do ;
       keywords term do 
         highlight :label, :abstract_text, :comment
       end
-      
+
       with(:archive_ids).any_of [archive.id];
       
       filters.each do |facet|
@@ -85,6 +85,8 @@ class SearchesController < ContentController
           with(name.to_sym, value)
         end
       end
+      
+      paginate(:page => page)
 
       facet :data_kind, :sort => :count, :limit => 7, :minimum_count => 2
       facet :sampling, :sort => :count, :limit => 7, :minimum_count => 2
@@ -99,11 +101,13 @@ class SearchesController < ContentController
     end    
   end
 
-  def variable_search(term, filters = {})
+  def variable_search(term, filters = {}, page)
     Sunspot.search(Variable) do ;
       keywords term do 
         highlight :label, :question_text
       end
+      
+      paginate(:page => page)
             
       filters.each do |facet|
         facet.each do |name, value|

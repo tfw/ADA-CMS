@@ -1,8 +1,9 @@
 class Variable < ActiveRecord::Base
+  
   belongs_to :study
   has_many :variable_fields; alias fields variable_fields
   has_many :statistics
-  
+    
   # validates_presence_of :study_id #it seems that not all variables are related to a study
 
   def self.create_or_update_from_nesstar(variable)
