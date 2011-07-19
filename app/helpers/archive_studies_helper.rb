@@ -49,13 +49,18 @@ module ArchiveStudiesHelper
   end
   
   def related_material_url(related_material)
-    uri = related_material.uri.gsub("..", "")
-    "#{NESSTAR_SERVER}#{uri}"
+    if related_material.uri =~ /http/
+      related_material.uri
+    else
+      uri = related_material.uri.gsub("..", "")
+      "#{NESSTAR_SERVER}#{uri}"
+    end
   end
   
   def related_material_comment_then_file_name(related_material)
     link_text = nil
-    if related_material.comment
+
+    unless related_material.comment.blank?
       link_text = related_material.comment
     else
       link_text = related_material.uri.split(/\//).last

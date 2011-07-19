@@ -6,11 +6,20 @@
   </thead>
   <tbody>
     <% for rm in study.related_materials %>
-      <% unless rm.uri.nil? %>
-        <tr class="<%= cycle('', 'alt') %>">
-	  <td><a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a></td>
-	</tr>
-      <% end %>
+      <tr class="<%= cycle('', 'alt') %>">
+        <td>
+        <% idx = rm.nesstar_id.split("_").last.to_i + 1 %>
+        <%= idx %>.
+        <% if rm.uri.nil? %>
+          <% if rm.label %>
+            <%= rm.label %>
+          <% end %>
+        <% else %>
+	         <a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a>
+        <% end %>
+        </td>
+	    </tr>
     <% end %>
   </tbody>
 </table>
+ 
