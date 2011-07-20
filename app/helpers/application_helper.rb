@@ -1,5 +1,6 @@
 module ApplicationHelper
-
+  include DdiHelper
+  
   def archive_css(archive)
     archive.name == "ADA" ? 'default' : archive.slug.gsub("-", "_")
   end
@@ -38,12 +39,8 @@ module ApplicationHelper
 
   #this checks to see if a human readable mapping (DdiMapping) exists for the DDI element
   def human_readable_check(ddi)
-    mapping = DdiMapping.find_by_ddi(ddi)
-    if mapping.nil?
-      ddi
-    else
-     mapping.human_readable
-    end
+    mapping = ddi_mapping(ddi)
+    mapping || ddi
   end
   
   def variable_anchor(variable)
