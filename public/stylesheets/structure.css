@@ -204,6 +204,10 @@ aside{
 
 }
 
+.partners.small .captions, .partners.small .logos {
+  display: none;
+}
+
 footer {
 	border-top: 1px solid #d5d5ca;
 	background: #E8E8E8;
