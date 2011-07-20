@@ -6,7 +6,8 @@ module ApplicationHelper
   end
 
   def subarchive_home_page?
-    @page.try(:title) == "Home" and @current_archive != Archive.ada
+    # If testing for non-ADA archive, use: @current_archive != Archive.ada
+    @page.try(:title) == "Home"
   end
 
   def nesstar_link(dataset)
