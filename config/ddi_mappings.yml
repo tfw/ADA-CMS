@@ -1,42 +1,42 @@
 abstract_text: Abstract
-access_conditions: 
-access_place:
-accessibility:
-additivity:
+access_conditions: Access Conditions
+access_place: Locations of Data Collection
+accessibility: 
+additivity: 
 addressee:
 addressee_copy:
 aggregation:
-alternative_title:
-analytic_unit:
+alternative_title: Alternative Title
+analytic_unit: Unit of Analysis
 audience:
 authorising_statute:
 auto_remove_date:
 availability:
 beginning_date:
-bibliographic_citation:
+bibliographic_citation: Bibliographic Citation
 category:
-coll_mode:
-collection_end:
-collection_start:
-comment:
+coll_mode: Mode of Data Collection
+collection_end: Start date - Data Collection
+collection_start: End date - Data Collection
+comment: Comment
 concept:
 conforms_to:
 contributor:
-copyright:
-coverage:
+copyright: Copyright
+coverage: 
 coverage_temporal_date_capture_period_ends:
-created_at:
-creation_date:
+created_at: Update Creation Date
+creation_date: Study Creation Date
 creator:
 current_location:
 custodian:
 cut_off_date:
 d_pa_data_subject_access_exemption:
-data_collector:
+data_collector: Data Collectors
 data_kind: Data Kind
 data_protection_exempt_category:
-datafile_id:
-date_accepted:
+datafile_id: Data File ID
+date_accepted: 
 date_acquired:
 date_available:
 date_available_end:
@@ -53,7 +53,7 @@ date_submitted:
 date_valid:
 date_valid_end:
 dates_modified:
-decimal_places:
+decimal_places: Decimal Places
 deploy_language:
 descriptor:
 digital_signature:
@@ -73,19 +73,19 @@ disposal_schedule_id:
 disposal_time_period:
 distribution_date:
 distributor:
-doc_alt_titl:
-doc_auth_entity:
-doc_bibl_cit:
-doc_bibl_cit_format:
-doc_copyright:
-doc_dist_date:
-doc_distributor:
-doc_eng_title:
-doc_lang:
-doc_prod_date:
-doc_producer:
-doc_sub_titl:
-doc_title:
+doc_alt_titl: Alternative Title (documentation)
+doc_auth_entity: Authoring Entity (documentation)
+doc_bibl_cit: Bibliographic Citation (documentation)
+doc_bibl_cit_format: Bibliographic Citation Format (documentation)
+doc_copyright: Copyright (documentation)
+doc_dist_date: Distribution Date (documentation)
+doc_distributor: Distributor (documentation)
+doc_eng_title: Title - English (documentation)
+doc_lang: Language (documentation)
+doc_prod_date: Production Date (documentation)
+doc_producer: Producer (documentation)
+doc_sub_titl: Subtitle (documentation)
+doc_title: Title (documentation)
 e_ir_disclosability_indicator:
 e_ir_exemption:
 education_level:
@@ -93,35 +93,35 @@ end_date:
 end_date_of_capture:
 end_pos:
 eng_abstract:
-eng_weight:
+eng_weight: Weighting
 expression:
 ext_notes_role:
 ext_notes_title:
 ext_notes_uri:
 extent:
-external_id:
+external_id: ADA ID
 f_oi_disclosability_indicator:
 f_oi_exemption:
 f_oi_release_date:
 f_oi_release_details:
 fileplan_id:
-format:
-format_schema:
+format: Format
+format_schema: Format Schema
 geogr:
-geographical_cover:
-geographical_unit:
+geographical_cover: Geographic Coverage
+geographical_unit: Geographic Unit
 group_access:
 has_format:
 has_part:
 has_version:
 home_location:
-id:
+id: Variable ID
 identifier:
 identifier_case_id:
 individual_user_access_list:
 instructions:
 interviewer_instr:
-intervl:
+intervl: Interval
 is_defined_by:
 is_format_of:
 is_key:
@@ -132,40 +132,40 @@ is_required_by:
 is_version_of:
 is_weight:
 keyword:
-keywords:
-label:
-language:
+keywords: Keywords
+label: Label
+language: Language
 last_foi_disclosability_review:
 limitations:
 location:
 mandate:
-max_value:
-mean_value:
-median_value:
+max_value: Maximum
+mean_value: Mean
+median_value: Median
 mediator:
 medium:
-method_notes:
-min_value:
-missing_values:
-mode_value:
-name:
-nation:
+method_notes: Other Methodology Notes
+min_value: Minimum
+missing_values: Missing Values
+mode_value: Mode
+name: Variable Name
+nation: Countries
 nature:
-nesstar_id:
-no_invalid_responses:
-no_responses:
-no_valid_responses:
+nesstar_id: Nesstar ID
+no_invalid_responses: Invalid Cases
+no_responses: Number of Cases
+no_valid_responses: Valid Cases
 notes:
-origin:
-original_format:
-pdf_file:
-period_end:
-period_start:
+origin: Original Archive
+original_format: Original Format
+pdf_file: PDF
+period_end: Time Period - Start
+period_start: Time Period - End
 personal_data_aquisition_purpose:
-position:
-post_question_text:
-postcode:
-pre_question_text:
+position: Variable Position
+post_question_text: Post-question Text
+postcode: Postcode
+pre_question_text: Pre-question Text
 preservation:
 previous_protective_marking:
 process_identifier:
@@ -175,27 +175,27 @@ protective_marking:
 protective_marking_change_date:
 protective_marking_expiry_date:
 provides_definition_of:
-publisher:
-question_text:
-reason_for_redaction:
+publisher: Publisher
+question_text: Question Text
+reason_for_redaction: Reason for Redaction
 redaction:
 relation:
 replaces:
 requires:
-research_instr:
+research_instr: Type of Research Instrument
 resource_date:
 resource_references:
 resource_type:
-response:
+response: Response Rate
 rights:
-sampling:
+sampling: Sampling Procedure
 scale:
 schedule_catalog_id:
 schedule_date:
 schedule_email_text:
 sequence_num:
-series_id:
-series_name:
+series_id: Series ID
+series_name: Series Name
 site:
 source:
 spatial_location:
@@ -204,60 +204,60 @@ start_date_of_capture:
 start_pos:
 status:
 status_of_start_date_of_capture:
-std_value:
-stdy_alt_titl:
-stdy_auth_entity:
-stdy_bibl_cit:
-stdy_class:
-stdy_contact:
-stdy_contact_affiliation:
-stdy_contact_email:
-stdy_contributor:
-stdy_copyright:
-stdy_data_appraisal:
-stdy_data_coll_freq:
-stdy_dep_date:
-stdy_depositor:
-stdy_eng_title:
-stdy_id:
-stdy_lang:
-stdy_par_titl:
-stdy_prod_agency:
-stdy_prod_date:
-stdy_producer:
-stdy_producer_abbr:
-stdy_status:
-stdy_sub_titl:
-stdy_version:
-stdy_version_date:
-stdy_version_notes:
-stdy_version_responsibility:
-stdy_version_type:
-study_id:
-sub_resource:
+std_value: Std. Deviation
+stdy_alt_titl: Alternate Title
+stdy_auth_entity: Primary Investigator
+stdy_bibl_cit: Bibliographic Citation
+stdy_class: ADA Processing Level
+stdy_contact: Contact
+stdy_contact_affiliation: Contact Affiliation
+stdy_contact_email: Contact Email
+stdy_contributor: Contributor
+stdy_copyright: Copyright
+stdy_data_appraisal: Other Data Appraisal
+stdy_data_coll_freq: Frequency of Data Collection
+stdy_dep_date: Deposit Date
+stdy_depositor: Depositor
+stdy_eng_title: Title - English
+stdy_id: ADA ID
+stdy_lang: Language
+stdy_par_titl: Parallel Title
+stdy_prod_agency: Production Agency
+stdy_prod_date: Production Date
+stdy_producer: Producer
+stdy_producer_abbr: Producer abbreviation
+stdy_status: ADA Study Level
+stdy_sub_titl: Sub-title
+stdy_version: Version
+stdy_version_date: Version Date
+stdy_version_notes: Version Notes
+stdy_version_responsibility: Version Responsibility
+stdy_version_type: Version Type
+study_id: Database Study ID
+sub_resource: 
 sub_study:
-subcat:
+subcat: Topic Classifications
 subject:
 subject_person:
 syntax:
 system_id:
 table_of_contents:
 temporal:
-time_meth:
-time_period:
-title:
-universe:
-updated_at:
+time_meth: Time Method
+time_period: Time Period
+title: Study Title
+universe: Population (Universe)
+updated_at: Updated At
 updating_frequency:
-uri:
-val_range_max:
-val_range_min:
-var_id:
-weight:
-weighted_mean_value:
-weighted_median_value:
-weighted_mode_value:
-weighted_no_invalid_responses:
-weighted_no_valid_responses:
-weighted_std_value:
-width:
+uri: URI
+val_range_max: Maximum
+val_range_min: Minimum
+var_id: Variable ID
+weight: Weighting
+weighted_mean_value: Mean (weighted)
+weighted_median_value: Median (weighted)
+weighted_mode_value: Mode (weighted)
+weighted_no_invalid_responses: Invalid Responses (weighted)
+weighted_no_valid_responses: Valid Responses (weighted)
+weighted_std_value: Std. Dev. (weighted)
+width: Variable Width

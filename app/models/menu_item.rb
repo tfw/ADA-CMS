@@ -16,18 +16,16 @@ class MenuItem < ActiveRecord::Base
     parent_menu_item = page.parent.menu_item if page.parent
     menu_item = nil
     
-    if page.parent
-      menu_item = MenuItem.create(:title => page.title, :link => page.urn, :content => page, :archive => page.archive, :parent => parent_menu_item)
-    else
-      menu_item = MenuItem.create(:title => page.title, :link => page.urn, :archive => page.archive, :content => page)
-    end
+    menu_item = MenuItem.create(:title => page.title, :link => page.urn, :archive => page.archive, :content => page)
+    menu_item.move_to_child_of page.parent.menu_item if page.parent
     
     menu_item
   end
   
   def self.update_from_page(page, menu_item)
     if page.parent
-      menu_item.update_attributes(:title => page.title, :link => page.urn, :content => page, :archive => page.archive, :parent => page.parent.menu_item)
+      menu_item.update_attributes(:title => page.title, :link => page.urn, :content => page, 
+                                                  :archive => page.archive, :parent => page.parent.menu_item)
     else
       menu_item.update_attributes(:title => page.title, :link => page.urn, :content => page, :archive => page.archive)
     end
