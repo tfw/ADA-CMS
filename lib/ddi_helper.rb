@@ -1,18 +1,16 @@
 module DdiHelper  
   def ddi_mapping(ddi_field)
-    if @mappings.nil?
-      @mappings = YAML.load_file("config/ddi_mappings.yml")
-    end
-debugger
-    human_readable = @mappings[ddi_field.to_sym]
+    human_readable = ddi_mappings[ddi_field]
     human_readable ||= ddi_field if human_readable.nil?
+
     human_readable
   end
 
   def ddi_mappings
-    if @mappings.nil?
-      @mappings = YAML.load_file("config/ddi_mappings.yml")
+    if Rails.cache.read("ddi_mappings").nil?
+      Rails.cache.write("ddi_mappings", YAML.load_file("config/ddi_mappings.yml"))
     end
-    @mappings
+    
+    Rails.cache.read("ddi_mappings")
   end
 end
