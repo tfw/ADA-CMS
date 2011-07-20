@@ -9,20 +9,7 @@ class Study < ActiveRecord::Base
   
   validates_uniqueness_of :stdy_id
   validates_presence_of :stdy_id
-  
-  #facet constants
-  # FACETS = {:data_kind => (DdiMapping.human_readable('data_kind')                         || "Data Kind"),
-  #         :sampling_abbr => (DdiMapping.human_readable('sampling')                        || "Sampling"),
-  #         :collection_mode_abbr => (DdiMapping.human_readable('collection_mode')          || "Collection Mode"),
-  #         :contact_affiliation => (DdiMapping.human_readable('stdy_contact_affiliation')  || "Contact Affiliation"),          
-  #         :geographical_cover => (DdiMapping.human_readable('geographical_cover')         || "Geographical Cover"),
-  #         :geographical_unit => (DdiMapping.human_readable('geographical_unit')           || "Geographical Unit"),
-  #         :analytic_unit => (DdiMapping.human_readable('analytic_unit')                   || "Analytic Unit"),
-  #         :creation_date => (DdiMapping.human_readable('creation_date')                   || "Creation Date"),
-  #         :series_name => (DdiMapping.human_readable('series_name')                       || "Series Name"),
-  #         :study_auth_entity => (DdiMapping.human_readable('stdy_auth_entity')            || "Study Author")
-  #       }
-  #       
+       
   #solr config
   searchable :auto_index => false do
     text :label, :default_boost => 2, :stored => true
