@@ -108,6 +108,14 @@ module HelperMethods
       end
     end
   end
+
+  def vars_searcher(term)
+    Sunspot.search(Variable) do ;
+      keywords term do 
+        highlight :label, :question_text
+      end
+    end
+  end
 end
 
 RSpec.configuration.include HelperMethods, :type => :acceptance

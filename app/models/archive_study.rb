@@ -42,7 +42,7 @@ class ArchiveStudy < ActiveRecord::Base
 
   # accessor methods expected by app/views/ckeditor/archive_study
   def url_content
-    self.path.slug
+    urn
   end
 
   def format_created_at

@@ -17,7 +17,7 @@ class ArchiveCatalog < ActiveRecord::Base
   def generate_path_slug
     slug = ""
     if self.parent
-      slug = "#{self.parent.path.slug}/"
+      slug = "#{self.parent.urn}/"
       slug += sluggerize(label)    
     else
       slug = "/#{archive.slug}/browse" 

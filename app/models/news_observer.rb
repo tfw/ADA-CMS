@@ -26,7 +26,7 @@ class NewsObserver < ActiveRecord::Observer
             "no archives"
           else
             nas.map do |na|
-              "<a href='#{na.path.slug}'>#{na.archive.name}</a>."
+              "<a href='#{na.urn}'>#{na.archive.name}</a>."
             end*", "
           end
         }",

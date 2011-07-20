@@ -28,7 +28,7 @@ class Image < ActiveRecord::Base
   end
 
   def url_content
-    self.path.slug
+    urn
   end
 
   def filename

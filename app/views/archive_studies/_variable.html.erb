@@ -8,13 +8,13 @@
       </th>
       <th align="right">
         <% unless variable == variable.study.variables.first %>
-          <%= link_to "Return to #{variable.study.ddi_id}", variable.study.for_archive(@current_archive).path.slug %> &nbsp;
-          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).path.slug %>#<%= up_arrow_anchor(variable_counter) %>" > <%= image_tag 'icons/arrow_up.png' %> </a>
+          <%= link_to "Return to #{variable.study.ddi_id}", variable.study.for_archive(@current_archive).urn %> &nbsp;
+          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).urn %>#<%= up_arrow_anchor(variable_counter) %>" > <%= image_tag 'icons/arrow_up.png' %> </a>
         <% end %>
       </th>
       <th>  
         <% unless variable == variable.study.variables.last %>
-          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).path.slug %>#<%= down_arrow_anchor(variable_counter) %>"> <%= image_tag 'icons/arrow_down.png' %> </a>
+          <a id="var-<%= variable_counter %>" href="<%= variable.study.for_archive(@current_archive).urn %>#<%= down_arrow_anchor(variable_counter) %>"> <%= image_tag 'icons/arrow_down.png' %> </a>
         <% end %>
       </th>
     </tr>
