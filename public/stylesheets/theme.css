@@ -334,11 +334,10 @@ legend {
 
 #browse-results {
 	position: relative;
-	padding-top: 8px;
 	padding-bottom: 8px;
 }
 
-	#browse-results p {
+#browse-results p {
 	padding-top: 15px;
 }
     
