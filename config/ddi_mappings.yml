@@ -1,5 +1,5 @@
 abstract_text: Testing 1 2 3
-access_conditions:
+access_conditions: 
 access_place:
 accessibility:
 additivity:
@@ -33,7 +33,7 @@ custodian:
 cut_off_date:
 d_pa_data_subject_access_exemption:
 data_collector:
-data_kind:
+data_kind: test come on
 data_protection_exempt_category:
 datafile_id:
 date_accepted:

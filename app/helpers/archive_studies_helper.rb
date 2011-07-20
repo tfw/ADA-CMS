@@ -3,7 +3,7 @@ module ArchiveStudiesHelper
   def study_field_table_row(key, study, fields)
     if fields.has_key?(key) and not fields[key].blank?
       row = "<tr class='#{cycle('standard', 'alt')}'>\n<td valign='top'>"
-      row +=  (human_readable_check(key) || key)
+      row +=  (human_readable(key) || key)
       row +=  "</td><td valign='top'>"
       row += fields[key].to_s
       row += "</td>\n</tr>"
@@ -15,7 +15,7 @@ module ArchiveStudiesHelper
   
   def variable_field(field)
     unless field[1].blank?
-      key = (human_readable_check(field[0]) || field[0])
+      key = (human_readable(field[0]) || field[0])
       "#{key}: #{field[1]}"
     end
   end

@@ -38,8 +38,9 @@ module ApplicationHelper
   end
 
   #this checks to see if a human readable mapping (DdiMapping) exists for the DDI element
-  def human_readable_check(ddi)
+  def human_readable(ddi)
     mapping = ddi_mapping(ddi)
+puts mapping 
     mapping || ddi
   end
   
