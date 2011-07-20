@@ -123,12 +123,6 @@
 		  <p>Web Enquiries: <a href="#">webmaster@assda.anu.edu.au</a></p> 
 		  <p> &#xA9; Australian Data Archive</p>
       <p><em><%= deploy_log %></em></p>
-      <p> temporary housing for feed links - 
-      <%= image_tag("icons/feed.png") %>
-        <% Archive.all.each do |a| %>
-          <%= link_to a.name, "#{get_atom_feed(a).urn}?format=atom" %>
-        <% end %>
-      </p>
     </footer>
 	</section>
 
