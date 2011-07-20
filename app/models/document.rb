@@ -28,7 +28,7 @@ class Document < ActiveRecord::Base
   end
 
   def url_content
-    self.path.slug
+    self.urn
   end
 
   def filename

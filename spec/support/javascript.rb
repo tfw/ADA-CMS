@@ -7,7 +7,6 @@ RSpec.configure do |config|
   end
 
   config.before(:each) do
-    
     if example.metadata[:js]
       Capybara.current_driver = :selenium
       DatabaseCleaner.strategy = :truncation

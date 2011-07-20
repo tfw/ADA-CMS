@@ -69,7 +69,7 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
 
     if parent_page
       debugger
-      slug = "#{parent_page.path.slug}/#{slug}"
+      slug = "#{parent_page.urn}/#{slug}"
     elsif @archive
       slug = "/#{@archive.slug}/#{slug}"
     end

@@ -73,7 +73,7 @@ class Page < ActiveRecord::Base
 
   # accessor methods expected by the ckeditor browse views (can refactor, we have our own copies)
   def url_content
-    self.path.slug
+    self.urn
   end
 
   def format_created_at

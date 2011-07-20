@@ -10,7 +10,7 @@ class ArchiveCatalogsController < ContentController
     @catalog = params[:id] ? ArchiveCatalog.find_by_id(params[:id]) : nil
     @current_archive = @catalog ? @catalog.archive : Archive.ada
     @title = @catalog ? @catalog.title : "Browse ADA Catalogs"
-    @archive_catalog_studies = @catalog ? @catalog.archive_catalog_studies : []
+    @archive_catalog_studies = @catalog ? @catalog.archive_catalog_studies.paginate(:page => params[:page]) : []
 
     respond_with(@catalog)
   end  
@@ -20,16 +20,7 @@ class ArchiveCatalogsController < ContentController
     path = Inkling::Path.find_by_slug(catalog_urn)
     @catalog = path.content
     
-    @archive_catalog_study = ArchiveCatalogStudy.find(params[:archive_catalog_study_id]) if params[:archive_catalog_study_id]
-
-    if @archive_catalog_study
-      @archive_catalog_studies = [@archive_catalog_study] 
-      remaining_studies = @catalog.archive_catalog_studies.dup
-      remaining_studies.delete(@archive_catalog_study)
-      @archive_catalog_studies += remaining_studies
-    else
-      @archive_catalog_studies = @catalog.archive_catalog_studies
-    end
+    @archive_catalog_studies = @catalog.archive_catalog_studies.paginate(:page => [params[:page]])
     
     @current_archive = @catalog.archive
     render :layout => false
