@@ -88,6 +88,7 @@ feature "searching" do
       search("foo") 
       puts page.body
       click_link("variables-link")
+      debugger
       page.should have_content "foo 1 0"
       page.should have_content "foo 1 9"
     end

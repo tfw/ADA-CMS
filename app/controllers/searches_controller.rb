@@ -51,7 +51,7 @@ class SearchesController < ContentController
     
     @studies_search = @study_searches[current_archive]
     @variables_search = variable_search(term, [], page)
-
+debugger
     @title = "Search: #{@term}"
     params[:filters] ||= []
     render :results
