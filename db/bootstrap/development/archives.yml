@@ -41,3 +41,9 @@ archives_007:
   slug: ada
   created_at: 2011-02-23 02:36:55.95668
   updated_at: 2011-02-23 02:36:55.95668
+archives_008: 
+  id: "8"
+  name: Crime & Justice
+  slug: crime-and-justice
+  created_at: 2011-07-18 04:07:07.829187
+  updated_at: 2011-07-18 04:07:07.829187
