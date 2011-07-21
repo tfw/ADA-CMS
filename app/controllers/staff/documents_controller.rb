@@ -2,6 +2,22 @@ class Staff::DocumentsController < Staff::BaseController
   inherit_resources                                                                                     
   defaults :resource_class => Document, :instance_name => 'document'
 
+  def update
+    update! do |format|
+      format.html {
+        redirect_to staff_resources_path
+        }
+    end
+  end
+
+  def create
+    create! do |format|
+      format.html {
+        redirect_to staff_resources_path
+        }
+    end
+  end
+
   def destroy
     destroy!(:notice => 'Document deleted') { staff_resources_path }
   end

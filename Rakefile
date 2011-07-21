@@ -53,7 +53,10 @@ task :create_feeds => :environment do
   end
 end
 
+require 'ruby-debug'
+
 task :ensure_menu_items => :environment do
+  MenuItem.delete_all
   parent_pages = Page.find_all_by_parent_id(nil)
   parent_pages.each do |page|
     menu_items_for_tree(page)
@@ -65,7 +68,7 @@ def menu_items_for_tree(page)
   
   for child in page.children
     menu_items_for_tree(child)
-  end  
+  end 
 end
 
 
