@@ -30,6 +30,9 @@ legend {
 	display: block;
 	overflow: auto;
 }
+ul#sub-menu {
+	float: left;
+}
 
 #tabs li, #sub-menu li {
 	border-top-width: 1px;
@@ -71,6 +74,18 @@ legend {
 #sub-menu li {
 	padding-top: 4px;
 	padding-bottom: 4px;
+}
+
+#sub-tabs {
+	overflow: auto;
+}
+
+#study-results .pagination, #browse-results .pagination {
+	float: left;
+	background-color: #EEE;
+	margin-left: 10px;
+	padding: 4px 10px;
+	border-top: 1px solid #EDEDED;
 }
 
 /*Search Results*/
