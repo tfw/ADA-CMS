@@ -53,8 +53,6 @@ task :create_feeds => :environment do
   end
 end
 
-require 'ruby-debug'
-
 task :ensure_menu_items => :environment do
   MenuItem.delete_all
   parent_pages = Page.find_all_by_parent_id(nil)
