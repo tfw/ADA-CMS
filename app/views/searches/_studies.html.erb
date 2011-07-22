@@ -15,13 +15,13 @@
 <% end %>
 
 <section id="study-results">
-	<ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
-		<li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link">Title View</a></li> 
-		<li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link">Extended</a></li>
-	</ul>
+	<div id="sub-tabs">
+	  <ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
+	    <li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link">Title View</a></li>
+	    <li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link">Extended</a></li>
+	  </ul>
 
-	<div class="float-centre">
-	    <%= will_paginate @studies_search.results %>
+	  <%= will_paginate @studies_search.results %>
 	</div>
 	
 	<table id="search-results-title" <%= conceal_unless(['title'], params[:format]) %>>
@@ -30,7 +30,7 @@
 				<th>Study</th>
 				<th>Authoring Entity</th>
 				<th>Year</th>
-				<th>Doc Id</th>
+				<th>ADA ID</th>
 				<th>Archive</th>
 			</tr>
 		</thead>

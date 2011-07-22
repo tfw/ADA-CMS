@@ -1,8 +1,7 @@
 
 <section id="variable-results" <%= conceal_unless(['var'], params[:show]) %>>
-	<div class="float-centre">
-	    <%= will_paginate @variables_search.results %>
-	</div>
+	<%= will_paginate @variables_search.results %>
+
 	<fieldset class="search-border"> 
     <table id="search-results-table" border=1>
       <thead>
