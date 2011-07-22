@@ -1,8 +1,12 @@
 <article>
-  <h1>Home</h1>
 
+  <% if @archive_news.any? or @archive_studies.any? %>
+  	<aside class="breakout">
+      <%= render(:partial => 'pages/archive_news', :object => @archive_news)%>
+      <%= render(:partial => 'pages/archive_studies', :object => @archive_studies) %>
+    </aside>
+  <% end %>
+  
   <%= home_page.body.html_safe if home_page.body %>
-
-  <%= render(:partial => 'pages/news_archives', :object => @news_archives) if defined?(@news_archives) %>
-  <%= render(:partial => 'pages/archive_studies', :object => @archive_studies) if defined?(@archive_studies) %>
 </article>
+

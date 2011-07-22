@@ -1,15 +1,14 @@
-  <aside class="datasets">
-    <h2>Recent Datasets</h2>
-    <h3>Deposits
-      <%=
-	if last = @archive_studies.last
-	  'in ' + last.created_at.strftime('%B %Y') 
-	else
-	  'No recent data'
-	end
-      %>
-    </h3>
-    <ul>
-      <%= render :partial => "archive_study", :collection => @archive_studies %>
-    </ul>
-  </aside>
+<h2>Recent Datasets</h2>
+<h3>Deposits
+  <%=
+if last = @archive_studies.last
+'in ' + last.created_at.strftime('%B %Y') 
+else
+'No recent data'
+end
+  %>
+</h3>
+<ul>
+  <%= render :partial => "archive_study", :collection => @archive_studies %>
+</ul>
+
