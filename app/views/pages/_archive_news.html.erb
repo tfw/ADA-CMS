@@ -1,4 +1,8 @@
-<h2>Latest News</h2>
-<div class="news">
- <%= render :partial => "archive_news_item", :collection => @news_archives %>
-</div>
+<% if @archive_news.any? %>
+  <% feed = get_atom_feed(@current_archive) %>
+  <h2> <%= link_to image_tag("icons/feed.png", :align => "top"), "#{feed.urn}?format=atom" %> Recent News </h2>
+ 
+  <div class="news">
+   <%= render :partial => "archive_news_item", :collection => @archive_news %>
+  </div>
+<% end %>
