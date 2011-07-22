@@ -15,10 +15,12 @@ class PageObserver < ActiveRecord::Observer
 
   private
   def log(verb, page)
-    if page.archive
-      Inkling::Log.create!(:text => "#{page.author} #{verb} page <a href='#{edit_staff_archive_page_path(page, :archive_id => page.archive.id)}'>#{page.title}</a> in <a href='/staff/archives/#{page.archive.slug}'>#{page.archive.name}</a>.", :category => "page", :user => page.author)
-    else
-      Inkling::Log.create!(:text => "#{page.author} #{verb} page <a href='#{edit_staff_archive_page_path(page, :archive_id => page.archive.id)}'>#{page.title}</a> in <a href='/staff/archives/ada'>ADA</a>.", :category => "page", :user => page.author)
-    end
+    
+    case verb
+      when "deleted"
+        Inkling::Log.create!(:text => "#{page.author} #{verb} page #{page.title} in <a href='/staff/archives/#{page.archive.slug}'>#{page.archive.name}</a>.", :category => "page", :user => page.author)
+      else
+        Inkling::Log.create!(:text => "#{page.author} #{verb} page <a href='#{edit_staff_archive_page_path(page.archive, page)}'>#{page.title}</a> in <a href='/staff/archives/#{page.archive.slug}'>#{page.archive.name}</a>.", :category => "page", :user => page.author)
+    end    
   end
 end

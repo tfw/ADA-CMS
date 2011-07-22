@@ -45,14 +45,14 @@ module SearchHelper
     if params[:filters].any?
   		params[:filters].each do |facet|
   		  facet.each do |name, value|		    
-    			str += "#{Study::FACETS[name.to_sym]} = #{value}" 
+    			str += "#{human_readable(name)} = #{value}" 
 
     			if remove_filters
-    			  copy = params.dup
+  			    copy = Marshal.load(Marshal.dump(params)) #see http://www.michaelxavier.net/Deep-Copy-Params-Hash-When-working-with-Rack.html
     			  copy[:filters].first.delete(name)
     			  str += "(#{link_to '-', copy})"
   			  end
-			  
+			  			  
     			unless name == params[:filters].first.keys.last 
     			  str += ", " 
     			end
