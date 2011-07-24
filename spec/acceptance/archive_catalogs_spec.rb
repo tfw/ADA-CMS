@@ -13,6 +13,16 @@ feature "serving out Archive Catalogs" do
     @archive_catalog_study3 = ArchiveCatalogStudy.make(:archive_catalog => @catalog, :archive_study => archive_study3)
   end
   
+  scenario "/browse returns a 200" do
+    visit "/browse"
+    page.status_code.should == 200
+  end
+
+  scenario "/ada/browse returns a 200" do
+    visit "/ada/browse"
+    page.status_code.should == 200
+  end
+  
   scenario "requesting /ada/browse/foo should show breadcrumbs Browsing ada/foo" do
     visit @catalog.urn
     page.should have_content "Browsing #{@catalog.path.slug.gsub('/browse', '')}"
