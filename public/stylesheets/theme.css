@@ -418,9 +418,7 @@ ul#sub-menu {
 
 #study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table, table.content {
 	border-collapse: collapse;
-	width: 100%!important;
 	padding: 0px;
-	float: left;
 	border-top-width: 5px;
 	border-top-style: none;
 	border-right-style: none;
@@ -439,6 +437,11 @@ ul#sub-menu {
 	border-left-width: 0px;
 	display: inline-table;
 }
+#study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table {
+	width: 100%!important;
+	float: left;
+}
+
 #study-table, #related-material-table {
 	width: 100%;
 	border-collapse: collapse;
