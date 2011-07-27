@@ -17,6 +17,10 @@ $(document).ready(function() {
 </script>
 
   <h1>Catalog: <%= catalog ? catalog.label : @current_archive.name %></h1>
+    
+  <div class="float-centre">
+      <%= will_paginate @archive_catalog_studies unless @archive_catalog_studies.empty? %>
+  </div>
   
 	<div id="tabs">
 	  <ul>

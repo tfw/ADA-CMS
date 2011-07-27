@@ -7,7 +7,7 @@ class PagesController < ContentController
     @current_archive = @page.archive
     @title = @page.title
     @archive_news = @current_archive.archive_news.find(:all, :order => "created_at DESC", :limit => 10)
-    @archive_studies = @current_archive.archive_studies.find(:all, :order => "created_at DESC", :limit => 10)
+    @archive_studies = @current_archive.archive_studies.find(:all, :order => "created_at DESC", :limit => 10) 
     respond_with(@page)
   end
   
@@ -16,6 +16,9 @@ class PagesController < ContentController
     @page = path.content
     @current_archive = @page.archive
     @title = @page.title
+    @archive_news = @current_archive.archive_news.find(:all, :order => "created_at DESC", :limit => 10)
+    @archive_studies = @current_archive.archive_studies.find(:all, :order => "created_at DESC", :limit => 10) 
+
     render :action => :show
   end  
 end
