@@ -10,6 +10,11 @@ module ApplicationHelper
     @page.try(:title) == "Home"
   end
 
+  # Returns the class (either "current" or "") for a menu item in the primary navigation
+  def menu_item_class(menu_item_title)
+    @current_archive == Archive.ada && menu_item_title == @title ? "current" : ""
+  end
+
   def news_snippet(news)
     first_n_words(20, news.body)
   end

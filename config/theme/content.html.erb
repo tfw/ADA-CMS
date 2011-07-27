@@ -17,13 +17,13 @@
 	<nav class="mainnav clearfix">
 	  <ul>
 			<% for menu_item in @ada_menu_items %>
-				<li> <%= link_to(menu_item.title, menu_item.link) %> 
+				<li> <%= link_to(menu_item.title, menu_item.link, :class => menu_item_class(menu_item.title)) %>
 					<% if menu_item.children.any? %>
 						<ul>
 						  <% for child in menu_item.children %>									
-								<li> <%= link_to(child.title, child.link)%> </li>
+								<li> <%= link_to(child.title, child.link) %> </li>
 						  <% end %>
-						</ul
+						</ul>
 					<% end %>
 				</li>
 			<% end %>
@@ -45,7 +45,7 @@
 					<li><p><%= @current_archive.name %></p></li>
 					<% for menu_item in MenuItem.archive_root_menu_items(@current_archive)  %>
 						<% if menu_item.title == @title %>
-							<li id=<%= "#{@page.archive.slug.underscore}_current" %> >
+							<li class=<%= "#{@page.archive.slug.underscore}_current" %> >
 						<% else %>
 						<li>
 						<% end %>
