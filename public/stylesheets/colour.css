@@ -61,9 +61,9 @@
 .social_science .subnav ul li p {
 	color: #442a6e;
 }
-.social_science_current  a{
+.subnav .social_science_current a {
 	background: #452A6D;
-	color: #FFF!important;
+	color: #FFF;
 }
 /*Qualitative highlight colour*/
 
@@ -96,9 +96,9 @@
 .qualitative .subnav ul li p {
 	color: #179CDA;
 }
-.qualitative_current  a{
+.subnav .qualitative_current a {
 	background: #229CD8;
-	color: #FFF!important;
+	color: #FFF;
 }
 /*Longitudinal highlight colour*/
 
@@ -131,9 +131,9 @@
 .longitudinal .subnav ul li p {
 	color: #0A7370;
 }
-.longitudinal_current  a{
+.subnav .longitudinal_current a {
 	background: #0A7370;
-	color: #FFF!important;
+	color: #FFF;
 }
 /*ingigenous highlight colour*/
 
@@ -166,9 +166,9 @@
 .indigenous .subnav ul li p {
 	color: #C7641B;
 }
-.indigenous_current  a{
+.subnav .indigenous_current a {
 	background: #C7641B;
-	color: #FFF!important;
+	color: #FFF;
 }
 /*historical highlight colour*/
 
@@ -201,9 +201,9 @@
 .historical .subnav ul li p {
 	color: #9C8F63;
 }
-.historical_current  a{
+.subnav .historical_current a {
 	background: #9C8F63;
-	color: #FFF!important;
+	color: #FFF;
 }
 /*historical highlight colour*/
 
@@ -236,9 +236,9 @@
 .international .subnav ul li p {
 	color: #B91B20;
 }
-.international_current  a{
+.subnav .international_current a {
 	background: #B91B20;
-	color: #FFF!important;
+	color: #FFF;
 }
 
 /*crime highlight colour*/
@@ -278,7 +278,7 @@
 .crime_and_justice .subnav ul li p {
 	color: #A5751C;
 }
-.crime_and_justice_current  a{
+.subnav .crime_and_justice_current a {
 	background: #B91B20;
-	color: #FFF!important;
+	color: #FFF;
 }
