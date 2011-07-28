@@ -11,7 +11,7 @@ devs:
   <<: *deploy
   database: adacms_devs
 
-devs:
+staging:
   <<: *deploy
   database: adacms_staging
 
