@@ -5,7 +5,7 @@ class Integrations::Workflow
   
   def self.integrate(catalog_name, archive)
     log = Inkling::Log.create!(:category => "integration", :text => "#{archive.name} integration began.")
-    statement = Nesstar::StatementEJB.find_by_objectId("indigenous")
+    statement = Nesstar::StatementEJB.find_by_objectId(catalog_name)
 
     Integrations::ArchiveCatalogs.create_or_update(statement, archive)
 
