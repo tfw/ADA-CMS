@@ -6,12 +6,13 @@ module ApplicationHelper
   end
 
   def subarchive_home_page?
-    @page.try(:title) == "Home" and @current_archive != Archive.ada
+    # If testing for non-ADA archive, use: @current_archive != Archive.ada
+    @page.try(:title) == "Home"
   end
 
-  def nesstar_link(dataset)
-    study_id = dataset.about.split(".").last
-    return "http://assda-nesstar.anu.edu.au/webview/index.jsp?study=http%3A%2F%2Fassda-nesstar.anu.edu.au%3A80%2Fobj%2FfStudy%2Fau.edu.anu.assda.ddi.#{study_id}&amp;v=2&amp;mode=documentation&amp;submode=abstract&amp;top=yes"
+  # Returns the class (either "current" or "") for a menu item in the primary navigation
+  def menu_item_class(menu_item_title)
+    @current_archive == Archive.ada && menu_item_title == @title ? "current" : ""
   end
 
   def news_snippet(news)
@@ -40,7 +41,6 @@ module ApplicationHelper
   #this checks to see if a human readable mapping (DdiMapping) exists for the DDI element
   def human_readable(ddi)
     mapping = ddi_mapping(ddi)
-puts mapping 
     mapping || ddi
   end
   

@@ -1,8 +1,0 @@
-<h2><%= link_to news_archive.news.title, news_archive.path.slug %>
-</h2>
-<h3><%= news_archive.news.created_at.strftime('%d %b %Y') %></h3>
-<p>
-  <%= news_snippet(news_archive.news) %><br>
-  <%= link_to "Read More", news_archive.path.slug %>
-</p>
-<hr>

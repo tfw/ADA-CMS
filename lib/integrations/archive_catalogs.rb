@@ -2,30 +2,48 @@
 
 class Integrations::ArchiveCatalogs
   
-  def self.create_or_update(statement, archive_id) 
-    data = statement.attributes
-    parent = ArchiveCatalog.find_by_title(data["subjectId"])
-    archive = Archive.find(archive_id)
-
-    if data["objectType"] == "fCatalog"
-      catalog_ejb = Nesstar::CatalogEJB.find_by_id(statement.objectId)
-
-      if catalog_ejb.label.index("¤") 
-        data[:label] = catalog_ejb.label.split("¤").last
-      else
-        data[:label] = catalog_ejb.label
+  def self.create_or_update(statement, archive)
+    if statement.objectType == "fCatalog"
+      create_or_update_catalog(statement, archive)
+    elsif statement.objectType == "fStudy"
+      study = create_or_update_study(statement, archive)
+      
+      
+      if statement.creationDate > study.updated_at or study.related_materials.count == 0
+        Integrations::RelatedMaterials.create_or_update_by_study(study)     
       end
-              
-      archive_catalog = ArchiveCatalog.create_or_update_from_nesstar(data, archive, parent)
-    elsif data["objectType"] == "fStudy"
-      studyejb = Nesstar::StudyEJB.find_by_stdyID(statement.objectId)
-      study = Study.create_or_update_from_nesstar(studyejb.attributes)
-      archive_study = ArchiveStudy.create_or_update_from_nesstar(study, archive)
-      #plus, we create one for the ADA context, when searching
-      archive_study = ArchiveStudy.create_or_update_from_nesstar(study, Archive.ada)
-      ArchiveCatalogStudy.create_or_update_from_nesstar(archive_study, parent, data['predicateIndex'])
+
+      if statement.creationDate > study.updated_at or study.variables.count == 0
+        Integrations::Variables.create_or_update_by_study(study)        
+      end
     end
 
-    Nesstar::StatementEJB.find_all_by_subjectId(statement.objectId).each {|s| create_or_update(s, archive_id)}
+    Nesstar::StatementEJB.find_all_by_subjectId(statement.objectId).each {|s| create_or_update(s, archive)}
+  end
+  
+  
+  def self.create_or_update_catalog(statement, archive)
+    catalog_ejb = Nesstar::CatalogEJB.find_by_id(statement.objectId)
+    data = statement.attributes
+
+    if catalog_ejb.label.index("¤") 
+      data[:label] = catalog_ejb.label.split("¤").last
+    else
+      data[:label] = catalog_ejb.label
+    end
+    
+    parent_catalog = ArchiveCatalog.find_by_title(statement.subjectId)            
+    archive_catalog = ArchiveCatalog.create_or_update_from_nesstar(data, archive, parent_catalog)
+  end
+  
+  def self.create_or_update_study(statement, archive)
+    studyejb = Nesstar::StudyEJB.find_by_stdyID(statement.objectId)
+    study = Study.create_or_update_from_nesstar(studyejb.attributes)
+    archive_study = ArchiveStudy.create_or_update_from_nesstar(study, archive)
+    #plus, we create one for the ADA context, when searching
+    archive_study = ArchiveStudy.create_or_update_from_nesstar(study, Archive.ada)
+    parent_catalog = ArchiveCatalog.find_by_title(statement.subjectId)    
+    ArchiveCatalogStudy.create_or_update_from_nesstar(archive_study, parent_catalog, statement.predicateIndex)
+    study
   end
 end

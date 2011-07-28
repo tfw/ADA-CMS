@@ -30,6 +30,9 @@ legend {
 	display: block;
 	overflow: auto;
 }
+ul#sub-menu {
+	float: left;
+}
 
 #tabs li, #sub-menu li {
 	border-top-width: 1px;
@@ -71,6 +74,18 @@ legend {
 #sub-menu li {
 	padding-top: 4px;
 	padding-bottom: 4px;
+}
+
+#sub-tabs {
+	overflow: auto;
+}
+
+#study-results .pagination, #browse-results .pagination {
+	float: left;
+	background-color: #EEE;
+	margin-left: 10px;
+	padding: 4px 10px;
+	border-top: 1px solid #EDEDED;
 }
 
 /*Search Results*/
@@ -334,11 +349,10 @@ legend {
 
 #browse-results {
 	position: relative;
-	padding-top: 8px;
 	padding-bottom: 8px;
 }
 
-	#browse-results p {
+#browse-results p {
 	padding-top: 15px;
 }
     
@@ -365,7 +379,7 @@ legend {
 	padding-top: 11px;
 	padding-bottom: 11px;
 }
-#browse-results-title, #study-results-title {
+#browse-results-title, #study-results-title, table.content {
 	border-collapse: collapse;
 	padding: 0px;
 	border-top-width: 5px;
@@ -402,11 +416,9 @@ legend {
 
 
 
-#study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table {
+#study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table, table.content {
 	border-collapse: collapse;
-	width: 100%!important;
 	padding: 0px;
-	float: left;
 	border-top-width: 5px;
 	border-top-style: none;
 	border-right-style: none;
@@ -425,12 +437,17 @@ legend {
 	border-left-width: 0px;
 	display: inline-table;
 }
+#study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table {
+	width: 100%!important;
+	float: left;
+}
+
 #study-table, #related-material-table {
 	width: 100%;
 	border-collapse: collapse;
 }
 
-#study th, #browse-results-title th, #search-results-ext th, #browse-results-ext th {
+#study th, #browse-results-title th, #search-results-ext th, #browse-results-ext th, table.content th {
 	border-top-style: none;
 	border-right-style: none;
 	border-bottom-style: solid!important;
@@ -446,7 +463,7 @@ legend {
 	border-bottom-color: #FFF!important;
 	text-align: left;
 }
-#study td, #browse-results-title td {
+#study td, #browse-results-title td, table.content td {
 	border-bottom-style: solid;
 	border-top-style: none;
 	border-right-style: none;
@@ -482,7 +499,7 @@ legend {
 
 
 #study-table tbody, #related-material-table tbody,
-#browse-results-title tbody, #search-results-ext tbody, #browse-results-ext tbody {
+#browse-results-title tbody, #search-results-ext tbody, #browse-results-ext tbody, table.content tbody {
 	margin: 0px;
 	border-top-style: none;
 	border-right-style: none;
@@ -490,6 +507,7 @@ legend {
 	border-left-style: none;
 	padding: 0px;
 }
+
 
 
 /*Misc.*/
@@ -526,7 +544,7 @@ span.highlight {
 .standard {
 }
 
-.alt {
+.alt, table.content tbody tr:nth-child(even) {
 	background-color: #FAFAFA;
 }
 

@@ -27,13 +27,20 @@ feature "Creating pages" do
     page.should have_content("test page")
   end
   
+  scenario "I can edit a page" do
+    create_page(Archive.historical, "test page", "sample content")
+    cms_page = Page.find_by_title("test page")
+    visit edit_staff_archive_page_path(cms_page.archive, cms_page)
+    fill_in("page_title", :with => "test page changed")
+    click_button("Update Page")
+    page.should have_content("test page changed")
+  end
+  
   # scenario "AJAX - the path displays after a title update of a page" do
-  #   visit_archive("historical")
-  #   click_link("Add a page")
+  #   visit new_staff_archive_page_path(Archive.ada)
   #   fill_in("page_title", :with => "test 1 2 3")
   #  
   #   within(:xpath, "//input[@id='page_path']") do
-  #     debugger
   #     page.should have_content('test-1-2-3')
   #   end
   # end

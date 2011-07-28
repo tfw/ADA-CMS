@@ -12,6 +12,8 @@ module Staff::ActivityLogsHelper
       image_tag('icons/book_open.png')
     when "users"
       image_tag('icons/user.png')
+    when "search-index"
+      image_tag('icons/database_refresh.png')      
     end
   end
   
