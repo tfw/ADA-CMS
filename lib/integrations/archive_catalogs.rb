@@ -13,7 +13,11 @@ class Integrations::ArchiveCatalogs
         Integrations::RelatedMaterials.create_or_update_by_study(study)     
       end
 
+
+#puts "statement.creationDate #{statement.creationDate} | study.updated_at #{study.updated_at} | study.variables #{study.variables.size}"
+
       if statement.creationDate > study.updated_at or study.variables.count == 0
+        puts "v for #{study.ddi_id}"
         Integrations::Variables.create_or_update_by_study(study)        
       end
     end

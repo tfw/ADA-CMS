@@ -9,7 +9,7 @@ class Integrations::Workflow
 
     Integrations::ArchiveCatalogs.create_or_update(statement, archive)
 
-    study_ids = Study.all.collect {|s| s.id}
+    study_ids = archive.studies.collect {|s| s.id}
     study_ids = study_ids.join ","
     study_ids = "(#{study_ids})" 
     studies_count = ArchiveStudy.count(:conditions => ["updated_at > ? and archive_id = ?", log.created_at, archive.id])
