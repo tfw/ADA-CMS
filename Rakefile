@@ -78,5 +78,15 @@ task :reindex => :environment do
 end
 
 
+task :var_count => :environment do
+  Archive.all.each do |archive|
+    next if archive.name == "ADA"
+    study_ids = archive.studies.collect {|s| s.id}
+    study_ids = study_ids.join ","
+    study_ids = "(#{study_ids})" 
+    puts "#{archive.name}: has #{Variable.count(:conditions => ["study_id in #{study_ids}"])} vars"
+  end
+end
+
 
 
