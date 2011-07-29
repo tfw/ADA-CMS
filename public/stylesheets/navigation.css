@@ -74,13 +74,6 @@ nav ul {
 	background-position: 0px 0px;
 	background-repeat:  no-repeat;
 }
-.content nav.archive_menu ul li a:hover, .content nav #study-facets a:hover {
-	display: block;
-	text-decoration: none;
-	color: #000;
-	background-position: 0px -32px !important;
-	background-color: #e4e4e4;
-}
 
 .content nav.archive_menu ul li.ada a, .content nav #study-facets .default a {
 	background-image: url(../images/structure/menu_icon_ada.png);
