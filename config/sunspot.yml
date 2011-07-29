@@ -3,6 +3,7 @@ development: &development
     hostname: localhost
     port: 8982
     log_level: INFO
+#    path: /Users/nicholas/tmp
 
 test:
   solr:
