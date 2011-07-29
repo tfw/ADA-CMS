@@ -1,4 +1,4 @@
-<% current_archive_idx = @study_searches.keys.index(@current_archive) unless @current_archive == Archive.ada
+<% current_archive_idx = @study_searches.keys.index(@current_archive) 
 
 content_for :js do 
   multi_accordion_on_archive('study-facets', current_archive_idx)
