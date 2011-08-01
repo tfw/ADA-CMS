@@ -3,7 +3,6 @@ development: &development
     hostname: localhost
     port: 8982
     log_level: INFO
-#    path: /Users/nicholas/tmp
 
 test:
   solr:
@@ -18,8 +17,10 @@ production: &production
     log_level: WARNING
 
 devs:
-  <<: *development
-
+  solr:
+    hostname: localhost
+    port: 8080
+    log_level: WARNING
 staging:
   <<: *production
 
