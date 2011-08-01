@@ -1,6 +1,6 @@
 <%
-  current_archive_idx = @ada_catalogs.keys.index(@current_archive) unless @current_archive == Archive.ada
- 
+  current_archive_idx = @current_archive == Archive.ada ? ((0..(Archive.count - 1)).collect{|i| i}).join(",") : @ada_catalogs.keys.index(@current_archive) 
+  
   content_for :js do 
     multi_accordion_on_archive('browse-tree', current_archive_idx)
  end %>
