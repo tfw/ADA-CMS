@@ -93,3 +93,30 @@ namespace :solr do
     run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} sunspot:reindex"
   end
 end
+
+namespace :apache do
+  task :start do
+    sudo "/etc/init.d/httpd start"
+  end
+  task :stop do
+    sudo "/etc/init.d/httpd stop"
+  end
+  task :restart do
+    sudo "/etc/init.d/httpd restart"
+  end
+end
+
+namespace :db do
+  namespace :clonefrom do
+    dump = "pg_dump -Ft -b -U d10web --host pdb2.anu.edu.au -p 5432"
+    restore = "pg_restore -O -U d10web --host pdb2.anu.edu.au -p 5432"
+
+    task :staff do
+      filename = "tmp/adacms_staff.tar"
+      system "#{dump} adacms_staff > #{filename}"
+      Rake::Task["apache:stop"].execute
+      system "#{restore} -d adacms_#{rails_env} #{filename}"
+      Rake::Task["apache:start"].execute
+    end
+  end
+end
