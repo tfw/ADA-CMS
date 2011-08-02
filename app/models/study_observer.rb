@@ -1,7 +1,6 @@
 require 'archive'
 
 class StudyObserver < ActiveRecord::Observer
-   # include ActionController::UrlWriter
    include Rails.application.routes.url_helpers
    
   def after_create(study)
@@ -9,6 +8,7 @@ class StudyObserver < ActiveRecord::Observer
   end
 
   def after_save(study)
+    expire_fragment("show-study-#{study.id}")
     log("edited", study) if study.created_at != study.updated_at
   end
   
