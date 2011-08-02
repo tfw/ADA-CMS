@@ -87,5 +87,25 @@ task :var_count => :environment do
   end
 end
 
+namespace :postgres do
+  dbhost = Secrets::DATABASE_HOST
+  dbport = 5432
+  dbuser = Secrets::DATABASE_USERNAME
+  dbpass = Secrets::DATABASE_PASSWORD
 
+  connection = "-U #{dbuser} --host #{dbhost} -p #{dbport}"
 
+  task :pull => :environment do
+    source_db = "adacms_#{ENV['source']}"
+    target_db = "adacms_#{Rails.env}"
+    filename = "tmp/#{source_db}.tar"
+
+    Rake::Task['db:drop'].execute
+    Rake::Task['db:create'].execute
+
+    system "export PGPASSWORD=#{dbpass} &&
+      pg_dump -Ft -b #{connection} #{source_db} > #{filename} &&
+      pg_restore -O #{connection} -d #{target_db} #{filename} &&
+      rm #{filename}"
+  end
+end
