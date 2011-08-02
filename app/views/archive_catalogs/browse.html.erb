@@ -1,1 +1,3 @@
-<%= render(:partial => "browse") %>
+<% cache(:action => "browse", :action_suffix => "@catalog.id") do %>
+	<%= render(:partial => "browse") %>
+<% end %>

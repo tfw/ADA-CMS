@@ -3,13 +3,12 @@
 
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
-require 'thinking_sphinx/tasks'
 
 Ada::Application.load_tasks
 
 namespace :ada do
   task :rebuild => :environment do
-    if ["development", "devs", "test", "staging"].include? Rails.env
+    if ["development", "devs", "test", "staging"].include? Rails.env or `hostname` =~ /\.local/
       ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme"].each do |t|
         Rake::Task[t].execute
       end
