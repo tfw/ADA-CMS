@@ -3,7 +3,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
-require 'thinking_sphinx/tasks'
 
 Ada::Application.load_tasks
 
@@ -77,6 +76,16 @@ task :reindex => :environment do
   Inkling::Log.create!(:category => "search-index", :text => "Solr finished index after #{duration}")
 end
 
+
+task :var_count => :environment do
+  Archive.all.each do |archive|
+    next if archive.name == "ADA"
+    study_ids = archive.studies.collect {|s| s.id}
+    study_ids = study_ids.join ","
+    study_ids = "(#{study_ids})" 
+    puts "#{archive.name}: has #{Variable.count(:conditions => ["study_id in #{study_ids}"])} vars"
+  end
+end
 
 
 
