@@ -19,7 +19,7 @@ production: &production
 devs:
   solr:
     hostname: localhost
-    port: 8080
+    port: 8983
     log_level: WARNING
 staging:
   <<: *production

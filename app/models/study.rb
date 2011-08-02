@@ -25,7 +25,7 @@ class Study < ActiveRecord::Base
     string :analytic_unit
     string :creation_date
     string :series_name
-    string :stdy_auth_entity 
+    text :stdy_auth_entity 
     string :stdy_contact_affiliation
     
     integer :archive_ids, :multiple => true
