@@ -28,7 +28,6 @@ gem 'yaml_db'
 gem 'nokogiri'
 gem 'jquery-rails', '>= 0.2.6' 
 gem 'capistrano-ext'
-gem 'thinking-sphinx', '>= 2.0.0', :require => 'thinking_sphinx'
 gem 'will_paginate', ">=3.0pre"
 gem 'paperclip', ">=2.3"
 gem 'ratom'
