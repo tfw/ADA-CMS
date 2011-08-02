@@ -13,7 +13,7 @@ test:
 production: &production
   solr:
     hostname: localhost
-    port: 8983
+    port: 8982
     log_level: WARNING
 
 devs:

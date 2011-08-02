@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>- Australian Data Archive -  <%= @title %> </title>
-    <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min' %>
-    <%= stylesheet_link_tag "import" %>
-    <%= stylesheet_link_tag "theme" %>
+    <%= javascript_include_tag 'modernizr-1.5.min', 'jquery.min', 'rails', 'jquery.effects.core', 'scripts', 'application',
+    		'jquery-explr-1.3.min', 'jquery.multi-open-accordion-1.0.1-ada', :cache => "ada" %>
+    <%= stylesheet_link_tag "import", "theme", :cache => "ada" %>
     
     <%= csrf_meta_tag %>	
 	</head>
@@ -106,8 +106,6 @@
 	</section>
 
   </body>
-    
-		<%= javascript_include_tag 'rails', 'jquery.effects.core', 'scripts', 'application', 'jquery-explr-1.3.min', 'jquery.multi-open-accordion-1.0.1-ada' %>
 
     <script type="text/javascript">
       $(document).ready(function(){
