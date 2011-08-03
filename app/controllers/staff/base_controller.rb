@@ -16,8 +16,6 @@ class Staff::BaseController < ApplicationController
   end
 
   def redirect_if_unauthorised
-  	puts "------------"
-  	debugger
   	unless (current_user.roles & PERMITTED_ROLES).any?
   		redirect_to root_path
   	end
