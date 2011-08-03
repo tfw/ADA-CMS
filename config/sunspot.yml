@@ -12,8 +12,8 @@ test:
 
 production: &production
   solr:
-    hostname: localhost
-    port: 8982
+    hostname: web3
+    port: 8983
     log_level: WARNING
 
 devs:
