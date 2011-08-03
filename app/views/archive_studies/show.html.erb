@@ -54,17 +54,19 @@
 	  </ul>
 	</div>
 	
-		
-  <section id="study-fields" <%= conceal_unless(['study'], params[:show]) %>>
-      <%= render :partial => "study_table", :locals => {:study => study} %>
-  </section>
+
+  <% cache "show-study-#{@study.id}" do %>	
+    <section id="study-fields" <%= conceal_unless(['study'], params[:show]) %>>
+        <%= render :partial => "study_table", :locals => {:study => study} %>
+    </section>
+      
+    <section id="variables" <%= conceal_unless(['var'], params[:show]) %>>
+  	  <%= render :partial => "variable", :collection => study.variables %>
+    </section>
     
-  <section id="variables" <%= conceal_unless(['var'], params[:show]) %>>
-	  <%= render :partial => "variable", :collection => study.variables %>
-  </section>
-  
-  <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
-    <%= render :partial => "related_material_table", :locals => {:study => study} %>
-  </section>
+    <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >
+      <%= render :partial => "related_material_table", :locals => {:study => study} %>
+    </section>
+  <% end %>
   
 </section>
