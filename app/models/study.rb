@@ -17,6 +17,8 @@ class Study < ActiveRecord::Base
     text :series_name
     text :universe
     text :comment, :stored => true
+    text :stdy_auth_entity 
+
     string :data_kind
     string :sampling
     string :coll_mode
@@ -25,8 +27,8 @@ class Study < ActiveRecord::Base
     string :analytic_unit
     string :creation_date
     string :series_name
-    string :stdy_auth_entity 
     string :stdy_contact_affiliation
+    string :stdy_auth_entity 
     
     integer :archive_ids, :multiple => true
   end  

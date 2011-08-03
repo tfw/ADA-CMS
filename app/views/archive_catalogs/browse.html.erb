@@ -1,1 +1,3 @@
-<%= render(:partial => "browse") %>
+<% cache("browse-#{@catalog.urn}") do %>
+	<%= render(:partial => "browse") %>
+<% end %>

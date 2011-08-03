@@ -1,6 +1,11 @@
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
 
+def rake(cmd, options={}, &block)
+  c = "cd #{current_path} && bundle exec rake RAILS_ENV=#{rails_env} #{cmd}"
+  run c, options, &block
+end
+
 set :application, "Australian Data Archives Website"
 set :repository,  'git@github.com:ANUSF/ADA-CMS.git'
 
@@ -79,17 +84,39 @@ task :deploy_log, :roles => :app do
 end
 
 task :refresh_theme, :roles => :app do
-  run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} install_theme"
+  rake "install_theme"
 end
 
 namespace :solr do
   task :start do
-    run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} sunspot:solr:start"
+    rake 'sunspot:solr:start'
   end
   task :stop do
-    run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} sunspot:solr:stop"
+    rake 'sunspot:solr:stop'
   end
   task :reindex do
-    run "cd #{current_path}; bundle exec rake RAILS_ENV=#{rails_env} sunspot:reindex"
+    rake 'sunspot:reindex'
+  end
+end
+
+namespace :apache do
+  task :start do
+    sudo "/etc/init.d/httpd start"
+  end
+  task :stop do
+    sudo "/etc/init.d/httpd stop"
+  end
+  task :restart do
+    sudo "/etc/init.d/httpd restart"
+  end
+end
+
+before 'postgres:pull', 'apache:stop'
+after 'postgres:pull', 'apache:start'
+
+namespace :postgres do
+  task :pull do
+    source_env = Capistrano::CLI.ui.ask "Specify source environment:"
+    rake "postgres:pull source=#{source_env}"
   end
 end

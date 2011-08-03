@@ -2,9 +2,10 @@
   <%= render :partial => '/shared/side_nav' %>
 <% end %>
 
-<% content_for(:breadcrumbs) do %>
-	<%= @page.path.slug %>
+<% cache "show-page-#{@page.id}" do %>
+	<% content_for(:breadcrumbs) do %>
+		<%= @page.path.slug %>
+	<% end %>
+
+	<%= render(:partial => @page.partial, :object => @page) %> 
 <% end %>
-
-<%= render(:partial => @page.partial, :object => @page) %> 
-

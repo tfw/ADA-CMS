@@ -1,7 +1,7 @@
 development: &development
   solr:
     hostname: localhost
-    port: 8982
+    port: 8983
     log_level: INFO
 
 test:
@@ -12,14 +12,14 @@ test:
 
 production: &production
   solr:
-    hostname: localhost
+    hostname: web3
     port: 8983
     log_level: WARNING
 
 devs:
   solr:
     hostname: localhost
-    port: 8080
+    port: 8983
     log_level: WARNING
 staging:
   <<: *production
