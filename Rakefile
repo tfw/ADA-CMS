@@ -109,3 +109,12 @@ namespace :postgres do
       rm #{filename}"
   end
 end
+
+task :prime_cache => :environment do
+  require 'net/http'
+  Inkling::Path.all.each do |path|
+    Net::HTTP.start('localhost') do |http|
+      response = http.get(path.slug)
+    end
+  end
+end

@@ -73,7 +73,6 @@ end
 
 task :symlinks, :roles => :app do
   run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/"
-  run "ln -nfs #{shared_path}/solr/data #{current_path}/solr/"  
   run "ln -nfs #{shared_path}/secrets.rb #{current_path}/config/initializers"
   run "cd #{current_path}/config; ln -nfs database-deploy.yml database.yml"
 end

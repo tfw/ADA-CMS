@@ -13,3 +13,9 @@ set :deploy_to,   "/data/httpd/Rails/ADA-CMS"
 
 # used by migrations:
 set :rails_env, "public"
+
+after 'deploy:update', :symlink_resources
+
+task :symlink_resources, :roles => :app do
+  run "ln -nfs /projects_qfs/d10/assda/publish/cms/resources/ #{current_path}/public/resources"
+end
