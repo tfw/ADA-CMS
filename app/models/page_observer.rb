@@ -6,11 +6,12 @@ class PageObserver < ActiveRecord::Observer
   end
 
   def after_save(page)
-    expire_fragment("show-page-#{page.id}")
+    ActionController::Base.new.expire_fragment("show-page-#{page.id}")
     log("edited", page) if page.created_at != page.updated_at
   end
 
   def after_destroy(page)
+    ActionController::Base.new.expire_fragment("show-page-#{page.id}")
     log("deleted", page)
   end
 

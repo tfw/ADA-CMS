@@ -111,10 +111,9 @@ namespace :postgres do
 end
 
 task :prime_cache => :environment do
-  require 'net/http'
+  require 'httparty'
+  include HTTParty
   Inkling::Path.all.each do |path|
-    Net::HTTP.start('localhost') do |http|
-      response = http.get(path.slug)
-    end
+    get "http://localhost:3000#{path.slug}"
   end
 end
