@@ -1,5 +1,3 @@
-require 'net/http'
-
 class ArchiveStudiesController < ContentController
   include HTTParty
   format :json

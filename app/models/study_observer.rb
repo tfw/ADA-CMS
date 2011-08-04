@@ -8,11 +8,12 @@ class StudyObserver < ActiveRecord::Observer
   end
 
   def after_save(study)
-    expire_fragment("show-study-#{study.id}")
+    ActionController::Base.new.expire_fragment("show-study-#{study.id}")
     log("edited", study) if study.created_at != study.updated_at
   end
   
   def after_destroy(study)
+    ActionController::Base.new.expire_fragment("show-study-#{study.id}")
     log("deleted", study)    
   end
   
