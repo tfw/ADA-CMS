@@ -13,6 +13,7 @@ set :deploy_to,   "/data/httpd/Rails/ADA-CMS"
 
 # used by migrations:
 set :rails_env, "public"
+set :rvm_bin_path, '/usr/local/rvm/bin'
 
 after 'deploy:update', :symlink_resources
 
