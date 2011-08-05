@@ -2,6 +2,7 @@ class Staff::BaseController < ApplicationController
 
   PERMITTED_ROLES = [Inkling::Role.find_by_name("administrator"),
   					Inkling::Role.find_by_name("Manager"),
+            Inkling::Role.find_by_name("Publisher"),
   					Inkling::Role.find_by_name("Approver"),
   					Inkling::Role.find_by_name("Archivist")]
 
