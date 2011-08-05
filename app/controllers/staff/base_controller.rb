@@ -8,7 +8,7 @@ class Staff::BaseController < ApplicationController
 
   helper_method :current_user
   before_filter :authenticate_user!
-  before_filter :redirect_if_unauthorised
+#  before_filter :redirect_if_unauthorised
   
   layout 'manage'
   
