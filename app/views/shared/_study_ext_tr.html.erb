@@ -2,38 +2,37 @@
   <td valign="top">
     <fieldset class="search-border">
       <% archive_study = study.for_archive(@current_archive) %>
-      <legend><span>Study Title: <%= link_to study.doc_title, archive_study.path.slug %></span></legend>
+
+      <legend><span>Study Title: <%= link_to study.title, archive_study.path.slug %></span></legend>
 
       <table>
 	<tr>
-          <td>Authoring Entity: <% study.stdy_auth_entity %></td>
-          <td>Year: <%= study.stdy_prod_date %></td>
-          <td>Study ID: <%= study.stdy_id %></td>
+          <td>Variables: <%= study.variables.size %> </td>
+          <td>Time Period: <%= study.period_start.to_s.split("-").first %> <%= study.period_end.to_s.split("-").first %> </td>
+          <td>Study ID: <%= study.ddi_id %></td>
           <td align="center" valign="middle">
 	    <% for archive_study in study.archive_studies
 	         next if archive_study.archive == Archive.ada %>
-	      <a href="<%= archive_study.path.slug %>">
-                <%= archive_icon(archive_study.archive) %>
-		<span><%= archive_study.archive.name %></span>
+	      <a href='<%= archive_study.path.slug %>'><%= archive_icon(archive_study.archive) %></a>
+        <%= link_to archive_study.archive.name, archive_study.path.slug %>
   	      </a>
-	      <!-- %= archive_study.archive.name % -->
 	    <% end %>
 	  </td>
 	</tr>
       </table>
 
-      <p><strong>Abstract:</strong> <%= line_break_title(first_n_words(30, study.abstract_text), 15).html_safe %> </p>
-      <p><strong>Variables:</strong> <%= study.variables.size %> </p>
-      <% if hit %>
-        <p><strong>Relevance:</strong> <%= hit.score %></p>
+      <p><strong>Primary Investigator:</strong> <%= study.stdy_auth_entity %></p>
 
-        <% for key in [:label, :abstract_text, :comment] %>
-          <% text = highlight_excerpt(hit.highlight(key)) %>
-	  <% unless text.nil? %>
-            <p><%= text %></p>
-	  <% end %>
-	<% end %>
+      <p><strong>Abstract:</strong> 
+      <% if hit and hit.highlight(:abstract_text) %>
+        <%= highlight_excerpt(hit.highlight(:abstract_text)) %>
+      <% else %>
+       <%= first_n_words(30, study.abstract_text) %> </p>
       <% end %>
+
+      <% if hit %>
+        <p><strong>Search score:</strong> <%= hit.score %></p>
+    	<% end %>
     </fieldset>
   </td>
 </tr>

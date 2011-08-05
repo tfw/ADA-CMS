@@ -28,9 +28,10 @@
 <% end %>
 
 <div id="search-results">
-  <h1>Searching for <%= @term %> produced <%= @studies_search.total %> results.</h1>
+	<h1>Searching for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
+	<h3>Search ran in <%= @current_archive == Archive.ada ? "all archives" : @current_archive.name %>.</h3>
 	
-  <p>Filters:  <%= filter_list("", params, true).html_safe %></p>
+  <p>Filters: <%= filter_list("", params, true).html_safe %></p>
  
   <% unless @term %> Search requires a term. <% end %>
     

@@ -1,20 +1,22 @@
-<% content_for :js do %>
-  $('#tree-<%= archive.slug %>').explrTree({
-  	ajaxContainerId	: 'browse-results',
-  	treeHeight	: 'auto',
-  	treeWidth	: 'auto',
-  	ajaxLoadingText : '<p> Loading studies ... </p>',
-  });	  
-
+<% multi_tree =  @current_archive == Archive.ada
+   content_for :js do %>
+  
+    $('#tree-<%= archive.slug %>').explrTree({
+    	ajaxContainerId	: 'browse-results',
+    	treeHeight	: 'auto',
+    	treeWidth	: 'auto',
+    	ajaxLoadingText : '<p> Loading studies ... </p>',
+    });	  
 <% end %>
 
-<h3 class="<%= archive_css(archive) %>"><a href="#"><%= archive.name %></a></h3>
+<% archive_link = "/#{archive.slug}/browse" %>
+
+<h3 class="<%= archive_css(archive) %>"><a href="<%= archive_link %>"><%= archive.name %></a></h3>
+
 <div>
-  <% if top_level_catalog %>
+  <% if multi_tree || @current_archive == archive %>
   <ul id='tree-<%= archive.slug %>'>
-    <%= render top_level_catalog.children %>
+    <%= render top_level_catalog.children if top_level_catalog %>
   </ul>
-  <% else %>
-    empty
   <% end %>
 </div>

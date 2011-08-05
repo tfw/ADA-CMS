@@ -1,7 +1,14 @@
 <tr id="study-<%= study.stdy_id %>" class="<%= cycle('', 'alt') %>">
-  <td> <%= link_to study.doc_title, study.for_archive(@current_archive).path.slug %> </td>
+  <td> 
+    <% if hit
+      label = hit.highlight(:label) ?  
+         (hit.highlight(:label).format { |word| "<span class=\"highlight\">#{word}</span>"}).html_safe : study.label 
+      else
+        label = study.label 
+      end%>
+   <%= link_to label, study.for_archive(@current_archive).path.slug %> </td>
   <td> <%= study.stdy_auth_entity %> </td>
-  <td> <%= study.stdy_prod_date %> </td>
+  <td> <%= study.period_start.to_s.split("-").first %> - <%= study.period_end.to_s.split("-").first %> </td>
   <td> <%= study.ddi_id %> </td>
   <td>
      <% for archive_study in study.archive_studies %>

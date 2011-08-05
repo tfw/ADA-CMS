@@ -75,7 +75,8 @@ class SearchesController < ContentController
   def study_search(archive, term, filters = {}, page = 1)
     Sunspot.search(Study) do ;
       keywords term do 
-        highlight :label, :abstract_text, :comment
+        highlight :label, :fragment_size => -1
+        highlight :abstract_text
       end
 
       with(:archive_ids).any_of [archive.id];

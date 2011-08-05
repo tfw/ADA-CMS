@@ -28,7 +28,7 @@ module ApplicationHelper
 
   def archive_icon(archive)
     file_name = archive.slug.gsub("-", "")
-    image_tag("structure/icon_#{file_name}.png", :alt => archive.name)
+    image_tag("structure/icon_#{file_name}.png", :alt => archive.name, :align=> "top")
   end
 
   #outputs a deployment message for Product Owner to watch (so they know how fresh the code is)

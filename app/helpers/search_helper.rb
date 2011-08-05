@@ -2,9 +2,7 @@ module SearchHelper
   
   def highlight_excerpt(highlight)
     return if highlight.nil?
-    
-    highlights = "<strong>#{highlight.field_name.capitalize}:</strong> "
-    highlights << highlight.format { |word| "<span class=\"highlight\">#{word}</span>".html_safe}	
+    highlights = highlight.format { |word| "<span class=\"highlight\">#{word}</span>".html_safe}	
     highlights << "..."
     highlights.html_safe	
   end

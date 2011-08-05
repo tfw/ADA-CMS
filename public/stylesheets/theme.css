@@ -537,7 +537,8 @@ div.float-left {
 }
 
 span.highlight {
-  background-color: white;
+  background-color: gray;
+  color: white;
   font-weight: bold;
 }
 
