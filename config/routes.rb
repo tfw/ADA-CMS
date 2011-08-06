@@ -65,5 +65,8 @@ Ada::Application.routes.draw do
   inkling_match("inkling/feeds")
 
   root :to => "pages#show_by_slug", :as => :root, :defaults => {:slug => "/ada/home"}
+
+  #because Rails 3.0.x has broken rescue_from, see http://techoctave.com/c7/posts/36-rails-3-0-rescue-from-routing-error-solution
+  match '*miss', :to => 'errors#routing'
 end
 
