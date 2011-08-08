@@ -24,9 +24,9 @@ $(document).ready(function() {
 	  </ul>
 	</div>
 
-	<div id="sub-tabs">
-          <%= will_paginate @archive_catalog_studies %>
+        <%= will_paginate @archive_catalog_studies %>
 
+	<div id="sub-tabs">
 	  <ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
 	    <li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link" href="#">Title View</a></li>
 	    <li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link" href="#">Extended</a></li>

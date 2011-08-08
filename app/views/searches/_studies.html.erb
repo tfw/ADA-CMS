@@ -15,9 +15,9 @@
 <% end %>
 
 <section id="study-results">
-	<div id="sub-tabs">
-	  <%= will_paginate @studies_search.results %>
+        <%= will_paginate @studies_search.results %>
 
+	<div id="sub-tabs">
 	  <ul id="sub-menu" <%= conceal_unless(['title', 'ext',], params[:format]) %>>
 	    <li id="title-view-item" <%= selected_menu_if(['title'], params[:format]) %>> <a id="title-view-link">Title View</a></li>
 	    <li id="ext-view-item" <%= selected_menu_if(['ext'], params[:format]) %>> <a id="ext-view-link">Extended</a></li>
