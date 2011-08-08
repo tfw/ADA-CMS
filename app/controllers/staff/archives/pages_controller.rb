@@ -68,7 +68,6 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
     slug = sluggerize(params[:title])
 
     if parent_page
-      debugger
       slug = "#{parent_page.urn}/#{slug}"
     elsif @archive
       slug = "/#{@archive.slug}/#{slug}"

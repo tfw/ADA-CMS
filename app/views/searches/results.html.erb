@@ -28,9 +28,14 @@
 <% end %>
 
 <div id="search-results">
-  <h1>Searching for <%= @term %> produced <%= @studies_search.total %> results.</h1>
+	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
+	<% if @current_archive != Archive.ada %>
+	<h3>
+		<%= link_to "Expand this search to all ADA", transient_search_path(:term => params[:term], :archive_id => Archive.ada.id) %>. (Studies: <%= @ada_search.total %>, Variables: <%= @variables_search.total %>) 
+	</h3>
+	<% end %>
 	
-  <p>Filters:  <%= filter_list("", params, true).html_safe %></p>
+  <p>Filters: <%= filter_list("", params, true).html_safe %></p>
  
   <% unless @term %> Search requires a term. <% end %>
     

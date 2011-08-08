@@ -21,7 +21,7 @@ staff:
 
 public:
   <<: *deploy
-  database: adacms_staff
+  database: adacms_staff 
 
 nesstar:
   adapter: mysql2

@@ -1,5 +1,8 @@
 <% fields = study.attributes.dup 
-  fields.delete("id") %>
+  fields.delete("id") 
+  fields.delete("created_at")
+  fields.delete("updated_at")   
+  %>
 
 <table id="study-table" border=0>
   <thead>
@@ -16,36 +19,36 @@
   	<%= study_field_table_row('stdy_prod_date', study, fields) %>
   	<%= study_field_table_row('stdy_prod_date', study, fields) %>
 
-  	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
+  	<% if fields.has_key?("collection_start") or fields.has_key?("collection_end") %>
   	 <tr>
        <td valign=top>Date of Collection</td>
       <td>
          <table>
-         	 <%= study_field_table_row('collectionStart', study, fields) %>
-         	 <%= study_field_table_row('collectionEnd', study, fields) %>
+         	 <%= study_field_table_row('collection_start', study, fields) %>
+         	 <%= study_field_table_row('collection_end', study, fields) %>
          </table>
        </td>
      </tr>
     <% end %>
 
-  	<% if fields.has_key?("stdyContact") or fields.has_key?("stdyContactAffiliation") or fields.has_key?("stdyContactEmail") %>
+  	<% if fields.has_key?("stdy_contact") or fields.has_key?("stdy_contact_affiliation") or fields.has_key?("stdy_contact_email") %>
       <tr>
        <td valign=top>
          Contact Person
        </td>
        <td>
          <table>
-          	<%= study_field_table_row('stdyContact', study, fields) %>
-          	<%= study_field_table_row('stdyContactAffiliation', study, fields) %>
-          	<%= study_field_table_row('stdyContactEmail', study, fields) %>
+          	<%= study_field_table_row('stdy_contact', study, fields) %>
+          	<%= study_field_table_row('stdy_contact_affiliation', study, fields) %>
+          	<%= study_field_table_row('stdy_contact_email', study, fields) %>
          </table>
        </td>
      </tr>
     <% end %>
  
-   	<%= study_field_table_row('stdyDepDate', study, fields) %>
+   	<%= study_field_table_row('stdy_dep_date', study, fields) %>
 
-  	<% if fields.has_key?("collectionStart") or fields.has_key?("collectionEnd") %>
+  	<% if fields.has_key?("collection_start") or fields.has_key?("collection_end") %>
   	 <tr>
        <td>
          <table>
@@ -57,21 +60,20 @@
      </tr>
     <% end %>
  
-   	<%= study_field_table_row('subcat', study, fields) %>
    	<%= study_field_table_row('keywords', study, fields) %>
    	<%= study_field_table_row('nation', study, fields) %>
-   	<%= study_field_table_row('geographicalCover', study, fields) %>
-   	<%= study_field_table_row('geographicalUnit', study, fields) %>
-   	<%= study_field_table_row('analyticalUnit', study, fields) %>
+   	<%= study_field_table_row('geographical_cover', study, fields) %>
+   	<%= study_field_table_row('geographical_unit', study, fields) %>
+   	<%= study_field_table_row('analytical_unit', study, fields) %>
    	<%= study_field_table_row('universe', study, fields) %>
    	<%= study_field_table_row('dataKind', study, fields) %>
    	<%= study_field_table_row('sampling', study, fields) %>
    	<%= study_field_table_row('collMode', study, fields) %>
    	<%= study_field_table_row('timeMeth', study, fields) %>
    	<%= study_field_table_row('weight', study, fields) %>
-   	<%= study_field_table_row('docBiblCit', study, fields) %>
-   	<%= study_field_table_row('stdyCopyright', study, fields) %>
-   	<%= study_field_table_row('docCopyright', study, fields) %>
+   	<%= study_field_table_row('doc_bibl_cit', study, fields) %>
+   	<%= study_field_table_row('stdy_copyright', study, fields) %>
+   	<%= study_field_table_row('doc_copyright', study, fields) %>
    	<%= study_field_table_row('universe', study, fields) %>
    </tr>
 

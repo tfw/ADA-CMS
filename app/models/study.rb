@@ -16,7 +16,6 @@ class Study < ActiveRecord::Base
     text :abstract_text, :stored => true
     text :series_name
     text :universe
-    text :comment, :stored => true
     text :stdy_auth_entity 
 
     string :data_kind

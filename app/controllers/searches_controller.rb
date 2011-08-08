@@ -48,6 +48,8 @@ class SearchesController < ContentController
       else
         {current_archive => study_search(current_archive, term, study_filters, page)}
       end
+
+    @ada_search = study_search(Archive.ada, term, study_filters, page) unless @current_archive == Archive.ada
     
     @studies_search = @study_searches[current_archive]
     @variables_search = variable_search(term, [], page)
@@ -75,7 +77,8 @@ class SearchesController < ContentController
   def study_search(archive, term, filters = {}, page = 1)
     Sunspot.search(Study) do ;
       keywords term do 
-        highlight :label, :abstract_text, :comment
+        highlight :label, :fragment_size => -1
+        highlight :abstract_text
       end
 
       with(:archive_ids).any_of [archive.id];
