@@ -50,7 +50,7 @@ ul#sub-menu {
 	width: 230px;
 }
 
-#tabs li, #sub-menu li {
+#tabs li, #sub-menu li, #study-results .pagination, #browse-results .pagination {
 	border-top-width: 0px;
 	border-left-width: 0px;
 	border-top-style: solid;
@@ -101,14 +101,14 @@ ul#sub-menu {
 }
 
 #sub-tabs {
+	float: left;
 }
 
 #study-results .pagination, #browse-results .pagination {
 	float: right;
-	background-color: #EEE;
-	margin-left: 10px;
-	padding: 4px 10px;
-	border-top: 1px solid #EDEDED;
+	background-color: #DFDFDF !important;
+	color: #000!important;
+	margin-right: 0;
 }
 
 /*Search Results*/
