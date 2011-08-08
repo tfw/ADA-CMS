@@ -1,0 +1,9 @@
+<% content_for(:sidenav) do %>
+  <%= render :partial => '/shared/side_nav' %>
+<% end %>
+
+<% content_for(:breadcrumbs) do %>
+	404: <%= params[:miss] %> 
+<% end %>
+
+I'm sorry, we couldn't find <%= params[:miss] %> 
