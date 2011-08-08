@@ -17,7 +17,7 @@ legend {
 /*Tabbing*/
 #tabs {
 	overflow: auto;
-	width: 185px;
+	width: 230px;
 	float: left;
 	position: relative;
 }
@@ -47,6 +47,7 @@ legend {
 }
 ul#sub-menu {
 	float: none;
+	width: 230px;
 }
 
 #tabs li, #sub-menu li {
@@ -100,11 +101,10 @@ ul#sub-menu {
 }
 
 #sub-tabs {
-	overflow: auto;
 }
 
 #study-results .pagination, #browse-results .pagination {
-	float: left;
+	float: right;
 	background-color: #EEE;
 	margin-left: 10px;
 	padding: 4px 10px;
