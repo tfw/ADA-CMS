@@ -6,9 +6,39 @@
 	background-color:transparent
 }
 
+#search-form {
+        position: relative;
+}
+
+.ie6 #search-form,
+.ie7 #search-form,
+.ie8 #search-form
+{
+        border-width: 1px 1px 0 1px;
+        border-color: #aaa;
+        border-style: solid;
+}
+
+.ie6 #search-form,
+.ie7 #search-form
+{
+        height: 31px;
+        padding-right: 50px;
+        padding-top: 10px;
+}
+
+.ie8 #search-form
+{
+        height: 40px;
+        padding-right: 3px;
+        padding-top: 1px;
+}
+
+
 .formtastic #search_button {
 	margin: 0px;
 	padding: 8px;
+        background-color: #666;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
 	background: -moz-linear-gradient(#666, #333);
 	background: linear-gradient(#666, #333);
@@ -20,6 +50,18 @@
 	color: #CCC;
 	text-transform: uppercase;
 }
+
+.ie7 .formtastic #search_button {
+        display: block;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+}
+
+.ie8 .formtastic #search_button {
+        margin-top: 6px;
+}
+
 .formtastic #login_name {
 	border-style: none;
 	width: 123px;
@@ -49,7 +91,7 @@
 
 .formtastic #register_button {
 	float: right;
-	background: #666;
+        background-color: #217a38;
 	padding: 8px;
 	font: 9px Arial, Helvetica, sans-serif;
 	color: #FFF;

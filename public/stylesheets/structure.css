@@ -1,16 +1,19 @@
 /* CSS Document */
 
 @charset "ISO-8859-1";
-header.admin{
-	background: url(../images/structure/bg_masthead_admin.gif) repeat-x!important;
-	height: 180px;
-	display: block;
+body {
+	min-width: 925px;
 }
 
 header {
+	display: block;
+	position: relative;
 	background: url(../images/structure/bg_masthead.gif) repeat-x;
 	height: 180px;
-	position: relative;
+}
+
+header.admin {
+	background: url(../images/structure/bg_masthead_admin.gif) repeat-x!important;
 }
 
 .masthead {

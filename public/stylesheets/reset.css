@@ -5,13 +5,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td { 
 	margin: 0; padding: 0; 
 }
-.mainnav ul li{
-	border: 0; 
-}
-h2    {
-	font-style: normal; font-weight: normal; 
-}
-.login h1 {
+#tabs {
 	text-align: left;
 	font-weight: normal;
 }

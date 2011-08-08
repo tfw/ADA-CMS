@@ -42,7 +42,8 @@ class User < ActiveRecord::Base
       when 'email', 'http://users.ada.edu.au/email'
         self.email = value
       when 'http://users.ada.edu.au/role'
-        self.roles << Inkling::Role.find_or_create_by_name(value) #refactor this! Shouldn't automatically create roles
+        User.register_in_role(self, value)
+       # self.roles << Inkling::Role.find_or_create_by_name(value) #refactor this! Shouldn't automatically create roles
       when 'http://axschema.org/namePerson/first'
         self.firstname = value
       when 'http://axschema.org/namePerson/last'
@@ -61,4 +62,12 @@ class User < ActiveRecord::Base
     str ||= email
   end
 
+  private
+  def self.register_in_role(user, name)
+    role = Inkling::Role.find_by_name(name)
+    role ||= Inkling::Role.create(:name => name)
+
+    user.role_memberships.each{|rm| rm.delete}
+    role << user
+  end
 end
