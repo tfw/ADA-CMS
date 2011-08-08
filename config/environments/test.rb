@@ -35,3 +35,4 @@ Ada::Application.configure do
 end
 
 OPENID_SERVER='http://localhost:1132'
+BASE_URL = "http://localhost:3000"

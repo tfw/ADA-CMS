@@ -31,3 +31,4 @@ Paperclip.options[:command_path] = "/usr/bin/" if `uname`.strip == "Linux"
 #OPENID_SERVER='http://falo.anu.edu.au:81/'
 OPENID_SERVER = ENV['OPENID'] || 'https://users-test.ada.edu.au'
 ADAPT_SERVER = "https://adapt-test.ada.edu.au"
+BASE_URL = "http://localhost:3000"

@@ -51,3 +51,4 @@ end
 
 OPENID_SERVER='https://users.ada.edu.au'
 ADAPT_SERVER = "https://adapt.ada.edu.au"
+BASE_URL = "http://ada.edu.au"
