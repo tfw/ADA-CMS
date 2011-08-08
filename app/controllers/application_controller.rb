@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
-  before_filter :update_authentication
+#  before_filter :update_authentication
 
   # alias current_user current_inkling_user
   helper_method :current_user
@@ -20,9 +20,8 @@ class ApplicationController < ActionController::Base
 end
 
   def four_o_four
-  	puts " **** rendering 404 **************"
   	@title = "#{request.path} 404"
-	respond_to do |format| 
+    respond_to do |format| 
       format.html { render :template => "errors/404", :status => 404 } 
       format.all  { render :nothing => true, :status => 404 } 
     end
