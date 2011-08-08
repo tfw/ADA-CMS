@@ -143,12 +143,14 @@
 }
 .ui-accordion .ui-accordion-content-active {
 	display: block;
+	/*
 	border-right-width: 1px;
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-left-style: solid;
 	border-right-color: #EDEDED;
 	border-left-color: #EDEDED;
+	*/
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #EDEDED;
