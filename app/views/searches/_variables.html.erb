@@ -2,7 +2,6 @@
 <section id="variable-results" <%= conceal_unless(['var'], params[:show] || "study") %>>
 	<%= will_paginate(@variables_search.results , :params => {:show => "var"}) %>
 
-	<fieldset class="search-border"> 
     <table id="search-results-table" border=1>
       <thead>
         <tr>
@@ -17,5 +16,4 @@
         <% end %>
       </tbody>
     </table>
-  </fieldset>
 </section>
