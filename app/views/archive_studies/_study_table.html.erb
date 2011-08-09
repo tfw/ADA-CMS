@@ -43,22 +43,34 @@
      <tr>
        <td valign=top>Date of Collection</td>
       <td>
-         <table>
-           <%= study_field_table_row('collection_start', study, fields) %>
-           <%= study_field_table_row('collection_end', study, fields) %>
-         </table>
+          <table>
+            <tr>
+              <td>
+                <%= human_readable('collection_end') %>: <%= study.collection_start %> <% fields.delete('collection_end') %>
+              </td>
+              <td>
+                <%= human_readable('collection_start') %>: <%= study.collection_start %> <% fields.delete('collection_start') %>
+                </td>              
+            </tr> 
+          </table>         
        </td>
      </tr>
     <% end %>
 
     <% if fields.has_key?("period_start") or fields.has_key?("period_end") %>
      <tr>
-       <td valign=top>Date of Collection</td>
+       <td valign=top>Time Period</td>
       <td>
-         <table>
-           <%= study_field_table_row('period_start', study, fields) %>
-           <%= study_field_table_row('period_end', study, fields) %>
-         </table>
+          <table>
+            <tr>
+              <td>
+                <%= human_readable('period_end') %>: <%= study.collection_start %> <% fields.delete('period_end') %>
+              </td>
+              <td>
+                <%= human_readable('period_start') %>: <%= study.collection_start %> <% fields.delete('period_start') %>
+                </td>              
+            </tr> 
+          </table>         
        </td>
      </tr>
     <% end %>
@@ -68,7 +80,6 @@
     <%= study_field_table_row('geographical_unit', study, fields) %>   
   </tbody>
 </table>
-
 
 <table id="study-methodology-table" border=0>
   <thead>

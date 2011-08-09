@@ -10,8 +10,6 @@ legend {
 }
 .concealed {
 	display: none;
-	/*position: absolute;*/
-	top: 52px;
 }
 
 /*Tabbing*/
@@ -181,7 +179,6 @@ ul#sub-menu {
 	border-right-color: #EDEDED;
 	border-bottom-color: #EDEDED;
 	border-left-color: #EDEDED;
-	margin-top: -52px!important;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
@@ -196,7 +193,6 @@ ul#sub-menu {
 	width: 100%;
 	position: relative;
 	float: left;
-	margin-top: -52px !important;
 }
 
 #variables table {
@@ -695,6 +691,5 @@ span.highlight {
 }
 
 #rms {
-	margin-top: 52px;
 	float: left;
 }
