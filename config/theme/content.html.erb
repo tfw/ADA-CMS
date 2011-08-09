@@ -10,6 +10,9 @@
 		'application', 'jquery-explr-1.3.min', 'jquery.multi-open-accordion-1.0.1-ada', :cache => "ada" %>
 
     <%= csrf_meta_tag %>	
+
+  	<meta name="keywords" content="<%= yield :keywords %>" />
+
 	</head>
 
 	<!--[if lt IE 7 ]> <body class="ie6 <%= archive_css(@current_archive) %>"> <![endif]-->
