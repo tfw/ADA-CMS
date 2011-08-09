@@ -49,7 +49,7 @@ ul#sub-menu {
 	width: 220px;
 }
 
-#tabs li, #sub-menu li, #study-results .pagination, #browse-results .pagination {
+#tabs li, #sub-menu li, #study-results .pagination, #variable-results .pagination, #browse-results .pagination {
 	border-top-width: 0px;
 	border-left-width: 0px;
 	border-top-style: solid;
@@ -103,7 +103,7 @@ ul#sub-menu {
 	float: left;
 }
 
-#study-results .pagination, #browse-results .pagination {
+#study-results .pagination, #variable-results .pagination, #browse-results .pagination {
 	float: right;
 	background-color: #DFDFDF !important;
 	color: #000!important;
