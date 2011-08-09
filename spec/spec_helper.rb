@@ -71,7 +71,7 @@ RSpec.configure do |config|
 #     theme = Inkling::Theme.install_from_dir("config/theme")
 #   end
 # 
-#   config.after(:each, :type => :acceptance) { Warden.test_reset! }
+   #config.after(:each, :type => :acceptance) { Warden.test_reset! }
 #     
    config.include Devise::TestHelpers, :type => :controller
 end

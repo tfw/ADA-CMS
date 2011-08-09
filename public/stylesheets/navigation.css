@@ -121,12 +121,9 @@ nav ul {
 	background-image: url(../images/structure/menu_icon_user.png);
 	z-index: auto;
 }
-.content nav.archive_menu ul li.reports a {
-	background-image: url(../images/structure/menu_icon_report.png);
-	z-index: auto;
-}
+
 .content nav.archive_menu ul li.news a {
-	background-image: url(../images/structure/menu_icon_news.png);
+	background-image: url(../images/icons/newspaper.png);
 	z-index: auto;
 }
 

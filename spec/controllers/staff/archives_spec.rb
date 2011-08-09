@@ -14,6 +14,7 @@ describe Staff::ArchivesController do
         archive = Archive.make
     
         get :show, :id => archive.slug
+
         response.code.should == "200"
         assigns[:archive].should == archive
       end
