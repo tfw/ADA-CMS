@@ -1,5 +1,5 @@
 
-<section id="variable-results" <%= conceal_unless(['var'], params[:show]) %>>
+<section id="variable-results" <%= conceal_unless(['var'], params[:show] || "study") %>>
 	<%= will_paginate @variables_search.results %>
 
 	<fieldset class="search-border"> 
