@@ -19,8 +19,8 @@ legend {
 	overflow: auto;
 	float: left;
 	position: relative;
-	/*margin-right: 50px;*/
-	width: 220px;
+	margin-right: 50px;
+	/*width: 220px;*/
 }
 #sub-menu {
 }
