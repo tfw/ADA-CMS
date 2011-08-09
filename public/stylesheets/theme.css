@@ -20,7 +20,7 @@ legend {
 	float: left;
 	position: relative;
 	/*margin-right: 50px;*/
-	width: 230px;
+	width: 220px;
 }
 #sub-menu {
 }
@@ -48,7 +48,7 @@ legend {
 }
 ul#sub-menu {
 	float: none;
-	width: 230px;
+	width: 220px;
 }
 
 #tabs li, #sub-menu li, #study-results .pagination, #browse-results .pagination {
