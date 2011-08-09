@@ -31,36 +31,36 @@ feature "searching" do
     sleep 2
   end
   
-  # context "for variables" do
-  #   scenario "should show data when the variables tab is clicked on" do
-  #     search("var") 
-  #     click_link("variables-link")
+  context "for variables" do
+    scenario "should show data when the variables tab is clicked on" do
+      search("var") 
+      click_link("variables-link")
 
-  #     page.should have_content "var 1 0"
-  #     page.should have_content "var 1 9"
-  #   end
+      page.should have_content "var 1 0"
+      page.should have_content "var 1 9"
+    end
 
-  #   #unsure why this isn't passing - there's a state issue in the index for variables. Put this test first in line, it passes
-  #   scenario "pagination works" do
-  #     search("var")
-  #     click_link("variables-link")
+    #unsure why this isn't passing - there's a state issue in the index for variables. Put this test first in line, it passes
+    scenario "pagination works" do
+      search("var")
+      click_link("variables-link")
 
-  #     page.should have_content "var 1 0"
-  #     page.should have_content "var 3 9"    
-  #     page.should_not have_content "var 4 0"
+      page.should have_content "var 1 0"
+      page.should have_content "var 3 9"    
+      page.should_not have_content "var 4 0"
 
-  #     click_link "2"
+      click_link "2"
 
-  #     page.should have_content "var 4 0"
-  #   end    
-  # end
+      page.should have_content "var 4 0"
+    end    
+  end
 
   context "for studies " do
     scenario "the search form should lead to the search results page (transient search)" do
       visit "/"
       search_form("foo", page) 
       page.should have_content "Search: foo" 
-      page.should have_content "Searching for foo produced 100 results."
+      page.should have_content "Searching ADA for \"foo\" found 100 studies"
     end
   
     scenario "I can save a search if I'm authenticated" do
