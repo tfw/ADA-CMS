@@ -1,6 +1,6 @@
 
 <section id="variable-results" <%= conceal_unless(['var'], params[:show]) %>>
-	<%= will_paginate @variables_search.results %>
+	<%= will_paginate(@variables_search.results, :params => {:show => "var"}) %>
 
 	<fieldset class="search-border"> 
     <table id="search-results-table" border=1>
