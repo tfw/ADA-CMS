@@ -13,6 +13,7 @@ feature "Cms Dashboard", %q{
   scenario "login should go to dashboard" do
     sign_in(@admin)
     visit('/staff/home')
+puts page.body
     page.should have_content('Your Tasks')
     sign_out
   end

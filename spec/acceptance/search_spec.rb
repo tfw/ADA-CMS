@@ -60,7 +60,7 @@ feature "searching" do
       visit "/"
       search_form("foo", page) 
       page.should have_content "Search: foo" 
-      page.should have_content "Searching for foo produced 100 results."
+      page.should have_content "Searching ADA for \"foo\" found 100 studies"
     end
   
     scenario "I can save a search if I'm authenticated" do

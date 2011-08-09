@@ -14,7 +14,7 @@
   });
 <% end %>
 
-<section id="study-results">
+<section id="study-results" <%= conceal_unless(['study'], params[:show] || "study") %>>
         <%= will_paginate @studies_search.results %>
 
 	<div id="sub-tabs">

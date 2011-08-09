@@ -6,6 +6,8 @@
 	<%= @archive_study.urn %>
 <% end %>
 
+<% content_for(:keywords) do %><%= @archive_study.study.keywords.gsub(";", ",") %><% end %>
+
 
 <% content_for :js do %>
 
@@ -38,7 +40,7 @@
 
 <% end %>
 
-<aside class="breakout">
+<aside class="breakout study">
     <a href="<%= NESSTAR_SERVER %>/webview/index.jsp?object=<%= NESSTAR_SERVER%>:80/obj/fStudy/<%= @study.stdy_id %>&cms_url=<%= @archive_study.path.slug %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
 </aside>
 

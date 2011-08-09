@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/ANUSF/OpenID-Client-Engine.git
-  revision: ae337e02c0f5b4dd090f7f8a63863392f839e4cf
+  revision: 3b7f6f00bf4c40b43fef2eeefe17e6e7ab0b6421
   specs:
-    openid_client (0.1.5)
+    openid_client (0.1.6)
       devise
       devise_openid_authenticatable
 
@@ -255,7 +255,7 @@ DEPENDENCIES
   mysql2
   newrelic_rpm
   nokogiri
-  openid_client (~> 0.1.5)!
+  openid_client (~> 0.1.6)!
   paperclip (>= 2.3)
   pg
   rails (= 3.0.9)

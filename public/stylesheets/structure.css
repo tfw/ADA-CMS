@@ -418,7 +418,10 @@ background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#000));
 	float: right!important;
 	width: 200px!important;
 	margin-right: 0px;
-    margin-top: 0px;
+	margin-top: 0px;
+}
+section.main aside.study {
+	margin-bottom: 0px;
 }
 
 .partnersFirst {

@@ -10,16 +10,15 @@ legend {
 }
 .concealed {
 	display: none;
-	/*position: absolute;*/
-	top: 52px;
 }
 
 /*Tabbing*/
 #tabs {
 	overflow: auto;
-	width: 230px;
 	float: left;
 	position: relative;
+	margin-right: 50px;
+	/*width: 220px;*/
 }
 #sub-menu {
 }
@@ -47,10 +46,10 @@ legend {
 }
 ul#sub-menu {
 	float: none;
-	width: 230px;
+	width: 220px;
 }
 
-#tabs li, #sub-menu li, #study-results .pagination, #browse-results .pagination {
+#tabs li, #sub-menu li, #study-results .pagination, #variable-results .pagination, #browse-results .pagination {
 	border-top-width: 0px;
 	border-left-width: 0px;
 	border-top-style: solid;
@@ -104,7 +103,7 @@ ul#sub-menu {
 	float: left;
 }
 
-#study-results .pagination, #browse-results .pagination {
+#study-results .pagination, #variable-results .pagination, #browse-results .pagination {
 	float: right;
 	background-color: #DFDFDF !important;
 	color: #000!important;
@@ -180,7 +179,6 @@ ul#sub-menu {
 	border-right-color: #EDEDED;
 	border-bottom-color: #EDEDED;
 	border-left-color: #EDEDED;
-	margin-top: -52px!important;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
@@ -189,13 +187,6 @@ ul#sub-menu {
 	border-left-width: 0px;
 	padding-right: 10px;
 	padding-left: 10px;
-}
-
-#variable-results {
-	width: 100%;
-	position: relative;
-	float: left;
-	margin-top: -52px !important;
 }
 
 #variables table {
@@ -375,6 +366,9 @@ ul#sub-menu {
 	background-color: #e4e4e4;
 }
 
+#browse-navigation {
+	overflow: auto;
+}
 
 #browse-results {
 	position: relative;
@@ -691,7 +685,6 @@ span.highlight {
 }
 
 #rms {
-	margin-top: 52px;
 	float: left;
 	width: 100%;
 }

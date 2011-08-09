@@ -24,7 +24,6 @@ module SearchHelper
     if format.nil?
       format = "title"
     end
-    
     "class = 'concealed'" unless format_names.include?(format)
   end
   
