@@ -131,19 +131,10 @@ nav ul {
 }
 
 .content nav.archive_menu ul li.adapt a {
-	background-image: url(../images/structure/menu_icon_adapt.png);
+	background-image: url(../images/icons/adapt.png);
 	z-index: auto;
 }
 
-.content nav.archive_menu ul li.hccda a {
-	background-image: url(../images/structure/menu_icon_hccda.png);
-	z-index: auto;
-}
-
-.content nav.archive_menu ul li.usage-auditing a {
-	background-image: url(../images/structure/menu_icon_usage.png);
-	z-index: auto;
-}
 .content nav.archive_menu ul li.archive_current a {
 	background-color: #333;
 	background-image: url(../images/structure/menu_icon_current.png);

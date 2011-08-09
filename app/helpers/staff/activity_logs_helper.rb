@@ -8,13 +8,12 @@ module Staff::ActivityLogsHelper
       image_tag('icons/newspaper.png')
     when "page"
       image_tag('icons/page.png')
-    when "study"
-      image_tag('icons/book_open.png')
     when "users"
       image_tag('icons/user.png')
     when "search-index"
-      image_tag('icons/database_refresh.png')      
+      image_tag('icons/database_refresh.png')     
+    when "studies"
+      image_tag('icons/bricks.png')        
     end
   end
-  
 end

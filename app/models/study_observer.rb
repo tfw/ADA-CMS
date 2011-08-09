@@ -19,6 +19,6 @@ class StudyObserver < ActiveRecord::Observer
   
   private
   def log(verb, study)
-    Inkling::Log.create!(:text => "System #{verb} study #{study.title} in <a href='/staff/archives/ada'>ADA</a>.", :category => "content")
+    Inkling::Log.create!(:text => "System #{verb} study #{study.title} in <a href='/staff/archives/ada'>ADA</a>.", :category => "studies")
   end
 end
