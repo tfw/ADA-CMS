@@ -1,18 +1,11 @@
-<aside>
-<% feed = get_atom_feed(@current_archive) %>
- <h2> <%= link_to image_tag("icons/feed.png", :align => "top"), "#{feed.urn}?format=atom" %> Recent News </h2>
-</aside>
+<article>
 
-<%= @page.body.html_safe %>
-<% news_items = @page.archive.archive_news.recent %>
-<% if news_items.size > 0 %>
-  <% news_items.each do |archive_news| news = archive_news.news %>
-      <article>
-        <h3><%= news.title %></h3>
-        <p><%= news_snippet(news) %></p>
-        <p><%= link_to "Read more...", archive_news.urn %></p>
-      </article>
+  <% if @archive_news.any? or @archive_studies.any? %>
+  	<aside class="breakout">
+      <%= render(:partial => 'pages/archive_news', :object => @archive_news)%>
+    </aside>
   <% end %>
-<% else %>
-    (No news for <%= @page.archive.name %> Archive)
-<% end %>
+  
+  <%= news_page.body.html_safe if news_page.body %>
+</article>
+
