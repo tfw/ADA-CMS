@@ -34,7 +34,8 @@ $(document).ready(function() {
 	</div>
       </div>
 
-	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %> <%= catalog.nil? ? "width='70%' : ''%>>
+	<% @table_width = catalog.nil? ? "width='70%'" : '' %>
+	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %> <%= @table_width %> >
 		<thead>
 			<tr>
 				<th>Study</th>
