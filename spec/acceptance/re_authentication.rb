@@ -8,7 +8,11 @@ feature "Re-authentication", %q{
 
 
   shared_examples_for "ADA CMS" do
-    ['/', '/historical/home', '/ada/browse', '/staff/home'].each do |target_path|
+    paths = [ '/', '/historical/home', '/ada/browse',
+              '/archives/social_science/browse', '/historical/hccda',
+              '/staff/home', '/staff/resources', '/staff/hccda' ]
+
+    paths.each do |target_path|
       scenario "She can visit #{target_path}." do
         set_authentication_state
         visit target_path
