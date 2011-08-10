@@ -90,8 +90,8 @@ ul#sub-menu {
 }
 
 .selected-tab {
-	padding-bottom: 5px; 
-	background: white;
+	background-color: #DFDFDF !important;
+	color: #000!important;
 }
 
 #sub-menu li {
@@ -462,6 +462,7 @@ ul#sub-menu {
 #study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table {
 	width: 100%!important;
 	float: left;
+	border-top: 1px solid #999;
 }
 
 #study-table, #related-material-table {
