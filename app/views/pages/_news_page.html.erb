@@ -1,9 +1,11 @@
 <aside>
 <% feed = get_atom_feed(@current_archive) %>
- <h2> <%= link_to image_tag("icons/feed.png", :align => "top"), "#{feed.urn}?format=atom" %> Recent News </h2>
+ <%= render(:partial => 'pages/archive_news', :object => @archive_news)%>
+ <%= render(:partial => 'pages/archive_studies', :object => @archive_studies) %> 
 </aside>
 
 <%= @page.body.html_safe %>
+
 <% news_items = @page.archive.archive_news.recent %>
 <% if news_items.size > 0 %>
   <% news_items.each do |archive_news| news = archive_news.news %>
