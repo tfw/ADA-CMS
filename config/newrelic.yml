@@ -17,8 +17,8 @@ common: &default_settings
   license_key: 'd9713b8630697c1c045a7206b66fbac3d8fc1f0c'
 
   #for real user monitoring - see https://support.newrelic.com/kb/ruby/real-user-monitoring-in-ruby
-  browser_monitoring:
-  auto_instrument: true
+  # browser_monitoring:
+  # auto_instrument: true
   
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
