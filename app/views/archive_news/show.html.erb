@@ -6,6 +6,7 @@
   <%= @archive_news.urn %>
 <% end %>
 
+<% content_for(:keywords) do %><%= @archive_news.news.keywords %><% end %>
 
 <article>
   <h2><%= @news.title %></h2> <span>released <%= time_ago_in_words(@news.updated_at) %> ago</span>
