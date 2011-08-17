@@ -1,18 +1,17 @@
 module Workflowable
+	attr_accessor :transition_to
 
 	PUBLISH = "publish"
 	DRAFT 	= "draft"
 
 	def self.included(base)
-		base.send("before_save", :draft!, :unless => "self.draft?")
+		base.send("before_save", :draft!, :unless => "transition_to == PUBLISH")
 	end
 
 	def publish!(user)
 		if (user.roles & permitted_roles).any?
 			self.state = PUBLISH
-			self.save!
-			debugger
-			puts "+"
+			transition_to = PUBLISH
 		else
 			false
 		end
@@ -20,6 +19,7 @@ module Workflowable
 
 	def draft!
 		self.state = DRAFT
+		transition_to = DRAFT
 	end
 
 	def published?
