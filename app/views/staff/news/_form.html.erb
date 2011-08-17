@@ -3,7 +3,10 @@
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
 <fieldset>
-  <legend> <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> </legend>
+  <legend> 
+    <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> 
+    <%= " (version #{resource.version})" unless resource.new_record? %>
+   </legend>
 
 	<%= semantic_form_for([:staff, @archive, resource]) do |form| %>
 

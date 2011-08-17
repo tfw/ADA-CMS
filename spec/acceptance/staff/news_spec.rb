@@ -21,6 +21,7 @@ feature "Creating news" do
     page.should have_content("test news")
     click_link("Edit")
     page.should have_button('Update News')
+    page.should have_content("version 0")
   end
 
   scenario "I can delete news" do

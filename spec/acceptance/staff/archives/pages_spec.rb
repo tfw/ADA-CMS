@@ -31,6 +31,7 @@ feature "Creating pages" do
     create_page(Archive.historical, "test page", "sample content")
     cms_page = Page.find_by_title("test page")
     visit edit_staff_archive_page_path(cms_page.archive, cms_page)
+    page.should have_content("version 0")
     fill_in("page_title", :with => "test page changed")
     click_button("Update Page")
     page.should have_content("test page changed")
