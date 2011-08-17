@@ -13,9 +13,9 @@ gem "devise", ">= 1.2.0"
 gem 'devise_openid_authenticatable', '~> 1.0.0'
 
 if ENV['GEMS_LOCAL'] and File.exist? ENV['GEMS_LOCAL']
-  gem 'openid_client', '~> 0.1.6', :path => "#{ENV['GEMS_LOCAL']}/openid_client"
+  gem 'openid_client', '~> 0.1.8', :path => "#{ENV['GEMS_LOCAL']}/openid_client"
 else
-  gem 'openid_client', '~> 0.1.6',
+  gem 'openid_client', '~> 0.1.8',
     :git => "git://github.com/ANUSF/OpenID-Client-Engine.git"
 end
 
@@ -33,7 +33,7 @@ gem 'ratom'
 gem 'sunspot_rails', '>=1.2.1'
 gem 'mongrel', '~> 1.2.0.pre2'
 gem 'httparty'
-# gem 'delayed_job'
+gem 'vestal_versions', :git => 'git://github.com/adamcooper/vestal_versions'
 
 group :staff, :public do
 	gem 'newrelic_rpm'

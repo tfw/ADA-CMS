@@ -1,10 +1,18 @@
 GIT
   remote: git://github.com/ANUSF/OpenID-Client-Engine.git
-  revision: 3b7f6f00bf4c40b43fef2eeefe17e6e7ab0b6421
+  revision: 7270b3b2932326457bc4d63d3c626f14b64bc3d7
   specs:
-    openid_client (0.1.6)
+    openid_client (0.1.8)
       devise
       devise_openid_authenticatable
+
+GIT
+  remote: git://github.com/adamcooper/vestal_versions
+  revision: 6273df533f85014062e346cb1807b0531a809ee2
+  specs:
+    vestal_versions (1.2.2)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
 
 GIT
   remote: git://github.com/cjheath/rails-ckeditor.git
@@ -255,7 +263,7 @@ DEPENDENCIES
   mysql2
   newrelic_rpm
   nokogiri
-  openid_client (~> 0.1.6)!
+  openid_client (~> 0.1.8)!
   paperclip (>= 2.3)
   pg
   rails (= 3.0.9)
@@ -267,5 +275,6 @@ DEPENDENCIES
   simplecov (>= 0.4.0)
   steak (>= 1.0.0.rc.1)
   sunspot_rails (>= 1.2.1)
+  vestal_versions!
   will_paginate (>= 3.0pre)
   yaml_db
