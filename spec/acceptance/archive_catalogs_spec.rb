@@ -41,7 +41,6 @@ feature "serving out Archive Catalogs" do
   # end
   
   scenario "requesting a catalog with studies and clicking on Extended should show extended info" do
-    puts "||||| #{@catalog.urn}"
     visit @catalog.urn
     click_link 'Extended'
   

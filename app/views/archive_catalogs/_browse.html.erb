@@ -16,9 +16,7 @@ $(document).ready(function() {
   });
 });
 </script>
-
-<% str = @catalog ? @catalog.id : 'ada'
-  cache "browse-catalog-#{str}" do %>
+<% cache "browse-catalog-#{@catalog ? @catalog.id : 'ada'}" do %>
   <section id="browse-results">
     <%= render(:partial => "studies", :locals => {:catalog => @catalog}) %>
   </section>

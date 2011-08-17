@@ -29,6 +29,7 @@ Paperclip.options[:command_path] = "/opt/local/bin/" if `uname`.strip == "Darwin
 Paperclip.options[:command_path] = "/usr/bin/" if `uname`.strip == "Linux"
 
 #OPENID_SERVER='http://falo.anu.edu.au:81/'
-OPENID_SERVER = ENV['OPENID'] || 'https://users-test.ada.edu.au'
+#OPENID_SERVER = ENV['OPENID'] || 'https://users-test.ada.edu.au'
+OPENID_SERVER="delltop.anu.edu.au:3000"
 ADAPT_SERVER = "https://adapt-test.ada.edu.au"
 BASE_URL = "http://localhost:3000"

@@ -10,7 +10,7 @@ class ArchiveStudiesController < ContentController
   def show
     @archive_study = ArchiveStudy.find_by_id(params[:id])
     @study = @archive_study.study
-   # get_study_permissions_from_ada_users(@study)
+    #get_study_permissions_from_ada_users(@study)
     @current_archive = @archive_study.archive
     @title = @study.title
     respond_with(@study)
@@ -26,7 +26,9 @@ class ArchiveStudiesController < ContentController
   private
   
   def get_study_permissions_from_ada_users(study)
+    #this actually works!
     resource_id = study.stdy_id
-    p ArchiveStudiesController.get('http://users-test.ada.edu.au/users/access', :query => {:id => current_user.identity_url, :resource => resource_id, :output => 'json'})
+    username = current_user.identity_url.split("/").last
+    p ArchiveStudiesController.get("http://#{OPENID_SERVER}/users/#{username}/access/#{resource_id}?api_key=")
   end
 end
