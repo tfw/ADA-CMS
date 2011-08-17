@@ -33,7 +33,7 @@ gem 'ratom'
 gem 'sunspot_rails', '>=1.2.1'
 gem 'mongrel', '~> 1.2.0.pre2'
 gem 'httparty'
-# gem 'delayed_job'
+gem 'vestal_versions', :git => 'git://github.com/adamcooper/vestal_versions'
 
 group :staff, :public do
 	gem 'newrelic_rpm'

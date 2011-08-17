@@ -1,6 +1,7 @@
 class Page < ActiveRecord::Base
   include Inkling::Util::Slugs, ContentPathIncludesArchive
-
+  versioned
+  
   acts_as_nested_set
   acts_as_inkling 'Page'
   

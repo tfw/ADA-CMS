@@ -7,6 +7,14 @@ GIT
       devise_openid_authenticatable
 
 GIT
+  remote: git://github.com/adamcooper/vestal_versions
+  revision: 6273df533f85014062e346cb1807b0531a809ee2
+  specs:
+    vestal_versions (1.2.2)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+
+GIT
   remote: git://github.com/cjheath/rails-ckeditor.git
   revision: ef3b0b08687103fa42d72d89c4bddf4e725bbbb6
   branch: rails3
@@ -267,5 +275,6 @@ DEPENDENCIES
   simplecov (>= 0.4.0)
   steak (>= 1.0.0.rc.1)
   sunspot_rails (>= 1.2.1)
+  vestal_versions!
   will_paginate (>= 3.0pre)
   yaml_db

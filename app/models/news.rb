@@ -1,6 +1,8 @@
 class News < ActiveRecord::Base
   include ApplicationHelper
 
+  versioned
+
   has_many :archive_news, :dependent => :destroy
   has_many :archives, :through => :archive_news
   SNIPPET_WORDS = 20
