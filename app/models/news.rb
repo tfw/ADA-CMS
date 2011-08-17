@@ -1,5 +1,5 @@
 class News < ActiveRecord::Base
-  include ApplicationHelper
+  include ApplicationHelper, Workflowable
 
   versioned
 
