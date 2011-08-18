@@ -26,7 +26,7 @@
         <td>
           <%= link_to 'Public View', news.archive_news.first.path.slug %>
           <%= link_to 'Edit', edit_staff_news_path(news) %>
-          <%= link_to 'Delete', staff_news_path(news), :method => :delete %>
+          <%= link_to 'Delete', staff_news_path(news), :method => :delete, :confirm => "Are you sure?" %>
         </td>
       </tr>
       <% end %>

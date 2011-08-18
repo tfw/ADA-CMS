@@ -9,7 +9,6 @@ class ApplicationController < ActionController::Base
   respond_to :html
 
   protect_from_forgery
-#  before_filter :update_authentication_on_content
 
   # alias current_user current_inkling_user
   helper_method :current_user
@@ -21,11 +20,6 @@ class ApplicationController < ActionController::Base
       format.all  { render :nothing => true, :status => 404 } 
     end
   	true
-  end
-
-  protected
-  def update_authentication_on_content
-    update_authentication unless request.path =~ /\/(documents|images)/
   end
 end
 

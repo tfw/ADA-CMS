@@ -3,7 +3,7 @@
 
     <%= link_to 'Public View', page.path.slug %>, 
     <%= link_to 'Edit', edit_staff_archive_page_path(page.archive, page) %>,  
-    <%= link_to 'Delete', staff_archive_page_path(page.archive, page), :method => :delete %> 
+    <%= link_to 'Delete', staff_archive_page_path(page.archive, page), :method => :delete, :confirm => "Are you sure?" %> 
 
     <% if page.children %>
       <ul class="sortable">
