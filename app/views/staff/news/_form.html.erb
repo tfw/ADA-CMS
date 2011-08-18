@@ -15,14 +15,16 @@
 	  <%= form.inputs do %>
 		  <%= form.input :title %>
 		  <%= form.input :keywords %>
-		  <%= form.input :archives, :as => :check_boxes %>
+		  <%= form.input :archives, :as => :select, :input_html => {:size => 8} %>
 
 		  <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'90%', :height=>'200px' %>
 		<% end %>
 
-	  <%= form.commit_button %>
-	  <%= content_tag(:li, content_tag(:a, "Preview", :id => "preview-link", :href => "#")) %>
-
+      <br/>
+      <%= form.buttons do %>
+        <%= form.commit_button %> 
+         <li class="commit"><%= button_to 'Preview', '#', :method => 'get', :id => 'preview-link' %> </li>
+      <% end %>
 	<%- end %>
 </fieldset>
 

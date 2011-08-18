@@ -32,35 +32,40 @@
         <input type="text" id="page_path" value="" size="50" disabled="disabled" />
       </li> 
 
+      <%= form.input :partial, :as => :select, :collection => Page::PARTIALS,
+        :include_blank => false, :label => "Template " %>
+
       <li class="string optional">
         <label for="page_author">Author</label>
         <input id="page_author" name="page[author]" size="50" 
                type="text" value="<%= current_user.email %>" disabled="disabled" />
       </li> 
 
-      <%= form.input :partial, :as => :radio, :collection => Page::PARTIALS,
-				:include_blank => false, :label => "Template " %>
+
     <% end %>
 
     <%= form.inputs :editors do %>
 
 		 <label for="page_body">Main Text</label>
-    <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'90%', :height=>'200px', 
+     <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'90%', :height=>'200px', 
 						:ckeditor_options => {:filebrowserBrowseUrl => browse_staff_archive_pages_path} %>
-    <% end %>
+     <% end %>
 
-	    <% if resource.breakout_box.blank? %>
-	      <span id="breakout" class="concealed">
-	    <% else %>
-	      <span id="breakout">
-	    <% end %>
+	   <% if resource.breakout_box.blank? %>
+	     <span id="breakout" class="concealed">
+	   <% else %>
+	     <span id="breakout">
+	   <% end %>
 	
 		 		<label for="page_body">Breakout Box</label>
 	    	<%= form.cktext_area :breakout_box, :toolbar=>'Medium', :width=>'90%', :height=>'100px' %>
     	</span>
 
-      <%= form.commit_button %> <a href="#" id="preview-link">Preview</a>
-
+      <br/>
+      <%= form.buttons do %>
+        <%= form.commit_button %> 
+         <li class="commit"><%= button_to 'Preview', '#', :method => 'get', :id => 'preview-link' %> </li>
+      <% end %>
   <% end %>
 </fieldset>
 
@@ -153,7 +158,7 @@ Enable this part only if you don't remove the 'target' tab in the previous block
 
   // .:| Reveal Breakout Editor |:. //
 
-  $("input:radio[name=page[partial]]").change(function(event){
+  $("input:select[name=page[partial]]").change(function(event){
     current_partial = $("input:radio[name=page[partial]]:checked").val();
     if (current_partial === "/pages/breakout_page") {
       $("#breakout").show();

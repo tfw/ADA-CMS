@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   respond_to :html
 
   protect_from_forgery
-  before_filter :update_authentication_on_content
+#  before_filter :update_authentication_on_content
 
   # alias current_user current_inkling_user
   helper_method :current_user
@@ -26,10 +26,6 @@ class ApplicationController < ActionController::Base
   protected
   def update_authentication_on_content
     update_authentication unless request.path =~ /\/(documents|images)/
-  end
-
-  def approving_roles
-
   end
 end
 
