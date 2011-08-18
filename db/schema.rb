@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817060231) do
+ActiveRecord::Schema.define(:version => 20110818024536) do
 
   create_table "archive_catalog_studies", :force => true do |t|
     t.integer  "archive_catalog_id"
@@ -97,19 +97,6 @@ ActiveRecord::Schema.define(:version => 20110817060231) do
   add_index "images", ["title"], :name => "index_images_on_title", :unique => true
   add_index "images", ["user_id"], :name => "index_images_on_user_id"
 
-  create_table "inkling_can_can_actions", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "inkling_feed_roles", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.string   "title",      :null => false
-    t.integer  "feed_id",    :null => false
-    t.integer  "role_id",    :null => false
-  end
-
   create_table "inkling_feeds", :force => true do |t|
     t.datetime "created_at", :null => false
     t.string   "authors"
@@ -135,14 +122,6 @@ ActiveRecord::Schema.define(:version => 20110817060231) do
   end
 
   add_index "inkling_paths", ["slug"], :name => "index_inkling_paths_on_slug"
-
-  create_table "inkling_permissions", :force => true do |t|
-    t.integer  "type_id"
-    t.integer  "role_id",           :null => false
-    t.integer  "can_can_action_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "inkling_role_memberships", :force => true do |t|
     t.integer "user_id", :null => false

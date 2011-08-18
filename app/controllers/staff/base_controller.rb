@@ -11,7 +11,6 @@ class Staff::BaseController < ApplicationController
   end
 
   def redirect_if_unauthorised
-    puts "**** #{current_user} "
     redirect_to root_path unless current_user and current_user.is_staff?     
   end
 end

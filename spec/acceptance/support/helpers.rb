@@ -37,7 +37,7 @@ module HelperMethods
   def create_news(archive, news_title, news_body)
     visit(new_staff_news_path)
     fill_in("news_title", :with => news_title)
-    check(archive.name)
+    select(archive.name)
     fill_in("news_body_editor", :with => news_body)
     click_button("Create News")
     News.find_by_title(news_title)
