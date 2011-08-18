@@ -1,6 +1,5 @@
 class Staff::BaseController < ApplicationController
 
-
   helper_method :current_user
   before_filter :authenticate_user!
   before_filter :redirect_if_unauthorised
@@ -12,17 +11,7 @@ class Staff::BaseController < ApplicationController
   end
 
   def redirect_if_unauthorised
-  	unless (current_user.roles & permitted_roles).any?
-  		redirect_to root_path
-  	end
-  end
-
-  private
-  def permitted_roles
-    [Inkling::Role.find_by_name("administrator"),
-      Inkling::Role.find_by_name("Manager"),
-      Inkling::Role.find_by_name("Publisher"),
-      Inkling::Role.find_by_name("Approver"),
-      Inkling::Role.find_by_name("Archivist")]
+    puts "**** #{current_user} "
+    redirect_to root_path unless current_user and current_user.is_staff?     
   end
 end

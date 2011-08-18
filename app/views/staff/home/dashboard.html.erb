@@ -13,11 +13,12 @@ Home
 </script>
 
 
+<% if current_user.is_approver? %>
 <fieldset>
   <legend> Your Tasks </legend>
   <p>A summary of the work assigned to and requested of you in the system.</p>
-
 </fieldset>
+<% end %>
 
 <fieldset>
   <legend id="logs" title="Display More Logs">Recent Activity</legend>

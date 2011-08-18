@@ -27,5 +27,9 @@ class ApplicationController < ActionController::Base
   def update_authentication_on_content
     update_authentication unless request.path =~ /\/(documents|images)/
   end
+
+  def approving_roles
+
+  end
 end
 

@@ -2,17 +2,6 @@ class User < ActiveRecord::Base
   devise :openid_authenticatable
   acts_as_inkling_user
   
-  #abstract into inkling helper START
-  # has_many :role_memberships, :class_name => "Inkling::RoleMembership"#, :foreign_key => "user.id"
-  # has_many :roles, :class_name => "Inkling::Role", :through => :role_memberships
-  # has_many :logs
-  # 
-  # def has_role?(role)
-  #   role = role.to_s
-  #   self.roles.find_by_name(role)
-  # end  
-  #abstract into inkling helper END
-  
   validates_uniqueness_of :identity_url
   
   has_many :pages, :foreign_key => "author_id"
@@ -60,6 +49,21 @@ class User < ActiveRecord::Base
   def to_s
     str = "#{firstname} #{surname}"
     str ||= email
+  end
+
+  def is_staff?
+    (roles && [Inkling::Role.find_by_name("administrator"),
+      Inkling::Role.find_by_name("Manager"),
+      Inkling::Role.find_by_name("Publisher"),
+      Inkling::Role.find_by_name("Approver"),
+      Inkling::Role.find_by_name("Archivist")]).any?
+  end
+
+  def is_approver?
+    (roles && [Inkling::Role.find_by_name("administrator"),
+      Inkling::Role.find_by_name("Manager"),
+      Inkling::Role.find_by_name("Publisher"),
+      Inkling::Role.find_by_name("Approver")]).any?
   end
 
   private
