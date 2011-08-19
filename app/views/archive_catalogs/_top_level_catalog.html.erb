@@ -16,7 +16,7 @@
 <div>
   <% if multi_tree || @current_archive == archive %>
   <ul id='tree-<%= archive.slug %>'>
-    <%= render top_level_catalog.children if top_level_catalog %>
+    <%= render top_level_catalog.children.order(:catalog_position) if top_level_catalog %>
   </ul>
   <% end %>
 </div>

@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/ANUSF/OpenID-Client-Engine.git
-  revision: 7270b3b2932326457bc4d63d3c626f14b64bc3d7
+  revision: 6f86942fb733109d90ae02a28797d90d40d2c523
   specs:
-    openid_client (0.1.8)
+    openid_client (0.1.9)
       devise
       devise_openid_authenticatable
 
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: git://github.com/tfw/inkling.git
-  revision: 822b13ad1df9294352e1695c133d63ccc49d9006
+  revision: 429f5caed149486035ac675c1596161d06568220
   specs:
     inkling (0.1.0)
 
