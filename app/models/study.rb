@@ -17,6 +17,7 @@ class Study < ActiveRecord::Base
     text :series_name
     text :universe
     text :stdy_auth_entity 
+    text :ddi_id
 
     string :data_kind
     string :sampling
