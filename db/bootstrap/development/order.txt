@@ -1,8 +1,6 @@
 users.yml
 ddi_mappings.yml
-inkling_feed_roles.yml
 inkling_feeds.yml
-inkling_permissions.yml
 inkling_roles.yml
 inkling_role_memberships.yml
 inkling_paths.yml
