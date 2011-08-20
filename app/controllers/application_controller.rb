@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
   # alias current_user current_inkling_user
   helper_method :current_user
 
+  before_filter :update_authentication #in case the user logs out externally
+
   def four_o_four
   	@title = "#{request.path} 404"
     respond_to do |format| 

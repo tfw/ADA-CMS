@@ -3,7 +3,6 @@ class Staff::BaseController < ApplicationController
   helper_method :current_user
   before_filter :authenticate_user!
   before_filter :redirect_if_unauthorised
-  before_filter :update_authentication_on_content #in case the user logs out externally
 
   layout 'manage'
   
