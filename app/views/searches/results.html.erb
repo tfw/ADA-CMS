@@ -27,6 +27,15 @@
 	});
 <% end %>
 
+<aside class="breakout study">
+	Order by: 
+	<select id="order">
+		<option value="study">study</study>
+		<option value="study">Primary Investigator</study>
+	</select>
+</aside>
+
+
 <div id="search-results">
 	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
 	<% if @current_archive != Archive.ada %>
