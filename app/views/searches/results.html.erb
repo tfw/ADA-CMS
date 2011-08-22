@@ -24,17 +24,38 @@
 
   $("#save-search-link").click(function() {
     $('#new_search').toggle();
-	});
+  });
+
+  $('#order').change(function() {
+    var selected = $("#order option:selected").val();
+    var url = '<%= request.request_uri.html_safe %>';
+    url = url + "&order=" + selected;
+    window.location = url;    
+  });
 <% end %>
 
-<aside class="breakout study">
-	Order by: 
-	<select id="order">
-		<option value="study">study</study>
-		<option value="study">Primary Investigator</study>
-	</select>
-</aside>
 
+	Order by: 
+
+	<select name="order" id="order">
+		<option <%= selected?('study', params)%> value="study">study</study>
+		<option <%= selected?('primary-investigator', params)%> value="primary-investigator">Primary Investigator</study>
+		<option <%= selected?('time-period', params)%> value="time-period">Time Period</study>
+		<option <%= selected?('ada-id', params)%> value="ada-id">ADA ID</study>
+	</select>
+
+
+
+  <form action="/search" method="get" id="search-form" class="formtastic">
+    <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
+    <input type="hidden" name="term" id="term" value="<%= params[:term] %>"/>
+    <input type="hidden" name="filters" id="filters" value="<%= params[:filters].to_yaml %>"/>
+
+    <% if params[:page] %>
+      <input type="hidden" name="page" id="term" value="<%= params[:page] %>"/>
+    <% end %>
+
+  </form>
 
 <div id="search-results">
 	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
@@ -43,8 +64,11 @@
 		<%= link_to "Expand this search to all ADA", transient_search_path(:term => params[:term], :archive_id => Archive.ada.id) %>. (Studies: <%= @ada_search.total %>, Variables: <%= @variables_search.total %>) 
 	</h3>
 	<% end %>
-	
-  <p>Filters: <%= filter_list("", params, true).html_safe %></p>
+
+  <% if params[:filters].any? %>	
+    <p>Filters: <%= filter_list("", params, true).html_safe %></p>
+	<br/>
+  <% end %>
  
   <% unless @term %> Search requires a term. <% end %>
     

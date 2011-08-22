@@ -29,7 +29,10 @@ class Study < ActiveRecord::Base
     string :series_name
     string :stdy_contact_affiliation
     string :stdy_auth_entity 
-    
+    string :period_start 
+    string :ddi_id
+    string :label
+        
     integer :archive_ids, :multiple => true
   end  
   

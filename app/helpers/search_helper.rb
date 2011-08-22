@@ -87,4 +87,8 @@ module SearchHelper
       "$('##{div_id}').multiAccordion({active: false });"       	
     end
   end
+
+  def selected?(key, params)
+    'selected =\'selected\'' if params[:order] == key
+  end
 end
