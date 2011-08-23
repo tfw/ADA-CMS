@@ -19,7 +19,8 @@ class Staff::BaseController < ApplicationController
 
   private
   def permitted_roles
-    [Inkling::Role.find_by_name("Manager"),
+    [Inkling::Role.find_by_name("administrator"),
+      Inkling::Role.find_by_name("Manager"),
       Inkling::Role.find_by_name("Publisher"),
       Inkling::Role.find_by_name("Approver"),
       Inkling::Role.find_by_name("Archivist")]
