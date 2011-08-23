@@ -45,18 +45,6 @@
 	</select>
 
 
-
-  <form action="/search" method="get" id="search-form" class="formtastic">
-    <input type="hidden" name="archive_id" id="archive_id" value="<%= @current_archive.id %>"/>
-    <input type="hidden" name="term" id="term" value="<%= params[:term] %>"/>
-    <input type="hidden" name="filters" id="filters" value="<%= params[:filters].to_yaml %>"/>
-
-    <% if params[:page] %>
-      <input type="hidden" name="page" id="term" value="<%= params[:page] %>"/>
-    <% end %>
-
-  </form>
-
 <div id="search-results">
 	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
 	<% if @current_archive != Archive.ada %>
