@@ -7,12 +7,15 @@ class SearchesController < ContentController
   helper :application
   helper :search
 
-  ORDERS = {'study' => :label,
-            'primary-investigator' => :stdy_auth_entity,
-            'time-period' => :period_start,
-            'ada-id' => :ddi_id,            
-            'archive' => :archive_id}
-            
+  ORDERS = {'study-asc' => [:label, :asc],
+            'study-desc' => [:label, :desc],
+            'primary-investigator-asc' => [:stdy_auth_entity, :asc],
+            'primary-investigator-desc' => [:stdy_auth_entity, :desc],
+            'time-period-asc' => [:period_start, :asc],
+            'time-period-desc' => [:period_start, :desc],
+            'ada-id-asc' => [:ddi_id, :asc],            
+            'ada-id-desc' => [:ddi_id, :desc]}
+                          
   def transient
     if params[:filters] and params[:filters].is_a? String
       params[:filters] = YAML.load(params[:filters])
@@ -84,7 +87,7 @@ class SearchesController < ContentController
      Archive.crime => study_search(Archive.crime, @term, filters, order_by, page)}
   end
 
-  def study_search(archive, term, filters = {}, order_by, page)
+  def study_search(archive, term, filters = {}, order, page)
     Sunspot.search(Study) do ;
       keywords term do 
         highlight :label, :fragment_size => -1
@@ -101,7 +104,8 @@ class SearchesController < ContentController
         end
       end
     
-      order_by(ORDERS[order_by]) if order_by
+      order_by(ORDERS[order][0], ORDERS[order][1]) if order
+
       paginate(:page => page)
 
       facet :data_kind, :sort => :count, :limit => 7, :minimum_count => 2
