@@ -12,6 +12,7 @@ class SearchesController < ContentController
             'time-period' => :period_start,
             'ada-id' => :ddi_id,            
             'archive' => :archive_id}
+            
   def transient
     if params[:filters] and params[:filters].is_a? String
       params[:filters] = YAML.load(params[:filters])

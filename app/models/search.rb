@@ -17,5 +17,4 @@ class Search < ActiveRecord::Base
   def unique_user_and_title
     pre_existing = Search.find_by_user_id_and_title(self.user, self.title)
   end  
-  
 end
