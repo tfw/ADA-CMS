@@ -36,12 +36,15 @@
 
 
 	Order by: 
-
 	<select name="order" id="order">
-		<option <%= selected?('study', params)%> value="study">study</study>
-		<option <%= selected?('primary-investigator', params)%> value="primary-investigator">Primary Investigator</study>
-		<option <%= selected?('time-period', params)%> value="time-period">Time Period</study>
-		<option <%= selected?('ada-id', params)%> value="ada-id">ADA ID</study>
+		<option <%= selected?('study-asc', params)%> value="study-asc">study</study>
+		<option <%= selected?('study-desc', params)%> value="study-desc">study</study>
+		<option <%= selected?('primary-investigator-asc', params)%> value="primary-investigator-asc">Primary Investigator asc</study>
+		<option <%= selected?('primary-investigator-desc', params)%> value="primary-investigator-desc">Primary Investigator desc</study>
+		<option <%= selected?('time-period-asc', params)%> value="time-period-asc">Time Period</study>
+		<option <%= selected?('time-period-desc', params)%> value="time-period-desc">Time Period</study>
+		<option <%= selected?('ada-id-asc', params)%> value="ada-id-asc">ADA ID</study>
+		<option <%= selected?('ada-id-desc', params)%> value="ada-id-desc">ADA ID</study>
 	</select>
 
 
