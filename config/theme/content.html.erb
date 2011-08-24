@@ -30,11 +30,11 @@
 	<nav class="mainnav clearfix">
 	  <ul>
 			<% for menu_item in @ada_menu_items %>
-				<li> <%= link_to(menu_item.title, menu_item.link, :class => menu_item_class(menu_item.title), :title => "<%= menu_item.title %>") %>
+				<li> <%= link_to(menu_item.title, menu_item.link, :class => menu_item_class(menu_item.title), :title => menu_item.title) %>
 					<% if menu_item.children.any? %>
 						<ul>
 						  <% for child in menu_item.children %>									
-								<li> <%= link_to(child.title, child.link, :title => "<%= child.title %>") %> </li>
+								<li> <%= link_to(child.title, child.link, :title => child.title) %> </li>
 						  <% end %>
 						</ul>
 					<% end %>
@@ -62,7 +62,7 @@
 						<% else %>
 						<li>
 						<% end %>
-						 	<%= link_to(menu_item.title, menu_item.link, :title => "<%= menu_item.title %>")%>
+						 	<%= link_to(menu_item.title, menu_item.link, :title => menu_item.title)%>
 						</li>
 					<% end %>
 			  </ul>
