@@ -7,7 +7,7 @@
     <span id="content-controls">
       <%= link_to 'Public View', menu_item.link %>, 
       <%= link_to 'Edit', edit_staff_archive_page_path(menu_item.archive, menu_item.content) %>,  
-      <%= link_to 'Delete', staff_archive_page_path(menu_item.archive, menu_item.content), :method => :delete %> 
+      <%= link_to 'Delete', staff_archive_page_path(menu_item.archive, menu_item.content), :method => :delete, :confirm => "Are you sure?" %> 
     </span>
 
   <% else %>
@@ -17,7 +17,7 @@
     <span id="content-controls">
       <%= link_to "Visit", menu_item.link, :target => "_blank" %>, 
       <%= link_to 'Edit', edit_staff_archive_menu_item_path(menu_item.archive, menu_item) %>,  
-      <%= link_to 'Delete', staff_archive_menu_item_path(menu_item.archive, menu_item), :method => :delete %>
+      <%= link_to 'Delete', staff_archive_menu_item_path(menu_item.archive, menu_item), :method => :delete, :confirm => "Are you sure?" %>
     <span id="page-controls">
   <% end %>
 

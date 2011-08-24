@@ -25,7 +25,7 @@
         <td>
           <%= link_to 'View', staff_document_path(document) %>
           <%= link_to 'Edit', edit_staff_document_path(document) %>
-          <%= link_to 'Delete', staff_document_path(document), :method => :delete %>
+          <%= link_to 'Delete', staff_document_path(document), :method => :delete, :confirm => "Are you sure?" %>
         </td>
       </tr>
       <% end %>
