@@ -91,4 +91,10 @@ module SearchHelper
   def selected?(key, params)
     'selected =\'selected\'' if params[:order] == key
   end
+
+  def path_without_order(params)
+    copy = params.dup
+    copy.delete(:order)
+    transient_search_path(copy)
+  end
 end
