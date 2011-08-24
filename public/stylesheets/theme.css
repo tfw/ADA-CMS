@@ -422,9 +422,6 @@ ul#sub-menu {
 	clear: none;
 }
 
-/*.fake-tree a:hover{color:#ff0084;text-decoration:underline}.explr-line{border-left:1px dotted #999;border-bottom:1px dotted #999;height:22px;position:absolute;margin-left:0;margin-top:-12px;width:12px}.explr-line-fix{border-left:1px dotted #999}
-
-
 /*Study Page*/
 
 #study section{
@@ -435,8 +432,6 @@ ul#sub-menu {
 	padding: 0px;
 	margin: 0px;
 }
-
-
 
 #study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table, table.content {
 	border-collapse: collapse;
@@ -459,6 +454,7 @@ ul#sub-menu {
 	border-left-width: 0px;
 	display: inline-table;
 }
+
 #study table, #browse-results-title table, #search-results-ext table, #browse-results-ext table {
 	width: 100%!important;
 	float: left;
