@@ -62,7 +62,7 @@ class SearchesController < ContentController
         {current_archive => study_search(current_archive, term, study_filters, order_by, page)}
       end
 
-    @ada_search = study_search(Archive.ada, term, study_filters, page) unless @current_archive == Archive.ada
+    @ada_search = study_search(Archive.ada, term, study_filters, order_by, page) unless @current_archive == Archive.ada
     
     @studies_search = @study_searches[current_archive]
     @variables_search = variable_search(term, [], page)
@@ -96,14 +96,12 @@ class SearchesController < ContentController
 
       with(:archive_ids).any_of [archive.id];
       
-    #  debugger 
-
       filters.each do |facet|
         facet.each do |name, value|
           with(name.to_sym, value)
         end
       end
-    
+ 
       order_by(ORDERS[order][0], ORDERS[order][1]) if order
 
       paginate(:page => page)

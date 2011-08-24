@@ -26,6 +26,10 @@
     $('#new_search').toggle();
   });
 
+  $("#search-doc-link").click(function() {
+    $('#search-doc').toggle();
+  });
+
   $('#order').change(function() {
     var selected = $("#order option:selected").val();
     var url = '<%= path_without_order(params).html_safe %>';
@@ -35,18 +39,31 @@
   });
 <% end %>
 
-	Order by: 
-	<select name="order" id="order">
-		<option <%= selected?('study-asc', params)%> value="study-asc">Title, asc</study>
-		<option <%= selected?('study-desc', params)%> value="study-desc">Title, desc</study>
-		<option <%= selected?('primary-investigator-asc', params)%> value="primary-investigator-asc">Primary Investigator, asc</study>
-		<option <%= selected?('primary-investigator-desc', params)%> value="primary-investigator-desc">Primary Investigator, desc</study>
-		<option <%= selected?('time-period-asc', params)%> value="time-period-asc">Most Recent</study>
-		<option <%= selected?('time-period-desc', params)%> value="time-period-desc">Older</study>
-		<option <%= selected?('ada-id-asc', params)%> value="ada-id-asc">ADA ID, asc</study>
-		<option <%= selected?('ada-id-desc', params)%> value="ada-id-desc">ADA ID, desc</study>
-	</select>
+Order by: 
+<select name="order" id="order">
+	<option <%= selected?('study-asc', params)%> value="study-asc">Title, asc</study>
+	<option <%= selected?('study-desc', params)%> value="study-desc">Title, desc</study>
+	<option <%= selected?('primary-investigator-asc', params)%> value="primary-investigator-asc">Primary Investigator, asc</study>
+	<option <%= selected?('primary-investigator-desc', params)%> value="primary-investigator-desc">Primary Investigator, desc</study>
+	<option <%= selected?('time-period-asc', params)%> value="time-period-asc">Most Recent</study>
+	<option <%= selected?('time-period-desc', params)%> value="time-period-desc">Older</study>
+	<option <%= selected?('ada-id-asc', params)%> value="ada-id-asc">ADA ID, asc</study>
+	<option <%= selected?('ada-id-desc', params)%> value="ada-id-desc">ADA ID, desc</study>
+</select>
 
+<a href="#" id="search-doc-link">Documentation</a> 
+
+<section id="search-doc" class="concealed">
+<h2>How Search Works</h2>
+
+docs go here ... 
+
+Search is anded.
+
+<dl>
+	<dt>Relevancy</dt><dd> explanation .. </dd>
+</dl>
+</section>
 
 <div id="search-results">
 	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
@@ -60,6 +77,12 @@
     <p>Filters: <%= filter_list("", params, true).html_safe %></p>
 	<br/>
   <% end %>
+
+  <% if params[:order] %>	
+    <p>Order by: <%= params[:order]%> (<a href='<%= path_without_order(params).html_safe %>'>-</a>) </p>
+	<br/>
+  <% end %>
+
  
   <% unless @term %> Search requires a term. <% end %>
     
