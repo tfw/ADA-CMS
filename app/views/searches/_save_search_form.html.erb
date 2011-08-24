@@ -5,6 +5,7 @@
 	<%= f.hidden_field :user_id, :value => current_user.id %>
 	<%= f.hidden_field :archive_id, :value => @current_archive.id %>
 	<%= f.hidden_field :filters, :value => request.params[:filters].to_yaml %>
+	<%= f.hidden_field :order_by, :value => params[:order] %>
 	<%= f.hidden_field :terms, :value => @term %>
 	<%= f.text_field :title, :value => search_abbr(params), :size => 50 %>
 	<%= submit_tag "Save"%>
