@@ -34,16 +34,18 @@ gem 'sunspot_rails', '>=1.2.1'
 gem 'mongrel', '~> 1.2.0.pre2'
 gem 'httparty'
 gem 'vestal_versions', :git => 'git://github.com/adamcooper/vestal_versions'
+gem 'columnize', '~> 0.3.4'
 
 group :staff, :public do
 	gem 'newrelic_rpm'
 end
 
 group :development, :test do
-	gem "ruby-debug19"
+	gem 'ruby-debug-base19', "0.11.25"
+	gem 'ruby-debug19'
 	gem "mocha"
-	gem "rspec-rails", ">= 2.6.0"
-	gem "rspec-core", ">= 2.6.0"
+	gem "rspec-rails"
+	gem "rspec-core", ">= 2.6.4"
 	gem 'capybara'
 	gem 'gemcutter', '>= 0.6.1'
 	gem "autotest"
@@ -53,5 +55,6 @@ group :development, :test do
  	gem 'machinist' , '>= 1.0.6'
 	gem 'capistrano'
 	gem 'selenium-webdriver', '>= 0.2.1'
-  gem 'simplecov', '>= 0.4.0', :require => false, :group => :test
+  	gem 'simplecov', '>= 0.4.0', :require => false, :group => :test
+  	gem 'linecache19', '~>0.5.11'
 end

@@ -11,30 +11,40 @@ feature "Creating pages" do
     sign_out
   end
   
-  scenario "I can access the archive page form"  do
-    visit_archive("historical")
+  # scenario "I can access the archive page form"  do
+  #   visit_archive("historical")
     
-    within(:xpath, "//fieldset[@id='menu-management']") do
-      click_link("new-page-link")
-    end
+  #   within(:xpath, "//fieldset[@id='menu-management']") do
+  #     click_link("new-page-link")
+  #   end
     
-    page.should have_content("New Page: Historical")  
-  end
+  #   page.should have_content("New Page: Historical")  
+  # end
   
-  scenario "I can create a page" do
-    create_page(Archive.historical, "test page", "sample content")
-    page.should have_content("Archives: Historical")
-    page.should have_content("test page")
-  end
+  # scenario "I can create a page" do
+  #   create_page(Archive.historical, "test page", "sample content")
+  #   page.should have_content("Archives: Historical")
+  #   page.should have_content("test page")
+  # end
   
-  scenario "I can edit a page" do
+  # scenario "I can edit a page" do
+  #   create_page(Archive.historical, "test page", "sample content")
+  #   cms_page = Page.find_by_title("test page")
+  #   visit edit_staff_archive_page_path(cms_page.archive, cms_page)
+  #   page.should have_content("version #{cms_page.version}")
+  #   fill_in("page_title", :with => "test page changed")
+  #   click_button("Update Page")
+  #   page.should have_content("test page changed")
+  # end
+
+  scenario "I can publish a page from draft mode (if I'm an approver)" do
     create_page(Archive.historical, "test page", "sample content")
     cms_page = Page.find_by_title("test page")
     visit edit_staff_archive_page_path(cms_page.archive, cms_page)
-    page.should have_content("version #{cms_page.version}")
-    fill_in("page_title", :with => "test page changed")
-    click_button("Update Page")
-    page.should have_content("test page changed")
+
+debugger
+    puts find_field('page_state_input').value
+
   end
   
   # scenario "AJAX - the path displays after a title update of a page" do

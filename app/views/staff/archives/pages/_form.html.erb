@@ -25,7 +25,8 @@
 	    <% end %>
 
       <% unless resource.new_record? %>
-        <%= form.input :state, :as => :radio %>  
+        <%= form.input :state, :as => :radio, 
+          :collection => { "Draft" => Workflowable::DRAFT, "Publish" => Workflowable::PUBLISH } %>  
       <% end %>
 	
       <%= form.input :parent, :as => :select, :collection => @pages %>
