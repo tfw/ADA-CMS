@@ -2,6 +2,7 @@
 
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
+
 <fieldset>
   <legend><%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %>
 
@@ -22,6 +23,10 @@
 	    <% else %>
 	    	<%= form.input :archive, :as => :select, :collection => @archives, :include_blank => false %>
 	    <% end %>
+
+      <% unless resource.new_record? %>
+        <%= form.input :state, :as => :radio %>  
+      <% end %>
 	
       <%= form.input :parent, :as => :select, :collection => @pages %>
 
@@ -36,7 +41,12 @@
         :include_blank => false, :label => "Template " %>
 
       <li class="string optional">
-        <label for="page_author">Author</label>
+        <% if resource.new_record? %>
+          <label for="page_author">Author</label>
+        <% else %>
+          <label for="page_author">Last edited by</label>
+        <% end %>
+
         <input id="page_author" name="page[author]" size="50" 
                type="text" value="<%= current_user.email %>" disabled="disabled" />
       </li> 
