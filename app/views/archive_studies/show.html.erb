@@ -6,9 +6,6 @@
 	<%= @archive_study.urn %>
 <% end %>
 
-
-
-
 <% content_for :js do %>
 
   $("#study-fields-link").click(function() {
@@ -42,6 +39,9 @@
 
 <aside class="breakout study">
     <a href="<%= NESSTAR_SERVER %>/webview/index.jsp?object=<%= NESSTAR_SERVER%>:80/obj/fStudy/<%= @study.stdy_id %>&cms_url=<%= @archive_study.path.slug %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
+    <% if current_user %>
+      Browse: <%= @perms['browse'] %> | Analyse: <%= @perms['analyse'] %> | Download: <%= @perms['download'] %>
+    <% end %>
 </aside>
 
 

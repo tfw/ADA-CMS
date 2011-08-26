@@ -11,9 +11,9 @@ class ArchiveStudiesController < ContentController
     @archive_study = ArchiveStudy.find_by_id(params[:id])
     @study = @archive_study.study
 
-    # if current_user
-    #   perms = get_study_permissions_from_ada_users(@study)
-    # end
+    if current_user
+      @perms = get_study_permissions_from_ada_users(@study)
+    end
 
     @current_archive = @archive_study.archive
     @title = @study.title
@@ -30,9 +30,9 @@ class ArchiveStudiesController < ContentController
   private
   
   def get_study_permissions_from_ada_users(study)
-    #this actually works!
     resource_id = study.stdy_id
     username = current_user.identity_url.split("/").last
-    p ArchiveStudiesController.get("http://#{OPENID_SERVER}/users/#{username}/access/#{resource_id}?api_key=")
+    study_perms = ArchiveStudiesController.get("#{OPENID_SERVER}/users/#{username}/access/#{resource_id}?api_key=#{Secrets::API_KEY}")
+    study_perms.to_hash
   end
 end

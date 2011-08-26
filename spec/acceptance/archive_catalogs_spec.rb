@@ -13,32 +13,31 @@ feature "serving out Archive Catalogs" do
     @archive_catalog_study3 = ArchiveCatalogStudy.make(:archive_catalog => @catalog, :archive_study => archive_study3)
   end
   
-  # scenario "/browse returns a 200" do
-  #   visit "/browse"
-  #   page.status_code.should == 200
-  # end
+  scenario "/browse returns a 200" do
+    visit "/browse"
+    page.status_code.should == 200
+  end
 
-  # scenario "/ada/browse returns a 200" do
-  #   visit "/ada/browse"
-  #   page.status_code.should == 200
-  # end
+  scenario "/ada/browse returns a 200" do
+    visit "/ada/browse"
+    page.status_code.should == 200
+  end
   
-  # scenario "requesting /ada/browse/foo should show breadcrumbs Browsing ada/foo" do
-  # puts " visit ***** #{@catalog.urn}"
-  #   visit @catalog.urn
+  scenario "requesting /ada/browse/foo should show breadcrumbs Browsing ada/foo" do
+    visit @catalog.urn
 
-  #   page.should have_content "Browsing #{@catalog.urn.gsub('/browse', '')}"
-  #   page.status_code.should == 200
-  # end
+    page.should have_content "Browsing #{@catalog.urn.gsub('/browse', '')}"
+    page.status_code.should == 200
+  end
   
-  # scenario "requesting a catalog holding studies should render studies in title view" do
-  #   visit @catalog.urn
-  #   click_link 'foo'
+  scenario "requesting a catalog holding studies should render studies in title view" do
+    visit @catalog.urn
+    click_link 'foo'
   
-  #   for archive_catalog_study in @catalog.archive_catalog_studies
-  #     page.should have_content archive_catalog_study.study.ddi_id
-  #   end
-  # end
+    for archive_catalog_study in @catalog.archive_catalog_studies
+      page.should have_content archive_catalog_study.study.ddi_id
+    end
+  end
   
   scenario "requesting a catalog with studies and clicking on Extended should show extended info" do
     visit @catalog.urn
@@ -49,12 +48,12 @@ feature "serving out Archive Catalogs" do
     end
   end
   
-  # scenario "selecting a study should render the entire catalog of studies, but the selected study is first in the table" do
-  #   visit @catalog.urn
+  scenario "selecting a study should render the entire catalog of studies, but the selected study is first in the table" do
+    visit @catalog.urn
   
-  #   within(:xpath, "//table[@id='browse-results-title']") do
-  #   # within(:xpath, "//table[@id='browse-results-title']/tr[1]") do -- ideally we could specify the first tabe row, not xpath friendly
-  #       page.should have_content(@archive_catalog_study3.study.ddi_id)
-  #   end    
-  # end  
+    within(:xpath, "//table[@id='browse-results-title']") do
+    # within(:xpath, "//table[@id='browse-results-title']/tr[1]") do -- ideally we could specify the first tabe row, not xpath friendly
+        page.should have_content(@archive_catalog_study3.study.ddi_id)
+    end    
+  end  
 end
