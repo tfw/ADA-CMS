@@ -1,6 +1,8 @@
 class Page < ActiveRecord::Base
   include Inkling::Util::Slugs, ContentPathIncludesArchive, Workflowable
 
+  attr_protected :state #nice and simple protection until we get to Rails 3.1
+
   versioned
   
   acts_as_nested_set

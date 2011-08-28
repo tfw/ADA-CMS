@@ -2,6 +2,14 @@
 
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
+  <% semantic_form_for resource, :url => 'test' do |form| %>
+    <% unless resource.new_record? and if current_user.is_approver? %>
+      <%= form.input :state, :as => :radio, 
+          :collection => { "Draft" => Workflowable::DRAFT, "Publish" => Workflowable::PUBLISH } %>  
+    <% end %>
+  <% end %>
+
+
 
 <fieldset>
   <legend><%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %>
@@ -23,11 +31,6 @@
 	    <% else %>
 	    	<%= form.input :archive, :as => :select, :collection => @archives, :include_blank => false %>
 	    <% end %>
-
-      <% unless resource.new_record? %>
-        <%= form.input :state, :as => :radio, 
-          :collection => { "Draft" => Workflowable::DRAFT, "Publish" => Workflowable::PUBLISH } %>  
-      <% end %>
 	
       <%= form.input :parent, :as => :select, :collection => @pages %>
 

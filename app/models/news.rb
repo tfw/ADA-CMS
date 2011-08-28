@@ -1,6 +1,8 @@
 class News < ActiveRecord::Base
   include ApplicationHelper, Workflowable
 
+  attr_protected :state #nice and simple protection until we get to Rails 3.1
+
   versioned
 
   has_many :archive_news, :dependent => :destroy
