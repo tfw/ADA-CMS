@@ -16,10 +16,6 @@
       <% end %>
   </fieldset> 
 
-<fieldset class="left half">
-  <legend>Versioning</legend>
-  <%= resource.version %>
-</fieldset>
 <br>
 
 <fieldset>
@@ -72,7 +68,7 @@
     <%= form.inputs :editors do %>
 
 		 <label for="page_body">Main Text</label>
-     <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'90%', :height=>'200px', 
+     <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'70%', :height=>'200px', 
 						:ckeditor_options => {:filebrowserBrowseUrl => browse_staff_archive_pages_path} %>
      <% end %>
 
@@ -82,8 +78,8 @@
 	     <span id="breakout">
 	   <% end %>
 	
-		 		<label for="page_body">Breakout Box</label>
-	    	<%= form.cktext_area :breakout_box, :toolbar=>'Medium', :width=>'90%', :height=>'100px' %>
+		 		<label for="page_body"><p>Breakout Box<p/></label>
+	    	<%= form.cktext_area :breakout_box, :toolbar=>'Medium', :width=>'70%', :height=>'100px' %>
     	</span>
 
       <br/>
