@@ -164,4 +164,9 @@
 }
 
 //inline radio form elements
-form.formtastic li.radio li { display: inline; margin-left: 0.5em;
+form.formtastic li.radio li { }
+form.formtastic li.radio li { display: inline;}
+
+form.formtastic fieldset > ol > li.radio fieldset ol li label { }
+form.formtastic fieldset > ol > li.radio fieldset ol li label { float:right; width:100%; }
+
