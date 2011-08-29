@@ -9,7 +9,7 @@ module Workflowable
 	end
 
 	def publish!(user)
-		if (user.roles & permitted_roles).any?
+		if user.can_approve?
 			self.state = PUBLISH
 			transition_to = PUBLISH
 		else
@@ -28,13 +28,5 @@ module Workflowable
 
 	def draft?
 		not published?
-	end
-
-	private
-	def permitted_roles
-		[Inkling::Role.find_by_name("administrator"),
-		Inkling::Role.find_by_name("Manager"),
-		Inkling::Role.find_by_name("Publisher"),
-		Inkling::Role.find_by_name("Approver")]
 	end
 end

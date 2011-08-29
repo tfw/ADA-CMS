@@ -59,7 +59,7 @@ class User < ActiveRecord::Base
       Inkling::Role.find_by_name("Archivist")]).any?
   end
 
-  def is_approver?
+  def can_approve?
     (roles && [Inkling::Role.find_by_name("administrator"),
       Inkling::Role.find_by_name("Manager"),
       Inkling::Role.find_by_name("Publisher"),

@@ -80,7 +80,7 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   def preview
     @page = Page.new(params[:page])
     @page.archive = @archive
-    debugger
+    # debugger
     html = render(:partial => @page.partial, :object => @page)
     html
   end

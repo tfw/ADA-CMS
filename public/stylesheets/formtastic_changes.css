@@ -80,14 +80,6 @@
 	margin-right: 5px;
 	height: 23px;
 }
-/*.formtastic label {
-	text-align: right;
-	float: left;
-	margin-top: 10px;
-	padding-right: 5px;
-	line-height: 1;
-	font-size: 11px;
-}*/
 
 .formtastic #register_button {
 	float: right;
@@ -172,4 +164,4 @@
 }
 
 //inline radio form elements
-.formtastic li.radio li { float:left; width:auto; margin-right:1em; }
+form.formtastic li.radio li { display: inline; margin-left: 0.5em;
