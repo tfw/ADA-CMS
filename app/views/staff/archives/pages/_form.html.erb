@@ -3,7 +3,7 @@
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
 
-  <% unless resource.new_record? %> 
+  <% unless resource.new_record? or resource.published? %> 
     <fieldset class="left half">
         <legend>Approvals</legend>
         <% if resource.draft? %> 
@@ -21,9 +21,11 @@
 <br>
 
 <fieldset>
-  <legend><%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %>
-
-  <%= " (version #{resource.version})" unless resource.new_record? %></legend>
+  <legend>
+    <%= workflow_icon(resource) %>
+    <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %>
+    <%= " (version #{resource.version})" unless resource.new_record? %>
+  </legend>
 
   <%= semantic_form_for([:staff, @archive, resource]) do |form| %>
     <%= form.hidden_field :archive_id, :value => @archive.id %>

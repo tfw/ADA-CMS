@@ -1,6 +1,6 @@
 
 class Staff::Archives::PagesController < Staff::Archives::BaseController
-  include Inkling::Util::Slugs
+  include Inkling::Util::Slugs, Staff::WorkflowableHelper
 
   inherit_resources
   defaults :resource_class => Page, :instance_name => 'page'
@@ -89,14 +89,11 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
 
     if current_user.can_approve?
       @page.publish!(current_user)
-puts "\n\n ---------------- 1 #{@page.state}"
       flash[:notice] = "Page published." if @page.save
-puts "*** your software doesnt work?! #{@page.state}"
     else
       flash[:alert] = "I'm sorry, you don't have permission to publish pages."
     end
 
-puts "\n\n ---------------- 2 #{@page.state}"
     redirect_to edit_staff_archive_page_path(@page.archive, @page) 
   end
 
