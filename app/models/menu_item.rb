@@ -1,6 +1,8 @@
 #Menu items are either created to point to an external resource or copy themselves from their content
 
 class MenuItem < ActiveRecord::Base
+  include Workflowable
+
   acts_as_nested_set
 
   belongs_to :parent, :class_name => "MenuItem"
@@ -18,6 +20,7 @@ class MenuItem < ActiveRecord::Base
     
     menu_item = MenuItem.create(:title => page.title, :link => page.urn, :archive => page.archive, :content => page)
     menu_item.move_to_child_of page.parent.menu_item if page.parent
+    menu_item.state = page.state
     
     menu_item
   end
@@ -33,12 +36,21 @@ class MenuItem < ActiveRecord::Base
     menu_item
   end
   
-  def self.archive_root_menu_items(archive)
+  def self.archive_root_menu_items(archive, state = nil)
     roots = MenuItem.roots
     archive_roots = []
 
     for menu_item in roots
-      archive_roots << menu_item if menu_item.archive == archive
+      if menu_item.archive == archive
+        case state
+        when Workflowable::PUBLISH
+          archive_roots << menu_item if menu_item.published?
+        when Workflowable::DRAFT
+          archive_roots << menu_item if menu_item.draft?
+        else
+          archive_roots << menu_item 
+        end
+      end
     end
     
     archive_roots

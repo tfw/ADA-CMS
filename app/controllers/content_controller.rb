@@ -8,7 +8,7 @@ class ContentController < ApplicationController
   
   protected    
   def get_ada_menu_items
-    @ada_menu_items = MenuItem.archive_root_menu_items(Archive.ada)
+    @ada_menu_items = MenuItem.archive_root_menu_items(Archive.ada, Workflowable::PUBLISH)
   end
 
   def get_archives

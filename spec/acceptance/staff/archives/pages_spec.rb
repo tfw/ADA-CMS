@@ -12,41 +12,68 @@ feature "Creating pages" do
       sign_out
     end
     
-    scenario "I can access the archive page form"  do
-      visit_archive("historical")
+    # scenario "I can access the archive page form"  do
+    #   visit_archive("historical")
       
-      within(:xpath, "//fieldset[@id='menu-management']") do
-        click_link("new-page-link")
-      end
+    #   within(:xpath, "//fieldset[@id='menu-management']") do
+    #     click_link("new-page-link")
+    #   end
       
-      page.should have_content("New Page: Historical")  
-    end
+    #   page.should have_content("New Page: Historical")  
+    # end
     
-    scenario "I can create a page" do
-      create_page(Archive.historical, "test page", "sample content")
-      page.should have_content("Archives: Historical")
-      page.should have_content("test page")
-    end
+    # scenario "I can create a page" do
+    #   create_page(Archive.historical, "test page", "sample content")
+    #   page.should have_content("Archives: Historical")
+    #   page.should have_content("test page")
+    # end
     
-    scenario "I can edit a page" do
+    # scenario "I can edit a page" do
+    #   create_page(Archive.historical, "test page", "sample content")
+    #   cms_page = Page.find_by_title("test page")
+    #   visit edit_staff_archive_page_path(cms_page.archive, cms_page)
+    #   page.should have_content("version #{cms_page.version}")
+    #   fill_in("page_title", :with => "test page changed")
+    #   click_button("Update Page")
+    #   page.should have_content("test page changed")
+    # end
+
+    scenario "saving a page puts it in draft state, which is invisible to the public (should 404)" do
       create_page(Archive.historical, "test page", "sample content")
       cms_page = Page.find_by_title("test page")
-      visit edit_staff_archive_page_path(cms_page.archive, cms_page)
-      page.should have_content("version #{cms_page.version}")
-      fill_in("page_title", :with => "test page changed")
-      click_button("Update Page")
-      page.should have_content("test page changed")
-    end
+      visit cms_page.urn
+      page.status_code.should == 404
+    end    
 
     scenario "I can publish a page from draft mode (if I'm an approver)" do
       create_page(Archive.historical, "test page", "sample content")
       cms_page = Page.find_by_title("test page")
       visit edit_staff_archive_page_path(cms_page.archive, cms_page)
       page.should have_content("This page is waiting for publishing approval.")
-      click_link("Approve?")
-      page.should have_content("Published.")
+      click_link("Approve?")      
+      cms_page = Page.find_by_title("test page")
+      cms_page.state.should == Workflowable::PUBLISH
+    end
+  end
+
+  context "archivist" do  
+    background do
+      @admin = make_user('Archivist')
+      sign_in(@admin)
+    end
+    
+    after(:each) do
+      sign_out
     end
 
+    scenario "I do not see a publish option if I am an archivist" do
+      create_page(Archive.historical, "test page", "sample content")
+      cms_page = Page.find_by_title("test page")
+      visit edit_staff_archive_page_path(cms_page.archive, cms_page)
+      page.should have_content("This page is waiting for publishing approval.")
+      page.should_not have_content("Approve?")
+    end
+  end
     # scenario "AJAX - the path displays after a title update of a page" do
     #   visit new_staff_archive_page_path(Archive.ada)
     #   fill_in("page_title", :with => "test 1 2 3")
@@ -69,6 +96,4 @@ feature "Creating pages" do
     #       page.should have_content('some text about stuff and stuff')
     #     end    
     # end
-    
-  end
 end

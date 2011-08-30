@@ -17,6 +17,8 @@ class ApplicationController < ActionController::Base
 
   def four_o_four
   	@title = "#{request.path} 404"
+    @current_archive = Archive.ada
+
     respond_to do |format| 
       format.html { render :template => "errors/404", :status => 404 } 
       format.all  { render :nothing => true, :status => 404 } 

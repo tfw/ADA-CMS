@@ -10,7 +10,8 @@ describe MenuItem do
         menu_item.valid?.should be_true
         menu_item.content.should == page
         menu_item.title.should == page.title
-        menu_item.link.should == page.path.slug      
+        menu_item.link.should == page.path.slug    
+        menu_item.state.should == page.state  
       end
       
       it "validates a menu item exists for the parent of the page it's handed" do
@@ -32,6 +33,7 @@ describe MenuItem do
         menu_item.reload
         menu_item.title.should == "testing 1 2 3"
         menu_item.link.should == page.urn
+        menu_item.state.should == page.state  
       end
     end
   end

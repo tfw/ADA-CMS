@@ -32,12 +32,21 @@ class Page < ActiveRecord::Base
    "Breakout Page" => "/pages/breakout_page",
    "News Page" => "/pages/news_page"}
 
-  def self.archive_root_pages(archive)
+  def self.archive_root_pages(archive, state = nil)
     roots = Page.roots
     archive_roots = []
 
     for page in roots
-      archive_roots << page if page.archive == archive
+      if page.archive == archive
+        case state
+        when Workflowable::PUBLISH
+          archive_roots << page if page.published?
+        when Workflowable::DRAFT
+          archive_roots << page if page.draft?
+        else
+          archive_roots << page 
+        end
+      end
     end
     archive_roots
   end
