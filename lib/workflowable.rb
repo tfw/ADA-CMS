@@ -12,6 +12,7 @@ module Workflowable
 		if user.can_approve?
 			self.state = PUBLISH
 			self.transition_to = PUBLISH
+			save!
 		else
 			false
 		end

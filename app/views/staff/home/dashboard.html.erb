@@ -18,7 +18,15 @@ Home
     <legend> Your Tasks </legend>
     <p>The following content is awaiting publishing approval.</p>
 
-<!-- oldest content first -->
+    <%= image_tag('icons/page.png')%> Pages:
+
+    <% @draft_pages.each do |p| %>
+      <%= link_to p.title, edit_staff_archive_page_path(p.archive, p) %> <br>
+    <% end %>
+
+    <br>
+
+    <%= image_tag('icons/newspaper.png')%> News:
   
 
   </fieldset>

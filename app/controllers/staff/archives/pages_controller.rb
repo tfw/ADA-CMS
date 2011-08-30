@@ -89,11 +89,9 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
 
     if current_user.can_approve?
       @page.publish!(current_user)
-      if @page.save
-        flash[:notice] = "Page published."
-        Inkling::Log.create!(:category => "workflowable", :text => "#{current_user} published ")
-        Inkling::Log.create!(:text => "#{@page.author} published page <a href='#{edit_staff_archive_page_path(@page.archive, @page)}'>#{@page.title}</a> in <a href='/staff/archives/#{@page.archive.slug}'>#{@page.archive.name}</a>.", :category => "workflowable", :user => @page.author)
-      end
+      flash[:notice] = "Page published."
+      Inkling::Log.create!(:category => "workflowable", :text => "#{current_user} published ")
+      Inkling::Log.create!(:text => "#{@page.author} published page <a href='#{edit_staff_archive_page_path(@page.archive, @page)}'>#{@page.title}</a> in <a href='/staff/archives/#{@page.archive.slug}'>#{@page.archive.name}</a>.", :category => "workflowable", :user => @page.author)
     else
       flash[:alert] = "I'm sorry, you don't have permission to publish pages."
     end

@@ -21,7 +21,6 @@ describe Workflowable do
       @workflowable.draft?.should == true
       user = make_user(role_name)
       @workflowable.publish!(user)
-      @workflowable.save!
       @workflowable.published?.should == true
       @workflowable.draft!
     end

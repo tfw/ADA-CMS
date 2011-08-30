@@ -62,4 +62,12 @@ class Archive < ActiveRecord::Base
   def to_param
     self.slug
   end
+
+  def variable_count
+    study_ids = self.studies.collect {|s| s.id}
+    return 0 if study_ids.empty?
+    study_ids = study_ids.join ","
+    study_ids = "(#{study_ids})" 
+    Variable.count(:conditions => ["study_id in #{study_ids}"])
+  end
 end

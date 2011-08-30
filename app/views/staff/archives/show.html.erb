@@ -2,8 +2,12 @@
   Archives: <%= @archive.name %>
 <% end %>
 
-<%= render_archive_partial(@archive) %>
-
+<fieldset>
+  <legend>Content Report</legend>
+  Studies: <%= @archive.studies.count %> <br>
+  Variables: <%= @archive.variable_count %> <br>
+  Pages: <%=  @archive.pages.count %>
+</fieldset>
   
 <fieldset id="menu-management">
   <legend> 

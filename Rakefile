@@ -18,10 +18,6 @@ namespace :ada do
   end
 end
 
-task :restore_postgres do
-  system("psql -d ada_#{Rails.env} < ada_data_13_2_2011.out")
-end
-
 task :install_theme => :environment do
   Inkling::Theme.install_from_dir("config/theme")
 end

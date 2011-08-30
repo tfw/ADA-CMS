@@ -14,7 +14,6 @@ class PageObserver < ActiveRecord::Observer
     ActionController::Base.new.expire_fragment("show-page-#{page.id}")
     log("deleted", page)
   end
-
   private
   def log(verb, page)
     
