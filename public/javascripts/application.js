@@ -5,5 +5,8 @@ $(document).ready(function(){
 			search.val("");
 		}
 	});
+
+  $('#notice').delay(1000).fadeOut(400)
+  $('#alert').delay(1000).fadeOut(400)
 });
 

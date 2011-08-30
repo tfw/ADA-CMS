@@ -13,7 +13,9 @@ module Staff::ActivityLogsHelper
     when "search-index"
       image_tag('icons/database_refresh.png')     
     when "studies"
-      image_tag('icons/bricks.png')        
+      image_tag('icons/bricks.png') 
+    when "workflowable"
+      image_tag('icons/flag_green.png')        
     end
   end
 end
