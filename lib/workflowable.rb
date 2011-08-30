@@ -9,10 +9,9 @@ module Workflowable
 	end
 
 	def publish!(user)
-#		# p "#{user.to_s}: #{user.roles.first.name} - #{user.can_approve?}"
 		if user.can_approve?
 			self.state = PUBLISH
-			transition_to = PUBLISH
+			self.transition_to = PUBLISH
 		else
 			false
 		end
@@ -20,7 +19,7 @@ module Workflowable
 
 	def draft!
 		self.state = DRAFT
-		transition_to = DRAFT
+		self.transition_to = DRAFT
 	end
 
 	def published?

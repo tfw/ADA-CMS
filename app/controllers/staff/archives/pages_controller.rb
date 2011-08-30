@@ -80,7 +80,6 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   def preview
     @page = Page.new(params[:page])
     @page.archive = @archive
-    # debugger
     html = render(:partial => @page.partial, :object => @page)
     html
   end
@@ -90,11 +89,14 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
 
     if current_user.can_approve?
       @page.publish!(current_user)
-      debugger
-      params[:flash] = "Page published." if @page.save
+puts "\n\n ---------------- 1 #{@page.state}"
+      flash[:notice] = "Page published." if @page.save
+puts "*** your software doesnt work?! #{@page.state}"
     else
-      params[:flash] = "I'm sorry, you don't have permission to publish pages."
+      flash[:alert] = "I'm sorry, you don't have permission to publish pages."
     end
+
+puts "\n\n ---------------- 2 #{@page.state}"
     redirect_to edit_staff_archive_page_path(@page.archive, @page) 
   end
 
