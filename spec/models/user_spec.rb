@@ -12,4 +12,9 @@ describe User do
 		user.roles.count.should == 1
 		user.roles.first.should == Inkling::Role.find_by_name("foo")
 	end
+
+	specify "that archivists cannot approve workflowables" do
+		archivist = make_user("Archivist")
+		archivist.can_approve?.should be_false
+	end
 end

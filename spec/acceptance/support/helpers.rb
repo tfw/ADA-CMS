@@ -29,6 +29,7 @@ module HelperMethods
       click_link('new-page-link')
     end
 
+puts page_body
     fill_in("page_title", :with => page_title)
     fill_in("page_body_editor", :with => page_body)
     click_button("Create Page")

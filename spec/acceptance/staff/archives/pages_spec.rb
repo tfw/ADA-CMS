@@ -42,12 +42,10 @@ feature "Creating pages" do
       create_page(Archive.historical, "test page", "sample content")
       cms_page = Page.find_by_title("test page")
       visit edit_staff_archive_page_path(cms_page.archive, cms_page)
-      draft_radio = page.find("input[@id='page_state_draft'][@checked]")
-      draft_radio.should_not be_nil
-      choose('page_state_publish')
-      click_on('Update Page')
-      publish_radio = page.find("input[@id='page_state_publish'][@checked]")
-      publish_radio.should_not be_nil
+      page.should have_content("This page is waiting for publishing approval.")
+      click_link("Approve?")
+      puts page.body
+      page.should have_content("Published.")
     end
 
     # scenario "AJAX - the path displays after a title update of a page" do

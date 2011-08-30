@@ -3,18 +3,20 @@
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
 
-  <fieldset class="left half">
-      <legend>Approvals</legend>
-      <% if current_user.can_approve? %>
-          <% semantic_form_for resource, :url => 'test' do |form| %>
-            <% unless resource.new_record? %>
-              <%= form.input :state, :as => :radio, 
-                  :collection => { "Draft" => Workflowable::DRAFT, "Publish" => Workflowable::PUBLISH},
-                  :label => "" %>  
-            <% end %>
+  <% unless resource.new_record? %> 
+    <fieldset class="left half">
+        <legend>Approvals</legend>
+        <% if resource.draft? %> 
+          This page is waiting for publishing approval.
+          <% if current_user.can_approve? %>
+            <%= link_to 'Approve?', publish_staff_archive_page_path(@archive, resource), 
+                :method => "post", :confirm => "Are you sure?" %> 
           <% end %>
-      <% end %>
-  </fieldset> 
+        <% else %>
+        Published.
+        <% end %>
+    </fieldset> 
+  <% end %>
 
 <br>
 
@@ -68,7 +70,7 @@
     <%= form.inputs :editors do %>
 
 		 <label for="page_body">Main Text</label>
-     <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'70%', :height=>'200px', 
+     <%= form.cktext_area :body, :toolbar=>'Medium', :width=>'90%', :height=>'200px', 
 						:ckeditor_options => {:filebrowserBrowseUrl => browse_staff_archive_pages_path} %>
      <% end %>
 
@@ -79,7 +81,7 @@
 	   <% end %>
 	
 		 		<label for="page_body"><p>Breakout Box<p/></label>
-	    	<%= form.cktext_area :breakout_box, :toolbar=>'Medium', :width=>'70%', :height=>'100px' %>
+	    	<%= form.cktext_area :breakout_box, :toolbar=>'Medium', :width=>'90%', :height=>'100px' %>
     	</span>
 
       <br/>
@@ -93,6 +95,11 @@
 <div id="preview"></div>
 
 <% content_for :js do %>
+
+
+$("input[@name='page[state]']").change(function(){
+  alert('booo');
+});
 
 
 CKEDITOR.on( 'dialogDefinition', function( ev )

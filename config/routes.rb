@@ -27,6 +27,10 @@ Ada::Application.routes.draw do
         collection do
           get 'browse'
         end
+
+        member do
+          post 'publish'
+        end
       end
       resources :menu_items, :controller => "archives/menu_items"
     end

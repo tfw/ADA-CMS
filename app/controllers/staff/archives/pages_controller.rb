@@ -85,6 +85,19 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
     html
   end
 
+  def publish
+    @page = Page.find(params[:id]) 
+
+    if current_user.can_approve?
+      @page.publish!(current_user)
+      debugger
+      params[:flash] = "Page published." if @page.save
+    else
+      params[:flash] = "I'm sorry, you don't have permission to publish pages."
+    end
+    redirect_to edit_staff_archive_page_path(@page.archive, @page) 
+  end
+
   private
   def get_archives
     @archives = Archive.all(:order => "name asc")

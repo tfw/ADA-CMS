@@ -52,7 +52,7 @@ class User < ActiveRecord::Base
   end
 
   def is_staff?
-    (roles && [Inkling::Role.find_by_name("administrator"),
+    (roles & [Inkling::Role.find_by_name("administrator"),
       Inkling::Role.find_by_name("Manager"),
       Inkling::Role.find_by_name("Publisher"),
       Inkling::Role.find_by_name("Approver"),
@@ -60,7 +60,7 @@ class User < ActiveRecord::Base
   end
 
   def can_approve?
-    (roles && [Inkling::Role.find_by_name("administrator"),
+    (roles & [Inkling::Role.find_by_name("administrator"),
       Inkling::Role.find_by_name("Manager"),
       Inkling::Role.find_by_name("Publisher"),
       Inkling::Role.find_by_name("Approver")]).any?
