@@ -23,7 +23,7 @@ Ada::Application.routes.draw do
     post 'archives/update_menu_order'
 
     resources :archives, :only => :show do
-      resources :pages, :except => :index, :controller => "archives/pages" do
+      resources :pages, :except => [:index, :show], :controller => "archives/pages" do
         collection do
           get 'browse'
         end
@@ -35,8 +35,12 @@ Ada::Application.routes.draw do
       resources :menu_items, :controller => "archives/menu_items"
     end
 
-    resources :news do
+    resources :news, :except => [:show] do
       post 'preview'
+
+      member do
+        post 'publish'
+      end
     end
 
     resources :documents, :images do

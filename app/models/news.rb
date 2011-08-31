@@ -14,7 +14,6 @@ class News < ActiveRecord::Base
   validates_presence_of :user
   validates_presence_of :title
   validates_presence_of :body
-  validates_inclusion_of :state, :in => %w{draft published deleted}
 
   scope :recent, proc { { :limit => 10, :order => "created_at DESC" } }
   scope :published, proc { { :conditions => "state = 'published'" } }

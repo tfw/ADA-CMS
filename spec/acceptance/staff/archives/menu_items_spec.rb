@@ -11,7 +11,7 @@ feature "Managing menu items" do
     after(:each) do
       sign_out
     end
- 
+    
     scenario "saving a page puts the menu_item in draft state, and so is invisible to public" do
       create_page(Archive.ada, "one", "sample content")
       cms_page = Page.find_by_title("one")

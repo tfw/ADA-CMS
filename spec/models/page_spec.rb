@@ -70,4 +70,16 @@ describe Page do
       end
     end
   end
+
+  describe "publishing" do
+    context "approver" do
+      specify "it can be published" do
+        page = Page.make
+        admin = make_user(:administrator)
+        page.draft?.should be_true
+        page.publish!(admin)
+        page.published?.should be_true
+      end
+    end
+  end
 end

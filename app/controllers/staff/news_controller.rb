@@ -18,7 +18,7 @@ class Staff::NewsController < Staff::BaseController
   def create
     create! do |format|
       format.html {
-        redirect_to staff_news_index_path
+        redirect_to staff_news_path
         }
     end
   end
@@ -32,6 +32,22 @@ class Staff::NewsController < Staff::BaseController
     end
     render(:partial => "news/show", :object => @news)
   end
+
+  def publish
+    @news = News.find(params[:id]) 
+
+    if current_user.can_approve?
+      @news.publish!(current_user)
+      flash[:notice] = "News published."
+      Inkling::Log.create!(:text => 
+        "#{@news.author} published news <a href='#{edit_staff_news_path(@news)}'>#{@news.title}</a>.", :category => "workflowable", :user => @news.author)
+    else
+      flash[:alert] = "I'm sorry, you don't have permission to publish News."
+    end
+
+    redirect_to edit_staff_news_path(@news) 
+  end
+
 
   private
   def get_recent_news
