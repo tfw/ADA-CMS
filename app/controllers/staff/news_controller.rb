@@ -8,17 +8,19 @@ class Staff::NewsController < Staff::BaseController
   def index
     get_recent_news
   end
-
-  def show
-    show! do 
-      @assigned_archives = @news.archives
-    end
-  end
   
   def create
     create! do |format|
       format.html {
-        redirect_to staff_news_path
+        redirect_to staff_news_index_path
+        }
+    end
+  end
+
+  def update
+    update! do |format|
+      format.html {
+        redirect_to staff_news_index_path
         }
     end
   end
@@ -40,7 +42,8 @@ class Staff::NewsController < Staff::BaseController
       @news.publish!(current_user)
       flash[:notice] = "News published."
       Inkling::Log.create!(:text => 
-        "#{@news.author} published news <a href='#{edit_staff_news_path(@news)}'>#{@news.title}</a>.", :category => "workflowable", :user => @news.author)
+        "#{@news.user} published news <a href='#{edit_staff_news_path(@news)}'>#{@news.title}</a>.", 
+          :category => "workflowable", :user => @news.user)
     else
       flash[:alert] = "I'm sorry, you don't have permission to publish News."
     end
