@@ -58,8 +58,8 @@ feature "Creating pages" do
 
   context "archivist" do  
     background do
-      @admin = make_user('Archivist')
-      sign_in(@admin)
+      @archivisit = make_user('Archivist')
+      sign_in(@archivisit)
     end
     
     after(:each) do
@@ -74,6 +74,7 @@ feature "Creating pages" do
       page.should_not have_content("Approve?")
     end
   end
+  
     # scenario "AJAX - the path displays after a title update of a page" do
     #   visit new_staff_archive_page_path(Archive.ada)
     #   fill_in("page_title", :with => "test 1 2 3")
