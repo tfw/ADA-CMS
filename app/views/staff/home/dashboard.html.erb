@@ -17,17 +17,53 @@ Home
   <fieldset>
     <legend> Content to publish </legend>
 
-    <%= image_tag('icons/page.png')%> Pages:
+    <table width='100%'>
+      <tr>
+        <th align="left"><%= image_tag("icons/page.png", :title => "unpublished page")%> Pages &nbsp;&nbsp; 
+        (<%= pluralize(@draft_pages.length, 'unpublished page')%>  of <%= @draft_pages_count %>)  </th>
+        <th  align="left"> <%= image_tag("icons/newspaper.png", :title => "unpublished news")%> News &nbsp;&nbsp; 
+        (<%= pluralize(@draft_news.length, 'unpublished news')%>  of <%= @draft_news_count %>)</th>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <th align='left'> Archive, Title </th>
+              <th align='left'> <%= image_tag("icons/clock.png", :title => "waiting") %> </th>
+              <th align='left'> <%= image_tag("icons/user.png", :title => "edited by") %> </th>
+            </tr>
 
-    <% @draft_pages.each do |p| %>
-      <%= link_to p.title, edit_staff_archive_page_path(p.archive, p) %> <br>
-    <% end %>
+            <% @draft_pages.each do |p| %>
+              <tr>
+                <td> <%= archive_icon(p.archive) %>
+                <%= link_to p.title, edit_staff_archive_page_path(p.archive, p) %></td>
+                <td> <%= time_ago_in_words(p.updated_at).capitalize %></td>
+                <td> <%= p.author %></td>
+            <% end %>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <th align='left'> Archives, Title </th>
+              <th align='left'> <%= image_tag("icons/clock.png", :title => "waiting") %> </th>
+              <th align='left'> <%= image_tag("icons/user.png", :title => "edited by") %> </th>
+            </tr>
 
-    <br>
-
-    <%= image_tag('icons/newspaper.png')%> News:
-  
-
+            <% @draft_news.each do |n| %>
+              <tr>
+                <td> 
+                  <% for archive in n.archives %>
+                  <%= archive_icon(archive) %>
+                  <% end %>
+                  <%= link_to n.title, edit_staff_news_path(n) %></td>
+                <td> <%= time_ago_in_words(n.updated_at).capitalize %></td>
+                <td> <%= n.user %></td>
+            <% end %>
+          </table>        
+        </td>
+      </tr>
+    </table>
   </fieldset>
 <% end %>
 
