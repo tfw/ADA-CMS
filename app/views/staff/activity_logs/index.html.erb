@@ -1,5 +1,36 @@
-<% for log in @logs%>
-	<dt><%= log_icon(log.category) %> &nbsp; &nbsp;</dt>
-  <dt><a href="#" title="#"><%= time_ago_in_words(log.created_at).capitalize %> ago:</a></dt>
-  <dd><%= log.text.html_safe%></dd>
-<% end %>
+<table>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<th align='left'>Type</th>
+					<th align='left'>Event</th>
+					<th align='left'><%= image_tag("icons/clock.png", :title => "waiting") %></th>
+				</tr>
+				<% for log in @first_20%>
+					<tr>
+						<td align='left'><%= log_icon(log.category) %></td>
+						<td align='left'><%= log.text.html_safe%></td>
+						<td align='left'><%= time_ago_in_words(log.created_at).capitalize %></a>
+					</tr>
+				<% end %>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th align='left'>Type</th>
+					<th align='left'>Event</th>
+					<th align='left'><%= image_tag("icons/clock.png", :title => "waiting") %></th>
+				</tr>
+				<% for log in @second_20%>
+					<tr>
+						<td align='left'><%= log_icon(log.category) %></td>
+						<td align='left'><%= log.text.html_safe%></td>
+						<td align='left'><%= time_ago_in_words(log.created_at).capitalize %></a>
+					</tr>
+				<% end %>
+			</table>
+		</td>
+	</tr>
+</table>

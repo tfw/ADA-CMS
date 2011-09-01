@@ -19,9 +19,9 @@ Home
 
     <table width='100%'>
       <tr>
-        <th align="left"><%= image_tag("icons/page.png", :title => "unpublished page")%> Pages &nbsp;&nbsp; 
-        (<%= pluralize(@draft_pages.length, 'unpublished page')%>  of <%= @draft_pages_count %>)  </th>
-        <th  align="left"> <%= image_tag("icons/newspaper.png", :title => "unpublished news")%> News &nbsp;&nbsp; 
+        <th align="left"><%= link_to image_tag("icons/page.png"), user_root_path, :title => "First 20 unpublished pages" %> Pages &nbsp;&nbsp; 
+        (<%= pluralize(@draft_pages.length, 'unpublished page')%>  of <%= link_to @draft_pages_count, user_root_path(:all_pages => true), :title => "Show all unpublished pages" %>)  </th>
+        <th  align="left"> <%= link_to image_tag("icons/newspaper.png"), user_root_path, :title => "First 20 unpublished news"%> News &nbsp;&nbsp; 
         (<%= pluralize(@draft_news.length, 'unpublished news')%>  of <%= @draft_news_count %>)</th>
       </tr>
       <tr>
@@ -68,7 +68,7 @@ Home
 <% end %>
 
 <fieldset>
-  <legend id="logs" title="Display More Logs">Recent Activity</legend>
+  <legend id="logs" title="Display More Logs">Recent Actions</legend>
   <dl id="log">
     <!-- dynamically replaced with AJAX callback, above -->
 	</dl>
