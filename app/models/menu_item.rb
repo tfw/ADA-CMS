@@ -28,11 +28,15 @@ class MenuItem < ActiveRecord::Base
   def self.update_from_page(page, menu_item)
     if page.parent
       menu_item.update_attributes(:title => page.title, :link => page.urn, :content => page, 
-                                                  :archive => page.archive, :parent => page.parent.menu_item)
+                                  :archive => page.archive, :parent => page.parent.menu_item)
     else
       menu_item.update_attributes(:title => page.title, :link => page.urn, :content => page, :archive => page.archive)
     end
-    
+
+    menu_item.state = page.state
+    menu_item.transition_to = page.state
+    menu_item.save! #has to be done separately due to attr_protected
+
     menu_item
   end
   
