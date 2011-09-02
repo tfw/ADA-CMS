@@ -5,7 +5,7 @@
     </tr>
   </thead>
   <tbody>
-    <% for rm in study.related_materials %>
+    <% for rm in study.related_materials.order(:position) %>
       <tr class="<%= cycle('', 'alt') %>">
         <td>
         <% idx = rm.nesstar_id.split("_").last.to_i + 1 %>

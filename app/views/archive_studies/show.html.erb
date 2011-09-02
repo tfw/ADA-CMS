@@ -36,15 +36,31 @@
   });
 
 <% end %>
+    <a href="<%= NESSTAR_SERVER %>/webview/index.jsp?object=<%= NESSTAR_SERVER%>:80/obj/fStudy/<%= @study.stdy_id %>&cms_url=<%= @archive_study.path.slug %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
 
 <aside class="breakout study">
-    <a href="<%= NESSTAR_SERVER %>/webview/index.jsp?object=<%= NESSTAR_SERVER%>:80/obj/fStudy/<%= @study.stdy_id %>&cms_url=<%= @archive_study.path.slug %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
     <% if current_user %>
-      <% if [@perms['browse'], @perms['analyse'], @perms['download']].include? false %>
+      You can 
+      <% if @perms['browse'] %>
+        Browse: <%= "\u2713" %>
+      <% end %>
 
-        <%= link_to 'Request access', "#{OPENID_SERVER}/users/#{@username}/undertakings/new?datasetID=#{@study.stdy_id}" %> to this dataset </a>
-      <% else %>
-        Browse: <%= @perms['browse'] %> | Analyse: <%= @perms['analyse'] %> | Download: <%= @perms['download'] %>
+      <% if @perms['analyse'] %>
+        Analyse: <%= "\u2713" %>
+      <% end %>
+
+      <% if @perms['download'] %>
+        Download: <%= "\u2713" %>
+      <% end %>
+
+
+      <%perms_to_request = ""
+        perms_to_request += "Analyse" unless @perms['analyse']
+        perms_to_request += " and Download" unless @perms['download']
+        
+        unless perms_to_request.blank? %>
+        <br>        
+        Request <%= link_to perms_to_request, "#{OPENID_SERVER}/users/#{@username}/undertakings/new?datasetID=#{@study.stdy_id}" %> access </a>
       <% end %>
     <% end %>
 </aside>
