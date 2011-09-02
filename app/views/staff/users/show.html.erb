@@ -8,24 +8,13 @@
 	<% if mirror %>
 		<legend>You</legend>
 	<% else %>
-		<legend> <%= @user.email %> </legend>
+		<legend> <%= @user.to_s %> </legend>
 	<% end %>
 	
 	<p>Info from ADAUsers </p>
 
 	Role: <%= @user.roles.first.name %>
 </fieldset>
-
-<fieldset>
-	<% if mirror %>
-		<legend>Your Tasks</legend>
-	<% else %>
-		<legend> <%= @user.email %> Tasks </legend>
-	<% end %>
-
-tasks go here	
-</fieldset>
-
 
 <fieldset>
 	<% if mirror %>

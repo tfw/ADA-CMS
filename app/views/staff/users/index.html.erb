@@ -1,6 +1,19 @@
 <fieldset>
   <legend>Users</legend>
 
-  <%= render :partial => "user", :collection => @users %>
+  <h3>Roles</h3>
 
-<fieldset>
+  <ul>
+  	<li>Administrator: technical user (all permissions).</li> 
+  	<li>Manager: (all permissions).</li> 
+  	<li>Publisher:(all permissions).</li> 
+  	<li>Approver:(all permissions).</li> 
+  	<li>Archivist: draft content, cannot publish content.</li> 
+  	<li>Member: save searches, no CMS access.</li> 
+  </ul>
+
+  <br>
+
+	<%= render(:partial => "users_table", :locals => {:users => @users}) %>
+
+</fieldset>

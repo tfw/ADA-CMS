@@ -1,5 +1,22 @@
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
+<% unless resource.new_record? or resource.published? %> 
+  <fieldset class="left half">
+      <legend>Approvals</legend>
+      <% if resource.draft? %> 
+        This link is waiting for publishing approval.
+        <% if current_user.can_approve? %>
+          <%= link_to 'Approve?', publish_staff_archive_menu_item_path(@archive, resource), 
+              :method => "post", :confirm => "Are you sure?" %> 
+        <% end %>
+      <% else %>
+      Published.
+      <% end %>
+  </fieldset> 
+<% end %>
+
+<br>
+
 <fieldset>
   <legend> <%= params[:action].capitalize %> <%= resource.title unless resource.new_record? %> in <%= @archive.name %> </legend>
 

@@ -1,10 +1,9 @@
-<fieldset>
-	<legend><%= link_to user.email, staff_user_path(user) %> </legend>
-
+<fieldset class="left half">
+<legend><%= link_to user.email, staff_user_path(user) %> </legend>
+	Role: <%= user.roles.first.name %>
+	<br/>		
 	Pages:  <%= user.pages.size %>
 	<br/>
 	News:  <%= user.news.size %>
-	<br/>
-	Archive Integrations:  <%= user.archive_study_integrations.size %>
 	<br/>
 </fieldset>

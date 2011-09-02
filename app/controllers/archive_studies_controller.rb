@@ -15,6 +15,7 @@ class ArchiveStudiesController < ContentController
       @perms = get_study_permissions_from_ada_users(@study)
     end
 
+    @username = current_user.identity_url.split("/").last if current_user
     @current_archive = @archive_study.archive
     @title = @study.title
     respond_with(@study)
