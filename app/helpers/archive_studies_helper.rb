@@ -33,8 +33,7 @@ module ArchiveStudiesHelper
     end
     
     "class = 'concealed'" unless format_names.include?(format)
-  end
-  
+  end  
   
   def variable_href(variable, archive_study)          
     "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fVariable/#{variable.stdy_id}_#{variable.var_id}&cms_url=#{archive_study.urn}"
@@ -57,14 +56,16 @@ module ArchiveStudiesHelper
     end
   end
   
-  def related_material_comment_then_file_name(related_material)
-    link_text = nil
+  def related_material_label_then_comment_then_file_name(related_material)
+    link_text = ""
 
-    unless related_material.comment.blank?
-      link_text = related_material.comment
+    if not related_material.label.blank?
+      link_text << related_material.label
+    elsif not related_material.comment.blank?
+      link_text += " |* " if link_text.any? 
+      link_text << related_material.comment
     else
-      link_text = related_material.uri.split(/\//).last
+      related_material.uri.split(/\//).last
     end
-    link_text
   end
 end

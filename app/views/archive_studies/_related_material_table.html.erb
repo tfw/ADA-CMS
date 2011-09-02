@@ -10,12 +10,16 @@
         <td>
         <% idx = rm.nesstar_id.split("_").last.to_i + 1 %>
         <%= idx %>.
+
+        (label: <%= rm.label %>) -- (comment: <% rm.comment %>) > regular -
         <% if rm.uri.nil? %>
           <% if rm.label %>
             <%= rm.label %>
+          <% else %>
+            <%= rm.comment %>
           <% end %>
         <% else %>
-	         <a href="<%= related_material_url(rm) %>"><%= related_material_comment_then_file_name(rm) %></a>
+	         <a href="<%= related_material_url(rm) %>"><%= related_material_label_then_comment_then_file_name(rm) %></a>
         <% end %>
         </td>
 	    </tr>
