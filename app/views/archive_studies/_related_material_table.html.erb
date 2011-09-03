@@ -11,19 +11,29 @@
         <% idx = rm.nesstar_id.split("_").last.to_i + 1 %>
         <%= idx %>.
 
-        (label: <%= rm.label %>) -- (comment: <% rm.comment %>) > regular -
         <% if rm.uri.nil? %>
           <% if rm.label %>
-            <%= rm.label %>
-          <% else %>
-            <%= rm.comment %>
+            Label: <%= rm.label %>
+          <% end %>
+          <% if rm.comment %>
+            Comment: <%= rm.comment %>
           <% end %>
         <% else %>
-	         <a href="<%= related_material_url(rm) %>"><%= related_material_label_then_comment_then_file_name(rm) %></a>
+          <% if rm.label %>
+           Label: <a href="<%= related_material_url(rm) %>" title ="<%= rm.label %>"> <%= rm.label %></a> <br>
+          <% end %> 
+
+          <% if rm.comment %>
+           Comment: <a href="<%= related_material_url(rm) %>" title ="<%= rm.comment %>"> <%= rm.comment %></a> <br>
+          <% end %> 
+
+          <% if rm.label.nil? and rm.comment.nil? 
+            filename = related_material.uri.split(/\//).last %>
+           Filename: <a href="<%= related_material_url(rm) %>" title ="<%= filename %>"> <%= filename %></a> <br>
+          <% end %> 
         <% end %>
         </td>
 	    </tr>
     <% end %>
   </tbody>
 </table>
- 

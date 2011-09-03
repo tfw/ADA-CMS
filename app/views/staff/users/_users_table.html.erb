@@ -1,0 +1,20 @@
+<table width='100%'>
+	<tr>
+		<th align='left'>Name</th>
+		<th align='left'>Role</th>
+		<th align='left'>Pages</th>
+		<th align='left'>News</th>
+		<th align='left'>Last logged in</th>
+		<th align='left'>Last IP</th>
+	</tr>
+	<% users.each do |u| %>
+		<tr>
+			<td align='left'><%= link_to u.to_s, staff_user_path(u) %> </td>
+			<td align='left'><%= u.roles.first.name %></td>
+			<td align='left'><%= u.pages.count %></td>
+			<td align='left'><%= u.news.count %></td>
+			<td align='left'><%= time_ago_in_words(u.last_sign_in_at) if u.last_sign_in_at %></td>
+			<td align='left'><%= u.last_sign_in_ip if u.last_sign_in_at %></td>
+		</tr>
+	<% end %>
+</table>

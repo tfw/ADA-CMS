@@ -59,11 +59,12 @@ module ArchiveStudiesHelper
   def related_material_label_then_comment_then_file_name(related_material)
     link_text = ""
 
-    if not related_material.label.blank?
-      link_text << related_material.label
-    elsif not related_material.comment.blank?
-      link_text += " |* " if link_text.any? 
-      link_text << related_material.comment
+    if related_material.label
+      link_text << "Label: #{related_material.label}"
+    end
+    if related_material.comment
+      link_text += " " if not link_text.blank?
+      link_text << "Comment: #{related_material.comment}"
     else
       related_material.uri.split(/\//).last
     end
