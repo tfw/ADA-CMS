@@ -61,6 +61,8 @@
         <br>        
         Request <%= link_to perms_to_request, "#{OPENID_SERVER}/users/#{@username}/undertakings/new?datasetID=#{@study.stdy_id}" %> access </a>
       <% end %>
+    <% else  %>
+      <%= link_to 'Log in', OPENID_SERVER %> to see your data access permissions.
     <% end %>
 </aside>
 
