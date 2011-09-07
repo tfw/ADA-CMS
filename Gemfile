@@ -20,7 +20,6 @@ else
 end
 
 gem 'inherited_resources'
-gem 'cancan'
 gem 'formtastic'
 gem 'ckeditor' , :git => 'git://github.com/cjheath/rails-ckeditor.git', :branch => 'rails3'
 gem 'yaml_db'

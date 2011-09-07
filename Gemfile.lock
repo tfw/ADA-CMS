@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: git://github.com/tfw/inkling.git
-  revision: 429f5caed149486035ac675c1596161d06568220
+  revision: abcb95ccd32e3ecc1dc169055c38dbab70cf5e12
   specs:
     inkling (0.1.0)
 
@@ -66,7 +66,6 @@ GEM
       ZenTest (>= 4.4.1)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
-    cancan (1.6.4)
     capistrano (2.5.19)
       highline
       net-scp (>= 1.0.0)
@@ -243,7 +242,6 @@ PLATFORMS
 
 DEPENDENCIES
   autotest
-  cancan
   capistrano
   capistrano-ext
   capybara
