@@ -36,21 +36,20 @@
   });
 
 <% end %>
-    <a href="<%= NESSTAR_SERVER %>/webview/index.jsp?object=<%= NESSTAR_SERVER%>:80/obj/fStudy/<%= @study.stdy_id %>&cms_url=<%= @archive_study.path.slug %>">Analyse/Download&nbsp;this&nbsp;study&nbsp;in&nbsp;Nesstar</a>
 
 <aside class="breakout study">
     <% if current_user %>
       You can 
       <% if @perms['browse'] %>
-        Browse: <%= "\u2713" %>
+        <%= link_to 'Browse', "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fStudy/#{@study.stdy_id}&cms_url=#{@archive_study.path.slug}" %>: <%= "\u2713" %>
       <% end %>
 
       <% if @perms['analyse'] %>
-        Analyse: <%= "\u2713" %>
+         <%= link_to 'Analyse', "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fStudy/#{@study.stdy_id}&cms_url=#{@archive_study.path.slug}" %>:: <%= "\u2713" %>
       <% end %>
 
       <% if @perms['download'] %>
-        Download: <%= "\u2713" %>
+        <%= link_to 'Download', "#{NESSTAR_SERVER}/webview/index.jsp?study=#{NESSTAR_SERVER}:80/obj/fStudy/#{@study.stdy_id}&mode=download&cms_url=#{@archive_study.path.slug}" %>: <%= "\u2713" %>
       <% end %>
 
 
