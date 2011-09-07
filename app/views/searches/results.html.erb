@@ -53,6 +53,21 @@ Order by:
 
 <a href="#" id="search-doc-link">Documentation</a> 
 
+<span id="save-searches">
+	<% if current_user %>
+		<span id="save-search-response"></span>
+
+		<span id="save-search-area">
+			<% if session[:recent_saved_search_id] %>
+				<%= render(:partial => "recent_saved_search", :locals => {:search => @search}) %>
+			<% else %>
+				<%= render(:partial => "save_search_form") %>
+			<% end %>
+		</span>
+	<% end %>
+</span>
+
+
 <section id="search-doc" class="concealed">
 <h2>How Search Works</h2>
 
@@ -86,20 +101,6 @@ Search is anded.
  
   <% unless @term %> Search requires a term. <% end %>
     
-  <% if current_user %>
-		<span id="save-searches">
-			<span id="save-search-response"></span>
-
-			<span id="save-search-area">
-				<% if session[:recent_saved_search_id] %>
-					<%= render(:partial => "recent_saved_search", :locals => {:search => @search}) %>
-				<% else %>
-					<%= render(:partial => "save_search_form") %>
-				<% end %>
-			</span>
-		</span>
-  <% end %>
-
 	<div id="tabs">
 	  <ul>
 	    <li id="study-items" <%= selected_tab_if(['title'], params[:show]) %>> <a id="studies-link" href="#">Studies</a> (<%= @studies_search.total %>) </li>
