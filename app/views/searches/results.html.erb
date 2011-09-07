@@ -39,6 +39,28 @@
   });
 <% end %>
 
+<div id='search-report'>
+	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
+	<% if @current_archive != Archive.ada %>
+	<h3>
+		<%= link_to "Expand this search to all ADA", transient_search_path(:term => params[:term], :archive_id => Archive.ada.id) %>. (Studies: <%= @ada_search.total %>, Variables: <%= @variables_search.total %>) 
+	</h3>
+	<% end %>
+
+  <% if params[:filters].any? %>	
+    <p>Filters: <%= filter_list("", params, true).html_safe %></p>
+	<br/>
+  <% end %>
+
+  <% if params[:order] %>	
+    <p>Order by: <%= params[:order]%> (<a href='<%= path_without_order(params).html_safe %>'>-</a>) </p>
+	<br/>
+  <% end %>
+
+ 
+  <% unless @term %> Search requires a term. <% end %>
+</div>
+
 Order by: 
 <select name="order" id="order">
 	<option <%= selected?('study-asc', params)%> value="study-asc">Title, asc</study>
@@ -80,27 +102,7 @@ Search is anded.
 </dl>
 </section>
 
-<div id="search-results">
-	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
-	<% if @current_archive != Archive.ada %>
-	<h3>
-		<%= link_to "Expand this search to all ADA", transient_search_path(:term => params[:term], :archive_id => Archive.ada.id) %>. (Studies: <%= @ada_search.total %>, Variables: <%= @variables_search.total %>) 
-	</h3>
-	<% end %>
-
-  <% if params[:filters].any? %>	
-    <p>Filters: <%= filter_list("", params, true).html_safe %></p>
-	<br/>
-  <% end %>
-
-  <% if params[:order] %>	
-    <p>Order by: <%= params[:order]%> (<a href='<%= path_without_order(params).html_safe %>'>-</a>) </p>
-	<br/>
-  <% end %>
-
- 
-  <% unless @term %> Search requires a term. <% end %>
-    
+<div id="search-results">    
 	<div id="tabs">
 	  <ul>
 	    <li id="study-items" <%= selected_tab_if(['title'], params[:show]) %>> <a id="studies-link" href="#">Studies</a> (<%= @studies_search.total %>) </li>
