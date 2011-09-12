@@ -14,7 +14,7 @@ feature "Cms Dashboard", %q{
     sign_in(@admin)
     visit('/staff/home')
 puts page.body
-    page.should have_content('Your Tasks')
+    page.should have_content('Content to Publish')
     sign_out
   end
 end
