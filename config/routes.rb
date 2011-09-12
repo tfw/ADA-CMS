@@ -32,7 +32,13 @@ Ada::Application.routes.draw do
           post 'publish'
         end
       end
-      resources :menu_items, :controller => "archives/menu_items"
+
+      resources :menu_items, :except => [:index, :show], :controller => "archives/menu_items" do
+        member do
+          post 'publish'
+        end
+
+      end
     end
 
     resources :news, :except => [:show] do

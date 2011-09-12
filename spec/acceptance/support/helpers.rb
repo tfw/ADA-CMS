@@ -37,12 +37,11 @@ module HelperMethods
   def create_menu_item(archive, page_title, page_body)
     visit_archive(archive.slug)
     within(:xpath, "//fieldset[@id='menu-management']") do
-      click_link('new-menu-item-link')
+      click_link('new-link-link')
     end
 
-    fill_in("page_title", :with => page_title)
-    fill_in("page_body_editor", :with => page_body)
-    click_button("Create Page")
+    fill_in("menu_item_title", :with => page_title)
+    click_button("Create Menu item")
   end
 
   def create_news(archive, news_title, news_body)
