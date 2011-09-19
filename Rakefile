@@ -106,10 +106,22 @@ namespace :postgres do
   end
 end
 
-task :prime_cache => :environment do
-  require 'httparty'
-  include HTTParty
-  Inkling::Path.all.each do |path|
-    get "http://localhost:3000#{path.slug}"
+# task :prime_cache => :environment do
+#   require 'httparty'
+#   include HTTParty
+#   Inkling::Path.all.each do |path|
+#     get "http://localhost:3000#{path.slug}"
+#   end
+# end
+
+task :publish_all => :environment do
+  u = User.first
+  publishables = Page.all + News.all
+  publishables.each do |o|
+    o.publish!(u)
   end
 end
+
+
+
+

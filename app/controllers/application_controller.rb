@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
-  # alias current_user current_inkling_user
   helper_method :current_user
 
   before_filter :update_authentication #in case the user logs out externally

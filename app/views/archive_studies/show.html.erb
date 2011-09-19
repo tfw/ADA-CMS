@@ -85,7 +85,7 @@
     </section>
       
     <section id="variables" <%= conceal_unless(['var'], params[:show]) %>>
-  	  <%= render :partial => "variable", :collection => study.variables %>
+  	  <%= render :partial => "variable", :collection => study.variables.paginate(:page => params[:page], :per_page => 100) %>
     </section>
     
     <section id="rms" <%= conceal_unless(['rms'], params[:show]) %> >

@@ -5,7 +5,17 @@ class Study < ActiveRecord::Base
   has_many :related_materials
   has_many :archive_studies
   has_many :archives, :through => :archive_studies
-  has_many :variables
+  has_many :variables do
+    def paginate(options)
+      variables.paginate
+    end
+  end
+
+   #   has_many :bugs do
+   #      def paginate(options)
+   #          Bug.paginate
+   #      end
+   # end
   
   validates_uniqueness_of :stdy_id
   validates_presence_of :stdy_id
