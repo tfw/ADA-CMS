@@ -1,4 +1,4 @@
-<li id="menu-options-<%= menu_item.id %>">
+<li id="menu-options-<%= menu_item.id %>"> 
   
   <% if menu_item.content.is_a? Page %>
     <%= image_tag('icons/page.png', :title => "drop n drag the page to change its menu position") %>
@@ -21,9 +21,13 @@
     <span id="page-controls">
   <% end %>
 
-    <% if menu_item.children %>
+    <% if menu_item.children.any? %>
       <ul class="sortable">
-	      <%= render(:partial => "menu_item", :collection => menu_item.children) %> 
+        <% 
+          #the workaround below is due to nested_set updating the order of siblings from the point of view of siblings
+          #but not from the parent. This, the order of children in parent.children is not updated.
+        first_child = menu_item.children.first %>
+	      <%= render(:partial => "menu_item", :collection => first_child.self_and_siblings) %> 
       </ul>
     <% end %>
 </li>

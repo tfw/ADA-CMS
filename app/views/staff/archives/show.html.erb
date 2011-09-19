@@ -29,7 +29,7 @@
     update: function(event, ui){
       var moved = $(ui.item).attr("id");
       var menu_order = $(this).sortable('toArray').toString();
-			$.post("/staff/archives/update_menu_order", {menu_order: menu_order, moved: moved});
+			$.post("<%= staff_archives_update_menu_order_path %>", {menu_order: menu_order, moved: moved});
 		}
   });
 <% end %>

@@ -75,4 +75,13 @@ class MenuItem < ActiveRecord::Base
       end
     end
   end
+
+  def dump
+    str = "[#{self.id}] #{self.self_and_siblings.collect{|m| m.id }} \n\n"
+
+    if self.parent
+      str +=  " -- #{self.parent.children.collect{|c| c.id}} \n\n\n\n"
+    end
+    str
+  end
 end

@@ -24,14 +24,17 @@ class Staff::ArchivesController < Staff::BaseController
     left_idx  = idx != menu_ids.first ? menu_ids[idx - 1] : nil
     right_idx = idx != menu_ids.last ? menu_ids[idx + 1] : nil
 
-    left_menu =  MenuItem.find(left_idx)
-    right_menu =  MenuItem.find(right_idx)
+    if left_idx
+      new_left_menu =  MenuItem.find(left_idx)
+      moved_menu.move_to_right_of new_left_menu
+    end
 
-    moved_menu.move_to_right_of left_menu
-    left_menu.move_to_left_of moved_menu
+    if right_idx
+      new_right_menu =  MenuItem.find(right_idx)
+      moved_menu.move_to_left_of new_right_menu
+    end
 
-    moved_menu.move_to_left_of right_menu
-    right_menu.move_to_right_of moved_menu
+    puts "\n\n mm [#{moved_menu.id}] #{moved_menu.self_and_siblings.to_s} \n\n"
     render :nothing => true
   end
 

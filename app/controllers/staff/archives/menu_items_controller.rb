@@ -60,7 +60,4 @@ class Staff::Archives::MenuItemsController < Staff::Archives::BaseController
       @menu_items.delete(MenuItem.find(params[:id]))
     end
   end
-
-
-    
 end
