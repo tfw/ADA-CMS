@@ -24,5 +24,11 @@ class ApplicationController < ActionController::Base
     end
   	true
   end
+
+  def update_authentication
+    openid = oid_authentication_state
+    # debugger
+    # puts "-"
+  end
 end
 

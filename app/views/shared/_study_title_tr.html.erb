@@ -7,7 +7,7 @@
         label = study.label 
       end%>
    <%= link_to label, study.for_archive(@current_archive).path.slug %> </td>
-  <td> <%= study.stdy_auth_entity %> </td>
+  <td> <%= study.variables.count %>  <%= study.stdy_auth_entity %> </td>
   <td> <%= study.period_start.to_s.split("-").first %> - <%= study.period_end.to_s.split("-").first %> </td>
   <td> <%= study.ddi_id %> </td>
   <td>
