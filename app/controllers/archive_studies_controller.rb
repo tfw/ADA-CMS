@@ -18,7 +18,7 @@ class ArchiveStudiesController < ContentController
     @username = current_user.identity_url.split("/").last if current_user
     @current_archive = @archive_study.archive
     @title = @study.title
-    @variables = @study.variables.paginate(:page => params[:page], :per_page => 2)
+    @variables = @study.variables.paginate(:page => params[:page], :per_page => 100)
     respond_with(@study)
   end
   
