@@ -39,7 +39,7 @@
   });
 <% end %>
 
-<div id='search-results'>
+<section id='search-results'>
 	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
 	<% if @current_archive != Archive.ada %>
 	<h3>
@@ -112,4 +112,4 @@ Search is anded.
 
 	<%= render(:partial => "studies") %>
 	<%= render(:partial => "variables") %>
-</div>
+</section>
