@@ -9,7 +9,7 @@ Ada::Application.load_tasks
 namespace :ada do
   task :rebuild => :environment do
     if ["development", "devs", "test", "staging"].include? Rails.env or `hostname` =~ /\.local/
-      ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme"].each do |t|
+      ["db:drop", "db:create", "db:migrate", "db:bootstrap", "db:seed", "install_theme", "publish_all"].each do |t|
         Rake::Task[t].execute
       end
     else
