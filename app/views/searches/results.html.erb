@@ -39,7 +39,7 @@
   });
 <% end %>
 
-<div id='search-report'>
+<div id='search-results'>
 	<h1>Searching <%= @current_archive.name %> for "<%= @term %>" found <%= pluralize(@studies_search.total, "study")%> and <%= pluralize(@variables_search.total, "variable") %>.</h1>
 	<% if @current_archive != Archive.ada %>
 	<h3>
@@ -47,6 +47,7 @@
 	</h3>
 	<% end %>
 
+<div id='search-info'>
   <% if params[:filters].any? %>	
     <p>Filters: <%= filter_list("", params, true).html_safe %></p>
 	<br/>
@@ -59,9 +60,8 @@
 
  
   <% unless @term %> Search requires a term. <% end %>
-</div>
-
-Order by: 
+<label class='filter' for='order'>
+<span>Order by:</span> 
 <select name="order" id="order">
 	<option <%= selected?('study-asc', params)%> value="study-asc">Title, asc</study>
 	<option <%= selected?('study-desc', params)%> value="study-desc">Title, desc</study>
@@ -72,6 +72,7 @@ Order by:
 	<option <%= selected?('ada-id-asc', params)%> value="ada-id-asc">ADA ID, asc</study>
 	<option <%= selected?('ada-id-desc', params)%> value="ada-id-desc">ADA ID, desc</study>
 </select>
+</label>
 
 <a href="#" id="search-doc-link">Documentation</a> 
 
@@ -101,8 +102,7 @@ Search is anded.
 	<dt>Relevancy</dt><dd> explanation .. </dd>
 </dl>
 </section>
-
-<div id="search-results">    
+</div>
 	<div id="tabs">
 	  <ul>
 	    <li id="study-items" <%= selected_tab_if(['title'], params[:show]) %>> <a id="studies-link" href="#">Studies</a> (<%= @studies_search.total %>) </li>
