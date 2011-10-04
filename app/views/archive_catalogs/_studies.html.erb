@@ -17,6 +17,7 @@ $(document).ready(function() {
 </script>
 
   <h1>Catalog: <%= catalog ? catalog.label : @current_archive.name %></h1>
+    <div id="browse-wrapper">
       <div id="browse-navigation">
 	<div id="tabs">
 	  <ul>
@@ -37,7 +38,7 @@ $(document).ready(function() {
 	</div>
       </div>
 
-	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %> width='70%' >
+	<table id="browse-results-title" <%= conceal_unless(['title'], params[:format]) %>>
 		<thead>
 			<tr>
 				<th>Study</th>
@@ -59,3 +60,4 @@ $(document).ready(function() {
       <%= render(:partial => "/shared/study_ext_tr", :locals => {:hit => nil, :study => archive_catalog_study.study} )%>
 		<% end %>
 	</table>
+</div>
