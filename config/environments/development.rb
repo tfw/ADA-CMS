@@ -25,7 +25,7 @@ Ada::Application.configure do
 
 end
 
-Paperclip.options[:command_path] = "/opt/local/bin/" if `uname`.strip == "Darwin"
+# Paperclip.options[:command_path] = "/opt/local/bin/" if `uname`.strip == "Darwin"
 Paperclip.options[:command_path] = "/usr/bin/" if `uname`.strip == "Linux"
 
 OPENID_SERVER = ENV['OPENID'] || 'https://users-test.ada.edu.au'

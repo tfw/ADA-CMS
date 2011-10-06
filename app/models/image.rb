@@ -18,6 +18,7 @@ class Image < ActiveRecord::Base
 
   validates_presence_of :user
   validates_presence_of :title
+  
   def generate_path_slug
     "/images/#{sluggerize(self.title)}"
   end
