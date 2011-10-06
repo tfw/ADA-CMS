@@ -1,3 +1,7 @@
-<div class="document box">
-  <%= render(:partial => "form") %>
-</div>
+<% content_for(:breadcrumbs) do %>
+	Edit Document: <%= resource.title %> 
+<% end %>
+
+<%= render(:partial => "form") %>
+
+<%= link_to 'Back to Resources index', staff_resources_path %>
