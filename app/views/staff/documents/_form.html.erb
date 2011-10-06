@@ -1,21 +1,23 @@
-<% if resource.errors.any? %>
-    <h2><%= pluralize(resource.errors.count, "error") %> prohibited this page from being saved:</h2>
-    <ul>
-    <% resource.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-<% end %>
+<%= render(:partial => "/staff/shared/resource_errors") %>
 
-<% semantic_form_for([:staff, resource], :html => { :multipart => true }) do |form| %>
+<fieldset>
+  <legend>Upload a document</legend>
 
-  <fieldset>
-    <legend>Upload a document</legend>
+  <% semantic_form_for([:staff, resource], :html => { :multipart => true }) do |form| %>
     <%= form.hidden_field :user_id, :value => current_user.id %>
-    <%= form.input :archive, :label => 'Main Archive', :include_blank => '(None)' %>
-    <%= form.input :title, :input_html => {:size => "50"} %>
-    <%= form.file_field :resource %>
-    <%= form.commit_button %>
-  </fieldset>
+    <%= form.inputs do %>
+      <%= form.input :archive, :label => 'Main Archive', :include_blank => '(None)' %>
+      <%= form.input :title, :input_html => {:size => "50"} %>
+      <li>
+        <label>Document File</label>
+        <%= form.file_field :resource %>
+      </li>
 
-<% end %>
+      <%= form.buttons do %>
+        <%= form.commit_button %>
+      <% end %>
+
+    <% end %>
+  <% end %>
+</fieldset>
+
