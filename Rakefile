@@ -122,6 +122,9 @@ task :publish_all => :environment do
   end
 end
 
+task :destroy_paths => :environment do
+  Inkling::Path.delete_all
+end
 
 
 

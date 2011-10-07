@@ -3,6 +3,7 @@
 class Integrations::ArchiveCatalogs
   
   def self.create_or_update(statement, archive)
+    puts statement.objectId
     if statement.objectType == "fCatalog"
       create_or_update_catalog(statement, archive)
     elsif statement.objectType == "fStudy"

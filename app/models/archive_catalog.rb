@@ -44,5 +44,6 @@ class ArchiveCatalog < ActiveRecord::Base
 
     #now we delete all archive_catalog_studies in this catalog
     catalog.archive_catalog_studies.delete_all
+    catalog
   end 
 end
