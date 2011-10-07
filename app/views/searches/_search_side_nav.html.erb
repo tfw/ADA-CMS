@@ -5,9 +5,9 @@ content_for :js do
 end %>
 
 <% content_for :sidenav do %>
-Filter by:
 <nav>
   <div id="study-facets">
+    <span>Filter by:</span>
     <% @study_searches.each do |archive, search| %>
       <h3 class="<%= archive_css(archive) %>"><a href="#" title="Click to open/close <%= archive.name %>"><%= archive.name %></a></h3>
         <div>
