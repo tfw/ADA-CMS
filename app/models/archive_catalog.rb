@@ -41,5 +41,8 @@ class ArchiveCatalog < ActiveRecord::Base
     else
       catalog = ArchiveCatalog.create!(args)
     end
+
+    #now we delete all archive_catalog_studies in this catalog
+    catalog.archive_catalog_studies.delete_all
   end 
 end
