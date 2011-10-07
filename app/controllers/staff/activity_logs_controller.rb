@@ -10,7 +10,7 @@ class Staff::ActivityLogsController < Staff::BaseController
 	    @first_20 = logs[0..19]
 	    @second_20 = logs [20..-1]
 	else
-		@first20 = logs[0..19]
+		@first_20 = logs[0..19]
 	end
   end
 end

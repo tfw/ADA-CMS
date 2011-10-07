@@ -7,7 +7,7 @@
 					<th align='left'>Event</th>
 					<th align='left'><%= image_tag("icons/clock.png", :title => "waiting") %></th>
 				</tr>
-				<% for log in @first_20%>
+				<% for log in @first_20 %>
 					<tr>
 						<td align='left'><%= log_icon(log.category) %></td>
 						<td align='left'><%= log.text.html_safe%></td>
