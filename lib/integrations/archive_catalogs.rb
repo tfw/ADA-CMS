@@ -3,12 +3,11 @@
 class Integrations::ArchiveCatalogs
   
   def self.create_or_update(statement, archive)
-    puts statement.objectId
+    
     if statement.objectType == "fCatalog"
       create_or_update_catalog(statement, archive)
     elsif statement.objectType == "fStudy"
-      study = create_or_update_study(statement, archive)
-      
+      study = create_or_update_study(statement, archive)   
       
       if statement.creationDate > study.updated_at or study.related_materials.count == 0
         Integrations::RelatedMaterials.create_or_update_by_study(study)     

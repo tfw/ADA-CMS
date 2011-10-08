@@ -24,14 +24,17 @@ RSpec.configure do |config|
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    
   
-    make_user(:administrator)
+    u = make_user(:administrator)
   
     ["ADA", "Social Science", "Historical", "Indigenous", "Longitudinal", "Qualitative", "International", "Crime & Justice"].each do |archive_name|
       if Archive.find_by_name(archive_name).nil?
         archive = Archive.new(:name => archive_name)
         archive.save!
   
-        Page.create!(:archive_id => archive.id, :title => "Home", :body => "", :author =>  Inkling::Role.find_by_name("administrator").users.first, :partial => "/pages/home_page") unless Page.find_by_title_and_archive_id("Home", archive.id)
+        page = Page.create!(:archive_id => archive.id, :title => "Home", :body => "", 
+          :author =>  Inkling::Role.find_by_name("administrator").users.first, 
+          :partial => "/pages/home_page")  unless Page.find_by_title_and_archive_id("Home", archive.id)
+        page.publish!(u)
       end
     end  
   

@@ -12,10 +12,6 @@ class Integrations::Workflow
     study_ids = study_ids.join ","
     study_ids = "(#{study_ids})" 
 
-    # studies_count = ArchiveStudy.count(:conditions => ["updated_at > ? and archive_id = ?", log.created_at, archive.id])
-
-# time_range = Time.now-100.day..Time.now
-
     r = Study.where("updated_at > ?", log.created_at)
     r.joins(:archive_studies).where("archive_id = ?", archive.id)
     studies_count = r.count
