@@ -10,7 +10,8 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
-  helper_method :current_user
+  helper_method :current_user, :get_atom_feed
+
 
   before_filter :update_authentication #in case the user logs out externally
 
@@ -30,5 +31,11 @@ class ApplicationController < ActionController::Base
     # debugger
     # puts "-"
   end
+
+  def get_atom_feed(archive)
+    feed = Inkling::Feed.find_by_title("#{archive.name} Feed")
+    feed ||=  Inkling::Feed.create!(:title => "#{archive.name} Feed", :format => "Inkling::Feeds::Atom", :source => "ArchiveFeedsSource", :authors => archive.name, :criteria => {:archive_id => archive.id})    
+  end
+
 end
 

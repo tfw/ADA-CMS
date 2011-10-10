@@ -84,9 +84,10 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   def preview
     @page = Page.new(params[:page])
     @page.archive = @archive
-    debugger
-    html = render(:partial => @page.partial, :object => @page)
-    html
+    @archive_news = []
+    @archive_studies = []
+    @current_archive = Archive.ada
+    render(:partial => @page.partial, :object => @page, :layout => false)
   end
 
   def publish
