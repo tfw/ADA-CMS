@@ -14,15 +14,19 @@ describe MenuItem do
         menu_item.state.should == page.state  
       end
       
-      it "validates a menu item exists for the parent of the page it's handed" do
+      it "validates that a menu item exists for the parent of the page it's handed" do
         parent_page = Page.make
         page = Page.make(:parent => parent_page, :archive => parent_page.archive)
         page.parent.should == parent_page
         page.menu_item.valid?.should be_true
         parent_page.menu_item.destroy
         page.title = "test"
-        page.save!
-        page.menu_item.should_not be_valid
+        begin
+          page.save!
+          fail("page save should fail")
+        rescue
+          page.menu_item.should_not be_valid
+        end
       end
       
       it "updates when the content is updated" do
