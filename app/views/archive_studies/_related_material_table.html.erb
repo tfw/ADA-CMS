@@ -13,10 +13,10 @@
 
         <% if rm.uri.nil? %>
           <% if rm.label %>
-            Label: <%= rm.label %>
+            <%= human_readable("label") %>: <%= rm.label %>
           <% end %>
           <% if rm.comment %>
-            Comment: <%= rm.comment %>
+            <%= human_readable("comment") %>: <%= rm.comment %>
           <% end %>
         <% else %>
           <% if rm.label %>
@@ -24,7 +24,7 @@
           <% end %> 
 
           <% if rm.comment %>
-           Comment: <a href="<%= related_material_url(rm) %>" title ="<%= rm.comment %>"> <%= rm.comment %></a> <br>
+           <%= human_readable("comment") %>: <a href="<%= related_material_url(rm) %>" title ="<%= rm.comment %>"> <%= rm.comment %></a> <br>
           <% end %> 
 
           <% if rm.label.nil? and rm.comment.nil? 
