@@ -1,4 +1,3 @@
-require 'ruby-debug'
 
 namespace :integrate do
   task :indigenous => :environment do
