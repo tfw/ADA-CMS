@@ -42,16 +42,15 @@ CKEDITOR.editorConfig = function( config )
 
 		config.toolbar_Medium =
 		[
-		        ['NewPage'],
+      ['Image', 'Link', 'Anchor'],
 			['Cut','Copy','Paste'],
-			['Undo','Redo','-','Find','Replace'],
-			['Image','Table','HorizontalRule','SpecialChar','PageBreak'],
-			'/',
+			['Undo','Redo','Find','Replace'],
+      ['Bold','Italic','Strike'],
+      '/',
 			['Styles','Format'],
-			['Bold','Italic','Strike'],
-			['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
-			['Link','Unlink','Anchor'],
-		        ['Source','-','Maximize','-','About']
+      '/',
+			['NumberedList','BulletedList', 'Outdent','Indent','Blockquote', 'Table','HorizontalRule','SpecialChar','PageBreak'],
+		  ['Source', 'Maximize','-','About']
 		];
 };
 
