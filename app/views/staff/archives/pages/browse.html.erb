@@ -65,58 +65,35 @@
 	    </tr>
 	    </tbody>
 	  </table>
-
-	  <div class="PopupButtons">
-	    <div style="width: 100%;">
-	      <table width="100%" cellspacing="0" cellpadding="0">
-		<tbody><tr>
-		  <td width="100%"></td>
-		  <td nowrap="nowrap">
-		    <button onclick="uploadButton()" class="Button"><span ckf:lang="CancelBtn">Cancel</span></button>
-		  </td>
-		</tr>
-	      </tbody></table>
-	    </div>
-	  </div>
-	</div>
       </td>
     </tr>
   </thead>
 
   <tbody id="qu">
-    <tr class="documents">
-      <td style="height: 100%;">
-	<%- if defined?(@documents) and !@documents.empty? %>
-	  <div style="overflow:auto; height:550px;" id='container'>
-	   <%= render :partial => "ckeditor/resource", :collection => @documents, :as => :resource %>
-	  </div>
-	<%- else %>
-	  No documents
-	<%- end %>
-      </td>
-    </tr>
-
+    <tr><td><h2>Pages</h2></td></tr>
     <tr class="pages">
       <td style="height: 100%;">
-	<%- if defined?(@pages) and !@pages.empty? %>
-	  <div style="overflow:auto; height:550px;" id='container'>
-	    <%= render :partial => "ckeditor/page", :collection => @pages, :as => :page %>
-	  </div>
-	<%- else %>
-	  No pages
-	<%- end %>
+        <div style="overflow:auto;" id='container'>
+          <%= render :partial => "ckeditor/page", :collection => @pages, :as => :page %>
+        </div>
       </td>
     </tr>
 
+    <tr><td><h2>Images</h2></td></tr>
     <tr class="archive_studies">
       <td style="height: 100%;">
-	<%- if defined?(@archive_studies) and !@archive_studies.empty? %>
-	  <div style="overflow:auto; height:550px;" id='container'>
-	   <%= render :partial => "ckeditor/archive_study", :collection => @archive_studies, :as => :archive_study %>
-	  </div>
-	<%- else %>
-	  No studies
-	<%- end %>
+    	  <div style="overflow:auto; height;" id='container'>
+    	   <%= render :partial => "ckeditor/archive_study", :collection => @archive_studies, :as => :archive_study %>
+    	  </div>
+      </td>
+    </tr>
+
+    <tr><td><h2>Documents</h2></td></tr>
+    <tr class="documents">
+      <td style="height: 100%;">
+        <div style="overflow:auto;" id='container'>
+         <%= render :partial => "ckeditor/resource", :collection => @documents, :as => :resource %>
+        </div>
       </td>
     </tr>
 
