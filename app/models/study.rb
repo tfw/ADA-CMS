@@ -43,6 +43,12 @@ class Study < ActiveRecord::Base
     converted_keys = {}
     attributes.each do |k,v|
       k = "pdfFile" if k == "pDFFile"
+
+      #now we downcase facet data for uniformity
+      v = v.downcase if [:data_kind, :sampling, :coll_mode, :geographical_cover,
+      :geographical_unit, :analytic_unit, :creation_date,
+      :series_name, :stdy_contact_affiliation, :stdy_auth_entity,
+      :period_start, :ddi_id, :label].include?(k)
         
       converted_keys[k.underscore.to_sym] = v
     end

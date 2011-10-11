@@ -4,11 +4,10 @@ class ArchiveCatalog < ActiveRecord::Base
   acts_as_inkling "Catalog"
   acts_as_nested_set  
 
+  belongs_to :archive
   belongs_to :parent, :class_name => "ArchiveCatalog"
   has_many :children, :class_name => "ArchiveCatalog", :foreign_key => "parent_id"  
-  has_one :archive_catalog_integration
   has_many :archive_catalog_studies
-  belongs_to :archive
   
   has_one :integration
 
@@ -42,8 +41,6 @@ class ArchiveCatalog < ActiveRecord::Base
       catalog = ArchiveCatalog.create!(args)
     end
 
-    #now we delete all archive_catalog_studies in this catalog
-    catalog.archive_catalog_studies.delete_all
     catalog
   end 
 end
