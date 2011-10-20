@@ -42,6 +42,7 @@ feature "Archives management:" do
       sign_in(admin)
       create_page(Archive.historical, "test page", "sample content")
       cms_page = Page.find_by_title("test page")
+      cms_page.publish!(admin)
       menu_item = cms_page.menu_item
       
       within(:xpath, "//li[@id='menu-options-#{menu_item.id}']") do

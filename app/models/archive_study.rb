@@ -50,6 +50,6 @@ class ArchiveStudy < ActiveRecord::Base
   end
   
   def to_feedable
-    {:title => study.title, :url => "#{BASE_URL}#{urn}", :updated_at => created_at, :text => study.abstract_text}
+    {:title => study.title.html_safe, :url => "#{BASE_URL}#{urn}", :updated_at => created_at, :text => study.abstract_text.html_safe}
   end
 end

@@ -73,7 +73,8 @@ module HelperMethods
     # Hack in conjunction with monkey-patch sessions controller (see login.rb)
     visit new_user_session_path({ :url => user.identity_url })
 
-    user.openid_fields=({"http://users.ada.edu.au/role" => user.roles.first.name})
+    user.openid_fields=([{"http://users.ada.edu.au/role" => user.roles.first.name},
+                          "http://users.ada.edu.au/role" => user.roles.first.name])
     visit("/staff/home")
   end
 

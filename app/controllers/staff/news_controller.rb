@@ -26,13 +26,21 @@ class Staff::NewsController < Staff::BaseController
   end
 
   def preview
-    news = params[:news]
-    archives = news.delete(:archives)
-    @news = News.new(news)
-    @assigned_archives = archives.map do |archive_id|
-      Archive.find(archive_id)
+    @news = params[:news]
+    archives = @news.delete(:archives)
+    @news = News.new(@news)
+
+    if @news.keywords.nil?
+      @news.keywords = ""
     end
-    render(:partial => "news/show", :object => @news)
+    @news.updated_at = Time.now
+
+    @archive_news = ArchiveNews.new(:news => @news, :archive => Archive.ada)
+    @archive_news.path = Inkling::Path.new(:slug => "previewing")
+    @current_archive = @archives.first
+    @current_archive ||= Archive.ada
+
+    render(:template => "/archive_news/show", :object => @news, :layout => false)
   end
 
   def publish

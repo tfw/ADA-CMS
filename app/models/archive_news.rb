@@ -28,6 +28,6 @@ class ArchiveNews < ActiveRecord::Base
   end
   
   def to_feedable
-    {:title => news.title, :url => "#{BASE_URL}#{urn}", :updated_at => created_at, :text => news.body}
+    {:title => news.title.html_safe, :url => "#{BASE_URL}#{urn}", :updated_at => created_at, :text => news.body.html_safe}
   end
 end

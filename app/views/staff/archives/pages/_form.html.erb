@@ -2,21 +2,20 @@
 
 <%= render(:partial => "/staff/shared/resource_errors") %>
 
-
-  <% unless resource.new_record? or resource.published? %> 
-    <fieldset class="left half">
-        <legend>Approvals</legend>
-        <% if resource.draft? %> 
-          This page is waiting for publishing approval.
-          <% if current_user.can_approve? %>
-            <%= link_to 'Approve?', publish_staff_archive_page_path(@archive, resource), 
-                :method => "post", :confirm => "Are you sure?" %> 
-          <% end %>
-        <% else %>
-        Published.
+<% unless resource.new_record? or resource.published? %> 
+  <fieldset class="left half">
+      <legend>Approvals</legend>
+      <% if resource.draft? %> 
+        This page is waiting for publishing approval.
+        <% if current_user.can_approve? %>
+          <%= link_to 'Approve?', publish_staff_archive_page_path(@archive, resource), 
+              :method => "post", :confirm => "Are you sure?" %> 
         <% end %>
-    </fieldset> 
-  <% end %>
+      <% else %>
+      Published.
+      <% end %>
+  </fieldset> 
+<% end %>
 
 <br>
 
@@ -92,7 +91,10 @@
   <% end %>
 </fieldset>
 
-<div id="preview"></div>
+<br>
+<section id="preview">
+</section>
+
 
 <% content_for :js do %>
 
@@ -167,7 +169,7 @@ Enable this part only if you don't remove the 'target' tab in the previous block
   
   $("#preview-link").click(function(event){
     var title         = $("#page_title").val();
-    var partial       = $("input:radio[name=page[partial]]:checked").val();
+    var partial       = $("#page_partial option:selected").val();
     var body           = CKEDITOR.instances.page_body_editor.getData();    
     var breakout_box   = CKEDITOR.instances.page_breakout_box_editor.getData();  
     $.post("/staff/archives/pages/preview?archive_id=<%=  (@archive.slug) %>", {page: {title: title, partial: partial, body: body, breakout_box: breakout_box}},

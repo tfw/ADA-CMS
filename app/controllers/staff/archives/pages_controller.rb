@@ -49,24 +49,6 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
     end
   end
 
-  #methods for remote call via ajax
-  # def update_tree
-  #   new_parent_id = params[:new_parent]
-  #   child_id      = params[:child]
-  #   new_parent    = Page.find(new_parent_id)
-  #   child         = Page.find(child_id)
-
-  #   child.parent_id = new_parent.id
-
-  #   out = child.save!
-  #   puts "\n\n\ #{out} ***** \n\n" 
-
-  #   debugger
-
-  #   render :nothing => true
-  #   return
-  # end
-
   def sluggerize_path
     parent_page = Page.find(params[:parent]) unless params[:parent].empty?
     slug = sluggerize(params[:title])
@@ -84,8 +66,10 @@ class Staff::Archives::PagesController < Staff::Archives::BaseController
   def preview
     @page = Page.new(params[:page])
     @page.archive = @archive
-    html = render(:partial => @page.partial, :object => @page)
-    html
+    @archive_news = []
+    @archive_studies = []
+    @current_archive = Archive.ada
+    render(:partial => @page.partial, :object => @page, :layout => false)
   end
 
   def publish

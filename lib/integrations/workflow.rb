@@ -1,7 +1,6 @@
-require 'time_elapsed_in_words'
+require 'ruby-debug'
 
 class Integrations::Workflow
-#  include TimeElapsedInWords
   
   def self.integrate(catalog_name, archive)
     log = Inkling::Log.create!(:category => "integration", :text => "#{archive.name} integration began.")
@@ -12,7 +11,11 @@ class Integrations::Workflow
     study_ids = archive.studies.collect {|s| s.id}
     study_ids = study_ids.join ","
     study_ids = "(#{study_ids})" 
-    studies_count = ArchiveStudy.count(:conditions => ["updated_at > ? and archive_id = ?", log.created_at, archive.id])
+
+    r = Study.where("updated_at > ?", log.created_at)
+    r.joins(:archive_studies).where("archive_id = ?", archive.id)
+    studies_count = r.count
+
     vars_count = Variable.count(:conditions => ["updated_at > ? and study_id in #{study_ids}", log.created_at])
     rms_count = RelatedMaterial.count(:conditions => ["updated_at > ? and study_id in #{study_ids}", log.created_at])
     

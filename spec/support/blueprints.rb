@@ -47,12 +47,14 @@ Page.blueprint do
   link_title Sham.title
   description Sham.description
   body Sham.body
+  state Workflowable::PUBLISH
 end
 
 MenuItem.blueprint do 
   title Sham.name
   link  Sham.url
   archive_id  {(Archive.make).id}
+  state Workflowable::PUBLISH
 end
 
 ArchiveNews.blueprint do
@@ -65,6 +67,7 @@ News.blueprint do
   user {(User.make)}
   user_id {(User.make).id}
   body Sham.body
+  state Workflowable::PUBLISH
 end
 
 Archive.blueprint do 

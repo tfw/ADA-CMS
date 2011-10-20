@@ -18,7 +18,7 @@ class ArchiveStudiesController < ContentController
     @username = current_user.identity_url.split("/").last if current_user
     @current_archive = @archive_study.archive
     @title = @study.title
-    @variables = @study.variables.paginate(:page => params[:page], :per_page => 100)
+    @variables = @study.variables.order(:position).paginate(:page => params[:page], :per_page => 100)
     respond_with(@study)
   end
   
@@ -29,12 +29,13 @@ class ArchiveStudiesController < ContentController
     @current_archive = @archive_study.archive
     render :action => :show
   end
+
   private
-  
   def get_study_permissions_from_ada_users(study)
     resource_id = study.stdy_id
     username = current_user.identity_url.split("/").last
     study_perms = ArchiveStudiesController.get("#{OPENID_SERVER}/users/#{username}/access/#{resource_id}?api_key=#{Secrets::API_KEY}")
+
     study_perms.to_hash
     {'browse' => true, 'analyse' => true, 'download' => true}
   end

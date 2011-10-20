@@ -22,20 +22,24 @@ class User < ActiveRecord::Base
 
   def openid_fields=(fields)
     fields.each do |key, value|
+
       # Some AX providers can return multiple values per key
-      if value.is_a? Array
-        value = value.first
-      end
+      # if value.is_a? Array
+      #   value = value.first
+      # end
 
       case key.to_s
       when 'email', 'http://users.ada.edu.au/email'
+        value = use_first_value(value)
         self.email = value
       when 'http://users.ada.edu.au/role'
-        User.register_in_role(self, value)
+        User.register_in_role(self, value.last)
        # self.roles << Inkling::Role.find_or_create_by_name(value) #refactor this! Shouldn't automatically create roles
       when 'http://axschema.org/namePerson/first'
+        value = use_first_value(value)
         self.firstname = value
       when 'http://axschema.org/namePerson/last'
+        value = use_first_value(value)
         self.surname = value        
       else
         logger.error "Unknown OpenID field: #{key}"
@@ -73,5 +77,13 @@ class User < ActiveRecord::Base
 
     user.role_memberships.each{|rm| rm.delete}
     role << user
+  end
+
+  def use_first_value(value)
+    if value.is_a? Array
+      value.first
+    else
+      value
+    end
   end
 end
