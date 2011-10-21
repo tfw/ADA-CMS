@@ -58,7 +58,7 @@ feature "Creating pages" do
 
   context "archivist" do  
     background do
-      @archivisit = make_user('Archivist')
+      @archivisit = make_user('archivist')
       sign_in(@archivisit)
     end
     

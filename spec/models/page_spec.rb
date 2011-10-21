@@ -67,7 +67,7 @@ describe Page do
     context "Page object lifecycle should trigger appropriate moments in a matching menu item" do
       specify "when a page is published its menu_item should be published too" do
         p = Page.make
-        approver = make_user('Approver')
+        approver = make_user('approver')
         p.publish!(approver)
         p.menu_item.published?.should == true
       end

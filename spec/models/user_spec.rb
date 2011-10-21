@@ -14,7 +14,7 @@ describe User do
 	end
 
 	specify "that archivists cannot approve workflowables" do
-		archivist = make_user("Archivist")
+		archivist = make_user("archivist")
 		archivist.can_approve?.should be_false
 	end
 end
