@@ -57,17 +57,17 @@ class User < ActiveRecord::Base
 
   def is_staff?
     (roles & [Inkling::Role.find_by_name("administrator"),
-      Inkling::Role.find_by_name("Manager"),
-      Inkling::Role.find_by_name("Publisher"),
-      Inkling::Role.find_by_name("Approver"),
-      Inkling::Role.find_by_name("Archivist")]).any?
+      Inkling::Role.find_by_name("manager"),
+      Inkling::Role.find_by_name("publisher"),
+      Inkling::Role.find_by_name("approver"),
+      Inkling::Role.find_by_name("archivist")]).any?
   end
 
   def can_approve?
     (roles & [Inkling::Role.find_by_name("administrator"),
-      Inkling::Role.find_by_name("Manager"),
-      Inkling::Role.find_by_name("Publisher"),
-      Inkling::Role.find_by_name("Approver")]).any?
+      Inkling::Role.find_by_name("manager"),
+      Inkling::Role.find_by_name("publisher"),
+      Inkling::Role.find_by_name("approver")]).any?
   end
 
   private

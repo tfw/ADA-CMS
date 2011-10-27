@@ -20,7 +20,7 @@ RSpec.configure do |config|
   
   config.before(:each, :type => :acceptance) do
     #this is messy ... just hacking at getting specs working
-    ["administrator", "Manager", "Publisher", "Approver", "Archivist"].each do |role_name| 
+    ["administrator", "manager", "publisher", "approver", "archivist"].each do |role_name| 
       Inkling::Role.create!(:name => role_name) if Inkling::Role.find_by_name(role_name).nil?
     end    
   

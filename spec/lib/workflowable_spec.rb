@@ -17,7 +17,7 @@ describe Workflowable do
   end
 
   specify "that only permitted roles are allowed to put a worklowable into the published state" do
-    ["administrator", "Manager", "Publisher", "Approver"].each do |role_name|
+    ["administrator", "manager", "publisher", "approver"].each do |role_name|
       @workflowable.draft?.should == true
       user = make_user(role_name)
       @workflowable.publish!(user)
@@ -25,7 +25,7 @@ describe Workflowable do
       @workflowable.draft!
     end
 
-    user = make_user("Archivist")
+    user = make_user("archivist")
     @workflowable.publish!(user).should == false
   end
 end
