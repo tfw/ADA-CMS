@@ -282,3 +282,32 @@
 	background: #B91B20;
 	color: #FFF;
 }
+
+/*permission ticks */ 
+
+.ada_tick {
+	color: #1f5f2f;
+}
+
+.social_science_tick {
+	color: #56378a;
+}
+.historical_tick {
+	color: #9c8f64;
+}
+.qualitative_tick {
+	color: #1486BB;
+}
+.longitudinal_tick {
+	color: #0A7370;
+}
+.indigenous_tick {
+	color: #C96413;
+}
+.international_tick {
+	color: #B91B20;
+}
+
+.crime_and_justice_tick {
+	color: #cf922a;
+}

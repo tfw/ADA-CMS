@@ -75,6 +75,13 @@ nav ul {
 	background-repeat:  no-repeat;
 }
 
+
+.content nav.archive_menu ul li a:hover {
+color: #000;
+background-position: 0px -32px;
+
+}
+
 .content nav.archive_menu ul li.ada a, .content nav #study-facets .default a {
 	background-image: url(../images/structure/menu_icon_ada.png);
 	font-weight: normal;
@@ -123,12 +130,12 @@ nav ul {
 }
 
 .content nav.archive_menu ul li.news a {
-	background-image: url(../images/icons/newspaper.png);
+	background-image: url(../images/structure/menu_newspaper.png);
 	z-index: auto;
 }
 
 .content nav.archive_menu ul li.adapt a {
-	background-image: url(../images/icons/adapt.png);
+	background-image: url(../images/structure/menu_adapt.png);
 	z-index: auto;
 }
 

@@ -69,4 +69,10 @@ module ArchiveStudiesHelper
       related_material.uri.split(/\//).last
     end
   end
+
+  def tick_class_for_study(archive_study)
+    name = archive_study.archive.name
+    standardised = name.gsub(/\s+/, '_').gsub('&', 'and')
+    standardised.downcase + "_tick"
+  end
 end

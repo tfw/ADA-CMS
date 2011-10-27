@@ -119,6 +119,7 @@ ul#sub-menu {
 	position: relative;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	top: -22px;
 }
 
 #search-results p, #search-results-ext p, #browse-results-ext p {
@@ -133,9 +134,9 @@ ul#sub-menu {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #E3E3E3;
-	border-top-width: 1px;
+	/*border-top-width: 1px;
 	border-top-style: solid;
-	border-top-color: #E3E3E3;
+	border-top-color: #E3E3E3;*/
 	font-weight: normal;
 }
 
@@ -275,13 +276,27 @@ ul#sub-menu {
 }
 
 #save-searches {
-	float: right;
-}
+	position: absolute;
+	top: 55px;
+	right: 0px;
+	}
 
 #save-search-link {
 	float:right;
 }
 
+#search-doc-link {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+
+.filter {
+	position: absolute;
+	top: 17px;
+	right: 80px;
+
+}
 
 /* Browse ---  */
 
@@ -602,11 +617,11 @@ span.highlight {
 	border-left-style: none;
 	padding-left: 0px;
 }
+
 #study-facets div dl dd a:hover {
-	background-color: #3F0!important;
-	color: #0F0!important;
 	text-decoration: underline;
 }
+
 #study-facets div dl dt strong {
 	background-color: #EDEDED;
 	display: block;
