@@ -6,7 +6,7 @@ gem 'rails', '3.0.10'
 gem "pg"
 gem "mysql2"
 
-gem 'inkling', :git => "git://github.com/tfw/inkling.git"  
+gem 'inkling', :git => "git://github.com/tfw/inkling.git", :tag => "ada_release"
 #gem 'inkling', :path => "/Users/nicholas/code/src/tfw/inkling"
 
 gem "devise", ">= 1.2.0"
