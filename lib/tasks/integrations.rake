@@ -38,16 +38,16 @@ namespace :reset do
   end
 
   task :social_science => :environment do
-    flag(Archive.indigenous)
+    flag(Archive.social_science)
     destroy_catalogs(Archive.social_science)
     Rake::Task["integrate:social_science"].execute
-    unflag(Archive.indigenous)
+    unflag(Archive.social_science)
   end
 
   task :historical => :environment do
     flag(Archive.historical)
     destroy_catalogs(Archive.historical)
-    Rake::Task["integrate:indigenous"].execute
+    Rake::Task["integrate:historical"].execute
     unflag(Archive.historical)
   end
 
