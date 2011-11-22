@@ -2,14 +2,15 @@ module ArchiveStudiesHelper
   
   def study_field_table_row(key, study, fields)
     if fields.has_key?(key) and not fields[key].blank?
-      row = "<tr class='#{cycle('standard', 'alt')}'>\n<td valign='top'>"
-      row +=  (human_readable(key) || key)
-      row +=  "</td><td valign='top'>"
-      row += fields[key].to_s
-      row += "</td>\n</tr>"
+      row = "<tr class='#{cycle('standard', 'alt')}'>\n".html_safe
+      row << "<td valign='top'>".html_safe
+      row << (human_readable(key) || key)
+      row << "</td><td valign='top'>".html_safe
+      row << fields[key].to_s
+      row << "</td>\n</tr>".html_safe
       
      fields.delete(key)
-     row.html_safe
+     row
    end
   end
   
