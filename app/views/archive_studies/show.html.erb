@@ -40,9 +40,7 @@
 <aside class="breakout study">
     <% if current_user %>
       You can: 
-      <% if @perms['browse'] %>
-        <%= link_to 'Browse', "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fStudy/#{@study.stdy_id}&cms_url=#{@archive_study.path.slug}" %>: <span class=<%= tick_class_for_study(@archive_study) %>><%= "\u2713" %></span>
-      <% end %>
+      <%= link_to 'Browse', "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fStudy/#{@study.stdy_id}&cms_url=#{@archive_study.path.slug}" %>: <span class=<%= tick_class_for_study(@archive_study) %>><%= "\u2713" %></span>
 
       <% if @perms['analyse'] %>
          <%= link_to 'Analyse', "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fStudy/#{@study.stdy_id}&cms_url=#{@archive_study.path.slug}" %>: <span class=<%= tick_class_for_study(@archive_study) %>><%= "\u2713" %></span>
