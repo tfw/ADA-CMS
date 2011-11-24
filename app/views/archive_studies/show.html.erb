@@ -39,7 +39,7 @@
 
 <aside class="breakout study">
     <% if current_user %>
-      You can 
+      You can: 
       <% if @perms['browse'] %>
         <%= link_to 'Browse', "#{NESSTAR_SERVER}/webview/index.jsp?object=#{NESSTAR_SERVER}:80/obj/fStudy/#{@study.stdy_id}&cms_url=#{@archive_study.path.slug}" %>: <span class=<%= tick_class_for_study(@archive_study) %>><%= "\u2713" %></span>
       <% end %>
@@ -62,7 +62,7 @@
         Request <%= link_to perms_to_request, "#{OPENID_SERVER}/users/#{@username}/undertakings/new?datasetID=#{@study.stdy_id}" %> access </a>
       <% end %>
     <% else  %>
-      <%= link_to 'Log in', OPENID_SERVER %> to see your data access permissions.
+      <%= link_to 'Log in', "#{OPENID_SERVER}/session/new" %> to see your data access permissions.
     <% end %>
 </aside>
 

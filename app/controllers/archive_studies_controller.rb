@@ -37,6 +37,5 @@ class ArchiveStudiesController < ContentController
     study_perms = ArchiveStudiesController.get("#{OPENID_SERVER}/users/#{username}/access/#{resource_id}?api_key=#{Secrets::API_KEY}")
 
     study_perms.to_hash
-    {'browse' => true, 'analyse' => true, 'download' => true}
   end
 end
