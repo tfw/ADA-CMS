@@ -32,7 +32,7 @@
 
   $('#order').change(function() {
     var selected = $("#order option:selected").val();
-    var url = '<%= path_without_order(params).html_safe %>';
+    var url = '<%= path_without_order(:term => @term, :archive_id => @current_archive.id).html_safe %>';
 
     url = url + "&order=" + selected;
     window.location = url;    
