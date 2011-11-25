@@ -277,8 +277,8 @@ ul#sub-menu {
 
 #save-searches {
 	position: absolute;
-	top: 55px;
-	right: 0px;
+	top: 26px;
+	right: 270px;
 	}
 
 #save-search-link {
@@ -287,14 +287,14 @@ ul#sub-menu {
 
 #search-doc-link {
 	position: absolute;
-	top: 20px;
-	right: 0px;
+	top: 8px;
+	right: 270px;
 }
 
 .filter {
 	position: absolute;
 	top: 17px;
-	right: 80px;
+	right: 0px;
 
 }
 
