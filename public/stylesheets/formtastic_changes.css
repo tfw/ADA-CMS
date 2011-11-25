@@ -202,6 +202,11 @@
 	text-decoration: none;	
 }
 
+.formtastic #saved-searches {
+    position: absolute;
+    bottom: 5px;
+}
+
 //inline radio form elements
 form.formtastic li.radio li { }
 form.formtastic li.radio li { display: inline;}
