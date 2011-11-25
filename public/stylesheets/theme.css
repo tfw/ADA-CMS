@@ -273,12 +273,13 @@ ul#sub-menu {
 
 #new_search {
 	display: none;
+	background: white;
 }
 
 #save-searches {
 	position: absolute;
-	top: 26px;
-	right: 270px;
+	top: 28px;
+	right: 0px;
 	}
 
 #save-search-link {
@@ -288,13 +289,13 @@ ul#sub-menu {
 #search-doc-link {
 	position: absolute;
 	top: 8px;
-	right: 270px;
+	right: 0px;
 }
 
 .filter {
 	position: absolute;
-	top: 17px;
-	right: 0px;
+	top: 5px;
+	right: 90px;
 
 }
 
