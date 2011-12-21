@@ -55,6 +55,7 @@ after 'deploy:update', :refresh_theme
 desc "create additional shared directories during setup"
 task :create_extra_dirs, :roles => :app do
   run "mkdir -p #{shared_path}/inkling"
+  run "mkdir -p #{shared_path}/resources"
   run "mkdir -p #{shared_path}/solr/data"
 end
 
@@ -73,6 +74,7 @@ end
 
 task :symlinks, :roles => :app do
   run "ln -nfs #{shared_path}/inkling #{current_path}/tmp/"
+  run "ln -nfs #{shared_path}/resources #{current_path}/public/"
   run "ln -nfs #{shared_path}/secrets.rb #{current_path}/config/initializers"
   run "cd #{current_path}/config; ln -nfs database-deploy.yml database.yml"
 end
